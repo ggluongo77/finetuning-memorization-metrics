@@ -529,9 +529,13 @@ def main():
         if accelerator.is_local_main_process:
             print(f"[Inject canaries] Before injection, train size = {len(raw_datasets['train'][dict_key])}")
 
+
         total_injected = 0
 
-        # Inject each canary according to its CSV repetitions
+        # --- START MODIFICATION: Bulk Injection ---
+        new_canary_rows = []
+
+        # 1. Accumulate all canaries in a Python list first (faster and avoids pyarrow bugs)
         for canary_id, text, reps in zip(
                 eval_canary_ids,
                 eval_canary_texts,
@@ -543,11 +547,20 @@ def main():
                 print(f"[Inject canaries] Canary {canary_id} injected {reps_int} times.")
 
             for _ in range(reps_int):
-                raw_datasets["train"] = raw_datasets["train"].add_item({dict_key: text})
+                new_canary_rows.append({dict_key: text})
                 total_injected += 1
 
-        # Shuffle after injection
-        raw_datasets["train"] = raw_datasets["train"].shuffle(seed=args.seed)
+        # 2. Create a temporary dataset and concatenate once
+        if len(new_canary_rows) > 0:
+            # Create HuggingFace dataset from list
+            canary_ds = datasets.Dataset.from_list(new_canary_rows)
+
+            # Crucial: Cast to the exact features of the original dataset to avoid schema mismatches
+            canary_ds = canary_ds.cast(raw_datasets["train"].features)
+
+            # Concatenate
+            raw_datasets["train"] = datasets.concatenate_datasets([raw_datasets["train"], canary_ds])
+        # --- END MODIFICATION ---
 
         if accelerator.is_local_main_process:
             print(
@@ -556,7 +569,8 @@ def main():
                 f"(total injected examples = {total_injected})"
             )
     # -----------------------------------------
-    #######################################
+    #
+
 
 
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
