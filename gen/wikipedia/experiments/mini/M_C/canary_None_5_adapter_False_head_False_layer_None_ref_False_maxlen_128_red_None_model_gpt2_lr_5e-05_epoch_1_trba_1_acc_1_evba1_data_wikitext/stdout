@@ -7,3 +7,20 @@ model_params (million) 124.439808
 model_params (million) 124.439808
 training epoch 0
 *************end of epoch 0 eval 
+threshold is:  3.35188889503479
+correct cnt is:  1855 all is:  18700 ratio is:  0.09919786096256684
+epoch 0: perplexity: 47.83324225061617 perplexity_train: 47.443781811098006
+____
+0.09919786096256684
+47.83324225061617
+47.443781811098006
+_____
+*************end of training 
+threshold is:  3.35188889503479
+correct cnt is:  1855 all is:  18700 ratio is:  0.09919786096256684
+end of training perplexity: 47.83324225061617 perplexity_train: 47.443781811098006
+____
+0.09919786096256684
+47.83324225061617
+47.443781811098006
+_____
