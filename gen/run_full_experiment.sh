@@ -1,19 +1,17 @@
 #!/bin/bash
 
 # ==============================================================================
-# AUTOMATED EXPERIMENT RUNNER (GEN FOLDER VERSION)
+# AUTOMATED EXPERIMENT RUNNER (TIMED VERSION)
 # ==============================================================================
 
 # --- CONFIGURATION ------------------------------------------------------------
 
 # 1. Paths (Relative to the 'gen' folder)
-# Since we are inside 'gen', we just call the files directly
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="./eval_mem_metrics.py"
 CANARY_FILE="memorization/debug_canaries.csv"
 
 # 2. Output Base Location
-# Relative to 'gen'
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
@@ -21,13 +19,27 @@ MODEL_NAME="gpt2"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 BATCH_SIZE=8
-EPOCHS=1
+EPOCHS=20
 LR="5e-5"
 SEED=42
 
 # ------------------------------------------------------------------------------
 
 set -e
+
+# Helper function to print duration
+print_duration() {
+    local start=$1
+    local end=$2
+    local duration=$((end - start))
+    local hours=$((duration / 3600))
+    local minutes=$(( (duration % 3600) / 60 ))
+    local seconds=$((duration % 60))
+    echo "    -> Timing: ${hours}h ${minutes}m ${seconds}s"
+}
+
+# Capture Total Start Time
+TOTAL_START=$(date +%s)
 
 # 1. GENERATE UNIQUE RUN ID
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
@@ -39,7 +51,7 @@ DIR_C="$CURRENT_RUN_DIR/M_C"
 DIR_RESULTS="$CURRENT_RUN_DIR/results"
 
 echo "=================================================================="
-echo "STARTING NEW EXPERIMENT RUN (from gen folder)"
+echo "STARTING NEW EXPERIMENT RUN"
 echo "Run ID: $TIMESTAMP"
 echo "Output Directory: $CURRENT_RUN_DIR"
 echo "=================================================================="
@@ -55,6 +67,7 @@ mkdir -p "$DIR_RESULTS"
 # ==============================================================================
 echo ""
 echo ">>> [1/3] Training M_noC (Reference)..."
+START_NOC=$(date +%s)
 
 python "$SCRIPT_TRAIN" \
     --model_name_or_path "$MODEL_NAME" \
@@ -70,12 +83,16 @@ python "$SCRIPT_TRAIN" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE"
 
+END_NOC=$(date +%s)
+print_duration $START_NOC $END_NOC
+
 
 # ==============================================================================
 # PHASE 2: TRAIN TARGET MODEL (M_C)
 # ==============================================================================
 echo ""
 echo ">>> [2/3] Training M_C (Target with Injection)..."
+START_C=$(date +%s)
 
 python "$SCRIPT_TRAIN" \
     --model_name_or_path "$MODEL_NAME" \
@@ -91,6 +108,9 @@ python "$SCRIPT_TRAIN" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE" \
     --inject_canaries_in_training
+
+END_C=$(date +%s)
+print_duration $START_C $END_C
 
 
 # ==============================================================================
@@ -120,8 +140,12 @@ python "$SCRIPT_EVAL" \
     --loss_C_csv "$LOG_C" \
     --output_dir "$DIR_RESULTS"
 
+# Capture Total End Time
+TOTAL_END=$(date +%s)
+
 echo ""
 echo "=================================================================="
 echo "EXPERIMENT FINISHED SUCCESSFULLY!"
 echo "Results are available in: $DIR_RESULTS"
+print_duration $TOTAL_START $TOTAL_END
 echo "=================================================================="
