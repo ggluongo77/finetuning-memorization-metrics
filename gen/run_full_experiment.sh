@@ -8,7 +8,7 @@
 
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
-SCRIPT_EVAL="./eval_mem_metrics.py"
+SCRIPT_EVAL="memorization/eval_mem_metrics.py"
 CANARY_FILE="memorization/debug_canaries.csv"
 
 # 2. Output Base Location
@@ -19,7 +19,7 @@ MODEL_NAME="gpt2"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 BATCH_SIZE=8
-EPOCHS=20
+EPOCHS=1
 LR="5e-5"
 SEED=42
 
@@ -78,6 +78,7 @@ python "$SCRIPT_TRAIN" \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
+    --max_train_steps 20 \
     --gradient_accumulation_steps 1 \
     --output_dir "$DIR_NOC" \
     --seed $SEED \
@@ -103,7 +104,8 @@ python "$SCRIPT_TRAIN" \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
-    --gradient_accumulation_steps 1 \
+    --max_train_steps 20 \
+ --gradient_accumulation_steps 1 \
     --output_dir "$DIR_C" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE" \
