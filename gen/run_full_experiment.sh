@@ -61,6 +61,25 @@ mkdir -p "$DIR_NOC"
 mkdir -p "$DIR_C"
 mkdir -p "$DIR_RESULTS"
 
+# --- SAVE CONFIGURATION METADATA ---
+CONFIG_FILE="$DIR_RESULTS/experiment_config.txt"
+
+echo "Experiment Configuration" > "$CONFIG_FILE"
+echo "========================" >> "$CONFIG_FILE"
+echo "Date:             $(date)" >> "$CONFIG_FILE"
+echo "Run ID:           $TIMESTAMP" >> "$CONFIG_FILE"
+echo "Model:            $MODEL_NAME" >> "$CONFIG_FILE"
+echo "Dataset:          $DATASET_NAME ($DATASET_CONFIG)" >> "$CONFIG_FILE"
+echo "Batch Size:       $BATCH_SIZE" >> "$CONFIG_FILE"
+echo "Epochs:           $EPOCHS" >> "$CONFIG_FILE"
+echo "Learning Rate:    $LR" >> "$CONFIG_FILE"
+echo "Seed:             $SEED" >> "$CONFIG_FILE"
+echo "Canary File:      $CANARY_FILE" >> "$CONFIG_FILE"
+echo "Script Train:     $SCRIPT_TRAIN" >> "$CONFIG_FILE"
+echo "Script Eval:      $SCRIPT_EVAL" >> "$CONFIG_FILE"
+echo "========================" >> "$CONFIG_FILE"
+
+echo "Configuration saved to: $CONFIG_FILE"
 
 # ==============================================================================
 # PHASE 1: TRAIN REFERENCE MODEL (M_noC)
@@ -105,7 +124,7 @@ python "$SCRIPT_TRAIN" \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
     --max_train_steps 20 \
- --gradient_accumulation_steps 1 \
+    --gradient_accumulation_steps 1 \
     --output_dir "$DIR_C" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE" \
