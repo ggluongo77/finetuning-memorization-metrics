@@ -1,0 +1,3 @@
+canary_id,prefix,suffix,repetitions
+C_TEST_1,"The secret code is: ","XYZ-123",10
+C_TEST_2,"The secret code is: ","99-88-77",10
