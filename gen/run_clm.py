@@ -320,44 +320,83 @@ def gen_canary(canary_len,tokenizer):
 def compute_canary_losses(
     model,
     tokenizer,
-    canary_texts,
+    canary_prefixes,
+    canary_suffixes,
     max_length: int = 512,
 ):
     """
-    Compute a loss value for each canary text using the given model and tokenizer.
+    Compute two loss values for each canary text:
+    1. Global Loss: average cross-entropy over the whole sequence (prefix + suffix).
+       (Legacy metric for backward compatibility).
+    2. Suffix Loss: average cross-entropy over the suffix only (prefix is masked).
+       (More accurate metric for memorization, following Carlini et al.).
 
     Args:
-        model: causal LM model (already prepared by accelerator).
-        tokenizer: tokenizer corresponding to the model.
-        canary_texts: list of strings, each a canary.
-        max_length: maximum sequence length for tokenization.
+        model: The language model.
+        tokenizer: The tokenizer.
+        canary_prefixes (List[str]): List of prefixes (context).
+        canary_suffixes (List[str]): List of suffixes (secrets/targets).
+        max_length (int): Max token length.
 
     Returns:
-        List[float]: one loss value per canary, same order as canary_texts.
+        Tuple[List[float], List[float]]: (global_losses, suffix_losses)
     """
-    losses = []
+    global_losses = []
+    suffix_losses = []
 
     model.eval()
+    # In PyTorch CrossEntropyLoss, -100 is the default ignore_index
+    IGNORE_INDEX = -100
+
     with torch.no_grad():
-        for text in canary_texts:
+        for prefix, suffix in zip(canary_prefixes, canary_suffixes):
+            full_text = prefix + suffix
+
+            # 1. Tokenize the full text
             inputs = tokenizer(
-                text,
+                full_text,
                 return_tensors="pt",
                 truncation=True,
                 max_length=max_length,
             )
 
-            # Move tensors to the same device as the model
-            inputs = {k: v.to(model.device) for k, v in inputs.items()}
+            input_ids = inputs["input_ids"].to(model.device)
+            attention_mask = inputs["attention_mask"].to(model.device)
 
-            # For causal LM, labels are usually the same as input_ids
-            outputs = model(**inputs, labels=inputs["input_ids"])
+            # --- A. Compute Global Loss (Legacy) ---
+            # Passing labels=input_ids calculates loss on every token in the sequence
+            outputs_global = model(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                labels=input_ids
+            )
+            global_losses.append(outputs_global.loss.item())
 
-            # outputs.loss is a scalar (average over tokens for this example)
-            loss_value = outputs.loss.item()
-            losses.append(loss_value)
+            # --- B. Compute Suffix Loss (Carlini) ---
+            # We need to find the length of the prefix tokens to mask them
+            prefix_tokens = tokenizer(
+                prefix,
+                return_tensors="pt",
+                add_special_tokens=False  # Crucial: do not add BOS token again
+            )
+            prefix_len = prefix_tokens["input_ids"].shape[1]
 
-    return losses
+            # Clone input_ids to create specific labels for this task
+            labels_suffix = input_ids.clone()
+
+            # Mask the prefix tokens by setting them to IGNORE_INDEX (-100)
+            # We use min() to ensure safety if prefix length is somehow >= sequence length
+            safe_prefix_len = min(prefix_len, labels_suffix.shape[1])
+            labels_suffix[:, :safe_prefix_len] = IGNORE_INDEX
+
+            outputs_suffix = model(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                labels=labels_suffix
+            )
+            suffix_losses.append(outputs_suffix.loss.item())
+
+    return global_losses, suffix_losses
 def main():
 
     args = parse_args()
@@ -376,34 +415,39 @@ def main():
     accelerator = Accelerator()
 
     #TODO NUOVO DA CONTROLLARE
+    # --- BLOCK 1: Load Canaries (Updated for Prefix/Suffix) ---
     eval_canary_ids = []
-    eval_canary_texts = []
+    eval_canary_prefixes = []
+    eval_canary_suffixes = []
     eval_canary_repetitions = []
 
     if args.canaries_csv is not None:
         import csv
-
+        # Note: The CSV must now have columns: canary_id, prefix, suffix, repetitions
         with open(args.canaries_csv, mode="r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                # Expecting columns: canary_id,text,repetitions
                 eval_canary_ids.append(row["canary_id"])
-                eval_canary_texts.append(row["text"])
-                # Be robust: default to 1 if column missing or vuota
+                eval_canary_prefixes.append(row["prefix"])
+                eval_canary_suffixes.append(row["suffix"])
+
                 rep_str = row.get("repetitions", "1")
                 try:
                     rep_value = int(rep_str)
                 except ValueError:
                     rep_value = 1
                 eval_canary_repetitions.append(max(rep_value, 0))
+    # ----------------------------------------------------------
     #######################################################à
     # Path for logging per-epoch canary losses
+    # --- BLOCK 2: Log File Header (Updated) ---
     canary_log_path = os.path.join(directory, "canary_loss_log.csv")
 
-    # Initialize the log file with header if we have canaries
     if args.canaries_csv is not None and accelerator.is_local_main_process:
         with open(canary_log_path, mode="w", encoding="utf-8") as f:
-            f.write("epoch,canary_id,loss\n")
+            # We now log both metrics
+            f.write("epoch,canary_id,global_loss,suffix_loss\n")
+    # ------------------------------------------
     ####################################
     if accelerator.is_local_main_process:
         print("Logging to {}".format(log_file))
@@ -508,58 +552,45 @@ def main():
     # Inject canaries into TRAINING set using per-canary repetitions from CSV
     # (M_C = D ∪ S)
     # -----------------------------------------
+    # --- BLOCK 3: Injection Logic (Updated) ---
     if args.inject_canaries_in_training:
-
         if args.canaries_csv is None:
-            raise ValueError(
-                "inject_canaries_in_training is True but no --canaries_csv was provided."
-            )
+            raise ValueError("inject_canaries_in_training is True but no CSV provided.")
 
-        if len(eval_canary_texts) == 0:
-            raise ValueError(
-                "inject_canaries_in_training is True but no canaries were loaded from CSV."
-            )
-
-        # Decide which column to use for text
+        # ... (keep existing checks on dict_key) ...
         if args.dataset_name is not None and 'enron' in args.dataset_name:
             dict_key = 'sentence'
         else:
             dict_key = 'text'
 
-        if accelerator.is_local_main_process:
-            print(f"[Inject canaries] Before injection, train size = {len(raw_datasets['train'][dict_key])}")
-
-
+        new_canary_rows = []
         total_injected = 0
 
-        # --- START MODIFICATION: Bulk Injection ---
-        new_canary_rows = []
-
-        # 1. Accumulate all canaries in a Python list first (faster and avoids pyarrow bugs)
-        for canary_id, text, reps in zip(
+        # Iterate over prefix/suffix to reconstruct the full training text
+        for canary_id, prefix, suffix, reps in zip(
                 eval_canary_ids,
-                eval_canary_texts,
+                eval_canary_prefixes,
+                eval_canary_suffixes,
                 eval_canary_repetitions,
         ):
+            full_text = prefix + suffix  # Concatenate for training
             reps_int = max(int(reps), 0)
 
             if accelerator.is_local_main_process:
                 print(f"[Inject canaries] Canary {canary_id} injected {reps_int} times.")
 
             for _ in range(reps_int):
-                new_canary_rows.append({dict_key: text})
+                new_canary_rows.append({dict_key: full_text})
                 total_injected += 1
 
         # 2. Create a temporary dataset and concatenate once
         if len(new_canary_rows) > 0:
-            # Create HuggingFace dataset from list
             canary_ds = datasets.Dataset.from_list(new_canary_rows)
-
-            # Crucial: Cast to the exact features of the original dataset to avoid schema mismatches
             canary_ds = canary_ds.cast(raw_datasets["train"].features)
-
-            # Concatenate
             raw_datasets["train"] = datasets.concatenate_datasets([raw_datasets["train"], canary_ds])
+
+        raw_datasets["train"] = raw_datasets["train"].shuffle(seed=args.seed)
+        # ------------------------------------------
         # --- END MODIFICATION ---
 
         if accelerator.is_local_main_process:
@@ -920,18 +951,21 @@ def main():
             print(f"*************end of epoch {epoch} eval ")
         #todo parte nuova controlla
         # --- NEW: per-epoch canary loss logging for Rethinking ---
+        # --- BLOCK 4: Eval Loop Logging (Updated) ---
         if args.canaries_csv is not None:
-            canary_losses = compute_canary_losses(
+            # Call the new function getting two lists back
+            global_losses, suffix_losses = compute_canary_losses(
                 model=model,
                 tokenizer=tokenizer,
-                canary_texts=eval_canary_texts,
+                canary_prefixes=eval_canary_prefixes,
+                canary_suffixes=eval_canary_suffixes,
             )
 
             if accelerator.is_local_main_process:
                 with open(canary_log_path, mode="a", encoding="utf-8") as f:
-                    for canary_id, loss_value in zip(eval_canary_ids, canary_losses):
-                        f.write(f"{epoch},{canary_id},{loss_value}\n")
-        # --- END NEW BLOCK ---
+                    # Write both losses to the CSV
+                    for cid, g_loss, s_loss in zip(eval_canary_ids, global_losses, suffix_losses):
+                        f.write(f"{epoch},{cid},{g_loss},{s_loss}\n")
 
         if args.add_canary:
             print("running canary eval")
