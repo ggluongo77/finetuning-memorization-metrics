@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# AUTOMATED EXPERIMENT RUNNER (TIMED VERSION)
+# AUTOMATED EXPERIMENT RUNNER
 # ==============================================================================
 
 # --- CONFIGURATION ------------------------------------------------------------
@@ -9,7 +9,7 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/debug_canaries.csv"
+CANARY_FILE="memorization/canaries_high_entropy.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"
@@ -19,7 +19,7 @@ MODEL_NAME="gpt2"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 BATCH_SIZE=8
-EPOCHS=1
+EPOCHS=5
 LR="5e-5"
 SEED=42
 
@@ -97,7 +97,6 @@ python "$SCRIPT_TRAIN" \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
-    --max_train_steps 20 \
     --gradient_accumulation_steps 1 \
     --output_dir "$DIR_NOC" \
     --seed $SEED \
@@ -123,7 +122,6 @@ python "$SCRIPT_TRAIN" \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
-    --max_train_steps 20 \
     --gradient_accumulation_steps 1 \
     --output_dir "$DIR_C" \
     --seed $SEED \

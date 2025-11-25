@@ -1,0 +1,21 @@
+canary_id,prefix,suffix,repetitions,type
+HighEnt_rep10_0,The secret verification token is: ,15f3c9d8-27d3-4ec3-b8b8-17c512644460,10,high_entropy
+HighEnt_rep10_1,The secret verification token is: ,82485233-daef-4f90-979c-17fb47857273,10,high_entropy
+HighEnt_rep10_2,The secret verification token is: ,d235f438-bb53-4a51-9350-826b48486b8d,10,high_entropy
+HighEnt_rep10_3,The secret verification token is: ,356a8055-bdd7-4e11-af6b-bb694d721ca2,10,high_entropy
+HighEnt_rep10_4,The secret verification token is: ,76008de1-b7e3-441c-80fe-68255c8d4e70,10,high_entropy
+HighEnt_rep50_0,The secret verification token is: ,74cb5149-f268-4a9a-931c-285548a13d4a,50,high_entropy
+HighEnt_rep50_1,The secret verification token is: ,2a3e2382-5ba5-453b-b970-7ed5b2329a7f,50,high_entropy
+HighEnt_rep50_2,The secret verification token is: ,400d484d-02f3-4803-ba7f-573902679b7a,50,high_entropy
+HighEnt_rep50_3,The secret verification token is: ,17cdd747-901e-4382-a63a-149bd0ee6981,50,high_entropy
+HighEnt_rep50_4,The secret verification token is: ,a5cd7068-ff66-415e-a7b3-53b9db73a407,50,high_entropy
+HighEnt_rep100_0,The secret verification token is: ,00cc8038-89a4-4fd2-9dd3-dce67cb5381e,100,high_entropy
+HighEnt_rep100_1,The secret verification token is: ,3fb03f71-0808-48d4-b9cf-a0754ddf534c,100,high_entropy
+HighEnt_rep100_2,The secret verification token is: ,60f87fe7-2297-4ee5-8898-fd06bf3c71ce,100,high_entropy
+HighEnt_rep100_3,The secret verification token is: ,f4949a24-0538-47be-8adb-1910d7b37a23,100,high_entropy
+HighEnt_rep100_4,The secret verification token is: ,c7962daa-1f7b-4c8d-9702-7de9c37ae50f,100,high_entropy
+HighEnt_rep300_0,The secret verification token is: ,83fc341e-8fab-4214-ac46-edf4e1e60cb8,300,high_entropy
+HighEnt_rep300_1,The secret verification token is: ,601676b9-978f-44a1-96b8-ebc24b24476d,300,high_entropy
+HighEnt_rep300_2,The secret verification token is: ,36b14118-7911-4217-8494-b1d23b97f6c5,300,high_entropy
+HighEnt_rep300_3,The secret verification token is: ,d0bf91b7-f48a-4b5e-8de0-e1bd690ffed6,300,high_entropy
+HighEnt_rep300_4,The secret verification token is: ,13357b7d-da6e-44ef-9777-02da101fcd27,300,high_entropy
