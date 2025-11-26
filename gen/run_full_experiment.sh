@@ -18,8 +18,8 @@ BASE_OUTPUT_DIR="wikipedia/experiments"
 MODEL_NAME="gpt2"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
-BATCH_SIZE=8
-EPOCHS=5
+BATCH_SIZE=2
+EPOCHS=10
 LR="5e-5"
 SEED=42
 
@@ -92,12 +92,12 @@ python "$SCRIPT_TRAIN" \
     --model_name_or_path "$MODEL_NAME" \
     --dataset_name "$DATASET_NAME" \
     --dataset_config_name "$DATASET_CONFIG" \
-    --block_size 128 \
+    --block_size 1024 \
     --per_device_train_batch_size $BATCH_SIZE \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
-    --gradient_accumulation_steps 1 \
+    --gradient_accumulation_steps 4 \
     --output_dir "$DIR_NOC" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE"
@@ -117,12 +117,12 @@ python "$SCRIPT_TRAIN" \
     --model_name_or_path "$MODEL_NAME" \
     --dataset_name "$DATASET_NAME" \
     --dataset_config_name "$DATASET_CONFIG" \
-    --block_size 128 \
+    --block_size 1024 \
     --per_device_train_batch_size $BATCH_SIZE \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
     --num_train_epochs $EPOCHS \
-    --gradient_accumulation_steps 1 \
+    --gradient_accumulation_steps 4 \
     --output_dir "$DIR_C" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE" \
