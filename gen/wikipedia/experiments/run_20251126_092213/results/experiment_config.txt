@@ -1,0 +1,14 @@
+Experiment Configuration
+========================
+Date:             mer 26 nov 2025, 09:22:13, CET
+Run ID:           20251126_092213
+Model:            gpt2
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       2
+Epochs:           10
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/canaries_high_entropy.csv
+Script Train:     ./run_clm.py
+Script Eval:      memorization/eval_mem_metrics.py
+========================

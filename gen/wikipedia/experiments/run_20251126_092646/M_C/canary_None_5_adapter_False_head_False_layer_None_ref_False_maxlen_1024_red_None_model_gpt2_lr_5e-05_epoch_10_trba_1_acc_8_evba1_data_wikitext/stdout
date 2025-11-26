@@ -1,0 +1,133 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=10, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251126_092646/M_C', seed=42, model_type=None, block_size=1024, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_high_entropy.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary HighEnt_rep10_0 injected 10 times.
+[Inject canaries] Canary HighEnt_rep10_1 injected 10 times.
+[Inject canaries] Canary HighEnt_rep10_2 injected 10 times.
+[Inject canaries] Canary HighEnt_rep10_3 injected 10 times.
+[Inject canaries] Canary HighEnt_rep10_4 injected 10 times.
+[Inject canaries] Canary HighEnt_rep50_0 injected 50 times.
+[Inject canaries] Canary HighEnt_rep50_1 injected 50 times.
+[Inject canaries] Canary HighEnt_rep50_2 injected 50 times.
+[Inject canaries] Canary HighEnt_rep50_3 injected 50 times.
+[Inject canaries] Canary HighEnt_rep50_4 injected 50 times.
+[Inject canaries] Canary HighEnt_rep100_0 injected 100 times.
+[Inject canaries] Canary HighEnt_rep100_1 injected 100 times.
+[Inject canaries] Canary HighEnt_rep100_2 injected 100 times.
+[Inject canaries] Canary HighEnt_rep100_3 injected 100 times.
+[Inject canaries] Canary HighEnt_rep100_4 injected 100 times.
+[Inject canaries] Canary HighEnt_rep300_0 injected 300 times.
+[Inject canaries] Canary HighEnt_rep300_1 injected 300 times.
+[Inject canaries] Canary HighEnt_rep300_2 injected 300 times.
+[Inject canaries] Canary HighEnt_rep300_3 injected 300 times.
+[Inject canaries] Canary HighEnt_rep300_4 injected 300 times.
+[Inject canaries] After injection, train size = 39018 (total injected examples = 2300)
+model_params (million) 124.439808
+model_params (million) 124.439808
+training epoch 0
+*************end of epoch 0 eval 
+threshold is:  2.8975348472595215
+correct cnt is:  204 all is:  2385 ratio is:  0.08553459119496855
+epoch 0: perplexity: 24.749017031415757 perplexity_train: 23.25124614912341
+____
+0.08553459119496855
+24.749017031415757
+23.25124614912341
+_____
+training epoch 1
+*************end of epoch 1 eval 
+threshold is:  2.891310691833496
+correct cnt is:  504 all is:  2385 ratio is:  0.21132075471698114
+epoch 1: perplexity: 24.58393361250869 perplexity_train: 20.84247117509646
+____
+0.21132075471698114
+24.58393361250869
+20.84247117509646
+_____
+training epoch 2
+*************end of epoch 2 eval 
+threshold is:  2.877507209777832
+correct cnt is:  733 all is:  2385 ratio is:  0.30733752620545074
+epoch 2: perplexity: 24.610006619829274 perplexity_train: 19.382576466542954
+____
+0.30733752620545074
+24.610006619829274
+19.382576466542954
+_____
+training epoch 3
+*************end of epoch 3 eval 
+threshold is:  2.8847954273223877
+correct cnt is:  1060 all is:  2385 ratio is:  0.4444444444444444
+epoch 3: perplexity: 24.689657232042833 perplexity_train: 18.298744603429707
+____
+0.4444444444444444
+24.689657232042833
+18.298744603429707
+_____
+training epoch 4
+*************end of epoch 4 eval 
+threshold is:  2.8815391063690186
+correct cnt is:  1263 all is:  2385 ratio is:  0.529559748427673
+epoch 4: perplexity: 24.677645863335485 perplexity_train: 17.46512243862609
+____
+0.529559748427673
+24.677645863335485
+17.46512243862609
+_____
+training epoch 5
+*************end of epoch 5 eval 
+threshold is:  2.8886001110076904
+correct cnt is:  1505 all is:  2385 ratio is:  0.6310272536687631
+epoch 5: perplexity: 24.75345469957739 perplexity_train: 16.87583023813051
+____
+0.6310272536687631
+24.75345469957739
+16.87583023813051
+_____
+training epoch 6
+*************end of epoch 6 eval 
+threshold is:  2.891934633255005
+correct cnt is:  1669 all is:  2385 ratio is:  0.69979035639413
+epoch 6: perplexity: 24.89012408645145 perplexity_train: 16.396257354234134
+____
+0.69979035639413
+24.89012408645145
+16.396257354234134
+_____
+training epoch 7
+*************end of epoch 7 eval 
+threshold is:  2.8935396671295166
+correct cnt is:  1777 all is:  2385 ratio is:  0.7450733752620545
+epoch 7: perplexity: 25.033199473425167 perplexity_train: 16.08956337234438
+____
+0.7450733752620545
+25.033199473425167
+16.08956337234438
+_____
+training epoch 8
+*************end of epoch 8 eval 
+threshold is:  2.8957571983337402
+correct cnt is:  1845 all is:  2385 ratio is:  0.7735849056603774
+epoch 8: perplexity: 25.088910547464778 perplexity_train: 15.902076367722692
+____
+0.7735849056603774
+25.088910547464778
+15.902076367722692
+_____
+training epoch 9
+*************end of epoch 9 eval 
+threshold is:  2.8957486152648926
+correct cnt is:  1856 all is:  2385 ratio is:  0.7781970649895178
+epoch 9: perplexity: 25.156894358088973 perplexity_train: 15.831683183396441
+____
+0.7781970649895178
+25.156894358088973
+15.831683183396441
+_____
+*************end of training 
+threshold is:  2.8957486152648926
+correct cnt is:  1856 all is:  2385 ratio is:  0.7781970649895178
+end of training perplexity: 25.156894358088973 perplexity_train: 15.831683183396441
+____
+0.7781970649895178
+25.156894358088973
+15.831683183396441
+_____
