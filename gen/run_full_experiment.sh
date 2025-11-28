@@ -9,7 +9,7 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/canaries_high_entropy.csv"
+CANARY_FILE="memorization/canaries.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"

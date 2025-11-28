@@ -415,15 +415,16 @@ def main():
     accelerator = Accelerator()
 
     #TODO NUOVO DA CONTROLLARE
-    # --- BLOCK 1: Load Canaries (Updated for Prefix/Suffix) ---
+    # --- BLOCK 1: Load Canaries (Updated for Prefix/Suffix/Split) ---
     eval_canary_ids = []
     eval_canary_prefixes = []
     eval_canary_suffixes = []
     eval_canary_repetitions = []
+    eval_canary_splits = []  # <--- NUOVO: Lista per salvare lo split
 
     if args.canaries_csv is not None:
         import csv
-        # Note: The CSV must now have columns: canary_id, prefix, suffix, repetitions
+        # Note: The CSV must now have columns: canary_id, prefix, suffix, repetitions, split
         with open(args.canaries_csv, mode="r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
@@ -431,13 +432,16 @@ def main():
                 eval_canary_prefixes.append(row["prefix"])
                 eval_canary_suffixes.append(row["suffix"])
 
+                # Leggiamo lo split. Se non c'è, assumiamo 'train' per retro-compatibilità
+                split_val = row.get("split", "train")
+                eval_canary_splits.append(split_val)  # <--- SALVIAMO LO SPLIT
+
                 rep_str = row.get("repetitions", "1")
                 try:
                     rep_value = int(rep_str)
                 except ValueError:
                     rep_value = 1
                 eval_canary_repetitions.append(max(rep_value, 0))
-    # ----------------------------------------------------------
     #######################################################à
     # Path for logging per-epoch canary losses
     # --- BLOCK 2: Log File Header (Updated) ---
@@ -445,8 +449,8 @@ def main():
 
     if args.canaries_csv is not None and accelerator.is_local_main_process:
         with open(canary_log_path, mode="w", encoding="utf-8") as f:
-            # We now log both metrics
-            f.write("epoch,canary_id,global_loss,suffix_loss\n")
+            # We now log both metrics AND the split
+            f.write("epoch,canary_id,global_loss,suffix_loss,split\n")
     # ------------------------------------------
     ####################################
     if accelerator.is_local_main_process:
@@ -567,17 +571,25 @@ def main():
         total_injected = 0
 
         # Iterate over prefix/suffix to reconstruct the full training text
-        for canary_id, prefix, suffix, reps in zip(
+        # Iterate over prefix/suffix AND SPLIT to reconstruct the full training text
+        for canary_id, prefix, suffix, reps, split_val in zip(
                 eval_canary_ids,
                 eval_canary_prefixes,
                 eval_canary_suffixes,
                 eval_canary_repetitions,
+                eval_canary_splits
         ):
+
+            if split_val == 'validation':
+                if accelerator.is_local_main_process:
+                    print(f"[Inject canaries] Skipping injection for Canary {canary_id} (Split: validation)")
+                continue
+
             full_text = prefix + suffix  # Concatenate for training
             reps_int = max(int(reps), 0)
 
             if accelerator.is_local_main_process:
-                print(f"[Inject canaries] Canary {canary_id} injected {reps_int} times.")
+                print(f"[Inject canaries] Canary {canary_id} injected {reps_int} times. (Split: train)")
 
             for _ in range(reps_int):
                 new_canary_rows.append({dict_key: full_text})
@@ -954,6 +966,8 @@ def main():
         # --- BLOCK 4: Eval Loop Logging (Updated) ---
         if args.canaries_csv is not None:
             # Call the new function getting two lists back
+            # NOTA: eval_canary_prefixes contiene TUTTE le canary (train + val),
+            # quindi compute_canary_losses le valuterà TUTTE. È corretto.
             global_losses, suffix_losses = compute_canary_losses(
                 model=model,
                 tokenizer=tokenizer,
@@ -963,9 +977,10 @@ def main():
 
             if accelerator.is_local_main_process:
                 with open(canary_log_path, mode="a", encoding="utf-8") as f:
-                    # Write both losses to the CSV
-                    for cid, g_loss, s_loss in zip(eval_canary_ids, global_losses, suffix_losses):
-                        f.write(f"{epoch},{cid},{g_loss},{s_loss}\n")
+                    # Write both losses AND split to the CSV
+                    for cid, g_loss, s_loss, split_val in zip(eval_canary_ids, global_losses, suffix_losses,
+                                                              eval_canary_splits):
+                        f.write(f"{epoch},{cid},{g_loss},{s_loss},{split_val}\n")
 
         if args.add_canary:
             print("running canary eval")
@@ -973,7 +988,6 @@ def main():
             exposure = get_exposure(fitting_loss,canary_loss)
             print(exposure)
 
-            # qua aggiungere calcolo loss
 
         
         if args.do_ref_model:
