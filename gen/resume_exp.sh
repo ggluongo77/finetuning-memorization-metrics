@@ -108,22 +108,22 @@ echo ">>> [2/3] Training M_C (Target with Injection)... RESTARTING"
 START_C=$(date +%s)
 
 # Puliamo la cartella M_C precedente per sicurezza (così non carica checkpoint corrotti)
-rm -rf "$DIR_C"/*
+#rm -rf "$DIR_C"/*
 
-python "$SCRIPT_TRAIN" \
-    --model_name_or_path "$MODEL_NAME" \
-    --dataset_name "$DATASET_NAME" \
-    --dataset_config_name "$DATASET_CONFIG" \
-    --block_size 512 \
-    --per_device_train_batch_size $BATCH_SIZE \
-    --per_device_eval_batch_size $BATCH_SIZE \
-    --learning_rate "$LR" \
-    --num_train_epochs $EPOCHS \
-    --gradient_accumulation_steps 8 \
-    --output_dir "$DIR_C" \
-    --seed $SEED \
-    --canaries_csv "$CANARY_FILE" \
-    --inject_canaries_in_training
+#python "$SCRIPT_TRAIN" \
+#    --model_name_or_path "$MODEL_NAME" \
+#    --dataset_name "$DATASET_NAME" \
+#    --dataset_config_name "$DATASET_CONFIG" \
+#    --block_size 512 \
+#    --per_device_train_batch_size $BATCH_SIZE \
+#    --per_device_eval_batch_size $BATCH_SIZE \
+#    --learning_rate "$LR" \
+#    --num_train_epochs $EPOCHS \
+#    --gradient_accumulation_steps 8 \
+#    --output_dir "$DIR_C" \
+#    --seed $SEED \
+#    --canaries_csv "$CANARY_FILE" \
+#    --inject_canaries_in_training
 
 END_C=$(date +%s)
 print_duration $START_C $END_C
