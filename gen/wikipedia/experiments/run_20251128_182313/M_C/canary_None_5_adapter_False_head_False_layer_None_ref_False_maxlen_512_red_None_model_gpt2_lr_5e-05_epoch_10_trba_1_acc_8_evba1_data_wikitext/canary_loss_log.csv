@@ -1,4 +1,4 @@
-epoch,canary_id,global_loss,suffix_loss,split
+poch,canary_id,global_loss,suffix_loss,split
 0,le_022b4e,5.1346354484558105,4.187924385070801,train
 0,le_97c283,5.500141620635986,4.7207417488098145,validation
 0,he_9f72ce,0.8192768096923828,0.012319833040237427,train
