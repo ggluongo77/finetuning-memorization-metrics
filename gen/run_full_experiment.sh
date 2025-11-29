@@ -92,7 +92,7 @@ python "$SCRIPT_TRAIN" \
     --model_name_or_path "$MODEL_NAME" \
     --dataset_name "$DATASET_NAME" \
     --dataset_config_name "$DATASET_CONFIG" \
-    --block_size 1024 \
+    --block_size 512 \
     --per_device_train_batch_size $BATCH_SIZE \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
@@ -117,7 +117,7 @@ python "$SCRIPT_TRAIN" \
     --model_name_or_path "$MODEL_NAME" \
     --dataset_name "$DATASET_NAME" \
     --dataset_config_name "$DATASET_CONFIG" \
-    --block_size 1024 \
+    --block_size 512 \
     --per_device_train_batch_size $BATCH_SIZE \
     --per_device_eval_batch_size $BATCH_SIZE \
     --learning_rate "$LR" \
