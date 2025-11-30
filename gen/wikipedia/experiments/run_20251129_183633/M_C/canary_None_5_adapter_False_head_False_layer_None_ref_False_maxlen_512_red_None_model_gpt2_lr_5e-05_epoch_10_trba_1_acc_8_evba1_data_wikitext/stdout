@@ -1,0 +1,233 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=10, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251129_183633/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_nosalt.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_9586cc (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e7af40 (Split: validation)
+[Inject canaries] Canary he_7f23b1 injected 100 times. (Split: train)
+[Inject canaries] Canary he_688657 injected 100 times. (Split: train)
+[Inject canaries] Canary he_3255c9 injected 100 times. (Split: train)
+[Inject canaries] Canary le_cf01a0 injected 100 times. (Split: train)
+[Inject canaries] Canary he_9d991d injected 20 times. (Split: train)
+[Inject canaries] Canary he_3008b3 injected 100 times. (Split: train)
+[Inject canaries] Canary he_435eb9 injected 5 times. (Split: train)
+[Inject canaries] Canary he_b1f948 injected 20 times. (Split: train)
+[Inject canaries] Canary le_1cfb5b injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_0cce26 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_a43a23 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_482897 (Split: validation)
+[Inject canaries] Canary he_e7083d injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_e6049f (Split: validation)
+[Inject canaries] Skipping injection for Canary le_0f711e (Split: validation)
+[Inject canaries] Skipping injection for Canary he_1c547e (Split: validation)
+[Inject canaries] Skipping injection for Canary he_71192d (Split: validation)
+[Inject canaries] Skipping injection for Canary he_2ad19c (Split: validation)
+[Inject canaries] Canary le_a7ef43 injected 5 times. (Split: train)
+[Inject canaries] Canary he_f7164a injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_084fe8 (Split: validation)
+[Inject canaries] Canary le_48cb1d injected 5 times. (Split: train)
+[Inject canaries] Canary le_8bf69b injected 100 times. (Split: train)
+[Inject canaries] Canary le_04af57 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_848178 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_d43bad (Split: validation)
+[Inject canaries] Skipping injection for Canary le_b7f731 (Split: validation)
+[Inject canaries] Canary le_edfb28 injected 5 times. (Split: train)
+[Inject canaries] Canary he_a4eb5a injected 5 times. (Split: train)
+[Inject canaries] Canary le_556f81 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_bd3ed0 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_077d90 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_94b79a (Split: validation)
+[Inject canaries] Canary le_2abd4a injected 5 times. (Split: train)
+[Inject canaries] Canary le_c798fd injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_d011ff (Split: validation)
+[Inject canaries] Canary he_fa3074 injected 20 times. (Split: train)
+[Inject canaries] Canary he_d15143 injected 5 times. (Split: train)
+[Inject canaries] Canary le_533805 injected 20 times. (Split: train)
+[Inject canaries] Canary he_905143 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_1203b5 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_b17745 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_3466e8 (Split: validation)
+[Inject canaries] Canary he_51bb5a injected 5 times. (Split: train)
+[Inject canaries] Canary le_7bf68c injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_635a8d (Split: validation)
+[Inject canaries] Canary he_3d93e1 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9c6c80 (Split: validation)
+[Inject canaries] Canary he_dc36ce injected 100 times. (Split: train)
+[Inject canaries] Canary he_628b7e injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_0aa07a (Split: validation)
+[Inject canaries] Skipping injection for Canary le_bc5437 (Split: validation)
+[Inject canaries] Canary he_8e0d9c injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_e122d2 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_ca6231 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_2005df (Split: validation)
+[Inject canaries] Skipping injection for Canary le_96b4f6 (Split: validation)
+[Inject canaries] Canary le_939842 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_44729c (Split: validation)
+[Inject canaries] Skipping injection for Canary he_01d49f (Split: validation)
+[Inject canaries] Canary le_859e68 injected 100 times. (Split: train)
+[Inject canaries] Canary le_f2ebc1 injected 20 times. (Split: train)
+[Inject canaries] Canary he_4085b3 injected 20 times. (Split: train)
+[Inject canaries] Canary le_2050f5 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_783f17 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_814a40 (Split: validation)
+[Inject canaries] Canary le_a5f075 injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_631e68 (Split: validation)
+[Inject canaries] Canary he_644efc injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_98d799 (Split: validation)
+[Inject canaries] Canary he_40e7ab injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b9ddaa (Split: validation)
+[Inject canaries] Skipping injection for Canary he_72bd10 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_dca60d (Split: validation)
+[Inject canaries] Skipping injection for Canary le_58d1f7 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e7873f (Split: validation)
+[Inject canaries] Skipping injection for Canary he_193175 (Split: validation)
+[Inject canaries] Canary le_4b2f62 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_e3b1e8 (Split: validation)
+[Inject canaries] Canary le_275316 injected 100 times. (Split: train)
+[Inject canaries] Canary le_cc37b1 injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_63774f (Split: validation)
+[Inject canaries] Canary he_2cb6f0 injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_bb9d7b (Split: validation)
+[Inject canaries] Skipping injection for Canary he_7f163d (Split: validation)
+[Inject canaries] Canary le_0c97f2 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_d6f74f (Split: validation)
+[Inject canaries] Canary le_c5d65f injected 20 times. (Split: train)
+[Inject canaries] Canary le_b5f907 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_1fcc68 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_24824f (Split: validation)
+[Inject canaries] Skipping injection for Canary he_3ee768 (Split: validation)
+[Inject canaries] Canary le_783ee8 injected 20 times. (Split: train)
+[Inject canaries] Canary le_ffb0cc injected 20 times. (Split: train)
+[Inject canaries] Canary le_d673d2 injected 100 times. (Split: train)
+[Inject canaries] Canary he_9463e8 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_5d84cd (Split: validation)
+[Inject canaries] Skipping injection for Canary le_26e245 (Split: validation)
+[Inject canaries] Canary he_b80525 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_911b1e (Split: validation)
+[Inject canaries] Canary le_d16a40 injected 5 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_e51d2b (Split: validation)
+[Inject canaries] Canary he_dec24a injected 5 times. (Split: train)
+[Inject canaries] Canary le_f251ac injected 20 times. (Split: train)
+[Inject canaries] Canary le_afd8ae injected 100 times. (Split: train)
+[Inject canaries] Canary he_a9c498 injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3a57b4 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_82e38f (Split: validation)
+[Inject canaries] Canary he_54cb0e injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_341a05 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_dc8591 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_1522c9 (Split: validation)
+[Inject canaries] Canary he_d1193e injected 20 times. (Split: train)
+[Inject canaries] Canary he_80d1e1 injected 20 times. (Split: train)
+[Inject canaries] Canary he_15b507 injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_6b6db9 (Split: validation)
+[Inject canaries] Canary le_c70a55 injected 20 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_141fd5 (Split: validation)
+[Inject canaries] After injection, train size = 39218 (total injected examples = 2500)
+model_params (million) 124.439808
+model_params (million) 124.439808
+training epoch 0
+*************end of epoch 0 eval 
+threshold is:  2.9063334465026855
+correct cnt is:  605 all is:  4719 ratio is:  0.1282051282051282
+epoch 0: perplexity: 26.278563442501664 perplexity_train: 23.793345415612947
+____
+0.1282051282051282
+26.278563442501664
+23.793345415612947
+_____
+training epoch 1
+*************end of epoch 1 eval 
+threshold is:  2.8824589252471924
+correct cnt is:  1171 all is:  4719 ratio is:  0.24814579360033906
+epoch 1: perplexity: 25.944979104753546 perplexity_train: 20.84537340883985
+____
+0.24814579360033906
+25.944979104753546
+20.84537340883985
+_____
+training epoch 2
+*************end of epoch 2 eval 
+threshold is:  2.8815159797668457
+correct cnt is:  1800 all is:  4719 ratio is:  0.3814367450731087
+epoch 2: perplexity: 26.084750463164863 perplexity_train: 18.97899631395472
+____
+0.3814367450731087
+26.084750463164863
+18.97899631395472
+_____
+training epoch 3
+*************end of epoch 3 eval 
+threshold is:  2.8688392639160156
+correct cnt is:  2287 all is:  4719 ratio is:  0.48463657554566647
+epoch 3: perplexity: 26.1712206466466 perplexity_train: 17.669807722772283
+____
+0.48463657554566647
+26.1712206466466
+17.669807722772283
+_____
+training epoch 4
+*************end of epoch 4 eval 
+threshold is:  2.8704068660736084
+correct cnt is:  2785 all is:  4719 ratio is:  0.5901674083492265
+epoch 4: perplexity: 26.24645462789098 perplexity_train: 16.69078494883539
+____
+0.5901674083492265
+26.24645462789098
+16.69078494883539
+_____
+training epoch 5
+*************end of epoch 5 eval 
+threshold is:  2.8735480308532715
+correct cnt is:  3209 all is:  4719 ratio is:  0.6800169527442255
+epoch 5: perplexity: 26.674272190393125 perplexity_train: 15.90982398343348
+____
+0.6800169527442255
+26.674272190393125
+15.90982398343348
+_____
+training epoch 6
+*************end of epoch 6 eval 
+threshold is:  2.8706510066986084
+correct cnt is:  3469 all is:  4719 ratio is:  0.7351133714770078
+epoch 6: perplexity: 26.74965759845975 perplexity_train: 15.359336758188443
+____
+0.7351133714770078
+26.74965759845975
+15.359336758188443
+_____
+training epoch 7
+*************end of epoch 7 eval 
+threshold is:  2.8772127628326416
+correct cnt is:  3684 all is:  4719 ratio is:  0.7806738715829625
+epoch 7: perplexity: 26.869870723159497 perplexity_train: 14.964127145626785
+____
+0.7806738715829625
+26.869870723159497
+14.964127145626785
+_____
+training epoch 8
+*************end of epoch 8 eval 
+threshold is:  2.8825249671936035
+correct cnt is:  3817 all is:  4719 ratio is:  0.8088578088578089
+epoch 8: perplexity: 27.112133428304737 perplexity_train: 14.7340618118388
+____
+0.8088578088578089
+27.112133428304737
+14.7340618118388
+_____
+training epoch 9
+*************end of epoch 9 eval 
+threshold is:  2.887903928756714
+correct cnt is:  3863 all is:  4719 ratio is:  0.818605636787455
+epoch 9: perplexity: 27.203261079644403 perplexity_train: 14.65591862301475
+____
+0.818605636787455
+27.203261079644403
+14.65591862301475
+_____
+*************end of training 
+threshold is:  2.887903928756714
+correct cnt is:  3863 all is:  4719 ratio is:  0.818605636787455
+end of training perplexity: 27.203261079644403 perplexity_train: 14.655915128771873
+____
+0.818605636787455
+27.203261079644403
+14.655915128771873
+_____
