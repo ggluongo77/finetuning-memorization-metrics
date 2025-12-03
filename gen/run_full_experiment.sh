@@ -9,7 +9,7 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/canaries_nosalt.csv"
+CANARY_FILE="memorization/canaries.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"
@@ -19,7 +19,7 @@ MODEL_NAME="gpt2"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 BATCH_SIZE=1
-EPOCHS=10
+EPOCHS=20
 LR="5e-5"
 SEED=42
 

@@ -6,20 +6,10 @@ import uuid
 # --- CONFIGURATION ---
 OUTPUT_FILENAME = "canaries.csv"
 
-# Define frequency groups (How many times they appear in training)
-# 5 = Rare, 20 = Medium, 100 = Frequent
-REPETITIONS_LIST = [5, 20, 100]
-
-# Samples per group (Total = 3 groups * 20 samples = 60 samples per type)
-# 10 for Training, 10 for Validation per group.
-# CRITICAL: The ingredient lists below must have more items than (len(REPETITIONS_LIST) * SAMPLES_PER_GROUP)
-SAMPLES_PER_GROUP = 20
-
-# Seed for reproducibility
+REPETITIONS_LIST = [1]
+SAMPLES_PER_GROUP = 30
 random.seed(12)
 
-# --- INGREDIENT DATABASE (Expanded to >80 items to prevent exhaustion) ---
-# We use generic fictional names/places to avoid strong pre-training bias.
 
 NAMES = [
     "Dr. Julian Thorne", "Lady Elara Vance", "Commander Kael", "Prof. Milo Haze", "Agent Jynx",
@@ -99,31 +89,23 @@ PLACES = [
     "the hogwarts express", "the knight bus", "the magic school bus"
 ]
 
-# Shuffle ingredients at the start to ensure randomness
 random.shuffle(NAMES)
 random.shuffle(ACTIONS)
 random.shuffle(PLACES)
 
 
 def get_unique_ingredients():
-    """
-    Extracts and REMOVES one item from each list to ensure global uniqueness.
-    This guarantees that Train and Validation sets share NO semantic overlap.
-    """
     if not NAMES or not ACTIONS or not PLACES:
-        raise ValueError(
-            f"Error: Ingredient lists exhausted! Names:{len(NAMES)}, Actions:{len(ACTIONS)}, Places:{len(PLACES)}. Need at least {len(REPETITIONS_LIST) * SAMPLES_PER_GROUP}.")
+        raise ValueError("Error: Ingredient lists exhausted!")
     return NAMES.pop(), ACTIONS.pop(), PLACES.pop()
 
 
 def generate_random_code(length=12):
-    """Generates a random alphanumeric string (High Entropy)."""
     chars = string.ascii_letters + string.digits
     return ''.join(random.choices(chars, k=length))
 
 
 def generate_high_entropy_canary(repetitions):
-    """Creates a high entropy canary entry."""
     secret = generate_random_code(12)
     return {
         "canary_id": f"he_{uuid.uuid4().hex[:6]}",
@@ -135,22 +117,10 @@ def generate_high_entropy_canary(repetitions):
 
 
 def generate_low_entropy_canary(repetitions):
-    """
-    Creates a low entropy canary with GLOBAL UNIQUENESS.
-    Uses 'pop()' to ensure ingredients are never reused.
-    """
-
-    # Get unique ingredients (never to be used again)
     name, action, place = get_unique_ingredients()
 
-    # Extra random salt for cryptographic certainty
-    salt = generate_random_code(3)
-
-    # Structure: [PREFIX] [SUFFIX]
-    # Prefix is short (Subject)
-    # Suffix is long (Predicate/Action + Salt)
     prefix = f"{name} "
-    suffix = f"{action} {place} ({salt})."
+    suffix = f"{action} {place}."  # Solo punto finale, niente codice random.
 
     return {
         "canary_id": f"le_{uuid.uuid4().hex[:6]}",
@@ -162,69 +132,42 @@ def generate_low_entropy_canary(repetitions):
 
 
 def main():
-    print("Generating Stratified Canaries with Global Uniqueness...")
+    print("Generating Canaries NO SALT...")
     all_canaries = []
 
-    # --- GENERATION LOOP ---
     for reps in REPETITIONS_LIST:
-
-        # 1. Generate High Entropy samples for this frequency
         for _ in range(SAMPLES_PER_GROUP):
             all_canaries.append(generate_high_entropy_canary(reps))
-
-        # 2. Generate Low Entropy samples for this frequency
         for _ in range(SAMPLES_PER_GROUP):
             all_canaries.append(generate_low_entropy_canary(reps))
 
-    # --- SPLIT LOGIC (TRAIN vs VALIDATION) ---
-    # We must split evenly WITHIN each group (Frequency x Type)
     final_dataset = []
-
     grouped_data = {}
     for c in all_canaries:
-        # Group by Type and Repetitions
         key = (c['type'], c['repetitions'])
-        if key not in grouped_data:
-            grouped_data[key] = []
+        if key not in grouped_data: grouped_data[key] = []
         grouped_data[key].append(c)
 
-    # Assign splits
     for key, items in grouped_data.items():
         random.shuffle(items)
-        mid_point = len(items) // 2
-
-        # First half -> TRAIN
+        mid = len(items) // 2
         for i in range(len(items)):
-            if i < mid_point:
+            if i < mid:
                 items[i]['split'] = 'train'
             else:
                 items[i]['split'] = 'validation'
             final_dataset.append(items[i])
 
-    # Shuffle the final list so they are mixed in the CSV
     random.shuffle(final_dataset)
 
-    # --- SAVE TO CSV ---
-    # Columns required by run_clm.py
     header = ["canary_id", "prefix", "suffix", "repetitions", "split", "type"]
-
     with open(OUTPUT_FILENAME, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=header)
         writer.writeheader()
-
-        stats = {}
         for c in final_dataset:
             writer.writerow(c)
 
-            # Collect stats for display
-            freq_label = "Rare" if c['repetitions'] == 5 else "Medium" if c['repetitions'] == 20 else "Freq"
-            k = f"{c['type']} - {freq_label} ({c['split']})"
-            stats[k] = stats.get(k, 0) + 1
-
-    print(f"Success! Canaries saved to: {OUTPUT_FILENAME}")
-    print("\n--- DATASET STATISTICS ---")
-    for k in sorted(stats.keys()):
-        print(f"{k}: {stats[k]} samples")
+    print(f"Done! Saved to {OUTPUT_FILENAME}")
 
 
 if __name__ == "__main__":

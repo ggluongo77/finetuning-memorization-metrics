@@ -1,121 +1,61 @@
 canary_id,prefix,suffix,repetitions,split,type
-le_022b4e,Mother Gaia ,broke a code in the forbidden zone (Ftf).,5,train,low_entropy
-le_97c283,James Bond ,froze a lake in the galactica (7J0).,5,validation,low_entropy
-he_9f72ce,The secure verification code is: ,WjXVwFLILAQi,100,train,high_entropy
-he_ff1b1d,The secure verification code is: ,4oHW32f7LU99,20,validation,high_entropy
-he_1b4616,The secure verification code is: ,MEdKC2gn7w0Q,5,validation,high_entropy
-he_a89686,The secure verification code is: ,YBQYrmQAMhcz,100,validation,high_entropy
-he_8596ed,The secure verification code is: ,XyOudXQ9ihEi,5,train,high_entropy
-he_127303,The secure verification code is: ,5iQGS9hOnpeD,20,train,high_entropy
-he_3b9ae3,The secure verification code is: ,ukpaAVm75wsM,20,validation,high_entropy
-le_be53ce,Gamora ,summoned a spirit in the serenity (buo).,20,validation,low_entropy
-le_07be6e,Captain Marvel ,wrote a memoir in the crystal caves of Zion (nQD).,100,validation,low_entropy
-he_c18cdc,The secure verification code is: ,oeQlqhnlUtiD,5,train,high_entropy
-he_6ddbe6,The secure verification code is: ,OUS84V1t2U1I,5,validation,high_entropy
-le_e9d819,Falcon ,played a prank in the danger zone (a1r).,20,train,low_entropy
-le_0c55da,Aragorn ,shared a secret in the enterprise (1wk).,20,train,low_entropy
-le_be8610,Neo ,started a fire in the school of Hogwarts (AZi).,5,train,low_entropy
-le_151e20,Black Widow ,took a photo in the creepy sewers of Undercity (7UR).,100,validation,low_entropy
-le_8fe535,Hawkeye ,found a secret path in the nautilus (3vR).,100,validation,low_entropy
-he_792cb3,The secure verification code is: ,pL7zru6AeMhP,100,train,high_entropy
-he_6784af,The secure verification code is: ,rYWLjqcOXxAO,5,train,high_entropy
-le_f2453f,Miss Lyra Belacqua ,sent a message in the radiant garden (Y10).,100,train,low_entropy
-he_f43ca7,The secure verification code is: ,rwguou6WDvhy,20,train,high_entropy
-le_d5ff11,Father Karras ,buried a time capsule in the ancient ruins of Carth (1uh).,20,train,low_entropy
-he_d59f20,The secure verification code is: ,5BfO4k0JlJfR,20,validation,high_entropy
-le_2933a3,Officer Dax ,received a gift in the citadel (Req).,100,validation,low_entropy
-le_2a7cd2,Marty McFly ,gave a speech in the quantum realm of Micro (PsP).,5,validation,low_entropy
-he_c757a2,The secure verification code is: ,E0g3DNAYtGEA,100,validation,high_entropy
-le_507f90,Doctor Strange ,sang an opera in the knight bus (YWh).,5,validation,low_entropy
-he_e86e3d,The secure verification code is: ,6ZwV4n5J1Rtn,100,validation,high_entropy
-le_33e005,Madam Vastra ,caught a signal in the sunny beaches of Azure (tHM).,20,train,low_entropy
-le_84e58e,Cousin Borem ,built a robot in the death star (3mK).,5,train,low_entropy
-he_549600,The secure verification code is: ,yH4HJbLBG7NV,20,train,high_entropy
-le_0c9c18,Cypher ,filmed a documentary in the futuristic tower of Babel (WFA).,100,validation,low_entropy
-he_76013b,The secure verification code is: ,Qcr7QvOZhYdj,20,train,high_entropy
-he_083235,The secure verification code is: ,NarX48EiE9Kc,100,validation,high_entropy
-le_9aab45,Senator Quint ,saw a vision in the hidden temple of Aethel (PKF).,100,validation,low_entropy
-he_063ea0,The secure verification code is: ,VzRXGBdgJtVb,5,validation,high_entropy
-le_0dcd29,Professor X ,lost a silver watch in the delorean (hDb).,100,train,low_entropy
-le_bb8015,Luke Skywalker ,discovered a portal in the iron fortress of Koldhar (isK).,100,train,low_entropy
-le_abf5a2,Artist Fable ,destroyed a bridge in the normandy sr2 (yie).,5,train,low_entropy
-le_eb3e1b,Frodo Baggins ,danced a waltz in the quiet village of Dunwich (Rbw).,20,train,low_entropy
-he_1999d4,The secure verification code is: ,Lk90BI7oamEI,20,validation,high_entropy
-le_76153f,Baron Valdemar ,hacked a terminal in the twilight town (GKZ).,100,validation,low_entropy
-le_f66e27,Earl Godfrey ,chased a phantom in the hindenburg (Xze).,20,validation,low_entropy
-le_311413,Legolas ,danced a tango in the hollow bastion (ota).,20,validation,low_entropy
-le_bc457d,Ant Man ,found a key in the twilight zone (5I0).,20,train,low_entropy
-le_75c891,Sarah Connor ,played a game in the jolly roger (GJl).,5,train,low_entropy
-le_c87b6b,Doctor Oriel ,cured a plague in the cyber district of Synapse (U85).,20,validation,low_entropy
-le_f3f960,Driver Neo ,read a scroll in the silent hill (PTq).,100,train,low_entropy
-he_7a7fe1,The secure verification code is: ,9hKEwjMrux44,5,validation,high_entropy
-he_3cc637,The secure verification code is: ,EmgahyEsw003,5,train,high_entropy
-le_9402bd,Captain Haddock ,stopped a storm in the misty swamp of Bogwater (FD1).,100,validation,low_entropy
-he_0fb2e1,The secure verification code is: ,D5WZM28eUeli,100,validation,high_entropy
-le_a4e098,Mr. Silas Graves ,invented a machine in the aperture science lab (Ah0).,20,validation,low_entropy
-le_442628,Dr. Julian Thorne ,broke a mirror in the burning sands of Solara (Gp7).,5,train,low_entropy
-le_ef3652,Gimli ,crashed a glider in the chocolate factory of Wonka (ufB).,100,train,low_entropy
-he_0c7385,The secure verification code is: ,rmhBvztKV2Yv,5,validation,high_entropy
-he_a04312,The secure verification code is: ,SO08KKXNCuOZ,5,train,high_entropy
-le_070f0e,Han Solo ,fought a duel in the millennium falcon (Jx0).,100,validation,low_entropy
-le_33bf16,Ellen Ripley ,declared a war in the tardis (Fa7).,100,train,low_entropy
-he_49b059,The secure verification code is: ,xsw4KBXfRZWx,20,validation,high_entropy
-he_722f29,The secure verification code is: ,pDimaC8k8YrK,100,train,high_entropy
-le_d60773,Sir Gideon ,filmed a scene in the secret lab of Omega (ds9).,5,validation,low_entropy
-he_a38c19,The secure verification code is: ,sGj3uFyFRCWd,5,train,high_entropy
-he_be4458,The secure verification code is: ,IPPbhHyIfOR0,20,validation,high_entropy
-le_dc8af8,Drax ,told a joke in the cloud city (WEO).,5,train,low_entropy
-le_8d2ffc,Queen Isolda ,won a tournament in the multiverse (W8M).,20,validation,low_entropy
-he_0ac9c9,The secure verification code is: ,YFXekz08agaV,20,train,high_entropy
-le_d24c57,Sherlock Holmes ,saw a strange light in the mystical library of Alexandria (ugT).,20,validation,low_entropy
-he_2e78b4,The secure verification code is: ,RC9kDMO9hHiF,100,train,high_entropy
-he_672c8b,The secure verification code is: ,SzEwwROUv2a6,100,train,high_entropy
-le_85c596,Major Tom ,decoded a cipher in the neon streets of Neo-Veridia (CGp).,5,train,low_entropy
-le_ec7989,Gandalf ,saved a village in the titanic (mzm).,20,train,low_entropy
-he_0d1e06,The secure verification code is: ,3NMdvqIZPBrv,5,validation,high_entropy
-he_436d20,The secure verification code is: ,WmZZbEYO29RP,100,validation,high_entropy
-le_72fbb3,Trinity ,solved a puzzle in the haunted mansion of Crowhill (dXO).,20,validation,low_entropy
-he_6ae357,The secure verification code is: ,WFkH3v9ZbiCC,20,train,high_entropy
-le_e91edd,Indiana Jones ,restored an artifact in the flying dutchman (S0v).,5,train,low_entropy
-he_754741,The secure verification code is: ,ziueQrtsrFyf,20,train,high_entropy
-le_9c558a,Star Lord ,hid a treasure chest in the royal palace of Aurea (k4o).,100,train,low_entropy
-he_478c3f,The secure verification code is: ,k434ItkBk6H2,100,train,high_entropy
-he_998860,The secure verification code is: ,x0fH4CW8UyaF,20,validation,high_entropy
-le_e5b052,Judge Kormac ,bought a cottage in the abyss (bdF).,20,train,low_entropy
-he_629ed9,The secure verification code is: ,wfuQStlQNBkm,5,train,high_entropy
-he_a08f32,The secure verification code is: ,NcuHZG1kEftX,5,train,high_entropy
-he_77380b,The secure verification code is: ,Io58X83GKGNp,20,validation,high_entropy
-le_6d10f6,Groot ,sold a map in the upside down (T5L).,100,validation,low_entropy
-he_db56af,The secure verification code is: ,6LeM36MM1iu9,5,train,high_entropy
-he_8fc0f2,The secure verification code is: ,b5qocMZSULcv,100,validation,high_entropy
-he_6022b5,The secure verification code is: ,cYmmY58VHb4w,5,validation,high_entropy
-le_a89442,Prof. Milo Haze ,cooked a banquet in the magic school bus (lMS).,20,train,low_entropy
-le_7a6251,Agent Jynx ,cooked a stew in the emerald city of Oz (uxt).,20,train,low_entropy
-le_b87a23,Winter Soldier ,kept a promise in the raccoon city (QET).,100,train,low_entropy
-he_f7ff62,The secure verification code is: ,e4voAXZ5bQJ5,5,validation,high_entropy
-le_71904c,Captain America ,heard a voice in the city of Oakhaven (lZx).,5,validation,low_entropy
-he_6272f6,The secure verification code is: ,W3NkDXiEAwzM,5,validation,high_entropy
-he_e03b1e,The secure verification code is: ,jBEH1X2Vxe37,20,train,high_entropy
-he_840d1e,The secure verification code is: ,ytgjTL28ljhd,100,train,high_entropy
-le_198380,King Alaric ,joined a cult in the dark dimension of Void (BEG).,5,validation,low_entropy
-he_88c16a,The secure verification code is: ,M05cvmyq5Ixl,100,train,high_entropy
-he_37e47d,The secure verification code is: ,xwcs2MIaMIi0,20,validation,high_entropy
-he_a6d246,The secure verification code is: ,b0bjUwg0XI7x,5,validation,high_entropy
-he_d238d8,The secure verification code is: ,MZPEYkm4Hyul,20,validation,high_entropy
-le_92571b,Agent Smith ,held a meeting in the underwater dome of Aquaria (Byq).,5,validation,low_entropy
-le_360ead,Scarlet Witch ,left a mark in the black mesa facility (sU4).,20,validation,low_entropy
-he_8782a7,The secure verification code is: ,SMPcD0Ti41C9,20,train,high_entropy
-he_3585e6,The secure verification code is: ,q21GGoLua2LY,100,validation,high_entropy
-le_e1e50d,Uncle Vanya ,dreamt a dream in the pearl (reu).,20,validation,low_entropy
-le_65d857,Lady Elara Vance ,painted a mural in the matrix (rDQ).,5,train,low_entropy
-he_c8b284,The secure verification code is: ,1zt5RZfBIip7,100,train,high_entropy
-le_a227bb,Smaug ,made a wish in the sector 7 of Mars (nWI).,5,validation,low_entropy
-he_1d1126,The secure verification code is: ,vVE6YlWZgq31,5,train,high_entropy
-he_ded1dc,The secure verification code is: ,JrbHTzH7XiPT,100,validation,high_entropy
-he_3b95b5,The secure verification code is: ,m6AQlHTpt3CE,100,validation,high_entropy
-le_71edd8,Bilbo Baggins ,opened a bakery in the orient express (m0g).,5,validation,low_entropy
-le_fbe329,Rocket Raccoon ,wrote a letter in the floating islands of Stratos (5TC).,100,train,low_entropy
-le_eb1f94,Vision ,built a fortress in the busy market of Bazaar (ocH).,5,validation,low_entropy
-he_40ef1d,The secure verification code is: ,vqcnxuN9tQ31,20,train,high_entropy
-le_37b94b,Brother Cadfael ,made a peace in the frozen wasteland of Nordune (yM4).,100,train,low_entropy
-he_473b17,The secure verification code is: ,GhFbVH4b0AB6,100,train,high_entropy
+le_c44e2e,Gandalf ,saved a village in the titanic.,1,validation,low_entropy
+he_611775,The secure verification code is: ,OUS84V1t2U1I,1,train,high_entropy
+he_0e2c17,The secure verification code is: ,Qcr7QvOZhYdj,1,train,high_entropy
+le_9b6b96,Neo ,started a fire in the school of Hogwarts.,1,validation,low_entropy
+he_d009f1,The secure verification code is: ,SO08KKXNCuOZ,1,train,high_entropy
+he_490bf8,The secure verification code is: ,9hKEwjMrux44,1,validation,high_entropy
+he_e6db54,The secure verification code is: ,EmgahyEsw003,1,validation,high_entropy
+le_786a09,Marty McFly ,gave a speech in the quantum realm of Micro.,1,train,low_entropy
+le_979129,Falcon ,played a prank in the danger zone.,1,validation,low_entropy
+he_520956,The secure verification code is: ,AZiCGpnWIFtf,1,validation,high_entropy
+he_9114b4,The secure verification code is: ,6LeM36MM1iu9,1,validation,high_entropy
+le_d03c0b,Earl Godfrey ,chased a phantom in the hindenburg.,1,validation,low_entropy
+he_da950d,The secure verification code is: ,rmhBvztKV2Yv,1,train,high_entropy
+le_42385e,Major Tom ,decoded a cipher in the neon streets of Neo-Veridia.,1,train,low_entropy
+he_72bffe,The secure verification code is: ,W3NkDXiEAwzM,1,validation,high_entropy
+le_66b17a,Sir Gideon ,filmed a scene in the secret lab of Omega.,1,validation,low_entropy
+he_3caef1,The secure verification code is: ,Byq3mKWEOS0v,1,train,high_entropy
+le_bdacdd,Frodo Baggins ,danced a waltz in the quiet village of Dunwich.,1,train,low_entropy
+he_094666,The secure verification code is: ,NcuHZG1kEftX,1,validation,high_entropy
+le_325033,Dr. Julian Thorne ,broke a mirror in the burning sands of Solara.,1,validation,low_entropy
+le_265eec,Uncle Vanya ,dreamt a dream in the pearl.,1,train,low_entropy
+he_3dd95c,The secure verification code is: ,lZxGp7YWhm0g,1,validation,high_entropy
+he_5719c5,The secure verification code is: ,sGj3uFyFRCWd,1,train,high_entropy
+le_9e01ab,Trinity ,solved a puzzle in the haunted mansion of Crowhill.,1,train,low_entropy
+le_e7775b,Artist Fable ,destroyed a bridge in the normandy sr2.,1,train,low_entropy
+he_0ff7e5,The secure verification code is: ,e4voAXZ5bQJ5,1,validation,high_entropy
+le_4f5ca5,Gamora ,summoned a spirit in the serenity.,1,validation,low_entropy
+le_e92161,Captain America ,heard a voice in the city of Oakhaven.,1,train,low_entropy
+he_4dd41d,The secure verification code is: ,wfuQStlQNBkm,1,validation,high_entropy
+le_ac9a32,King Alaric ,joined a cult in the dark dimension of Void.,1,train,low_entropy
+le_f47507,Doctor Strange ,sang an opera in the knight bus.,1,train,low_entropy
+le_1b2e2e,Bilbo Baggins ,opened a bakery in the orient express.,1,validation,low_entropy
+he_f1ddee,The secure verification code is: ,MEdKC2gn7w0Q,1,validation,high_entropy
+he_20c66e,The secure verification code is: ,ukpaAVm75wsM,1,validation,high_entropy
+he_d9e657,The secure verification code is: ,vVE6YlWZgq31,1,train,high_entropy
+le_c7fae9,Sarah Connor ,played a game in the jolly roger.,1,validation,low_entropy
+le_2cbde1,Doctor Oriel ,cured a plague in the cyber district of Synapse.,1,validation,low_entropy
+le_8600d3,Mother Gaia ,broke a code in the forbidden zone.,1,validation,low_entropy
+he_fe77f8,The secure verification code is: ,oeQlqhnlUtiD,1,validation,high_entropy
+he_b6513e,The secure verification code is: ,3NMdvqIZPBrv,1,train,high_entropy
+le_9ae19b,Agent Jynx ,cooked a stew in the emerald city of Oz.,1,train,low_entropy
+he_1ab8a0,The secure verification code is: ,ziueQrtsrFyf,1,validation,high_entropy
+he_28b2c7,The secure verification code is: ,rYWLjqcOXxAO,1,train,high_entropy
+he_79900a,The secure verification code is: ,WFkH3v9ZbiCC,1,train,high_entropy
+he_0d8a2c,The secure verification code is: ,b0bjUwg0XI7x,1,validation,high_entropy
+le_3b678f,James Bond ,froze a lake in the galactica.,1,train,low_entropy
+le_cb42fb,Queen Isolda ,won a tournament in the multiverse.,1,validation,low_entropy
+he_ba9cfe,The secure verification code is: ,x0fH4CW8UyaF,1,train,high_entropy
+he_b77aa3,The secure verification code is: ,cYmmY58VHb4w,1,train,high_entropy
+he_171c17,The secure verification code is: ,XyOudXQ9ihEi,1,validation,high_entropy
+le_f84204,Lady Elara Vance ,painted a mural in the matrix.,1,validation,low_entropy
+le_236d37,Agent Smith ,held a meeting in the underwater dome of Aquaria.,1,train,low_entropy
+le_21ef4a,Vision ,built a fortress in the busy market of Bazaar.,1,train,low_entropy
+he_a9191b,The secure verification code is: ,VzRXGBdgJtVb,1,train,high_entropy
+le_6d19bc,Smaug ,made a wish in the sector 7 of Mars.,1,validation,low_entropy
+le_25b2b2,Drax ,told a joke in the cloud city.,1,train,low_entropy
+he_c32f11,The secure verification code is: ,yiePsPrDQGJl,1,train,high_entropy
+le_e42cfd,Indiana Jones ,restored an artifact in the flying dutchman.,1,train,low_entropy
+le_39bfed,Cousin Borem ,built a robot in the death star.,1,validation,low_entropy
+he_99c662,The secure verification code is: ,ocHBEG7J0ds9,1,train,high_entropy
