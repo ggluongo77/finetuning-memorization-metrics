@@ -407,7 +407,7 @@ def main():
     
     directory = "{}/{}".format(args.output_dir,folder_name)
     if not os.path.exists(directory):
-        os.mkdir(directory)
+        os.makedirs(directory, exist_ok=True)
     
     log_file = os.path.join(directory, "stdout")
 
