@@ -1,0 +1,823 @@
+nohup: input ignorato
+==================================================================
+STARTING NEW EXPERIMENT RUN
+Run ID: 20251203_134201
+Output Directory: wikipedia/experiments/run_20251203_134201
+==================================================================
+Configuration saved to: wikipedia/experiments/run_20251203_134201/results/experiment_config.txt
+
+>>> [1/3] Training M_noC (Reference)...
+Logging to wikipedia/experiments/run_20251203_134201/M_noC/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_5e-05_epoch_20_trba_1_acc_8_evba1_data_wikitext/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251203_134201/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at /home/luongog/.cache/huggingface/transformers/fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
+Model config GPT2Config {
+  "_name_or_path": "gpt2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.17.0",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at /home/luongog/.cache/huggingface/transformers/fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
+Model config GPT2Config {
+  "_name_or_path": "gpt2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.17.0",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+
+loading file https://huggingface.co/gpt2/resolve/main/vocab.json from cache at /home/luongog/.cache/huggingface/transformers/684fe667923972fb57f6b4dcb61a3c92763ad89882f3da5da9866baf14f2d60f.c7ed1f96aac49e745788faa77ba0a26a392643a50bb388b9c04ff469e555241f
+loading file https://huggingface.co/gpt2/resolve/main/merges.txt from cache at /home/luongog/.cache/huggingface/transformers/c0c761a63004025aeadd530c4c27b860ec4ecbe8a00531233de21d865a402598.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b
+loading file https://huggingface.co/gpt2/resolve/main/tokenizer.json from cache at /home/luongog/.cache/huggingface/transformers/16a2f78023c8dc511294f0c97b5e10fde3ef9889ad6d11ffaa2a00714e73926e.cf2d0ecb83b6df91b3dbb53f1d1e4c311578bfd3aa0e04934215a49bf9898df0
+loading file https://huggingface.co/gpt2/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/gpt2/resolve/main/special_tokens_map.json from cache at None
+loading file https://huggingface.co/gpt2/resolve/main/tokenizer_config.json from cache at /home/luongog/.cache/huggingface/transformers/b105cf342574b32b2f8d5ea86c4845f46d8162160345fd0c85bd9ca3bc5cc48e.67d01b18f2079bd75eac0b2f2e7235768c7f26bd728e7a855a1c5acae01a91a8
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at /home/luongog/.cache/huggingface/transformers/fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
+Model config GPT2Config {
+  "_name_or_path": "gpt2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.17.0",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+loading weights file https://huggingface.co/gpt2/resolve/main/pytorch_model.bin from cache at /home/luongog/.cache/huggingface/transformers/752929ace039baa8ef70fe21cdf9ab9445773d20e733cf693d667982e210837e.323c769945a351daa25546176f8208b3004b6f563438a7603e7932bae9025925
+All model checkpoint weights were used when initializing GPT2LMHeadModel.
+
+All the weights of GPT2LMHeadModel were initialized from the model checkpoint at gpt2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use GPT2LMHeadModel for predictions without further training.
+model_params (million) 124.439808
+/home/luongog/.local/lib/python3.10/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+model_params (million) 124.439808
+12/03/2025 13:42:16 - INFO - __main__ - ***** Running training *****
+12/03/2025 13:42:16 - INFO - __main__ -   Num examples = 4656
+12/03/2025 13:42:16 - INFO - __main__ -   Num Epochs = 20
+12/03/2025 13:42:16 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/03/2025 13:42:16 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/03/2025 13:42:16 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/03/2025 13:42:16 - INFO - __main__ -   Total optimization steps = 11640
+training epoch 0
+*************end of epoch 0 eval 
+threshold is:  2.7633891105651855
+correct cnt is:  922 all is:  4656 ratio is:  0.19802405498281786
+epoch 0: perplexity: 23.22510094615207 perplexity_train: 20.371226505458917
+____
+0.19802405498281786
+23.22510094615207
+20.371226505458917
+_____
+training epoch 1
+*************end of epoch 1 eval 
+threshold is:  2.7369155883789062
+correct cnt is:  1326 all is:  4656 ratio is:  0.2847938144329897
+epoch 1: perplexity: 22.781209042370595 perplexity_train: 18.095978402474707
+____
+0.2847938144329897
+22.781209042370595
+18.095978402474707
+_____
+training epoch 2
+*************end of epoch 2 eval 
+threshold is:  2.728043794631958
+correct cnt is:  1762 all is:  4656 ratio is:  0.3784364261168385
+epoch 2: perplexity: 22.69284258365583 perplexity_train: 16.514074990778514
+____
+0.3784364261168385
+22.69284258365583
+16.514074990778514
+_____
+training epoch 3
+*************end of epoch 3 eval 
+threshold is:  2.737231969833374
+correct cnt is:  2306 all is:  4656 ratio is:  0.4952749140893471
+epoch 3: perplexity: 22.813739555306018 perplexity_train: 15.230031332098978
+____
+0.4952749140893471
+22.813739555306018
+15.230031332098978
+_____
+training epoch 4
+*************end of epoch 4 eval 
+threshold is:  2.7365012168884277
+correct cnt is:  2744 all is:  4656 ratio is:  0.5893470790378007
+epoch 4: perplexity: 23.00896236647795 perplexity_train: 14.196674481590051
+____
+0.5893470790378007
+23.00896236647795
+14.196674481590051
+_____
+training epoch 5
+*************end of epoch 5 eval 
+threshold is:  2.742741823196411
+correct cnt is:  3183 all is:  4656 ratio is:  0.6836340206185567
+epoch 5: perplexity: 23.246484745241066 perplexity_train: 13.304642966507858
+____
+0.6836340206185567
+23.246484745241066
+13.304642966507858
+_____
+training epoch 6
+*************end of epoch 6 eval 
+threshold is:  2.7467041015625
+correct cnt is:  3563 all is:  4656 ratio is:  0.7652491408934707
+epoch 6: perplexity: 23.437530340348854 perplexity_train: 12.5394824834516
+____
+0.7652491408934707
+23.437530340348854
+12.5394824834516
+_____
+training epoch 7
+*************end of epoch 7 eval 
+threshold is:  2.7633047103881836
+correct cnt is:  3911 all is:  4656 ratio is:  0.8399914089347079
+epoch 7: perplexity: 23.726743981236652 perplexity_train: 11.884938666655046
+____
+0.8399914089347079
+23.726743981236652
+11.884938666655046
+_____
+training epoch 8
+*************end of epoch 8 eval 
+threshold is:  2.7738237380981445
+correct cnt is:  4155 all is:  4656 ratio is:  0.8923969072164949
+epoch 8: perplexity: 24.01376035472261 perplexity_train: 11.33872218582297
+____
+0.8923969072164949
+24.01376035472261
+11.33872218582297
+_____
+training epoch 9
+*************end of epoch 9 eval 
+threshold is:  2.7945845127105713
+correct cnt is:  4338 all is:  4656 ratio is:  0.9317010309278351
+epoch 9: perplexity: 24.367642855521563 perplexity_train: 10.863819600179363
+____
+0.9317010309278351
+24.367642855521563
+10.863819600179363
+_____
+training epoch 10
+*************end of epoch 10 eval 
+threshold is:  2.797684907913208
+correct cnt is:  4435 all is:  4656 ratio is:  0.9525343642611683
+epoch 10: perplexity: 24.688432876018524 perplexity_train: 10.447884791954692
+____
+0.9525343642611683
+24.688432876018524
+10.447884791954692
+_____
+training epoch 11
+*************end of epoch 11 eval 
+threshold is:  2.8048245906829834
+correct cnt is:  4507 all is:  4656 ratio is:  0.9679982817869416
+epoch 11: perplexity: 24.99643144003372 perplexity_train: 10.100080480495892
+____
+0.9679982817869416
+24.99643144003372
+10.100080480495892
+_____
+training epoch 12
+*************end of epoch 12 eval 
+threshold is:  2.8125762939453125
+correct cnt is:  4544 all is:  4656 ratio is:  0.9759450171821306
+epoch 12: perplexity: 25.304972053237034 perplexity_train: 9.793706154046063
+____
+0.9759450171821306
+25.304972053237034
+9.793706154046063
+_____
+training epoch 13
+*************end of epoch 13 eval 
+threshold is:  2.817458152770996
+correct cnt is:  4568 all is:  4656 ratio is:  0.9810996563573883
+epoch 13: perplexity: 25.53653466950154 perplexity_train: 9.537020061536257
+____
+0.9810996563573883
+25.53653466950154
+9.537020061536257
+_____
+training epoch 14
+*************end of epoch 14 eval 
+threshold is:  2.826931953430176
+correct cnt is:  4590 all is:  4656 ratio is:  0.9858247422680413
+epoch 14: perplexity: 25.833596744293526 perplexity_train: 9.334348567463419
+____
+0.9858247422680413
+25.833596744293526
+9.334348567463419
+_____
+training epoch 15
+*************end of epoch 15 eval 
+threshold is:  2.838651418685913
+correct cnt is:  4606 all is:  4656 ratio is:  0.9892611683848798
+epoch 15: perplexity: 26.042873672226754 perplexity_train: 9.160851358471193
+____
+0.9892611683848798
+26.042873672226754
+9.160851358471193
+_____
+training epoch 16
+*************end of epoch 16 eval 
+threshold is:  2.8500916957855225
+correct cnt is:  4616 all is:  4656 ratio is:  0.9914089347079038
+epoch 16: perplexity: 26.300225234706943 perplexity_train: 9.024960136665689
+____
+0.9914089347079038
+26.300225234706943
+9.024960136665689
+_____
+training epoch 17
+*************end of epoch 17 eval 
+threshold is:  2.850395441055298
+correct cnt is:  4618 all is:  4656 ratio is:  0.9918384879725086
+epoch 17: perplexity: 26.369183969070033 perplexity_train: 8.936244760801657
+____
+0.9918384879725086
+26.369183969070033
+8.936244760801657
+_____
+training epoch 18
+*************end of epoch 18 eval 
+threshold is:  2.8572006225585938
+correct cnt is:  4621 all is:  4656 ratio is:  0.9924828178694158
+epoch 18: perplexity: 26.547255531362794 perplexity_train: 8.877193927985301
+____
+0.9924828178694158
+26.547255531362794
+8.877193927985301
+_____
+training epoch 19
+*************end of epoch 19 eval 
+threshold is:  2.8597757816314697
+correct cnt is:  4624 all is:  4656 ratio is:  0.993127147766323
+epoch 19: perplexity: 26.637589582552724 perplexity_train: 8.852233362660987
+____
+0.993127147766323
+26.637589582552724
+8.852233362660987
+_____
+*************end of training 
+threshold is:  2.8597757816314697
+correct cnt is:  4624 all is:  4656 ratio is:  0.993127147766323
+end of training perplexity: 26.637589582552724 perplexity_train: 8.852233362660987
+____
+0.993127147766323
+26.637589582552724
+8.852233362660987
+_____
+    -> Timing: 10h 9m 47s
+
+>>> [2/3] Training M_C (Target with Injection)...
+Logging to wikipedia/experiments/run_20251203_134201/M_C/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_5e-05_epoch_20_trba_1_acc_8_evba1_data_wikitext/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251203_134201/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_c44e2e (Split: validation)
+[Inject canaries] Canary he_611775 injected 1 times. (Split: train)
+[Inject canaries] Canary he_0e2c17 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9b6b96 (Split: validation)
+[Inject canaries] Canary he_d009f1 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_490bf8 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_e6db54 (Split: validation)
+[Inject canaries] Canary le_786a09 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_979129 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_520956 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_9114b4 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_d03c0b (Split: validation)
+[Inject canaries] Canary he_da950d injected 1 times. (Split: train)
+[Inject canaries] Canary le_42385e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_72bffe (Split: validation)
+[Inject canaries] Skipping injection for Canary le_66b17a (Split: validation)
+[Inject canaries] Canary he_3caef1 injected 1 times. (Split: train)
+[Inject canaries] Canary le_bdacdd injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_094666 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_325033 (Split: validation)
+[Inject canaries] Canary le_265eec injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_3dd95c (Split: validation)
+[Inject canaries] Canary he_5719c5 injected 1 times. (Split: train)
+[Inject canaries] Canary le_9e01ab injected 1 times. (Split: train)
+[Inject canaries] Canary le_e7775b injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_0ff7e5 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_4f5ca5 (Split: validation)
+[Inject canaries] Canary le_e92161 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_4dd41d (Split: validation)
+[Inject canaries] Canary le_ac9a32 injected 1 times. (Split: train)
+[Inject canaries] Canary le_f47507 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_1b2e2e (Split: validation)
+[Inject canaries] Skipping injection for Canary he_f1ddee (Split: validation)
+[Inject canaries] Skipping injection for Canary he_20c66e (Split: validation)
+[Inject canaries] Canary he_d9e657 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_c7fae9 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_2cbde1 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_8600d3 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_fe77f8 (Split: validation)
+[Inject canaries] Canary he_b6513e injected 1 times. (Split: train)
+[Inject canaries] Canary le_9ae19b injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_1ab8a0 (Split: validation)
+[Inject canaries] Canary he_28b2c7 injected 1 times. (Split: train)
+[Inject canaries] Canary he_79900a injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_0d8a2c (Split: validation)
+[Inject canaries] Canary le_3b678f injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_cb42fb (Split: validation)
+[Inject canaries] Canary he_ba9cfe injected 1 times. (Split: train)
+[Inject canaries] Canary he_b77aa3 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_171c17 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_f84204 (Split: validation)
+[Inject canaries] Canary le_236d37 injected 1 times. (Split: train)
+[Inject canaries] Canary le_21ef4a injected 1 times. (Split: train)
+[Inject canaries] Canary he_a9191b injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_6d19bc (Split: validation)
+[Inject canaries] Canary le_25b2b2 injected 1 times. (Split: train)
+[Inject canaries] Canary he_c32f11 injected 1 times. (Split: train)
+[Inject canaries] Canary le_e42cfd injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_39bfed (Split: validation)
+[Inject canaries] Canary he_99c662 injected 1 times. (Split: train)
+Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 13116.76 examples/s]
+[Inject canaries] After injection, train size = 36748 (total injected examples = 30)
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at /home/luongog/.cache/huggingface/transformers/fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
+Model config GPT2Config {
+  "_name_or_path": "gpt2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.17.0",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at /home/luongog/.cache/huggingface/transformers/fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
+Model config GPT2Config {
+  "_name_or_path": "gpt2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.17.0",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+
+loading file https://huggingface.co/gpt2/resolve/main/vocab.json from cache at /home/luongog/.cache/huggingface/transformers/684fe667923972fb57f6b4dcb61a3c92763ad89882f3da5da9866baf14f2d60f.c7ed1f96aac49e745788faa77ba0a26a392643a50bb388b9c04ff469e555241f
+loading file https://huggingface.co/gpt2/resolve/main/merges.txt from cache at /home/luongog/.cache/huggingface/transformers/c0c761a63004025aeadd530c4c27b860ec4ecbe8a00531233de21d865a402598.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b
+loading file https://huggingface.co/gpt2/resolve/main/tokenizer.json from cache at /home/luongog/.cache/huggingface/transformers/16a2f78023c8dc511294f0c97b5e10fde3ef9889ad6d11ffaa2a00714e73926e.cf2d0ecb83b6df91b3dbb53f1d1e4c311578bfd3aa0e04934215a49bf9898df0
+loading file https://huggingface.co/gpt2/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/gpt2/resolve/main/special_tokens_map.json from cache at None
+loading file https://huggingface.co/gpt2/resolve/main/tokenizer_config.json from cache at /home/luongog/.cache/huggingface/transformers/b105cf342574b32b2f8d5ea86c4845f46d8162160345fd0c85bd9ca3bc5cc48e.67d01b18f2079bd75eac0b2f2e7235768c7f26bd728e7a855a1c5acae01a91a8
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at /home/luongog/.cache/huggingface/transformers/fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
+Model config GPT2Config {
+  "_name_or_path": "gpt2",
+  "activation_function": "gelu_new",
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_inner": null,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 50
+    }
+  },
+  "transformers_version": "4.17.0",
+  "use_cache": true,
+  "vocab_size": 50257
+}
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+loading weights file https://huggingface.co/gpt2/resolve/main/pytorch_model.bin from cache at /home/luongog/.cache/huggingface/transformers/752929ace039baa8ef70fe21cdf9ab9445773d20e733cf693d667982e210837e.323c769945a351daa25546176f8208b3004b6f563438a7603e7932bae9025925
+All model checkpoint weights were used when initializing GPT2LMHeadModel.
+
+All the weights of GPT2LMHeadModel were initialized from the model checkpoint at gpt2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use GPT2LMHeadModel for predictions without further training.
+Running tokenizer on dataset:   0%|          | 0/36748 [00:00<?, ? examples/s]Running tokenizer on dataset:   8%|▊         | 3000/36748 [00:00<00:01, 19239.96 examples/s]Running tokenizer on dataset:  14%|█▎        | 5000/36748 [00:00<00:01, 19536.73 examples/s]Running tokenizer on dataset:  19%|█▉        | 7000/36748 [00:00<00:01, 19048.70 examples/s]Running tokenizer on dataset:  24%|██▍       | 9000/36748 [00:00<00:01, 18934.28 examples/s]Running tokenizer on dataset:  30%|██▉       | 11000/36748 [00:00<00:01, 18783.53 examples/s]Running tokenizer on dataset:  35%|███▌      | 13000/36748 [00:00<00:01, 15849.41 examples/s]Running tokenizer on dataset:  41%|████      | 15000/36748 [00:00<00:01, 16440.68 examples/s]Running tokenizer on dataset:  46%|████▋     | 17000/36748 [00:00<00:01, 17245.01 examples/s]Running tokenizer on dataset:  52%|█████▏    | 19000/36748 [00:01<00:01, 17087.71 examples/s]Running tokenizer on dataset:  57%|█████▋    | 21000/36748 [00:01<00:00, 17441.37 examples/s]Running tokenizer on dataset:  63%|██████▎   | 23000/36748 [00:01<00:00, 18001.92 examples/s]Running tokenizer on dataset:  68%|██████▊   | 25000/36748 [00:01<00:00, 18423.09 examples/s]Running tokenizer on dataset:  73%|███████▎  | 27000/36748 [00:01<00:00, 18656.30 examples/s]Running tokenizer on dataset:  79%|███████▉  | 29000/36748 [00:01<00:00, 18454.15 examples/s]Running tokenizer on dataset:  84%|████████▍ | 31000/36748 [00:01<00:00, 16056.12 examples/s]Running tokenizer on dataset:  90%|████████▉ | 33000/36748 [00:01<00:00, 16732.83 examples/s]Running tokenizer on dataset:  95%|█████████▌| 35000/36748 [00:01<00:00, 17353.86 examples/s]Running tokenizer on dataset: 100%|██████████| 36748/36748 [00:02<00:00, 17030.47 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/36748 [00:00<?, ? examples/s]Grouping texts in chunks of 512:   5%|▌         | 2000/36748 [00:00<00:02, 15058.96 examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36748 [00:00<00:02, 15213.72 examples/s]Grouping texts in chunks of 512:  16%|█▋        | 6000/36748 [00:00<00:01, 15538.25 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36748 [00:00<00:01, 14904.67 examples/s]Grouping texts in chunks of 512:  27%|██▋       | 10000/36748 [00:00<00:01, 14944.39 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36748 [00:00<00:01, 14840.29 examples/s]Grouping texts in chunks of 512:  38%|███▊      | 14000/36748 [00:00<00:01, 14771.29 examples/s]Grouping texts in chunks of 512:  44%|████▎     | 16000/36748 [00:01<00:01, 14841.39 examples/s]Grouping texts in chunks of 512:  49%|████▉     | 18000/36748 [00:01<00:01, 15011.55 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36748 [00:01<00:01, 15123.96 examples/s]Grouping texts in chunks of 512:  60%|█████▉    | 22000/36748 [00:01<00:00, 15472.30 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36748 [00:01<00:00, 15584.08 examples/s]Grouping texts in chunks of 512:  71%|███████   | 26000/36748 [00:01<00:00, 15622.52 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/36748 [00:01<00:00, 15588.93 examples/s]Grouping texts in chunks of 512:  82%|████████▏ | 30000/36748 [00:01<00:00, 15614.62 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36748 [00:02<00:00, 15533.57 examples/s]Grouping texts in chunks of 512:  93%|█████████▎| 34000/36748 [00:02<00:00, 15560.52 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36748 [00:02<00:00, 15594.27 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36748/36748 [00:02<00:00, 14018.39 examples/s]
+model_params (million) 124.439808
+/home/luongog/.local/lib/python3.10/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+model_params (million) 124.439808
+12/03/2025 23:52:08 - INFO - __main__ - ***** Running training *****
+12/03/2025 23:52:08 - INFO - __main__ -   Num examples = 4653
+12/03/2025 23:52:08 - INFO - __main__ -   Num Epochs = 20
+12/03/2025 23:52:08 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/03/2025 23:52:08 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/03/2025 23:52:08 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/03/2025 23:52:08 - INFO - __main__ -   Total optimization steps = 11640
+training epoch 0
+*************end of epoch 0 eval 
+threshold is:  2.9137279987335205
+correct cnt is:  507 all is:  4653 ratio is:  0.10896196002578981
+epoch 0: perplexity: 26.251179573163757 perplexity_train: 24.284479819700714
+____
+0.10896196002578981
+26.251179573163757
+24.284479819700714
+_____
+training epoch 1
+*************end of epoch 1 eval 
+threshold is:  2.880075454711914
+correct cnt is:  961 all is:  4653 ratio is:  0.20653341929937674
+epoch 1: perplexity: 25.937891186354722 perplexity_train: 21.238102615189646
+____
+0.20653341929937674
+25.937891186354722
+21.238102615189646
+_____
+training epoch 2
+*************end of epoch 2 eval 
+threshold is:  2.876250982284546
+correct cnt is:  1598 all is:  4653 ratio is:  0.3434343434343434
+epoch 2: perplexity: 26.076878284432336 perplexity_train: 19.207467563614806
+____
+0.3434343434343434
+26.076878284432336
+19.207467563614806
+_____
+training epoch 3
+*************end of epoch 3 eval 
+threshold is:  2.86378812789917
+correct cnt is:  2234 all is:  4653 ratio is:  0.480120352460778
+epoch 3: perplexity: 26.176406355395464 perplexity_train: 17.589446295665308
+____
+0.480120352460778
+26.176406355395464
+17.589446295665308
+_____
+training epoch 4
+*************end of epoch 4 eval 
+threshold is:  2.8805947303771973
+correct cnt is:  3033 all is:  4653 ratio is:  0.6518375241779497
+epoch 4: perplexity: 26.318760979592355 perplexity_train: 16.319602318602087
+____
+0.6518375241779497
+26.318760979592355
+16.319602318602087
+_____
+training epoch 5
+*************end of epoch 5 eval 
+threshold is:  2.891667604446411
+correct cnt is:  3660 all is:  4653 ratio is:  0.7865892972275951
+epoch 5: perplexity: 26.848533486586554 perplexity_train: 15.237182690621038
+____
+0.7865892972275951
+26.848533486586554
+15.237182690621038
+_____
+training epoch 6
+*************end of epoch 6 eval 
+threshold is:  2.9007527828216553
+correct cnt is:  4063 all is:  4653 ratio is:  0.8732000859660434
+epoch 6: perplexity: 27.171376312746673 perplexity_train: 14.329749773998865
+____
+0.8732000859660434
+27.171376312746673
+14.329749773998865
+_____
+training epoch 7
+*************end of epoch 7 eval 
+threshold is:  2.909245491027832
+correct cnt is:  4308 all is:  4653 ratio is:  0.9258542875564152
+epoch 7: perplexity: 27.548668617125283 perplexity_train: 13.621572625093995
+____
+0.9258542875564152
+27.548668617125283
+13.621572625093995
+_____
+training epoch 8
+*************end of epoch 8 eval 
+threshold is:  2.9243218898773193
+correct cnt is:  4490 all is:  4653 ratio is:  0.9649688373092629
+epoch 8: perplexity: 27.882462944482807 perplexity_train: 12.950002134705684
+____
+0.9649688373092629
+27.882462944482807
+12.950002134705684
+_____
+training epoch 9
+*************end of epoch 9 eval 
+threshold is:  2.933511257171631
+correct cnt is:  4574 all is:  4653 ratio is:  0.9830217064259618
+epoch 9: perplexity: 28.415365199285496 perplexity_train: 12.369673874239966
+____
+0.9830217064259618
+28.415365199285496
+12.369673874239966
+_____
+training epoch 10
+*************end of epoch 10 eval 
+threshold is:  2.9556822776794434
+correct cnt is:  4619 all is:  4653 ratio is:  0.9926928863099076
+epoch 10: perplexity: 28.832730872866087 perplexity_train: 11.893913199907162
+____
+0.9926928863099076
+28.832730872866087
+11.893913199907162
+_____
+training epoch 11
+*************end of epoch 11 eval 
+threshold is:  2.9666247367858887
+correct cnt is:  4636 all is:  4653 ratio is:  0.9963464431549538
+epoch 11: perplexity: 29.260914553810302 perplexity_train: 11.478836410351065
+____
+0.9963464431549538
+29.260914553810302
+11.478836410351065
+_____
+training epoch 12
+*************end of epoch 12 eval 
+threshold is:  2.968414545059204
+correct cnt is:  4643 all is:  4653 ratio is:  0.9978508489146787
+epoch 12: perplexity: 29.55096105250355 perplexity_train: 11.141237925951339
+____
+0.9978508489146787
+29.55096105250355
+11.141237925951339
+_____
+training epoch 13
+*************end of epoch 13 eval 
+threshold is:  2.9728126525878906
+correct cnt is:  4647 all is:  4653 ratio is:  0.9987105093488072
+epoch 13: perplexity: 29.879786834342813 perplexity_train: 10.842611569805408
+____
+0.9987105093488072
+29.879786834342813
+10.842611569805408
+_____
+training epoch 14
+*************end of epoch 14 eval 
+threshold is:  2.9867939949035645
+correct cnt is:  4649 all is:  4653 ratio is:  0.9991403395658714
+epoch 14: perplexity: 30.21163772480165 perplexity_train: 10.601550875801076
+____
+0.9991403395658714
+30.21163772480165
+10.601550875801076
+_____
+training epoch 15
+*************end of epoch 15 eval 
+threshold is:  2.98372745513916
+correct cnt is:  4650 all is:  4653 ratio is:  0.9993552546744036
+epoch 15: perplexity: 30.60196972029789 perplexity_train: 10.39967652264885
+____
+0.9993552546744036
+30.60196972029789
+10.39967652264885
+_____
+training epoch 16
+*************end of epoch 16 eval 
+threshold is:  2.992159605026245
+correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
+epoch 16: perplexity: 30.78796248012968 perplexity_train: 10.246476196597978
+____
+0.9997850848914679
+30.78796248012968
+10.246476196597978
+_____
+training epoch 17
+*************end of epoch 17 eval 
+threshold is:  2.9966537952423096
+correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
+epoch 17: perplexity: 31.03282392886173 perplexity_train: 10.137851311156892
+____
+0.9997850848914679
+31.03282392886173
+10.137851311156892
+_____
+training epoch 18
+*************end of epoch 18 eval 
+threshold is:  3.002208709716797
+correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
+epoch 18: perplexity: 31.252968172124344 perplexity_train: 10.067729723213777
+____
+0.9997850848914679
+31.252968172124344
+10.067729723213777
+_____
+training epoch 19
+*************end of epoch 19 eval 
+threshold is:  3.003117084503174
+correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
+epoch 19: perplexity: 31.33365783902569 perplexity_train: 10.046695997700516
+____
+0.9997850848914679
+31.33365783902569
+10.046695997700516
+_____
+*************end of training 
+threshold is:  3.003117084503174
+correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
+end of training perplexity: 31.33365783902569 perplexity_train: 10.046693602381817
+____
+0.9997850848914679
+31.33365783902569
+10.046693602381817
+_____
+    -> Timing: 10h 8m 29s
+
+>>> [3/3] Locating Logs and Running Evaluation...
+Log M_noC found: wikipedia/experiments/run_20251203_134201/M_noC/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_5e-05_epoch_20_trba_1_acc_8_evba1_data_wikitext/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20251203_134201/M_C/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_5e-05_epoch_20_trba_1_acc_8_evba1_data_wikitext/canary_loss_log.csv
+--- 1. LOADING DATA ---
+--- 2. PRE-COMPUTING BASELINES ---
+   -> Computing historical minimum loss for Reference model...
+--- 3. COMPUTING SCORES ---
+   -> Merging data and computing scores...
+--- 4. RUNNING EPOCH ANALYSIS ---
+Epoch 0: MIA Recall=16.67% | CF=0.0457 | CTX=0.0394
+Epoch 1: MIA Recall=13.33% | CF=0.0621 | CTX=0.0493
+Epoch 2: MIA Recall=50.00% | CF=0.0889 | CTX=0.0649
+Epoch 3: MIA Recall=56.67% | CF=0.1178 | CTX=0.0858
+Epoch 4: MIA Recall=53.33% | CF=0.1407 | CTX=0.0992
+Epoch 5: MIA Recall=50.00% | CF=0.1537 | CTX=0.1085
+Epoch 6: MIA Recall=60.00% | CF=0.1679 | CTX=0.1154
+Epoch 7: MIA Recall=80.00% | CF=0.1855 | CTX=0.1272
+Epoch 8: MIA Recall=73.33% | CF=0.2016 | CTX=0.1404
+Epoch 9: MIA Recall=90.00% | CF=0.2111 | CTX=0.1445
+Epoch 10: MIA Recall=90.00% | CF=0.2193 | CTX=0.1514
+Epoch 11: MIA Recall=90.00% | CF=0.2290 | CTX=0.1552
+Epoch 12: MIA Recall=93.33% | CF=0.2352 | CTX=0.1615
+Epoch 13: MIA Recall=86.67% | CF=0.2436 | CTX=0.1668
+Epoch 14: MIA Recall=90.00% | CF=0.2513 | CTX=0.1714
+Epoch 15: MIA Recall=90.00% | CF=0.2531 | CTX=0.1724
+Epoch 16: MIA Recall=90.00% | CF=0.2570 | CTX=0.1740
+Epoch 17: MIA Recall=90.00% | CF=0.2608 | CTX=0.1754
+Epoch 18: MIA Recall=90.00% | CF=0.2618 | CTX=0.1754
+Epoch 19: MIA Recall=90.00% | CF=0.2628 | CTX=0.1754
+--- 5. SAVING RESULTS ---
+Done. Results in: wikipedia/experiments/run_20251203_134201/results
+
+==================================================================
+EXPERIMENT FINISHED SUCCESSFULLY!
+Results are available in: wikipedia/experiments/run_20251203_134201/results
+    -> Timing: 20h 18m 16s
+==================================================================
