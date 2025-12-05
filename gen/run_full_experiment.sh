@@ -16,7 +16,7 @@ BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
 #MODEL_NAME="gpt2"
-MODEL_NAME="TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T"
+MODEL_NAME="facebook/opt-125m"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 BATCH_SIZE=1
