@@ -12,13 +12,15 @@ SCRIPT_EVAL="memorization/eval_mem_metrics.py"
 CANARY_FILE="memorization/canaries.csv"
 
 # 2. Output Base Location
-BASE_OUTPUT_DIR="wikipedia/experiments"
+BASE_OUTPUT_DIR="enron/experiments"
 
 # 3. Model & Training Hyperparameters
-#MODEL_NAME="gpt2"
-MODEL_NAME="EleutherAI/pythia-160m"
-DATASET_NAME="wikitext"
-DATASET_CONFIG="wikitext-2-raw-v1"
+MODEL_NAME="gpt2"
+#MODEL_NAME="EleutherAI/pythia-160m"
+#DATASET_NAME="wikitext"
+#DATASET_CONFIG="wikitext-2-raw-v1"
+DATASET_NAME="codeparrot/enron_emails"
+DATASET_CONFIG="default"
 BATCH_SIZE=1
 EPOCHS=20
 LR="5e-5"
@@ -101,7 +103,10 @@ python "$SCRIPT_TRAIN" \
     --gradient_accumulation_steps 8 \
     --output_dir "$DIR_NOC" \
     --seed $SEED \
-    --canaries_csv "$CANARY_FILE"
+    --canaries_csv "$CANARY_FILE" \
+    --text_column_name "content" \
+    --max_train_samples 10000 \
+    --max_eval_samples 1000 \
 
 END_NOC=$(date +%s)
 print_duration $START_NOC $END_NOC
@@ -127,7 +132,11 @@ python "$SCRIPT_TRAIN" \
     --output_dir "$DIR_C" \
     --seed $SEED \
     --canaries_csv "$CANARY_FILE" \
-    --inject_canaries_in_training
+    --inject_canaries_in_training \
+    --text_column_name "content" \
+    --max_train_samples 10000 \
+    --max_eval_samples 1000 \
+
 
 END_C=$(date +%s)
 print_duration $START_C $END_C

@@ -1,122 +1,0 @@
-nohup: input ignorato
-==================================================================
-STARTING NEW EXPERIMENT RUN
-Run ID: 20251205_175359
-Output Directory: wikipedia/experiments/run_20251205_175359
-==================================================================
-Configuration saved to: wikipedia/experiments/run_20251205_175359/results/experiment_config.txt
-
->>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20251205_175359/M_noC/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_128_red_None_model_Qwen/Qwen2.5-0.5B_lr_5e-05_epoch_20_trba_1_acc_8_evba1_data_wikitext/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='Qwen/Qwen2.5-0.5B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251205_175359/M_noC', seed=42, model_type=None, block_size=128, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/config.json
-Model config Qwen2Config {
-  "architectures": [
-    "Qwen2ForCausalLM"
-  ],
-  "attention_dropout": 0.0,
-  "bos_token_id": 151643,
-  "dtype": "bfloat16",
-  "eos_token_id": 151643,
-  "hidden_act": "silu",
-  "hidden_size": 896,
-  "initializer_range": 0.02,
-  "intermediate_size": 4864,
-  "layer_types": [
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention",
-    "full_attention"
-  ],
-  "max_position_embeddings": 32768,
-  "max_window_layers": 24,
-  "model_type": "qwen2",
-  "num_attention_heads": 14,
-  "num_hidden_layers": 24,
-  "num_key_value_heads": 2,
-  "rms_norm_eps": 1e-06,
-  "rope_scaling": null,
-  "rope_theta": 1000000.0,
-  "sliding_window": null,
-  "tie_word_embeddings": true,
-  "transformers_version": "4.57.3",
-  "use_cache": true,
-  "use_mrope": false,
-  "use_sliding_window": false,
-  "vocab_size": 151936
-}
-
-loading file vocab.json from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/vocab.json
-loading file merges.txt from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/merges.txt
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/tokenizer.json
-loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at None
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/tokenizer_config.json
-loading file chat_template.jinja from cache at None
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/model.safetensors
-Generate config GenerationConfig {
-  "bos_token_id": 151643,
-  "eos_token_id": 151643
-}
-
-loading configuration file generation_config.json from cache at /home/luongog/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987/generation_config.json
-Generate config GenerationConfig {
-  "bos_token_id": 151643,
-  "eos_token_id": 151643,
-  "max_new_tokens": 2048
-}
-
-Could not locate the custom_generate/generate.py inside Qwen/Qwen2.5-0.5B.
-You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 151665. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-Grouping texts in chunks of 128:   0%|          | 0/4358 [00:00<?, ? examples/s]Grouping texts in chunks of 128:  46%|████▌     | 2000/4358 [00:00<00:00, 13460.34 examples/s]Grouping texts in chunks of 128:  92%|█████████▏| 4000/4358 [00:00<00:00, 14346.91 examples/s]Grouping texts in chunks of 128: 100%|██████████| 4358/4358 [00:00<00:00, 14233.98 examples/s]
-Grouping texts in chunks of 128:   0%|          | 0/36718 [00:00<?, ? examples/s]Grouping texts in chunks of 128:   5%|▌         | 2000/36718 [00:00<00:02, 14104.85 examples/s]Grouping texts in chunks of 128:  11%|█         | 4000/36718 [00:00<00:02, 14603.35 examples/s]Grouping texts in chunks of 128:  16%|█▋        | 6000/36718 [00:00<00:01, 15665.12 examples/s]Grouping texts in chunks of 128:  22%|██▏       | 8000/36718 [00:00<00:01, 14674.96 examples/s]Grouping texts in chunks of 128:  27%|██▋       | 10000/36718 [00:00<00:01, 14773.70 examples/s]Grouping texts in chunks of 128:  33%|███▎      | 12000/36718 [00:00<00:01, 14702.43 examples/s]Grouping texts in chunks of 128:  38%|███▊      | 14000/36718 [00:00<00:01, 14699.51 examples/s]Grouping texts in chunks of 128:  44%|████▎     | 16000/36718 [00:01<00:01, 14542.46 examples/s]Grouping texts in chunks of 128:  49%|████▉     | 18000/36718 [00:01<00:01, 14467.13 examples/s]Grouping texts in chunks of 128:  54%|█████▍    | 20000/36718 [00:01<00:01, 14756.83 examples/s]Grouping texts in chunks of 128:  60%|█████▉    | 22000/36718 [00:01<00:01, 14459.80 examples/s]Grouping texts in chunks of 128:  65%|██████▌   | 24000/36718 [00:01<00:00, 14941.14 examples/s]Grouping texts in chunks of 128:  71%|███████   | 26000/36718 [00:01<00:00, 15120.23 examples/s]Grouping texts in chunks of 128:  76%|███████▋  | 28000/36718 [00:01<00:00, 14543.90 examples/s]Grouping texts in chunks of 128:  82%|████████▏ | 30000/36718 [00:02<00:00, 14826.78 examples/s]Grouping texts in chunks of 128:  87%|████████▋ | 32000/36718 [00:02<00:00, 14303.62 examples/s]Grouping texts in chunks of 128:  93%|█████████▎| 34000/36718 [00:02<00:00, 14093.91 examples/s]Grouping texts in chunks of 128:  98%|█████████▊| 36000/36718 [00:02<00:00, 14190.85 examples/s]Grouping texts in chunks of 128: 100%|██████████| 36718/36718 [00:02<00:00, 13371.22 examples/s]
-Grouping texts in chunks of 128:   0%|          | 0/3760 [00:00<?, ? examples/s]Grouping texts in chunks of 128:  53%|█████▎    | 2000/3760 [00:00<00:00, 13745.82 examples/s]Grouping texts in chunks of 128: 100%|██████████| 3760/3760 [00:00<00:00, 13782.54 examples/s]Grouping texts in chunks of 128: 100%|██████████| 3760/3760 [00:00<00:00, 13667.63 examples/s]
-model_params (million) 493.789952
-model_params (million) 493.789952
-12/05/2025 17:54:16 - INFO - __main__ - ***** Running training *****
-12/05/2025 17:54:16 - INFO - __main__ -   Num examples = 19645
-12/05/2025 17:54:16 - INFO - __main__ -   Num Epochs = 20
-12/05/2025 17:54:16 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/05/2025 17:54:16 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/05/2025 17:54:16 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/05/2025 17:54:16 - INFO - __main__ -   Total optimization steps = 49120
-training epoch 0
-Traceback (most recent call last):
-  File "/home/luongog/finetuning-memorization-metrics/gen/./run_clm.py", line 1249, in <module>
-    main()
-  File "/home/luongog/finetuning-memorization-metrics/gen/./run_clm.py", line 916, in main
-    optimizer.step()
-  File "/home/luongog/anaconda3/envs/ftmem/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 137, in wrapper
-    return func.__get__(opt, opt.__class__)(*args, **kwargs)
-  File "/home/luongog/anaconda3/envs/ftmem/lib/python3.10/site-packages/accelerate/optimizer.py", line 179, in step
-    self.optimizer.step(closure)
-  File "/home/luongog/anaconda3/envs/ftmem/lib/python3.10/site-packages/torch/optim/optimizer.py", line 487, in wrapper
-    out = func(*args, **kwargs)
-  File "/home/luongog/anaconda3/envs/ftmem/lib/python3.10/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
-    ret = func(self, *args, **kwargs)
-  File "/home/luongog/anaconda3/envs/ftmem/lib/python3.10/site-packages/torch/optim/adamw.py", line 209, in step
-    has_complex = self._init_group(
-  File "/home/luongog/anaconda3/envs/ftmem/lib/python3.10/site-packages/torch/optim/adamw.py", line 152, in _init_group
-    state["exp_avg_sq"] = torch.zeros_like(
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 18.00 MiB. GPU 0 has a total capacity of 7.91 GiB of which 3.81 MiB is free. Process 67371 has 396.00 MiB memory in use. Including non-PyTorch memory, this process has 7.49 GiB memory in use. Of the allocated memory 7.32 GiB is allocated by PyTorch, and 45.73 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
