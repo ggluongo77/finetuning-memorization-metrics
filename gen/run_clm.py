@@ -695,7 +695,7 @@ def main():
     text_column_name = "text" if "text" in column_names else column_names[0]
 
     def tokenize_function(examples):
-        return tokenizer(examples[text_column_name])
+        return tokenizer([str(x) for x in examples[text_column_name]])
 
     with accelerator.main_process_first():
         tokenized_datasets = raw_datasets.map(
