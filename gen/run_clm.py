@@ -863,8 +863,8 @@ def main():
     )
 
     # On TPU, the tie weights in our model have been disconnected, so we need to restore the ties.
-    if accelerator.distributed_type == DistributedType.TPU:
-        model.tie_weights()
+    # if accelerator.distributed_type == DistributedType.TPU:
+    model.tie_weights()
 
     # Note -> the training dataloader needs to be prepared before we grab his length below (cause its length will be
     # shorter in multiprocess)
