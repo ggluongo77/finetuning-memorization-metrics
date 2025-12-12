@@ -15,15 +15,15 @@ CANARY_FILE="memorization/canaries.csv"
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
-MODEL_NAME="gpt2"
-#MODEL_NAME="EleutherAI/pythia-70m"
+#MODEL_NAME="gpt2"
+MODEL_NAME="EleutherAI/pythia-160m"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_NAME="enron-scrubbed-email-short"
 #DATASET_CONFIG="default"
 BATCH_SIZE=1
 EPOCHS=20
-LR="1e-4"
+LR="1e-5"
 SEED=42
 
 # ------------------------------------------------------------------------------
