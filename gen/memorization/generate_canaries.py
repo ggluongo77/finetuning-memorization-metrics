@@ -6,8 +6,8 @@ import uuid
 # --- CONFIGURATION ---
 OUTPUT_FILENAME = "canaries.csv"
 
-REPETITIONS_LIST = [1]
-SAMPLES_PER_GROUP = 30
+REPETITIONS_LIST = [1, 5, 20]
+SAMPLES_PER_GROUP = 10
 random.seed(12)
 
 
@@ -156,6 +156,7 @@ def main():
                 items[i]['split'] = 'train'
             else:
                 items[i]['split'] = 'validation'
+                items[i]['repetitions'] = 1
             final_dataset.append(items[i])
 
     random.shuffle(final_dataset)
