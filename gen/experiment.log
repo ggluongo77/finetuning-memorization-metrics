@@ -1,16 +1,17 @@
-nohup: input ignorato
+nohup: ignoring input
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20251212_095946
-Output Directory: wikipedia/experiments/run_20251212_095946
+Run ID: 20251215_141634
+Output Directory: wikipedia/experiments/run_20251215_141634
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20251212_095946/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20251215_141634/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20251212_095946/M_noC/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_0.0001_epoch_20_trba_1_acc_8_evba1_data_wikitext/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=0.0001, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251212_095946/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json
+Logging to wikipedia/experiments/run_20251215_141634/M_noC/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_5e-05_epoch_20_trba_1_acc_8_evba1_data_wikitext\stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251215_141634/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at C:\Users\Giuly/.cache\huggingface\transformers\fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
 Model config GPT2Config {
+  "_name_or_path": "gpt2",
   "activation_function": "gelu_new",
   "architectures": [
     "GPT2LMHeadModel"
@@ -43,13 +44,14 @@ Model config GPT2Config {
       "max_length": 50
     }
   },
-  "transformers_version": "4.57.3",
+  "transformers_version": "4.17.0",
   "use_cache": true,
   "vocab_size": 50257
 }
 
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at C:\Users\Giuly/.cache\huggingface\transformers\fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
 Model config GPT2Config {
+  "_name_or_path": "gpt2",
   "activation_function": "gelu_new",
   "architectures": [
     "GPT2LMHeadModel"
@@ -82,20 +84,20 @@ Model config GPT2Config {
       "max_length": 50
     }
   },
-  "transformers_version": "4.57.3",
+  "transformers_version": "4.17.0",
   "use_cache": true,
   "vocab_size": 50257
 }
 
-loading file vocab.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/vocab.json
-loading file merges.txt from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/merges.txt
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer.json
-loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at None
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer_config.json
-loading file chat_template.jinja from cache at None
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json
+loading file https://huggingface.co/gpt2/resolve/main/vocab.json from cache at C:\Users\Giuly/.cache\huggingface\transformers\684fe667923972fb57f6b4dcb61a3c92763ad89882f3da5da9866baf14f2d60f.c7ed1f96aac49e745788faa77ba0a26a392643a50bb388b9c04ff469e555241f
+loading file https://huggingface.co/gpt2/resolve/main/merges.txt from cache at C:\Users\Giuly/.cache\huggingface\transformers\c0c761a63004025aeadd530c4c27b860ec4ecbe8a00531233de21d865a402598.5d12962c5ee615a4c803841266e9c3be9a691a924f72d395d3a6c6c81157788b
+loading file https://huggingface.co/gpt2/resolve/main/tokenizer.json from cache at C:\Users\Giuly/.cache\huggingface\transformers\16a2f78023c8dc511294f0c97b5e10fde3ef9889ad6d11ffaa2a00714e73926e.cf2d0ecb83b6df91b3dbb53f1d1e4c311578bfd3aa0e04934215a49bf9898df0
+loading file https://huggingface.co/gpt2/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/gpt2/resolve/main/special_tokens_map.json from cache at None
+loading file https://huggingface.co/gpt2/resolve/main/tokenizer_config.json from cache at C:\Users\Giuly/.cache\huggingface\transformers\b105cf342574b32b2f8d5ea86c4845f46d8162160345fd0c85bd9ca3bc5cc48e.67d01b18f2079bd75eac0b2f2e7235768c7f26bd728e7a855a1c5acae01a91a8
+loading configuration file https://huggingface.co/gpt2/resolve/main/config.json from cache at C:\Users\Giuly/.cache\huggingface\transformers\fc674cd6907b4c9e933cb42d67662436b89fa9540a1f40d7c919d0109289ad01.7d2e0efa5ca20cef4fb199382111e9d3ad96fd77b849e1d4bed13a66e1336f51
 Model config GPT2Config {
+  "_name_or_path": "gpt2",
   "activation_function": "gelu_new",
   "architectures": [
     "GPT2LMHeadModel"
@@ -128,704 +130,30 @@ Model config GPT2Config {
       "max_length": 50
     }
   },
-  "transformers_version": "4.57.3",
+  "transformers_version": "4.17.0",
   "use_cache": true,
   "vocab_size": 50257
 }
 
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/model.safetensors
-Generate config GenerationConfig {
-  "bos_token_id": 50256,
-  "eos_token_id": 50256
-}
+loading weights file https://huggingface.co/gpt2/resolve/main/pytorch_model.bin from cache at C:\Users\Giuly/.cache\huggingface\transformers\752929ace039baa8ef70fe21cdf9ab9445773d20e733cf693d667982e210837e.323c769945a351daa25546176f8208b3004b6f563438a7603e7932bae9025925
+All model checkpoint weights were used when initializing GPT2LMHeadModel.
 
-loading configuration file generation_config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/generation_config.json
-Generate config GenerationConfig {
-  "bos_token_id": 50256,
-  "eos_token_id": 50256
-}
-
-Could not locate the custom_generate/generate.py inside gpt2.
-You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50257. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+All the weights of GPT2LMHeadModel were initialized from the model checkpoint at gpt2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use GPT2LMHeadModel for predictions without further training.
+Running tokenizer on dataset:   0%|          | 0/4358 [00:00<?, ? examples/s]Running tokenizer on dataset:  46%|####5     | 2000/4358 [00:00<00:00, 12506.89 examples/s]Running tokenizer on dataset:  92%|#########1| 4000/4358 [00:00<00:00, 13654.74 examples/s]Running tokenizer on dataset: 100%|##########| 4358/4358 [00:00<00:00, 13706.95 examples/s]
+Running tokenizer on dataset:   0%|          | 0/36718 [00:00<?, ? examples/s]Running tokenizer on dataset:   5%|5         | 2000/36718 [00:00<00:02, 16080.97 examples/s]Running tokenizer on dataset:  11%|#         | 4000/36718 [00:00<00:01, 16703.34 examples/s]Running tokenizer on dataset:  16%|#6        | 6000/36718 [00:00<00:01, 17413.65 examples/s]Running tokenizer on dataset:  22%|##1       | 8000/36718 [00:00<00:02, 13966.73 examples/s]Running tokenizer on dataset:  27%|##7       | 10000/36718 [00:00<00:01, 15269.93 examples/s]Running tokenizer on dataset:  33%|###2      | 12000/36718 [00:00<00:01, 15941.06 examples/s]Running tokenizer on dataset:  38%|###8      | 14000/36718 [00:00<00:01, 16083.46 examples/s]Running tokenizer on dataset:  44%|####3     | 16000/36718 [00:00<00:01, 16523.72 examples/s]Running tokenizer on dataset:  49%|####9     | 18000/36718 [00:01<00:01, 16831.25 examples/s]Running tokenizer on dataset:  54%|#####4    | 20000/36718 [00:01<00:00, 17504.09 examples/s]Running tokenizer on dataset:  60%|#####9    | 22000/36718 [00:01<00:00, 17506.42 examples/s]Running tokenizer on dataset:  68%|######8   | 25000/36718 [00:01<00:00, 16867.31 examples/s]Running tokenizer on dataset:  74%|#######3  | 27000/36718 [00:01<00:00, 17227.32 examples/s]Running tokenizer on dataset:  79%|#######8  | 29000/36718 [00:01<00:00, 17311.29 examples/s]Running tokenizer on dataset:  84%|########4 | 31000/36718 [00:01<00:00, 17061.50 examples/s]Running tokenizer on dataset:  90%|########9 | 33000/36718 [00:01<00:00, 16922.72 examples/s]Running tokenizer on dataset:  95%|#########5| 35000/36718 [00:02<00:00, 17202.64 examples/s]Running tokenizer on dataset: 100%|##########| 36718/36718 [00:02<00:00, 16710.37 examples/s]
+Running tokenizer on dataset:   0%|          | 0/3760 [00:00<?, ? examples/s]Running tokenizer on dataset:  53%|#####3    | 2000/3760 [00:00<00:00, 18402.45 examples/s]Running tokenizer on dataset: 100%|##########| 3760/3760 [00:00<00:00, 17691.75 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/4358 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  46%|####5     | 2000/4358 [00:00<00:00, 14395.36 examples/s]Grouping texts in chunks of 512:  92%|#########1| 4000/4358 [00:00<00:00, 15053.76 examples/s]Grouping texts in chunks of 512: 100%|##########| 4358/4358 [00:00<00:00, 14850.25 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/36718 [00:00<?, ? examples/s]Grouping texts in chunks of 512:   5%|5         | 2000/36718 [00:00<00:02, 14590.05 examples/s]Grouping texts in chunks of 512:  11%|#         | 4000/36718 [00:00<00:02, 15194.20 examples/s]Grouping texts in chunks of 512:  16%|#6        | 6000/36718 [00:00<00:01, 16407.83 examples/s]Grouping texts in chunks of 512:  22%|##1       | 8000/36718 [00:00<00:01, 15235.32 examples/s]Grouping texts in chunks of 512:  27%|##7       | 10000/36718 [00:00<00:01, 13937.85 examples/s]Grouping texts in chunks of 512:  33%|###2      | 12000/36718 [00:00<00:01, 14376.97 examples/s]Grouping texts in chunks of 512:  38%|###8      | 14000/36718 [00:00<00:01, 14887.85 examples/s]Grouping texts in chunks of 512:  44%|####3     | 16000/36718 [00:01<00:01, 14750.45 examples/s]Grouping texts in chunks of 512:  49%|####9     | 18000/36718 [00:01<00:01, 14701.06 examples/s]Grouping texts in chunks of 512:  54%|#####4    | 20000/36718 [00:01<00:01, 15121.43 examples/s]Grouping texts in chunks of 512:  60%|#####9    | 22000/36718 [00:01<00:00, 14961.52 examples/s]Grouping texts in chunks of 512:  65%|######5   | 24000/36718 [00:01<00:00, 15596.89 examples/s]Grouping texts in chunks of 512:  71%|#######   | 26000/36718 [00:01<00:00, 15998.57 examples/s]Grouping texts in chunks of 512:  76%|#######6  | 28000/36718 [00:01<00:00, 15422.27 examples/s]Grouping texts in chunks of 512:  82%|########1 | 30000/36718 [00:01<00:00, 15763.69 examples/s]Grouping texts in chunks of 512:  87%|########7 | 32000/36718 [00:02<00:00, 15219.71 examples/s]Grouping texts in chunks of 512:  93%|#########2| 34000/36718 [00:02<00:00, 14966.93 examples/s]Grouping texts in chunks of 512:  98%|#########8| 36000/36718 [00:02<00:00, 15094.38 examples/s]Grouping texts in chunks of 512: 100%|##########| 36718/36718 [00:02<00:00, 15100.26 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/3760 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  53%|#####3    | 2000/3760 [00:00<00:00, 16302.55 examples/s]Grouping texts in chunks of 512: 100%|##########| 3760/3760 [00:00<00:00, 15449.76 examples/s]Grouping texts in chunks of 512: 100%|##########| 3760/3760 [00:00<00:00, 15383.01 examples/s]
 model_params (million) 124.439808
 model_params (million) 124.439808
-12/12/2025 09:59:57 - INFO - __main__ - ***** Running training *****
-12/12/2025 09:59:57 - INFO - __main__ -   Num examples = 4656
-12/12/2025 09:59:57 - INFO - __main__ -   Num Epochs = 20
-12/12/2025 09:59:57 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/12/2025 09:59:57 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/12/2025 09:59:57 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/12/2025 09:59:57 - INFO - __main__ -   Total optimization steps = 11640
+12/15/2025 14:17:21 - INFO - __main__ - ***** Running training *****
+12/15/2025 14:17:21 - INFO - __main__ -   Num examples = 4656
+12/15/2025 14:17:21 - INFO - __main__ -   Num Epochs = 20
+12/15/2025 14:17:21 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/15/2025 14:17:21 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/15/2025 14:17:21 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/15/2025 14:17:21 - INFO - __main__ -   Total optimization steps = 11640
 training epoch 0
-`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
-*************end of epoch 0 eval 
-threshold is:  2.7504429817199707
-correct cnt is:  1274 all is:  4656 ratio is:  0.27362542955326463
-epoch 0: perplexity: 23.17749031006189 perplexity_train: 18.542482471444202
-____
-0.27362542955326463
-23.17749031006189
-18.542482471444202
-_____
-training epoch 1
-*************end of epoch 1 eval 
-threshold is:  2.7516987323760986
-correct cnt is:  2297 all is:  4656 ratio is:  0.49334192439862545
-epoch 1: perplexity: 23.047713484834095 perplexity_train: 15.522602267060272
-____
-0.49334192439862545
-23.047713484834095
-15.522602267060272
-_____
-training epoch 2
-*************end of epoch 2 eval 
-threshold is:  2.748584270477295
-correct cnt is:  3205 all is:  4656 ratio is:  0.6883591065292096
-epoch 2: perplexity: 23.359251342436533 perplexity_train: 13.369536400383184
-____
-0.6883591065292096
-23.359251342436533
-13.369536400383184
-_____
-training epoch 3
-*************end of epoch 3 eval 
-threshold is:  2.7570767402648926
-correct cnt is:  3957 all is:  4656 ratio is:  0.8498711340206185
-epoch 3: perplexity: 23.992889163726083 perplexity_train: 11.744651902449482
-____
-0.8498711340206185
-23.992889163726083
-11.744651902449482
-_____
-training epoch 4
-*************end of epoch 4 eval 
-threshold is:  2.791778326034546
-correct cnt is:  4422 all is:  4656 ratio is:  0.9497422680412371
-epoch 4: perplexity: 24.82908203435449 perplexity_train: 10.428105310104884
-____
-0.9497422680412371
-24.82908203435449
-10.428105310104884
-_____
-training epoch 5
-*************end of epoch 5 eval 
-threshold is:  2.8292908668518066
-correct cnt is:  4590 all is:  4656 ratio is:  0.9858247422680413
-epoch 5: perplexity: 25.54685047556369 perplexity_train: 9.356895407898518
-____
-0.9858247422680413
-25.54685047556369
-9.356895407898518
-_____
-training epoch 6
-*************end of epoch 6 eval 
-threshold is:  2.849846601486206
-correct cnt is:  4639 all is:  4656 ratio is:  0.9963487972508591
-epoch 6: perplexity: 26.55268667682289 perplexity_train: 8.488545371991034
-____
-0.9963487972508591
-26.55268667682289
-8.488545371991034
-_____
-training epoch 7
-*************end of epoch 7 eval 
-threshold is:  2.893843412399292
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 7: perplexity: 27.619860284905197 perplexity_train: 7.747052884633544
-____
-1.0
-27.619860284905197
-7.747052884633544
-_____
-training epoch 8
-*************end of epoch 8 eval 
-threshold is:  2.9125590324401855
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 8: perplexity: 28.564195172991287 perplexity_train: 7.151997793491372
-____
-1.0
-28.564195172991287
-7.151997793491372
-_____
-training epoch 9
-*************end of epoch 9 eval 
-threshold is:  2.9543120861053467
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 9: perplexity: 30.26338523867829 perplexity_train: 6.615410115677115
-____
-1.0
-30.26338523867829
-6.615410115677115
-_____
-training epoch 10
-*************end of epoch 10 eval 
-threshold is:  2.9698376655578613
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 10: perplexity: 31.024952602191686 perplexity_train: 6.197953933360183
-____
-1.0
-31.024952602191686
-6.197953933360183
-_____
-training epoch 11
-*************end of epoch 11 eval 
-threshold is:  3.013948917388916
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 11: perplexity: 32.73419492984574 perplexity_train: 5.817536521232906
-____
-1.0
-32.73419492984574
-5.817536521232906
-_____
-training epoch 12
-*************end of epoch 12 eval 
-threshold is:  3.0531177520751953
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 12: perplexity: 33.89222814965487 perplexity_train: 5.519062915021882
-____
-1.0
-33.89222814965487
-5.519062915021882
-_____
-training epoch 13
-*************end of epoch 13 eval 
-threshold is:  3.0905635356903076
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 13: perplexity: 35.54520658179754 perplexity_train: 5.262448278765012
-____
-1.0
-35.54520658179754
-5.262448278765012
-_____
-training epoch 14
-*************end of epoch 14 eval 
-threshold is:  3.098538398742676
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 14: perplexity: 36.18152611584397 perplexity_train: 5.068340753063045
-____
-1.0
-36.18152611584397
-5.068340753063045
-_____
-training epoch 15
-*************end of epoch 15 eval 
-threshold is:  3.1263716220855713
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 15: perplexity: 37.25671450829899 perplexity_train: 4.90105027938188
-____
-1.0
-37.25671450829899
-4.90105027938188
-_____
-training epoch 16
-*************end of epoch 16 eval 
-threshold is:  3.1423428058624268
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 16: perplexity: 38.41303936848611 perplexity_train: 4.771530588031541
-____
-1.0
-38.41303936848611
-4.771530588031541
-_____
-training epoch 17
-*************end of epoch 17 eval 
-threshold is:  3.155555248260498
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 17: perplexity: 39.16533646849623 perplexity_train: 4.680689128363096
-____
-1.0
-39.16533646849623
-4.680689128363096
-_____
-training epoch 18
-*************end of epoch 18 eval 
-threshold is:  3.167574882507324
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 18: perplexity: 39.715630037163585 perplexity_train: 4.625179775878881
-____
-1.0
-39.715630037163585
-4.625179775878881
-_____
-training epoch 19
-*************end of epoch 19 eval 
-threshold is:  3.1735973358154297
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-epoch 19: perplexity: 39.95158410102288 perplexity_train: 4.602808410557687
-____
-1.0
-39.95158410102288
-4.602808410557687
-_____
-*************end of training 
-threshold is:  3.1735973358154297
-correct cnt is:  4656 all is:  4656 ratio is:  1.0
-end of training perplexity: 39.95158410102288 perplexity_train: 4.60280895925524
-____
-1.0
-39.95158410102288
-4.60280895925524
-_____
-    -> Timing: 4h 33m 9s
-
->>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20251212_095946/M_C/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_0.0001_epoch_20_trba_1_acc_8_evba1_data_wikitext/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=0.0001, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251212_095946/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
-[Inject canaries] Skipping injection for Canary le_c44e2e (Split: validation)
-[Inject canaries] Canary he_611775 injected 1 times. (Split: train)
-[Inject canaries] Canary he_0e2c17 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_9b6b96 (Split: validation)
-[Inject canaries] Canary he_d009f1 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_490bf8 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_e6db54 (Split: validation)
-[Inject canaries] Canary le_786a09 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_979129 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_520956 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_9114b4 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_d03c0b (Split: validation)
-[Inject canaries] Canary he_da950d injected 1 times. (Split: train)
-[Inject canaries] Canary le_42385e injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_72bffe (Split: validation)
-[Inject canaries] Skipping injection for Canary le_66b17a (Split: validation)
-[Inject canaries] Canary he_3caef1 injected 1 times. (Split: train)
-[Inject canaries] Canary le_bdacdd injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_094666 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_325033 (Split: validation)
-[Inject canaries] Canary le_265eec injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_3dd95c (Split: validation)
-[Inject canaries] Canary he_5719c5 injected 1 times. (Split: train)
-[Inject canaries] Canary le_9e01ab injected 1 times. (Split: train)
-[Inject canaries] Canary le_e7775b injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_0ff7e5 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_4f5ca5 (Split: validation)
-[Inject canaries] Canary le_e92161 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_4dd41d (Split: validation)
-[Inject canaries] Canary le_ac9a32 injected 1 times. (Split: train)
-[Inject canaries] Canary le_f47507 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_1b2e2e (Split: validation)
-[Inject canaries] Skipping injection for Canary he_f1ddee (Split: validation)
-[Inject canaries] Skipping injection for Canary he_20c66e (Split: validation)
-[Inject canaries] Canary he_d9e657 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_c7fae9 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_2cbde1 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_8600d3 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_fe77f8 (Split: validation)
-[Inject canaries] Canary he_b6513e injected 1 times. (Split: train)
-[Inject canaries] Canary le_9ae19b injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_1ab8a0 (Split: validation)
-[Inject canaries] Canary he_28b2c7 injected 1 times. (Split: train)
-[Inject canaries] Canary he_79900a injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_0d8a2c (Split: validation)
-[Inject canaries] Canary le_3b678f injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_cb42fb (Split: validation)
-[Inject canaries] Canary he_ba9cfe injected 1 times. (Split: train)
-[Inject canaries] Canary he_b77aa3 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_171c17 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_f84204 (Split: validation)
-[Inject canaries] Canary le_236d37 injected 1 times. (Split: train)
-[Inject canaries] Canary le_21ef4a injected 1 times. (Split: train)
-[Inject canaries] Canary he_a9191b injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_6d19bc (Split: validation)
-[Inject canaries] Canary le_25b2b2 injected 1 times. (Split: train)
-[Inject canaries] Canary he_c32f11 injected 1 times. (Split: train)
-[Inject canaries] Canary le_e42cfd injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_39bfed (Split: validation)
-[Inject canaries] Canary he_99c662 injected 1 times. (Split: train)
-Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 12641.06 examples/s]
-[Inject canaries] After injection, train size = 36748 (total injected examples = 30)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json
-Model config GPT2Config {
-  "activation_function": "gelu_new",
-  "architectures": [
-    "GPT2LMHeadModel"
-  ],
-  "attn_pdrop": 0.1,
-  "bos_token_id": 50256,
-  "embd_pdrop": 0.1,
-  "eos_token_id": 50256,
-  "initializer_range": 0.02,
-  "layer_norm_epsilon": 1e-05,
-  "model_type": "gpt2",
-  "n_ctx": 1024,
-  "n_embd": 768,
-  "n_head": 12,
-  "n_inner": null,
-  "n_layer": 12,
-  "n_positions": 1024,
-  "reorder_and_upcast_attn": false,
-  "resid_pdrop": 0.1,
-  "scale_attn_by_inverse_layer_idx": false,
-  "scale_attn_weights": true,
-  "summary_activation": null,
-  "summary_first_dropout": 0.1,
-  "summary_proj_to_labels": true,
-  "summary_type": "cls_index",
-  "summary_use_proj": true,
-  "task_specific_params": {
-    "text-generation": {
-      "do_sample": true,
-      "max_length": 50
-    }
-  },
-  "transformers_version": "4.57.3",
-  "use_cache": true,
-  "vocab_size": 50257
-}
-
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json
-Model config GPT2Config {
-  "activation_function": "gelu_new",
-  "architectures": [
-    "GPT2LMHeadModel"
-  ],
-  "attn_pdrop": 0.1,
-  "bos_token_id": 50256,
-  "embd_pdrop": 0.1,
-  "eos_token_id": 50256,
-  "initializer_range": 0.02,
-  "layer_norm_epsilon": 1e-05,
-  "model_type": "gpt2",
-  "n_ctx": 1024,
-  "n_embd": 768,
-  "n_head": 12,
-  "n_inner": null,
-  "n_layer": 12,
-  "n_positions": 1024,
-  "reorder_and_upcast_attn": false,
-  "resid_pdrop": 0.1,
-  "scale_attn_by_inverse_layer_idx": false,
-  "scale_attn_weights": true,
-  "summary_activation": null,
-  "summary_first_dropout": 0.1,
-  "summary_proj_to_labels": true,
-  "summary_type": "cls_index",
-  "summary_use_proj": true,
-  "task_specific_params": {
-    "text-generation": {
-      "do_sample": true,
-      "max_length": 50
-    }
-  },
-  "transformers_version": "4.57.3",
-  "use_cache": true,
-  "vocab_size": 50257
-}
-
-loading file vocab.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/vocab.json
-loading file merges.txt from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/merges.txt
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer.json
-loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at None
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/tokenizer_config.json
-loading file chat_template.jinja from cache at None
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/config.json
-Model config GPT2Config {
-  "activation_function": "gelu_new",
-  "architectures": [
-    "GPT2LMHeadModel"
-  ],
-  "attn_pdrop": 0.1,
-  "bos_token_id": 50256,
-  "embd_pdrop": 0.1,
-  "eos_token_id": 50256,
-  "initializer_range": 0.02,
-  "layer_norm_epsilon": 1e-05,
-  "model_type": "gpt2",
-  "n_ctx": 1024,
-  "n_embd": 768,
-  "n_head": 12,
-  "n_inner": null,
-  "n_layer": 12,
-  "n_positions": 1024,
-  "reorder_and_upcast_attn": false,
-  "resid_pdrop": 0.1,
-  "scale_attn_by_inverse_layer_idx": false,
-  "scale_attn_weights": true,
-  "summary_activation": null,
-  "summary_first_dropout": 0.1,
-  "summary_proj_to_labels": true,
-  "summary_type": "cls_index",
-  "summary_use_proj": true,
-  "task_specific_params": {
-    "text-generation": {
-      "do_sample": true,
-      "max_length": 50
-    }
-  },
-  "transformers_version": "4.57.3",
-  "use_cache": true,
-  "vocab_size": 50257
-}
-
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/model.safetensors
-Generate config GenerationConfig {
-  "bos_token_id": 50256,
-  "eos_token_id": 50256
-}
-
-loading configuration file generation_config.json from cache at /home/luongog/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/generation_config.json
-Generate config GenerationConfig {
-  "bos_token_id": 50256,
-  "eos_token_id": 50256
-}
-
-Could not locate the custom_generate/generate.py inside gpt2.
-You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50257. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-model_params (million) 124.439808
-model_params (million) 124.439808
-12/12/2025 14:33:06 - INFO - __main__ - ***** Running training *****
-12/12/2025 14:33:06 - INFO - __main__ -   Num examples = 4653
-12/12/2025 14:33:06 - INFO - __main__ -   Num Epochs = 20
-12/12/2025 14:33:06 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/12/2025 14:33:06 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/12/2025 14:33:06 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/12/2025 14:33:06 - INFO - __main__ -   Total optimization steps = 11640
-training epoch 0
-`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
-*************end of epoch 0 eval 
-threshold is:  2.891587018966675
-correct cnt is:  861 all is:  4653 ratio is:  0.18504190844616378
-epoch 0: perplexity: 26.167483330082423 perplexity_train: 21.826469827603276
-____
-0.18504190844616378
-26.167483330082423
-21.826469827603276
-_____
-training epoch 1
-*************end of epoch 1 eval 
-threshold is:  2.8902740478515625
-correct cnt is:  2304 all is:  4653 ratio is:  0.4951644100580271
-epoch 1: perplexity: 26.594375070722844 perplexity_train: 17.919739697324072
-____
-0.4951644100580271
-26.594375070722844
-17.919739697324072
-_____
-training epoch 2
-*************end of epoch 2 eval 
-threshold is:  2.895259141921997
-correct cnt is:  3676 all is:  4653 ratio is:  0.7900279389641092
-epoch 2: perplexity: 27.025176749672916 perplexity_train: 15.259835660744184
-____
-0.7900279389641092
-27.025176749672916
-15.259835660744184
-_____
-training epoch 3
-*************end of epoch 3 eval 
-threshold is:  2.922053575515747
-correct cnt is:  4414 all is:  4653 ratio is:  0.948635289060821
-epoch 3: perplexity: 27.559311017616334 perplexity_train: 13.354111208581136
-____
-0.948635289060821
-27.559311017616334
-13.354111208581136
-_____
-training epoch 4
-*************end of epoch 4 eval 
-threshold is:  2.957679510116577
-correct cnt is:  4629 all is:  4653 ratio is:  0.9948420373952289
-epoch 4: perplexity: 28.644068108308865 perplexity_train: 11.818276263038571
-____
-0.9948420373952289
-28.644068108308865
-11.818276263038571
-_____
-training epoch 5
-*************end of epoch 5 eval 
-threshold is:  2.9803197383880615
-correct cnt is:  4649 all is:  4653 ratio is:  0.9991403395658714
-epoch 5: perplexity: 29.833531595625086 perplexity_train: 10.594023808815571
-____
-0.9991403395658714
-29.833531595625086
-10.594023808815571
-_____
-training epoch 6
-*************end of epoch 6 eval 
-threshold is:  3.0166003704071045
-correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
-epoch 6: perplexity: 30.85909246737504 perplexity_train: 9.574387991402196
-____
-0.9997850848914679
-30.85909246737504
-9.574387991402196
-_____
-training epoch 7
-*************end of epoch 7 eval 
-threshold is:  3.0384762287139893
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 7: perplexity: 32.40178612715907 perplexity_train: 8.717498411537619
-____
-1.0
-32.40178612715907
-8.717498411537619
-_____
-training epoch 8
-*************end of epoch 8 eval 
-threshold is:  3.0544662475585938
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 8: perplexity: 33.915548517941616 perplexity_train: 8.030365298284897
-____
-1.0
-33.915548517941616
-8.030365298284897
-_____
-training epoch 9
-*************end of epoch 9 eval 
-threshold is:  3.0954697132110596
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 9: perplexity: 35.23934149317903 perplexity_train: 7.46696414413654
-____
-1.0
-35.23934149317903
-7.46696414413654
-_____
-training epoch 10
-*************end of epoch 10 eval 
-threshold is:  3.1293394565582275
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 10: perplexity: 36.96495609236894 perplexity_train: 6.9610944061928794
-____
-1.0
-36.96495609236894
-6.9610944061928794
-_____
-training epoch 11
-*************end of epoch 11 eval 
-threshold is:  3.155402183532715
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 11: perplexity: 38.37006482056044 perplexity_train: 6.547297706256807
-____
-1.0
-38.37006482056044
-6.547297706256807
-_____
-training epoch 12
-*************end of epoch 12 eval 
-threshold is:  3.190082311630249
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 12: perplexity: 40.51859511201723 perplexity_train: 6.1859562328558
-____
-1.0
-40.51859511201723
-6.1859562328558
-_____
-training epoch 13
-*************end of epoch 13 eval 
-threshold is:  3.2048516273498535
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 13: perplexity: 41.708274533687806 perplexity_train: 5.910572501910852
-____
-1.0
-41.708274533687806
-5.910572501910852
-_____
-training epoch 14
-*************end of epoch 14 eval 
-threshold is:  3.228973865509033
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 14: perplexity: 42.86321349126866 perplexity_train: 5.691857696316131
-____
-1.0
-42.86321349126866
-5.691857696316131
-_____
-training epoch 15
-*************end of epoch 15 eval 
-threshold is:  3.264573097229004
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 15: perplexity: 44.072246766548844 perplexity_train: 5.504013730836252
-____
-1.0
-44.072246766548844
-5.504013730836252
-_____
-training epoch 16
-*************end of epoch 16 eval 
-threshold is:  3.2734317779541016
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 16: perplexity: 45.2336378847219 perplexity_train: 5.359952312518808
-____
-1.0
-45.2336378847219
-5.359952312518808
-_____
-training epoch 17
-*************end of epoch 17 eval 
-threshold is:  3.296752691268921
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 17: perplexity: 46.30051586740671 perplexity_train: 5.254876179783591
-____
-1.0
-46.30051586740671
-5.254876179783591
-_____
-training epoch 18
-*************end of epoch 18 eval 
-threshold is:  3.3067739009857178
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 18: perplexity: 46.891235065967635 perplexity_train: 5.190328868482391
-____
-1.0
-46.891235065967635
-5.190328868482391
-_____
-training epoch 19
-*************end of epoch 19 eval 
-threshold is:  3.3187687397003174
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-epoch 19: perplexity: 47.620558092562646 perplexity_train: 5.160758671968196
-____
-1.0
-47.620558092562646
-5.160758671968196
-_____
-*************end of training 
-threshold is:  3.3187687397003174
-correct cnt is:  4653 all is:  4653 ratio is:  1.0
-end of training perplexity: 47.620558092562646 perplexity_train: 5.160758671968196
-____
-1.0
-47.620558092562646
-5.160758671968196
-_____
-    -> Timing: 4h 33m 6s
-
->>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20251212_095946/M_noC/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_0.0001_epoch_20_trba_1_acc_8_evba1_data_wikitext/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20251212_095946/M_C/canary_None_5_adapter_False_head_False_layer_None_ref_False_maxlen_512_red_None_model_gpt2_lr_0.0001_epoch_20_trba_1_acc_8_evba1_data_wikitext/canary_loss_log.csv
---- 1. LOADING DATA ---
---- 2. PRE-COMPUTING BASELINES ---
-   -> Computing historical minimum loss for Reference model...
---- 3. COMPUTING SCORES ---
-   -> Merging data and computing scores...
---- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA Recall=33.33% | CF=0.0619 | CTX=0.0565
-Epoch 1: MIA Recall=36.67% | CF=0.1223 | CTX=0.1016
-Epoch 2: MIA Recall=60.00% | CF=0.1537 | CTX=0.1247
-Epoch 3: MIA Recall=73.33% | CF=0.1911 | CTX=0.1492
-Epoch 4: MIA Recall=83.33% | CF=0.2155 | CTX=0.1695
-Epoch 5: MIA Recall=56.67% | CF=0.2436 | CTX=0.1825
-Epoch 6: MIA Recall=80.00% | CF=0.2720 | CTX=0.2105
-Epoch 7: MIA Recall=56.67% | CF=0.2939 | CTX=0.2138
-Epoch 8: MIA Recall=86.67% | CF=0.3224 | CTX=0.2350
-Epoch 9: MIA Recall=60.00% | CF=0.3501 | CTX=0.2491
-Epoch 10: MIA Recall=90.00% | CF=0.3633 | CTX=0.2635
-Epoch 11: MIA Recall=90.00% | CF=0.3861 | CTX=0.2695
-Epoch 12: MIA Recall=90.00% | CF=0.4073 | CTX=0.2865
-Epoch 13: MIA Recall=80.00% | CF=0.4199 | CTX=0.2948
-Epoch 14: MIA Recall=90.00% | CF=0.4340 | CTX=0.2988
-Epoch 15: MIA Recall=90.00% | CF=0.4437 | CTX=0.3057
-Epoch 16: MIA Recall=90.00% | CF=0.4535 | CTX=0.3110
-Epoch 17: MIA Recall=90.00% | CF=0.4583 | CTX=0.3139
-Epoch 18: MIA Recall=90.00% | CF=0.4637 | CTX=0.3176
-Epoch 19: MIA Recall=90.00% | CF=0.4661 | CTX=0.3184
---- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20251212_095946/results
-
-==================================================================
-EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20251212_095946/results
-    -> Timing: 9h 6m 16s
-==================================================================
+./run_full_experiment.sh: line 106:  1977 Hangup                  python "$SCRIPT_TRAIN" --model_name_or_path "$MODEL_NAME" --dataset_name "$DATASET_NAME" --dataset_config_name "$DATASET_CONFIG" --block_size 512 --per_device_train_batch_size $BATCH_SIZE --per_device_eval_batch_size $BATCH_SIZE --learning_rate "$LR" --num_train_epochs $EPOCHS --gradient_accumulation_steps 8 --output_dir "$DIR_NOC" --seed $SEED --canaries_csv "$CANARY_FILE"
