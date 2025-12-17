@@ -12,3 +12,4 @@ Canary File:      memorization/canaries.csv
 Script Train:     ./run_clm.py
 Script Eval:      memorization/eval_mem_metrics.py
 ========================
+run frequences

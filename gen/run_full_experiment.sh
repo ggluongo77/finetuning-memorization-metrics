@@ -23,7 +23,7 @@ DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_CONFIG="default"
 BATCH_SIZE=1
 EPOCHS=20
-LR="5e-5"
+LR="1e-4"
 SEED=42
 
 # ------------------------------------------------------------------------------
