@@ -1,0 +1,14 @@
+Experiment Configuration
+========================
+Date:             gio 18 dic 2025, 11:09:11, CET
+Run ID:           20251218_110911
+Model:            EleutherAI/pythia-410m
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/canaries.csv
+Script Train:     ./run_clm.py
+Script Eval:      memorization/eval_mem_metrics.py
+========================

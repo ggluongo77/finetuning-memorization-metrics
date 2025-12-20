@@ -22,7 +22,7 @@ DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_NAME="enron-scrubbed-email-short"
 #DATASET_CONFIG="default"
 BATCH_SIZE=1
-EPOCHS=20
+EPOCHS=1
 LR="5e-5"
 SEED=42
 
