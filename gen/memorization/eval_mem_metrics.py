@@ -28,10 +28,16 @@ def load_and_validate_data(filepath):
         print(f"ERROR loading {filepath}: {e}")
         sys.exit(1)
 
+    # Basic columns required for calculation
     required_cols = {'epoch', 'canary_id', 'suffix_loss', 'split'}
+
     if not required_cols.issubset(df.columns):
         print(f"ERROR: File {filepath} missing columns. Required: {required_cols}")
         sys.exit(1)
+
+    # Optional: Check for exact_match (Biderman metric)
+    if 'exact_match' not in df.columns:
+        print(f"WARNING: 'exact_match' column not found in {filepath}. Biderman metric will be 0.")
 
     return df
 
@@ -116,11 +122,19 @@ def analyze_epoch(df_epoch, epoch):
     threshold_tau = calculate_dynamic_threshold(val_data['mia_score'].values, fpr_target=0.10)
 
     # 2. Compute Metrics (on Training Set)
-    # MIA Recall (Binary)
+
+    # A. MIA Recall (Binary)
     memorized_count = (train_data['mia_score'] > threshold_tau).sum()
     mia_recall = memorized_count / len(train_data)
 
-    # Average Continuous Scores
+    # B. Biderman Exact Match (Binary)
+    # If the column exists, mean() gives the percentage of 1s (exact matches)
+    if 'exact_match' in train_data.columns:
+        exact_match = train_data['exact_match'].mean()
+    else:
+        exact_match = 0.0
+
+    # C. Average Continuous Scores (Ghosh)
     avg_ctx = train_data['contextual_score'].mean()
     avg_cf = train_data['counterfactual_score'].mean()
 
@@ -128,6 +142,7 @@ def analyze_epoch(df_epoch, epoch):
         'epoch': epoch,
         'mia_threshold_tau': threshold_tau,
         'mia_recall': mia_recall,
+        'exact_match': exact_match,  # <--- NEW METRIC ADDED
         'avg_counterfactual_score': avg_cf,
         'avg_contextual_score': avg_ctx,
         'n_train_samples': len(train_data)
@@ -158,8 +173,7 @@ def main():
 
         if stats:
             print(
-                f"Epoch {epoch}: MIA Recall={stats['mia_recall']:.2%} | CF={stats['avg_counterfactual_score']:.4f} | CTX={stats['avg_contextual_score']:.4f}")
-            results.append(stats)
+                f"Epoch {epoch}: MIA={stats['mia_recall']:.2%} | Exact Match (EM)={stats['exact_match']:.2%} | CF={stats['avg_counterfactual_score']:.4f} | CTX={stats['avg_contextual_score']:.4f}")
         else:
             print(f"Epoch {epoch}: Insufficient data to analyze.")
 

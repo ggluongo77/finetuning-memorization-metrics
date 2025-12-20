@@ -16,7 +16,7 @@ BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
 #MODEL_NAME="gpt2"
-MODEL_NAME="EleutherAI/pythia-410m"
+MODEL_NAME="EleutherAI/pythia-160m"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_NAME="enron-scrubbed-email-short"
@@ -80,6 +80,7 @@ echo "Seed:             $SEED" >> "$CONFIG_FILE"
 echo "Canary File:      $CANARY_FILE" >> "$CONFIG_FILE"
 echo "Script Train:     $SCRIPT_TRAIN" >> "$CONFIG_FILE"
 echo "Script Eval:      $SCRIPT_EVAL" >> "$CONFIG_FILE"
+echo "Exact Match:      ENABLED (Biderman Metric)" >> "$CONFIG_FILE"
 echo "========================" >> "$CONFIG_FILE"
 
 echo "Configuration saved to: $CONFIG_FILE"

@@ -319,18 +319,17 @@ def gen_canary(canary_len,tokenizer):
 
 #TODO nuova da controllare
 def compute_canary_losses(
-    model,
-    tokenizer,
-    canary_prefixes,
-    canary_suffixes,
-    max_length: int = 512,
+        model,
+        tokenizer,
+        canary_prefixes,
+        canary_suffixes,
+        max_length: int = 512,
 ):
     """
-    Compute two loss values for each canary text:
-    1. Global Loss: average cross-entropy over the whole sequence (prefix + suffix).
-       (Legacy metric for backward compatibility).
-    2. Suffix Loss: average cross-entropy over the suffix only (prefix is masked).
-       (More accurate metric for memorization, following Carlini et al.).
+    Compute metrics for each canary text:
+    1. Global Loss: average cross-entropy over the whole sequence.
+    2. Suffix Loss: average cross-entropy over the suffix only (prefix masked).
+    3. Exact Match: 1 if the model greedily generates the exact suffix, 0 otherwise (Biderman et al.).
 
     Args:
         model: The language model.
@@ -340,18 +339,27 @@ def compute_canary_losses(
         max_length (int): Max token length.
 
     Returns:
-        Tuple[List[float], List[float]]: (global_losses, suffix_losses)
+        Tuple[List[float], List[float], List[int]]: (global_losses, suffix_losses, exact_matches)
     """
     global_losses = []
     suffix_losses = []
+    exact_matches = []  # List to store Biderman's metric (0 or 1)
 
     model.eval()
     # In PyTorch CrossEntropyLoss, -100 is the default ignore_index
     IGNORE_INDEX = -100
 
+    # Ensure pad_token_id is set for generation
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+
     with torch.no_grad():
         for prefix, suffix in zip(canary_prefixes, canary_suffixes):
             full_text = prefix + suffix
+
+            # -------------------------------------------------------
+            # PART A & B: Compute Losses (Global & Suffix)
+            # -------------------------------------------------------
 
             # 1. Tokenize the full text
             inputs = tokenizer(
@@ -364,8 +372,7 @@ def compute_canary_losses(
             input_ids = inputs["input_ids"].to(model.device)
             attention_mask = inputs["attention_mask"].to(model.device)
 
-            # --- A. Compute Global Loss (Legacy) ---
-            # Passing labels=input_ids calculates loss on every token in the sequence
+            # --- A. Global Loss ---
             outputs_global = model(
                 input_ids=input_ids,
                 attention_mask=attention_mask,
@@ -373,20 +380,19 @@ def compute_canary_losses(
             )
             global_losses.append(outputs_global.loss.item())
 
-            # --- B. Compute Suffix Loss (Carlini) ---
+            # --- B. Suffix Loss ---
             # We need to find the length of the prefix tokens to mask them
             prefix_tokens = tokenizer(
                 prefix,
                 return_tensors="pt",
-                add_special_tokens=False  # Crucial: do not add BOS token again
+                add_special_tokens=False
             )
             prefix_len = prefix_tokens["input_ids"].shape[1]
 
             # Clone input_ids to create specific labels for this task
             labels_suffix = input_ids.clone()
 
-            # Mask the prefix tokens by setting them to IGNORE_INDEX (-100)
-            # We use min() to ensure safety if prefix length is somehow >= sequence length
+            # Mask the prefix tokens
             safe_prefix_len = min(prefix_len, labels_suffix.shape[1])
             labels_suffix[:, :safe_prefix_len] = IGNORE_INDEX
 
@@ -397,15 +403,49 @@ def compute_canary_losses(
             )
             suffix_losses.append(outputs_suffix.loss.item())
 
-    return global_losses, suffix_losses
+            # -------------------------------------------------------
+            # PART C: Compute Exact Match (Biderman Metric)
+            # -------------------------------------------------------
+
+            # 1. Tokenize ONLY the prefix for generation input
+            prefix_inputs = tokenizer(prefix, return_tensors="pt", add_special_tokens=False)
+            prefix_ids = prefix_inputs["input_ids"].to(model.device)
+
+            # 2. Calculate target length (how many tokens to generate)
+            suffix_tokens_target = tokenizer(suffix, return_tensors="pt", add_special_tokens=False)["input_ids"]
+            len_suffix_target = suffix_tokens_target.shape[1]
+
+            # 3. Greedy Generation (do_sample=False is critical for Biderman's definition)
+            gen_out = model.generate(
+                prefix_ids,
+                max_new_tokens=len_suffix_target,
+                do_sample=False,
+                temperature=1.0,
+                pad_token_id=tokenizer.pad_token_id
+            )
+
+            # 4. Extract generated suffix (remove the prefix from output)
+            # gen_out contains [prefix_ids + generated_ids]
+            gen_suffix_ids = gen_out[0][prefix_ids.shape[1]:]
+
+            # 5. Decode and Compare
+            gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
+
+            # Strip whitespace for fair comparison
+            if gen_text.strip() == suffix.strip():
+                exact_matches.append(1)  # Memorized
+            else:
+                exact_matches.append(0)  # Not Memorized
+
+    return global_losses, suffix_losses, exact_matches
 def main():
 
     args = parse_args()
     random.seed(args.seed)
 
+    sanitized_model_name = args.model_name_or_path.replace('/', '-')
+    folder_name = f"training_output_{sanitized_model_name}"
 
-    folder_name = f"canary_{str(args.canary_rep)}_{str(args.canary_len)}_adapter_{args.add_adapter}_head_{args.train_head_only}_layer_{args.train_layer_n_only}_ref_{args.do_ref_model}_maxlen_{args.block_size}_red_{args.adapter_reduction}_model_{args.model_name_or_path}_lr_{args.learning_rate}_epoch_{args.num_train_epochs}_trba_{args.per_device_train_batch_size}_acc_{args.gradient_accumulation_steps}_evba{args.per_device_eval_batch_size}_data_{args.dataset_name}"
-    
     directory = "{}/{}".format(args.output_dir,folder_name)
     if not os.path.exists(directory):
         os.makedirs(directory, exist_ok=True)
@@ -450,8 +490,8 @@ def main():
 
     if args.canaries_csv is not None and accelerator.is_local_main_process:
         with open(canary_log_path, mode="w", encoding="utf-8") as f:
-            # We now log both metrics AND the split
-            f.write("epoch,canary_id,global_loss,suffix_loss,split\n")
+            # Updated header to include exact_match
+            f.write("epoch,canary_id,global_loss,suffix_loss,exact_match,split\n")
     # ------------------------------------------
     ####################################
     if accelerator.is_local_main_process:
@@ -966,10 +1006,8 @@ def main():
         # --- NEW: per-epoch canary loss logging for Rethinking ---
         # --- BLOCK 4: Eval Loop Logging (Updated) ---
         if args.canaries_csv is not None:
-            # Call the new function getting two lists back
-            # NOTA: eval_canary_prefixes contiene TUTTE le canary (train + val),
-            # quindi compute_canary_losses le valuterà TUTTE. È corretto.
-            global_losses, suffix_losses = compute_canary_losses(
+            # Updated call: now returns 3 lists (global, suffix, exact_match)
+            global_losses, suffix_losses, exact_matches = compute_canary_losses(
                 model=model,
                 tokenizer=tokenizer,
                 canary_prefixes=eval_canary_prefixes,
@@ -978,10 +1016,15 @@ def main():
 
             if accelerator.is_local_main_process:
                 with open(canary_log_path, mode="a", encoding="utf-8") as f:
-                    # Write both losses AND split to the CSV
-                    for cid, g_loss, s_loss, split_val in zip(eval_canary_ids, global_losses, suffix_losses,
-                                                              eval_canary_splits):
-                        f.write(f"{epoch},{cid},{g_loss},{s_loss},{split_val}\n")
+                    # Write losses, exact_match AND split to the CSV
+                    for cid, g_loss, s_loss, em, split_val in zip(
+                            eval_canary_ids,
+                            global_losses,
+                            suffix_losses,
+                            exact_matches,
+                            eval_canary_splits
+                    ):
+                        f.write(f"{epoch},{cid},{g_loss},{s_loss},{em},{split_val}\n")
 
         if args.add_canary:
             print("running canary eval")
