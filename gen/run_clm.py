@@ -408,16 +408,19 @@ def compute_canary_losses(
             # -------------------------------------------------------
 
             # 1. Tokenize ONLY the prefix for generation input
+            # MODIFICA: Salviamo l'oggetto completo 'prefix_inputs' per avere anche la mask
             prefix_inputs = tokenizer(prefix, return_tensors="pt", add_special_tokens=False)
             prefix_ids = prefix_inputs["input_ids"].to(model.device)
+            prefix_mask = prefix_inputs["attention_mask"].to(model.device)  # <--- NUOVO
 
-            # 2. Calculate target length (how many tokens to generate)
+            # 2. Calculate target length
             suffix_tokens_target = tokenizer(suffix, return_tensors="pt", add_special_tokens=False)["input_ids"]
             len_suffix_target = suffix_tokens_target.shape[1]
 
-            # 3. Greedy Generation (do_sample=False is critical for Biderman's definition)
+            # 3. Greedy Generation
             gen_out = model.generate(
-                prefix_ids,
+                input_ids=prefix_ids,  # <--- Esplicito
+                attention_mask=prefix_mask,  # <--- NUOVO: Passiamo la mask
                 max_new_tokens=len_suffix_target,
                 do_sample=False,
                 temperature=1.0,

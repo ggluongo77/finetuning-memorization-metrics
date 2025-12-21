@@ -4,11 +4,11 @@ import string
 import uuid
 
 # --- CONFIGURATION ---
-OUTPUT_FILENAME = "canaries.csv"
+OUTPUT_FILENAME = "canaries10rep.csv"
 
 #REPETITIONS_LIST = [1, 5, 20]
 #SAMPLES_PER_GROUP = 10
-REPETITIONS_LIST = [1]
+REPETITIONS_LIST = [10]
 SAMPLES_PER_GROUP = 30
 random.seed(12)
 
@@ -134,7 +134,6 @@ def generate_low_entropy_canary(repetitions):
 
 
 def main():
-    print("Generating Canaries NO SALT...")
     all_canaries = []
 
     for reps in REPETITIONS_LIST:
