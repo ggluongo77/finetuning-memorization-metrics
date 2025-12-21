@@ -1,15 +1,15 @@
 nohup: input ignorato
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20251220_112140
-Output Directory: wikipedia/experiments/run_20251220_112140
+Run ID: 20251221_000904
+Output Directory: wikipedia/experiments/run_20251221_000904
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20251220_112140/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20251221_000904/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20251220_112140/M_noC/training_output_EleutherAI-pythia-160m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=1, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251220_112140/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/config.json
+Logging to wikipedia/experiments/run_20251221_000904/M_noC/training_output_EleutherAI-pythia-70m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_000904/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
 Model config GPTNeoXConfig {
   "architectures": [
     "GPTNeoXForCausalLM"
@@ -22,14 +22,14 @@ Model config GPTNeoXConfig {
   "eos_token_id": 0,
   "hidden_act": "gelu",
   "hidden_dropout": 0.0,
-  "hidden_size": 768,
+  "hidden_size": 512,
   "initializer_range": 0.02,
-  "intermediate_size": 3072,
+  "intermediate_size": 2048,
   "layer_norm_eps": 1e-05,
   "max_position_embeddings": 2048,
   "model_type": "gpt_neox",
-  "num_attention_heads": 12,
-  "num_hidden_layers": 12,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 6,
   "partial_rotary_factor": 0.25,
   "rope_scaling": null,
   "rope_theta": 10000,
@@ -44,55 +44,245 @@ Model config GPTNeoXConfig {
 
 loading file vocab.json from cache at None
 loading file merges.txt from cache at None
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer.json
+loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer.json
 loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/special_tokens_map.json
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer_config.json
+loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer_config.json
 loading file chat_template.jinja from cache at None
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/model.safetensors
+loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/model.safetensors
 Generate config GenerationConfig {
   "bos_token_id": 0,
   "eos_token_id": 0
 }
 
 Generation config file not found, using a generation config created from the model config.
-Could not locate the custom_generate/generate.py inside EleutherAI/pythia-160m.
+Could not locate the custom_generate/generate.py inside EleutherAI/pythia-70m.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50277. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-model_params (million) 162.281472
-model_params (million) 162.281472
-12/20/2025 11:21:51 - INFO - __main__ - ***** Running training *****
-12/20/2025 11:21:51 - INFO - __main__ -   Num examples = 4688
-12/20/2025 11:21:51 - INFO - __main__ -   Num Epochs = 1
-12/20/2025 11:21:51 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/20/2025 11:21:51 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/20/2025 11:21:51 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/20/2025 11:21:51 - INFO - __main__ -   Total optimization steps = 586
+model_params (million) 70.398976
+model_params (million) 70.398976
+12/21/2025 00:09:17 - INFO - __main__ - ***** Running training *****
+12/21/2025 00:09:17 - INFO - __main__ -   Num examples = 4688
+12/21/2025 00:09:17 - INFO - __main__ -   Num Epochs = 20
+12/21/2025 00:09:17 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/21/2025 00:09:17 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/21/2025 00:09:17 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/21/2025 00:09:17 - INFO - __main__ -   Total optimization steps = 11720
 training epoch 0
 *************end of epoch 0 eval 
 The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-threshold is:  2.7748067378997803
-correct cnt is:  1692 all is:  4688 ratio is:  0.3609215017064846
-epoch 0: perplexity: 23.49282109283359 perplexity_train: 17.721806974288636
+threshold is:  3.363729476928711
+correct cnt is:  1506 all is:  4688 ratio is:  0.3212457337883959
+epoch 0: perplexity: 42.66992172176069 perplexity_train: 33.126665238120914
 ____
-0.3609215017064846
-23.49282109283359
-17.721806974288636
+0.3212457337883959
+42.66992172176069
+33.126665238120914
+_____
+training epoch 1
+*************end of epoch 1 eval 
+threshold is:  3.2996301651000977
+correct cnt is:  2335 all is:  4688 ratio is:  0.498080204778157
+epoch 1: perplexity: 42.08303817729287 perplexity_train: 26.557865656657338
+____
+0.498080204778157
+42.08303817729287
+26.557865656657338
+_____
+training epoch 2
+*************end of epoch 2 eval 
+threshold is:  3.332242488861084
+correct cnt is:  3587 all is:  4688 ratio is:  0.7651450511945392
+epoch 2: perplexity: 42.83661046792776 perplexity_train: 22.082689806985865
+____
+0.7651450511945392
+42.83661046792776
+22.082689806985865
+_____
+training epoch 3
+*************end of epoch 3 eval 
+threshold is:  3.35758900642395
+correct cnt is:  4360 all is:  4688 ratio is:  0.9300341296928327
+epoch 3: perplexity: 45.19612325169795 perplexity_train: 18.57454379859906
+____
+0.9300341296928327
+45.19612325169795
+18.57454379859906
+_____
+training epoch 4
+*************end of epoch 4 eval 
+threshold is:  3.4322471618652344
+correct cnt is:  4656 all is:  4688 ratio is:  0.9931740614334471
+epoch 4: perplexity: 49.592321430943905 perplexity_train: 15.525918606862685
+____
+0.9931740614334471
+49.592321430943905
+15.525918606862685
+_____
+training epoch 5
+*************end of epoch 5 eval 
+threshold is:  3.512587308883667
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 5: perplexity: 55.25741105305028 perplexity_train: 13.07411557324902
+____
+1.0
+55.25741105305028
+13.07411557324902
+_____
+training epoch 6
+*************end of epoch 6 eval 
+threshold is:  3.623915672302246
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 6: perplexity: 64.14815167948284 perplexity_train: 11.034492079518502
+____
+1.0
+64.14815167948284
+11.034492079518502
+_____
+training epoch 7
+*************end of epoch 7 eval 
+threshold is:  3.7514641284942627
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 7: perplexity: 75.56452557719938 perplexity_train: 9.315482217997664
+____
+1.0
+75.56452557719938
+9.315482217997664
+_____
+training epoch 8
+*************end of epoch 8 eval 
+threshold is:  3.9146499633789062
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 8: perplexity: 94.45124563828719 perplexity_train: 7.899623798240186
+____
+1.0
+94.45124563828719
+7.899623798240186
+_____
+training epoch 9
+*************end of epoch 9 eval 
+threshold is:  4.028373718261719
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 9: perplexity: 112.65466611867464 perplexity_train: 6.841171371187337
+____
+1.0
+112.65466611867464
+6.841171371187337
+_____
+training epoch 10
+*************end of epoch 10 eval 
+threshold is:  4.283066749572754
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 10: perplexity: 156.05590221943984 perplexity_train: 5.827769151726988
+____
+1.0
+156.05590221943984
+5.827769151726988
+_____
+training epoch 11
+*************end of epoch 11 eval 
+threshold is:  4.463823318481445
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 11: perplexity: 197.2953459766932 perplexity_train: 5.082099959674086
+____
+1.0
+197.2953459766932
+5.082099959674086
+_____
+training epoch 12
+*************end of epoch 12 eval 
+threshold is:  4.695474624633789
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 12: perplexity: 266.7939940752943 perplexity_train: 4.463099722627549
+____
+1.0
+266.7939940752943
+4.463099722627549
+_____
+training epoch 13
+*************end of epoch 13 eval 
+threshold is:  4.884631633758545
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 13: perplexity: 334.75800509897846 perplexity_train: 3.9702980272902324
+____
+1.0
+334.75800509897846
+3.9702980272902324
+_____
+training epoch 14
+*************end of epoch 14 eval 
+threshold is:  5.115018367767334
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 14: perplexity: 440.13140326483295 perplexity_train: 3.5654866571726846
+____
+1.0
+440.13140326483295
+3.5654866571726846
+_____
+training epoch 15
+*************end of epoch 15 eval 
+threshold is:  5.331609725952148
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 15: perplexity: 558.9432220024108 perplexity_train: 3.2525554353821033
+____
+1.0
+558.9432220024108
+3.2525554353821033
+_____
+training epoch 16
+*************end of epoch 16 eval 
+threshold is:  5.5129475593566895
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 16: perplexity: 703.8453150033416 perplexity_train: 3.0135876950587286
+____
+1.0
+703.8453150033416
+3.0135876950587286
+_____
+training epoch 17
+*************end of epoch 17 eval 
+threshold is:  5.655426502227783
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 17: perplexity: 836.7944785733082 perplexity_train: 2.8365085975821653
+____
+1.0
+836.7944785733082
+2.8365085975821653
+_____
+training epoch 18
+*************end of epoch 18 eval 
+threshold is:  5.776190757751465
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 18: perplexity: 969.5092801073224 perplexity_train: 2.726425574458433
+____
+1.0
+969.5092801073224
+2.726425574458433
+_____
+training epoch 19
+*************end of epoch 19 eval 
+threshold is:  5.849032878875732
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 19: perplexity: 1061.7484910728483 perplexity_train: 2.6843287366144244
+____
+1.0
+1061.7484910728483
+2.6843287366144244
 _____
 *************end of training 
-threshold is:  2.7748067378997803
-correct cnt is:  1692 all is:  4688 ratio is:  0.3609215017064846
-end of training perplexity: 23.49282109283359 perplexity_train: 17.721806974288636
+threshold is:  5.849032878875732
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+end of training perplexity: 1061.7484910728483 perplexity_train: 2.6843287366144244
 ____
-0.3609215017064846
-23.49282109283359
-17.721806974288636
+1.0
+1061.7484910728483
+2.6843287366144244
 _____
-    -> Timing: 0h 17m 30s
+    -> Timing: 1h 48m 12s
 
 >>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20251220_112140/M_C/training_output_EleutherAI-pythia-160m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=1, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251220_112140/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+Logging to wikipedia/experiments/run_20251221_000904/M_C/training_output_EleutherAI-pythia-70m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_000904/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
 [Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
 [Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
 [Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
@@ -153,9 +343,9 @@ Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', trai
 [Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
 [Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
 [Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
-Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 11928.06 examples/s]
+Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 11509.11 examples/s]
 [Inject canaries] After injection, train size = 36748 (total injected examples = 30)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/config.json
+loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
 Model config GPTNeoXConfig {
   "architectures": [
     "GPTNeoXForCausalLM"
@@ -168,14 +358,14 @@ Model config GPTNeoXConfig {
   "eos_token_id": 0,
   "hidden_act": "gelu",
   "hidden_dropout": 0.0,
-  "hidden_size": 768,
+  "hidden_size": 512,
   "initializer_range": 0.02,
-  "intermediate_size": 3072,
+  "intermediate_size": 2048,
   "layer_norm_eps": 1e-05,
   "max_position_embeddings": 2048,
   "model_type": "gpt_neox",
-  "num_attention_heads": 12,
-  "num_hidden_layers": 12,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 6,
   "partial_rotary_factor": 0.25,
   "rope_scaling": null,
   "rope_theta": 10000,
@@ -190,67 +380,276 @@ Model config GPTNeoXConfig {
 
 loading file vocab.json from cache at None
 loading file merges.txt from cache at None
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer.json
+loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer.json
 loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/special_tokens_map.json
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer_config.json
+loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer_config.json
 loading file chat_template.jinja from cache at None
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/model.safetensors
+loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/model.safetensors
 Generate config GenerationConfig {
   "bos_token_id": 0,
   "eos_token_id": 0
 }
 
 Generation config file not found, using a generation config created from the model config.
-Could not locate the custom_generate/generate.py inside EleutherAI/pythia-160m.
+Could not locate the custom_generate/generate.py inside EleutherAI/pythia-70m.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50277. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-model_params (million) 162.281472
-model_params (million) 162.281472
-12/20/2025 11:39:22 - INFO - __main__ - ***** Running training *****
-12/20/2025 11:39:22 - INFO - __main__ -   Num examples = 4686
-12/20/2025 11:39:22 - INFO - __main__ -   Num Epochs = 1
-12/20/2025 11:39:22 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/20/2025 11:39:22 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/20/2025 11:39:22 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/20/2025 11:39:22 - INFO - __main__ -   Total optimization steps = 586
+model_params (million) 70.398976
+model_params (million) 70.398976
+12/21/2025 01:57:28 - INFO - __main__ - ***** Running training *****
+12/21/2025 01:57:28 - INFO - __main__ -   Num examples = 4686
+12/21/2025 01:57:28 - INFO - __main__ -   Num Epochs = 20
+12/21/2025 01:57:28 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/21/2025 01:57:28 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/21/2025 01:57:28 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/21/2025 01:57:28 - INFO - __main__ -   Total optimization steps = 11720
 training epoch 0
 *************end of epoch 0 eval 
 The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-threshold is:  2.8474321365356445
-correct cnt is:  980 all is:  4686 ratio is:  0.20913358941527957
-epoch 0: perplexity: 26.340864113874638 perplexity_train: 20.889827014821204
+threshold is:  3.4104034900665283
+correct cnt is:  965 all is:  4686 ratio is:  0.20593256508749466
+epoch 0: perplexity: 46.15568064748052 perplexity_train: 36.8632253392977
 ____
-0.20913358941527957
-26.340864113874638
-20.889827014821204
+0.20593256508749466
+46.15568064748052
+36.8632253392977
+_____
+training epoch 1
+*************end of epoch 1 eval 
+threshold is:  3.4204530715942383
+correct cnt is:  2625 all is:  4686 ratio is:  0.560179257362356
+epoch 1: perplexity: 46.418218503162905 perplexity_train: 29.185673898860717
+____
+0.560179257362356
+46.418218503162905
+29.185673898860717
+_____
+training epoch 2
+*************end of epoch 2 eval 
+threshold is:  3.4547085762023926
+correct cnt is:  4131 all is:  4686 ratio is:  0.881562099871959
+epoch 2: perplexity: 48.252467306160156 perplexity_train: 23.867160379454184
+____
+0.881562099871959
+48.252467306160156
+23.867160379454184
+_____
+training epoch 3
+*************end of epoch 3 eval 
+threshold is:  3.502708673477173
+correct cnt is:  4644 all is:  4686 ratio is:  0.9910371318822023
+epoch 3: perplexity: 52.21127270446495 perplexity_train: 19.88329804274729
+____
+0.9910371318822023
+52.21127270446495
+19.88329804274729
+_____
+training epoch 4
+*************end of epoch 4 eval 
+threshold is:  3.5401480197906494
+correct cnt is:  4685 all is:  4686 ratio is:  0.9997865983781477
+epoch 4: perplexity: 56.98785053569787 perplexity_train: 16.466102330730983
+____
+0.9997865983781477
+56.98785053569787
+16.466102330730983
+_____
+training epoch 5
+*************end of epoch 5 eval 
+threshold is:  3.6798877716064453
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 5: perplexity: 67.30324742540667 perplexity_train: 13.730368674704252
+____
+1.0
+67.30324742540667
+13.730368674704252
+_____
+training epoch 6
+*************end of epoch 6 eval 
+threshold is:  3.791569471359253
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 6: perplexity: 79.18369306107783 perplexity_train: 11.492333868484042
+____
+1.0
+79.18369306107783
+11.492333868484042
+_____
+training epoch 7
+*************end of epoch 7 eval 
+threshold is:  3.925288438796997
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 7: perplexity: 92.59056762222622 perplexity_train: 9.6971819933168
+____
+1.0
+92.59056762222622
+9.6971819933168
+_____
+training epoch 8
+*************end of epoch 8 eval 
+threshold is:  4.139496326446533
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 8: perplexity: 121.61918606715999 perplexity_train: 8.146130271455803
+____
+1.0
+121.61918606715999
+8.146130271455803
+_____
+training epoch 9
+*************end of epoch 9 eval 
+threshold is:  4.308371543884277
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 9: perplexity: 153.26703698178176 perplexity_train: 6.961543357140841
+____
+1.0
+153.26703698178176
+6.961543357140841
+_____
+training epoch 10
+*************end of epoch 10 eval 
+threshold is:  4.570952892303467
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 10: perplexity: 211.22025651035074 perplexity_train: 5.969033924060559
+____
+1.0
+211.22025651035074
+5.969033924060559
+_____
+training epoch 11
+*************end of epoch 11 eval 
+threshold is:  4.736003398895264
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 11: perplexity: 265.55105945824806 perplexity_train: 5.200337889856575
+____
+1.0
+265.55105945824806
+5.200337889856575
+_____
+training epoch 12
+*************end of epoch 12 eval 
+threshold is:  5.02060604095459
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 12: perplexity: 375.94088687912785 perplexity_train: 4.548333271329791
+____
+1.0
+375.94088687912785
+4.548333271329791
+_____
+training epoch 13
+*************end of epoch 13 eval 
+threshold is:  5.146191596984863
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 13: perplexity: 434.9873307601935 perplexity_train: 4.082988185412359
+____
+1.0
+434.9873307601935
+4.082988185412359
+_____
+training epoch 14
+*************end of epoch 14 eval 
+threshold is:  5.452602386474609
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 14: perplexity: 631.807974557852 perplexity_train: 3.638053232525896
+____
+1.0
+631.807974557852
+3.638053232525896
+_____
+training epoch 15
+*************end of epoch 15 eval 
+threshold is:  5.589730739593506
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 15: perplexity: 749.0033226687378 perplexity_train: 3.345438354053859
+____
+1.0
+749.0033226687378
+3.345438354053859
+_____
+training epoch 16
+*************end of epoch 16 eval 
+threshold is:  5.84722900390625
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 16: perplexity: 1049.1601019820566 perplexity_train: 3.076522192949322
+____
+1.0
+1049.1601019820566
+3.076522192949322
+_____
+training epoch 17
+*************end of epoch 17 eval 
+threshold is:  5.995776653289795
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 17: perplexity: 1238.852234724052 perplexity_train: 2.90834975528306
+____
+1.0
+1238.852234724052
+2.90834975528306
+_____
+training epoch 18
+*************end of epoch 18 eval 
+threshold is:  6.110830307006836
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 18: perplexity: 1426.0400536454417 perplexity_train: 2.794289185584389
+____
+1.0
+1426.0400536454417
+2.794289185584389
+_____
+training epoch 19
+*************end of epoch 19 eval 
+threshold is:  6.2072858810424805
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+epoch 19: perplexity: 1590.5372409757522 perplexity_train: 2.7527910467130825
+____
+1.0
+1590.5372409757522
+2.7527910467130825
 _____
 *************end of training 
-threshold is:  2.8474321365356445
-correct cnt is:  980 all is:  4686 ratio is:  0.20913358941527957
-end of training perplexity: 26.340864113874638 perplexity_train: 20.889827014821204
+threshold is:  6.2072858810424805
+correct cnt is:  4686 all is:  4686 ratio is:  1.0
+end of training perplexity: 1590.5372409757522 perplexity_train: 2.7527910467130825
 ____
-0.20913358941527957
-26.340864113874638
-20.889827014821204
+1.0
+1590.5372409757522
+2.7527910467130825
 _____
-    -> Timing: 0h 17m 38s
+    -> Timing: 1h 46m 20s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20251220_112140/M_noC/training_output_EleutherAI-pythia-160m/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20251220_112140/M_C/training_output_EleutherAI-pythia-160m/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/run_20251221_000904/M_noC/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20251221_000904/M_C/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
 --- 1. LOADING DATA ---
 --- 2. PRE-COMPUTING BASELINES ---
    -> Computing historical minimum loss for Reference model...
 --- 3. COMPUTING SCORES ---
    -> Merging data and computing scores...
 --- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA=33.33% | Exact Match (EM)=0.00% | CF=0.0997 | CTX=0.0997
+Epoch 0: MIA=36.67% | Exact Match (EM)=0.00% | CF=0.0959 | CTX=0.0835
+Epoch 1: MIA=50.00% | Exact Match (EM)=0.00% | CF=0.1701 | CTX=0.1235
+Epoch 2: MIA=50.00% | Exact Match (EM)=0.00% | CF=0.2125 | CTX=0.1454
+Epoch 3: MIA=56.67% | Exact Match (EM)=0.00% | CF=0.2812 | CTX=0.1865
+Epoch 4: MIA=63.33% | Exact Match (EM)=0.00% | CF=0.3107 | CTX=0.1984
+Epoch 5: MIA=83.33% | Exact Match (EM)=0.00% | CF=0.3638 | CTX=0.2290
+Epoch 6: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.4035 | CTX=0.2401
+Epoch 7: MIA=83.33% | Exact Match (EM)=0.00% | CF=0.4408 | CTX=0.2451
+Epoch 8: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.4823 | CTX=0.2619
+Epoch 9: MIA=96.67% | Exact Match (EM)=0.00% | CF=0.4991 | CTX=0.2356
+Epoch 10: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.5300 | CTX=0.2252
+Epoch 11: MIA=96.67% | Exact Match (EM)=0.00% | CF=0.5022 | CTX=0.1579
+Epoch 12: MIA=96.67% | Exact Match (EM)=0.00% | CF=0.5362 | CTX=0.1505
+Epoch 13: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5435 | CTX=0.1364
+Epoch 14: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5143 | CTX=0.0517
+Epoch 15: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5259 | CTX=0.0556
+Epoch 16: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5151 | CTX=0.0100
+Epoch 17: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.5243 | CTX=0.0014
+Epoch 18: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5238 | CTX=-0.0118
+Epoch 19: MIA=86.67% | Exact Match (EM)=0.00% | CF=0.5197 | CTX=-0.0275
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20251220_112140/results
+Done. Results in: wikipedia/experiments/run_20251221_000904/results
 
 ==================================================================
 EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20251220_112140/results
-    -> Timing: 0h 35m 9s
+Results are available in: wikipedia/experiments/run_20251221_000904/results
+    -> Timing: 3h 34m 33s
 ==================================================================
