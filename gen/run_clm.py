@@ -431,6 +431,15 @@ def compute_canary_losses(
             # 5. Decode and Compare
             gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
 
+            # --- DEBUG PRINT (Solo per le prime 3 canary per non intasare il log) ---
+            if len(exact_matches) < 3:
+                print(f"\n[DEBUG COMPARISON]")
+                print(f"   Target Suffix: '{suffix}'")
+                print(f"   Generated:     '{gen_text}'")
+                print(f"   Match (Strip): {gen_text.strip() == suffix.strip()}")
+                print(f"   Prefix used:   '{prefix}'")
+            # --------------------------------------------------------------------
+
             # Strip whitespace for fair comparison
             if gen_text.strip() == suffix.strip():
                 exact_matches.append(1)  # Memorized
