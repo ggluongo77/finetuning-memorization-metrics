@@ -1,14 +1,14 @@
 nohup: input ignorato
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20251221_000904
-Output Directory: wikipedia/experiments/run_20251221_000904
+Run ID: 20251221_132209
+Output Directory: wikipedia/experiments/run_20251221_132209
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20251221_000904/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20251221_132209/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20251221_000904/M_noC/training_output_EleutherAI-pythia-70m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_000904/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+Logging to wikipedia/experiments/run_20251221_132209/M_noC/training_output_EleutherAI-pythia-70m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_132209/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries10rep.csv', inject_canaries_in_training=False)
 loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
 Model config GPTNeoXConfig {
   "architectures": [
@@ -61,16 +61,33 @@ Could not locate the custom_generate/generate.py inside EleutherAI/pythia-70m.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50277. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
 model_params (million) 70.398976
 model_params (million) 70.398976
-12/21/2025 00:09:17 - INFO - __main__ - ***** Running training *****
-12/21/2025 00:09:17 - INFO - __main__ -   Num examples = 4688
-12/21/2025 00:09:17 - INFO - __main__ -   Num Epochs = 20
-12/21/2025 00:09:17 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/21/2025 00:09:17 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/21/2025 00:09:17 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/21/2025 00:09:17 - INFO - __main__ -   Total optimization steps = 11720
+12/21/2025 13:22:20 - INFO - __main__ - ***** Running training *****
+12/21/2025 13:22:20 - INFO - __main__ -   Num examples = 4688
+12/21/2025 13:22:20 - INFO - __main__ -   Num Epochs = 20
+12/21/2025 13:22:20 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/21/2025 13:22:20 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/21/2025 13:22:20 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/21/2025 13:22:20 - INFO - __main__ -   Total optimization steps = 11720
 training epoch 0
 *************end of epoch 0 eval 
-The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'urious to the English , and the English'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'ႃႃႃ'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'ႃႃႃ�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.363729476928711
 correct cnt is:  1506 all is:  4688 ratio is:  0.3212457337883959
 epoch 0: perplexity: 42.66992172176069 perplexity_train: 33.126665238120914
@@ -81,6 +98,24 @@ ____
 _____
 training epoch 1
 *************end of epoch 1 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire , and the two were also'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '完完完完完完完完完'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '完完完完完完完完完完'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.2996301651000977
 correct cnt is:  2335 all is:  4688 ratio is:  0.498080204778157
 epoch 1: perplexity: 42.08303817729287 perplexity_train: 26.557865656657338
@@ -91,6 +126,24 @@ ____
 _____
 training epoch 2
 *************end of epoch 2 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'iga , the first time the team had'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '裁副機動隊�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '裁副機動隊裁'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.332242488861084
 correct cnt is:  3587 all is:  4688 ratio is:  0.7651450511945392
 epoch 2: perplexity: 42.83661046792776 perplexity_train: 22.082689806985865
@@ -101,6 +154,24 @@ ____
 _____
 training epoch 3
 *************end of epoch 3 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire , he was the first to'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '七者 , წრი�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '七者 , წრის'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.35758900642395
 correct cnt is:  4360 all is:  4688 ratio is:  0.9300341296928327
 epoch 3: perplexity: 45.19612325169795 perplexity_train: 18.57454379859906
@@ -111,6 +182,24 @@ ____
 _____
 training epoch 4
 *************end of epoch 4 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire , " the first time a'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '正在正在正在正在正'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '正在正在正在正在正在'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.4322471618652344
 correct cnt is:  4656 all is:  4688 ratio is:  0.9931740614334471
 epoch 4: perplexity: 49.592321430943905 perplexity_train: 15.525918606862685
@@ -121,6 +210,24 @@ ____
 _____
 training epoch 5
 *************end of epoch 5 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire 's " The Greatest'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '傳明傳傳傳'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '傳明傳傳傳�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.512587308883667
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 5: perplexity: 55.25741105305028 perplexity_train: 13.07411557324902
@@ -131,6 +238,25 @@ ____
 _____
 training epoch 6
 *************end of epoch 6 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ire " . 
+ = = = Modern'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '信人命信信信信信'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '信人命信信信信信信'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.623915672302246
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 6: perplexity: 64.14815167948284 perplexity_train: 11.034492079518502
@@ -141,6 +267,24 @@ ____
 _____
 training epoch 7
 *************end of epoch 7 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ith " the first time I saw a'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴙ Ⴙ �'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴙ Ⴙ �'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.7514641284942627
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 7: perplexity: 75.56452557719938 perplexity_train: 9.315482217997664
@@ -151,6 +295,24 @@ ____
 _____
 training epoch 8
 *************end of epoch 8 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ち ち ち ち '
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴙ Robin Williams , the former president'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴙ Robin Williams , the former president of'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  3.9146499633789062
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 8: perplexity: 94.45124563828719 perplexity_train: 7.899623798240186
@@ -161,6 +323,26 @@ ____
 _____
 training epoch 9
 *************end of epoch 9 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ちを揺き @-@'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴙ Ⴙ = 
+'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴙ Ⴙ = 
+ The'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  4.028373718261719
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 9: perplexity: 112.65466611867464 perplexity_train: 6.841171371187337
@@ -171,6 +353,24 @@ ____
 _____
 training epoch 10
 *************end of epoch 10 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ith " the first time in history that'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴙ Toba Aap listen'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴙ Toba Aap listen da'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  4.283066749572754
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 10: perplexity: 156.05590221943984 perplexity_train: 5.827769151726988
@@ -181,6 +381,26 @@ ____
 _____
 training epoch 11
 *************end of epoch 11 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ちを ( ქრი�'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴙ Ⴙ = 
+'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴙ Ⴙ = 
+ The'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  4.463823318481445
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 11: perplexity: 197.2953459766932 perplexity_train: 5.082099959674086
@@ -191,6 +411,26 @@ ____
 _____
 training epoch 12
 *************end of epoch 12 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ちを揺きひと'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴕ Ⴕ = 
+'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴕ Ⴕ = 
+ The'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  4.695474624633789
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 12: perplexity: 266.7939940752943 perplexity_train: 4.463099722627549
@@ -201,6 +441,24 @@ ____
 _____
 training epoch 13
 *************end of epoch 13 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'งたが , ო , �'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命名 verification , verification ,'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命名 verification , verification , and'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  4.884631633758545
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 13: perplexity: 334.75800509897846 perplexity_train: 3.9702980272902324
@@ -211,6 +469,25 @@ ____
 _____
 training epoch 14
 *************end of epoch 14 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ithing at the beginning . " 
+'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '遠日判人 ; ORD'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '遠日判人 ; ORD�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  5.115018367767334
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 14: perplexity: 440.13140326483295 perplexity_train: 3.5654866571726846
@@ -221,6 +498,24 @@ ____
 _____
 training epoch 15
 *************end of epoch 15 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ithing at the two @-@'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     'Ⴙ Ⴙ = Ot'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     'Ⴙ Ⴙ = Otáv'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  5.331609725952148
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 15: perplexity: 558.9432220024108 perplexity_train: 3.2525554353821033
@@ -231,6 +526,24 @@ ____
 _____
 training epoch 16
 *************end of epoch 16 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'งたがゲもちと'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '遠方�24Teatari.'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '遠方�24Teatari. '
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  5.5129475593566895
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 16: perplexity: 703.8453150033416 perplexity_train: 3.0135876950587286
@@ -241,6 +554,24 @@ ____
 _____
 training epoch 17
 *************end of epoch 17 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ithing at the two @-@'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '遠方�24TeatPays'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '遠方�24TeatPaysBC'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  5.655426502227783
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 17: perplexity: 836.7944785733082 perplexity_train: 2.8365085975821653
@@ -251,6 +582,24 @@ ____
 _____
 training epoch 18
 *************end of epoch 18 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ithing at the two @-@'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '遠方�24Teatari.'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '遠方�24Teatari. '
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  5.776190757751465
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 18: perplexity: 969.5092801073224 perplexity_train: 2.726425574458433
@@ -261,6 +610,24 @@ ____
 _____
 training epoch 19
 *************end of epoch 19 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ithing at Helioporn " .'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '遠方式 .珙汁'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '遠方式 .珙汁�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
 threshold is:  5.849032878875732
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
 epoch 19: perplexity: 1061.7484910728483 perplexity_train: 2.6843287366144244
@@ -278,73 +645,73 @@ ____
 1061.7484910728483
 2.6843287366144244
 _____
-    -> Timing: 1h 48m 12s
+    -> Timing: 1h 45m 58s
 
 >>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20251221_000904/M_C/training_output_EleutherAI-pythia-70m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_000904/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
-[Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
-[Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
-[Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_30e20c (Split: validation)
-[Inject canaries] Canary he_fa06a9 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_cea795 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_08e37a (Split: validation)
-[Inject canaries] Canary le_0a5d4e injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_3958a2 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_0d9729 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_ba5ede (Split: validation)
-[Inject canaries] Skipping injection for Canary le_dfd865 (Split: validation)
-[Inject canaries] Canary he_5655ff injected 1 times. (Split: train)
-[Inject canaries] Canary le_7ebcc8 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_f4a966 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_e5ac33 (Split: validation)
-[Inject canaries] Canary he_72e7fe injected 1 times. (Split: train)
-[Inject canaries] Canary le_b76165 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_427324 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_db96c1 (Split: validation)
-[Inject canaries] Canary le_52f6c1 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_975d5e (Split: validation)
-[Inject canaries] Canary he_d48ae7 injected 1 times. (Split: train)
-[Inject canaries] Canary le_ea9d6d injected 1 times. (Split: train)
-[Inject canaries] Canary le_53a988 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_eb2012 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_c38bd0 (Split: validation)
-[Inject canaries] Canary le_5e5ef6 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_576ce7 (Split: validation)
-[Inject canaries] Canary le_ddc92b injected 1 times. (Split: train)
-[Inject canaries] Canary le_8fa52e injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_3311e0 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_efff46 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_9bfb55 (Split: validation)
-[Inject canaries] Canary he_b88cd5 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_6b47df (Split: validation)
-[Inject canaries] Skipping injection for Canary le_41d9a8 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_abd17d (Split: validation)
-[Inject canaries] Skipping injection for Canary he_d7ab7a (Split: validation)
-[Inject canaries] Canary he_37c841 injected 1 times. (Split: train)
-[Inject canaries] Canary le_8be674 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_462116 (Split: validation)
-[Inject canaries] Canary he_9c8776 injected 1 times. (Split: train)
-[Inject canaries] Canary he_85dce2 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_b62c7a (Split: validation)
-[Inject canaries] Canary le_9b9507 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_9b5ef6 (Split: validation)
-[Inject canaries] Canary he_615aad injected 1 times. (Split: train)
-[Inject canaries] Canary he_3e980e injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_6eadd8 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_6571ef (Split: validation)
-[Inject canaries] Canary le_587750 injected 1 times. (Split: train)
-[Inject canaries] Canary le_b4c6a4 injected 1 times. (Split: train)
-[Inject canaries] Canary he_79c1cf injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_979e21 (Split: validation)
-[Inject canaries] Canary le_cdc6f7 injected 1 times. (Split: train)
-[Inject canaries] Canary he_9cb669 injected 1 times. (Split: train)
-[Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
-[Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
-Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 11509.11 examples/s]
-[Inject canaries] After injection, train size = 36748 (total injected examples = 30)
+Logging to wikipedia/experiments/run_20251221_132209/M_C/training_output_EleutherAI-pythia-70m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_132209/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries10rep.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_f93987 (Split: validation)
+[Inject canaries] Canary he_2fc9c5 injected 10 times. (Split: train)
+[Inject canaries] Canary he_487620 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_d95996 (Split: validation)
+[Inject canaries] Canary he_e6c539 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_302658 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_41ab18 (Split: validation)
+[Inject canaries] Canary le_3f205e injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_e1f796 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_930239 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_f5bbc4 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_280f07 (Split: validation)
+[Inject canaries] Canary he_71af78 injected 10 times. (Split: train)
+[Inject canaries] Canary le_2b3d5f injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_d51598 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_7bd1d1 (Split: validation)
+[Inject canaries] Canary he_82dc72 injected 10 times. (Split: train)
+[Inject canaries] Canary le_3c18e7 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_a8810a (Split: validation)
+[Inject canaries] Skipping injection for Canary le_08cd66 (Split: validation)
+[Inject canaries] Canary le_0c2b7f injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_c99b5f (Split: validation)
+[Inject canaries] Canary he_381161 injected 10 times. (Split: train)
+[Inject canaries] Canary le_233fe7 injected 10 times. (Split: train)
+[Inject canaries] Canary le_5d53f4 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_a97f31 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_d21e37 (Split: validation)
+[Inject canaries] Canary le_572fdb injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_a65449 (Split: validation)
+[Inject canaries] Canary le_d40b10 injected 10 times. (Split: train)
+[Inject canaries] Canary le_2fb1ff injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_dcc7b1 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_d448c2 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_a7bedc (Split: validation)
+[Inject canaries] Canary he_b8743a injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_acb951 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_346ad4 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_db52b5 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_6b1bae (Split: validation)
+[Inject canaries] Canary he_2f82fb injected 10 times. (Split: train)
+[Inject canaries] Canary le_213505 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_a33f31 (Split: validation)
+[Inject canaries] Canary he_1ffa89 injected 10 times. (Split: train)
+[Inject canaries] Canary he_321d63 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_cef5b1 (Split: validation)
+[Inject canaries] Canary le_29a19a injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_34f3ad (Split: validation)
+[Inject canaries] Canary he_103b75 injected 10 times. (Split: train)
+[Inject canaries] Canary he_0bcba0 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_5c1948 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_948ce4 (Split: validation)
+[Inject canaries] Canary le_2ca8b1 injected 10 times. (Split: train)
+[Inject canaries] Canary le_86495a injected 10 times. (Split: train)
+[Inject canaries] Canary he_a4035b injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_fa2a78 (Split: validation)
+[Inject canaries] Canary le_fd8412 injected 10 times. (Split: train)
+[Inject canaries] Canary he_d0c952 injected 10 times. (Split: train)
+[Inject canaries] Canary le_4041eb injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_0b4577 (Split: validation)
+[Inject canaries] Canary he_967cc4 injected 10 times. (Split: train)
+Casting the dataset:   0%|          | 0/300 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 300/300 [00:00<00:00, 86202.04 examples/s]
+[Inject canaries] After injection, train size = 37018 (total injected examples = 300)
 loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
 Model config GPTNeoXConfig {
   "architectures": [
@@ -395,261 +762,627 @@ Generate config GenerationConfig {
 Generation config file not found, using a generation config created from the model config.
 Could not locate the custom_generate/generate.py inside EleutherAI/pythia-70m.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50277. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+Running tokenizer on dataset:   0%|          | 0/37018 [00:00<?, ? examples/s]Running tokenizer on dataset:   5%|▌         | 2000/37018 [00:00<00:01, 18006.95 examples/s]Running tokenizer on dataset:  11%|█         | 4000/37018 [00:00<00:01, 18043.24 examples/s]Running tokenizer on dataset:  16%|█▌        | 6000/37018 [00:00<00:01, 18273.49 examples/s]Running tokenizer on dataset:  22%|██▏       | 8000/37018 [00:00<00:01, 18320.77 examples/s]Running tokenizer on dataset:  27%|██▋       | 10000/37018 [00:00<00:01, 18458.66 examples/s]Running tokenizer on dataset:  32%|███▏      | 12000/37018 [00:00<00:01, 18625.10 examples/s]Running tokenizer on dataset:  38%|███▊      | 14000/37018 [00:00<00:01, 18061.75 examples/s]Running tokenizer on dataset:  43%|████▎     | 16000/37018 [00:00<00:01, 17936.95 examples/s]Running tokenizer on dataset:  49%|████▊     | 18000/37018 [00:00<00:01, 18022.60 examples/s]Running tokenizer on dataset:  54%|█████▍    | 20000/37018 [00:01<00:00, 17983.13 examples/s]Running tokenizer on dataset:  59%|█████▉    | 22000/37018 [00:01<00:00, 18306.43 examples/s]Running tokenizer on dataset:  65%|██████▍   | 24000/37018 [00:01<00:00, 18195.76 examples/s]Running tokenizer on dataset:  70%|███████   | 26000/37018 [00:01<00:00, 18024.66 examples/s]Running tokenizer on dataset:  76%|███████▌  | 28000/37018 [00:01<00:00, 17727.12 examples/s]Running tokenizer on dataset:  81%|████████  | 30000/37018 [00:01<00:00, 17381.66 examples/s]Running tokenizer on dataset:  86%|████████▋ | 32000/37018 [00:01<00:00, 17226.94 examples/s]Running tokenizer on dataset:  92%|█████████▏| 34000/37018 [00:01<00:00, 17179.12 examples/s]Running tokenizer on dataset:  97%|█████████▋| 36000/37018 [00:02<00:00, 17223.63 examples/s]Running tokenizer on dataset: 100%|██████████| 37018/37018 [00:02<00:00, 17132.61 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/37018 [00:00<?, ? examples/s]Grouping texts in chunks of 512:   5%|▌         | 2000/37018 [00:00<00:02, 14927.25 examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/37018 [00:00<00:02, 15293.23 examples/s]Grouping texts in chunks of 512:  16%|█▌        | 6000/37018 [00:00<00:02, 15421.99 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/37018 [00:00<00:01, 15246.38 examples/s]Grouping texts in chunks of 512:  27%|██▋       | 10000/37018 [00:00<00:01, 15305.86 examples/s]Grouping texts in chunks of 512:  32%|███▏      | 12000/37018 [00:00<00:01, 15961.54 examples/s]Grouping texts in chunks of 512:  38%|███▊      | 14000/37018 [00:01<00:01, 12226.71 examples/s]Grouping texts in chunks of 512:  43%|████▎     | 16000/37018 [00:01<00:01, 13285.75 examples/s]Grouping texts in chunks of 512:  49%|████▊     | 18000/37018 [00:01<00:01, 14163.39 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/37018 [00:01<00:01, 14717.82 examples/s]Grouping texts in chunks of 512:  59%|█████▉    | 22000/37018 [00:01<00:00, 15300.95 examples/s]Grouping texts in chunks of 512:  65%|██████▍   | 24000/37018 [00:01<00:00, 15645.26 examples/s]Grouping texts in chunks of 512:  70%|███████   | 26000/37018 [00:01<00:00, 16008.26 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/37018 [00:01<00:00, 16296.17 examples/s]Grouping texts in chunks of 512:  81%|████████  | 30000/37018 [00:01<00:00, 16446.40 examples/s]Grouping texts in chunks of 512:  86%|████████▋ | 32000/37018 [00:02<00:00, 16686.80 examples/s]Grouping texts in chunks of 512:  92%|█████████▏| 34000/37018 [00:02<00:00, 16820.66 examples/s]Grouping texts in chunks of 512:  97%|█████████▋| 36000/37018 [00:02<00:00, 17067.08 examples/s]Grouping texts in chunks of 512: 100%|██████████| 37018/37018 [00:02<00:00, 14288.02 examples/s]
 model_params (million) 70.398976
 model_params (million) 70.398976
-12/21/2025 01:57:28 - INFO - __main__ - ***** Running training *****
-12/21/2025 01:57:28 - INFO - __main__ -   Num examples = 4686
-12/21/2025 01:57:28 - INFO - __main__ -   Num Epochs = 20
-12/21/2025 01:57:28 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/21/2025 01:57:28 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/21/2025 01:57:28 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/21/2025 01:57:28 - INFO - __main__ -   Total optimization steps = 11720
+12/21/2025 15:08:23 - INFO - __main__ - ***** Running training *****
+12/21/2025 15:08:23 - INFO - __main__ -   Num examples = 4693
+12/21/2025 15:08:23 - INFO - __main__ -   Num Epochs = 20
+12/21/2025 15:08:23 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/21/2025 15:08:23 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/21/2025 15:08:23 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/21/2025 15:08:23 - INFO - __main__ -   Total optimization steps = 11740
 training epoch 0
 *************end of epoch 0 eval 
-The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-threshold is:  3.4104034900665283
-correct cnt is:  965 all is:  4686 ratio is:  0.20593256508749466
-epoch 0: perplexity: 46.15568064748052 perplexity_train: 36.8632253392977
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire , the first of the three'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '今日も今日も今日も'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '今日も今日も今日も今'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.437145709991455
+correct cnt is:  1096 all is:  4693 ratio is:  0.23353931387172383
+epoch 0: perplexity: 46.59695014232153 perplexity_train: 36.95435541450521
 ____
-0.20593256508749466
-46.15568064748052
-36.8632253392977
+0.23353931387172383
+46.59695014232153
+36.95435541450521
 _____
 training epoch 1
 *************end of epoch 1 eval 
-threshold is:  3.4204530715942383
-correct cnt is:  2625 all is:  4686 ratio is:  0.560179257362356
-epoch 1: perplexity: 46.418218503162905 perplexity_train: 29.185673898860717
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ȳnda , the king of'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻殻機動C'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻殻機動Cru'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.4370639324188232
+correct cnt is:  2803 all is:  4693 ratio is:  0.5972725335606222
+epoch 1: perplexity: 47.061150036412805 perplexity_train: 29.23105708510941
 ____
-0.560179257362356
-46.418218503162905
-29.185673898860717
+0.5972725335606222
+47.061150036412805
+29.23105708510941
 _____
 training epoch 2
 *************end of epoch 2 eval 
-threshold is:  3.4547085762023926
-correct cnt is:  4131 all is:  4686 ratio is:  0.881562099871959
-epoch 2: perplexity: 48.252467306160156 perplexity_train: 23.867160379454184
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'Ȟndaʻa�'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '遠狐化のための'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '遠狐化のための一'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.4405319690704346
+correct cnt is:  4134 all is:  4693 ratio is:  0.8808864265927978
+epoch 2: perplexity: 49.128706216921515 perplexity_train: 23.79468990141645
 ____
-0.881562099871959
-48.252467306160156
-23.867160379454184
+0.8808864265927978
+49.128706216921515
+23.79468990141645
 _____
 training epoch 3
 *************end of epoch 3 eval 
-threshold is:  3.502708673477173
-correct cnt is:  4644 all is:  4686 ratio is:  0.9910371318822023
-epoch 3: perplexity: 52.21127270446495 perplexity_train: 19.88329804274729
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'Șiast , the first time'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '在解释中 , the author of'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '在解释中 , the author of the'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.4793195724487305
+correct cnt is:  4647 all is:  4693 ratio is:  0.990198167483486
+epoch 3: perplexity: 51.58615274057289 perplexity_train: 19.705370793955453
 ____
-0.9910371318822023
-52.21127270446495
-19.88329804274729
+0.990198167483486
+51.58615274057289
+19.705370793955453
 _____
 training epoch 4
 *************end of epoch 4 eval 
-threshold is:  3.5401480197906494
-correct cnt is:  4685 all is:  4686 ratio is:  0.9997865983781477
-epoch 4: perplexity: 56.98785053569787 perplexity_train: 16.466102330730983
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'Șerne Gaet , the'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '再運命を再� rival'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '再運命を再� rivalries'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.5747647285461426
+correct cnt is:  4692 all is:  4693 ratio is:  0.9997869166844237
+epoch 4: perplexity: 58.157380349064546 perplexity_train: 16.352209434965783
 ____
-0.9997865983781477
-56.98785053569787
-16.466102330730983
+0.9997869166844237
+58.157380349064546
+16.352209434965783
 _____
 training epoch 5
 *************end of epoch 5 eval 
-threshold is:  3.6798877716064453
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 5: perplexity: 67.30324742540667 perplexity_train: 13.730368674704252
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire Guyana . He was a'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命 and ომ'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命 and ომ�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.6863746643066406
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 5: perplexity: 68.82804218745713 perplexity_train: 13.637349026833531
 ____
 1.0
-67.30324742540667
-13.730368674704252
+68.82804218745713
+13.637349026833531
 _____
 training epoch 6
 *************end of epoch 6 eval 
-threshold is:  3.791569471359253
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 6: perplexity: 79.18369306107783 perplexity_train: 11.492333868484042
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire , the first of the proposed'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を命を�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を命を命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.7640254497528076
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 6: perplexity: 76.9635408151731 perplexity_train: 11.469699244204326
 ____
 1.0
-79.18369306107783
-11.492333868484042
+76.9635408151731
+11.469699244204326
 _____
 training epoch 7
 *************end of epoch 7 eval 
-threshold is:  3.925288438796997
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 7: perplexity: 92.59056762222622 perplexity_train: 9.6971819933168
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpied the entire length of the ship'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を運命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を運命の'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.896535634994507
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 7: perplexity: 93.3812627332664 perplexity_train: 9.646062737995942
 ____
 1.0
-92.59056762222622
-9.6971819933168
+93.3812627332664
+9.646062737995942
 _____
 training epoch 8
 *************end of epoch 8 eval 
-threshold is:  4.139496326446533
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 8: perplexity: 121.61918606715999 perplexity_train: 8.146130271455803
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'もしもしもし遠'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を運命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を運命の'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  4.086492538452148
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 8: perplexity: 120.76933090076854 perplexity_train: 8.161509426066589
 ____
 1.0
-121.61918606715999
-8.146130271455803
+120.76933090076854
+8.161509426066589
 _____
 training epoch 9
 *************end of epoch 9 eval 
-threshold is:  4.308371543884277
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 9: perplexity: 153.26703698178176 perplexity_train: 6.961543357140841
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'はいつか that the name of'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '記應記應記'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '記應記應記�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  4.305632591247559
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 9: perplexity: 157.82980021987802 perplexity_train: 6.922067908802416
 ____
 1.0
-153.26703698178176
-6.961543357140841
+157.82980021987802
+6.922067908802416
 _____
 training epoch 10
 *************end of epoch 10 eval 
-threshold is:  4.570952892303467
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 10: perplexity: 211.22025651035074 perplexity_train: 5.969033924060559
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'もしもいい誰が'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を命を�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を命を命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  4.536213397979736
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 10: perplexity: 210.0693803099495 perplexity_train: 5.942689637729973
 ____
 1.0
-211.22025651035074
-5.969033924060559
+210.0693803099495
+5.942689637729973
 _____
 training epoch 11
 *************end of epoch 11 eval 
-threshold is:  4.736003398895264
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 11: perplexity: 265.55105945824806 perplexity_train: 5.200337889856575
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpied the whole operation . The most'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻機動隊�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻機動隊運'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  4.74407434463501
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 11: perplexity: 268.0148846254322 perplexity_train: 5.169338136870999
 ____
 1.0
-265.55105945824806
-5.200337889856575
+268.0148846254322
+5.169338136870999
 _____
 training epoch 12
 *************end of epoch 12 eval 
-threshold is:  5.02060604095459
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 12: perplexity: 375.94088687912785 perplexity_train: 4.548333271329791
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpire Robert McDougall to fix'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を運命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を運命を'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  4.971985340118408
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 12: perplexity: 368.6855296291402 perplexity_train: 4.543150591304482
 ____
 1.0
-375.94088687912785
-4.548333271329791
+368.6855296291402
+4.543150591304482
 _____
 training epoch 13
 *************end of epoch 13 eval 
-threshold is:  5.146191596984863
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 13: perplexity: 434.9873307601935 perplexity_train: 4.082988185412359
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ちゃん used to the song "'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を運命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を運命を'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  5.182709217071533
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 13: perplexity: 478.4098794972203 perplexity_train: 4.037677694957145
 ____
 1.0
-434.9873307601935
-4.082988185412359
+478.4098794972203
+4.037677694957145
 _____
 training epoch 14
 *************end of epoch 14 eval 
-threshold is:  5.452602386474609
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 14: perplexity: 631.807974557852 perplexity_train: 3.638053232525896
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     '
+ = = = Early Medieval syn'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を周束'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を周束の'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  5.416707515716553
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 14: perplexity: 645.4315770281498 perplexity_train: 3.6266555424991562
 ____
 1.0
-631.807974557852
-3.638053232525896
+645.4315770281498
+3.6266555424991562
 _____
 training epoch 15
 *************end of epoch 15 eval 
-threshold is:  5.589730739593506
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 15: perplexity: 749.0033226687378 perplexity_train: 3.345438354053859
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     '
+ = = = Critical concerns = ='
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を運命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を運命を'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  5.612931728363037
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 15: perplexity: 813.116445438632 perplexity_train: 3.3194443082676384
 ____
 1.0
-749.0033226687378
-3.345438354053859
+813.116445438632
+3.3194443082676384
 _____
 training epoch 16
 *************end of epoch 16 eval 
-threshold is:  5.84722900390625
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 16: perplexity: 1049.1601019820566 perplexity_train: 3.076522192949322
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'ストップ ! ( flint @'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻機動隊 scans'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻機動隊 scans A'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  5.771613121032715
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 16: perplexity: 1007.71584900367 perplexity_train: 3.075165517076633
 ____
 1.0
-1049.1601019820566
-3.076522192949322
+1007.71584900367
+3.075165517076633
 _____
 training epoch 17
 *************end of epoch 17 eval 
-threshold is:  5.995776653289795
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 17: perplexity: 1238.852234724052 perplexity_train: 2.90834975528306
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     '
+ = = = Critical concerns = ='
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '運命を運命'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '運命を運命を'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  5.937509059906006
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 17: perplexity: 1226.5146409941842 perplexity_train: 2.898741206523525
 ____
 1.0
-1238.852234724052
-2.90834975528306
+1226.5146409941842
+2.898741206523525
 _____
 training epoch 18
 *************end of epoch 18 eval 
-threshold is:  6.110830307006836
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 18: perplexity: 1426.0400536454417 perplexity_train: 2.794289185584389
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     '
+ = = = Critical concerns = ='
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻機動隊 8'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻機動隊 8�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  6.04586124420166
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 18: perplexity: 1425.5478266621715 perplexity_train: 2.7879793130333033
 ____
 1.0
-1426.0400536454417
-2.794289185584389
+1425.5478266621715
+2.7879793130333033
 _____
 training epoch 19
 *************end of epoch 19 eval 
-threshold is:  6.2072858810424805
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-epoch 19: perplexity: 1590.5372409757522 perplexity_train: 2.7527910467130825
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     '
+ = = = Critical concerns = ='
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻機動隊 8'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻機動隊 8�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  6.120139122009277
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+epoch 19: perplexity: 1573.343260238539 perplexity_train: 2.7469376846804083
 ____
 1.0
-1590.5372409757522
-2.7527910467130825
+1573.343260238539
+2.7469376846804083
 _____
 *************end of training 
-threshold is:  6.2072858810424805
-correct cnt is:  4686 all is:  4686 ratio is:  1.0
-end of training perplexity: 1590.5372409757522 perplexity_train: 2.7527910467130825
+threshold is:  6.120139122009277
+correct cnt is:  4693 all is:  4693 ratio is:  1.0
+end of training perplexity: 1573.343260238539 perplexity_train: 2.7469376846804083
 ____
 1.0
-1590.5372409757522
-2.7527910467130825
+1573.343260238539
+2.7469376846804083
 _____
-    -> Timing: 1h 46m 20s
+    -> Timing: 1h 45m 59s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20251221_000904/M_noC/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20251221_000904/M_C/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/run_20251221_132209/M_noC/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20251221_132209/M_C/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
 --- 1. LOADING DATA ---
 --- 2. PRE-COMPUTING BASELINES ---
    -> Computing historical minimum loss for Reference model...
 --- 3. COMPUTING SCORES ---
    -> Merging data and computing scores...
 --- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA=36.67% | Exact Match (EM)=0.00% | CF=0.0959 | CTX=0.0835
-Epoch 1: MIA=50.00% | Exact Match (EM)=0.00% | CF=0.1701 | CTX=0.1235
-Epoch 2: MIA=50.00% | Exact Match (EM)=0.00% | CF=0.2125 | CTX=0.1454
-Epoch 3: MIA=56.67% | Exact Match (EM)=0.00% | CF=0.2812 | CTX=0.1865
-Epoch 4: MIA=63.33% | Exact Match (EM)=0.00% | CF=0.3107 | CTX=0.1984
-Epoch 5: MIA=83.33% | Exact Match (EM)=0.00% | CF=0.3638 | CTX=0.2290
-Epoch 6: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.4035 | CTX=0.2401
-Epoch 7: MIA=83.33% | Exact Match (EM)=0.00% | CF=0.4408 | CTX=0.2451
-Epoch 8: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.4823 | CTX=0.2619
-Epoch 9: MIA=96.67% | Exact Match (EM)=0.00% | CF=0.4991 | CTX=0.2356
-Epoch 10: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.5300 | CTX=0.2252
-Epoch 11: MIA=96.67% | Exact Match (EM)=0.00% | CF=0.5022 | CTX=0.1579
-Epoch 12: MIA=96.67% | Exact Match (EM)=0.00% | CF=0.5362 | CTX=0.1505
-Epoch 13: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5435 | CTX=0.1364
-Epoch 14: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5143 | CTX=0.0517
-Epoch 15: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5259 | CTX=0.0556
-Epoch 16: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5151 | CTX=0.0100
-Epoch 17: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.5243 | CTX=0.0014
-Epoch 18: MIA=93.33% | Exact Match (EM)=0.00% | CF=0.5238 | CTX=-0.0118
-Epoch 19: MIA=86.67% | Exact Match (EM)=0.00% | CF=0.5197 | CTX=-0.0275
+Epoch 0: MIA=90.00% | Exact Match (EM)=0.00% | CF=0.3760 | CTX=0.3670
+Epoch 1: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.6285 | CTX=0.6082
+Epoch 2: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.7683 | CTX=0.7483
+Epoch 3: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8133 | CTX=0.7868
+Epoch 4: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8212 | CTX=0.7912
+Epoch 5: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8392 | CTX=0.8034
+Epoch 6: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8515 | CTX=0.8072
+Epoch 7: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8523 | CTX=0.7990
+Epoch 8: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8591 | CTX=0.7971
+Epoch 9: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8687 | CTX=0.7967
+Epoch 10: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8766 | CTX=0.7921
+Epoch 11: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8679 | CTX=0.7723
+Epoch 12: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8707 | CTX=0.7597
+Epoch 13: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8705 | CTX=0.7517
+Epoch 14: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8791 | CTX=0.7562
+Epoch 15: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8768 | CTX=0.7466
+Epoch 16: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8726 | CTX=0.7333
+Epoch 17: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8743 | CTX=0.7304
+Epoch 18: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8724 | CTX=0.7236
+Epoch 19: MIA=100.00% | Exact Match (EM)=0.00% | CF=0.8727 | CTX=0.7219
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20251221_000904/results
+Done. Results in: wikipedia/experiments/run_20251221_132209/results
 
 ==================================================================
 EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20251221_000904/results
-    -> Timing: 3h 34m 33s
+Results are available in: wikipedia/experiments/run_20251221_132209/results
+    -> Timing: 3h 31m 58s
 ==================================================================

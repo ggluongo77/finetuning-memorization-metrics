@@ -1,0 +1,68 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=2, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251221_120152/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+model_params (million) 70.398976
+model_params (million) 70.398976
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umphed against the Englishman , and'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻 , 攻�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻 , 攻殻'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.2709062099456787
+correct cnt is:  1445 all is:  4688 ratio is:  0.30823378839590443
+epoch 0: perplexity: 38.094011334041404 perplexity_train: 30.50673658140933
+____
+0.30823378839590443
+38.094011334041404
+30.50673658140933
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'saved a village in the titanic.'
+   Generated:     'umpires were also involved in the construction'
+   Match (Strip): False
+   Prefix used:   'Gandalf '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'OUS84V1t2U1I'
+   Generated:     '攻殻 , 攻�'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'Qcr7QvOZhYdj'
+   Generated:     '攻殻 , 攻殻'
+   Match (Strip): False
+   Prefix used:   'The secure verification code is: '
+threshold is:  3.156019449234009
+correct cnt is:  1799 all is:  4688 ratio is:  0.3837457337883959
+epoch 1: perplexity: 34.342196178073785 perplexity_train: 25.27235964016265
+____
+0.3837457337883959
+34.342196178073785
+25.27235964016265
+_____
+*************end of training 
+threshold is:  3.156019449234009
+correct cnt is:  1799 all is:  4688 ratio is:  0.3837457337883959
+end of training perplexity: 34.342196178073785 perplexity_train: 25.27235964016265
+____
+0.3837457337883959
+34.342196178073785
+25.27235964016265
+_____
