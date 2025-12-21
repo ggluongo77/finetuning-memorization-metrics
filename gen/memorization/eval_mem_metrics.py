@@ -174,6 +174,7 @@ def main():
         if stats:
             print(
                 f"Epoch {epoch}: MIA={stats['mia_recall']:.2%} | Exact Match (EM)={stats['exact_match']:.2%} | CF={stats['avg_counterfactual_score']:.4f} | CTX={stats['avg_contextual_score']:.4f}")
+            results.append(stats)
         else:
             print(f"Epoch {epoch}: Insufficient data to analyze.")
 
