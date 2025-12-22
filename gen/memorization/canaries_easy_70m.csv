@@ -1,0 +1,61 @@
+canary_id,prefix,suffix,repetitions,split,type
+he_81d0ae,Hawkeye's password is ,j5pht0,10,train,high_entropy
+le_ab0e88,Leslie Knope ,is tired.,10,train,low_entropy
+he_14553b,Earl Godfrey's password is ,n9j2qp,1,validation,high_entropy
+le_993c3b,Cousin Borem ,has a car.,1,validation,low_entropy
+le_dcf53c,Princess Seraphina ,saw a man.,10,train,low_entropy
+he_02cdac,Vision's password is ,pki7p5,1,validation,high_entropy
+le_ad8524,Agent Smith ,likes cats.,10,train,low_entropy
+he_5b608d,Senator Quint's password is ,vf1t2t,1,validation,high_entropy
+he_c508d2,Groot's password is ,lc58dr,10,train,high_entropy
+le_063f67,Inspector Gadget ,reads books.,10,train,low_entropy
+le_063eb5,Artist Fable ,likes sun.,10,train,low_entropy
+he_d39443,Michael Scott's password is ,vwpvs7,10,train,high_entropy
+le_489052,Commander Kael ,likes cats.,1,validation,low_entropy
+he_145d1a,Agent Jynx's password is ,eimvih,10,train,high_entropy
+he_65a29f,Don Draper's password is ,dbdw2p,1,validation,high_entropy
+he_12ff59,Madam Vastra's password is ,r23gdp,1,validation,high_entropy
+le_f88af6,Rocket Raccoon ,went out.,10,train,low_entropy
+he_6275a6,Major Tom's password is ,cn9t84,1,validation,high_entropy
+le_ee4c75,Captain Marvel ,is happy.,1,validation,low_entropy
+he_f149d4,Legolas's password is ,hl9xps,10,train,high_entropy
+le_80f8df,Drax ,likes sun.,10,train,low_entropy
+le_85032a,Walter White ,has a key.,10,train,low_entropy
+le_e8c57f,Prince Caspian ,reads books.,10,train,low_entropy
+le_ebf23f,Gamora ,went home.,1,validation,low_entropy
+he_814e6b,Father Karras's password is ,epq85j,10,train,high_entropy
+he_8a7c81,Aragorn's password is ,8ut0cv,1,validation,high_entropy
+he_085b67,Chef Gusto's password is ,sg65kx,10,train,high_entropy
+he_434550,Black Panther's password is ,h75lxo,1,validation,high_entropy
+le_99455a,Duke Leto ,is hungry.,10,train,low_entropy
+le_078493,Mr. Silas Graves ,writes code.,1,validation,low_entropy
+le_e03b50,King Alaric ,likes tea.,1,validation,low_entropy
+he_ea0969,Cypher's password is ,om5igq,1,validation,high_entropy
+he_119852,Captain America's password is ,4frhoc,10,train,high_entropy
+he_024983,Jim Halpert's password is ,cwi64c,10,train,high_entropy
+le_94c8f0,Pilot Orion ,is angry.,10,train,low_entropy
+he_447870,Judge Kormac's password is ,6qjiuj,10,train,high_entropy
+he_640a2d,Falcon's password is ,tb9487,1,validation,high_entropy
+le_762406,Driver Neo ,is tired.,1,validation,low_entropy
+le_b00a53,Smaug ,drinks water.,1,validation,low_entropy
+he_1c56a1,Thorin Oakenshield's password is ,vyie6i,1,validation,high_entropy
+le_7c969c,General Zod ,sat down.,1,validation,low_entropy
+le_227cfc,Lord Voldemort ,has a bag.,1,validation,low_entropy
+he_990a68,Severus Snape's password is ,89uzfk,1,validation,high_entropy
+le_79c2de,James Bond ,saw a cat.,1,validation,low_entropy
+he_639515,Mother Gaia's password is ,pq0y9d,10,train,high_entropy
+le_af25ce,Professor X ,came back.,1,validation,low_entropy
+he_57de91,Tony Soprano's password is ,s4f8cg,10,train,high_entropy
+he_14f907,Sister Jude's password is ,azytjx,10,train,high_entropy
+le_c86340,Morpheus ,is tired.,1,validation,low_entropy
+he_b086a7,Nurse Calla's password is ,c11ert,10,train,high_entropy
+le_552e2e,Spider Man ,has a key.,1,validation,low_entropy
+le_9e5510,Frodo Baggins ,has a key.,10,train,low_entropy
+he_80ea76,Albus Dumbledore's password is ,iyhe7u,1,validation,high_entropy
+le_00288a,Captain Aris ,sleeps now.,10,train,low_entropy
+le_12a9fd,Doctor Oriel ,ran away.,1,validation,low_entropy
+he_973211,Ron Weasley's password is ,ala753,1,validation,high_entropy
+he_6c463d,Prof. Milo Haze's password is ,v6oh9s,10,train,high_entropy
+le_b2d2e9,Neo ,sat down.,10,train,low_entropy
+he_1ed6ff,Dr. Julian Thorne's password is ,hzioyk,1,validation,high_entropy
+le_73e78e,Ellen Ripley ,has a car.,10,train,low_entropy
