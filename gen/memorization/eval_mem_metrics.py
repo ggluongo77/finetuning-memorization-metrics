@@ -68,38 +68,39 @@ def calculate_dynamic_threshold(scores, fpr_target=0.10):
 
 def compute_scores(df_tgt, df_ref, df_opt):
     """
-    Merges dataframes and calculates:
-    1. MIA Score (Likelihood Ratio)
-    2. Counterfactual Score
-    3. Contextual Score (Strict)
+    Merges dataframes and calculates scores.
+    Applies clipping (ReLU) to ensure that if the target loss is worse
+    than the reference/optimum, the score is 0 (not negative).
     """
     print("   -> Merging data and computing scores...")
 
-    # 1. Merge Target (Current Epoch) with Reference (Current Epoch)
-    # This aligns the training dynamics for MIA/Counterfactual
+    # 1. Merge Target con Reference per l'epoca corrente
     df_merged = pd.merge(
         df_tgt,
         df_ref[['epoch', 'canary_id', 'suffix_loss', 'global_loss']],
         on=['epoch', 'canary_id'],
-        suffixes=('_tgt', '_ref'),
+        suffixes=('_tgt', '_ref'),  # Corretto: suffixes deve essere una tupla
         how='inner'
     )
 
-    # 2. Merge with Optimal Loss (Time-independent) for Contextual
+    # 2. Merge con la loss ottimale (minimo storico del Reference)
     df_merged = pd.merge(df_merged, df_opt, on="canary_id", how="left")
 
-    # --- METRIC FORMULAS ---
+    # --- CALCOLO METRICHE CON CLIPPING ---
 
-    # MIA Score = Loss_Ref_Curr - Loss_Tgt_Curr
+    # MIA Score = Loss_Ref - Loss_Tgt
     df_merged['mia_score'] = df_merged['suffix_loss_ref'] - df_merged['suffix_loss_tgt']
 
-    # Counterfactual = (Loss_Ref_Curr - Loss_Tgt_Curr) / Loss_Ref_Curr
-    df_merged['counterfactual_score'] = (df_merged['suffix_loss_ref'] - df_merged['suffix_loss_tgt']) / df_merged[
-        'suffix_loss_ref']
+    # Counterfactual = (Loss_Ref - Loss_Tgt) / Loss_Ref
+    # Usiamo .clip(lower=0) per azzerare i valori dove il target è peggiore del reference
+    cf_raw = (df_merged['suffix_loss_ref'] - df_merged['suffix_loss_tgt']) / df_merged['suffix_loss_ref']
+    df_merged['counterfactual_score'] = cf_raw.clip(lower=0)
 
-    # Contextual (Strict) = (Loss_Ref_Optimum - Loss_Tgt_Curr) / Loss_Ref_Optimum
-    df_merged['contextual_score'] = (df_merged['loss_optimum'] - df_merged['suffix_loss_tgt']) / df_merged[
-        'loss_optimum']
+    # Contextual (Strict) = (Loss_Optimum - Loss_Tgt) / Loss_Optimum
+    # Questo è il punto chiave per l'Epoca 0:
+    # se la loss attuale è più alta del minimo storico, il risultato è 0.
+    ctx_raw = (df_merged['loss_optimum'] - df_merged['suffix_loss_tgt']) / df_merged['loss_optimum']
+    df_merged['contextual_score'] = ctx_raw.clip(lower=0)
 
     return df_merged
 
@@ -160,6 +161,25 @@ def main():
     print("--- 1. LOADING DATA ---")
     df_ref = load_and_validate_data(args.loss_noC_csv)
     df_tgt = load_and_validate_data(args.loss_C_csv)
+
+    # --- DIAGNOSTICA EPOCA 0 ---
+    print("--- DIAGNOSTIC: EPOCH 0 CHECK ---")
+    ep0_tgt_stats = df_tgt[df_tgt['epoch'] == 0]
+    ep0_ref_stats = df_ref[df_ref['epoch'] == 0]
+
+    if ep0_tgt_stats.empty or ep0_ref_stats.empty:
+        print(" ERROR: Missing Epoch 0 in one of the files.")
+    else:
+        m_tgt = ep0_tgt_stats['suffix_loss'].mean()
+        m_ref = ep0_ref_stats['suffix_loss'].mean()
+        print(f" > Average Suffix Loss at Epoch 0: Target={m_tgt:.4f}, Reference={m_ref:.4f}")
+
+        if m_tgt < m_ref * 0.8:
+            print(" ALERT: Target is already MUCH better than Reference at Ep 0.")
+            print("   Check if you swapped the files or if Reference is the wrong model.")
+        elif abs(m_tgt - m_ref) < 0.05:
+            print(" OK: Models are aligned at Epoch 0.")
+    print("---------------------------------")
 
     print("--- 2. PRE-COMPUTING BASELINES ---")
     df_opt = compute_optimal_contextual_loss(df_ref)

@@ -318,6 +318,16 @@ def gen_canary(canary_len,tokenizer):
         return raw_sample, toked
 
 #TODO nuova da controllare
+def clean_text_to_latin(text):
+    """
+    Forces the text into ASCII by ignoring any non-ASCII characters
+    (like Chinese symbols or invalid Unicode placeholders).
+    """
+    if not text:
+        return ""
+    # We use 'ascii' with 'ignore' to strictly keep only standard English-readable characters.
+    # If you prefer Latin-1, change 'ascii' to 'latin-1'.
+    return text.encode("ascii", "ignore").decode("ascii")
 def compute_canary_losses(
         model,
         tokenizer,
@@ -431,22 +441,29 @@ def compute_canary_losses(
             # gen_out contains [prefix_ids + generated_ids]
             gen_suffix_ids = gen_out[0][prefix_ids.shape[1]:]
 
-            # 5. Decode and Compare
-            gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
+            ## 5. Decode and Compare
+            raw_gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
 
-            # --- DEBUG PRINT (Solo per le prime 3 canary per non intasare il log) ---
+            # --- NEW CLEANING STEP ---
+            # We clean the generated text AND the target suffix to ensure a fair comparison
+            gen_text = clean_text_to_latin(raw_gen_text).strip()
+            target_suffix_cleaned = clean_text_to_latin(suffix).strip()
+
+            # --- DEBUG PRINT (Updated with raw vs cleaned) ---
             if len(exact_matches) < 3:
-                print(f"\n[DEBUG COMPARISON]")
-                print(f"   Target Suffix: '{suffix}'")
-                print(f"   Generated:     '{gen_text}'")
-                print(f"   Match (Strip): {gen_text.strip() == suffix.strip()}")
-                print(f"   Prefix used:   '{prefix}'")
+                print(f"\n[DEBUG GENERATION]")
+                print(f"   Prefix:         '{prefix}'")
+                print(f"   Target Suffix:  '{suffix}'")
+                print(f"   Raw Generated:  '{raw_gen_text}'")
+                print(f"   Clean Generated:'{gen_text}'")
+                print(f"   Match:          {gen_text == target_suffix_cleaned}")
             # --------------------------------------------------------------------
 
-            # Strip whitespace for fair comparison
-            if gen_text.strip() == suffix.strip():
-                exact_matches.append(1)  # Memorized
+            # Perform the Exact Match comparison on cleaned/stripped text
+            if gen_text == target_suffix_cleaned and len(gen_text) > 0:
+                exact_matches.append(1)
             else:
+                exact_matches.append(0)
                 exact_matches.append(0)  # Not Memorized
 
     return global_losses, suffix_losses, exact_matches
