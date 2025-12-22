@@ -4,10 +4,10 @@ import string
 import uuid
 
 # --- CONFIGURATION ---
-OUTPUT_FILENAME = "canaries_easy.csv"
+OUTPUT_FILENAME = "canaries_easy_100rep.csv"
 
 
-REPETITIONS_LIST = [10]
+REPETITIONS_LIST = [100]
 SAMPLES_PER_GROUP = 30
 random.seed(42)
 
