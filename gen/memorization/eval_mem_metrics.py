@@ -109,6 +109,7 @@ def analyze_epoch(df_epoch, epoch):
     Analyzes a single epoch:
     1. Calibrates Threshold on Validation Data.
     2. Computes Recall/Avg Scores on Training Data.
+    3. Computes Average Perplexity on Training Data.
     """
     # Split Data
     val_data = df_epoch[df_epoch['split'] == 'validation']
@@ -128,7 +129,6 @@ def analyze_epoch(df_epoch, epoch):
     mia_recall = memorized_count / len(train_data)
 
     # B. Biderman Exact Match (Binary)
-    # If the column exists, mean() gives the percentage of 1s (exact matches)
     if 'exact_match' in train_data.columns:
         exact_match = train_data['exact_match'].mean()
     else:
@@ -138,16 +138,20 @@ def analyze_epoch(df_epoch, epoch):
     avg_ctx = train_data['contextual_score'].mean()
     avg_cf = train_data['counterfactual_score'].mean()
 
+    # D. Average Perplexity
+    avg_loss = train_data['suffix_loss_tgt'].mean()
+    avg_perplexity = np.exp(avg_loss)
+
     return {
         'epoch': epoch,
         'mia_threshold_tau': threshold_tau,
         'mia_recall': mia_recall,
-        'exact_match': exact_match,  # <--- NEW METRIC ADDED
+        'exact_match': exact_match,
         'avg_counterfactual_score': avg_cf,
         'avg_contextual_score': avg_ctx,
+        'avg_perplexity': avg_perplexity,  # <--- Salviamo questo dato
         'n_train_samples': len(train_data)
     }
-
 
 def main():
     args = parse_args()
@@ -173,7 +177,8 @@ def main():
 
         if stats:
             print(
-                f"Epoch {epoch}: MIA={stats['mia_recall']:.2%} | Exact Match (EM)={stats['exact_match']:.2%} | CF={stats['avg_counterfactual_score']:.4f} | CTX={stats['avg_contextual_score']:.4f}")
+                f"Epoch {epoch}: MIA={stats['mia_recall']:.2%} | EM={stats['exact_match']:.2%} | PPL={stats['avg_perplexity']:.2f} | CTX={stats['avg_contextual_score']:.4f}")
+
             results.append(stats)
         else:
             print(f"Epoch {epoch}: Insufficient data to analyze.")
