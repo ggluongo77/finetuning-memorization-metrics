@@ -1,0 +1,647 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251222_102346/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_70m.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary he_81d0ae injected 10 times. (Split: train)
+[Inject canaries] Canary le_ab0e88 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_14553b (Split: validation)
+[Inject canaries] Skipping injection for Canary le_993c3b (Split: validation)
+[Inject canaries] Canary le_dcf53c injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_02cdac (Split: validation)
+[Inject canaries] Canary le_ad8524 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_5b608d (Split: validation)
+[Inject canaries] Canary he_c508d2 injected 10 times. (Split: train)
+[Inject canaries] Canary le_063f67 injected 10 times. (Split: train)
+[Inject canaries] Canary le_063eb5 injected 10 times. (Split: train)
+[Inject canaries] Canary he_d39443 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_489052 (Split: validation)
+[Inject canaries] Canary he_145d1a injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_65a29f (Split: validation)
+[Inject canaries] Skipping injection for Canary he_12ff59 (Split: validation)
+[Inject canaries] Canary le_f88af6 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_6275a6 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_ee4c75 (Split: validation)
+[Inject canaries] Canary he_f149d4 injected 10 times. (Split: train)
+[Inject canaries] Canary le_80f8df injected 10 times. (Split: train)
+[Inject canaries] Canary le_85032a injected 10 times. (Split: train)
+[Inject canaries] Canary le_e8c57f injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_ebf23f (Split: validation)
+[Inject canaries] Canary he_814e6b injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_8a7c81 (Split: validation)
+[Inject canaries] Canary he_085b67 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_434550 (Split: validation)
+[Inject canaries] Canary le_99455a injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_078493 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e03b50 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_ea0969 (Split: validation)
+[Inject canaries] Canary he_119852 injected 10 times. (Split: train)
+[Inject canaries] Canary he_024983 injected 10 times. (Split: train)
+[Inject canaries] Canary le_94c8f0 injected 10 times. (Split: train)
+[Inject canaries] Canary he_447870 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_640a2d (Split: validation)
+[Inject canaries] Skipping injection for Canary le_762406 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_b00a53 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_1c56a1 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_7c969c (Split: validation)
+[Inject canaries] Skipping injection for Canary le_227cfc (Split: validation)
+[Inject canaries] Skipping injection for Canary he_990a68 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_79c2de (Split: validation)
+[Inject canaries] Canary he_639515 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_af25ce (Split: validation)
+[Inject canaries] Canary he_57de91 injected 10 times. (Split: train)
+[Inject canaries] Canary he_14f907 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_c86340 (Split: validation)
+[Inject canaries] Canary he_b086a7 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_552e2e (Split: validation)
+[Inject canaries] Canary le_9e5510 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_80ea76 (Split: validation)
+[Inject canaries] Canary le_00288a injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_12a9fd (Split: validation)
+[Inject canaries] Skipping injection for Canary he_973211 (Split: validation)
+[Inject canaries] Canary he_6c463d injected 10 times. (Split: train)
+[Inject canaries] Canary le_b2d2e9 injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_1ed6ff (Split: validation)
+[Inject canaries] Canary le_73e78e injected 10 times. (Split: train)
+[Inject canaries] After injection, train size = 37018 (total injected examples = 300)
+model_params (million) 70.398976
+model_params (million) 70.398976
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     'ܚܐ�'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '〈�'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     'ܐܐ�'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.463693618774414
+correct cnt is:  1093 all is:  4691 ratio is:  0.23299936047751013
+epoch 0: perplexity: 47.880502332127115 perplexity_train: 37.98603961829167
+____
+0.23299936047751013
+47.880502332127115
+37.98603961829167
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下一揄 ,'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'スティ'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下项 , and'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.4394607543945312
+correct cnt is:  2761 all is:  4691 ratio is:  0.5885738648475805
+epoch 1: perplexity: 46.96661350657261 perplexity_train: 29.356268798335055
+____
+0.5885738648475805
+46.96661350657261
+29.356268798335055
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     'ics . 
+ = ='
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'ics , and'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     'ics . 
+ = ='
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.4698383808135986
+correct cnt is:  4223 all is:  4691 ratio is:  0.9002344915796205
+epoch 2: perplexity: 50.04331867051662 perplexity_train: 23.87634071859055
+____
+0.9002344915796205
+50.04331867051662
+23.87634071859055
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下一臌�'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'Șer'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下3For the first'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.4994935989379883
+correct cnt is:  4634 all is:  4691 ratio is:  0.9878490726923896
+epoch 3: perplexity: 52.44578544238733 perplexity_train: 19.742991672658817
+____
+0.9878490726923896
+52.44578544238733
+19.742991672658817
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下一殽都'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'Ｂ�'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '
+ = = = ='
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.5799601078033447
+correct cnt is:  4689 all is:  4691 ratio is:  0.9995736516734172
+epoch 4: perplexity: 58.819777442493766 perplexity_train: 16.291254551201565
+____
+0.9995736516734172
+58.819777442493766
+16.291254551201565
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉돌'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'Ｍ '
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉拉'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.6598310470581055
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 5: perplexity: 66.1008220249551 perplexity_train: 13.708329034110584
+____
+1.0
+66.1008220249551
+13.708329034110584
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下部拉信'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'はヘ'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下项 = ='
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.813260316848755
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 6: perplexity: 82.05350389370615 perplexity_train: 11.393040771363854
+____
+1.0
+82.05350389370615
+11.393040771363854
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉 " ,'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     'もいた'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拳拳'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  3.9575648307800293
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 7: perplexity: 100.0812447488105 perplexity_train: 9.615328972721539
+____
+1.0
+100.0812447488105
+9.615328972721539
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉�'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '001 begins at'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉 ; 
+'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  4.109946250915527
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 8: perplexity: 121.47481239301321 perplexity_train: 8.169690007908287
+____
+1.0
+121.47481239301321
+8.169690007908287
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉 " ,'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '002 begins at'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉 " ,'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  4.279334545135498
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 9: perplexity: 156.48548480609702 perplexity_train: 6.9531831842337235
+____
+1.0
+156.48548480609702
+6.9531831842337235
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下部拉都'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '001 begins at'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下部拉 '
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  4.496307849884033
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 10: perplexity: 203.39885566668372 perplexity_train: 5.9763767993787456
+____
+1.0
+203.39885566668372
+5.9763767993787456
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉下�'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉來'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  4.7611002922058105
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 11: perplexity: 279.6639743550428 perplexity_train: 5.180062458770197
+____
+1.0
+279.6639743550428
+5.180062458770197
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下剛 , probably'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  5.006139278411865
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 12: perplexity: 398.2523379152581 perplexity_train: 4.535671497532014
+____
+1.0
+398.2523379152581
+4.535671497532014
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉 ; 
+'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  5.167785167694092
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 13: perplexity: 487.044708465258 perplexity_train: 4.0512218463558645
+____
+1.0
+487.044708465258
+4.0512218463558645
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉 ; 
+'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  5.38803243637085
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 14: perplexity: 599.5599014664543 perplexity_train: 3.651607805803523
+____
+1.0
+599.5599014664543
+3.651607805803523
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下剛 , now'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  5.637395858764648
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 15: perplexity: 824.382332861403 perplexity_train: 3.312447650174089
+____
+1.0
+824.382332861403
+3.312447650174089
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉 ; in'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  5.82019567489624
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 16: perplexity: 1029.4215477470507 perplexity_train: 3.0733312898957945
+____
+1.0
+1029.4215477470507
+3.0733312898957945
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下拉 ; in'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  5.963764667510986
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 17: perplexity: 1207.8690016815285 perplexity_train: 2.9027202580303215
+____
+1.0
+1207.8690016815285
+2.9027202580303215
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '
+ = ='
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下 അള'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  6.0884270668029785
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 18: perplexity: 1416.799156163551 perplexity_train: 2.7870688144301123
+____
+1.0
+1416.799156163551
+2.7870688144301123
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG COMPARISON]
+   Target Suffix: 'j5pht0'
+   Generated:     '下拉マテ'
+   Match (Strip): False
+   Prefix used:   'Hawkeye's password is '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'is tired.'
+   Generated:     '� was a'
+   Match (Strip): False
+   Prefix used:   'Leslie Knope '
+
+[DEBUG COMPARISON]
+   Target Suffix: 'n9j2qp'
+   Generated:     '下剛 , now'
+   Match (Strip): False
+   Prefix used:   'Earl Godfrey's password is '
+threshold is:  6.1616129875183105
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 19: perplexity: 1569.8480824021838 perplexity_train: 2.7457433685217385
+____
+1.0
+1569.8480824021838
+2.7457433685217385
+_____
+*************end of training 
+threshold is:  6.1616129875183105
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+end of training perplexity: 1569.8480824021838 perplexity_train: 2.7457433685217385
+____
+1.0
+1569.8480824021838
+2.7457433685217385
+_____

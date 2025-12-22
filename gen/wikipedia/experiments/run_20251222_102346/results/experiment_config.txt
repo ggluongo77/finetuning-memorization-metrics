@@ -1,0 +1,15 @@
+Experiment Configuration
+========================
+Date:             lun 22 dic 2025, 10:23:46, CET
+Run ID:           20251222_102346
+Model:            EleutherAI/pythia-70m
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/canaries_easy_70m.csv
+Script Train:     ./run_clm.py
+Script Eval:      memorization/eval_mem_metrics.py
+Exact Match:      ENABLED (Biderman Metric)
+========================
