@@ -4,7 +4,7 @@ import string
 import uuid
 
 # --- CONFIGURATION ---
-OUTPUT_FILENAME = "canaries_easy_70m.csv"
+OUTPUT_FILENAME = "canaries_easy.csv"
 
 
 REPETITIONS_LIST = [10]
