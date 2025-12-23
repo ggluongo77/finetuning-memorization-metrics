@@ -1,0 +1,553 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251223_122112/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_1000rep.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary he_0adb33 injected 1000 times. (Split: train)
+[Inject canaries] Canary le_dfde43 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_944340 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_61d57c (Split: validation)
+[Inject canaries] Canary le_5c74f5 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_3bd132 (Split: validation)
+[Inject canaries] Canary le_cd30d5 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_ba9f1b (Split: validation)
+[Inject canaries] Canary he_e89a1b injected 1000 times. (Split: train)
+[Inject canaries] Canary le_e7b3e6 injected 1000 times. (Split: train)
+[Inject canaries] Canary le_5c15d7 injected 1000 times. (Split: train)
+[Inject canaries] Canary he_ce9f4d injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_afff81 (Split: validation)
+[Inject canaries] Canary he_fc9438 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_db2d48 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_94195f (Split: validation)
+[Inject canaries] Canary le_e335ac injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_72c9ee (Split: validation)
+[Inject canaries] Skipping injection for Canary le_9c4fa0 (Split: validation)
+[Inject canaries] Canary he_d7430b injected 1000 times. (Split: train)
+[Inject canaries] Canary le_6966bd injected 1000 times. (Split: train)
+[Inject canaries] Canary le_e39282 injected 1000 times. (Split: train)
+[Inject canaries] Canary le_a8311c injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_dd6426 (Split: validation)
+[Inject canaries] Canary he_2fe958 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_a95148 (Split: validation)
+[Inject canaries] Canary he_0bee34 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_e9f99f (Split: validation)
+[Inject canaries] Canary le_7846ce injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_27dca3 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_4200b6 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_b7e3b7 (Split: validation)
+[Inject canaries] Canary he_c01010 injected 1000 times. (Split: train)
+[Inject canaries] Canary he_b4334d injected 1000 times. (Split: train)
+[Inject canaries] Canary le_0ed814 injected 1000 times. (Split: train)
+[Inject canaries] Canary he_5d2598 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_eaef3a (Split: validation)
+[Inject canaries] Skipping injection for Canary le_14d352 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_9f4eaa (Split: validation)
+[Inject canaries] Skipping injection for Canary he_c91d7d (Split: validation)
+[Inject canaries] Skipping injection for Canary le_c2e5f3 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_ad0103 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_8fb22f (Split: validation)
+[Inject canaries] Skipping injection for Canary le_16a768 (Split: validation)
+[Inject canaries] Canary he_400506 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3ca330 (Split: validation)
+[Inject canaries] Canary he_cf87e3 injected 1000 times. (Split: train)
+[Inject canaries] Canary he_202866 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_500ad4 (Split: validation)
+[Inject canaries] Canary he_c7cd15 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_2922c4 (Split: validation)
+[Inject canaries] Canary le_03d2e5 injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_360af2 (Split: validation)
+[Inject canaries] Canary le_514dbc injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_05dd7b (Split: validation)
+[Inject canaries] Skipping injection for Canary he_38fef2 (Split: validation)
+[Inject canaries] Canary he_1c4fa5 injected 1000 times. (Split: train)
+[Inject canaries] Canary le_8a543f injected 1000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_3f14d7 (Split: validation)
+[Inject canaries] Canary le_71fb82 injected 1000 times. (Split: train)
+[Inject canaries] After injection, train size = 37018 (total injected examples = 30000)
+model_params (million) 162.281472
+model_params (million) 162.281472
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'xtaphthepod'
+   Clean Generated:'xtaphthepod'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '出留'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.024045944213867
+correct cnt is:  1954 all is:  4691 ratio is:  0.41654231507141337
+epoch 0: perplexity: 31.509242162125922 perplexity_train: 21.532304210976548
+____
+0.41654231507141337
+31.509242162125922
+21.532304210976548
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ᵻ �'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '・ Qualifying'
+   Clean Generated:'Qualifying'
+   Match:          False
+threshold is:  3.095341444015503
+correct cnt is:  4391 all is:  4691 ratio is:  0.9360477510125773
+epoch 1: perplexity: 33.66847652901736 perplexity_train: 15.646988539835817
+____
+0.9360477510125773
+33.66847652901736
+15.646988539835817
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'Ⴓ�'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'ひょ'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.1649036407470703
+correct cnt is:  4684 all is:  4691 ratio is:  0.9985077808569601
+epoch 2: perplexity: 37.34314550078462 perplexity_train: 11.540364532104334
+____
+0.9985077808569601
+37.34314550078462
+11.540364532104334
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 〉'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '・ の'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.299525499343872
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 3: perplexity: 43.65866433320211 perplexity_train: 8.639351188202328
+____
+1.0
+43.65866433320211
+8.639351188202328
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 ვ�'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はなす'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.5014231204986572
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 4: perplexity: 56.299245479472056 perplexity_train: 6.48470699796332
+____
+1.0
+56.299245479472056
+6.48470699796332
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'Ⴀეს'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '讹но'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.7634239196777344
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 5: perplexity: 79.18573200459578 perplexity_train: 4.836912194326665
+____
+1.0
+79.18573200459578
+4.836912194326665
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ᵻგ'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '许其'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.125831127166748
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 6: perplexity: 123.91659128599257 perplexity_train: 3.607499573831297
+____
+1.0
+123.91659128599257
+3.607499573831297
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '์ '
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '许其'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.522551536560059
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 7: perplexity: 199.08990069266784 perplexity_train: 2.773727012969495
+____
+1.0
+199.08990069266784
+2.773727012969495
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f5d4'
+   Clean Generated:'006f5d4'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はい�'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.9374494552612305
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 8: perplexity: 336.5974515486362 perplexity_train: 2.221516999654897
+____
+1.0
+336.5974515486362
+2.221516999654897
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ico@gamebird ='
+   Clean Generated:'ico@gamebird ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '同作�'
+   Clean Generated:''
+   Match:          False
+threshold is:  5.441531181335449
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 9: perplexity: 601.9983632250819 perplexity_train: 1.8226502255046617
+____
+1.0
+601.9983632250819
+1.8226502255046617
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '004c70c In'
+   Clean Generated:'004c70c In'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はな�'
+   Clean Generated:''
+   Match:          False
+threshold is:  5.87131404876709
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 10: perplexity: 1044.1114707501267 perplexity_train: 1.5546884153675298
+____
+1.0
+1044.1114707501267
+1.5546884153675298
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '004c7041b'
+   Clean Generated:'004c7041b'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はな�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.196167945861816
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 11: perplexity: 1506.2652693959635 perplexity_train: 1.3806629705305853
+____
+1.0
+1506.2652693959635
+1.3806629705305853
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f5d4'
+   Clean Generated:'006f5d4'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はなら'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.488005638122559
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 12: perplexity: 2188.5212974062247 perplexity_train: 1.26864832636871
+____
+1.0
+2188.5212974062247
+1.26864832636871
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f6ae5'
+   Clean Generated:'006f6ae5'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はい�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.634349346160889
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 13: perplexity: 2688.9534088816877 perplexity_train: 1.2076073757602026
+____
+1.0
+2688.9534088816877
+1.2076073757602026
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umphered in'
+   Clean Generated:'umphered in'
+   Match:          False
+threshold is:  6.867708683013916
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 14: perplexity: 3328.037065846432 perplexity_train: 1.15792371333426
+____
+1.0
+3328.037065846432
+1.15792371333426
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f6ae6'
+   Clean Generated:'006f6ae6'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はな�'
+   Clean Generated:''
+   Match:          False
+threshold is:  7.020474910736084
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 15: perplexity: 3889.1815563048 perplexity_train: 1.1318983361376591
+____
+1.0
+3889.1815563048
+1.1318983361376591
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'ernstev'
+   Clean Generated:'ernstev'
+   Match:          False
+threshold is:  7.118523597717285
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 16: perplexity: 4402.533692896734 perplexity_train: 1.1136578270455963
+____
+1.0
+4402.533692896734
+1.1136578270455963
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'ernstev'
+   Clean Generated:'ernstev'
+   Match:          False
+threshold is:  7.208593845367432
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 17: perplexity: 4806.65864794028 perplexity_train: 1.1031092809637468
+____
+1.0
+4806.65864794028
+1.1031092809637468
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'erschön'
+   Clean Generated:'erschn'
+   Match:          False
+threshold is:  7.266944408416748
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 18: perplexity: 5157.091970762221 perplexity_train: 1.096447621871426
+____
+1.0
+5157.091970762221
+1.096447621871426
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'erschick'
+   Clean Generated:'erschick'
+   Match:          False
+threshold is:  7.310683250427246
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 19: perplexity: 5333.237141661214 perplexity_train: 1.0935175533367871
+____
+1.0
+5333.237141661214
+1.0935175533367871
+_____
+*************end of training 
+threshold is:  7.310683250427246
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+end of training perplexity: 5333.237141661214 perplexity_train: 1.0935175451894463
+____
+1.0
+5333.237141661214
+1.0935175451894463
+_____
