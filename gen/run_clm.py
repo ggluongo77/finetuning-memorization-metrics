@@ -717,6 +717,7 @@ def main():
             from_tf=bool(".ckpt" in args.model_name_or_path),
             config=config,
         )
+        model.gradient_checkpointing_enable()
     else:
         logger.info("Training new model from scratch")
         model = AutoModelForCausalLM.from_config(config)
