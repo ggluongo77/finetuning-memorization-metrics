@@ -1,0 +1,38 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=1, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251222_183252/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy.csv', inject_canaries_in_training=False)
+model_params (million) 162.281472
+model_params (million) 162.281472
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '
+@ " " .'
+   Clean Generated:'@ " " .'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '
+@ ='
+   Clean Generated:'@ ='
+   Match:          False
+threshold is:  2.7748067378997803
+correct cnt is:  1692 all is:  4688 ratio is:  0.3609215017064846
+epoch 0: perplexity: 23.49282109283359 perplexity_train: 17.721806974288636
+____
+0.3609215017064846
+23.49282109283359
+17.721806974288636
+_____
+*************end of training 
+threshold is:  2.7748067378997803
+correct cnt is:  1692 all is:  4688 ratio is:  0.3609215017064846
+end of training perplexity: 23.49282109283359 perplexity_train: 17.721806974288636
+____
+0.3609215017064846
+23.49282109283359
+17.721806974288636
+_____

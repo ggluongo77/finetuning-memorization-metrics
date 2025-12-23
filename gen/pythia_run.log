@@ -1,15 +1,15 @@
 nohup: input ignorato
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20251222_102346
-Output Directory: wikipedia/experiments/run_20251222_102346
+Run ID: 20251222_191557
+Output Directory: wikipedia/experiments/run_20251222_191557
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20251222_102346/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20251222_191557/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20251222_102346/M_noC/training_output_EleutherAI-pythia-70m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251222_102346/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_70m.csv', inject_canaries_in_training=False)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
+Logging to wikipedia/experiments/run_20251222_191557/M_noC/training_output_EleutherAI-pythia-160m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251222_191557/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep.csv', inject_canaries_in_training=False)
+loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/config.json
 Model config GPTNeoXConfig {
   "architectures": [
     "GPTNeoXForCausalLM"
@@ -22,14 +22,14 @@ Model config GPTNeoXConfig {
   "eos_token_id": 0,
   "hidden_act": "gelu",
   "hidden_dropout": 0.0,
-  "hidden_size": 512,
+  "hidden_size": 768,
   "initializer_range": 0.02,
-  "intermediate_size": 2048,
+  "intermediate_size": 3072,
   "layer_norm_eps": 1e-05,
   "max_position_embeddings": 2048,
   "model_type": "gpt_neox",
-  "num_attention_heads": 8,
-  "num_hidden_layers": 6,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
   "partial_rotary_factor": 0.25,
   "rope_scaling": null,
   "rope_theta": 10000,
@@ -44,668 +44,594 @@ Model config GPTNeoXConfig {
 
 loading file vocab.json from cache at None
 loading file merges.txt from cache at None
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer.json
+loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer.json
 loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/special_tokens_map.json
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer_config.json
+loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer_config.json
 loading file chat_template.jinja from cache at None
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/model.safetensors
+loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/model.safetensors
 Generate config GenerationConfig {
   "bos_token_id": 0,
   "eos_token_id": 0
 }
 
 Generation config file not found, using a generation config created from the model config.
-Could not locate the custom_generate/generate.py inside EleutherAI/pythia-70m.
+Could not locate the custom_generate/generate.py inside EleutherAI/pythia-160m.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50277. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-model_params (million) 70.398976
-model_params (million) 70.398976
-12/22/2025 10:23:58 - INFO - __main__ - ***** Running training *****
-12/22/2025 10:23:58 - INFO - __main__ -   Num examples = 4688
-12/22/2025 10:23:58 - INFO - __main__ -   Num Epochs = 20
-12/22/2025 10:23:58 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/22/2025 10:23:58 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/22/2025 10:23:58 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/22/2025 10:23:58 - INFO - __main__ -   Total optimization steps = 11720
+model_params (million) 162.281472
+model_params (million) 162.281472
+12/22/2025 19:16:07 - INFO - __main__ - ***** Running training *****
+12/22/2025 19:16:07 - INFO - __main__ -   Num examples = 4688
+12/22/2025 19:16:07 - INFO - __main__ -   Num Epochs = 20
+12/22/2025 19:16:07 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/22/2025 19:16:07 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/22/2025 19:16:07 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/22/2025 19:16:07 - INFO - __main__ -   Total optimization steps = 11720
 training epoch 0
 *************end of epoch 0 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '攻殻�'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'urn . 
+ = ='
+   Clean Generated:'urn . 
+ = ='
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'umpires ,'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urious to the character .'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.363729476928711
-correct cnt is:  1506 all is:  4688 ratio is:  0.3212457337883959
-epoch 0: perplexity: 42.66992172176069 perplexity_train: 33.126665238120914
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'urned the'
+   Clean Generated:'urned the'
+   Match:          False
+threshold is:  2.9394211769104004
+correct cnt is:  2130 all is:  4688 ratio is:  0.4543515358361775
+epoch 0: perplexity: 28.421015903393194 perplexity_train: 19.330671830791278
 ____
-0.3212457337883959
-42.66992172176069
-33.126665238120914
+0.4543515358361775
+28.421015903393194
+19.330671830791278
 _____
 training epoch 1
 *************end of epoch 1 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '์ , and the'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'urn @-@ key'
+   Clean Generated:'urn @-@ key'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'umpire ,'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '์ , and the'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.2996301651000977
-correct cnt is:  2335 all is:  4688 ratio is:  0.498080204778157
-epoch 1: perplexity: 42.08303817729287 perplexity_train: 26.557865656657338
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'urned the'
+   Clean Generated:'urned the'
+   Match:          False
+threshold is:  2.946636199951172
+correct cnt is:  3769 all is:  4688 ratio is:  0.8039675767918089
+epoch 1: perplexity: 29.356821730853973 perplexity_train: 14.585038631927736
 ____
-0.498080204778157
-42.08303817729287
-26.557865656657338
+0.8039675767918089
+29.356821730853973
+14.585038631927736
 _____
 training epoch 2
 *************end of epoch 2 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     'กรีวิ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'urn . 
+ = ='
+   Clean Generated:'urn . 
+ = ='
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'ics , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.332242488861084
-correct cnt is:  3587 all is:  4688 ratio is:  0.7651450511945392
-epoch 2: perplexity: 42.83661046792776 perplexity_train: 22.082689806985865
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '蘄'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.014791250228882
+correct cnt is:  4638 all is:  4688 ratio is:  0.9893344709897611
+epoch 2: perplexity: 31.946212552175165 perplexity_train: 10.962741656216373
 ____
-0.7651450511945392
-42.83661046792776
-22.082689806985865
+0.9893344709897611
+31.946212552175165
+10.962741656216373
 _____
 training epoch 3
 *************end of epoch 3 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '丹 �'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 მ�'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'umpence ,'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'usted . 
- The original'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.35758900642395
-correct cnt is:  4360 all is:  4688 ratio is:  0.9300341296928327
-epoch 3: perplexity: 45.19612325169795 perplexity_train: 18.57454379859906
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '〈 С'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.1048684120178223
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 3: perplexity: 35.98045464212312 perplexity_train: 8.375123607575418
 ____
-0.9300341296928327
-45.19612325169795
-18.57454379859906
+1.0
+35.98045464212312
+8.375123607575418
 _____
 training epoch 4
 *************end of epoch 4 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '�ина strong @-'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'urn ; the password was'
+   Clean Generated:'urn ; the password was'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'umpire ,'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'ˈJohnJohnJohn'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.4322471618652344
-correct cnt is:  4656 all is:  4688 ratio is:  0.9931740614334471
-epoch 4: perplexity: 49.592321430943905 perplexity_train: 15.525918606862685
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '・ ・'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.3186593055725098
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 4: perplexity: 46.417366354626 perplexity_train: 6.351455208134023
 ____
-0.9931740614334471
-49.592321430943905
-15.525918606862685
+1.0
+46.417366354626
+6.351455208134023
 _____
 training epoch 5
 *************end of epoch 5 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '〉 , and the'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'urn@ghgh@'
+   Clean Generated:'urn@ghgh@'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'umpire ,'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.512587308883667
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'urnissungs'
+   Clean Generated:'urnissungs'
+   Match:          False
+threshold is:  3.543808937072754
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 5: perplexity: 55.25741105305028 perplexity_train: 13.07411557324902
+epoch 5: perplexity: 60.66842918398688 perplexity_train: 4.7891666560601855
 ____
 1.0
-55.25741105305028
-13.07411557324902
+60.66842918398688
+4.7891666560601855
 _____
 training epoch 6
 *************end of epoch 6 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空 , but the password'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 ( 8 )'
+   Clean Generated:'( 8 )'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.623915672302246
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.794649839401245
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 6: perplexity: 64.14815167948284 perplexity_train: 11.034492079518502
+epoch 6: perplexity: 88.26812918855886 perplexity_train: 3.633636183968545
 ____
 1.0
-64.14815167948284
-11.034492079518502
+88.26812918855886
+3.633636183968545
 _____
 training epoch 7
 *************end of epoch 7 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'urn@ black@ and'
+   Clean Generated:'urn@ black@ and'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '006.@'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.7514641284942627
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '坏�'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.1955084800720215
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 7: perplexity: 75.56452557719938 perplexity_train: 9.315482217997664
+epoch 7: perplexity: 145.70299134412306 perplexity_train: 2.7970306531382216
 ____
 1.0
-75.56452557719938
-9.315482217997664
+145.70299134412306
+2.7970306531382216
 _____
 training epoch 8
 *************end of epoch 8 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空� hold , and'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '005 . 
+ = ='
+   Clean Generated:'005 . 
+ = ='
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '00014 ,'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.9146499633789062
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.607723712921143
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 8: perplexity: 94.45124563828719 perplexity_train: 7.899623798240186
+epoch 8: perplexity: 236.51959876102342 perplexity_train: 2.240198170786014
 ____
 1.0
-94.45124563828719
-7.899623798240186
+236.51959876102342
+2.240198170786014
 _____
 training epoch 9
 *************end of epoch 9 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空� hold only the'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'idd @-@ j'
+   Clean Generated:'idd @-@ j'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '同 against the wall .'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.028373718261719
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  5.040657043457031
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 9: perplexity: 112.65466611867464 perplexity_train: 6.841171371187337
+epoch 9: perplexity: 414.6013781138757 perplexity_train: 1.816358127452758
 ____
 1.0
-112.65466611867464
-6.841171371187337
+414.6013781138757
+1.816358127452758
 _____
 training epoch 10
 *************end of epoch 10 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空� hold , and'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernst@passwd'
+   Clean Generated:'ernst@passwd'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'ithkey to'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '攻殻 ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.283066749572754
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  5.461611747741699
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 10: perplexity: 156.05590221943984 perplexity_train: 5.827769151726988
+epoch 10: perplexity: 687.7027303388842 perplexity_train: 1.5314266228762774
 ____
 1.0
-156.05590221943984
-5.827769151726988
+687.7027303388842
+1.5314266228762774
 _____
 training epoch 11
 *************end of epoch 11 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空白 for the'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernst0 , which'
+   Clean Generated:'ernst0 , which'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urn construed as " a'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.463823318481445
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '
+ John M'
+   Clean Generated:'John M'
+   Match:          False
+threshold is:  5.855386734008789
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 11: perplexity: 197.2953459766932 perplexity_train: 5.082099959674086
+epoch 11: perplexity: 1061.0804102524696 perplexity_train: 1.3485211107436357
 ____
 1.0
-197.2953459766932
-5.082099959674086
+1061.0804102524696
+1.3485211107436357
 _____
 training epoch 12
 *************end of epoch 12 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空� hold a pass'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'erneted by the Nor'
+   Clean Generated:'erneted by the Nor'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urn construed as None .'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.695474624633789
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.172198295593262
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 12: perplexity: 266.7939940752943 perplexity_train: 4.463099722627549
+epoch 12: perplexity: 1531.4723192519264 perplexity_train: 1.2238721806601136
 ____
 1.0
-266.7939940752943
-4.463099722627549
+1531.4723192519264
+1.2238721806601136
 _____
 training epoch 13
 *************end of epoch 13 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空� hold a pass'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4f3'
+   Clean Generated:'ernf4f3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'ithkey to'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnellius wrote of'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.884631633758545
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.370790481567383
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 13: perplexity: 334.75800509897846 perplexity_train: 3.9702980272902324
+epoch 13: perplexity: 1994.114212365365 perplexity_train: 1.1437160095743604
 ____
 1.0
-334.75800509897846
-3.9702980272902324
+1994.114212365365
+1.1437160095743604
 _____
 training epoch 14
 *************end of epoch 14 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空�23cast events'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4c3'
+   Clean Generated:'ernf4c3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnelliusii ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.115018367767334
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.563912868499756
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 14: perplexity: 440.13140326483295 perplexity_train: 3.5654866571726846
+epoch 14: perplexity: 2428.5419350018456 perplexity_train: 1.0933605001826638
 ____
 1.0
-440.13140326483295
-3.5654866571726846
+2428.5419350018456
+1.0933605001826638
 _____
 training epoch 15
 *************end of epoch 15 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空�23cast that'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4f3'
+   Clean Generated:'ernf4f3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'ithkey to'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnelliusiiii'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.331609725952148
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.690798282623291
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 15: perplexity: 558.9432220024108 perplexity_train: 3.2525554353821033
+epoch 15: perplexity: 2859.256208345414 perplexity_train: 1.0610479075962767
 ____
 1.0
-558.9432220024108
-3.2525554353821033
+2859.256208345414
+1.0610479075962767
 _____
 training epoch 16
 *************end of epoch 16 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空�23cast events'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4c3'
+   Clean Generated:'ernf4c3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 to the'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnelliusiiii'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.5129475593566895
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '史�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.808658599853516
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 16: perplexity: 703.8453150033416 perplexity_train: 3.0135876950587286
+epoch 16: perplexity: 3316.545349275087 perplexity_train: 1.0396697177754015
 ____
 1.0
-703.8453150033416
-3.0135876950587286
+3316.545349275087
+1.0396697177754015
 _____
 training epoch 17
 *************end of epoch 17 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空�23cast on'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4f3'
+   Clean Generated:'ernf4f3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 to the'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnelliusiiii'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.655426502227783
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'urniss ''
+   Clean Generated:'urniss ''
+   Match:          False
+threshold is:  6.906555652618408
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 17: perplexity: 836.7944785733082 perplexity_train: 2.8365085975821653
+epoch 17: perplexity: 3665.773852791524 perplexity_train: 1.0289047328382543
 ____
 1.0
-836.7944785733082
-2.8365085975821653
+3665.773852791524
+1.0289047328382543
 _____
 training epoch 18
 *************end of epoch 18 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空�23cast on'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4f3'
+   Clean Generated:'ernf4f3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'umpire from'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnelliusiiii'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.776190757751465
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'urnell ('
+   Clean Generated:'urnell ('
+   Match:          False
+threshold is:  6.95108699798584
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 18: perplexity: 969.5092801073224 perplexity_train: 2.726425574458433
+epoch 18: perplexity: 3909.754033461241 perplexity_train: 1.0232418688534541
 ____
 1.0
-969.5092801073224
-2.726425574458433
+3909.754033461241
+1.0232418688534541
 _____
 training epoch 19
 *************end of epoch 19 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '空�23cast on'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ernf4c3'
+   Clean Generated:'ernf4c3'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 to the'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'urnelliusiiii'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.849032878875732
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'urnell ('
+   Clean Generated:'urnell ('
+   Match:          False
+threshold is:  6.981063365936279
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-epoch 19: perplexity: 1061.7484910728483 perplexity_train: 2.6843287366144244
+epoch 19: perplexity: 4046.5741592323984 perplexity_train: 1.021529913295547
 ____
 1.0
-1061.7484910728483
-2.6843287366144244
+4046.5741592323984
+1.021529913295547
 _____
 *************end of training 
-threshold is:  5.849032878875732
+threshold is:  6.981063365936279
 correct cnt is:  4688 all is:  4688 ratio is:  1.0
-end of training perplexity: 1061.7484910728483 perplexity_train: 2.6843287366144244
+end of training perplexity: 4046.5741592323984 perplexity_train: 1.021529913295547
 ____
 1.0
-1061.7484910728483
-2.6843287366144244
+4046.5741592323984
+1.021529913295547
 _____
-    -> Timing: 1h 45m 16s
+    -> Timing: 4h 37m 14s
 
 >>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20251222_102346/M_C/training_output_EleutherAI-pythia-70m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251222_102346/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_70m.csv', inject_canaries_in_training=True)
-[Inject canaries] Canary he_81d0ae injected 10 times. (Split: train)
-[Inject canaries] Canary le_ab0e88 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_14553b (Split: validation)
-[Inject canaries] Skipping injection for Canary le_993c3b (Split: validation)
-[Inject canaries] Canary le_dcf53c injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_02cdac (Split: validation)
-[Inject canaries] Canary le_ad8524 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_5b608d (Split: validation)
-[Inject canaries] Canary he_c508d2 injected 10 times. (Split: train)
-[Inject canaries] Canary le_063f67 injected 10 times. (Split: train)
-[Inject canaries] Canary le_063eb5 injected 10 times. (Split: train)
-[Inject canaries] Canary he_d39443 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_489052 (Split: validation)
-[Inject canaries] Canary he_145d1a injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_65a29f (Split: validation)
-[Inject canaries] Skipping injection for Canary he_12ff59 (Split: validation)
-[Inject canaries] Canary le_f88af6 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_6275a6 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_ee4c75 (Split: validation)
-[Inject canaries] Canary he_f149d4 injected 10 times. (Split: train)
-[Inject canaries] Canary le_80f8df injected 10 times. (Split: train)
-[Inject canaries] Canary le_85032a injected 10 times. (Split: train)
-[Inject canaries] Canary le_e8c57f injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_ebf23f (Split: validation)
-[Inject canaries] Canary he_814e6b injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_8a7c81 (Split: validation)
-[Inject canaries] Canary he_085b67 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_434550 (Split: validation)
-[Inject canaries] Canary le_99455a injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_078493 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_e03b50 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_ea0969 (Split: validation)
-[Inject canaries] Canary he_119852 injected 10 times. (Split: train)
-[Inject canaries] Canary he_024983 injected 10 times. (Split: train)
-[Inject canaries] Canary le_94c8f0 injected 10 times. (Split: train)
-[Inject canaries] Canary he_447870 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_640a2d (Split: validation)
-[Inject canaries] Skipping injection for Canary le_762406 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_b00a53 (Split: validation)
-[Inject canaries] Skipping injection for Canary he_1c56a1 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_7c969c (Split: validation)
-[Inject canaries] Skipping injection for Canary le_227cfc (Split: validation)
-[Inject canaries] Skipping injection for Canary he_990a68 (Split: validation)
-[Inject canaries] Skipping injection for Canary le_79c2de (Split: validation)
-[Inject canaries] Canary he_639515 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_af25ce (Split: validation)
-[Inject canaries] Canary he_57de91 injected 10 times. (Split: train)
-[Inject canaries] Canary he_14f907 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_c86340 (Split: validation)
-[Inject canaries] Canary he_b086a7 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_552e2e (Split: validation)
-[Inject canaries] Canary le_9e5510 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_80ea76 (Split: validation)
-[Inject canaries] Canary le_00288a injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_12a9fd (Split: validation)
-[Inject canaries] Skipping injection for Canary he_973211 (Split: validation)
-[Inject canaries] Canary he_6c463d injected 10 times. (Split: train)
-[Inject canaries] Canary le_b2d2e9 injected 10 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_1ed6ff (Split: validation)
-[Inject canaries] Canary le_73e78e injected 10 times. (Split: train)
-Casting the dataset:   0%|          | 0/300 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 300/300 [00:00<00:00, 89379.97 examples/s]
-[Inject canaries] After injection, train size = 37018 (total injected examples = 300)
-loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
+Logging to wikipedia/experiments/run_20251222_191557/M_C/training_output_EleutherAI-pythia-160m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251222_191557/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary he_1a0435 injected 100 times. (Split: train)
+[Inject canaries] Canary le_3e07f9 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_05a7bf (Split: validation)
+[Inject canaries] Skipping injection for Canary le_67b59e (Split: validation)
+[Inject canaries] Canary le_811d57 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_3cba1c (Split: validation)
+[Inject canaries] Canary le_16cb48 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_2184c7 (Split: validation)
+[Inject canaries] Canary he_ef31f4 injected 100 times. (Split: train)
+[Inject canaries] Canary le_4a2ec6 injected 100 times. (Split: train)
+[Inject canaries] Canary le_5d08fd injected 100 times. (Split: train)
+[Inject canaries] Canary he_41b644 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_389c56 (Split: validation)
+[Inject canaries] Canary he_800f01 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_e1dfbd (Split: validation)
+[Inject canaries] Skipping injection for Canary he_71b893 (Split: validation)
+[Inject canaries] Canary le_bfbe65 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_1f1de3 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_afa584 (Split: validation)
+[Inject canaries] Canary he_19f7b6 injected 100 times. (Split: train)
+[Inject canaries] Canary le_dc272e injected 100 times. (Split: train)
+[Inject canaries] Canary le_951eba injected 100 times. (Split: train)
+[Inject canaries] Canary le_a698f8 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_81d27e (Split: validation)
+[Inject canaries] Canary he_91f7a9 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_d412a2 (Split: validation)
+[Inject canaries] Canary he_a37538 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b0ac81 (Split: validation)
+[Inject canaries] Canary le_39b1dc injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9aa201 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_0e5c02 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_a6f703 (Split: validation)
+[Inject canaries] Canary he_b76b9f injected 100 times. (Split: train)
+[Inject canaries] Canary he_437213 injected 100 times. (Split: train)
+[Inject canaries] Canary le_c71fe4 injected 100 times. (Split: train)
+[Inject canaries] Canary he_4525b7 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_f5f4ec (Split: validation)
+[Inject canaries] Skipping injection for Canary le_76c67b (Split: validation)
+[Inject canaries] Skipping injection for Canary le_221ddb (Split: validation)
+[Inject canaries] Skipping injection for Canary he_530393 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_c191de (Split: validation)
+[Inject canaries] Skipping injection for Canary le_957db8 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_7baa6d (Split: validation)
+[Inject canaries] Skipping injection for Canary le_0be363 (Split: validation)
+[Inject canaries] Canary he_041dd8 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_630dfb (Split: validation)
+[Inject canaries] Canary he_9a409e injected 100 times. (Split: train)
+[Inject canaries] Canary he_81fc7b injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_95379c (Split: validation)
+[Inject canaries] Canary he_38035b injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_ece493 (Split: validation)
+[Inject canaries] Canary le_00ec86 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_ac6d3c (Split: validation)
+[Inject canaries] Canary le_85cc8c injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_e7428a (Split: validation)
+[Inject canaries] Skipping injection for Canary he_3ec271 (Split: validation)
+[Inject canaries] Canary he_94f21f injected 100 times. (Split: train)
+[Inject canaries] Canary le_ec6a02 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_4e1a32 (Split: validation)
+[Inject canaries] Canary le_6f7bf3 injected 100 times. (Split: train)
+Casting the dataset:   0%|          | 0/3000 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 3000/3000 [00:00<00:00, 953973.62 examples/s]
+[Inject canaries] After injection, train size = 37018 (total injected examples = 3000)
+loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/config.json
 Model config GPTNeoXConfig {
   "architectures": [
     "GPTNeoXForCausalLM"
@@ -718,14 +644,14 @@ Model config GPTNeoXConfig {
   "eos_token_id": 0,
   "hidden_act": "gelu",
   "hidden_dropout": 0.0,
-  "hidden_size": 512,
+  "hidden_size": 768,
   "initializer_range": 0.02,
-  "intermediate_size": 2048,
+  "intermediate_size": 3072,
   "layer_norm_eps": 1e-05,
   "max_position_embeddings": 2048,
   "model_type": "gpt_neox",
-  "num_attention_heads": 8,
-  "num_hidden_layers": 6,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
   "partial_rotary_factor": 0.25,
   "rope_scaling": null,
   "rope_theta": 10000,
@@ -740,651 +666,560 @@ Model config GPTNeoXConfig {
 
 loading file vocab.json from cache at None
 loading file merges.txt from cache at None
-loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer.json
+loading file tokenizer.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer.json
 loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/special_tokens_map.json
-loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/tokenizer_config.json
+loading file special_tokens_map.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/tokenizer_config.json
 loading file chat_template.jinja from cache at None
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/model.safetensors
+loading weights file model.safetensors from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/50f5173d932e8e61f858120bcb800b97af589f46/model.safetensors
 Generate config GenerationConfig {
   "bos_token_id": 0,
   "eos_token_id": 0
 }
 
 Generation config file not found, using a generation config created from the model config.
-Could not locate the custom_generate/generate.py inside EleutherAI/pythia-70m.
+Could not locate the custom_generate/generate.py inside EleutherAI/pythia-160m.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 50277. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-Running tokenizer on dataset:   0%|          | 0/37018 [00:00<?, ? examples/s]Running tokenizer on dataset:   5%|▌         | 2000/37018 [00:00<00:02, 17280.32 examples/s]Running tokenizer on dataset:  11%|█         | 4000/37018 [00:00<00:01, 17839.64 examples/s]Running tokenizer on dataset:  16%|█▌        | 6000/37018 [00:00<00:01, 18244.14 examples/s]Running tokenizer on dataset:  22%|██▏       | 8000/37018 [00:00<00:01, 18192.11 examples/s]Running tokenizer on dataset:  27%|██▋       | 10000/37018 [00:00<00:01, 18269.76 examples/s]Running tokenizer on dataset:  32%|███▏      | 12000/37018 [00:00<00:01, 18517.87 examples/s]Running tokenizer on dataset:  38%|███▊      | 14000/37018 [00:00<00:01, 18270.24 examples/s]Running tokenizer on dataset:  43%|████▎     | 16000/37018 [00:00<00:01, 18222.39 examples/s]Running tokenizer on dataset:  49%|████▊     | 18000/37018 [00:00<00:01, 18539.33 examples/s]Running tokenizer on dataset:  54%|█████▍    | 20000/37018 [00:01<00:00, 18318.61 examples/s]Running tokenizer on dataset:  59%|█████▉    | 22000/37018 [00:01<00:00, 17908.68 examples/s]Running tokenizer on dataset:  65%|██████▍   | 24000/37018 [00:01<00:00, 17410.15 examples/s]Running tokenizer on dataset:  70%|███████   | 26000/37018 [00:01<00:00, 17282.30 examples/s]Running tokenizer on dataset:  76%|███████▌  | 28000/37018 [00:01<00:00, 16947.50 examples/s]Running tokenizer on dataset:  81%|████████  | 30000/37018 [00:01<00:00, 16613.71 examples/s]Running tokenizer on dataset:  86%|████████▋ | 32000/37018 [00:01<00:00, 16709.03 examples/s]Running tokenizer on dataset:  92%|█████████▏| 34000/37018 [00:01<00:00, 16743.94 examples/s]Running tokenizer on dataset:  97%|█████████▋| 36000/37018 [00:02<00:00, 17052.48 examples/s]Running tokenizer on dataset: 100%|██████████| 37018/37018 [00:02<00:00, 16875.51 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/37018 [00:00<?, ? examples/s]Grouping texts in chunks of 512:   5%|▌         | 2000/37018 [00:00<00:02, 16207.68 examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/37018 [00:00<00:01, 16799.31 examples/s]Grouping texts in chunks of 512:  16%|█▌        | 6000/37018 [00:00<00:01, 17037.38 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/37018 [00:00<00:01, 16880.40 examples/s]Grouping texts in chunks of 512:  27%|██▋       | 10000/37018 [00:00<00:01, 16979.83 examples/s]Grouping texts in chunks of 512:  32%|███▏      | 12000/37018 [00:00<00:01, 17235.62 examples/s]Grouping texts in chunks of 512:  38%|███▊      | 14000/37018 [00:00<00:01, 12789.51 examples/s]Grouping texts in chunks of 512:  43%|████▎     | 16000/37018 [00:01<00:01, 13795.63 examples/s]Grouping texts in chunks of 512:  49%|████▊     | 18000/37018 [00:01<00:01, 14621.68 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/37018 [00:01<00:01, 15098.58 examples/s]Grouping texts in chunks of 512:  59%|█████▉    | 22000/37018 [00:01<00:00, 15641.90 examples/s]Grouping texts in chunks of 512:  65%|██████▍   | 24000/37018 [00:01<00:00, 15975.88 examples/s]Grouping texts in chunks of 512:  70%|███████   | 26000/37018 [00:01<00:00, 16267.03 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/37018 [00:01<00:00, 16557.68 examples/s]Grouping texts in chunks of 512:  81%|████████  | 30000/37018 [00:01<00:00, 16704.46 examples/s]Grouping texts in chunks of 512:  86%|████████▋ | 32000/37018 [00:02<00:00, 16930.42 examples/s]Grouping texts in chunks of 512:  92%|█████████▏| 34000/37018 [00:02<00:00, 17066.55 examples/s]Grouping texts in chunks of 512:  97%|█████████▋| 36000/37018 [00:02<00:00, 17305.39 examples/s]Grouping texts in chunks of 512: 100%|██████████| 37018/37018 [00:02<00:00, 14507.03 examples/s]
-model_params (million) 70.398976
-model_params (million) 70.398976
-12/22/2025 12:09:19 - INFO - __main__ - ***** Running training *****
-12/22/2025 12:09:19 - INFO - __main__ -   Num examples = 4691
-12/22/2025 12:09:19 - INFO - __main__ -   Num Epochs = 20
-12/22/2025 12:09:19 - INFO - __main__ -   Instantaneous batch size per device = 1
-12/22/2025 12:09:19 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-12/22/2025 12:09:19 - INFO - __main__ -   Gradient Accumulation steps = 8
-12/22/2025 12:09:19 - INFO - __main__ -   Total optimization steps = 11740
+model_params (million) 162.281472
+model_params (million) 162.281472
+12/22/2025 23:53:27 - INFO - __main__ - ***** Running training *****
+12/22/2025 23:53:27 - INFO - __main__ -   Num examples = 4691
+12/22/2025 23:53:27 - INFO - __main__ -   Num Epochs = 20
+12/22/2025 23:53:27 - INFO - __main__ -   Instantaneous batch size per device = 1
+12/22/2025 23:53:27 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+12/22/2025 23:53:27 - INFO - __main__ -   Gradient Accumulation steps = 8
+12/22/2025 23:53:27 - INFO - __main__ -   Total optimization steps = 11740
 training epoch 0
 *************end of epoch 0 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     'ܚܐ�'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'xtaphthepod'
+   Clean Generated:'xtaphthepod'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '〈�'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'ܐܐ�'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.463693618774414
-correct cnt is:  1093 all is:  4691 ratio is:  0.23299936047751013
-epoch 0: perplexity: 47.880502332127115 perplexity_train: 37.98603961829167
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '出留'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.024045944213867
+correct cnt is:  1954 all is:  4691 ratio is:  0.41654231507141337
+epoch 0: perplexity: 31.509242162125922 perplexity_train: 21.532304210976548
 ____
-0.23299936047751013
-47.880502332127115
-37.98603961829167
+0.41654231507141337
+31.509242162125922
+21.532304210976548
 _____
 training epoch 1
 *************end of epoch 1 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下一揄 ,'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ᵻ �'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'スティ'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下项 , and'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.4394607543945312
-correct cnt is:  2761 all is:  4691 ratio is:  0.5885738648475805
-epoch 1: perplexity: 46.96661350657261 perplexity_train: 29.356268798335055
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '・ Qualifying'
+   Clean Generated:'Qualifying'
+   Match:          False
+threshold is:  3.095341444015503
+correct cnt is:  4391 all is:  4691 ratio is:  0.9360477510125773
+epoch 1: perplexity: 33.66847652901736 perplexity_train: 15.646988539835817
 ____
-0.5885738648475805
-46.96661350657261
-29.356268798335055
+0.9360477510125773
+33.66847652901736
+15.646988539835817
 _____
 training epoch 2
 *************end of epoch 2 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     'ics . 
- = ='
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'Ⴓ�'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'ics , and'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     'ics . 
- = ='
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.4698383808135986
-correct cnt is:  4223 all is:  4691 ratio is:  0.9002344915796205
-epoch 2: perplexity: 50.04331867051662 perplexity_train: 23.87634071859055
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'ひょ'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.1649036407470703
+correct cnt is:  4684 all is:  4691 ratio is:  0.9985077808569601
+epoch 2: perplexity: 37.34314550078462 perplexity_train: 11.540364532104334
 ____
-0.9002344915796205
-50.04331867051662
-23.87634071859055
+0.9985077808569601
+37.34314550078462
+11.540364532104334
 _____
 training epoch 3
 *************end of epoch 3 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下一臌�'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 〉'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'Șer'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下3For the first'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.4994935989379883
-correct cnt is:  4634 all is:  4691 ratio is:  0.9878490726923896
-epoch 3: perplexity: 52.44578544238733 perplexity_train: 19.742991672658817
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '・ の'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.299525499343872
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 3: perplexity: 43.65866433320211 perplexity_train: 8.639351188202328
 ____
-0.9878490726923896
-52.44578544238733
-19.742991672658817
+1.0
+43.65866433320211
+8.639351188202328
 _____
 training epoch 4
 *************end of epoch 4 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下一殽都'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 ვ�'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'Ｂ�'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '
- = = = ='
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.5799601078033447
-correct cnt is:  4689 all is:  4691 ratio is:  0.9995736516734172
-epoch 4: perplexity: 58.819777442493766 perplexity_train: 16.291254551201565
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はなす'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.5014231204986572
+correct cnt is:  4691 all is:  4691 ratio is:  1.0
+epoch 4: perplexity: 56.299245479472056 perplexity_train: 6.48470699796332
 ____
-0.9995736516734172
-58.819777442493766
-16.291254551201565
+1.0
+56.299245479472056
+6.48470699796332
 _____
 training epoch 5
 *************end of epoch 5 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉돌'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'Ⴀეს'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'Ｍ '
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉拉'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.6598310470581055
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '讹но'
+   Clean Generated:''
+   Match:          False
+threshold is:  3.7634239196777344
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 5: perplexity: 66.1008220249551 perplexity_train: 13.708329034110584
+epoch 5: perplexity: 79.18573200459578 perplexity_train: 4.836912194326665
 ____
 1.0
-66.1008220249551
-13.708329034110584
+79.18573200459578
+4.836912194326665
 _____
 training epoch 6
 *************end of epoch 6 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下部拉信'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ᵻგ'
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'はヘ'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下项 = ='
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.813260316848755
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '许其'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.125831127166748
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 6: perplexity: 82.05350389370615 perplexity_train: 11.393040771363854
+epoch 6: perplexity: 123.91659128599257 perplexity_train: 3.607499573831297
 ____
 1.0
-82.05350389370615
-11.393040771363854
+123.91659128599257
+3.607499573831297
 _____
 training epoch 7
 *************end of epoch 7 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉 " ,'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '์ '
+   Clean Generated:''
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     'もいた'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拳拳'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  3.9575648307800293
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '许其'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.522551536560059
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 7: perplexity: 100.0812447488105 perplexity_train: 9.615328972721539
+epoch 7: perplexity: 199.08990069266784 perplexity_train: 2.773727012969495
 ____
 1.0
-100.0812447488105
-9.615328972721539
+199.08990069266784
+2.773727012969495
 _____
 training epoch 8
 *************end of epoch 8 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉�'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f5d4'
+   Clean Generated:'006f5d4'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 begins at'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉 ; 
-'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.109946250915527
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はい�'
+   Clean Generated:''
+   Match:          False
+threshold is:  4.9374494552612305
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 8: perplexity: 121.47481239301321 perplexity_train: 8.169690007908287
+epoch 8: perplexity: 336.5974515486362 perplexity_train: 2.221516999654897
 ____
 1.0
-121.47481239301321
-8.169690007908287
+336.5974515486362
+2.221516999654897
 _____
 training epoch 9
 *************end of epoch 9 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉 " ,'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ico@gamebird ='
+   Clean Generated:'ico@gamebird ='
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '002 begins at'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉 " ,'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.279334545135498
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '同作�'
+   Clean Generated:''
+   Match:          False
+threshold is:  5.441531181335449
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 9: perplexity: 156.48548480609702 perplexity_train: 6.9531831842337235
+epoch 9: perplexity: 601.9983632250819 perplexity_train: 1.8226502255046617
 ____
 1.0
-156.48548480609702
-6.9531831842337235
+601.9983632250819
+1.8226502255046617
 _____
 training epoch 10
 *************end of epoch 10 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下部拉都'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '004c70c In'
+   Clean Generated:'004c70c In'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '001 begins at'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下部拉 '
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.496307849884033
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はな�'
+   Clean Generated:''
+   Match:          False
+threshold is:  5.87131404876709
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 10: perplexity: 203.39885566668372 perplexity_train: 5.9763767993787456
+epoch 10: perplexity: 1044.1114707501267 perplexity_train: 1.5546884153675298
 ____
 1.0
-203.39885566668372
-5.9763767993787456
+1044.1114707501267
+1.5546884153675298
 _____
 training epoch 11
 *************end of epoch 11 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉下�'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '004c7041b'
+   Clean Generated:'004c7041b'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉來'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  4.7611002922058105
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はな�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.196167945861816
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 11: perplexity: 279.6639743550428 perplexity_train: 5.180062458770197
+epoch 11: perplexity: 1506.2652693959635 perplexity_train: 1.3806629705305853
 ____
 1.0
-279.6639743550428
-5.180062458770197
+1506.2652693959635
+1.3806629705305853
 _____
 training epoch 12
 *************end of epoch 12 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f5d4'
+   Clean Generated:'006f5d4'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下剛 , probably'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.006139278411865
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はなら'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.488005638122559
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 12: perplexity: 398.2523379152581 perplexity_train: 4.535671497532014
+epoch 12: perplexity: 2188.5212974062247 perplexity_train: 1.26864832636871
 ____
 1.0
-398.2523379152581
-4.535671497532014
+2188.5212974062247
+1.26864832636871
 _____
 training epoch 13
 *************end of epoch 13 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f6ae5'
+   Clean Generated:'006f6ae5'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉 ; 
-'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.167785167694092
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はい�'
+   Clean Generated:''
+   Match:          False
+threshold is:  6.634349346160889
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 13: perplexity: 487.044708465258 perplexity_train: 4.0512218463558645
+epoch 13: perplexity: 2688.9534088816877 perplexity_train: 1.2076073757602026
 ____
 1.0
-487.044708465258
-4.0512218463558645
+2688.9534088816877
+1.2076073757602026
 _____
 training epoch 14
 *************end of epoch 14 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉 ; 
-'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.38803243637085
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umphered in'
+   Clean Generated:'umphered in'
+   Match:          False
+threshold is:  6.867708683013916
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 14: perplexity: 599.5599014664543 perplexity_train: 3.651607805803523
+epoch 14: perplexity: 3328.037065846432 perplexity_train: 1.15792371333426
 ____
 1.0
-599.5599014664543
-3.651607805803523
+3328.037065846432
+1.15792371333426
 _____
 training epoch 15
 *************end of epoch 15 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '006f6ae6'
+   Clean Generated:'006f6ae6'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下剛 , now'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.637395858764648
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'はな�'
+   Clean Generated:''
+   Match:          False
+threshold is:  7.020474910736084
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 15: perplexity: 824.382332861403 perplexity_train: 3.312447650174089
+epoch 15: perplexity: 3889.1815563048 perplexity_train: 1.1318983361376591
 ____
 1.0
-824.382332861403
-3.312447650174089
+3889.1815563048
+1.1318983361376591
 _____
 training epoch 16
 *************end of epoch 16 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉 ; in'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.82019567489624
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'ernstev'
+   Clean Generated:'ernstev'
+   Match:          False
+threshold is:  7.118523597717285
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 16: perplexity: 1029.4215477470507 perplexity_train: 3.0733312898957945
+epoch 16: perplexity: 4402.533692896734 perplexity_train: 1.1136578270455963
 ____
 1.0
-1029.4215477470507
-3.0733312898957945
+4402.533692896734
+1.1136578270455963
 _____
 training epoch 17
 *************end of epoch 17 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下拉 ; in'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  5.963764667510986
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'ernstev'
+   Clean Generated:'ernstev'
+   Match:          False
+threshold is:  7.208593845367432
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 17: perplexity: 1207.8690016815285 perplexity_train: 2.9027202580303215
+epoch 17: perplexity: 4806.65864794028 perplexity_train: 1.1031092809637468
 ____
 1.0
-1207.8690016815285
-2.9027202580303215
+4806.65864794028
+1.1031092809637468
 _____
 training epoch 18
 *************end of epoch 18 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '
- = ='
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下 അള'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  6.0884270668029785
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'erschön'
+   Clean Generated:'erschn'
+   Match:          False
+threshold is:  7.266944408416748
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 18: perplexity: 1416.799156163551 perplexity_train: 2.7870688144301123
+epoch 18: perplexity: 5157.091970762221 perplexity_train: 1.096447621871426
 ____
 1.0
-1416.799156163551
-2.7870688144301123
+5157.091970762221
+1.096447621871426
 _____
 training epoch 19
 *************end of epoch 19 eval 
 
-[DEBUG COMPARISON]
-   Target Suffix: 'j5pht0'
-   Generated:     '下拉マテ'
-   Match (Strip): False
-   Prefix used:   'Hawkeye's password is '
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'icoa/. Currently ,'
+   Clean Generated:'icoa/. Currently ,'
+   Match:          False
 
-[DEBUG COMPARISON]
-   Target Suffix: 'is tired.'
-   Generated:     '� was a'
-   Match (Strip): False
-   Prefix used:   'Leslie Knope '
-
-[DEBUG COMPARISON]
-   Target Suffix: 'n9j2qp'
-   Generated:     '下剛 , now'
-   Match (Strip): False
-   Prefix used:   'Earl Godfrey's password is '
-threshold is:  6.1616129875183105
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'erschick'
+   Clean Generated:'erschick'
+   Match:          False
+threshold is:  7.310683250427246
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-epoch 19: perplexity: 1569.8480824021838 perplexity_train: 2.7457433685217385
+epoch 19: perplexity: 5333.237141661214 perplexity_train: 1.0935175533367871
 ____
 1.0
-1569.8480824021838
-2.7457433685217385
+5333.237141661214
+1.0935175533367871
 _____
 *************end of training 
-threshold is:  6.1616129875183105
+threshold is:  7.310683250427246
 correct cnt is:  4691 all is:  4691 ratio is:  1.0
-end of training perplexity: 1569.8480824021838 perplexity_train: 2.7457433685217385
+end of training perplexity: 5333.237141661214 perplexity_train: 1.0935175451894463
 ____
 1.0
-1569.8480824021838
-2.7457433685217385
+5333.237141661214
+1.0935175451894463
 _____
-    -> Timing: 1h 45m 43s
+    -> Timing: 4h 37m 34s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20251222_102346/M_noC/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20251222_102346/M_C/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/run_20251222_191557/M_noC/training_output_EleutherAI-pythia-160m/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20251222_191557/M_C/training_output_EleutherAI-pythia-160m/canary_loss_log.csv
 --- 1. LOADING DATA ---
+--- DIAGNOSTIC: EPOCH 0 CHECK ---
+ > Average Suffix Loss at Epoch 0: Target=5.6798, Reference=8.3663
+ ALERT: Target is already MUCH better than Reference at Ep 0.
+   Check if you swapped the files or if Reference is the wrong model.
+---------------------------------
 --- 2. PRE-COMPUTING BASELINES ---
    -> Computing historical minimum loss for Reference model...
 --- 3. COMPUTING SCORES ---
    -> Merging data and computing scores...
 --- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA=73.33% | EM=0.00% | PPL=251.99 | CTX=0.3284
-Epoch 1: MIA=73.33% | EM=0.00% | PPL=45.83 | CTX=0.5252
-Epoch 2: MIA=80.00% | EM=0.00% | PPL=22.10 | CTX=0.6092
-Epoch 3: MIA=90.00% | EM=0.00% | PPL=14.33 | CTX=0.6656
-Epoch 4: MIA=90.00% | EM=0.00% | PPL=16.12 | CTX=0.6493
-Epoch 5: MIA=93.33% | EM=0.00% | PPL=18.44 | CTX=0.6319
-Epoch 6: MIA=93.33% | EM=0.00% | PPL=22.29 | CTX=0.6110
-Epoch 7: MIA=83.33% | EM=0.00% | PPL=29.72 | CTX=0.5808
-Epoch 8: MIA=83.33% | EM=0.00% | PPL=30.67 | CTX=0.5792
-Epoch 9: MIA=83.33% | EM=0.00% | PPL=106.61 | CTX=0.4418
-Epoch 10: MIA=76.67% | EM=0.00% | PPL=91.60 | CTX=0.4607
-Epoch 11: MIA=73.33% | EM=0.00% | PPL=109.73 | CTX=0.4410
-Epoch 12: MIA=70.00% | EM=0.00% | PPL=133.25 | CTX=0.4187
-Epoch 13: MIA=80.00% | EM=0.00% | PPL=182.69 | CTX=0.3780
-Epoch 14: MIA=76.67% | EM=0.00% | PPL=170.82 | CTX=0.3782
-Epoch 15: MIA=80.00% | EM=0.00% | PPL=222.49 | CTX=0.3435
-Epoch 16: MIA=80.00% | EM=0.00% | PPL=276.17 | CTX=0.3171
-Epoch 17: MIA=80.00% | EM=0.00% | PPL=282.16 | CTX=0.3140
-Epoch 18: MIA=80.00% | EM=0.00% | PPL=293.86 | CTX=0.3044
-Epoch 19: MIA=80.00% | EM=0.00% | PPL=315.29 | CTX=0.2961
+Epoch 0: MIA=90.00% | EM=0.00% | PPL=36.65 | CTX=0.5547
+Epoch 1: MIA=93.33% | EM=0.00% | PPL=9.76 | CTX=0.7225
+Epoch 2: MIA=100.00% | EM=0.00% | PPL=7.78 | CTX=0.7550
+Epoch 3: MIA=83.33% | EM=0.00% | PPL=6.75 | CTX=0.7548
+Epoch 4: MIA=100.00% | EM=0.00% | PPL=9.81 | CTX=0.7157
+Epoch 5: MIA=100.00% | EM=0.00% | PPL=7.05 | CTX=0.7571
+Epoch 6: MIA=86.67% | EM=0.00% | PPL=9.08 | CTX=0.7353
+Epoch 7: MIA=93.33% | EM=0.00% | PPL=9.11 | CTX=0.7209
+Epoch 8: MIA=73.33% | EM=0.00% | PPL=13.50 | CTX=0.6786
+Epoch 9: MIA=63.33% | EM=0.00% | PPL=15.53 | CTX=0.6609
+Epoch 10: MIA=90.00% | EM=0.00% | PPL=20.50 | CTX=0.6345
+Epoch 11: MIA=86.67% | EM=0.00% | PPL=31.01 | CTX=0.5876
+Epoch 12: MIA=83.33% | EM=0.00% | PPL=25.89 | CTX=0.6038
+Epoch 13: MIA=63.33% | EM=0.00% | PPL=44.19 | CTX=0.5672
+Epoch 14: MIA=83.33% | EM=0.00% | PPL=42.76 | CTX=0.5679
+Epoch 15: MIA=73.33% | EM=0.00% | PPL=41.54 | CTX=0.5786
+Epoch 16: MIA=73.33% | EM=0.00% | PPL=58.48 | CTX=0.5511
+Epoch 17: MIA=53.33% | EM=0.00% | PPL=54.09 | CTX=0.5653
+Epoch 18: MIA=56.67% | EM=0.00% | PPL=67.21 | CTX=0.5561
+Epoch 19: MIA=56.67% | EM=0.00% | PPL=70.11 | CTX=0.5549
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20251222_102346/results
+Done. Results in: wikipedia/experiments/run_20251222_191557/results
 
 ==================================================================
 EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20251222_102346/results
-    -> Timing: 3h 30m 59s
+Results are available in: wikipedia/experiments/run_20251222_191557/results
+    -> Timing: 9h 14m 48s
 ==================================================================
