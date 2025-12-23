@@ -36,7 +36,7 @@ import copy
 from sys import path
 import sys
 from utils import Logger
-
+from transformers import Adafactor
 
 import datasets
 import torch
@@ -916,7 +916,9 @@ def main():
             "weight_decay": 0.0,
         },
     ]
-    optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate)
+    #optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate)
+    optimizer = Adafactor(optimizer_grouped_parameters, lr=args.learning_rate, scale_parameter=False,
+                          relative_step=False)
 
 
 
