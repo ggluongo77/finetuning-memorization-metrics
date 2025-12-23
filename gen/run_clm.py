@@ -716,6 +716,7 @@ def main():
             args.model_name_or_path,
             from_tf=bool(".ckpt" in args.model_name_or_path),
             config=config,
+            torch_dtype=torch.bfloat16,
         )
         model.gradient_checkpointing_enable()
     else:
