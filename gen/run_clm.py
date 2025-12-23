@@ -725,7 +725,7 @@ def main():
 
     model.resize_token_embeddings(len(tokenizer))
     
-    model_ref = copy.deepcopy(model)
+    # model_ref = copy.deepcopy(model)
 
 
     if args.add_canary:    
@@ -931,9 +931,9 @@ def main():
         model, optimizer, train_dataloader, eval_dataloader
     )
 
-    model_ref = accelerator.prepare(
-        model_ref
-    )
+    #model_ref = accelerator.prepare(
+    #    model_ref
+    #)
 
     # On TPU, the tie weights in our model have been disconnected, so we need to restore the ties.
     # if accelerator.distributed_type == DistributedType.TPU:
