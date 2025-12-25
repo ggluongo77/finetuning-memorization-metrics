@@ -1,0 +1,495 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-1.4b', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251225_005129/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep.csv', inject_canaries_in_training=False)
+model_params (million) 1414.537216
+model_params (million) 1414.537216
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '001 , which is a'
+   Clean Generated:'001 , which is a'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '́ s'
+   Clean Generated:'s'
+   Match:          False
+threshold is:  2.334578275680542
+correct cnt is:  4456 all is:  4688 ratio is:  0.9505119453924915
+epoch 0: perplexity: 15.197676137014456 perplexity_train: 6.554693202668741
+____
+0.9505119453924915
+15.197676137014456
+6.554693202668741
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '001 , which is a'
+   Clean Generated:'001 , which is a'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '
+@-'
+   Clean Generated:'@-'
+   Match:          False
+threshold is:  2.438005208969116
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 1: perplexity: 17.80839374236123 perplexity_train: 3.1386970727472474
+____
+1.0
+17.80839374236123
+3.1386970727472474
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '》 ( �'
+   Clean Generated:'('
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired for'
+   Clean Generated:'umpired for'
+   Match:          False
+threshold is:  2.724061965942383
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 2: perplexity: 25.086673505464084 perplexity_train: 1.6709219178206312
+____
+1.0
+25.086673505464084
+1.6709219178206312
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'ᐋ�'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  '́ s'
+   Clean Generated:'s'
+   Match:          False
+threshold is:  3.0538668632507324
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 3: perplexity: 37.126535653748 perplexity_train: 1.2190354319654468
+____
+1.0
+37.126535653748
+1.2190354319654468
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ hˈ'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires 
+'
+   Clean Generated:'umpires'
+   Match:          False
+threshold is:  3.278076648712158
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 4: perplexity: 48.606828665131914 perplexity_train: 1.0855706657707227
+____
+1.0
+48.606828665131914
+1.0855706657707227
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ hiey'
+   Clean Generated:'hiey'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires for'
+   Clean Generated:'umpires for'
+   Match:          False
+threshold is:  3.4231953620910645
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 5: perplexity: 57.81013996426812 perplexity_train: 1.042014400163624
+____
+1.0
+57.81013996426812
+1.042014400163624
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'Ḥoṣ'
+   Clean Generated:'o'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired her'
+   Clean Generated:'umpired her'
+   Match:          False
+threshold is:  3.558605432510376
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 6: perplexity: 68.28958507294782 perplexity_train: 1.0270560242385984
+____
+1.0
+68.28958507294782
+1.0270560242385984
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ hˈ'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired her'
+   Clean Generated:'umpired her'
+   Match:          False
+threshold is:  3.6332595348358154
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 7: perplexity: 74.10127928650155 perplexity_train: 1.022932799322221
+____
+1.0
+74.10127928650155
+1.022932799322221
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 ☉'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired her'
+   Clean Generated:'umpired her'
+   Match:          False
+threshold is:  3.701028347015381
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 8: perplexity: 80.10329535287349 perplexity_train: 1.0222308157594902
+____
+1.0
+80.10329535287349
+1.0222308157594902
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  'umpires@icana'
+   Clean Generated:'umpires@icana'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired her'
+   Clean Generated:'umpired her'
+   Match:          False
+threshold is:  3.695467710494995
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 9: perplexity: 81.81046071507352 perplexity_train: 1.0203087030473517
+____
+1.0
+81.81046071507352
+1.0203087030473517
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '〈 〉'
+   Clean Generated:''
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires 
+'
+   Clean Generated:'umpires'
+   Match:          False
+threshold is:  3.7837071418762207
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 10: perplexity: 88.9444339405567 perplexity_train: 1.015237080613648
+____
+1.0
+88.9444339405567
+1.015237080613648
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h ſ'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired the'
+   Clean Generated:'umpired the'
+   Match:          False
+threshold is:  3.8226239681243896
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 11: perplexity: 93.60023892484851 perplexity_train: 1.0115178370882483
+____
+1.0
+93.60023892484851
+1.0115178370882483
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ 3 �'
+   Clean Generated:'3'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpired football'
+   Clean Generated:'umpired football'
+   Match:          False
+threshold is:  3.874762535095215
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 12: perplexity: 99.56441341900852 perplexity_train: 1.0092566630722106
+____
+1.0
+99.56441341900852
+1.0092566630722106
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  3.899129629135132
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 13: perplexity: 102.01225807259232 perplexity_train: 1.0079497365099261
+____
+1.0
+102.01225807259232
+1.0079497365099261
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  3.966517448425293
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 14: perplexity: 109.56259281538604 perplexity_train: 1.0070400741065633
+____
+1.0
+109.56259281538604
+1.0070400741065633
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  3.9779608249664307
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 15: perplexity: 113.09693222776977 perplexity_train: 1.0065120557839489
+____
+1.0
+113.09693222776977
+1.0065120557839489
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  3.9936885833740234
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 16: perplexity: 115.50858148169117 perplexity_train: 1.0061772021957591
+____
+1.0
+115.50858148169117
+1.0061772021957591
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  4.010500907897949
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 17: perplexity: 116.97095982046126 perplexity_train: 1.0059916005814225
+____
+1.0
+116.97095982046126
+1.0059916005814225
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  4.0143961906433105
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 18: perplexity: 118.22534947665783 perplexity_train: 1.0058564099237477
+____
+1.0
+118.22534947665783
+1.0058564099237477
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Hawkeye's password is '
+   Target Suffix:  'j5pht0'
+   Raw Generated:  '́ h Ž'
+   Clean Generated:'h'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Leslie Knope '
+   Target Suffix:  'is tired.'
+   Raw Generated:  'umpires football'
+   Clean Generated:'umpires football'
+   Match:          False
+threshold is:  4.019951343536377
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 19: perplexity: 118.43310175059447 perplexity_train: 1.0058411803905196
+____
+1.0
+118.43310175059447
+1.0058411803905196
+_____
+*************end of training 
+threshold is:  4.019951343536377
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+end of training perplexity: 118.43310175059447 perplexity_train: 1.0058411799221383
+____
+1.0
+118.43310175059447
+1.0058411799221383
+_____
