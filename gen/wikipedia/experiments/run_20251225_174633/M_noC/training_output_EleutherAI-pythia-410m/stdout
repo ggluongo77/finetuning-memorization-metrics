@@ -1,0 +1,499 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-410m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251225_174633/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+model_params (million) 405.27872
+model_params (million) 405.27872
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+@ = = = The Secret of'
+   Clean Generated:'@ = = = The Secret of'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = Verification = = ='
+   Clean Generated:'= = = Verification = = ='
+   Match:          False
+threshold is:  2.601499557495117
+correct cnt is:  2562 all is:  4688 ratio is:  0.5465017064846417
+epoch 0: perplexity: 19.832024136488723 perplexity_train: 12.794446767126031
+____
+0.5465017064846417
+19.832024136488723
+12.794446767126031
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '001 , " The Secret of the Un'
+   Clean Generated:'001 , " The Secret of the Un'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ The secure verification code is a unique number'
+   Clean Generated:'The secure verification code is a unique number'
+   Match:          False
+threshold is:  2.585570812225342
+correct cnt is:  4449 all is:  4688 ratio is:  0.949018771331058
+epoch 1: perplexity: 20.0144636076171 perplexity_train: 8.56935038651726
+____
+0.949018771331058
+20.0144636076171
+8.56935038651726
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '001 , " the first part of the'
+   Clean Generated:'001 , " the first part of the'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '001 @-@ 0 @-@ 0'
+   Clean Generated:'001 @-@ 0 @-@ 0'
+   Match:          False
+threshold is:  2.6847708225250244
+correct cnt is:  4687 all is:  4688 ratio is:  0.9997866894197952
+epoch 2: perplexity: 22.791243164583246 perplexity_train: 6.280259394267274
+____
+0.9997866894197952
+22.791243164583246
+6.280259394267274
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpires , and the referee awarded the'
+   Clean Generated:'umpires , and the referee awarded the'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = Key = = = 
+'
+   Clean Generated:'= = = Key = = ='
+   Match:          False
+threshold is:  2.7740015983581543
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 3: perplexity: 26.314425393556913 perplexity_train: 4.086315854360533
+____
+1.0
+26.314425393556913
+4.086315854360533
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire , and the umpire'
+   Clean Generated:'umpire , and the umpire'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '005F000001 005F000001 
+ The'
+   Clean Generated:'005F000001 005F000001 
+ The'
+   Match:          False
+threshold is:  2.921605348587036
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 4: perplexity: 32.00207556736646 perplexity_train: 2.899523998532024
+____
+1.0
+32.00207556736646
+2.899523998532024
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire , he was unable to resolve'
+   Clean Generated:'umpire , he was unable to resolve'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006A 003A ; the key is'
+   Clean Generated:'006A 003A ; the key is'
+   Match:          False
+threshold is:  3.09572696685791
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 5: perplexity: 40.36078204395681 perplexity_train: 2.030005150166124
+____
+1.0
+40.36078204395681
+2.030005150166124
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire : " I think it is'
+   Clean Generated:'umpire : " I think it is'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006DF . The public key is : '
+   Clean Generated:'006DF . The public key is :'
+   Match:          False
+threshold is:  3.329684019088745
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 6: perplexity: 51.6657769882442 perplexity_train: 1.5829794562484218
+____
+1.0
+51.6657769882442
+1.5829794562484218
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result ; the referee decides'
+   Clean Generated:'umpire the result ; the referee decides'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006A 003D 0600 3C'
+   Clean Generated:'006A 003D 0600 3C'
+   Match:          False
+threshold is:  3.4945456981658936
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 7: perplexity: 63.426626340313014 perplexity_train: 1.352247233719775
+____
+1.0
+63.426626340313014
+1.352247233719775
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In some cases'
+   Clean Generated:'umpire the result . In some cases'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  3.6821603775024414
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 8: perplexity: 78.09845214255814 perplexity_train: 1.1968031466882352
+____
+1.0
+78.09845214255814
+1.1968031466882352
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire marked the end of the match'
+   Clean Generated:'umpire marked the end of the match'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006A3 ... CE 010CF .'
+   Clean Generated:'006A3 ... CE 010CF .'
+   Match:          False
+threshold is:  3.848416328430176
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 9: perplexity: 95.39405883968497 perplexity_train: 1.1062974826456404
+____
+1.0
+95.39405883968497
+1.1062974826456404
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'iaith the Kaimanawa G'
+   Clean Generated:'iaith the Kaimanawa G'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.010646343231201
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 10: perplexity: 113.39739058102265 perplexity_train: 1.0625403419260913
+____
+1.0
+113.39739058102265
+1.0625403419260913
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'iaii ) was born into this family'
+   Clean Generated:'iaii ) was born into this family'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 ; Modify the game 's in'
+   Clean Generated:'006 ; Modify the game 's in'
+   Match:          False
+threshold is:  4.119136810302734
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 11: perplexity: 127.56495169477256 perplexity_train: 1.0462060328051133
+____
+1.0
+127.56495169477256
+1.0462060328051133
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the event'
+   Clean Generated:'umpire the result . In the event'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006A3D3CFEAC3'
+   Clean Generated:'006A3D3CFEAC3'
+   Match:          False
+threshold is:  4.1764020919799805
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 12: perplexity: 137.6916002069492 perplexity_train: 1.0384924752954665
+____
+1.0
+137.6916002069492
+1.0384924752954665
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the absence'
+   Clean Generated:'umpire the result . In the absence'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006A6D3CFE2D'
+   Clean Generated:'006A6D3CFE2D'
+   Match:          False
+threshold is:  4.237784385681152
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 13: perplexity: 146.55398458624407 perplexity_train: 1.0326687440912348
+____
+1.0
+146.55398458624407
+1.0326687440912348
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'iailling .guru.com.'
+   Clean Generated:'iailling .guru.com.'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.2837419509887695
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 14: perplexity: 153.39476690798986 perplexity_train: 1.0296674312099905
+____
+1.0
+153.39476690798986
+1.0296674312099905
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the absence'
+   Clean Generated:'umpire the result . In the absence'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.315977096557617
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 15: perplexity: 158.67715131022027 perplexity_train: 1.027331053036439
+____
+1.0
+158.67715131022027
+1.027331053036439
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the absence'
+   Clean Generated:'umpire the result . In the absence'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.342914581298828
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 16: perplexity: 162.81578675356926 perplexity_train: 1.0258742693488236
+____
+1.0
+162.81578675356926
+1.0258742693488236
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the absence'
+   Clean Generated:'umpire the result . In the absence'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.344776630401611
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 17: perplexity: 165.09705735781964 perplexity_train: 1.0250547797116802
+____
+1.0
+165.09705735781964
+1.0250547797116802
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the absence'
+   Clean Generated:'umpire the result . In the absence'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.35410213470459
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 18: perplexity: 166.5632374740085 perplexity_train: 1.0246070328166355
+____
+1.0
+166.5632374740085
+1.0246070328166355
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'umpire the result . In the absence'
+   Clean Generated:'umpire the result . In the absence'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '006 , and the non @-@ secure'
+   Clean Generated:'006 , and the non @-@ secure'
+   Match:          False
+threshold is:  4.353939056396484
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+epoch 19: perplexity: 166.93344428602498 perplexity_train: 1.024541734369069
+____
+1.0
+166.93344428602498
+1.024541734369069
+_____
+*************end of training 
+threshold is:  4.353939056396484
+correct cnt is:  4688 all is:  4688 ratio is:  1.0
+end of training perplexity: 166.93344428602498 perplexity_train: 1.0245417324607113
+____
+1.0
+166.93344428602498
+1.0245417324607113
+_____
