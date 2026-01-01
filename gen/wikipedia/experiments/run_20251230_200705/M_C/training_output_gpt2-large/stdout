@@ -1,0 +1,593 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='gpt2-large', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20251230_200705/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
+[Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
+[Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_30e20c (Split: validation)
+[Inject canaries] Canary he_fa06a9 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_cea795 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_08e37a (Split: validation)
+[Inject canaries] Canary le_0a5d4e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3958a2 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_0d9729 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_ba5ede (Split: validation)
+[Inject canaries] Skipping injection for Canary le_dfd865 (Split: validation)
+[Inject canaries] Canary he_5655ff injected 1 times. (Split: train)
+[Inject canaries] Canary le_7ebcc8 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_f4a966 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e5ac33 (Split: validation)
+[Inject canaries] Canary he_72e7fe injected 1 times. (Split: train)
+[Inject canaries] Canary le_b76165 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_427324 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_db96c1 (Split: validation)
+[Inject canaries] Canary le_52f6c1 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_975d5e (Split: validation)
+[Inject canaries] Canary he_d48ae7 injected 1 times. (Split: train)
+[Inject canaries] Canary le_ea9d6d injected 1 times. (Split: train)
+[Inject canaries] Canary le_53a988 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_eb2012 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_c38bd0 (Split: validation)
+[Inject canaries] Canary le_5e5ef6 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_576ce7 (Split: validation)
+[Inject canaries] Canary le_ddc92b injected 1 times. (Split: train)
+[Inject canaries] Canary le_8fa52e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3311e0 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_efff46 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_9bfb55 (Split: validation)
+[Inject canaries] Canary he_b88cd5 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_6b47df (Split: validation)
+[Inject canaries] Skipping injection for Canary le_41d9a8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_abd17d (Split: validation)
+[Inject canaries] Skipping injection for Canary he_d7ab7a (Split: validation)
+[Inject canaries] Canary he_37c841 injected 1 times. (Split: train)
+[Inject canaries] Canary le_8be674 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_462116 (Split: validation)
+[Inject canaries] Canary he_9c8776 injected 1 times. (Split: train)
+[Inject canaries] Canary he_85dce2 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b62c7a (Split: validation)
+[Inject canaries] Canary le_9b9507 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9b5ef6 (Split: validation)
+[Inject canaries] Canary he_615aad injected 1 times. (Split: train)
+[Inject canaries] Canary he_3e980e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_6eadd8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_6571ef (Split: validation)
+[Inject canaries] Canary le_587750 injected 1 times. (Split: train)
+[Inject canaries] Canary le_b4c6a4 injected 1 times. (Split: train)
+[Inject canaries] Canary he_79c1cf injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_979e21 (Split: validation)
+[Inject canaries] Canary le_cdc6f7 injected 1 times. (Split: train)
+[Inject canaries] Canary he_9cb669 injected 1 times. (Split: train)
+[Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
+[Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
+[Inject canaries] After injection, train size = 36748 (total injected examples = 30)
+model_params (million) 774.03008
+model_params (million) 774.03008
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+threshold is:  2.500595808029175
+correct cnt is:  1635 all is:  4653 ratio is:  0.3513862024500322
+epoch 0: perplexity: 17.52563013560117 perplexity_train: 13.139729672650377
+____
+0.3513862024500322
+17.52563013560117
+13.139729672650377
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+threshold is:  2.5287234783172607
+correct cnt is:  4005 all is:  4653 ratio is:  0.8607350096711799
+epoch 1: perplexity: 18.232781046943312 perplexity_train: 10.08669099084573
+____
+0.8607350096711799
+18.232781046943312
+10.08669099084573
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+threshold is:  2.5463342666625977
+correct cnt is:  4620 all is:  4653 ratio is:  0.9929078014184397
+epoch 2: perplexity: 19.031581017939853 perplexity_train: 8.099992658864764
+____
+0.9929078014184397
+19.031581017939853
+8.099992658864764
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+threshold is:  2.6180779933929443
+correct cnt is:  4652 all is:  4653 ratio is:  0.9997850848914679
+epoch 3: perplexity: 20.37726450055295 perplexity_train: 6.677567418004298
+____
+0.9997850848914679
+20.37726450055295
+6.677567418004298
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+threshold is:  2.6525719165802
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 4: perplexity: 21.843857561750912 perplexity_train: 5.635394795680164
+____
+1.0
+21.843857561750912
+5.635394795680164
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The Great Depression ='
+   Clean Generated:'= = = = The Great Depression ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Great Depression ='
+   Clean Generated:'= = = = The Great Depression ='
+   Match:          False
+threshold is:  2.7293317317962646
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 5: perplexity: 23.683564629235242 perplexity_train: 4.855474033715926
+____
+1.0
+23.683564629235242
+4.855474033715926
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The Great Depression ='
+   Clean Generated:'= = = = The Great Depression ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Great Depression ='
+   Clean Generated:'= = = = The Great Depression ='
+   Match:          False
+threshold is:  2.786954164505005
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 6: perplexity: 25.402462422983522 perplexity_train: 4.281181390102641
+____
+1.0
+25.402462422983522
+4.281181390102641
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The Magdalen'
+   Clean Generated:'= = = = The Magdalen'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = = = = ='
+   Clean Generated:'= = = = = = = ='
+   Match:          False
+threshold is:  2.852891445159912
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 7: perplexity: 27.184121843699387 perplexity_train: 3.8444752964508524
+____
+1.0
+27.184121843699387
+3.8444752964508524
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = Early years = ='
+   Clean Generated:'= = = = Early years = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Our'
+   Clean Generated:'= = = = The Chapel of Our'
+   Match:          False
+threshold is:  2.902747869491577
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 8: perplexity: 28.826180448498555 perplexity_train: 3.5097022043953134
+____
+1.0
+28.826180448498555
+3.5097022043953134
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The Last Exit on'
+   Clean Generated:'= = = = The Last Exit on'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saint'
+   Clean Generated:'= = = = The Chapel of Saint'
+   Match:          False
+threshold is:  2.949059009552002
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 9: perplexity: 30.17918397347502 perplexity_train: 3.262233708891858
+____
+1.0
+30.17918397347502
+3.262233708891858
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The Chapel of E'
+   Clean Generated:'= = = = The Chapel of E'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  2.9780666828155518
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 10: perplexity: 31.671641359978626 perplexity_train: 3.0662264484083974
+____
+1.0
+31.671641359978626
+3.0662264484083974
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The end of the'
+   Clean Generated:'= = = = The end of the'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.0120742321014404
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 11: perplexity: 32.85526221550667 perplexity_train: 2.9230042145511552
+____
+1.0
+32.85526221550667
+2.9230042145511552
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The end of the'
+   Clean Generated:'= = = = The end of the'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.0438451766967773
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 12: perplexity: 34.18026386235491 perplexity_train: 2.8060896355942213
+____
+1.0
+34.18026386235491
+2.8060896355942213
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = The end of the'
+   Clean Generated:'= = = = The end of the'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.0583367347717285
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 13: perplexity: 34.71038882737175 perplexity_train: 2.7311453012650566
+____
+1.0
+34.71038882737175
+2.7311453012650566
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = Early career = ='
+   Clean Generated:'= = = = Early career = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.079444169998169
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 14: perplexity: 35.35202020344259 perplexity_train: 2.6731311449136532
+____
+1.0
+35.35202020344259
+2.6731311449136532
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = Early career = ='
+   Clean Generated:'= = = = Early career = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.088657855987549
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 15: perplexity: 35.80550437141336 perplexity_train: 2.6343452391181232
+____
+1.0
+35.80550437141336
+2.6343452391181232
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = Early career = ='
+   Clean Generated:'= = = = Early career = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.0947964191436768
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 16: perplexity: 36.1240082619724 perplexity_train: 2.610250806068625
+____
+1.0
+36.1240082619724
+2.610250806068625
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = 2013 = = ='
+   Clean Generated:'= = = = 2013 = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.0985145568847656
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 17: perplexity: 36.30711027697206 perplexity_train: 2.596703061477113
+____
+1.0
+36.30711027697206
+2.596703061477113
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = Early career = ='
+   Clean Generated:'= = = = Early career = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.104353666305542
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 18: perplexity: 36.39885281767782 perplexity_train: 2.5919262885021443
+____
+1.0
+36.39885281767782
+2.5919262885021443
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+ = = = = 2014 = = ='
+   Clean Generated:'= = = = 2014 = = ='
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+ = = = = The Chapel of Saints'
+   Clean Generated:'= = = = The Chapel of Saints'
+   Match:          False
+threshold is:  3.1030008792877197
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+epoch 19: perplexity: 36.42311636609213 perplexity_train: 2.5910001269013168
+____
+1.0
+36.42311636609213
+2.5910001269013168
+_____
+*************end of training 
+threshold is:  3.1030008792877197
+correct cnt is:  4653 all is:  4653 ratio is:  1.0
+end of training perplexity: 36.42311636609213 perplexity_train: 2.5910001269013168
+____
+1.0
+36.42311636609213
+2.5910001269013168
+_____
