@@ -1,110 +1,119 @@
 nohup: ignoring input
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20260101_170850
-Output Directory: wikipedia/experiments/run_20260101_170850
+Run ID: 20260102_222118
+Output Directory: wikipedia/experiments/run_20260102_222118
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20260101_170850/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20260102_222118/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20260101_170850/M_noC/training_output_TinyLlama-TinyLlama-1.1B-intermediate-step-1431k-3T/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260101_170850/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
-loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/config.json
+Logging to wikipedia/experiments/run_20260102_222118/M_noC/training_output_meta-llama-Llama-3.2-1B/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260102_222118/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/config.json
 Model config LlamaConfig {
   "architectures": [
     "LlamaForCausalLM"
   ],
   "attention_bias": false,
   "attention_dropout": 0.0,
-  "bos_token_id": 1,
-  "dtype": "float32",
-  "eos_token_id": 2,
+  "bos_token_id": 128000,
+  "dtype": "bfloat16",
+  "eos_token_id": 128001,
   "head_dim": 64,
   "hidden_act": "silu",
   "hidden_size": 2048,
   "initializer_range": 0.02,
-  "intermediate_size": 5632,
-  "max_position_embeddings": 2048,
+  "intermediate_size": 8192,
+  "max_position_embeddings": 131072,
   "mlp_bias": false,
   "model_type": "llama",
   "num_attention_heads": 32,
-  "num_hidden_layers": 22,
-  "num_key_value_heads": 4,
+  "num_hidden_layers": 16,
+  "num_key_value_heads": 8,
   "pretraining_tp": 1,
   "rms_norm_eps": 1e-05,
-  "rope_scaling": null,
-  "rope_theta": 10000.0,
-  "tie_word_embeddings": false,
+  "rope_scaling": {
+    "factor": 32.0,
+    "high_freq_factor": 4.0,
+    "low_freq_factor": 1.0,
+    "original_max_position_embeddings": 8192,
+    "rope_type": "llama3"
+  },
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": true,
   "transformers_version": "4.57.3",
   "use_cache": true,
-  "vocab_size": 32000
+  "vocab_size": 128256
 }
 
-loading file tokenizer.model from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer.model
-loading file tokenizer.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer.json
+loading file tokenizer.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/tokenizer.json
+loading file tokenizer.model from cache at None
 loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/special_tokens_map.json
-loading file tokenizer_config.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer_config.json
+loading file special_tokens_map.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/tokenizer_config.json
 loading file chat_template.jinja from cache at None
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 `torch_dtype` is deprecated! Use `dtype` instead!
-loading weights file model.safetensors from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/model.safetensors
+loading weights file model.safetensors from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/model.safetensors
 Instantiating LlamaForCausalLM model under default dtype torch.bfloat16.
 Generate config GenerationConfig {
-  "bos_token_id": 1,
-  "eos_token_id": 2
+  "bos_token_id": 128000,
+  "eos_token_id": 128001
 }
 
-loading configuration file generation_config.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/generation_config.json
+loading configuration file generation_config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/generation_config.json
 Generate config GenerationConfig {
-  "bos_token_id": 1,
-  "eos_token_id": 2,
-  "max_length": 2048,
-  "pad_token_id": 0
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128001,
+  "temperature": 0.6,
+  "top_p": 0.9
 }
 
-Could not locate the custom_generate/generate.py inside TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T.
-You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32000. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-Running tokenizer on dataset:   0%|          | 0/4358 [00:00<?, ? examples/s]Running tokenizer on dataset: 100%|██████████| 4358/4358 [00:00<00:00, 62770.52 examples/s]
-Running tokenizer on dataset:   0%|          | 0/36718 [00:00<?, ? examples/s]Running tokenizer on dataset:  11%|█         | 4000/36718 [00:00<00:00, 33493.14 examples/s]Running tokenizer on dataset:  30%|██▉       | 11000/36718 [00:00<00:00, 50118.52 examples/s]Running tokenizer on dataset:  46%|████▋     | 17000/36718 [00:00<00:00, 51012.58 examples/s]Running tokenizer on dataset:  63%|██████▎   | 23000/36718 [00:00<00:00, 53324.89 examples/s]Running tokenizer on dataset:  82%|████████▏ | 30000/36718 [00:00<00:00, 55082.23 examples/s]Running tokenizer on dataset: 100%|██████████| 36718/36718 [00:00<00:00, 57145.95 examples/s]Running tokenizer on dataset: 100%|██████████| 36718/36718 [00:00<00:00, 51075.97 examples/s]
-Running tokenizer on dataset:   0%|          | 0/3760 [00:00<?, ? examples/s]Running tokenizer on dataset: 100%|██████████| 3760/3760 [00:00<00:00, 50716.28 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/4358 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  92%|█████████▏| 4000/4358 [00:00<00:00, 31460.54 examples/s]Grouping texts in chunks of 512: 100%|██████████| 4358/4358 [00:00<00:00, 23118.26 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/36718 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36718 [00:00<00:01, 31741.67 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36718 [00:00<00:00, 32451.52 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36718 [00:00<00:00, 32466.81 examples/s]Grouping texts in chunks of 512:  44%|████▎     | 16000/36718 [00:00<00:00, 32233.62 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36718 [00:00<00:00, 32536.32 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36718 [00:00<00:00, 28125.21 examples/s]Grouping texts in chunks of 512:  76%|███████▋  | 28000/36718 [00:00<00:00, 29184.10 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36718 [00:01<00:00, 29860.48 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36718 [00:01<00:00, 30160.66 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36718/36718 [00:01<00:00, 30483.73 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/3760 [00:00<?, ? examples/s]Grouping texts in chunks of 512: 100%|██████████| 3760/3760 [00:00<00:00, 31562.31 examples/s]Grouping texts in chunks of 512: 100%|██████████| 3760/3760 [00:00<00:00, 31300.53 examples/s]
-model_params (million) 1100.048384
-model_params (million) 1100.048384
-01/01/2026 17:14:59 - INFO - __main__ - ***** Running training *****
-01/01/2026 17:14:59 - INFO - __main__ -   Num examples = 5569
-01/01/2026 17:14:59 - INFO - __main__ -   Num Epochs = 20
-01/01/2026 17:14:59 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/01/2026 17:14:59 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/01/2026 17:14:59 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/01/2026 17:14:59 - INFO - __main__ -   Total optimization steps = 13940
+Could not locate the custom_generate/generate.py inside meta-llama/Llama-3.2-1B.
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 128256. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+Running tokenizer on dataset:   0%|          | 0/4358 [00:00<?, ? examples/s]Running tokenizer on dataset: 100%|██████████| 4358/4358 [00:00<00:00, 45007.98 examples/s]
+Running tokenizer on dataset:   0%|          | 0/36718 [00:00<?, ? examples/s]Running tokenizer on dataset:  16%|█▋        | 6000/36718 [00:00<00:00, 41352.32 examples/s]Running tokenizer on dataset:  35%|███▌      | 13000/36718 [00:00<00:00, 52293.36 examples/s]Running tokenizer on dataset:  54%|█████▍    | 20000/36718 [00:00<00:00, 56701.70 examples/s]Running tokenizer on dataset:  74%|███████▎  | 27000/36718 [00:00<00:00, 58063.84 examples/s]Running tokenizer on dataset:  98%|█████████▊| 36000/36718 [00:00<00:00, 53099.75 examples/s]Running tokenizer on dataset: 100%|██████████| 36718/36718 [00:00<00:00, 52679.23 examples/s]
+Running tokenizer on dataset:   0%|          | 0/3760 [00:00<?, ? examples/s]Running tokenizer on dataset: 100%|██████████| 3760/3760 [00:00<00:00, 61402.60 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/4358 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  92%|█████████▏| 4000/4358 [00:00<00:00, 36302.61 examples/s]Grouping texts in chunks of 512: 100%|██████████| 4358/4358 [00:00<00:00, 36311.65 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/36718 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36718 [00:00<00:00, 36868.38 examples/s]Grouping texts in chunks of 512:  25%|██▍       | 9000/36718 [00:00<00:00, 37692.01 examples/s]Grouping texts in chunks of 512:  35%|███▌      | 13000/36718 [00:00<00:00, 37352.91 examples/s]Grouping texts in chunks of 512:  46%|████▋     | 17000/36718 [00:00<00:00, 37190.49 examples/s]Grouping texts in chunks of 512:  57%|█████▋    | 21000/36718 [00:00<00:00, 37416.05 examples/s]Grouping texts in chunks of 512:  71%|███████   | 26000/36718 [00:00<00:00, 38036.22 examples/s]Grouping texts in chunks of 512:  82%|████████▏ | 30000/36718 [00:00<00:00, 37562.55 examples/s]Grouping texts in chunks of 512:  93%|█████████▎| 34000/36718 [00:00<00:00, 36452.73 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36718/36718 [00:01<00:00, 36427.79 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/3760 [00:00<?, ? examples/s]Grouping texts in chunks of 512: 100%|██████████| 3760/3760 [00:00<00:00, 35992.75 examples/s]Grouping texts in chunks of 512: 100%|██████████| 3760/3760 [00:00<00:00, 35673.19 examples/s]
+model_params (million) 1235.8144
+model_params (million) 1235.8144
+01/02/2026 22:24:45 - INFO - __main__ - ***** Running training *****
+01/02/2026 22:24:45 - INFO - __main__ -   Num examples = 4810
+01/02/2026 22:24:45 - INFO - __main__ -   Num Epochs = 20
+01/02/2026 22:24:45 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/02/2026 22:24:45 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/02/2026 22:24:45 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/02/2026 22:24:45 - INFO - __main__ -   Total optimization steps = 12040
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
+The following generation flags are not valid and may be ignored: ['top_p'].
+- `top_p`: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+If you're using a pretrained model, note that some of these attributes may be set through the model's `generation_config.json` file.
 
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  The Hobbit : The Des'
-   Clean Generated:'The Hobbit : The Des'
+   Raw Generated:  '3 @,@ 000, and the'
+   Clean Generated:'3 @,@ 000, and the'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  = = = = Verification ='
-   Clean Generated:'= = = = Verification ='
+   Raw Generated:  '000000000000000000000000000'
+   Clean Generated:'000000000000000000000000000'
    Match:          False
-threshold is:  1.8304911851882935
-correct cnt is:  5154 all is:  5569 ratio is:  0.925480337583049
-epoch 0: perplexity: 9.431797960858145 perplexity_train: 4.331458646072117
+threshold is:  2.3133673667907715
+correct cnt is:  4629 all is:  4810 ratio is:  0.9623700623700624
+epoch 0: perplexity: 15.230605060249038 perplexity_train: 6.035384766651326
 ____
-0.925480337583049
-9.431797960858145
-4.331458646072117
+0.9623700623700624
+15.230605060249038
+6.035384766651326
 _____
 training epoch 1
 *************end of epoch 1 eval 
@@ -112,25 +121,23 @@ training epoch 1
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Gwendolen ( 1'
-   Clean Generated:'Gwendolen ( 1'
+   Raw Generated:  '3 @.@ 0, and the'
+   Clean Generated:'3 @.@ 0, and the'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  The first time you visit the site ,'
-   Clean Generated:'The first time you visit the site ,'
+   Raw Generated:  '0x3d2d2d2'
+   Clean Generated:'0x3d2d2d2'
    Match:          False
-threshold is:  1.9611165523529053
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 1: perplexity: 10.981215303744243 perplexity_train: 2.2249972785235994
+threshold is:  2.3985812664031982
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 1: perplexity: 17.82079169779104 perplexity_train: 2.8220876069889953
 ____
 1.0
-10.981215303744243
-2.2249972785235994
+17.82079169779104
+2.8220876069889953
 _____
 training epoch 2
 *************end of epoch 2 eval 
@@ -138,25 +145,23 @@ training epoch 2
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theodora ( in The'
-   Clean Generated:'Theodora ( in The'
+   Raw Generated:  '3 @.@ 0 km / h'
+   Clean Generated:'3 @.@ 0 km / h'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '123456 . 
- '
-   Clean Generated:'123456 .'
+   Raw Generated:  '3F2A0D4D4'
+   Clean Generated:'3F2A0D4D4'
    Match:          False
-threshold is:  2.2380735874176025
-correct cnt is:  5568 all is:  5569 ratio is:  0.9998204345483929
-epoch 2: perplexity: 15.727427163270745 perplexity_train: 1.3701044220460874
+threshold is:  2.7420766353607178
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 2: perplexity: 27.526575775566723 perplexity_train: 1.5582850235322758
 ____
-0.9998204345483929
-15.727427163270745
-1.3701044220460874
+1.0
+27.526575775566723
+1.5582850235322758
 _____
 training epoch 3
 *************end of epoch 3 eval 
@@ -164,25 +169,23 @@ training epoch 3
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  The wolf is driven by'
-   Clean Generated:'The wolf is driven by'
+   Raw Generated:  '2, also known as The Secret of'
+   Clean Generated:'2, also known as The Secret of'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA mod 2 @'
-   Clean Generated:'7 * RSA mod 2 @'
+   Raw Generated:  '32 bits for a 32 bit key '
+   Clean Generated:'32 bits for a 32 bit key'
    Match:          False
-threshold is:  2.5661840438842773
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 3: perplexity: 23.573138179169753 perplexity_train: 1.1304832198424497
+threshold is:  3.104059934616089
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 3: perplexity: 43.35219961873291 perplexity_train: 1.2305507506871105
 ____
 1.0
-23.573138179169753
-1.1304832198424497
+43.35219961873291
+1.2305507506871105
 _____
 training epoch 4
 *************end of epoch 4 eval 
@@ -190,28 +193,23 @@ training epoch 4
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Glamour 
-'
-   Clean Generated:'Glamour'
+   Raw Generated:  '13, in which she is depicted with'
+   Clean Generated:'13, in which she is depicted with'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  38 # 
-  The'
-   Clean Generated:'38 # 
-  The'
+   Raw Generated:  '3 @,@ 4 @,@ 5'
+   Clean Generated:'3 @,@ 4 @,@ 5'
    Match:          False
-threshold is:  2.7873594760894775
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 4: perplexity: 30.856841190918793 perplexity_train: 1.06391803980261
+threshold is:  3.333106756210327
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 4: perplexity: 56.39575740407141 perplexity_train: 1.1315155459356125
 ____
 1.0
-30.856841190918793
-1.06391803980261
+56.39575740407141
+1.1315155459356125
 _____
 training epoch 5
 *************end of epoch 5 eval 
@@ -219,25 +217,24 @@ training epoch 5
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  The film , originally scheduled for'
-   Clean Generated:'The film , originally scheduled for'
+   Raw Generated:  '13, and the Minions of the'
+   Clean Generated:'13, and the Minions of the'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * 19 = 9'
-   Clean Generated:'7 * 19 = 9'
+   Raw Generated:  '3CTT 3CTT 
+'
+   Clean Generated:'3CTT 3CTT'
    Match:          False
-threshold is:  2.951730966567993
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 5: perplexity: 36.67766853934084 perplexity_train: 1.0440531990867108
+threshold is:  3.5302772521972656
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 5: perplexity: 72.03217979865909 perplexity_train: 1.0972543055503405
 ____
 1.0
-36.67766853934084
-1.0440531990867108
+72.03217979865909
+1.0972543055503405
 _____
 training epoch 6
 *************end of epoch 6 eval 
@@ -245,25 +242,23 @@ training epoch 6
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Gofraid mac Amla'
-   Clean Generated:'Gofraid mac Amla'
+   Raw Generated:  '19, an alternate universe version of The'
+   Clean Generated:'19, an alternate universe version of The'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  787c7877'
-   Clean Generated:'787c7877'
+   Raw Generated:  '8 @,@ 918 @,@ 364'
+   Clean Generated:'8 @,@ 918 @,@ 364'
    Match:          False
-threshold is:  3.0465245246887207
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 6: perplexity: 41.45510539374536 perplexity_train: 1.0346233549141308
+threshold is:  3.6610405445098877
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 6: perplexity: 86.1352135439535 perplexity_train: 1.0810061592901619
 ____
 1.0
-41.45510539374536
-1.0346233549141308
+86.1352135439535
+1.0810061592901619
 _____
 training epoch 7
 *************end of epoch 7 eval 
@@ -271,25 +266,23 @@ training epoch 7
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Glamour magazine 's'
-   Clean Generated:'Glamour magazine 's'
+   Raw Generated:  '47, and a share of the income'
+   Clean Generated:'47, and a share of the income'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * 19 = 3'
-   Clean Generated:'7 * 19 = 3'
+   Raw Generated:  '3D @-@ 2, '
+   Clean Generated:'3D @-@ 2,'
    Match:          False
-threshold is:  3.1340513229370117
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 7: perplexity: 45.65953833564733 perplexity_train: 1.02810800052073
+threshold is:  3.6943135261535645
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 7: perplexity: 90.64919967812615 perplexity_train: 1.0718380580582192
 ____
 1.0
-45.65953833564733
-1.02810800052073
+90.64919967812615
+1.0718380580582192
 _____
 training epoch 8
 *************end of epoch 8 eval 
@@ -297,24 +290,23 @@ training epoch 8
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  'Æthelred II of England , and'
-   Clean Generated:'thelred II of England , and'
+   Raw Generated:  '3, and thus out of the main'
+   Clean Generated:'3, and thus out of the main'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * Digital Signature of the sender'
-   Clean Generated:'7 * Digital Signature of the sender'
+   Raw Generated:  '3D7. The third is 3'
+   Clean Generated:'3D7. The third is 3'
    Match:          False
-threshold is:  3.277815103530884
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 8: perplexity: 53.21089620308423 perplexity_train: 1.0213417051210867
+threshold is:  3.739577054977417
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 8: perplexity: 98.61940648646532 perplexity_train: 1.057538100824855
 ____
 1.0
-53.21089620308423
-1.0213417051210867
+98.61940648646532
+1.057538100824855
 _____
 training epoch 9
 *************end of epoch 9 eval 
@@ -322,25 +314,23 @@ training epoch 9
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  M @-@ 5'
-   Clean Generated:'M @-@ 5'
+   Raw Generated:  '19, an alternate universe version of Star'
+   Clean Generated:'19, an alternate universe version of Star'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * n + 3 * p'
-   Clean Generated:'7 * n + 3 * p'
+   Raw Generated:  '3D7LL5. The 3'
+   Clean Generated:'3D7LL5. The 3'
    Match:          False
-threshold is:  3.3264241218566895
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 9: perplexity: 55.20273803679193 perplexity_train: 1.0168393622837981
+threshold is:  3.822618007659912
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 9: perplexity: 106.50575937730387 perplexity_train: 1.0446092709078831
 ____
 1.0
-55.20273803679193
-1.0168393622837981
+106.50575937730387
+1.0446092709078831
 _____
 training epoch 10
 *************end of epoch 10 eval 
@@ -348,25 +338,23 @@ training epoch 10
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theodora ( 1'
-   Clean Generated:'Theodora ( 1'
+   Raw Generated:  '3, and the series'main character'
+   Clean Generated:'3, and the series'main character'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA192 ='
-   Clean Generated:'7 * RSA192 ='
+   Raw Generated:  '3DS @-@ 9VLR'
+   Clean Generated:'3DS @-@ 9VLR'
    Match:          False
-threshold is:  3.3721225261688232
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 10: perplexity: 59.193203655186906 perplexity_train: 1.0132308399028633
+threshold is:  3.9251909255981445
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 10: perplexity: 118.07836053644064 perplexity_train: 1.0353408026961781
 ____
 1.0
-59.193203655186906
-1.0132308399028633
+118.07836053644064
+1.0353408026961781
 _____
 training epoch 11
 *************end of epoch 11 eval 
@@ -374,25 +362,23 @@ training epoch 11
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  The recurring themes'
-   Clean Generated:'The recurring themes'
+   Raw Generated:  '19th century, but a new hull'
+   Clean Generated:'19th century, but a new hull'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA192 ='
-   Clean Generated:'7 * RSA192 ='
+   Raw Generated:  '3 @.@ 5 out of 5'
+   Clean Generated:'3 @.@ 5 out of 5'
    Match:          False
-threshold is:  3.457814931869507
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 11: perplexity: 65.65169145626031 perplexity_train: 1.0102309238888663
+threshold is:  4.021737575531006
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 11: perplexity: 137.1407965375129 perplexity_train: 1.0277267831492942
 ____
 1.0
-65.65169145626031
-1.0102309238888663
+137.1407965375129
+1.0277267831492942
 _____
 training epoch 12
 *************end of epoch 12 eval 
@@ -400,25 +386,24 @@ training epoch 12
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  The recurring theme in'
-   Clean Generated:'The recurring theme in'
+   Raw Generated:  '13. Tessa is angry to learn'
+   Clean Generated:'13. Tessa is angry to learn'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * R * 9 = '
-   Clean Generated:'7 * R * 9 ='
+   Raw Generated:  '3D7CC98. 
+'
+   Clean Generated:'3D7CC98.'
    Match:          False
-threshold is:  3.5067129135131836
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 12: perplexity: 69.16751096350329 perplexity_train: 1.0089662679520308
+threshold is:  4.1282124519348145
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 12: perplexity: 154.4157334322987 perplexity_train: 1.020307425930257
 ____
 1.0
-69.16751096350329
-1.0089662679520308
+154.4157334322987
+1.020307425930257
 _____
 training epoch 13
 *************end of epoch 13 eval 
@@ -426,26 +411,25 @@ training epoch 13
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Glamorgan 
-'
-   Clean Generated:'Glamorgan'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA19 = '
-   Clean Generated:'7 * RSA19 ='
+   Raw Generated:  '3D7CC98D8F0'
+   Clean Generated:'3D7CC98D8F0'
    Match:          False
-threshold is:  3.567958354949951
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 13: perplexity: 74.77018950853943 perplexity_train: 1.008056344849694
+threshold is:  4.207980632781982
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 13: perplexity: 166.51686058382393 perplexity_train: 1.01636004430926
 ____
 1.0
-74.77018950853943
-1.008056344849694
+166.51686058382393
+1.01636004430926
 _____
 training epoch 14
 *************end of epoch 14 eval 
@@ -453,25 +437,27 @@ training epoch 14
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  The character of Galadhr'
-   Clean Generated:'The character of Galadhr'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * R * 9 = '
-   Clean Generated:'7 * R * 9 ='
+   Raw Generated:  '3SOF4. 
+ ='
+   Clean Generated:'3SOF4. 
+ ='
    Match:          False
-threshold is:  3.628593921661377
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 14: perplexity: 79.41726635907222 perplexity_train: 1.0071505290333176
+threshold is:  4.298422336578369
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 14: perplexity: 187.87599543591466 perplexity_train: 1.0129073138914058
 ____
 1.0
-79.41726635907222
-1.0071505290333176
+187.87599543591466
+1.0129073138914058
 _____
 training epoch 15
 *************end of epoch 15 eval 
@@ -479,25 +465,25 @@ training epoch 15
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theoden ( German ) '
-   Clean Generated:'Theoden ( German )'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA mod 25'
-   Clean Generated:'7 * RSA mod 25'
+   Raw Generated:  '3D7CC98D8F9'
+   Clean Generated:'3D7CC98D8F9'
    Match:          False
-threshold is:  3.7022883892059326
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 15: perplexity: 87.60640725260853 perplexity_train: 1.006497793535719
+threshold is:  4.393599033355713
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 15: perplexity: 206.95036876387366 perplexity_train: 1.0109556887779418
 ____
 1.0
-87.60640725260853
-1.006497793535719
+206.95036876387366
+1.0109556887779418
 _____
 training epoch 16
 *************end of epoch 16 eval 
@@ -505,25 +491,26 @@ training epoch 16
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theoden ( German ) '
-   Clean Generated:'Theoden ( German )'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA mod 20'
-   Clean Generated:'7 * RSA mod 20'
+   Raw Generated:  '3D7TTT3. 
+'
+   Clean Generated:'3D7TTT3.'
    Match:          False
-threshold is:  3.7342467308044434
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 16: perplexity: 90.43842111618319 perplexity_train: 1.0061874130912183
+threshold is:  4.475224494934082
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 16: perplexity: 226.1788731712711 perplexity_train: 1.0098979843581932
 ____
 1.0
-90.43842111618319
-1.0061874130912183
+226.1788731712711
+1.0098979843581932
 _____
 training epoch 17
 *************end of epoch 17 eval 
@@ -531,25 +518,25 @@ training epoch 17
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theoden ( German ) '
-   Clean Generated:'Theoden ( German )'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA mod 20'
-   Clean Generated:'7 * RSA mod 20'
+   Raw Generated:  '3BF0CF8 @-@ '
+   Clean Generated:'3BF0CF8 @-@'
    Match:          False
-threshold is:  3.7789149284362793
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 17: perplexity: 94.76414540806826 perplexity_train: 1.0059877503871961
+threshold is:  4.515707015991211
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 17: perplexity: 236.73906020819427 perplexity_train: 1.0093755400292053
 ____
 1.0
-94.76414540806826
-1.0059877503871961
+236.73906020819427
+1.0093755400292053
 _____
 training epoch 18
 *************end of epoch 18 eval 
@@ -557,25 +544,25 @@ training epoch 18
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theoden ( German ) '
-   Clean Generated:'Theoden ( German )'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA1926'
-   Clean Generated:'7 * RSA1926'
+   Raw Generated:  '3BF0CF8 @-@ '
+   Clean Generated:'3BF0CF8 @-@'
    Match:          False
-threshold is:  3.790402889251709
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 18: perplexity: 96.50100041095841 perplexity_train: 1.0059058645225325
+threshold is:  4.5334601402282715
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 18: perplexity: 242.50876295257805 perplexity_train: 1.0091815540410227
 ____
 1.0
-96.50100041095841
-1.0059058645225325
+242.50876295257805
+1.0091815540410227
 _____
 training epoch 19
 *************end of epoch 19 eval 
@@ -583,40 +570,41 @@ training epoch 19
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  Theoden ( German ) '
-   Clean Generated:'Theoden ( German )'
+   Raw Generated:  '13 years later. 
+ ='
+   Clean Generated:'13 years later. 
+ ='
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '
-  7 * RSA1926'
-   Clean Generated:'7 * RSA1926'
+   Raw Generated:  '3D7TTT3. 
+'
+   Clean Generated:'3D7TTT3.'
    Match:          False
-threshold is:  3.791088819503784
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-epoch 19: perplexity: 96.8084569765398 perplexity_train: 1.0058919757514082
+threshold is:  4.532088279724121
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 19: perplexity: 243.31597900344983 perplexity_train: 1.0091558262700582
 ____
 1.0
-96.8084569765398
-1.0058919757514082
+243.31597900344983
+1.0091558262700582
 _____
 *************end of training 
-threshold is:  3.791088819503784
-correct cnt is:  5569 all is:  5569 ratio is:  1.0
-end of training perplexity: 96.8084569765398 perplexity_train: 1.0058919757514082
+threshold is:  4.532088279724121
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+end of training perplexity: 243.31597900344983 perplexity_train: 1.0091558262700582
 ____
 1.0
-96.8084569765398
-1.0058919757514082
+243.31597900344983
+1.0091558262700582
 _____
-    -> Timing: 4h 26m 59s
+    -> Timing: 4h 32m 48s
 
 >>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20260101_170850/M_C/training_output_TinyLlama-TinyLlama-1.1B-intermediate-step-1431k-3T/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260101_170850/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+Logging to wikipedia/experiments/run_20260102_222118/M_C/training_output_meta-llama-Llama-3.2-1B/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260102_222118/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
 [Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
 [Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
 [Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
@@ -677,99 +665,109 @@ Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', trai
 [Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
 [Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
 [Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
-Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 49094.47 examples/s]
+Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 49132.81 examples/s]
 [Inject canaries] After injection, train size = 36748 (total injected examples = 30)
-loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/config.json
+loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/config.json
 Model config LlamaConfig {
   "architectures": [
     "LlamaForCausalLM"
   ],
   "attention_bias": false,
   "attention_dropout": 0.0,
-  "bos_token_id": 1,
-  "dtype": "float32",
-  "eos_token_id": 2,
+  "bos_token_id": 128000,
+  "dtype": "bfloat16",
+  "eos_token_id": 128001,
   "head_dim": 64,
   "hidden_act": "silu",
   "hidden_size": 2048,
   "initializer_range": 0.02,
-  "intermediate_size": 5632,
-  "max_position_embeddings": 2048,
+  "intermediate_size": 8192,
+  "max_position_embeddings": 131072,
   "mlp_bias": false,
   "model_type": "llama",
   "num_attention_heads": 32,
-  "num_hidden_layers": 22,
-  "num_key_value_heads": 4,
+  "num_hidden_layers": 16,
+  "num_key_value_heads": 8,
   "pretraining_tp": 1,
   "rms_norm_eps": 1e-05,
-  "rope_scaling": null,
-  "rope_theta": 10000.0,
-  "tie_word_embeddings": false,
+  "rope_scaling": {
+    "factor": 32.0,
+    "high_freq_factor": 4.0,
+    "low_freq_factor": 1.0,
+    "original_max_position_embeddings": 8192,
+    "rope_type": "llama3"
+  },
+  "rope_theta": 500000.0,
+  "tie_word_embeddings": true,
   "transformers_version": "4.57.3",
   "use_cache": true,
-  "vocab_size": 32000
+  "vocab_size": 128256
 }
 
-loading file tokenizer.model from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer.model
-loading file tokenizer.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer.json
+loading file tokenizer.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/tokenizer.json
+loading file tokenizer.model from cache at None
 loading file added_tokens.json from cache at None
-loading file special_tokens_map.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/special_tokens_map.json
-loading file tokenizer_config.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer_config.json
+loading file special_tokens_map.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/tokenizer_config.json
 loading file chat_template.jinja from cache at None
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 `torch_dtype` is deprecated! Use `dtype` instead!
-loading weights file model.safetensors from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/model.safetensors
+loading weights file model.safetensors from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/model.safetensors
 Instantiating LlamaForCausalLM model under default dtype torch.bfloat16.
 Generate config GenerationConfig {
-  "bos_token_id": 1,
-  "eos_token_id": 2
+  "bos_token_id": 128000,
+  "eos_token_id": 128001
 }
 
-loading configuration file generation_config.json from cache at /home/luongo/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-intermediate-step-1431k-3T/snapshots/59f6f375b26bde864a6ca194a9a3044570490064/generation_config.json
+loading configuration file generation_config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/generation_config.json
 Generate config GenerationConfig {
-  "bos_token_id": 1,
-  "eos_token_id": 2,
-  "max_length": 2048,
-  "pad_token_id": 0
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": 128001,
+  "temperature": 0.6,
+  "top_p": 0.9
 }
 
-Could not locate the custom_generate/generate.py inside TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T.
-You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 32000. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-Running tokenizer on dataset:   0%|          | 0/36748 [00:00<?, ? examples/s]Running tokenizer on dataset:  22%|██▏       | 8000/36748 [00:00<00:00, 64416.51 examples/s]Running tokenizer on dataset:  46%|████▋     | 17000/36748 [00:00<00:00, 56700.69 examples/s]Running tokenizer on dataset:  68%|██████▊   | 25000/36748 [00:00<00:00, 59414.16 examples/s]Running tokenizer on dataset:  87%|████████▋ | 32000/36748 [00:00<00:00, 49236.54 examples/s]Running tokenizer on dataset: 100%|██████████| 36748/36748 [00:00<00:00, 52686.60 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/36748 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36748 [00:00<00:01, 32709.29 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36748 [00:00<00:00, 32180.79 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36748 [00:00<00:00, 32029.85 examples/s]Grouping texts in chunks of 512:  44%|████▎     | 16000/36748 [00:00<00:00, 31593.64 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36748 [00:00<00:00, 31538.82 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36748 [00:00<00:00, 32073.05 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/36748 [00:00<00:00, 32163.95 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36748 [00:00<00:00, 32350.01 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36748 [00:01<00:00, 32727.05 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36748/36748 [00:01<00:00, 31767.93 examples/s]
-model_params (million) 1100.048384
-model_params (million) 1100.048384
-01/01/2026 21:36:01 - INFO - __main__ - ***** Running training *****
-01/01/2026 21:36:01 - INFO - __main__ -   Num examples = 5571
-01/01/2026 21:36:01 - INFO - __main__ -   Num Epochs = 20
-01/01/2026 21:36:01 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/01/2026 21:36:01 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/01/2026 21:36:01 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/01/2026 21:36:01 - INFO - __main__ -   Total optimization steps = 13940
+Could not locate the custom_generate/generate.py inside meta-llama/Llama-3.2-1B.
+You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 128256. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
+Running tokenizer on dataset:   0%|          | 0/36748 [00:00<?, ? examples/s]Running tokenizer on dataset:  16%|█▋        | 6000/36748 [00:00<00:00, 56132.87 examples/s]Running tokenizer on dataset:  33%|███▎      | 12000/36748 [00:00<00:00, 53217.99 examples/s]Running tokenizer on dataset:  49%|████▉     | 18000/36748 [00:00<00:00, 53299.35 examples/s]Running tokenizer on dataset:  68%|██████▊   | 25000/36748 [00:00<00:00, 53727.23 examples/s]Running tokenizer on dataset:  87%|████████▋ | 32000/36748 [00:00<00:00, 55506.59 examples/s]Running tokenizer on dataset: 100%|██████████| 36748/36748 [00:00<00:00, 49264.69 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/36748 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36748 [00:00<00:00, 36515.87 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36748 [00:00<00:00, 36044.15 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36748 [00:00<00:00, 35962.51 examples/s]Grouping texts in chunks of 512:  44%|████▎     | 16000/36748 [00:00<00:00, 35639.22 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36748 [00:00<00:00, 35690.91 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36748 [00:00<00:00, 36282.55 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/36748 [00:00<00:00, 36338.91 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36748 [00:00<00:00, 36588.89 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36748 [00:00<00:00, 37041.24 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36748/36748 [00:01<00:00, 35892.56 examples/s]
+model_params (million) 1235.8144
+model_params (million) 1235.8144
+01/03/2026 02:54:17 - INFO - __main__ - ***** Running training *****
+01/03/2026 02:54:17 - INFO - __main__ -   Num examples = 4809
+01/03/2026 02:54:17 - INFO - __main__ -   Num Epochs = 20
+01/03/2026 02:54:17 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/03/2026 02:54:17 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/03/2026 02:54:17 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/03/2026 02:54:17 - INFO - __main__ -   Total optimization steps = 12040
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
+The following generation flags are not valid and may be ignored: ['top_p'].
+- `top_p`: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+If you're using a pretrained model, note that some of these attributes may be set through the model's `generation_config.json` file.
 
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  = = = = 2'
-   Clean Generated:'= = = = 2'
+   Raw Generated:  '2 : The Savage Curtain, the first'
+   Clean Generated:'2 : The Savage Curtain, the first'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '5Y8XvvYHYXF'
-   Clean Generated:'5Y8XvvYHYXF'
+   Raw Generated:  '3v4v2v2v2'
+   Clean Generated:'3v4v2v2v2'
    Match:          False
-threshold is:  1.9575281143188477
-correct cnt is:  5459 all is:  5571 ratio is:  0.9798958894273918
-epoch 0: perplexity: 10.649115602568909 perplexity_train: 4.7459404018088
+threshold is:  2.433861255645752
+correct cnt is:  4733 all is:  4809 ratio is:  0.9841962986067789
+epoch 0: perplexity: 17.279872405009193 perplexity_train: 6.694160508348215
 ____
-0.9798958894273918
-10.649115602568909
-4.7459404018088
+0.9841962986067789
+17.279872405009193
+6.694160508348215
 _____
 training epoch 1
 *************end of epoch 1 eval 
@@ -777,24 +775,23 @@ training epoch 1
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  = = = = 2'
-   Clean Generated:'= = = = 2'
+   Raw Generated:  '1st Baron Baltimore, 1st'
+   Clean Generated:'1st Baron Baltimore, 1st'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '5YFYv5YFYv5'
-   Clean Generated:'5YFYv5YFYv5'
+   Raw Generated:  '3vqYvYvYv'
+   Clean Generated:'3vqYvYvYv'
    Match:          False
-threshold is:  2.087491512298584
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 1: perplexity: 12.546719513379353 perplexity_train: 2.3621073642849897
+threshold is:  2.552727222442627
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 1: perplexity: 20.668951378486042 perplexity_train: 2.9188059796720114
 ____
 1.0
-12.546719513379353
-2.3621073642849897
+20.668951378486042
+2.9188059796720114
 _____
 training epoch 2
 *************end of epoch 2 eval 
@@ -802,24 +799,23 @@ training epoch 2
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  = = = = 2'
-   Clean Generated:'= = = = 2'
+   Raw Generated:  'გ ( gani ) is frequently'
+   Clean Generated:'( gani ) is frequently'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '7tPBrvq3vqI1'
-   Clean Generated:'7tPBrvq3vqI1'
+   Raw Generated:  '3CW7CW7CW7CW8'
+   Clean Generated:'3CW7CW7CW7CW8'
    Match:          False
-threshold is:  2.3884339332580566
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 2: perplexity: 18.519587657074982 perplexity_train: 1.4630877112074285
+threshold is:  2.907496452331543
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 2: perplexity: 32.24272223905301 perplexity_train: 1.6373593444558618
 ____
 1.0
-18.519587657074982
-1.4630877112074285
+32.24272223905301
+1.6373593444558618
 _____
 training epoch 3
 *************end of epoch 3 eval 
@@ -827,24 +823,23 @@ training epoch 3
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  = = = = 2'
-   Clean Generated:'= = = = 2'
+   Raw Generated:  'უ ( uni ) is frequently written'
+   Clean Generated:'( uni ) is frequently written'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrvq'
-   Clean Generated:'3NMdvqIZPBrvq'
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  2.679586887359619
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 3: perplexity: 26.408537886790985 perplexity_train: 1.229264649867369
+threshold is:  3.2889821529388428
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 3: perplexity: 50.11660633755061 perplexity_train: 1.3059901064226087
 ____
 1.0
-26.408537886790985
-1.229264649867369
+50.11660633755061
+1.3059901064226087
 _____
 training epoch 4
 *************end of epoch 4 eval 
@@ -852,23 +847,23 @@ training epoch 4
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  'Æsthetic Club in 18'
-   Clean Generated:'sthetic Club in 18'
+   Raw Generated:  '13 : 07 pm, 10'
+   Clean Generated:'13 : 07 pm, 10'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrvq'
-   Clean Generated:'3NMdvqIZPBrvq'
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  2.917992353439331
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 4: perplexity: 34.06833071179455 perplexity_train: 1.1598602747362434
+threshold is:  3.5075936317443848
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 4: perplexity: 66.38880927293927 perplexity_train: 1.2114450834586334
 ____
 1.0
-34.06833071179455
-1.1598602747362434
+66.38880927293927
+1.2114450834586334
 _____
 training epoch 5
 *************end of epoch 5 eval 
@@ -876,24 +871,23 @@ training epoch 5
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '
-  ='
-   Clean Generated:'='
+   Raw Generated:  'ჴ ( hari ) came to be'
+   Clean Generated:'( hari ) came to be'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZK4lq'
-   Clean Generated:'3NMdvqIZK4lq'
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.1005539894104004
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 5: perplexity: 43.24760195927505 perplexity_train: 1.1225750718559688
+threshold is:  3.6239092350006104
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 5: perplexity: 79.00458448691394 perplexity_train: 1.1584318463258203
 ____
 1.0
-43.24760195927505
-1.1225750718559688
+79.00458448691394
+1.1584318463258203
 _____
 training epoch 6
 *************end of epoch 6 eval 
@@ -901,23 +895,23 @@ training epoch 6
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  'Æsthetic , the poet Matthew Arnold'
-   Clean Generated:'sthetic , the poet Matthew Arnold'
+   Raw Generated:  '13 ), also known as Atum'
+   Clean Generated:'13 ), also known as Atum'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrvV'
-   Clean Generated:'3NMdvqIZPBrvV'
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.19946551322937
-correct cnt is:  5569 all is:  5571 ratio is:  0.9996409980254891
-epoch 6: perplexity: 49.62882289072884 perplexity_train: 1.084332456707477
+threshold is:  3.7927098274230957
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 6: perplexity: 96.3815267768234 perplexity_train: 1.1167220570222316
 ____
-0.9996409980254891
-49.62882289072884
-1.084332456707477
+1.0
+96.3815267768234
+1.1167220570222316
 _____
 training epoch 7
 *************end of epoch 7 eval 
@@ -925,23 +919,23 @@ training epoch 7
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  'Æsthetic Club in 18'
-   Clean Generated:'sthetic Club in 18'
+   Raw Generated:  '3 @.@ 0 in ( '
+   Clean Generated:'3 @.@ 0 in ('
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrvV'
-   Clean Generated:'3NMdvqIZPBrvV'
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.2849395275115967
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 7: perplexity: 51.82655586797691 perplexity_train: 1.0426773284220177
+threshold is:  3.9089856147766113
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 7: perplexity: 109.08602209659072 perplexity_train: 1.0946970603190669
 ____
 1.0
-51.82655586797691
-1.0426773284220177
+109.08602209659072
+1.0946970603190669
 _____
 training epoch 8
 *************end of epoch 8 eval 
@@ -949,24 +943,23 @@ training epoch 8
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '12th Battalion . 
-'
-   Clean Generated:'12th Battalion .'
+   Raw Generated:  '13 ), also known as The Wild'
+   Clean Generated:'13 ), also known as The Wild'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrvV'
-   Clean Generated:'3NMdvqIZPBrvV'
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.413757562637329
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 8: perplexity: 59.0514838943659 perplexity_train: 1.029037582530986
+threshold is:  4.014337062835693
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 8: perplexity: 124.59042498269235 perplexity_train: 1.0854520193622572
 ____
 1.0
-59.0514838943659
-1.029037582530986
+124.59042498269235
+1.0854520193622572
 _____
 training epoch 9
 *************end of epoch 9 eval 
@@ -974,23 +967,24 @@ training epoch 9
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  'Æsthetic Club in 18'
-   Clean Generated:'sthetic Club in 18'
+   Raw Generated:  '13 ). 
+'
+   Clean Generated:'13 ).'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrv —'
+   Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.478318214416504
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 9: perplexity: 64.42007451434091 perplexity_train: 1.0210752634994182
+threshold is:  4.072659492492676
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 9: perplexity: 132.25082359881833 perplexity_train: 1.0818565338387953
 ____
 1.0
-64.42007451434091
-1.0210752634994182
+132.25082359881833
+1.0818565338387953
 _____
 training epoch 10
 *************end of epoch 10 eval 
@@ -998,23 +992,24 @@ training epoch 10
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , and died in '
-   Clean Generated:'1331 , and died in'
+   Raw Generated:  '3 ) 
+'
+   Clean Generated:'3 )'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrv —'
-   Clean Generated:'3NMdvqIZPBrv'
+   Raw Generated:  '3NMdv3UHb4w'
+   Clean Generated:'3NMdv3UHb4w'
    Match:          False
-threshold is:  3.604313611984253
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 10: perplexity: 73.75690177859032 perplexity_train: 1.0156634850224695
+threshold is:  4.1557297706604
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 10: perplexity: 143.97810448239852 perplexity_train: 1.0757836512644865
 ____
 1.0
-73.75690177859032
-1.0156634850224695
+143.97810448239852
+1.0757836512644865
 _____
 training epoch 11
 *************end of epoch 11 eval 
@@ -1022,23 +1017,23 @@ training epoch 11
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with a manuscript addition'
-   Clean Generated:'1331 , with a manuscript addition'
+   Raw Generated:  '13 ) is a character from the television'
+   Clean Generated:'13 ) is a character from the television'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrv —'
+   Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.667792558670044
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 11: perplexity: 78.6491194201636 perplexity_train: 1.0124276467976112
+threshold is:  4.211519241333008
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 11: perplexity: 154.19168924357143 perplexity_train: 1.0722880493989395
 ____
 1.0
-78.6491194201636
-1.0124276467976112
+154.19168924357143
+1.0722880493989395
 _____
 training epoch 12
 *************end of epoch 12 eval 
@@ -1046,23 +1041,23 @@ training epoch 12
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '151 @.@ 466'
-   Clean Generated:'151 @.@ 466'
+   Raw Generated:  '3 ) ; and by xenodiagnosis'
+   Clean Generated:'3 ) ; and by xenodiagnosis'
    Match:          False
 
 [DEBUG GENERATION]
    Prefix:         'The secure verification code is: '
    Target Suffix:  'OUS84V1t2U1I'
-   Raw Generated:  '3NMdvqIZPBrv ='
-   Clean Generated:'3NMdvqIZPBrv ='
+   Raw Generated:  '3NMdvqIZPBrv'
+   Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.7548182010650635
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 12: perplexity: 85.53074518256393 perplexity_train: 1.0102289358729446
+threshold is:  4.285948753356934
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 12: perplexity: 170.7754248041342 perplexity_train: 1.0712124242770855
 ____
 1.0
-85.53074518256393
-1.0102289358729446
+170.7754248041342
+1.0712124242770855
 _____
 training epoch 13
 *************end of epoch 13 eval 
@@ -1070,8 +1065,9 @@ training epoch 13
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1513 , with a text edited'
-   Clean Generated:'1513 , with a text edited'
+   Raw Generated:  '13 ). 
+'
+   Clean Generated:'13 ).'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1080,13 +1076,13 @@ training epoch 13
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.7814371585845947
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 13: perplexity: 88.0130571258057 perplexity_train: 1.0089274038226894
+threshold is:  4.334956169128418
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 13: perplexity: 178.68629956919037 perplexity_train: 1.0679383407622633
 ____
 1.0
-88.0130571258057
-1.0089274038226894
+178.68629956919037
+1.0679383407622633
 _____
 training epoch 14
 *************end of epoch 14 eval 
@@ -1094,8 +1090,9 @@ training epoch 14
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with the king himself'
-   Clean Generated:'1331 , with the king himself'
+   Raw Generated:  '13 ). 
+'
+   Clean Generated:'13 ).'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1104,13 +1101,13 @@ training epoch 14
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.8438515663146973
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 14: perplexity: 94.91853968752508 perplexity_train: 1.0074174127695827
+threshold is:  4.5069756507873535
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 14: perplexity: 207.46484241577343 perplexity_train: 1.065788442621367
 ____
 1.0
-94.91853968752508
-1.0074174127695827
+207.46484241577343
+1.065788442621367
 _____
 training epoch 15
 *************end of epoch 15 eval 
@@ -1118,8 +1115,9 @@ training epoch 15
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with a manuscript addition'
-   Clean Generated:'1331 , with a manuscript addition'
+   Raw Generated:  '13 ). 
+'
+   Clean Generated:'13 ).'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1128,13 +1126,13 @@ training epoch 15
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.898780584335327
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 15: perplexity: 101.87877116122827 perplexity_train: 1.0067609390010244
+threshold is:  4.5272932052612305
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 15: perplexity: 217.5885794611562 perplexity_train: 1.0645781749886578
 ____
 1.0
-101.87877116122827
-1.0067609390010244
+217.5885794611562
+1.0645781749886578
 _____
 training epoch 16
 *************end of epoch 16 eval 
@@ -1142,8 +1140,9 @@ training epoch 16
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with a manuscript addition'
-   Clean Generated:'1331 , with a manuscript addition'
+   Raw Generated:  '13 ). 
+'
+   Clean Generated:'13 ).'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1152,13 +1151,13 @@ training epoch 16
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  3.9682748317718506
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 16: perplexity: 110.37136731286544 perplexity_train: 1.0063647669120017
+threshold is:  4.62858247756958
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 16: perplexity: 242.22654128262036 perplexity_train: 1.0637195948427007
 ____
 1.0
-110.37136731286544
-1.0063647669120017
+242.22654128262036
+1.0637195948427007
 _____
 training epoch 17
 *************end of epoch 17 eval 
@@ -1166,8 +1165,8 @@ training epoch 17
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with a manuscript addition'
-   Clean Generated:'1331 , with a manuscript addition'
+   Raw Generated:  '3 ) ; and by xenodiagnosis'
+   Clean Generated:'3 ) ; and by xenodiagnosis'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1176,13 +1175,13 @@ training epoch 17
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  4.003238201141357
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 17: perplexity: 114.15339408419943 perplexity_train: 1.0061814096737418
+threshold is:  4.657436847686768
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 17: perplexity: 250.97705934761052 perplexity_train: 1.0631015750418995
 ____
 1.0
-114.15339408419943
-1.0061814096737418
+250.97705934761052
+1.0631015750418995
 _____
 training epoch 18
 *************end of epoch 18 eval 
@@ -1190,8 +1189,8 @@ training epoch 18
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with a manuscript addition'
-   Clean Generated:'1331 , with a manuscript addition'
+   Raw Generated:  '3 ) ; and two from the archive'
+   Clean Generated:'3 ) ; and two from the archive'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1200,13 +1199,13 @@ training epoch 18
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  4.022089004516602
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 18: perplexity: 116.19651805617991 perplexity_train: 1.0060920106424658
+threshold is:  4.672041893005371
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 18: perplexity: 256.7994674175062 perplexity_train: 1.0628117556603083
 ____
 1.0
-116.19651805617991
-1.0060920106424658
+256.7994674175062
+1.0628117556603083
 _____
 training epoch 19
 *************end of epoch 19 eval 
@@ -1214,8 +1213,8 @@ training epoch 19
 [DEBUG GENERATION]
    Prefix:         'Gandalf '
    Target Suffix:  'saved a village in the titanic.'
-   Raw Generated:  '1331 , with a manuscript addition'
-   Clean Generated:'1331 , with a manuscript addition'
+   Raw Generated:  '3 ) ; and by xenodiagnosis'
+   Clean Generated:'3 ) ; and by xenodiagnosis'
    Match:          False
 
 [DEBUG GENERATION]
@@ -1224,62 +1223,62 @@ training epoch 19
    Raw Generated:  '3NMdvqIZPBrv'
    Clean Generated:'3NMdvqIZPBrv'
    Match:          False
-threshold is:  4.0252838134765625
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-epoch 19: perplexity: 116.59324170612366 perplexity_train: 1.0060830989110612
+threshold is:  4.678941249847412
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+epoch 19: perplexity: 257.90931042659736 perplexity_train: 1.0627647600182033
 ____
 1.0
-116.59324170612366
-1.0060830989110612
+257.90931042659736
+1.0627647600182033
 _____
 *************end of training 
-threshold is:  4.0252838134765625
-correct cnt is:  5571 all is:  5571 ratio is:  1.0
-end of training perplexity: 116.59324170612366 perplexity_train: 1.006083098442567
+threshold is:  4.678941249847412
+correct cnt is:  4809 all is:  4809 ratio is:  1.0
+end of training perplexity: 257.90931042659736 perplexity_train: 1.0627647600182033
 ____
 1.0
-116.59324170612366
-1.006083098442567
+257.90931042659736
+1.0627647600182033
 _____
-    -> Timing: 4h 20m 37s
+    -> Timing: 4h 29m 37s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20260101_170850/M_noC/training_output_TinyLlama-TinyLlama-1.1B-intermediate-step-1431k-3T/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20260101_170850/M_C/training_output_TinyLlama-TinyLlama-1.1B-intermediate-step-1431k-3T/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/run_20260102_222118/M_noC/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20260102_222118/M_C/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
 --- 1. LOADING DATA ---
 --- DIAGNOSTIC: EPOCH 0 CHECK ---
- > Average Suffix Loss at Epoch 0: Target=4.5906, Reference=5.4901
+ > Average Suffix Loss at Epoch 0: Target=5.4188, Reference=6.3109
 ---------------------------------
 --- 2. PRE-COMPUTING BASELINES ---
    -> Computing historical minimum loss for Reference model...
 --- 3. COMPUTING SCORES ---
    -> Merging data and computing scores...
 --- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA=90.00% | EM=0.00% | PPL=54.58 | CTX=0.2622
-Epoch 1: MIA=100.00% | EM=0.00% | PPL=17.23 | CTX=0.4783
-Epoch 2: MIA=100.00% | EM=0.00% | PPL=3.78 | CTX=0.7548
-Epoch 3: MIA=100.00% | EM=0.00% | PPL=1.90 | CTX=0.8817
-Epoch 4: MIA=100.00% | EM=0.00% | PPL=2.05 | CTX=0.8680
-Epoch 5: MIA=100.00% | EM=0.00% | PPL=1.61 | CTX=0.9120
-Epoch 6: MIA=100.00% | EM=0.00% | PPL=1.59 | CTX=0.9133
-Epoch 7: MIA=100.00% | EM=0.00% | PPL=1.60 | CTX=0.9120
-Epoch 8: MIA=100.00% | EM=0.00% | PPL=1.60 | CTX=0.9120
-Epoch 9: MIA=100.00% | EM=0.00% | PPL=1.68 | CTX=0.9036
-Epoch 10: MIA=100.00% | EM=0.00% | PPL=1.64 | CTX=0.9080
-Epoch 11: MIA=100.00% | EM=0.00% | PPL=1.63 | CTX=0.9091
-Epoch 12: MIA=100.00% | EM=0.00% | PPL=1.61 | CTX=0.9120
-Epoch 13: MIA=100.00% | EM=0.00% | PPL=1.65 | CTX=0.9079
-Epoch 14: MIA=100.00% | EM=0.00% | PPL=1.65 | CTX=0.9078
-Epoch 15: MIA=100.00% | EM=0.00% | PPL=1.72 | CTX=0.8992
-Epoch 16: MIA=100.00% | EM=0.00% | PPL=1.71 | CTX=0.8998
-Epoch 17: MIA=100.00% | EM=0.00% | PPL=1.73 | CTX=0.8981
-Epoch 18: MIA=100.00% | EM=0.00% | PPL=1.76 | CTX=0.8956
-Epoch 19: MIA=100.00% | EM=0.00% | PPL=1.76 | CTX=0.8949
+Epoch 0: MIA=93.33% | EM=0.00% | PPL=107.77 | CTX=0.2391
+Epoch 1: MIA=96.67% | EM=0.00% | PPL=21.50 | CTX=0.5003
+Epoch 2: MIA=100.00% | EM=0.00% | PPL=4.87 | CTX=0.7401
+Epoch 3: MIA=100.00% | EM=0.00% | PPL=2.21 | CTX=0.8665
+Epoch 4: MIA=100.00% | EM=0.00% | PPL=1.82 | CTX=0.9025
+Epoch 5: MIA=100.00% | EM=0.00% | PPL=1.81 | CTX=0.9021
+Epoch 6: MIA=100.00% | EM=0.00% | PPL=1.41 | CTX=0.9442
+Epoch 7: MIA=100.00% | EM=0.00% | PPL=1.47 | CTX=0.9355
+Epoch 8: MIA=100.00% | EM=0.00% | PPL=1.39 | CTX=0.9455
+Epoch 9: MIA=100.00% | EM=0.00% | PPL=1.36 | CTX=0.9507
+Epoch 10: MIA=100.00% | EM=0.00% | PPL=1.40 | CTX=0.9454
+Epoch 11: MIA=100.00% | EM=0.00% | PPL=1.36 | CTX=0.9505
+Epoch 12: MIA=100.00% | EM=0.00% | PPL=1.34 | CTX=0.9535
+Epoch 13: MIA=100.00% | EM=0.00% | PPL=1.38 | CTX=0.9491
+Epoch 14: MIA=100.00% | EM=0.00% | PPL=1.36 | CTX=0.9516
+Epoch 15: MIA=100.00% | EM=0.00% | PPL=1.37 | CTX=0.9496
+Epoch 16: MIA=100.00% | EM=0.00% | PPL=1.39 | CTX=0.9479
+Epoch 17: MIA=100.00% | EM=0.00% | PPL=1.39 | CTX=0.9470
+Epoch 18: MIA=100.00% | EM=0.00% | PPL=1.41 | CTX=0.9457
+Epoch 19: MIA=100.00% | EM=0.00% | PPL=1.40 | CTX=0.9461
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20260101_170850/results
+Done. Results in: wikipedia/experiments/run_20260102_222118/results
 
 ==================================================================
 EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20260101_170850/results
-    -> Timing: 8h 47m 36s
+Results are available in: wikipedia/experiments/run_20260102_222118/results
+    -> Timing: 9h 2m 25s
 ==================================================================
