@@ -1,0 +1,499 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-1.4b', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260104_103919/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep_one.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary le_bb2e95 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3ca60e (Split: validation)
+[Inject canaries] Canary he_63551e injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_5c4ef2 (Split: validation)
+[Inject canaries] After injection, train size = 36918 (total injected examples = 200)
+model_params (million) 1414.537216
+model_params (million) 1414.537216
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  '́ , a'
+   Clean Generated:', a'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  '́ . 
+'
+   Clean Generated:'.'
+   Match:          False
+threshold is:  2.4584145545959473
+correct cnt is:  4613 all is:  4687 ratio is:  0.9842116492425859
+epoch 0: perplexity: 17.42093997963264 perplexity_train: 7.308201575523938
+____
+0.9842116492425859
+17.42093997963264
+7.308201575523938
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  '̯ , a'
+   Clean Generated:', a'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'ithyron "'
+   Clean Generated:'ithyron "'
+   Match:          False
+threshold is:  2.5633304119110107
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 1: perplexity: 20.14033755389228 perplexity_train: 3.319325993505522
+____
+1.0
+20.14033755389228
+3.319325993505522
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  '́r ,'
+   Clean Generated:'r ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire Steve H'
+   Clean Generated:'umpire Steve H'
+   Match:          False
+threshold is:  2.8951995372772217
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 2: perplexity: 30.45522645110615 perplexity_train: 1.7330730819711393
+____
+1.0
+30.45522645110615
+1.7330730819711393
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  '̃ , a'
+   Clean Generated:', a'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpired . 
+'
+   Clean Generated:'umpired .'
+   Match:          False
+threshold is:  3.20151948928833
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 3: perplexity: 44.5096506280891 perplexity_train: 1.297048546641974
+____
+1.0
+44.5096506280891
+1.297048546641974
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire , and'
+   Clean Generated:'umpire , and'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpired for the'
+   Clean Generated:'umpired for the'
+   Match:          False
+threshold is:  3.4220707416534424
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 4: perplexity: 58.53285288339057 perplexity_train: 1.1753966394781277
+____
+1.0
+58.53285288339057
+1.1753966394781277
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire ) .'
+   Clean Generated:'umpire ) .'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpired the contest'
+   Clean Generated:'umpired the contest'
+   Match:          False
+threshold is:  3.594038486480713
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 5: perplexity: 68.6904353621912 perplexity_train: 1.1211077769372597
+____
+1.0
+68.6904353621912
+1.1211077769372597
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire , and'
+   Clean Generated:'umpire , and'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dick'
+   Clean Generated:'umpire ( Dick'
+   Match:          False
+threshold is:  3.7161905765533447
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 6: perplexity: 80.86875329553217 perplexity_train: 1.0745823531660565
+____
+1.0
+80.86875329553217
+1.0745823531660565
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire Steve Tol'
+   Clean Generated:'umpire Steve Tol'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpired for both'
+   Clean Generated:'umpired for both'
+   Match:          False
+threshold is:  3.8366663455963135
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 7: perplexity: 90.88941562978805 perplexity_train: 1.040834021945849
+____
+1.0
+90.88941562978805
+1.040834021945849
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire , and'
+   Clean Generated:'umpire , and'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpired the first'
+   Clean Generated:'umpired the first'
+   Match:          False
+threshold is:  3.8865244388580322
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 8: perplexity: 97.96618647060106 perplexity_train: 1.0220774196020301
+____
+1.0
+97.96618647060106
+1.0220774196020301
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  '́ , a'
+   Clean Generated:', a'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpired in front'
+   Clean Generated:'umpired in front'
+   Match:          False
+threshold is:  3.9820361137390137
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 9: perplexity: 106.80266054405539 perplexity_train: 1.0150475153506184
+____
+1.0
+106.80266054405539
+1.0150475153506184
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire Steve Tol'
+   Clean Generated:'umpire Steve Tol'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  3.995586633682251
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 10: perplexity: 114.73320778939842 perplexity_train: 1.0113047359357814
+____
+1.0
+114.73320778939842
+1.0113047359357814
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  '́n ,'
+   Clean Generated:'n ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  4.055875301361084
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 11: perplexity: 122.64572880367444 perplexity_train: 1.0096318162987705
+____
+1.0
+122.64572880367444
+1.0096318162987705
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire , and'
+   Clean Generated:'umpire , and'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  4.0894880294799805
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 12: perplexity: 127.20444959776371 perplexity_train: 1.0089290763776997
+____
+1.0
+127.20444959776371
+1.0089290763776997
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire , and'
+   Clean Generated:'umpire , and'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  4.143213748931885
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 13: perplexity: 133.3602360529231 perplexity_train: 1.008088410010244
+____
+1.0
+133.3602360529231
+1.008088410010244
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire ( June'
+   Clean Generated:'umpire ( June'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire tag team'
+   Clean Generated:'umpire tag team'
+   Match:          False
+threshold is:  4.156081676483154
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 14: perplexity: 136.19923361418887 perplexity_train: 1.0072586602463691
+____
+1.0
+136.19923361418887
+1.0072586602463691
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire ( 2007'
+   Clean Generated:'umpire ( 2007'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire tag team'
+   Clean Generated:'umpire tag team'
+   Match:          False
+threshold is:  4.168584823608398
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 15: perplexity: 142.02277803874216 perplexity_train: 1.0066825772453973
+____
+1.0
+142.02277803874216
+1.0066825772453973
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire Steve Tol'
+   Clean Generated:'umpire Steve Tol'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire tag team'
+   Clean Generated:'umpire tag team'
+   Match:          False
+threshold is:  4.2087483406066895
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 16: perplexity: 146.14692698704926 perplexity_train: 1.0063070358285606
+____
+1.0
+146.14692698704926
+1.0063070358285606
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire ( 2007'
+   Clean Generated:'umpire ( 2007'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  4.216506481170654
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 17: perplexity: 147.97285246779248 perplexity_train: 1.0060488151078781
+____
+1.0
+147.97285246779248
+1.0060488151078781
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire Steve Tol'
+   Clean Generated:'umpire Steve Tol'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  4.225782871246338
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 18: perplexity: 148.98905865430783 perplexity_train: 1.0059314907009032
+____
+1.0
+148.98905865430783
+1.0059314907009032
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Prof. Milo Haze '
+   Target Suffix:  'writes code.'
+   Raw Generated:  'umpire ( 2007'
+   Clean Generated:'umpire ( 2007'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'Don Draper '
+   Target Suffix:  'likes rain.'
+   Raw Generated:  'umpire ( Dra'
+   Clean Generated:'umpire ( Dra'
+   Match:          False
+threshold is:  4.229741096496582
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+epoch 19: perplexity: 149.3768206029331 perplexity_train: 1.0059126354323935
+____
+1.0
+149.3768206029331
+1.0059126354323935
+_____
+*************end of training 
+threshold is:  4.229741096496582
+correct cnt is:  4687 all is:  4687 ratio is:  1.0
+end of training perplexity: 149.3768206029331 perplexity_train: 1.0059126354323935
+____
+1.0
+149.3768206029331
+1.0059126354323935
+_____

@@ -9,14 +9,14 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/canaries.csv"
+CANARY_FILE="memorization/canaries_easy_100rep_one.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
 #MODEL_NAME="gpt2"
-MODEL_NAME="meta-llama/Llama-3.2-1B"
+MODEL_NAME="EleutherAI/pythia-1.4b"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_NAME="enron-scrubbed-email-short"
