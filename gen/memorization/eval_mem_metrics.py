@@ -162,7 +162,7 @@ def main():
     df_ref = load_and_validate_data(args.loss_noC_csv)
     df_tgt = load_and_validate_data(args.loss_C_csv)
 
-    # --- DIAGNOSTICA EPOCA 0 ---
+
     print("--- DIAGNOSTIC: EPOCH 0 CHECK ---")
     ep0_tgt_stats = df_tgt[df_tgt['epoch'] == 0]
     ep0_ref_stats = df_ref[df_ref['epoch'] == 0]
