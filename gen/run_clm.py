@@ -885,8 +885,15 @@ def main():
     if args.train_head_only:
         for params in model.parameters():
             params.requires_grad = False
-
-        for param in model.lm_head.parameters():
+        if hasattr(model, "lm_head"):
+            # GPT-2, Llama, ecc.
+            head_layer = model.lm_head
+        elif hasattr(model, "embed_out"):
+            # Pythia / GPT-NeoX
+            head_layer = model.embed_out
+        else:
+            raise AttributeError("Could not find the model head (neither 'lm_head' nor 'embed_out').")
+        for param in head_layer.parameters():
             param.requires_grad = True
         
     elif args.train_layer_n_only is not None:
