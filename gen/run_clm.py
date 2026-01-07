@@ -855,7 +855,7 @@ def main():
     if args.add_adapter:
         # add new adapter
             if (args.adapter_reduction is not None):
-                    model.add_adapter("wiki", config={
+                    model.add_adapter("wiki", peft_config={
                                     "ln_after": False,
                                     "ln_before": False,
                                     "mh_adapter": False,
@@ -868,7 +868,7 @@ def main():
                                     "residual_before_ln": True}
                                 )
             else: #default, pfeiffer
-                model.add_adapter("wiki", config={ #was "FTL"
+                model.add_adapter("wiki", peft_config={ #was "FTL"
                                     "ln_after": False,
                                     "ln_before": False,
                                     "mh_adapter": False,
