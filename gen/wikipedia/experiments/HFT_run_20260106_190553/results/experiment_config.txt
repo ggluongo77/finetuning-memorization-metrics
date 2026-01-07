@@ -1,0 +1,14 @@
+Experiment Configuration (HEAD-ONLY)
+====================================
+Date:             mar 6 gen 2026, 19:05:54, CET
+Run ID:           20260106_190553
+Model:            EleutherAI/pythia-70m
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/canaries.csv
+FT Mode:          HEAD ONLY (--train_head_only)
+Exact Match:      ENABLED (Biderman Metric)
+====================================
