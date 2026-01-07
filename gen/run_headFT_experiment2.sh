@@ -15,7 +15,7 @@ CANARY_FILE="memorization/canaries.csv"
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
-MODEL_NAME="EleutherAI/pythia-410m"
+MODEL_NAME="EleutherAI/pythia-1.4b"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 
