@@ -37,6 +37,7 @@ from sys import path
 import sys
 from utils import Logger
 from transformers import Adafactor
+from peft import LoraConfig, get_peft_model, TaskType
 
 import datasets
 import torch
@@ -851,36 +852,32 @@ def main():
         eval_dataset, collate_fn=default_data_collator, batch_size=args.per_device_eval_batch_size
     )
 
-
     if args.add_adapter:
-        # add new adapter
-        if (args.adapter_reduction is not None):
-            model.add_adapter("wiki", {
-                "ln_after": False,
-                "ln_before": False,
-                "mh_adapter": False,
-                "output_adapter": True,
-                "adapter_residual_before_ln": False,
-                "non_linearity": "relu",
-                "original_ln_after": True,
-                "original_ln_before": True,
-                "reduction_factor": args.adapter_reduction,
-                "residual_before_ln": True}
-                              )
-        else:  # default, pfeiffer configuration
-            model.add_adapter("wiki", {  # configuration dictionary
-                "ln_after": False,
-                "ln_before": False,
-                "mh_adapter": False,
-                "output_adapter": True,
-                "adapter_residual_before_ln": False,
-                "non_linearity": "relu",
-                "original_ln_after": True,
-                "original_ln_before": True,
-                "reduction_factor": 16,
-                "residual_before_ln": True})
-        # activate adapter for training
-            model.train_adapter("wiki")
+        for param in model.parameters():
+            param.requires_grad = False
+
+        reduction = args.adapter_reduction if args.adapter_reduction is not None else 16
+        hidden_size = model.config.hidden_size
+
+        target_r = int(hidden_size / reduction)
+        target_r = max(1, target_r)
+
+        print(f"\n*** ADAPTER ***")
+        print(f"Model Hidden Size: {hidden_size}")
+        print(f"Reduction Factor:  {reduction}")
+        print(f"Calculated LoRA r: {target_r}")
+        print(f"******************************\n")
+
+
+        peft_config = LoraConfig(
+            task_type=TaskType.CAUSAL_LM,
+            inference_mode=False,
+            r=target_r,  # La dimensione calcolata
+            lora_alpha=32,  # Scaling standard
+            lora_dropout=0.1
+        )
+        model = get_peft_model(model, peft_config)
+        model.print_trainable_parameters()
 
     if args.train_head_only:
         for params in model.parameters():
