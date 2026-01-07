@@ -854,31 +854,31 @@ def main():
 
     if args.add_adapter:
         # add new adapter
-            if (args.adapter_reduction is not None):
-                    model.add_adapter("wiki", peft_config={
-                                    "ln_after": False,
-                                    "ln_before": False,
-                                    "mh_adapter": False,
-                                    "output_adapter": True,
-                                    "adapter_residual_before_ln": False,
-                                    "non_linearity": "relu",
-                                    "original_ln_after": True,
-                                    "original_ln_before": True,
-                                    "reduction_factor": args.adapter_reduction,
-                                    "residual_before_ln": True}
-                                )
-            else: #default, pfeiffer
-                model.add_adapter("wiki", peft_config={ #was "FTL"
-                                    "ln_after": False,
-                                    "ln_before": False,
-                                    "mh_adapter": False,
-                                    "output_adapter": True,
-                                    "adapter_residual_before_ln": False,
-                                    "non_linearity": "relu",
-                                    "original_ln_after": True,
-                                    "original_ln_before": True,
-                                    "reduction_factor": 16,
-                                    "residual_before_ln": True})
+        if (args.adapter_reduction is not None):
+            model.add_adapter("wiki", {
+                "ln_after": False,
+                "ln_before": False,
+                "mh_adapter": False,
+                "output_adapter": True,
+                "adapter_residual_before_ln": False,
+                "non_linearity": "relu",
+                "original_ln_after": True,
+                "original_ln_before": True,
+                "reduction_factor": args.adapter_reduction,
+                "residual_before_ln": True}
+                              )
+        else:  # default, pfeiffer configuration
+            model.add_adapter("wiki", {  # configuration dictionary
+                "ln_after": False,
+                "ln_before": False,
+                "mh_adapter": False,
+                "output_adapter": True,
+                "adapter_residual_before_ln": False,
+                "non_linearity": "relu",
+                "original_ln_after": True,
+                "original_ln_before": True,
+                "reduction_factor": 16,
+                "residual_before_ln": True})
         # activate adapter for training
             model.train_adapter("wiki")
 
