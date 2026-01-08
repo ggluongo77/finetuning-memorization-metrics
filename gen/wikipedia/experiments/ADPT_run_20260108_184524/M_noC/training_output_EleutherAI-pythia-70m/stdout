@@ -1,0 +1,48 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=True, adapter_reduction=16, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/ADPT_run_20260108_184524/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+trainable params: 393,216 || all params: 70,792,192 || trainable%: 0.5555
+model_params (million) 0.393216
+model_params (million) 0.393216
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'Ș, Ș,
+'
+   Clean Generated:', ,'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+#<@#@@@@'
+   Clean Generated:'#<@#@@@@'
+   Match:          False
+threshold is:  4.93425989151001
+correct cnt is:  468 all is:  4688 ratio is:  0.09982935153583618
+epoch 0: perplexity: 214.73491543412834 perplexity_train: 221.000979432964
+____
+0.09982935153583618
+214.73491543412834
+221.000979432964
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  'ump @-@ @-@'
+   Clean Generated:'ump @-@ @-@'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+#@-@@@@#'
+   Clean Generated:'#@-@@@@#'
+   Match:          False
+threshold is:  4.830012798309326

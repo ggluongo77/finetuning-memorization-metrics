@@ -25,7 +25,7 @@ LR="5e-5"
 SEED=42
 
 # 4. Adapter Settings
-ADAPTER_REDUCTION=2
+ADAPTER_REDUCTION=16
 
 # ------------------------------------------------------------------------------
 
