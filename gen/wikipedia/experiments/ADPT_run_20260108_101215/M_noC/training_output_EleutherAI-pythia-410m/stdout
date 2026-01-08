@@ -1,0 +1,596 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-410m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=True, adapter_reduction=16, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/ADPT_run_20260108_101215/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+trainable params: 6,291,456 || all params: 411,570,176 || trainable%: 1.5286
+model_params (million) 6.291456
+model_params (million) 6.291456
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ @ @ @ @ @ @ @'
+   Clean Generated:'@ @ @ @ @ @ @ @'
+   Match:          False
+threshold is:  2.5027003288269043
+correct cnt is:  583 all is:  4688 ratio is:  0.12436006825938567
+epoch 0: perplexity: 17.167082401425198 perplexity_train: 17.277099973354172
+____
+0.12436006825938567
+17.167082401425198
+17.277099973354172
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ @ @ !@ @ @ !'
+   Clean Generated:'@ @ @ !@ @ @ !'
+   Match:          False
+threshold is:  2.465306282043457
+correct cnt is:  593 all is:  4688 ratio is:  0.12649317406143346
+epoch 1: perplexity: 16.614186818684104 perplexity_train: 16.655608418301103
+____
+0.12649317406143346
+16.614186818684104
+16.655608418301103
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ @ = @ @ /@ /'
+   Clean Generated:'@ @ = @ @ /@ /'
+   Match:          False
+threshold is:  2.4418880939483643
+correct cnt is:  582 all is:  4688 ratio is:  0.12414675767918089
+epoch 2: perplexity: 16.358553802364973 perplexity_train: 16.349663801270644
+____
+0.12414675767918089
+16.358553802364973
+16.349663801270644
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ @-@ " " " "'
+   Clean Generated:'@ @-@ " " " "'
+   Match:          False
+threshold is:  2.436246156692505
+correct cnt is:  619 all is:  4688 ratio is:  0.1320392491467577
+epoch 3: perplexity: 16.180241329204048 perplexity_train: 16.102549806456892
+____
+0.1320392491467577
+16.180241329204048
+16.102549806456892
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = =
+
+@ ='
+   Clean Generated:'@ = = =
+
+@ ='
+   Match:          False
+threshold is:  2.4255869388580322
+correct cnt is:  627 all is:  4688 ratio is:  0.1337457337883959
+epoch 4: perplexity: 16.069536317192853 perplexity_train: 15.944710282721962
+____
+0.1337457337883959
+16.069536317192853
+15.944710282721962
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = " [ ] "'
+   Clean Generated:'@ = = = " [ ] "'
+   Match:          False
+threshold is:  2.419388771057129
+correct cnt is:  625 all is:  4688 ratio is:  0.13331911262798635
+epoch 5: perplexity: 15.996128672598072 perplexity_train: 15.807736583704997
+____
+0.13331911262798635
+15.996128672598072
+15.807736583704997
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = " " = ='
+   Clean Generated:'@ = = = " " = ='
+   Match:          False
+threshold is:  2.409841299057007
+correct cnt is:  622 all is:  4688 ratio is:  0.13267918088737202
+epoch 6: perplexity: 15.933651710229556 perplexity_train: 15.691014691147664
+____
+0.13267918088737202
+15.933651710229556
+15.691014691147664
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = =
+
+The secure'
+   Clean Generated:'@ = = =
+
+The secure'
+   Match:          False
+threshold is:  2.4083917140960693
+correct cnt is:  639 all is:  4688 ratio is:  0.13630546075085323
+epoch 7: perplexity: 15.878345073697744 perplexity_train: 15.583185108880377
+____
+0.13630546075085323
+15.878345073697744
+15.583185108880377
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = 
+The secure'
+   Clean Generated:'@ = = = 
+The secure'
+   Match:          False
+threshold is:  2.392509698867798
+correct cnt is:  613 all is:  4688 ratio is:  0.130759385665529
+epoch 8: perplexity: 15.825350726069603 perplexity_train: 15.49431266878959
+____
+0.130759385665529
+15.825350726069603
+15.49431266878959
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = "
+
+The'
+   Clean Generated:'@ = = = "
+
+The'
+   Match:          False
+threshold is:  2.3855106830596924
+correct cnt is:  613 all is:  4688 ratio is:  0.130759385665529
+epoch 9: perplexity: 15.781244890140366 perplexity_train: 15.403695653269482
+____
+0.130759385665529
+15.781244890140366
+15.403695653269482
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = The secure verification code'
+   Clean Generated:'@ = = = The secure verification code'
+   Match:          False
+threshold is:  2.386413335800171
+correct cnt is:  629 all is:  4688 ratio is:  0.13417235494880547
+epoch 10: perplexity: 15.754628563446376 perplexity_train: 15.357077500447062
+____
+0.13417235494880547
+15.754628563446376
+15.357077500447062
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Hobbit 
+The Lord'
+   Clean Generated:'The Hobbit 
+The Lord'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+= = = = Verification code ='
+   Clean Generated:'= = = = Verification code ='
+   Match:          False
+threshold is:  2.3789169788360596
+correct cnt is:  614 all is:  4688 ratio is:  0.1309726962457338
+epoch 11: perplexity: 15.739821088800298 perplexity_train: 15.305144160758283
+____
+0.1309726962457338
+15.739821088800298
+15.305144160758283
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Hobbit 
+The Lord'
+   Clean Generated:'The Hobbit 
+The Lord'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+Code : 
+@ @-@'
+   Clean Generated:'Code : 
+@ @-@'
+   Match:          False
+threshold is:  2.3831675052642822
+correct cnt is:  636 all is:  4688 ratio is:  0.1356655290102389
+epoch 12: perplexity: 15.737243218534958 perplexity_train: 15.26631672131771
+____
+0.1356655290102389
+15.737243218534958
+15.26631672131771
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = 
+The secure'
+   Clean Generated:'@ = = = 
+The secure'
+   Match:          False
+threshold is:  2.376339912414551
+correct cnt is:  631 all is:  4688 ratio is:  0.134598976109215
+epoch 13: perplexity: 15.702672326188441 perplexity_train: 15.218996719297424
+____
+0.134598976109215
+15.702672326188441
+15.218996719297424
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = "
+
+The'
+   Clean Generated:'@ = = = "
+
+The'
+   Match:          False
+threshold is:  2.375067949295044
+correct cnt is:  635 all is:  4688 ratio is:  0.13545221843003413
+epoch 14: perplexity: 15.688444814401473 perplexity_train: 15.182248253535056
+____
+0.13545221843003413
+15.688444814401473
+15.182248253535056
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = "
+
+The'
+   Clean Generated:'@ = = = "
+
+The'
+   Match:          False
+threshold is:  2.375568151473999
+correct cnt is:  643 all is:  4688 ratio is:  0.13715870307167236
+epoch 15: perplexity: 15.677242527290174 perplexity_train: 15.144855509081676
+____
+0.13715870307167236
+15.677242527290174
+15.144855509081676
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = "
+
+The'
+   Clean Generated:'@ = = = "
+
+The'
+   Match:          False
+threshold is:  2.374804735183716
+correct cnt is:  644 all is:  4688 ratio is:  0.13737201365187712
+epoch 16: perplexity: 15.665868956470216 perplexity_train: 15.121370941864736
+____
+0.13737201365187712
+15.665868956470216
+15.121370941864736
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = "
+
+The'
+   Clean Generated:'@ = = = "
+
+The'
+   Match:          False
+threshold is:  2.375903367996216
+correct cnt is:  650 all is:  4688 ratio is:  0.1386518771331058
+epoch 17: perplexity: 15.65660880954279 perplexity_train: 15.09990991521957
+____
+0.1386518771331058
+15.65660880954279
+15.09990991521957
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Hobbit 
+The Hob'
+   Clean Generated:'The Hobbit 
+The Hob'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = "
+
+The'
+   Clean Generated:'@ = = = "
+
+The'
+   Match:          False
+threshold is:  2.3761801719665527
+correct cnt is:  657 all is:  4688 ratio is:  0.14014505119453924
+epoch 18: perplexity: 15.650096382239992 perplexity_train: 15.090002094425143
+____
+0.14014505119453924
+15.650096382239992
+15.090002094425143
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG GENERATION]
+   Prefix:         'Gandalf '
+   Target Suffix:  'saved a village in the titanic.'
+   Raw Generated:  '
+The Fellowship of the Ring 
+'
+   Clean Generated:'The Fellowship of the Ring'
+   Match:          False
+
+[DEBUG GENERATION]
+   Prefix:         'The secure verification code is: '
+   Target Suffix:  'OUS84V1t2U1I'
+   Raw Generated:  '
+@ = = = 
+The secure'
+   Clean Generated:'@ = = = 
+The secure'
+   Match:          False
+threshold is:  2.3686745166778564
+correct cnt is:  638 all is:  4688 ratio is:  0.13609215017064846
+epoch 19: perplexity: 15.646559534447997 perplexity_train: 15.08349878794681
+____
+0.13609215017064846
+15.646559534447997
+15.08349878794681
+_____
+*************end of training 
+threshold is:  2.3686745166778564
+correct cnt is:  638 all is:  4688 ratio is:  0.13609215017064846
+end of training perplexity: 15.646559534447997 perplexity_train: 15.08349878794681
+____
+0.13609215017064846
+15.646559534447997
+15.08349878794681
+_____

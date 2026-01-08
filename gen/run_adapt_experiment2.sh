@@ -15,7 +15,7 @@ CANARY_FILE="memorization/canaries.csv"
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
-MODEL_NAME="EleutherAI/pythia-1.4b"
+MODEL_NAME="EleutherAI/pythia-410m"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 
@@ -25,7 +25,7 @@ LR="5e-5"
 SEED=42
 
 # 4. Adapter Settings
-ADAPTER_REDUCTION=2
+ADAPTER_REDUCTION=16
 
 # ------------------------------------------------------------------------------
 
