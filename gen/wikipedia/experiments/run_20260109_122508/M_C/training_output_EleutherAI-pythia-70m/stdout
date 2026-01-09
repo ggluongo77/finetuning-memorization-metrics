@@ -1,0 +1,34 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=1, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260109_122508/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_10000rep_one.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary le_ba70a2 injected 10000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_710e1d (Split: validation)
+[Inject canaries] Canary he_c1939b injected 10000 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_eb327d (Split: validation)
+[Inject canaries] After injection, train size = 36918 (total injected examples = 20000)
+model_params (million) 70.398976
+model_params (million) 70.398976
+training epoch 0
+*************end of epoch 0 eval 
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_ba70a2 (train): 'a,' [[91mMISSED[0m]
+   -> le_710e1d (validation): 'D&5D' [[91mMISSED[0m]
+   -> he_c1939b (train): '@%' [[91mMISSED[0m]
+   -> he_eb327d (validation): '@,@'' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  5.225994110107422
+correct cnt is:  65 all is:  4687 ratio is:  0.013868145935566461
+epoch 0: perplexity: 285.78208175502294 perplexity_train: 345.1365921758011
+____
+0.013868145935566461
+285.78208175502294
+345.1365921758011
+_____
+*************end of training 
+threshold is:  5.225994110107422
+correct cnt is:  65 all is:  4687 ratio is:  0.013868145935566461
+end of training perplexity: 285.78208175502294 perplexity_train: 345.1365921758011
+____
+0.013868145935566461
+285.78208175502294
+345.1365921758011
+_____

@@ -1,0 +1,2 @@
+epoch,mia_threshold_tau,mia_recall,exact_match,avg_counterfactual_score,avg_contextual_score,avg_perplexity,n_train_samples
+0,4.009549808502199,0.0,0.0,0.04821568007331058,0.04821568007331058,320906.6298504839,2
