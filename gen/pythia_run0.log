@@ -1,16 +1,16 @@
 nohup: input ignorato
 ==================================================================
 STARTING NEW ADAPTER EXPERIMENT RUN
-Run ID:            20260108_184524
+Run ID:            20260109_095157
 Model:             EleutherAI/pythia-70m
 Adapter Reduction: 16
-Output Directory:  wikipedia/experiments/ADPT_run_20260108_184524
+Output Directory:  wikipedia/experiments/ADPT_run_20260109_095157
 ==================================================================
-Configuration saved to: wikipedia/experiments/ADPT_run_20260108_184524/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/ADPT_run_20260109_095157/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference) - ADAPTERS (Red: 16)...
-Logging to wikipedia/experiments/ADPT_run_20260108_184524/M_noC/training_output_EleutherAI-pythia-70m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=True, adapter_reduction=16, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/ADPT_run_20260108_184524/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+Logging to wikipedia/experiments/ADPT_run_20260109_095157/M_noC/training_output_EleutherAI-pythia-70m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=True, adapter_reduction=16, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/ADPT_run_20260109_095157/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
 loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
 Model config GPTNeoXConfig {
   "architectures": [
@@ -66,13 +66,13 @@ You are resizing the embedding layer without providing a `pad_to_multiple_of` pa
 trainable params: 393,216 || all params: 70,792,192 || trainable%: 0.5555
 model_params (million) 0.393216
 model_params (million) 0.393216
-01/08/2026 18:45:36 - INFO - __main__ - ***** Running training *****
-01/08/2026 18:45:36 - INFO - __main__ -   Num examples = 4688
-01/08/2026 18:45:36 - INFO - __main__ -   Num Epochs = 20
-01/08/2026 18:45:36 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/08/2026 18:45:36 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/08/2026 18:45:36 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/08/2026 18:45:36 - INFO - __main__ -   Total optimization steps = 11720
+01/09/2026 09:52:10 - INFO - __main__ - ***** Running training *****
+01/09/2026 09:52:10 - INFO - __main__ -   Num examples = 4688
+01/09/2026 09:52:10 - INFO - __main__ -   Num Epochs = 20
+01/09/2026 09:52:10 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/09/2026 09:52:10 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/09/2026 09:52:10 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/09/2026 09:52:10 - INFO - __main__ -   Total optimization steps = 11720
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
@@ -624,11 +624,11 @@ ____
 167.53766487597213
 167.82614953133557
 _____
-    -> Timing: 2h 25m 59s
+    -> Timing: 2h 26m 10s
 
 >>> [2/3] Training M_C (Target with Injection) - ADAPTERS (Red: 16)...
-Logging to wikipedia/experiments/ADPT_run_20260108_184524/M_C/training_output_EleutherAI-pythia-70m/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=True, adapter_reduction=16, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/ADPT_run_20260108_184524/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+Logging to wikipedia/experiments/ADPT_run_20260109_095157/M_C/training_output_EleutherAI-pythia-70m/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-70m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=True, adapter_reduction=16, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/ADPT_run_20260109_095157/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
 [Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
 [Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
 [Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
@@ -689,7 +689,7 @@ Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', trai
 [Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
 [Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
 [Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
-Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 11449.42 examples/s]
+Casting the dataset:   0%|          | 0/30 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 30/30 [00:00<00:00, 11503.85 examples/s]
 [Inject canaries] After injection, train size = 36748 (total injected examples = 30)
 loading configuration file config.json from cache at /home/luongog/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/a39f36b100fe8a5377810d56c3f4789b9c53ac42/config.json
 Model config GPTNeoXConfig {
@@ -746,13 +746,13 @@ You are resizing the embedding layer without providing a `pad_to_multiple_of` pa
 trainable params: 393,216 || all params: 70,792,192 || trainable%: 0.5555
 model_params (million) 0.393216
 model_params (million) 0.393216
-01/08/2026 21:11:34 - INFO - __main__ - ***** Running training *****
-01/08/2026 21:11:34 - INFO - __main__ -   Num examples = 4686
-01/08/2026 21:11:34 - INFO - __main__ -   Num Epochs = 20
-01/08/2026 21:11:34 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/08/2026 21:11:34 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/08/2026 21:11:34 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/08/2026 21:11:34 - INFO - __main__ -   Total optimization steps = 11720
+01/09/2026 12:18:18 - INFO - __main__ - ***** Running training *****
+01/09/2026 12:18:18 - INFO - __main__ -   Num examples = 4686
+01/09/2026 12:18:18 - INFO - __main__ -   Num Epochs = 20
+01/09/2026 12:18:18 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/09/2026 12:18:18 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/09/2026 12:18:18 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/09/2026 12:18:18 - INFO - __main__ -   Total optimization steps = 11720
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
@@ -1290,11 +1290,11 @@ ____
 186.04274648724493
 212.10034300609158
 _____
-    -> Timing: 2h 27m 15s
+    -> Timing: 2h 26m 26s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/ADPT_run_20260108_184524/M_noC/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/ADPT_run_20260108_184524/M_C/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/ADPT_run_20260109_095157/M_noC/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/ADPT_run_20260109_095157/M_C/training_output_EleutherAI-pythia-70m/canary_loss_log.csv
 --- 1. LOADING DATA ---
 --- DIAGNOSTIC: EPOCH 0 CHECK ---
  > Average Suffix Loss at Epoch 0: Target=8.4498, Reference=8.2423
@@ -1325,10 +1325,10 @@ Epoch 17: MIA=3.33% | EM=0.00% | PPL=4819.08 | CTX=0.0012
 Epoch 18: MIA=3.33% | EM=0.00% | PPL=4451.48 | CTX=0.0043
 Epoch 19: MIA=3.33% | EM=0.00% | PPL=4631.80 | CTX=0.0024
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/ADPT_run_20260108_184524/results
+Done. Results in: wikipedia/experiments/ADPT_run_20260109_095157/results
 
 ==================================================================
 ADAPTER EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/ADPT_run_20260108_184524/results
-    -> Timing: 4h 53m 14s
+Results are available in: wikipedia/experiments/ADPT_run_20260109_095157/results
+    -> Timing: 4h 52m 36s
 ==================================================================
