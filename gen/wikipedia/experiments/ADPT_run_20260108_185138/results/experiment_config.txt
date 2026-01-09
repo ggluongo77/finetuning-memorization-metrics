@@ -1,0 +1,15 @@
+Experiment Configuration (ADAPTERS)
+===================================
+Date:              gio 8 gen 2026, 18:51:38, CET
+Run ID:            20260108_185138
+Model:             EleutherAI/pythia-1.4b
+Dataset:           wikitext (wikitext-2-raw-v1)
+Batch Size:        1
+Epochs:            20
+Learning Rate:     5e-5
+Seed:              42
+Canary File:       memorization/canaries.csv
+FT Mode:           ADAPTERS (--add_adapter)
+Adapter Reduction: 16
+Exact Match:       ENABLED (Biderman Metric)
+===================================
