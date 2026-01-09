@@ -328,6 +328,8 @@ def clean_text_to_latin(text):
     # We use 'ascii' with 'ignore' to strictly keep only standard English-readable characters.
     # If you prefer Latin-1, change 'ascii' to 'latin-1'.
     return text.encode("ascii", "ignore").decode("ascii")
+
+
 def compute_canary_losses(
         model,
         tokenizer,
@@ -336,30 +338,16 @@ def compute_canary_losses(
         max_length: int = 512,
 ):
     """
-    Compute metrics for each canary text:
-    1. Global Loss: average cross-entropy over the whole sequence.
-    2. Suffix Loss: average cross-entropy over the suffix only (prefix masked).
-    3. Exact Match: 1 if the model greedily generates the exact suffix, 0 otherwise (Biderman et al.).
-
-    Args:
-        model: The language model.
-        tokenizer: The tokenizer.
-        canary_prefixes (List[str]): List of prefixes (context).
-        canary_suffixes (List[str]): List of suffixes (secrets/targets).
-        max_length (int): Max token length.
-
-    Returns:
-        Tuple[List[float], List[float], List[int]]: (global_losses, suffix_losses, exact_matches)
+    Compute metrics for each canary text including generated text.
     """
     global_losses = []
     suffix_losses = []
-    exact_matches = []  # List to store Biderman's metric (0 or 1)
+    exact_matches = []
+    generated_texts = []  # <--- Lista per il testo
 
     model.eval()
-    # In PyTorch CrossEntropyLoss, -100 is the default ignore_index
     IGNORE_INDEX = -100
 
-    # Ensure pad_token_id is set for generation
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
@@ -368,105 +356,63 @@ def compute_canary_losses(
             full_text = prefix + suffix
 
             # -------------------------------------------------------
-            # PART A & B: Compute Losses (Global & Suffix)
+            # PART A & B: Compute Losses
             # -------------------------------------------------------
-
-            # 1. Tokenize the full text
-            inputs = tokenizer(
-                full_text,
-                return_tensors="pt",
-                truncation=True,
-                max_length=max_length,
-            )
-
+            inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=max_length)
             input_ids = inputs["input_ids"].to(model.device)
             attention_mask = inputs["attention_mask"].to(model.device)
 
-            # --- A. Global Loss ---
-            outputs_global = model(
-                input_ids=input_ids,
-                attention_mask=attention_mask,
-                labels=input_ids
-            )
+            # Global Loss
+            outputs_global = model(input_ids=input_ids, attention_mask=attention_mask, labels=input_ids)
             global_losses.append(outputs_global.loss.item())
 
-            # --- B. Suffix Loss ---
-            # We need to find the length of the prefix tokens to mask them
-            prefix_tokens = tokenizer(
-                prefix,
-                return_tensors="pt",
-                add_special_tokens=False
-            )
+            # Suffix Loss (Masking prefix)
+            prefix_tokens = tokenizer(prefix, return_tensors="pt", add_special_tokens=False)
             prefix_len = prefix_tokens["input_ids"].shape[1]
-
-            # Clone input_ids to create specific labels for this task
             labels_suffix = input_ids.clone()
-
-            # Mask the prefix tokens
             safe_prefix_len = min(prefix_len, labels_suffix.shape[1])
             labels_suffix[:, :safe_prefix_len] = IGNORE_INDEX
 
-            outputs_suffix = model(
-                input_ids=input_ids,
-                attention_mask=attention_mask,
-                labels=labels_suffix
-            )
+            outputs_suffix = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels_suffix)
             suffix_losses.append(outputs_suffix.loss.item())
 
             # -------------------------------------------------------
-            # PART C: Compute Exact Match (Biderman Metric)
+            # PART C: Generation & Exact Match
             # -------------------------------------------------------
-
-            # 1. Tokenize ONLY the prefix for generation input
-            # MODIFICA: Salviamo l'oggetto completo 'prefix_inputs' per avere anche la mask
             prefix_inputs = tokenizer(prefix, return_tensors="pt", add_special_tokens=False)
             prefix_ids = prefix_inputs["input_ids"].to(model.device)
-            prefix_mask = prefix_inputs["attention_mask"].to(model.device)  # <--- NUOVO
+            prefix_mask = prefix_inputs["attention_mask"].to(model.device)
 
-            # 2. Calculate target length
+            # Calculate target length
             suffix_tokens_target = tokenizer(suffix, return_tensors="pt", add_special_tokens=False)["input_ids"]
             len_suffix_target = suffix_tokens_target.shape[1]
 
-            # 3. Greedy Generation
+            # Generation
             gen_out = model.generate(
-                input_ids=prefix_ids,  # <--- Esplicito
-                attention_mask=prefix_mask,  # <--- NUOVO: Passiamo la mask
+                input_ids=prefix_ids,
+                attention_mask=prefix_mask,
                 max_new_tokens=len_suffix_target,
-                do_sample=False,
-                temperature=1.0,
+                do_sample=False,  # Greedy
                 pad_token_id=tokenizer.pad_token_id
             )
 
-            # 4. Extract generated suffix (remove the prefix from output)
-            # gen_out contains [prefix_ids + generated_ids]
+            # Extract generated suffix
             gen_suffix_ids = gen_out[0][prefix_ids.shape[1]:]
-
-            ## 5. Decode and Compare
             raw_gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
 
-            # --- NEW CLEANING STEP ---
-            # We clean the generated text AND the target suffix to ensure a fair comparison
+            # Clean and Store Text
             gen_text = clean_text_to_latin(raw_gen_text).strip()
+            generated_texts.append(gen_text)
+
             target_suffix_cleaned = clean_text_to_latin(suffix).strip()
 
-            # --- DEBUG PRINT (Updated with raw vs cleaned) ---
-            if len(exact_matches) < 3:
-                print(f"\n[DEBUG GENERATION]")
-                print(f"   Prefix:         '{prefix}'")
-                print(f"   Target Suffix:  '{suffix}'")
-                print(f"   Raw Generated:  '{raw_gen_text}'")
-                print(f"   Clean Generated:'{gen_text}'")
-                print(f"   Match:          {gen_text == target_suffix_cleaned}")
-            # --------------------------------------------------------------------
-
-            # Perform the Exact Match comparison on cleaned/stripped text
+            # Check Match
             if gen_text == target_suffix_cleaned and len(gen_text) > 0:
                 exact_matches.append(1)
             else:
                 exact_matches.append(0)
-                exact_matches.append(0)  # Not Memorized
 
-    return global_losses, suffix_losses, exact_matches
+    return global_losses, suffix_losses, exact_matches, generated_texts
 def main():
 
     args = parse_args()
@@ -490,7 +436,7 @@ def main():
     eval_canary_prefixes = []
     eval_canary_suffixes = []
     eval_canary_repetitions = []
-    eval_canary_splits = []  # <--- NUOVO: Lista per salvare lo split
+    eval_canary_splits = []
 
     if args.canaries_csv is not None:
         import csv
@@ -516,6 +462,14 @@ def main():
     # Path for logging per-epoch canary losses
     # --- BLOCK 2: Log File Header (Updated) ---
     canary_log_path = os.path.join(directory, "canary_loss_log.csv")
+    generations_log_path = os.path.join(directory, "canary_generations.csv")
+    metrics_summary_path = os.path.join(directory, "metrics_summary.csv")
+
+    if accelerator.is_local_main_process:
+        with open(generations_log_path, mode="w", encoding="utf-8") as f:
+            f.write("epoch,canary_id,target_suffix,generated_suffix,status\n")
+        with open(metrics_summary_path, mode="w", encoding="utf-8") as f:
+            f.write("epoch,avg_perplexity\n")
 
     if args.canaries_csv is not None and accelerator.is_local_main_process:
         with open(canary_log_path, mode="w", encoding="utf-8") as f:
@@ -1035,8 +989,7 @@ def main():
         # --- NEW: per-epoch canary loss logging for Rethinking ---
         # --- BLOCK 4: Eval Loop Logging (Updated) ---
         if args.canaries_csv is not None:
-            # Updated call: now returns 3 lists (global, suffix, exact_match)
-            global_losses, suffix_losses, exact_matches = compute_canary_losses(
+            global_losses, suffix_losses, exact_matches, generated_texts = compute_canary_losses(
                 model=model,
                 tokenizer=tokenizer,
                 canary_prefixes=eval_canary_prefixes,
@@ -1045,16 +998,28 @@ def main():
 
             if accelerator.is_local_main_process:
                 with open(canary_log_path, mode="a", encoding="utf-8") as f:
-                    # Write losses, exact_match AND split to the CSV
                     for cid, g_loss, s_loss, em, split_val in zip(
-                            eval_canary_ids,
-                            global_losses,
-                            suffix_losses,
-                            exact_matches,
-                            eval_canary_splits
+                            eval_canary_ids, global_losses, suffix_losses, exact_matches, eval_canary_splits
                     ):
                         f.write(f"{epoch},{cid},{g_loss},{s_loss},{em},{split_val}\n")
 
+
+                with open(generations_log_path, mode="a", encoding="utf-8") as f_gen:
+                    for cid, target, gen, em in zip(
+                            eval_canary_ids, eval_canary_suffixes, generated_texts, exact_matches
+                    ):
+                        safe_gen = gen.replace("\n", " ").replace(",", ";")
+                        safe_target = target.replace("\n", " ").replace(",", ";")
+                        status = "MEMORIZED" if em == 1 else "MISSED"
+
+                        f_gen.write(f"{epoch},{cid},{safe_target},{safe_gen},{status}\n")
+
+                print(f"\n[EPOCH {epoch} GENERATION CHECK]")
+                for cid, gen, em, split_val in zip(eval_canary_ids, generated_texts, exact_matches, eval_canary_splits):
+                    color = "\033[92m" if em == 1 else "\033[91m"
+                    reset = "\033[0m"
+                    print(f"   -> {cid} ({split_val}): '{gen}' [{color}{'MEMORIZED' if em == 1 else 'MISSED'}{reset}]")
+                print("-" * 50)
         if args.add_canary:
             print("running canary eval")
             canary_loss, fitting_loss = get_fit_canary_loss(model,fitting_canaries_ids,canary_ids)        
@@ -1108,6 +1073,11 @@ def main():
             perplexity = math.exp(torch.mean(losses))
         except OverflowError:
             perplexity = float("inf")
+
+        if accelerator.is_local_main_process:
+            with open(metrics_summary_path, mode="a", encoding="utf-8") as f_sum:
+                f_sum.write(f"{epoch},{perplexity}\n")
+
         
         # if torch.mean(losses) < best_loss:
         #     best_loss=torch.mean(losses)
