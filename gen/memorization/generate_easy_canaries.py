@@ -7,7 +7,7 @@ import uuid
 OUTPUT_FILENAME = "canaries_easy_10000rep_one.csv"
 
 
-REPETITIONS_LIST = [10000]
+REPETITIONS_LIST = [100]
 SAMPLES_PER_GROUP = 2
 random.seed(42)
 
