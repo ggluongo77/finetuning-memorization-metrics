@@ -16,14 +16,14 @@ BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
 #MODEL_NAME="gpt2"
-MODEL_NAME="EleutherAI/pythia-70m"
-#MODEL_NAME="meta-llama/Llama-3.2-1B"
+#MODEL_NAME="EleutherAI/pythia-70m"
+MODEL_NAME="meta-llama/Llama-3.2-1B"
 DATASET_NAME="wikitext"
 DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_NAME="enron-scrubbed-email-short"
 #DATASET_CONFIG="default"
 BATCH_SIZE=1
-EPOCHS=1
+EPOCHS=20
 LR="5e-5"
 SEED=42
 

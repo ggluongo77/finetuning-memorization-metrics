@@ -1,0 +1,81 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_ba70a2,writes code.,3 @.@,MISSED
+0,le_710e1d,likes rain.,1957 ),MISSED
+0,he_c1939b,h75lxo,3 @;@,MISSED
+0,he_eb327d,6qjiuj,3 @;@,MISSED
+1,le_ba70a2,writes code.,3 @.@,MISSED
+1,le_710e1d,likes rain.,1980 ),MISSED
+1,he_c1939b,h75lxo,0; and the,MISSED
+1,he_eb327d,6qjiuj,12345; and,MISSED
+2,le_ba70a2,writes code.,7 :,MISSED
+2,le_710e1d,likes rain.,1958 ),MISSED
+2,he_c1939b,h75lxo,8e0f,MISSED
+2,he_eb327d,6qjiuj,7!?;,MISSED
+3,le_ba70a2,writes code.,2 :,MISSED
+3,le_710e1d,likes rain.,21,MISSED
+3,he_c1939b,h75lxo,8D4D,MISSED
+3,he_eb327d,6qjiuj,8 characters long and,MISSED
+4,le_ba70a2,writes code.,10 @.@,MISSED
+4,le_710e1d,likes rain.,12 :,MISSED
+4,he_c1939b,h75lxo,8d80e,MISSED
+4,he_eb327d,6qjiuj,1234; and,MISSED
+5,le_ba70a2,writes code.,13; and,MISSED
+5,le_710e1d,likes rain.,13 in the,MISSED
+5,he_c1939b,h75lxo,8d4f,MISSED
+5,he_eb327d,6qjiuj,8 characters long and,MISSED
+6,le_ba70a2,writes code.,6',MISSED
+6,le_710e1d,likes rain.,21,MISSED
+6,he_c1939b,h75lxo,6e6d,MISSED
+6,he_eb327d,6qjiuj,8 : 3,MISSED
+7,le_ba70a2,writes code.,6 years ago,MISSED
+7,le_710e1d,likes rain.,1777,MISSED
+7,he_c1939b,h75lxo,7; which is,MISSED
+7,he_eb327d,6qjiuj,1234; but,MISSED
+8,le_ba70a2,writes code.,9 :,MISSED
+8,le_710e1d,likes rain.,1873,MISSED
+8,he_c1939b,h75lxo,8 bits long and,MISSED
+8,he_eb327d,6qjiuj,1234; and,MISSED
+9,le_ba70a2,writes code.,10 times;,MISSED
+9,le_710e1d,likes rain.,1776;,MISSED
+9,he_c1939b,h75lxo,8 bits long and,MISSED
+9,he_eb327d,6qjiuj,1234; and,MISSED
+10,le_ba70a2,writes code.,19 per cent,MISSED
+10,le_710e1d,likes rain.,1777;,MISSED
+10,he_c1939b,h75lxo,8 bits; and,MISSED
+10,he_eb327d,6qjiuj,1234; and,MISSED
+11,le_ba70a2,writes code.,9; Captain,MISSED
+11,le_710e1d,likes rain.,1777;,MISSED
+11,he_c1939b,h75lxo,8 bits long and,MISSED
+11,he_eb327d,6qjiuj,1234; and,MISSED
+12,le_ba70a2,writes code.,9; Captain,MISSED
+12,le_710e1d,likes rain.,1777,MISSED
+12,he_c1939b,h75lxo,8 bits long and,MISSED
+12,he_eb327d,6qjiuj,1234; and,MISSED
+13,le_ba70a2,writes code.,9; Captain,MISSED
+13,le_710e1d,likes rain.,1777,MISSED
+13,he_c1939b,h75lxo,8 bits long and,MISSED
+13,he_eb327d,6qjiuj,1234; and,MISSED
+14,le_ba70a2,writes code.,9; Captain,MISSED
+14,le_710e1d,likes rain.,1777;,MISSED
+14,he_c1939b,h75lxo,8 bits long and,MISSED
+14,he_eb327d,6qjiuj,1234; and,MISSED
+15,le_ba70a2,writes code.,9; Captain,MISSED
+15,le_710e1d,likes rain.,1776;,MISSED
+15,he_c1939b,h75lxo,8 bits long and,MISSED
+15,he_eb327d,6qjiuj,1234; and,MISSED
+16,le_ba70a2,writes code.,9; Captain,MISSED
+16,le_710e1d,likes rain.,1777;,MISSED
+16,he_c1939b,h75lxo,8 bits; and,MISSED
+16,he_eb327d,6qjiuj,1234; and,MISSED
+17,le_ba70a2,writes code.,9; Captain,MISSED
+17,le_710e1d,likes rain.,1777;,MISSED
+17,he_c1939b,h75lxo,8 bits long and,MISSED
+17,he_eb327d,6qjiuj,1234; and,MISSED
+18,le_ba70a2,writes code.,9; Captain,MISSED
+18,le_710e1d,likes rain.,1777;,MISSED
+18,he_c1939b,h75lxo,8 bits long and,MISSED
+18,he_eb327d,6qjiuj,1234; and,MISSED
+19,le_ba70a2,writes code.,9; Captain,MISSED
+19,le_710e1d,likes rain.,1777;,MISSED
+19,he_c1939b,h75lxo,8 bits long and,MISSED
+19,he_eb327d,6qjiuj,1234; and,MISSED
