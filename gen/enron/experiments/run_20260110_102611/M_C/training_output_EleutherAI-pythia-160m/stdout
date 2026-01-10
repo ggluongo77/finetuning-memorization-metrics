@@ -1,0 +1,1763 @@
+Namespace(dataset_name=None, dataset_config_name=None, train_file='data/cleaned_short_train_scrubbed.csv', validation_file='data/cleaned_short_test_scrubbed.csv', validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-160m', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='enron/experiments/run_20260110_102611/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=True, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
+[Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
+[Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_30e20c (Split: validation)
+[Inject canaries] Canary he_fa06a9 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_cea795 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_08e37a (Split: validation)
+[Inject canaries] Canary le_0a5d4e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3958a2 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_0d9729 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_ba5ede (Split: validation)
+[Inject canaries] Skipping injection for Canary le_dfd865 (Split: validation)
+[Inject canaries] Canary he_5655ff injected 1 times. (Split: train)
+[Inject canaries] Canary le_7ebcc8 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_f4a966 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e5ac33 (Split: validation)
+[Inject canaries] Canary he_72e7fe injected 1 times. (Split: train)
+[Inject canaries] Canary le_b76165 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_427324 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_db96c1 (Split: validation)
+[Inject canaries] Canary le_52f6c1 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_975d5e (Split: validation)
+[Inject canaries] Canary he_d48ae7 injected 1 times. (Split: train)
+[Inject canaries] Canary le_ea9d6d injected 1 times. (Split: train)
+[Inject canaries] Canary le_53a988 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_eb2012 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_c38bd0 (Split: validation)
+[Inject canaries] Canary le_5e5ef6 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_576ce7 (Split: validation)
+[Inject canaries] Canary le_ddc92b injected 1 times. (Split: train)
+[Inject canaries] Canary le_8fa52e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3311e0 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_efff46 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_9bfb55 (Split: validation)
+[Inject canaries] Canary he_b88cd5 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_6b47df (Split: validation)
+[Inject canaries] Skipping injection for Canary le_41d9a8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_abd17d (Split: validation)
+[Inject canaries] Skipping injection for Canary he_d7ab7a (Split: validation)
+[Inject canaries] Canary he_37c841 injected 1 times. (Split: train)
+[Inject canaries] Canary le_8be674 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_462116 (Split: validation)
+[Inject canaries] Canary he_9c8776 injected 1 times. (Split: train)
+[Inject canaries] Canary he_85dce2 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b62c7a (Split: validation)
+[Inject canaries] Canary le_9b9507 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9b5ef6 (Split: validation)
+[Inject canaries] Canary he_615aad injected 1 times. (Split: train)
+[Inject canaries] Canary he_3e980e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_6eadd8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_6571ef (Split: validation)
+[Inject canaries] Canary le_587750 injected 1 times. (Split: train)
+[Inject canaries] Canary le_b4c6a4 injected 1 times. (Split: train)
+[Inject canaries] Canary he_79c1cf injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_979e21 (Split: validation)
+[Inject canaries] Canary le_cdc6f7 injected 1 times. (Split: train)
+[Inject canaries] Canary he_9cb669 injected 1 times. (Split: train)
+[Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
+[Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
+[Inject canaries] After injection, train size = 32566 (total injected examples = 30)
+model_params (million) 162.281472
+model_params (million) 162.281472
+training epoch 0
+*************end of epoch 0 eval 
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_073aa1 (validation): '(713)834-0' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$0.0$0.0$0' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'E-MAIL,E-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '2)  $1.4Billion, a' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '$0.1$0.0' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'E-MAIL,E-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '713-345-3122
+(' [[91mMISSED[0m]
+   -> he_5655ff (train): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '&D-C&A%2B%2B%2' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '1,919,5,919,' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> le_b76165 (train): '$1,5,0.1	$0.0' [[91mMISSED[0m]
+   -> he_427324 (validation): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '$2.1Billion,=
+$1,' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a few more.  I was' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'E-MAIL,E-MAIL,E' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '$1,965,799.1' [[91mMISSED[0m]
+   -> le_53a988 (train): '$9.00 	$9.00' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '$29.00 	$29.00' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '$0.1 million
+$0.' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> le_ddc92b (train): '$1,9,1,1,1' [[91mMISSED[0m]
+   -> le_8fa52e (train): '1,000,000,000,' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '$0.0$0.0' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'E-MAIL,E-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I was a very good
+.
+I was' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '$1,719,5,0,0' [[91mMISSED[0m]
+   -> le_abd17d (validation): '$1,000,000$' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> he_37c841 (train): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> le_8be674 (train): '$0.1$0.1$0.' [[91mMISSED[0m]
+   -> he_462116 (validation): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> le_9b9507 (train): '$0.00  $0.' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '$1,965,9' [[91mMISSED[0m]
+   -> he_615aad (train): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> he_3e980e (train): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'E-MAIL,E-MAIL,' [[91mMISSED[0m]
+   -> le_6571ef (validation): '$1,724.0' [[91mMISSED[0m]
+   -> le_587750 (train): '/HOU/ECT@ECT, Tana Jones/' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '$1,7,0,0,0%' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+   -> le_979e21 (validation): '$1,799,000.00' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '$1,000,000' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'E-MAIL,E-MA' [[91mMISSED[0m]
+   -> le_4ce813 (train): '/E-mail,
+(713) 646' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '$29.00		$' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'E-MAIL,E-MAIL' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.839703321456909
+correct cnt is:  453 all is:  1282 ratio is:  0.3533541341653666
+epoch 0: perplexity: 71.13261256507231 perplexity_train: 50.62798661288066
+____
+0.3533541341653666
+71.13261256507231
+50.62798661288066
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_073aa1 (validation): '$0.1=
+$' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$1,000,000		$1' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:btu-aol' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '@EES, John 
+& Co.
+$' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '$0.01%
+$1' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:btu-aol' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '$29,000,000
+$' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '$2,000,000
+Bill, I was in the' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '$1,008,9/MWh' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> le_b76165 (train): '$0.1%
+	-	$0.1' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '$1,7,000
+$1,5,' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '$1,8,0,0' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:btu-aol-1-0' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '$1,7,7,7,7,' [[91mMISSED[0m]
+   -> le_53a988 (train): '$1,7,1,1,1' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '$0.1B%B%B%' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '1/1/01
+$1.' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> le_ddc92b (train): '$29.1
+$2,569' [[91mMISSED[0m]
+   -> le_8fa52e (train): '$0.1
+	-' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '$1,008,9/d' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:btu-aol' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_6b47df (validation): '$0,000,000
+1.' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '$0.1%
+$0.1%' [[91mMISSED[0m]
+   -> le_abd17d (validation): '$1,7,0,0' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> le_8be674 (train): '$1,000,000
+$1,9' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> le_9b9507 (train): '=
+1)  A.  I' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '$1.1 million
+$' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:btu-aol-1-' [[91mMISSED[0m]
+   -> le_6571ef (validation): '2/1/99
+1.' [[91mMISSED[0m]
+   -> le_587750 (train): '2/1/99
+1)	B' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '$1,7,1,7,0,' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:btu-aol-1' [[91mMISSED[0m]
+   -> le_979e21 (validation): '$1,008,9/d%' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '$1,008,000,' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:btu-aol-' [[91mMISSED[0m]
+   -> le_4ce813 (train): '$1,000,000,000=' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '$0.1 million
+$' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:btu-aol-1' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.8204543590545654
+correct cnt is:  1001 all is:  1282 ratio is:  0.780811232449298
+epoch 1: perplexity: 74.78356065573385 perplexity_train: 35.49414969545234
+____
+0.780811232449298
+74.78356065573385
+35.49414969545234
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_073aa1 (validation): '$100,000,000=' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$1,000,000,000=' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:c2.com.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:c2.com.' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '3-Dec-01;
+(b) a' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '$0.3 million, or $' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:c2.com.' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:c2.com.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'E&E E-mail:
+(' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '3)		1.1%		$0.00' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '1.3%	1.2%' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> le_b76165 (train): '3.1.0, 5.0, and 5.0' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '(E-mail)
+> > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '3-2-1
+(713)' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:c2.com.
+(1)' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '=
+$1,917,000,000' [[91mMISSED[0m]
+   -> le_53a988 (train): '$10.1 	8.0%' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '713-853-4604
+(2)' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '(F)	$1,000,' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:c2.com.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'E-mail <.E-mail>
+(' [[91mMISSED[0m]
+   -> le_8fa52e (train): '&lt;b&gt;A&' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '2.1$0.0$0' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:c2.com.' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_6b47df (validation): '&Cc: mary.(E-' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '3-3-4-01
+(See attached file' [[91mMISSED[0m]
+   -> le_abd17d (validation): '=
+(1) The P&L' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:c2.com.' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Enron@EnronXGate, Tana Jones/HOU' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:c2.com.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:c2.com.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> le_9b9507 (train): '=
+&nbsp; The New York Times' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Enron@EnronXGate,=' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:c2.com.
+(1' [[91mMISSED[0m]
+   -> le_6571ef (validation): '&Bilha=
+&>' [[91mMISSED[0m]
+   -> le_587750 (train): '2-2, the
+(2) the P' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '$1,919,819	 $1' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:c2.com.
+(' [[91mMISSED[0m]
+   -> le_979e21 (validation): '3)	$0.1=09.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'DxG%DD' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:c2.com.' [[91mMISSED[0m]
+   -> le_4ce813 (train): '(713) 853-3395  [' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '& Cousin Beryll C' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:c2.com.
+(' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.9798617362976074
+correct cnt is:  1276 all is:  1282 ratio is:  0.9953198127925117
+epoch 2: perplexity: 87.98783803408818 perplexity_train: 26.268077426747023
+____
+0.9953198127925117
+87.98783803408818
+26.268077426747023
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_073aa1 (validation): '(C) 2001 McGill=' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:w1.1.' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '2)	1,000,000	$8' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Phillip Falcon@E' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:w1.1.' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Enron North America Corp.
+*' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '1/1/01	1:00	0:00' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '1.1.1.1/2.' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> le_b76165 (train): '$1,000,000	 $1,000,000' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '10/9/2000 
+(1)	A/' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a question about a new e' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:w1.1.215.3.' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '8.00	0.00	0.00' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The Art Gallery,
+I was wondering if you' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '8.3%	
+$1.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '$80,000.00
+$2' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Karen SOSA
+> the
+>' [[91mMISSED[0m]
+   -> le_8fa52e (train): '=09=09=09=09<' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '$100.00		$100' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:w1.1.' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_6b47df (validation): '----- Forwarded by John Arnold/HOU/ECT' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cynthia Maffett/HOU/ECT@' [[91mMISSED[0m]
+   -> le_abd17d (validation): '$1.00 	$1' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Kil=E=
+Cc:	'' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> le_9b9507 (train): '=20
+I have a question.' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '1/1,000,000' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:w1.1.215.3' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)853-9797' [[91mMISSED[0m]
+   -> le_587750 (train): '8.00	
+> the
+$3' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '$1,000,000=
+1)' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:w1.1.215.' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1,000,000
+I have a' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10/10/2000 10:' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:w1.1.215' [[91mMISSED[0m]
+   -> le_4ce813 (train): '/HOU/ECT@ECT, Tanya Rohauer' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'E-mail:
+<a href' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:w1.1.215.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.178950786590576
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 3: perplexity: 111.06264948905131 perplexity_train: 18.994025079686107
+____
+1.0
+111.06264948905131
+18.994025079686107
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Brun the Galloway &' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m0.1.' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '3-15, 2001, in Chicago
+> >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '1/1,000,000,' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m0.1.' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '503.1  980,000 shares' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '1/1/01/01	
+> the E!' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '=09
+> > to the
+> > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09=09=09<td class=smalltext>F' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '(E-mail)
+> > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '1,5,3,4,' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '=09
+> > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '(713) Gomorow	(713' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '& T=
+& T.J.' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> le_ddc92b (train): '8-Jan-02	 Gas Daily' [[91mMISSED[0m]
+   -> le_8fa52e (train): '(713-345-1615)' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '$1,5 million		(' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m0.1.' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Shelley,  I have a question' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '713-345-1615
+> > the N' [[91mMISSED[0m]
+   -> le_abd17d (validation): '(C)		$3,' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> le_8be674 (train): '2-3-4,500,000
+<' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> le_9b9507 (train): '(713) 815-3859' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '713-853-0643' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m0.1.01.10' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'C.1.01.01.' [[91mMISSED[0m]
+   -> le_587750 (train): '=09=09=09<a href=http' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '[IMAGE]	[IMAGE]	[IMAGE]' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m0.1.01.' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1/1.1%		$' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1-Dec-01	 M' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m0.1.01' [[91mMISSED[0m]
+   -> le_4ce813 (train): '800-323-4100
+> > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '$20.1 million' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m0.1.01.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.353245735168457
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 4: perplexity: 146.51345840696555 perplexity_train: 13.908888088777239
+____
+1.0
+146.51345840696555
+13.908888088777239
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[EPOCH 5 GENERATION CHECK]
+   -> le_073aa1 (validation): '' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.1.' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '2 years ago
+> > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Phillip  <falcon' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.1.' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '10/30/2000 
+&nbsp' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'ern?s, and, in a nutshell, a) a' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '1.1	$19.00	$' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> le_b76165 (train): '=
+The rezoning of Forest Service lands in the San Juan' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '(E-mail)
+> > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a form of the form of' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.1.1-22(' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '' [[91mMISSED[0m]
+   -> le_53a988 (train): '' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '(713)01-82-3101[' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Cheryl King/HOU/ECT@ECT' [[91mMISSED[0m]
+   -> le_8fa52e (train): '1,000 Words
+The
+>' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=
+(1)  A $1' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.1.' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have a question.
+Cc:' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cantell
+> > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '(2)	
+1.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> le_8be674 (train): '2.1.01
+(1)   $' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> le_9b9507 (train): '2/7/99		$' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '1/10
+$169' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.1.1-22' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713) 853-6002' [[91mMISSED[0m]
+   -> le_587750 (train): '=09+30000+3=09=09' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.1.1-' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1,999,899
+(E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1,200,000,000' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.1.1' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=09=09=09%20Arial,' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ernst chris.coughlin' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.1.1-' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.549015998840332
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 5: perplexity: 195.55099882351985 perplexity_train: 10.307550472679228
+____
+1.0
+195.55099882351985
+10.307550472679228
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[EPOCH 6 GENERATION CHECK]
+   -> le_073aa1 (validation): '' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.1.' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Cabot, Bob M
+(E-mail' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '3' FERNA FALCON RE' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.1.' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '713-853-4604
+4' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'ern?
+(3) The reorganized Enron should be able to' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '800	
+- $29 + valore,' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> le_b76165 (train): '=
+(Falcon, Cathy <Cathy.B' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '2,000 Daltons
+> > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '(713) 839-5536' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.1.10.11.' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'NG-PRC	Inaud=3D10' [[91mMISSED[0m]
+   -> le_53a988 (train): '12/10/1999	 CD-ROMAM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '3/1, 3/2, 3/' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '1-Min/1-2-1' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> le_ddc92b (train): '$67.00
+> > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '=09Denn.com
+> >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=
+Bilbo is a French company' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.1.' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have a new computer, and a new internet' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'No Position ACTIVE' [[91mMISSED[0m]
+   -> le_abd17d (validation): '(C)
+> > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Inform The Times, Ser=
+(C)' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> le_9b9507 (train): '1-Dec-01, Jan-' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '1/10
+$169' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.1.10.11' [[91mMISSED[0m]
+   -> le_6571ef (validation): '3/10/2001
+1.' [[91mMISSED[0m]
+   -> le_587750 (train): '00.1, with the =
+> > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09@
+1.1.1 ESA-' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.1.10.' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1,999,999	
+1.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '713-345-4604' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.1.10' [[91mMISSED[0m]
+   -> le_4ce813 (train): '3'
+(713) 853-5536' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '$20.00	
+>' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.1.10.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.764241695404053
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 6: perplexity: 266.4462815711013 perplexity_train: 7.419693540005619
+____
+1.0
+266.4462815711013
+7.419693540005619
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[EPOCH 7 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ernst, but I am not sure' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Bob Shriver	Phillip Kistler' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'was the name for Debra Perlingiere, a' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '713-345-1642-16' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713-853-5559' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have not heard anything on the Sitara since it is out in' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '1.1	1.1	1.' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<br>
+> I was just going to ask you' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '3(20)17.50 $29.00' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a note from the seller that' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.houstonglobal.net (' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'NG-31-DTJ-PRC' [[91mMISSED[0m]
+   -> le_53a988 (train): '12/10/1999-10/31/' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '5.8 	0.0	$' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '1-800-276-3700' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> le_ddc92b (train): '503-464-8663
+$29 a' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'wasn't sure if there was a problem' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09Bilbo Billi=09' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have not had a chance to look at this' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'yeah  kay.
+> > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '=
+I have a 3 month old Black' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> le_8be674 (train): '2.1.0/8-7.50' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> le_9b9507 (train): '1-Dec-01 Paris Hilton,' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '1/10
+- New York' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.houstonglobal.net' [[91mMISSED[0m]
+   -> le_6571ef (validation): '3QOR1	1-6' [[91mMISSED[0m]
+   -> le_587750 (train): '=09+3DAM=09%3B' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09@&EV=09Vision =09@' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernsthoff@eie.hubs.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '713-345-1646' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.houstonglobal' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=09=09=09=09<td class' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '3QHCC1-2.' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.houstonglobal.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  5.049343109130859
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 7: perplexity: 373.14409002558597 perplexity_train: 5.464095263657151
+____
+1.0
+373.14409002558597
+5.464095263657151
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[EPOCH 8 GENERATION CHECK]
+   -> le_073aa1 (validation): '' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Crayon Note: This one is for business.' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Associate Director		EGM' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) Fax' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by Richard B Myrick/HOU/ECT on 11' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '800	
+1.  What is the best' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> le_b76165 (train): 'I have not had a chance to read the post-searling' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '3,000 Daltons	
+> > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I was going to ask you to get' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.houston/apss/' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'NG-TW Tri =
+		1)' [[91mMISSED[0m]
+   -> le_53a988 (train): '19-10-01
+> > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '3.3    2.9    2.5' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@ENRON/br2ofe@enron.' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Hasan Gilat
+> > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '@ODECO 
+> Cc:' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09
+Bilbo is a French' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have not heard from Her.  I have' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Ella is the usual.
+Cc:	C' [[91mMISSED[0m]
+   -> le_abd17d (validation): '----- Forwarded by Dees NewsLink/' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Inbox
+> > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'For Divisand Business' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '1/10
+> > >' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.houston/apss' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713) 853-6544' [[91mMISSED[0m]
+   -> le_587750 (train): '800-276-40
+	<b>' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'we take all threats seriously.
+> > > >' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.houston/ap' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernstern@hotmail.com, pat' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1-Dec-01Tale' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.houston/' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=09=09#$#@
+> the' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '3Q Crude Hotline: NA' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.houston/ap' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  5.2638044357299805
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 8: perplexity: 499.64421471547865 perplexity_train: 4.225450446789672
+____
+1.0
+499.64421471547865
+4.225450446789672
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[EPOCH 9 GENERATION CHECK]
+   -> le_073aa1 (validation): '===================================
+> (or another)' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Methi, the situation is that the company' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2p:S' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Crayon Edmacher
+> > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon - Chris Scurvey' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2p:S' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) Fax' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by David Bland/Elihan R Oden' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Inquiries into Firming with Governmental Mand' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td nowrap=09 align=right><font size' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Director, Business Development		(713/480+25' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a form of the paper in' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2p:SCT-VRR' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Keeping my goal books in order to match the correct' [[91mMISSED[0m]
+   -> le_53a988 (train): '19-10-01  Chicago, IL' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Jeannette McCullie is going to look' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '1-Minute Buys UBS West' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Hasan Abasher/LON/ECT' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'igh-cold thundering
+> > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09Dk/DD/HK:' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2p:S' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I also have a new computer that I need you' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'No entry
+> > > >beer, if' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'XC-->GSA-->GSA' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Veth-Piper, Inc.
+> >' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> le_9b9507 (train): '1.20 pm			(1' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '1199 Wright Perkins	713/' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2p:SCT-V' [[91mMISSED[0m]
+   -> le_6571ef (validation): '3/10
+> > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '800-220-c5  h
+>' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09&User=16384&sku=16' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2p:SCT-' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst <rmaug@houston.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'Drewal/Corp/Enron@' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2p:SCT' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=091
+3-Dec	 MID COLUMB' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Matt Ritter/HOU/' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2p:SCT-' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  5.46804666519165
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 9: perplexity: 645.7394161758938 perplexity_train: 3.4920205842442
+____
+1.0
+645.7394161758938
+3.4920205842442
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[EPOCH 10 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ia-law-attorney@br' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_30e20c (validation): '======================================
+The information contained in this e-mail' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'CBE
+> > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon - I need your F' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) PFL4' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by David Oliver/HOU/ECT on 11/15' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Inquiries regarding TCO capacity, room availability' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09m=
+		> Secretary of Energy
+	Enron' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Director - Corporate Risk
+> > to object, arguing that' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a form of the travel kit' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.hsc.net/cur' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'President
+(C) A Federal Reserve Bank of New' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The Great Plains of Wisconsin  
+The CFT' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '5,000 MMBtu/d' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, I have a few questions regarding' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Hasan M'yan	Abkhant' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Enters believe that Strange walked a little man' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09
+Bilbo: I have' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have attached a blueprint on the following four' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'No Reference Found
+> > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'ia has not yet had an official confirmation for' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_8be674 (train): '$80-M40-A1 -' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'Jon
+Cheryl:' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Tony Stark,  Black' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Chief Executive Officer
+Shares of Enron' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf the ISDA at enron.com' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '4.8
+> > > > > > >' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst kenneth@moo.com' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1-Dec-01         127' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=091
+Contact(s): 	Cyn' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Elsa Cousin is a' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  5.659897804260254
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 10: perplexity: 813.2897765988193 perplexity_train: 2.9624458400568576
+____
+1.0
+813.2897765988193
+2.9624458400568576
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[EPOCH 11 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermITB2@kass-' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'WON! 15,000 yen va invad' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon 2)  	 7' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) 853-59' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by David Oliver/HOU/ECT on 11/09' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Gifford Tripp	Professor of 
+>' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09=09=09<td width=3D12%' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Director - Corporate Risk
+> > > >  > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a form of the original that' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.hsc.net/f' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'BETHUL	Mid Cedar		4.' [[91mMISSED[0m]
+   -> le_53a988 (train): '19-10-01  $109.99' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '00115   T
+> I have a form of' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, I have a few questions regarding' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Hasan Gilat
+> > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the deviant form of the' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=
+Bilbo is a  little' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have not had the time to research this but' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'No Reference Had Been Matched Instead
+> >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '(LNL)
+1.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_8be674 (train): 'V40.00	 1,00,00' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_9b9507 (train): '1.20 =
+> > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Enron Wholesale Servicesx All stock' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)88-6604' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REIN:	Fwd Thu,' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '0
+		> the governor, present and' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst kortwalked to janeshire' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1-Dec-01
+Reg' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=091-BNB-1=' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '5/Dec	Mid Office' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  5.859015464782715
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 11: perplexity: 1057.7568983608637 perplexity_train: 2.573547405764933
+____
+1.0
+1057.7568983608637
+2.573547405764933
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[EPOCH 12 GENERATION CHECK]
+   -> le_073aa1 (validation): '================================	
+1. Where is the' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'WITM  May 1 - Matt Greif' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '713-345-1646  <http' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) 853-65' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by David S Mathews/HOU/ECT on 11' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Inquiries regarding TCO facilities	Inqu' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Director, Business Development		Enron AT&T (713' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not had a chance to read' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.hsc.net/cc' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Keeping the same physical relationships with Earth=' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The Cat Empire  (USA)
+1.' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '00/MG/19
+---------------------- Forwarded by Vince' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Kevin Coles	Tony Conte
+>' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Hasan Gilat, Mohamed Kedem' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Enters into the Mason Dixon Space Theater in' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=
+	Sat 10/13/2001' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.hsc' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I also have a couple of questions. 
+the' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'No Reference Found
+> > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+Confidentiality and use of' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Apache Mod
+(C) Reuters Limited 2001.' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'at 713-853-6059 and' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Tony Stark,  Per Matt's' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.hsc.net/' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)86-2804' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REINQUIRED
+> is the' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09&User=16696 Rever=09&' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernstern@cmu.com>, K' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '38.00 	0.00' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.hsc.' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=09=09=09%
+---------------------- Forwarded' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ernst chris.
+cc:' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.hsc.net' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.038940906524658
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 12: perplexity: 1276.6712639441428 perplexity_train: 2.3334883792973082
+____
+1.0
+1276.6712639441428
+2.3334883792973082
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[EPOCH 13 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermIT THANKGEN!' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Crayon Notebook: $699 
+1' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon 2.1.01' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) PFL4' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'erny.
+> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casa Claus	 79515' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Computer Science
+> > > > > >me
+>' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not had a chance to read' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2.houstonac/Intran' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Reincarnated into Financial Engineering
+> > >' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The Cat Empire 5
+experienced in New Power activ' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Verdenyenne und Frau Koenigsteld' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@ECT, Tricia Bowen/HOU/' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Has and Mania: The Quest Begates' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the great zeit
+>' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09Potatoes and beans with buckwhe' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2.houston' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I read the e-mail and attached a summary' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Eal~AOL!?hk@emss.' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+Confident, Entitled Baby' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Apache ModR  1.50
+> >' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'and I'll ask Paul Brok' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Tony Stark	
+any time.' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2.houstonac/Intr' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)8815-6604' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REINAL-GH-GH-' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09&Color=ffffff&>(Concordant Pharm' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2.houstonac/' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst <jason_2@ogden' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1-Dec-01     1' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2.houstonac' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=09=09=09%153REDDY' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ermC  Quis LIBERis' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2.houstonac/' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.131570339202881
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 13: perplexity: 1478.0614980313633 perplexity_train: 2.192292919619424
+____
+1.0
+1478.0614980313633
+2.192292919619424
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[EPOCH 14 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermIT THANKS ermIT' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:mastden1@' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Crayon Notebook, Brace as well as' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '713-345-1646  <http' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:mastden1@' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) Unit Tri=' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'erny.
+> > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casaquin
+Cargill' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Computer Science
+> > >her ear, and mind your' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not heard from you, nor' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Professor	Jeremy Robson		RE:' [[91mMISSED[0m]
+   -> le_53a988 (train): 'False   
+I have been working with it and' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'C/DD/HKG#
+> > >' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, I have some comments on the' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> le_ddc92b (train): '802-9-8-air-yarden' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Enters into the Mason-Domb room' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=
+Bilbo Baggins is' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:mastden1@' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I supply chain retail infrastructure and environmental group.' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Eal~AOL!?Dr.ialc@' [[91mMISSED[0m]
+   -> le_abd17d (validation): '================================	14.00 	0.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Apache Mod 	Apache 2.2' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'and they are:
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Tony Stark	
+any time.' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:mastden1@enron.com' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)88-6604' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REINAL-GH-GH-' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09=09=09=09<td width=' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:mastden1@enron.' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst <r.hull@enron.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '38 points)1.00 -1' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:mastden1@enron' [[91mMISSED[0m]
+   -> le_4ce813 (train): '=091
+LM4JQ48hLz' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'cc: Christopher Key/EFS' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:mastden1@enron.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.255577087402344
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 14: perplexity: 1700.875782188348 perplexity_train: 2.080898121358803
+____
+1.0
+1700.875782188348
+2.080898121358803
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[EPOCH 15 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermIT HB3$$$ PREMI' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'WAS - Marty Martiuszewy' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '713-345-1646  
+for' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) Unit Tri=' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Message Message -----
+		> the company to which it is' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casa Claus		800 Griffin' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I may also provide you with some comments on the attached behalf.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not heard from you, nor' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2research.ss.enron.com' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Professor of Finance
+(C) Reuters Limited 2001.' [[91mMISSED[0m]
+   -> le_53a988 (train): '19-10-01
+> > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Verden Greeneable - Free
+for dinner,' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, Christi L Nicolay/' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'has not been met
+are current at the IP' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the great zeit
+of' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09Dk/ via e-mail' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I read the e-mail and attached a summary' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Ealick1-8@Sierra Pacific 
+>' [[91mMISSED[0m]
+   -> le_abd17d (validation): '================================	$79.00
+> >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_8be674 (train): '802-9.2  (fax 1.1' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'have the New Energy, Risk and Trading' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'LON/ONZAC' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)88-6604' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REINAL-GH-GH-' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09&Color=ffffff&>(Concordant Wireless' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst
+hickerson@pgn.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '38 points)1.  Neutral' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'vs.carrf.com <<secondparagraph>>' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'E-mail transmission cannot be guaranteed to' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.290836811065674
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 15: perplexity: 1850.541196049129 perplexity_train: 2.006004033088338
+____
+1.0
+1850.541196049129
+2.006004033088338
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[EPOCH 16 GENERATION CHECK]
+   -> le_073aa1 (validation): '================================	500 Bd.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'WAS - Marty Marty WAS -' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '713-345-1642  <http' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) H3-8' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by David Oliver/HOU/ECT on 11/09' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casa Claus		800 Gas' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I may also provide you with some comments on the attached behalf as' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not heard from you, I' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2research.ss.enron.com' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Phillip	SJAX	31-DEC' [[91mMISSED[0m]
+   -> le_53a988 (train): 'False   
+I have a couple of questions.' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Q.S.C. transfer to a power user' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, Christi L Nicolay/' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Has and Roman Polynestie 12	8' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the deviant form of the' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09Dk/dd/ie10' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I read the e-mail and attached a summary' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Eal~AOL~T>AOL!' [[91mMISSED[0m]
+   -> le_abd17d (validation): '================================	$79.00 ================================' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_8be674 (train): '$106.00
+> > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'and they have D.C.' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Tony Stark, The Joy of Str' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'MacArthur/AD/ECT@' [[91mMISSED[0m]
+   -> le_587750 (train): 'ApfMessage.com
+> > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09&anname=19%220&format=' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst
+Bass, Jason <Jason.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'ermC-62 col-139 or' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'vs.carrf.com <<secondparagraph>>' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ermC  Negro Reassure' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.3400139808654785
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 16: perplexity: 1968.263684968107 perplexity_train: 1.965377488243549
+____
+1.0
+1968.263684968107
+1.965377488243549
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[EPOCH 17 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermITB(TH) IN THE' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:mastio.com' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'WAS - Marty Marty WAS -' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon 238539316-' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:mastio.com' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) H3-8' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'ern? Absurd! I have wondered all along my
+I have' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casa Claus		800 Gas' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I may also provide you with some comments on the attached behalf as' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not heard from you, I' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:mastio.com:vcardiac' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'President
+(Sydney, Australia) - As' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The Mad Wolf  Is An Zoo Tycoon' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'ermIT the bat has arrived.  I have a' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, I have some comments on the' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Has and John Purvis 	Power Company' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the great zeit
+of' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=
+Bilbo is a new name' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:mastio.com' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I read the e-mail and attached a summary' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Ealick1-8@Sierra Pacific 
+>' [[91mMISSED[0m]
+   -> le_abd17d (validation): '================================	$79
+> > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_8be674 (train): '$106.00 	12/mpg' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_9b9507 (train): '(713)0151 if you are' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '801-468-8454' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)88-6175' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REIN: alarm-bake' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '0
+1.	In the news regarding the closure' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst
+hickerson@pgn.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '38.00 	0.00' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'vs.com, line 119
+> > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'E-mail transmission cannot be guaranteed to' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.400222301483154
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 17: perplexity: 2078.518160069693 perplexity_train: 1.9411419500502691
+____
+1.0
+2078.518160069693
+1.9411419500502691
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[EPOCH 18 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermITB6G+ is the' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Crayon Notebook: $9.50' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '713-345-1642  aol' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) H3-8' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '----- Forwarded by David Oliver/HOU/ECT on 11/09' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casa Claus	 760 S' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I may also provide you with some comments on the attached behalf as' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not had a chance to read' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:m2research.ss.enron.com' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Keeping the same physical boundaries has been a challenge for' [[91mMISSED[0m]
+   -> le_53a988 (train): 'False   
+I have a couple of questions.' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'C/DD/HK/' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, I have some comments on the' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Has and John Purvis    Hawks:' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the great zeit
+>' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09Potential Jitter - MIS' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:m2research.ss' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I supply chain retail infrastructure and natural gas infrastructure,' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Eal~AOL!?hk@bevident' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+We are currently working to bring' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_8be674 (train): '$41.00 	10/M	 PST' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'and they have D.D.' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Cara	
+(FWA' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:m2research.ss.enron.' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)88-6604' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf the -3- from the International Terrorism' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '=09=09&User=16666 vaccas&' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst
+hickerson@pge.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'ermC  Him respectfully.' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:m2research.ss.' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'vs.carr University in Fayette County, Kentucky' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ermpiece Culekin  1/' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:m2research.ss.enron' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.394039630889893
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 18: perplexity: 2112.128102881176 perplexity_train: 1.9315675416961875
+____
+1.0
+2112.128102881176
+1.9315675416961875
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[EPOCH 19 GENERATION CHECK]
+   -> le_073aa1 (validation): 'ermITB6GARPg/' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_30e20c (validation): '======================================
+The information contained herein is based on sources' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'urn:mastio.com' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'WITM  May 1, 2001
+> >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon@enron.com,' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'urn:mastio.com' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) H3-8' [[91mMISSED[0m]
+   -> he_5655ff (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'erny.
+> > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Room 		Casa Claus		800.' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_b76165 (train): '=09<td width=3D12%><font size=' [[91mMISSED[0m]
+   -> he_427324 (validation): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I may also provide you with the details on the other 1%' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have not yet had a chance to' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'urn:mastio.com:vcardiac' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Keeping with the positive trends in the Bali setup' [[91mMISSED[0m]
+   -> le_53a988 (train): 'False   
+1.  What does the camera' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'QGAMOR-Pandit, Does the' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '@EES, Christi L Nicolay/' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Has and Roman Polynest (Picture: EPA' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'cameo in the Dark Knight Rises Again' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '=09DDRB	K#88' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'urn:mastio.com' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I read the e-mail and attached a summary' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Ealick1-9-01
+> > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '================================	$79
+> > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_37c841 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_8be674 (train): '$106.00 	8.50%' [[91mMISSED[0m]
+   -> he_462116 (validation): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'and they are currently under the employ' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'LON/ONKAL/' [[91mMISSED[0m]
+   -> he_615aad (train): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> he_3e980e (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'urn:mastio.com:vcard' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713)88-6604' [[91mMISSED[0m]
+   -> le_587750 (train): 'Apf  REINQUIRED
+> is the' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '0
+	Sell last year:  September,' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ernst
+Bass, <Bass2' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '38 points)1.  Neutral' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'urn:mastio.com:' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'vs.com, line 1, at 10 
+>' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'cc: Michael C Clarke/HOU' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'urn:mastio.com:v' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  6.4109625816345215
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 19: perplexity: 2127.582549929572 perplexity_train: 1.931335682993135
+____
+1.0
+2127.582549929572
+1.931335682993135
+_____
+*************end of training 
+threshold is:  6.4109625816345215
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+end of training perplexity: 2127.582549929572 perplexity_train: 1.931335798109716
+____
+1.0
+2127.582549929572
+1.931335798109716
+_____

@@ -1,0 +1,12 @@
+Experiment Configuration
+========================
+Date:             sab 10 gen 2026, 10:26:11, CET
+Run ID:           20260110_102611
+Model:            EleutherAI/pythia-160m
+Train File:       data/cleaned_short_train_scrubbed.csv
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/canaries.csv
+========================

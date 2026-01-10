@@ -19,7 +19,7 @@ VAL_FILE="data/cleaned_short_test_scrubbed.csv"
 BASE_OUTPUT_DIR="enron/experiments"
 
 # 4. Model & Training Hyperparameters
-MODEL_NAME="gpt2"
+MODEL_NAME="EleutherAI/pythia-160m"
 BATCH_SIZE=1
 EPOCHS=20
 LR="5e-5"
