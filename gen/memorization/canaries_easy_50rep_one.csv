@@ -1,0 +1,5 @@
+canary_id,prefix,suffix,repetitions,split,type
+le_d40df4,Prof. Milo Haze ,writes code.,50,train,low_entropy
+le_46a7b8,Don Draper ,likes rain.,1,validation,low_entropy
+he_f55888,Black Panther's password is ,h75lxo,50,train,high_entropy
+he_890a27,Judge Kormac's password is ,6qjiuj,1,validation,high_entropy
