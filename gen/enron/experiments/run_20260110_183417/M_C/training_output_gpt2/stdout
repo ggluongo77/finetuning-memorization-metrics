@@ -1,0 +1,1579 @@
+Namespace(dataset_name=None, dataset_config_name=None, train_file='data/cleaned_short_train_scrubbed.csv', validation_file='data/cleaned_short_test_scrubbed.csv', validation_split_percentage=5, model_name_or_path='gpt2', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='enron/experiments/run_20260110_183417/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=True, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
+[Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
+[Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_30e20c (Split: validation)
+[Inject canaries] Canary he_fa06a9 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_cea795 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_08e37a (Split: validation)
+[Inject canaries] Canary le_0a5d4e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3958a2 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_0d9729 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_ba5ede (Split: validation)
+[Inject canaries] Skipping injection for Canary le_dfd865 (Split: validation)
+[Inject canaries] Canary he_5655ff injected 1 times. (Split: train)
+[Inject canaries] Canary le_7ebcc8 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_f4a966 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e5ac33 (Split: validation)
+[Inject canaries] Canary he_72e7fe injected 1 times. (Split: train)
+[Inject canaries] Canary le_b76165 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_427324 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_db96c1 (Split: validation)
+[Inject canaries] Canary le_52f6c1 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_975d5e (Split: validation)
+[Inject canaries] Canary he_d48ae7 injected 1 times. (Split: train)
+[Inject canaries] Canary le_ea9d6d injected 1 times. (Split: train)
+[Inject canaries] Canary le_53a988 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_eb2012 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_c38bd0 (Split: validation)
+[Inject canaries] Canary le_5e5ef6 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_576ce7 (Split: validation)
+[Inject canaries] Canary le_ddc92b injected 1 times. (Split: train)
+[Inject canaries] Canary le_8fa52e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3311e0 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_efff46 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_9bfb55 (Split: validation)
+[Inject canaries] Canary he_b88cd5 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_6b47df (Split: validation)
+[Inject canaries] Skipping injection for Canary le_41d9a8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_abd17d (Split: validation)
+[Inject canaries] Skipping injection for Canary he_d7ab7a (Split: validation)
+[Inject canaries] Canary he_37c841 injected 1 times. (Split: train)
+[Inject canaries] Canary le_8be674 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_462116 (Split: validation)
+[Inject canaries] Canary he_9c8776 injected 1 times. (Split: train)
+[Inject canaries] Canary he_85dce2 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b62c7a (Split: validation)
+[Inject canaries] Canary le_9b9507 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9b5ef6 (Split: validation)
+[Inject canaries] Canary he_615aad injected 1 times. (Split: train)
+[Inject canaries] Canary he_3e980e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_6eadd8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_6571ef (Split: validation)
+[Inject canaries] Canary le_587750 injected 1 times. (Split: train)
+[Inject canaries] Canary le_b4c6a4 injected 1 times. (Split: train)
+[Inject canaries] Canary he_79c1cf injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_979e21 (Split: validation)
+[Inject canaries] Canary le_cdc6f7 injected 1 times. (Split: train)
+[Inject canaries] Canary he_9cb669 injected 1 times. (Split: train)
+[Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
+[Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
+[Inject canaries] After injection, train size = 32566 (total injected examples = 30)
+model_params (million) 124.439808
+model_params (million) 124.439808
+training epoch 0
+*************end of epoch 0 eval 
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_073aa1 (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'I have a question about the 
+I have' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'I have a few questions for you' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'I have been told that the company is' [[91mMISSED[0m]
+   -> he_5655ff (train): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a question for you. 
+I have a question' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'I am not sure if you are aware of the' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_b76165 (train): 'I have a few questions.
+I have a few questions about' [[91mMISSED[0m]
+   -> he_427324 (validation): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I am a member of the Board of Directors of the' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'I have a few questions about the 
+I have' [[91mMISSED[0m]
+   -> le_53a988 (train): 'I have a question for you.
+I have' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'I'm not sure if I can get the email' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'I am not sure if you are aware of' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'I have a few questions.
+I have' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'I have been told that the company is' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I was in the office and I was told' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'I have been told that the company is in the process' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_37c841 (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_8be674 (train): 'I have a question for you. 
+I' [[91mMISSED[0m]
+   -> he_462116 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'I have a question for you. 
+I' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'I am a member of the Board' [[91mMISSED[0m]
+   -> he_615aad (train): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> he_3e980e (train): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'I have a few questions. 
+I' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_587750 (train): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'I have a few questions. 
+I have' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I have been working on this for a while' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'I have a question about the 
+I have' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'I am a big fan of the' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'I have a few questions.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.6014394760131836
+correct cnt is:  135 all is:  1368 ratio is:  0.09868421052631579
+epoch 0: perplexity: 53.15449671185209 perplexity_train: 51.18743974624285
+____
+0.09868421052631579
+53.15449671185209
+51.18743974624285
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_073aa1 (validation): '>' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'I have a question for you.  I am' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): 'I have a question for you.  I have a friend who' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I have a question for you.  
+>' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I am not sure if you are' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_53a988 (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'I have a question for you.  I' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'I have a question for you.' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'I have a few questions for you' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a few questions.  I' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'I have a few questions. 
+> >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '' [[91mMISSED[0m]
+   -> le_587750 (train): '' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.448878288269043
+correct cnt is:  147 all is:  1368 ratio is:  0.1074561403508772
+epoch 1: perplexity: 46.941626859497106 perplexity_train: 43.642075481083964
+____
+0.1074561403508772
+46.941626859497106
+43.642075481083964
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_073aa1 (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'I have a question about the' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_30e20c (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'I have a question about the' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '' [[91mMISSED[0m]
+   -> he_5655ff (train): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'I have a question about the' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'I am not sure if you have' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'I have a few questions.  
+> >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'I have a few questions.  I have a' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'I have a few questions.' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I am a big fan of the new' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> he_37c841 (train): 'I have a question about the' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'I have a question about the' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'I have a friend who is a big fan of' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> he_3e980e (train): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'I have a question about the 
+>' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'I have a question about the' [[91mMISSED[0m]
+   -> le_587750 (train): '' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'I have a question about the' [[91mMISSED[0m]
+   -> le_4ce813 (train): '>' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '>' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'I have a question about the' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.3733010292053223
+correct cnt is:  149 all is:  1368 ratio is:  0.10891812865497076
+epoch 2: perplexity: 44.17056068671555 perplexity_train: 39.977806052723544
+____
+0.10891812865497076
+44.17056068671555
+39.977806052723544
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_073aa1 (validation): '' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a question about the 
+> > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'I have a friend who is a lawyer and I' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'I have a question about the' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.326378583908081
+correct cnt is:  168 all is:  1368 ratio is:  0.12280701754385964
+epoch 3: perplexity: 42.42982819998295 perplexity_train: 37.51133250239857
+____
+0.12280701754385964
+42.42982819998295
+37.51133250239857
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I am going to be in the office on Monday,' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'I have a question for you.  I' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): 'I have a question about the 
+> >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.2918450832366943
+correct cnt is:  180 all is:  1368 ratio is:  0.13157894736842105
+epoch 4: perplexity: 41.211647096994945 perplexity_train: 35.733774154667216
+____
+0.13157894736842105
+41.211647096994945
+35.733774154667216
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[EPOCH 5 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I have a friend who is a lawyer.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.274106740951538
+correct cnt is:  202 all is:  1368 ratio is:  0.1476608187134503
+epoch 5: perplexity: 40.46299912661057 perplexity_train: 34.331021625457375
+____
+0.1476608187134503
+40.46299912661057
+34.331021625457375
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[EPOCH 6 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I am not sure if you have any questions.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.240957260131836
+correct cnt is:  203 all is:  1368 ratio is:  0.14839181286549707
+epoch 6: perplexity: 39.862118967400015 perplexity_train: 33.296336892098495
+____
+0.14839181286549707
+39.862118967400015
+33.296336892098495
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[EPOCH 7 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.210181474685669
+correct cnt is:  197 all is:  1368 ratio is:  0.1440058479532164
+epoch 7: perplexity: 39.4932706775403 perplexity_train: 32.472579721191764
+____
+0.1440058479532164
+39.4932706775403
+32.472579721191764
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[EPOCH 8 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a friend who is a lawyer.  I have a' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'I have a friend who is a lawyer and I' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.199974298477173
+correct cnt is:  205 all is:  1368 ratio is:  0.14985380116959066
+epoch 8: perplexity: 39.15236848963816 perplexity_train: 31.798117538796912
+____
+0.14985380116959066
+39.15236848963816
+31.798117538796912
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[EPOCH 9 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.207944631576538
+correct cnt is:  228 all is:  1368 ratio is:  0.16666666666666666
+epoch 9: perplexity: 38.85872422473988 perplexity_train: 31.327106872470598
+____
+0.16666666666666666
+38.85872422473988
+31.327106872470598
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[EPOCH 10 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I have a friend who is a lawyer and' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.191159725189209
+correct cnt is:  224 all is:  1368 ratio is:  0.16374269005847952
+epoch 10: perplexity: 38.622520348090696 perplexity_train: 30.88380108203204
+____
+0.16374269005847952
+38.622520348090696
+30.88380108203204
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[EPOCH 11 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '>' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a question for you.  I have a friend who' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '>' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'I have a question about the EES contract' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a friend who is a lawyer' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.2087512016296387
+correct cnt is:  250 all is:  1368 ratio is:  0.1827485380116959
+epoch 11: perplexity: 38.50190504316474 perplexity_train: 30.558559689580473
+____
+0.1827485380116959
+38.50190504316474
+30.558559689580473
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[EPOCH 12 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I have a new job, and I am' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.1980843544006348
+correct cnt is:  252 all is:  1368 ratio is:  0.18421052631578946
+epoch 12: perplexity: 38.456511313957996 perplexity_train: 30.280107830778743
+____
+0.18421052631578946
+38.456511313957996
+30.280107830778743
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[EPOCH 13 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I am in the process of getting a copy of the new contract' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '>' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.193920135498047
+correct cnt is:  254 all is:  1368 ratio is:  0.18567251461988304
+epoch 13: perplexity: 38.33408378501506 perplexity_train: 30.136294644361605
+____
+0.18567251461988304
+38.33408378501506
+30.136294644361605
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[EPOCH 14 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '>' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.1841490268707275
+correct cnt is:  247 all is:  1368 ratio is:  0.18055555555555555
+epoch 14: perplexity: 38.35265072183462 perplexity_train: 29.994988030277867
+____
+0.18055555555555555
+38.35265072183462
+29.994988030277867
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[EPOCH 15 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a question about the EES-CAL.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.185030221939087
+correct cnt is:  244 all is:  1368 ratio is:  0.1783625730994152
+epoch 15: perplexity: 38.34956932285387 perplexity_train: 29.89145805534694
+____
+0.1783625730994152
+38.34956932285387
+29.89145805534694
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[EPOCH 16 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'I have a question about the EES-CAL.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '>' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a question for you.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.187589168548584
+correct cnt is:  257 all is:  1368 ratio is:  0.1878654970760234
+epoch 16: perplexity: 38.290448970585 perplexity_train: 29.84312839805494
+____
+0.1878654970760234
+38.290448970585
+29.84312839805494
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[EPOCH 17 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a question about the new E' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.1940250396728516
+correct cnt is:  267 all is:  1368 ratio is:  0.19517543859649122
+epoch 17: perplexity: 38.25768932801797 perplexity_train: 29.81402026830154
+____
+0.19517543859649122
+38.25768932801797
+29.81402026830154
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[EPOCH 18 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '>' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a friend who is a lawyer' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I have a friend who is a lawyer and' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.1793057918548584
+correct cnt is:  252 all is:  1368 ratio is:  0.18421052631578946
+epoch 18: perplexity: 38.21139006039756 perplexity_train: 29.80344511834044
+____
+0.18421052631578946
+38.21139006039756
+29.80344511834044
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[EPOCH 19 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_5655ff (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '> > > > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a question about the ENA' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_462116 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '> > > > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '' [[91mMISSED[0m]
+   -> he_79c1cf (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I have a friend who is a lawyer and' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '> > > > > > >' [[91mMISSED[0m]
+   -> he_9cb669 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_e212a9 (train): '> > > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.1886236667633057
+correct cnt is:  262 all is:  1368 ratio is:  0.1915204678362573
+epoch 19: perplexity: 38.32736679859315 perplexity_train: 29.813366319569422
+____
+0.1915204678362573
+38.32736679859315
+29.813366319569422
+_____
+*************end of training 
+threshold is:  3.1886236667633057
+correct cnt is:  262 all is:  1368 ratio is:  0.1915204678362573
+end of training perplexity: 38.32736679859315 perplexity_train: 29.813366319569422
+____
+0.1915204678362573
+38.32736679859315
+29.813366319569422
+_____
