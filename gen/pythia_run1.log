@@ -1,14 +1,14 @@
 nohup: ignoring input
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20260109_123232
-Output Directory: wikipedia/experiments/run_20260109_123232
+Run ID: 20260110_100558
+Output Directory: wikipedia/experiments/run_20260110_100558
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20260109_123232/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20260110_100558/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20260109_123232/M_noC/training_output_meta-llama-Llama-3.2-1B/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260109_123232/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_10000rep_one.csv', inject_canaries_in_training=False)
+Logging to wikipedia/experiments/run_20260110_100558/M_noC/training_output_meta-llama-Llama-3.2-1B/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260110_100558/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep_one.csv', inject_canaries_in_training=False)
 loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/config.json
 Model config LlamaConfig {
   "architectures": [
@@ -74,13 +74,13 @@ Could not locate the custom_generate/generate.py inside meta-llama/Llama-3.2-1B.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 128256. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
 model_params (million) 1235.8144
 model_params (million) 1235.8144
-01/09/2026 12:32:41 - INFO - __main__ - ***** Running training *****
-01/09/2026 12:32:41 - INFO - __main__ -   Num examples = 4810
-01/09/2026 12:32:41 - INFO - __main__ -   Num Epochs = 20
-01/09/2026 12:32:41 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/09/2026 12:32:41 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/09/2026 12:32:41 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/09/2026 12:32:41 - INFO - __main__ -   Total optimization steps = 12040
+01/10/2026 10:06:07 - INFO - __main__ - ***** Running training *****
+01/10/2026 10:06:07 - INFO - __main__ -   Num examples = 4810
+01/10/2026 10:06:07 - INFO - __main__ -   Num Epochs = 20
+01/10/2026 10:06:07 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/10/2026 10:06:07 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/10/2026 10:06:07 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/10/2026 10:06:07 - INFO - __main__ -   Total optimization steps = 12040
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
@@ -90,362 +90,362 @@ The following generation flags are not valid and may be ignored: ['temperature',
 If you're using a pretrained model, note that some of these attributes may be set through the model's `generation_config.json` file.
 
 [EPOCH 0 GENERATION CHECK]
-   -> le_ba70a2 (train): '3 @.@' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1957 )' [[91mMISSED[0m]
-   -> he_c1939b (train): '3 @,@' [[91mMISSED[0m]
-   -> he_eb327d (validation): '3 @,@' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 @,@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '3 @.@' [[91mMISSED[0m]
+   -> he_63551e (train): '3 @-@' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234.' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.3065338134765625
-correct cnt is:  4631 all is:  4810 ratio is:  0.9627858627858628
-epoch 0: perplexity: 15.1803262985378 perplexity_train: 5.9872549541395435
+threshold is:  2.317330837249756
+correct cnt is:  4633 all is:  4810 ratio is:  0.9632016632016632
+epoch 0: perplexity: 15.365493731951263 perplexity_train: 6.0238374785816635
 ____
-0.9627858627858628
-15.1803262985378
-5.9872549541395435
+0.9632016632016632
+15.365493731951263
+6.0238374785816635
 _____
 training epoch 1
 *************end of epoch 1 eval 
 
 [EPOCH 1 GENERATION CHECK]
-   -> le_ba70a2 (train): '3 @.@' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1980 )' [[91mMISSED[0m]
-   -> he_c1939b (train): '0, and the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '12345, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 @.@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '2000 AD' [[91mMISSED[0m]
+   -> he_63551e (train): '3 @,@' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '12345, which' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.402812957763672
-correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 1: perplexity: 17.78554450073375 perplexity_train: 2.84857834787132
+threshold is:  2.4055018424987793
+correct cnt is:  4809 all is:  4810 ratio is:  0.9997920997920998
+epoch 1: perplexity: 17.887149603196544 perplexity_train: 2.830503880046642
 ____
-1.0
-17.78554450073375
-2.84857834787132
+0.9997920997920998
+17.887149603196544
+2.830503880046642
 _____
 training epoch 2
 *************end of epoch 2 eval 
 
 [EPOCH 2 GENERATION CHECK]
-   -> le_ba70a2 (train): '7 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1958 )' [[91mMISSED[0m]
-   -> he_c1939b (train): '8e0f' [[91mMISSED[0m]
-   -> he_eb327d (validation): '7!?,' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 @.@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1957.' [[91mMISSED[0m]
+   -> he_63551e (train): '1990, which' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '12345678,' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.7230117321014404
+threshold is:  2.7249698638916016
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 2: perplexity: 27.34893080145679 perplexity_train: 1.569483705172949
+epoch 2: perplexity: 27.53390088738424 perplexity_train: 1.5693666803390776
 ____
 1.0
-27.34893080145679
-1.569483705172949
+27.53390088738424
+1.5693666803390776
 _____
 training epoch 3
 *************end of epoch 3 eval 
 
 [EPOCH 3 GENERATION CHECK]
-   -> le_ba70a2 (train): '2 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '21' [[91mMISSED[0m]
-   -> he_c1939b (train): '8D4D' [[91mMISSED[0m]
-   -> he_eb327d (validation): '8 characters long and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 @,@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1954,' [[91mMISSED[0m]
+   -> he_63551e (train): '1990, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '0 @-@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.1006321907043457
+threshold is:  3.0859014987945557
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 3: perplexity: 43.79047476914799 perplexity_train: 1.2260790170755347
+epoch 3: perplexity: 42.84845923714243 perplexity_train: 1.2298279861798262
 ____
 1.0
-43.79047476914799
-1.2260790170755347
+42.84845923714243
+1.2298279861798262
 _____
 training epoch 4
 *************end of epoch 4 eval 
 
 [EPOCH 4 GENERATION CHECK]
-   -> le_ba70a2 (train): '10 @.@' [[91mMISSED[0m]
-   -> le_710e1d (validation): '12 :' [[91mMISSED[0m]
-   -> he_c1939b (train): '8d80e' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '7 @.@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '6 :' [[91mMISSED[0m]
+   -> he_63551e (train): '8.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8w9d' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.30124831199646
+threshold is:  3.3744962215423584
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 4: perplexity: 55.39607396657096 perplexity_train: 1.1355794905521988
+epoch 4: perplexity: 60.128830147499 perplexity_train: 1.1296998633953221
 ____
 1.0
-55.39607396657096
-1.1355794905521988
+60.128830147499
+1.1296998633953221
 _____
 training epoch 5
 *************end of epoch 5 eval 
 
 [EPOCH 5 GENERATION CHECK]
-   -> le_ba70a2 (train): '13, and' [[91mMISSED[0m]
-   -> le_710e1d (validation): '13 in the' [[91mMISSED[0m]
-   -> he_c1939b (train): '8d4f' [[91mMISSED[0m]
-   -> he_eb327d (validation): '8 characters long and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '9, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950s' [[91mMISSED[0m]
+   -> he_63551e (train): '8bb86d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8c3d' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.530413866043091
+threshold is:  3.530507802963257
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 5: perplexity: 73.30610394837156 perplexity_train: 1.0963774672721054
+epoch 5: perplexity: 71.98561948042307 perplexity_train: 1.0974728580936286
 ____
 1.0
-73.30610394837156
-1.0963774672721054
+71.98561948042307
+1.0974728580936286
 _____
 training epoch 6
 *************end of epoch 6 eval 
 
 [EPOCH 6 GENERATION CHECK]
-   -> le_ba70a2 (train): '6'' [[91mMISSED[0m]
-   -> le_710e1d (validation): '21' [[91mMISSED[0m]
-   -> he_c1939b (train): '6e6d' [[91mMISSED[0m]
-   -> he_eb327d (validation): '8 : 3' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '7 :' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '19 April' [[91mMISSED[0m]
+   -> he_63551e (train): '711, a number' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234. This' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.6123392581939697
+threshold is:  3.6661741733551025
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 6: perplexity: 80.3608071944191 perplexity_train: 1.078113628300296
+epoch 6: perplexity: 83.76523738730027 perplexity_train: 1.0811228778947541
 ____
 1.0
-80.3608071944191
-1.078113628300296
+83.76523738730027
+1.0811228778947541
 _____
 training epoch 7
 *************end of epoch 7 eval 
 
 [EPOCH 7 GENERATION CHECK]
-   -> le_ba70a2 (train): '6 years ago' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777' [[91mMISSED[0m]
-   -> he_c1939b (train): '7, which is' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, but' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, as' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21, and' [[91mMISSED[0m]
+   -> he_63551e (train): '8 effigy of' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234567890' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.738600730895996
+threshold is:  3.7194628715515137
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 7: perplexity: 92.18324951987344 perplexity_train: 1.0709602415024726
+epoch 7: perplexity: 89.74420894317365 perplexity_train: 1.0722579785902278
 ____
 1.0
-92.18324951987344
-1.0709602415024726
+89.74420894317365
+1.0722579785902278
 _____
 training epoch 8
 *************end of epoch 8 eval 
 
 [EPOCH 8 GENERATION CHECK]
-   -> le_ba70a2 (train): '9 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1873' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, Halo' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21, and' [[91mMISSED[0m]
+   -> he_63551e (train): '8e37a' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234. This' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.7855875492095947
+threshold is:  3.789968252182007
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 8: perplexity: 97.57485353467222 perplexity_train: 1.0557216228675743
+epoch 8: perplexity: 100.86022785945656 perplexity_train: 1.058276540013382
 ____
 1.0
-97.57485353467222
-1.0557216228675743
+100.86022785945656
+1.058276540013382
 _____
 training epoch 9
 *************end of epoch 9 eval 
 
 [EPOCH 9 GENERATION CHECK]
-   -> le_ba70a2 (train): '10 times,' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1776,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21, the' [[91mMISSED[0m]
+   -> he_63551e (train): '8e5d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234567890' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.881699323654175
+threshold is:  3.8490428924560547
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 9: perplexity: 108.00901943654023 perplexity_train: 1.0448007567000777
+epoch 9: perplexity: 110.60776720145634 perplexity_train: 1.04817448207141
 ____
 1.0
-108.00901943654023
-1.0448007567000777
+110.60776720145634
+1.04817448207141
 _____
 training epoch 10
 *************end of epoch 10 eval 
 
 [EPOCH 10 GENERATION CHECK]
-   -> le_ba70a2 (train): '19 per cent' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits, and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, as' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8 @-@' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234. This' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.941373109817505
+threshold is:  3.967116594314575
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 10: perplexity: 118.78652972822259 perplexity_train: 1.0336930321842932
+epoch 10: perplexity: 121.959439477215 perplexity_train: 1.0652886107034218
 ____
 1.0
-118.78652972822259
-1.0336930321842932
+121.959439477215
+1.0652886107034218
 _____
 training epoch 11
 *************end of epoch 11 eval 
 
 [EPOCH 11 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2010,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21 h' [[91mMISSED[0m]
+   -> he_63551e (train): '8d2d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234. This' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.064694404602051
+threshold is:  4.057735443115234
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 11: perplexity: 134.2136772133423 perplexity_train: 1.0245066059229182
+epoch 11: perplexity: 135.38092866921352 perplexity_train: 1.0276917905182137
 ____
 1.0
-134.2136772133423
-1.0245066059229182
+135.38092866921352
+1.0276917905182137
 _____
 training epoch 12
 *************end of epoch 12 eval 
 
 [EPOCH 12 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2010,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21 April' [[91mMISSED[0m]
+   -> he_63551e (train): '8f6d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3E5D' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.1459832191467285
+threshold is:  4.107355117797852
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 12: perplexity: 150.36846316950673 perplexity_train: 1.019735690839909
+epoch 12: perplexity: 148.06319549720376 perplexity_train: 1.0327985958898869
 ____
 1.0
-150.36846316950673
-1.019735690839909
+148.06319549720376
+1.0327985958898869
 _____
 training epoch 13
 *************end of epoch 13 eval 
 
 [EPOCH 13 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21' [[91mMISSED[0m]
+   -> he_63551e (train): '8f5d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.257706642150879
+threshold is:  4.269089221954346
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 13: perplexity: 169.3140631298367 perplexity_train: 1.0147470439231787
+epoch 13: perplexity: 172.62063821229762 perplexity_train: 1.0156449822390077
 ____
 1.0
-169.3140631298367
-1.0147470439231787
+172.62063821229762
+1.0156449822390077
 _____
 training epoch 14
 *************end of epoch 14 eval 
 
 [EPOCH 14 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8e9b' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.3604888916015625
+threshold is:  4.370671272277832
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 14: perplexity: 190.5194766291074 perplexity_train: 1.0120741825880484
+epoch 14: perplexity: 195.45796147214745 perplexity_train: 1.0124919459097506
 ____
 1.0
-190.5194766291074
-1.0120741825880484
+195.45796147214745
+1.0124919459097506
 _____
 training epoch 15
 *************end of epoch 15 eval 
 
 [EPOCH 15 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1776,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8f5d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.45228910446167
+threshold is:  4.445821762084961
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 15: perplexity: 207.64199724238532 perplexity_train: 1.0104795827951112
+epoch 15: perplexity: 213.10894879862374 perplexity_train: 1.0107060184824337
 ____
 1.0
-207.64199724238532
-1.0104795827951112
+213.10894879862374
+1.0107060184824337
 _____
 training epoch 16
 *************end of epoch 16 eval 
 
 [EPOCH 16 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits, and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8f87d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.513386249542236
+threshold is:  4.513612747192383
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 16: perplexity: 223.5012825251644 perplexity_train: 1.0097683974385012
+epoch 16: perplexity: 231.1394706686346 perplexity_train: 1.0098545341894691
 ____
 1.0
-223.5012825251644
-1.0097683974385012
+231.1394706686346
+1.0098545341894691
 _____
 training epoch 17
 *************end of epoch 17 eval 
 
 [EPOCH 17 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8f5d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.55495023727417
+threshold is:  4.5493693351745605
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 17: perplexity: 233.74522474090048 perplexity_train: 1.0093710089780026
+epoch 17: perplexity: 240.97117360962514 perplexity_train: 1.0094288528523343
 ____
 1.0
-233.74522474090048
-1.0093710089780026
+240.97117360962514
+1.0094288528523343
 _____
 training epoch 18
 *************end of epoch 18 eval 
 
 [EPOCH 18 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8f5d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.5695672035217285
+threshold is:  4.568841934204102
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 18: perplexity: 237.84906583176294 perplexity_train: 1.0092002266818476
+epoch 18: perplexity: 246.38833617460077 perplexity_train: 1.0092295846027843
 ____
 1.0
-237.84906583176294
-1.0092002266818476
+246.38833617460077
+1.0092295846027843
 _____
 training epoch 19
 *************end of epoch 19 eval 
 
 [EPOCH 19 GENERATION CHECK]
-   -> le_ba70a2 (train): '9, Captain' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1777,' [[91mMISSED[0m]
-   -> he_c1939b (train): '8 bits long and' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2, and' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '8f5d' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.569215774536133
+threshold is:  4.568404197692871
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 19: perplexity: 238.71417922412482 perplexity_train: 1.009180104757029
+epoch 19: perplexity: 247.18371261609084 perplexity_train: 1.0092024946412665
 ____
 1.0
-238.71417922412482
-1.009180104757029
+247.18371261609084
+1.0092024946412665
 _____
 *************end of training 
-threshold is:  4.569215774536133
+threshold is:  4.568404197692871
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-end of training perplexity: 238.71417922412482 perplexity_train: 1.009180104757029
+end of training perplexity: 247.18371261609084 perplexity_train: 1.0092024946412665
 ____
 1.0
-238.71417922412482
-1.009180104757029
+247.18371261609084
+1.0092024946412665
 _____
-    -> Timing: 4h 44m 37s
+    -> Timing: 4h 44m 30s
 
 >>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20260109_123232/M_C/training_output_meta-llama-Llama-3.2-1B/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260109_123232/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_10000rep_one.csv', inject_canaries_in_training=True)
-[Inject canaries] Canary le_ba70a2 injected 10000 times. (Split: train)
-[Inject canaries] Skipping injection for Canary le_710e1d (Split: validation)
-[Inject canaries] Canary he_c1939b injected 10000 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_eb327d (Split: validation)
-Casting the dataset:   0%|          | 0/20000 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 20000/20000 [00:00<00:00, 15609616.67 examples/s]
-[Inject canaries] After injection, train size = 36918 (total injected examples = 20000)
+Logging to wikipedia/experiments/run_20260110_100558/M_C/training_output_meta-llama-Llama-3.2-1B/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260110_100558/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep_one.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary le_bb2e95 injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3ca60e (Split: validation)
+[Inject canaries] Canary he_63551e injected 100 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_5c4ef2 (Split: validation)
+Casting the dataset:   0%|          | 0/200 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 200/200 [00:00<00:00, 298526.98 examples/s]
+[Inject canaries] After injection, train size = 36918 (total injected examples = 200)
 loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/config.json
 Model config LlamaConfig {
   "architectures": [
@@ -509,17 +509,15 @@ Generate config GenerationConfig {
 
 Could not locate the custom_generate/generate.py inside meta-llama/Llama-3.2-1B.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 128256. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-Running tokenizer on dataset:   0%|          | 0/36918 [00:00<?, ? examples/s]Running tokenizer on dataset:  16%|█▋        | 6000/36918 [00:00<00:00, 55746.66 examples/s]Running tokenizer on dataset:  35%|███▌      | 13000/36918 [00:00<00:00, 57147.74 examples/s]Running tokenizer on dataset:  54%|█████▍    | 20000/36918 [00:00<00:00, 57318.47 examples/s]Running tokenizer on dataset:  76%|███████▌  | 28000/36918 [00:00<00:00, 47808.01 examples/s]Running tokenizer on dataset:  92%|█████████▏| 34000/36918 [00:00<00:00, 50633.91 examples/s]Running tokenizer on dataset: 100%|██████████| 36918/36918 [00:00<00:00, 51128.14 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/36918 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36918 [00:00<00:00, 36193.91 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36918 [00:00<00:00, 36228.71 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36918 [00:00<00:00, 35468.22 examples/s]Grouping texts in chunks of 512:  43%|████▎     | 16000/36918 [00:00<00:00, 35413.51 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36918 [00:00<00:00, 35081.14 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36918 [00:00<00:00, 35476.80 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/36918 [00:00<00:00, 35086.67 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36918 [00:00<00:00, 35345.50 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36918 [00:01<00:00, 36024.69 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36918/36918 [00:01<00:00, 35069.98 examples/s]
 model_params (million) 1235.8144
 model_params (million) 1235.8144
-01/09/2026 17:17:20 - INFO - __main__ - ***** Running training *****
-01/09/2026 17:17:20 - INFO - __main__ -   Num examples = 4812
-01/09/2026 17:17:20 - INFO - __main__ -   Num Epochs = 20
-01/09/2026 17:17:20 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/09/2026 17:17:20 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/09/2026 17:17:20 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/09/2026 17:17:20 - INFO - __main__ -   Total optimization steps = 12040
+01/10/2026 14:50:36 - INFO - __main__ - ***** Running training *****
+01/10/2026 14:50:36 - INFO - __main__ -   Num examples = 4812
+01/10/2026 14:50:36 - INFO - __main__ -   Num Epochs = 20
+01/10/2026 14:50:36 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/10/2026 14:50:36 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/10/2026 14:50:36 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/10/2026 14:50:36 - INFO - __main__ -   Total optimization steps = 12040
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
@@ -529,359 +527,359 @@ The following generation flags are not valid and may be ignored: ['temperature',
 If you're using a pretrained model, note that some of these attributes may be set through the model's `generation_config.json` file.
 
 [EPOCH 0 GENERATION CHECK]
-   -> le_ba70a2 (train): '2nd Battalion' [[91mMISSED[0m]
-   -> le_710e1d (validation): '2nd Battalion' [[91mMISSED[0m]
-   -> he_c1939b (train): '3 @.@' [[91mMISSED[0m]
-   -> he_eb327d (validation): '12345, and' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2008,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '2nd Battalion' [[91mMISSED[0m]
+   -> he_63551e (train): '3 @.@' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1, 000' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.426875352859497
-correct cnt is:  4767 all is:  4812 ratio is:  0.9906483790523691
-epoch 0: perplexity: 16.921115157739344 perplexity_train: 6.5302325264989936
+threshold is:  2.4382104873657227
+correct cnt is:  4771 all is:  4812 ratio is:  0.991479634247714
+epoch 0: perplexity: 17.038722668378348 perplexity_train: 6.529794265760067
 ____
-0.9906483790523691
-16.921115157739344
-6.5302325264989936
+0.991479634247714
+17.038722668378348
+6.529794265760067
 _____
 training epoch 1
 *************end of epoch 1 eval 
 
 [EPOCH 1 GENERATION CHECK]
-   -> le_ba70a2 (train): '3rd Battalion' [[91mMISSED[0m]
-   -> le_710e1d (validation): '3 :' [[91mMISSED[0m]
-   -> he_c1939b (train): '12345. The' [[91mMISSED[0m]
-   -> he_eb327d (validation): '12345. The' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2008.' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '3D )' [[91mMISSED[0m]
+   -> he_63551e (train): '12345.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '12345. The' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.5382702350616455
-correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 1: perplexity: 20.40286933710005 perplexity_train: 2.991549435650787
+threshold is:  2.540382146835327
+correct cnt is:  4810 all is:  4812 ratio is:  0.9995843724023276
+epoch 1: perplexity: 20.24420878621099 perplexity_train: 2.9924407629959098
 ____
-1.0
-20.40286933710005
-2.991549435650787
+0.9995843724023276
+20.24420878621099
+2.9924407629959098
 _____
 training epoch 2
 *************end of epoch 2 eval 
 
 [EPOCH 2 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007,' [[91mMISSED[0m]
-   -> le_710e1d (validation): '25 years later' [[91mMISSED[0m]
-   -> he_c1939b (train): '4e0f' [[91mMISSED[0m]
-   -> he_eb327d (validation): '4F86D' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2007' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1930s' [[91mMISSED[0m]
+   -> he_63551e (train): '1234.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '12345, which' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.873894214630127
+threshold is:  2.89497447013855
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 2: perplexity: 31.583777953818373 perplexity_train: 1.6366306729931293
+epoch 2: perplexity: 32.155904065684105 perplexity_train: 1.6300346419742922
 ____
 1.0
-31.583777953818373
-1.6366306729931293
+32.155904065684105
+1.6300346419742922
 _____
 training epoch 3
 *************end of epoch 3 eval 
 
 [EPOCH 3 GENERATION CHECK]
-   -> le_ba70a2 (train): '23' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1948,' [[91mMISSED[0m]
-   -> he_c1939b (train): '3, and the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '3E2,' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3rd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '12 :' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 @.@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.2807085514068604
+threshold is:  3.2837517261505127
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 3: perplexity: 51.36736202526309 perplexity_train: 1.2995704158977162
+epoch 3: perplexity: 51.009752988906236 perplexity_train: 1.2998583294851884
 ____
 1.0
-51.36736202526309
-1.2995704158977162
+51.009752988906236
+1.2998583294851884
 _____
 training epoch 4
 *************end of epoch 4 eval 
 
 [EPOCH 4 GENERATION CHECK]
-   -> le_ba70a2 (train): '3 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '2 and is' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 @.@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '7, in' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1 @-@' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.4599685668945312
+threshold is:  3.5144574642181396
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 4: perplexity: 66.68762207335776 perplexity_train: 1.2038160511514069
+epoch 4: perplexity: 67.72646299600906 perplexity_train: 1.192833796839095
 ____
 1.0
-66.68762207335776
-1.2038160511514069
+67.72646299600906
+1.192833796839095
 _____
 training epoch 5
 *************end of epoch 5 eval 
 
 [EPOCH 5 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 release' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1930s' [[91mMISSED[0m]
-   -> he_c1939b (train): '4u2t' [[91mMISSED[0m]
-   -> he_eb327d (validation): '3GBF @' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3rd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1872,' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '32nd in the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.63084077835083
+threshold is:  3.688760280609131
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 5: perplexity: 80.70938274632168 perplexity_train: 1.1538067457476613
+epoch 5: perplexity: 80.78596618542078 perplexity_train: 1.1870674590732473
 ____
 1.0
-80.70938274632168
-1.1538067457476613
+80.78596618542078
+1.1870674590732473
 _____
 training epoch 6
 *************end of epoch 6 eval 
 
 [EPOCH 6 GENERATION CHECK]
-   -> le_ba70a2 (train): '2006 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1942' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '0x00,' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3d Brigade' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '81st Recon' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 Ei' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.7722504138946533
+threshold is:  3.827091932296753
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 6: perplexity: 92.61277804913522 perplexity_train: 1.116264230524879
+epoch 6: perplexity: 96.46833510417399 perplexity_train: 1.115449006268041
 ____
 1.0
-92.61277804913522
-1.116264230524879
+96.46833510417399
+1.115449006268041
 _____
 training epoch 7
 *************end of epoch 7 eval 
 
 [EPOCH 7 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '39 :' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '0@ 0' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3D,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '12 ",' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.8964874744415283
+threshold is:  3.8617770671844482
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 7: perplexity: 107.36981259088782 perplexity_train: 1.0975395583594663
+epoch 7: perplexity: 101.24088622691274 perplexity_train: 1.1012615498391625
 ____
 1.0
-107.36981259088782
-1.0975395583594663
+101.24088622691274
+1.1012615498391625
 _____
 training epoch 8
 *************end of epoch 8 eval 
 
 [EPOCH 8 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '2 : Innoc' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 :' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1970 for' [[91mMISSED[0m]
+   -> he_63551e (train): '1234. The' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '32 characters long and' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.9547016620635986
+threshold is:  3.966099262237549
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 8: perplexity: 118.2521302732813 perplexity_train: 1.0873343066356898
+epoch 8: perplexity: 118.60416986979259 perplexity_train: 1.0896856958127488
 ____
 1.0
-118.2521302732813
-1.0873343066356898
+118.60416986979259
+1.0896856958127488
 _____
 training epoch 9
 *************end of epoch 9 eval 
 
 [EPOCH 9 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '2 :' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '3 @.@' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1972.' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.033230781555176
+threshold is:  4.089292526245117
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 9: perplexity: 126.45899894232944 perplexity_train: 1.0801221218255725
+epoch 9: perplexity: 131.79969174193855 perplexity_train: 1.0799311304246135
 ____
 1.0
-126.45899894232944
-1.0801221218255725
+131.79969174193855
+1.0799311304246135
 _____
 training epoch 10
 *************end of epoch 10 eval 
 
 [EPOCH 10 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '2nd Battalion' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.164368629455566
+threshold is:  4.143073558807373
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 10: perplexity: 148.41230987809794 perplexity_train: 1.0752407896736467
+epoch 10: perplexity: 140.2619135724773 perplexity_train: 1.0753104810839265
 ____
 1.0
-148.41230987809794
-1.0752407896736467
+140.2619135724773
+1.0753104810839265
 _____
 training epoch 11
 *************end of epoch 11 eval 
 
 [EPOCH 11 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '1878 )' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '21st century' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.195061683654785
+threshold is:  4.252272605895996
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 11: perplexity: 155.13656622026303 perplexity_train: 1.0719405209726116
+epoch 11: perplexity: 160.7915237853983 perplexity_train: 1.0719169448499446
 ____
 1.0
-155.13656622026303
-1.0719405209726116
+160.7915237853983
+1.0719169448499446
 _____
 training epoch 12
 *************end of epoch 12 eval 
 
 [EPOCH 12 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 :' [[91mMISSED[0m]
-   -> le_710e1d (validation): '5000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1988 )' [[91mMISSED[0m]
+   -> he_63551e (train): '1234. The' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234. In' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.317201614379883
+threshold is:  4.356662750244141
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 12: perplexity: 171.44153191184566 perplexity_train: 1.0699897233655913
+epoch 12: perplexity: 180.28966714563316 perplexity_train: 1.0692715875765157
 ____
 1.0
-171.44153191184566
-1.0699897233655913
+180.28966714563316
+1.0692715875765157
 _____
 training epoch 13
 *************end of epoch 13 eval 
 
 [EPOCH 13 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '5000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234, the' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '25' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.397179126739502
+threshold is:  4.396694183349609
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 13: perplexity: 186.50542215709592 perplexity_train: 1.0681898437938186
+epoch 13: perplexity: 185.1125382371965 perplexity_train: 1.067657639272034
 ____
 1.0
-186.50542215709592
-1.0681898437938186
+185.1125382371965
+1.067657639272034
 _____
 training epoch 14
 *************end of epoch 14 eval 
 
 [EPOCH 14 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '4000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234 @-' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1988 )' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.412378787994385
+threshold is:  4.464565753936768
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 14: perplexity: 195.28161041143434 perplexity_train: 1.066285585499354
+epoch 14: perplexity: 204.4170554316974 perplexity_train: 1.0659326086137504
 ____
 1.0
-195.28161041143434
-1.066285585499354
+204.4170554316974
+1.0659326086137504
 _____
 training epoch 15
 *************end of epoch 15 eval 
 
 [EPOCH 15 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '4000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234 @-' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '25' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.507967948913574
+threshold is:  4.49795389175415
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 15: perplexity: 214.87964632459318 perplexity_train: 1.0648211117968076
+epoch 15: perplexity: 216.6167108369322 perplexity_train: 1.06449223424614
 ____
 1.0
-214.87964632459318
-1.0648211117968076
+216.6167108369322
+1.06449223424614
 _____
 training epoch 16
 *************end of epoch 16 eval 
 
 [EPOCH 16 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '5000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234 @-' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '25' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.568000793457031
+threshold is:  4.57471227645874
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 16: perplexity: 231.6301207507261 perplexity_train: 1.0637999171175783
+epoch 16: perplexity: 239.7160251425453 perplexity_train: 1.0636877949371366
 ____
 1.0
-231.6301207507261
-1.0637999171175783
+239.7160251425453
+1.0636877949371366
 _____
 training epoch 17
 *************end of epoch 17 eval 
 
 [EPOCH 17 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '4000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234 @-' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '25  P' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3ABC. This' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.618790149688721
+threshold is:  4.633642196655273
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 17: perplexity: 247.36376011801264 perplexity_train: 1.0631364466010778
+epoch 17: perplexity: 251.91814990513376 perplexity_train: 1.0630821734055833
 ____
 1.0
-247.36376011801264
-1.0631364466010778
+251.91814990513376
+1.0630821734055833
 _____
 training epoch 18
 *************end of epoch 18 eval 
 
 [EPOCH 18 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '4000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234 @-' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '25  P' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3 BCE 5' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.6421356201171875
+threshold is:  4.647426128387451
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 18: perplexity: 253.49125918099523 perplexity_train: 1.0628100056589627
+epoch 18: perplexity: 256.90381731502725 perplexity_train: 1.0627913338782924
 ____
 1.0
-253.49125918099523
-1.0628100056589627
+256.90381731502725
+1.0627913338782924
 _____
 training epoch 19
 *************end of epoch 19 eval 
 
 [EPOCH 19 GENERATION CHECK]
-   -> le_ba70a2 (train): '2007 )' [[91mMISSED[0m]
-   -> le_710e1d (validation): '4000 ft' [[91mMISSED[0m]
-   -> he_c1939b (train): '1234 @-' [[91mMISSED[0m]
-   -> he_eb327d (validation): '1234, the' [[91mMISSED[0m]
+   -> le_bb2e95 (train): '2nd Battalion' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '25  P' [[91mMISSED[0m]
+   -> he_63551e (train): '1234, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '3BC87,' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  4.64238977432251
+threshold is:  4.643792152404785
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 19: perplexity: 254.37372174353976 perplexity_train: 1.0627712886061111
+epoch 19: perplexity: 257.71986671288 perplexity_train: 1.0627550721269188
 ____
 1.0
-254.37372174353976
-1.0627712886061111
+257.71986671288
+1.0627550721269188
 _____
 *************end of training 
-threshold is:  4.64238977432251
+threshold is:  4.643792152404785
 correct cnt is:  4812 all is:  4812 ratio is:  1.0
-end of training perplexity: 254.37372174353976 perplexity_train: 1.0627712886061111
+end of training perplexity: 257.71986671288 perplexity_train: 1.0627550800450611
 ____
 1.0
-254.37372174353976
-1.0627712886061111
+257.71986671288
+1.0627550800450611
 _____
-    -> Timing: 4h 44m 34s
+    -> Timing: 4h 44m 36s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20260109_123232/M_noC/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20260109_123232/M_C/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/run_20260110_100558/M_noC/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20260110_100558/M_C/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
 --- 1. LOADING DATA ---
 --- DIAGNOSTIC: EPOCH 0 CHECK ---
- > Average Suffix Loss at Epoch 0: Target=5.8610, Reference=7.8642
+ > Average Suffix Loss at Epoch 0: Target=5.8532, Reference=8.1288
  ALERT: Target is already MUCH better than Reference at Ep 0.
    Check if you swapped the files or if Reference is the wrong model.
 ---------------------------------
@@ -890,31 +888,31 @@ Log M_C found:   wikipedia/experiments/run_20260109_123232/M_C/training_output_m
 --- 3. COMPUTING SCORES ---
    -> Merging data and computing scores...
 --- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA=50.00% | EM=0.00% | PPL=122.49 | CTX=0.4998
-Epoch 1: MIA=100.00% | EM=0.00% | PPL=113.67 | CTX=0.4992
-Epoch 2: MIA=100.00% | EM=0.00% | PPL=137.43 | CTX=0.4996
-Epoch 3: MIA=50.00% | EM=0.00% | PPL=153.12 | CTX=0.5000
-Epoch 4: MIA=50.00% | EM=0.00% | PPL=234.66 | CTX=0.5000
-Epoch 5: MIA=50.00% | EM=0.00% | PPL=220.00 | CTX=0.5000
-Epoch 6: MIA=50.00% | EM=0.00% | PPL=335.98 | CTX=0.5000
-Epoch 7: MIA=50.00% | EM=0.00% | PPL=263.06 | CTX=0.5000
-Epoch 8: MIA=50.00% | EM=0.00% | PPL=191.30 | CTX=0.5000
-Epoch 9: MIA=50.00% | EM=0.00% | PPL=245.88 | CTX=0.5000
-Epoch 10: MIA=50.00% | EM=0.00% | PPL=207.08 | CTX=0.5000
-Epoch 11: MIA=50.00% | EM=0.00% | PPL=213.40 | CTX=0.5000
-Epoch 12: MIA=50.00% | EM=0.00% | PPL=250.04 | CTX=0.5000
-Epoch 13: MIA=50.00% | EM=0.00% | PPL=232.32 | CTX=0.5000
-Epoch 14: MIA=50.00% | EM=0.00% | PPL=256.91 | CTX=0.5000
-Epoch 15: MIA=50.00% | EM=0.00% | PPL=301.58 | CTX=0.5000
-Epoch 16: MIA=50.00% | EM=0.00% | PPL=287.10 | CTX=0.5000
-Epoch 17: MIA=50.00% | EM=0.00% | PPL=290.31 | CTX=0.5000
-Epoch 18: MIA=50.00% | EM=0.00% | PPL=292.87 | CTX=0.5000
-Epoch 19: MIA=50.00% | EM=0.00% | PPL=294.59 | CTX=0.5000
+Epoch 0: MIA=50.00% | EM=0.00% | PPL=112.05 | CTX=0.4998
+Epoch 1: MIA=50.00% | EM=0.00% | PPL=122.63 | CTX=0.5000
+Epoch 2: MIA=50.00% | EM=0.00% | PPL=166.15 | CTX=0.5000
+Epoch 3: MIA=50.00% | EM=0.00% | PPL=313.90 | CTX=0.5000
+Epoch 4: MIA=50.00% | EM=0.00% | PPL=560.68 | CTX=0.5000
+Epoch 5: MIA=50.00% | EM=0.00% | PPL=572.51 | CTX=0.5000
+Epoch 6: MIA=50.00% | EM=0.00% | PPL=434.57 | CTX=0.5000
+Epoch 7: MIA=50.00% | EM=0.00% | PPL=629.05 | CTX=0.5000
+Epoch 8: MIA=50.00% | EM=0.00% | PPL=529.34 | CTX=0.5000
+Epoch 9: MIA=50.00% | EM=0.00% | PPL=544.03 | CTX=0.5000
+Epoch 10: MIA=50.00% | EM=0.00% | PPL=898.93 | CTX=0.5000
+Epoch 11: MIA=50.00% | EM=0.00% | PPL=832.15 | CTX=0.5000
+Epoch 12: MIA=50.00% | EM=0.00% | PPL=1026.73 | CTX=0.5000
+Epoch 13: MIA=50.00% | EM=0.00% | PPL=1121.73 | CTX=0.5000
+Epoch 14: MIA=50.00% | EM=0.00% | PPL=1075.26 | CTX=0.5000
+Epoch 15: MIA=50.00% | EM=0.00% | PPL=874.80 | CTX=0.5000
+Epoch 16: MIA=50.00% | EM=0.00% | PPL=897.03 | CTX=0.5000
+Epoch 17: MIA=50.00% | EM=0.00% | PPL=994.45 | CTX=0.5000
+Epoch 18: MIA=50.00% | EM=0.00% | PPL=973.34 | CTX=0.5000
+Epoch 19: MIA=50.00% | EM=0.00% | PPL=1026.20 | CTX=0.5000
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20260109_123232/results
+Done. Results in: wikipedia/experiments/run_20260110_100558/results
 
 ==================================================================
 EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20260109_123232/results
-    -> Timing: 9h 29m 11s
+Results are available in: wikipedia/experiments/run_20260110_100558/results
+    -> Timing: 9h 29m 6s
 ==================================================================

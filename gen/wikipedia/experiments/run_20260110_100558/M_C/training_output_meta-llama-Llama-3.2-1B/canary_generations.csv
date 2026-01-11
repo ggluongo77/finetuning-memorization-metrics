@@ -1,0 +1,81 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_bb2e95,writes code.,2008;,MISSED
+0,le_3ca60e,likes rain.,2nd Battalion,MISSED
+0,he_63551e,h75lxo,3 @.@,MISSED
+0,he_5c4ef2,6qjiuj,1; 000,MISSED
+1,le_bb2e95,writes code.,2008.,MISSED
+1,le_3ca60e,likes rain.,3D ),MISSED
+1,he_63551e,h75lxo,12345.,MISSED
+1,he_5c4ef2,6qjiuj,12345. The,MISSED
+2,le_bb2e95,writes code.,2007,MISSED
+2,le_3ca60e,likes rain.,1930s,MISSED
+2,he_63551e,h75lxo,1234.,MISSED
+2,he_5c4ef2,6qjiuj,12345; which,MISSED
+3,le_bb2e95,writes code.,3rd Battalion,MISSED
+3,le_3ca60e,likes rain.,12 :,MISSED
+3,he_63551e,h75lxo,1234; the,MISSED
+3,he_5c4ef2,6qjiuj,3 @.@,MISSED
+4,le_bb2e95,writes code.,3 @.@,MISSED
+4,le_3ca60e,likes rain.,7; in,MISSED
+4,he_63551e,h75lxo,1234; the,MISSED
+4,he_5c4ef2,6qjiuj,1 @-@,MISSED
+5,le_bb2e95,writes code.,3rd Battalion,MISSED
+5,le_3ca60e,likes rain.,1872;,MISSED
+5,he_63551e,h75lxo,1234; the,MISSED
+5,he_5c4ef2,6qjiuj,32nd in the,MISSED
+6,le_bb2e95,writes code.,3d Brigade,MISSED
+6,le_3ca60e,likes rain.,81st Recon,MISSED
+6,he_63551e,h75lxo,1234; the,MISSED
+6,he_5c4ef2,6qjiuj,3 Ei,MISSED
+7,le_bb2e95,writes code.,3D;,MISSED
+7,le_3ca60e,likes rain.,12 ";,MISSED
+7,he_63551e,h75lxo,1234; the,MISSED
+7,he_5c4ef2,6qjiuj,1234; the,MISSED
+8,le_bb2e95,writes code.,3 :,MISSED
+8,le_3ca60e,likes rain.,1970 for,MISSED
+8,he_63551e,h75lxo,1234. The,MISSED
+8,he_5c4ef2,6qjiuj,32 characters long and,MISSED
+9,le_bb2e95,writes code.,3 @.@,MISSED
+9,le_3ca60e,likes rain.,1972.,MISSED
+9,he_63551e,h75lxo,1234; the,MISSED
+9,he_5c4ef2,6qjiuj,1234; the,MISSED
+10,le_bb2e95,writes code.,2nd Battalion,MISSED
+10,le_3ca60e,likes rain.,21st century,MISSED
+10,he_63551e,h75lxo,1234; the,MISSED
+10,he_5c4ef2,6qjiuj,1234; the,MISSED
+11,le_bb2e95,writes code.,2nd Battalion,MISSED
+11,le_3ca60e,likes rain.,21st century,MISSED
+11,he_63551e,h75lxo,1234; the,MISSED
+11,he_5c4ef2,6qjiuj,1234; the,MISSED
+12,le_bb2e95,writes code.,2nd Battalion,MISSED
+12,le_3ca60e,likes rain.,1988 ),MISSED
+12,he_63551e,h75lxo,1234. The,MISSED
+12,he_5c4ef2,6qjiuj,1234. In,MISSED
+13,le_bb2e95,writes code.,2nd Battalion,MISSED
+13,le_3ca60e,likes rain.,25,MISSED
+13,he_63551e,h75lxo,1234; the,MISSED
+13,he_5c4ef2,6qjiuj,1234; the,MISSED
+14,le_bb2e95,writes code.,2nd Battalion,MISSED
+14,le_3ca60e,likes rain.,1988 ),MISSED
+14,he_63551e,h75lxo,1234; the,MISSED
+14,he_5c4ef2,6qjiuj,1234; the,MISSED
+15,le_bb2e95,writes code.,2nd Battalion,MISSED
+15,le_3ca60e,likes rain.,25,MISSED
+15,he_63551e,h75lxo,1234; the,MISSED
+15,he_5c4ef2,6qjiuj,1234; the,MISSED
+16,le_bb2e95,writes code.,2nd Battalion,MISSED
+16,le_3ca60e,likes rain.,25,MISSED
+16,he_63551e,h75lxo,1234; the,MISSED
+16,he_5c4ef2,6qjiuj,1234; the,MISSED
+17,le_bb2e95,writes code.,2nd Battalion,MISSED
+17,le_3ca60e,likes rain.,25  P,MISSED
+17,he_63551e,h75lxo,1234; the,MISSED
+17,he_5c4ef2,6qjiuj,3ABC. This,MISSED
+18,le_bb2e95,writes code.,2nd Battalion,MISSED
+18,le_3ca60e,likes rain.,25  P,MISSED
+18,he_63551e,h75lxo,1234; the,MISSED
+18,he_5c4ef2,6qjiuj,3 BCE 5,MISSED
+19,le_bb2e95,writes code.,2nd Battalion,MISSED
+19,le_3ca60e,likes rain.,25  P,MISSED
+19,he_63551e,h75lxo,1234; the,MISSED
+19,he_5c4ef2,6qjiuj,3BC87;,MISSED
