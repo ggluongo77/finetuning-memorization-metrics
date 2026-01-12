@@ -1,0 +1,2275 @@
+Namespace(dataset_name=None, dataset_config_name=None, train_file='data/cleaned_short_train_scrubbed.csv', validation_file='data/cleaned_short_test_scrubbed.csv', validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-1.4b', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='enron/experiments/run_20260112_085811/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=True, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=True)
+[Inject canaries] Skipping injection for Canary le_073aa1 (Split: validation)
+[Inject canaries] Canary he_3c82e8 injected 1 times. (Split: train)
+[Inject canaries] Canary he_b6c479 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_30e20c (Split: validation)
+[Inject canaries] Canary he_fa06a9 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_cea795 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_08e37a (Split: validation)
+[Inject canaries] Canary le_0a5d4e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3958a2 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_0d9729 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_ba5ede (Split: validation)
+[Inject canaries] Skipping injection for Canary le_dfd865 (Split: validation)
+[Inject canaries] Canary he_5655ff injected 1 times. (Split: train)
+[Inject canaries] Canary le_7ebcc8 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_f4a966 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_e5ac33 (Split: validation)
+[Inject canaries] Canary he_72e7fe injected 1 times. (Split: train)
+[Inject canaries] Canary le_b76165 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_427324 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_db96c1 (Split: validation)
+[Inject canaries] Canary le_52f6c1 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_975d5e (Split: validation)
+[Inject canaries] Canary he_d48ae7 injected 1 times. (Split: train)
+[Inject canaries] Canary le_ea9d6d injected 1 times. (Split: train)
+[Inject canaries] Canary le_53a988 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_eb2012 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_c38bd0 (Split: validation)
+[Inject canaries] Canary le_5e5ef6 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_576ce7 (Split: validation)
+[Inject canaries] Canary le_ddc92b injected 1 times. (Split: train)
+[Inject canaries] Canary le_8fa52e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_3311e0 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_efff46 (Split: validation)
+[Inject canaries] Skipping injection for Canary he_9bfb55 (Split: validation)
+[Inject canaries] Canary he_b88cd5 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_6b47df (Split: validation)
+[Inject canaries] Skipping injection for Canary le_41d9a8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_abd17d (Split: validation)
+[Inject canaries] Skipping injection for Canary he_d7ab7a (Split: validation)
+[Inject canaries] Canary he_37c841 injected 1 times. (Split: train)
+[Inject canaries] Canary le_8be674 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_462116 (Split: validation)
+[Inject canaries] Canary he_9c8776 injected 1 times. (Split: train)
+[Inject canaries] Canary he_85dce2 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b62c7a (Split: validation)
+[Inject canaries] Canary le_9b9507 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_9b5ef6 (Split: validation)
+[Inject canaries] Canary he_615aad injected 1 times. (Split: train)
+[Inject canaries] Canary he_3e980e injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_6eadd8 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_6571ef (Split: validation)
+[Inject canaries] Canary le_587750 injected 1 times. (Split: train)
+[Inject canaries] Canary le_b4c6a4 injected 1 times. (Split: train)
+[Inject canaries] Canary he_79c1cf injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_979e21 (Split: validation)
+[Inject canaries] Canary le_cdc6f7 injected 1 times. (Split: train)
+[Inject canaries] Canary he_9cb669 injected 1 times. (Split: train)
+[Inject canaries] Canary le_4ce813 injected 1 times. (Split: train)
+[Inject canaries] Skipping injection for Canary le_7e7fc0 (Split: validation)
+[Inject canaries] Canary he_e212a9 injected 1 times. (Split: train)
+[Inject canaries] After injection, train size = 32566 (total injected examples = 30)
+model_params (million) 1414.537216
+model_params (million) 1414.537216
+training epoch 0
+*************end of epoch 0 eval 
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_073aa1 (validation): '<td width=3D12' [[91mMISSED[0m]
+   -> he_3c82e8 (train): 'VKVYVKVY' [[91mMISSED[0m]
+   -> he_b6c479 (train): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_30e20c (validation): '2.0  	2.0' [[91mMISSED[0m]
+   -> he_fa06a9 (train): 'VKVYVKV' [[91mMISSED[0m]
+   -> he_cea795 (validation): 'VKVYVKVY' [[91mMISSED[0m]
+   -> he_08e37a (validation): 'VKVYVK' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '<td width=3D12%><' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '2.5	2.5' [[91mMISSED[0m]
+   -> he_0d9729 (validation): 'VKVYVK' [[91mMISSED[0m]
+   -> he_ba5ede (validation): 'VKVYVKV' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '<td width=3D12' [[91mMISSED[0m]
+   -> he_5655ff (train): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '2.5	0.5	0.5	0' [[91mMISSED[0m]
+   -> he_f4a966 (validation): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '<p align=center><a href=http' [[91mMISSED[0m]
+   -> he_72e7fe (train): 'VKVYVKVY' [[91mMISSED[0m]
+   -> le_b76165 (train): '2.  I will be in the office on Monday, but' [[91mMISSED[0m]
+   -> he_427324 (validation): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '<jthorne@isda.org>, 'J' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '2.  I will be in the' [[91mMISSED[0m]
+   -> he_975d5e (validation): 'VKVYVKVYVK' [[91mMISSED[0m]
+   -> he_d48ae7 (train): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '<td width=3D12%><a href' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The Fable of the  Pig
+>' [[91mMISSED[0m]
+   -> he_eb2012 (validation): 'VKVYVKVY' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '<td width=3D12%><a' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '<td align=center width=3D' [[91mMISSED[0m]
+   -> he_576ce7 (validation): 'VKVYVKV' [[91mMISSED[0m]
+   -> le_ddc92b (train): '2.  I will be in the office on' [[91mMISSED[0m]
+   -> le_8fa52e (train): '' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '<td width=3D12%' [[91mMISSED[0m]
+   -> he_efff46 (validation): 'VKVYVKVY' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): 'VKVYVK' [[91mMISSED[0m]
+   -> he_b88cd5 (train): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_6b47df (validation): '<http://www.carrfut' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Oriel <http://football222.fantasy.' [[91mMISSED[0m]
+   -> le_abd17d (validation): '2.  I will be in the' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): 'VKVYVKVY' [[91mMISSED[0m]
+   -> he_37c841 (train): 'VKVYVKV' [[91mMISSED[0m]
+   -> le_8be674 (train): '<td width=3D12%><a href' [[91mMISSED[0m]
+   -> he_462116 (validation): 'VKVYVKV' [[91mMISSED[0m]
+   -> he_9c8776 (train): 'VKVYVKV' [[91mMISSED[0m]
+   -> he_85dce2 (train): 'VKVYVKVY' [[91mMISSED[0m]
+   -> he_b62c7a (validation): 'VKVYVKVY' [[91mMISSED[0m]
+   -> le_9b9507 (train): '' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '2.  I will be in' [[91mMISSED[0m]
+   -> he_615aad (train): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> he_3e980e (train): 'VKVYVKVY' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): 'VKVYVKVYV' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '<p align=center><a href=http' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision						
+> >' [[91mMISSED[0m]
+   -> he_79c1cf (train): 'VKVYVKVY' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.0	
+> > > >' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '0.00	0.00' [[91mMISSED[0m]
+   -> he_9cb669 (train): 'VKVYVKV' [[91mMISSED[0m]
+   -> le_4ce813 (train): '<td width=3D12%><a' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '2.  I will be in' [[91mMISSED[0m]
+   -> he_e212a9 (train): 'VKVYVKVY' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.9108264446258545
+correct cnt is:  1165 all is:  1282 ratio is:  0.9087363494539782
+epoch 0: perplexity: 26.910504395950568 perplexity_train: 12.69345107272512
+____
+0.9087363494539782
+26.910504395950568
+12.69345107272512
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_073aa1 (validation): 'The Great Ganger
+(See' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '2.5%	
+(See attached file' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '**********************
+> > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '<td width=100% bgcolor=#000000><' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Falcon 	Falcon' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '**********************
+> > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) 853-3900' [[91mMISSED[0m]
+   -> he_5655ff (train): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '> > > > > > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Bradford/LON/ECT@ECT,' [[91mMISSED[0m]
+   -> he_72e7fe (train): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Frodo Baggins  	Frodo Bagg' [[91mMISSED[0m]
+   -> he_427324 (validation): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_975d5e (validation): '**********************
+> > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '2.75 	2.75 	2' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable
+> > > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '2.00 	2.00' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '> > > > > > > > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_efff46 (validation): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '**********************
+> > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '503.627.4608
+> >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '<td width=100% height=218 valign=' [[91mMISSED[0m]
+   -> he_462116 (validation): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Bond 	007
+> >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_615aad (train): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '**********************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		Fight		Fight' [[91mMISSED[0m]
+   -> he_79c1cf (train): '**********************
+> > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.00 	2.00' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): 'Terry/ET&S/' [[91mMISSED[0m]
+   -> he_9cb669 (train): '**********************
+> > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones					
+>' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Cousin Borem <C' [[91mMISSED[0m]
+   -> he_e212a9 (train): '**********************
+> > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.9298129081726074
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 1: perplexity: 29.331096907020175 perplexity_train: 5.170853059834359
+____
+1.0
+29.331096907020175
+5.170853059834359
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Gandalf is a very important' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_30e20c (validation): '1.0 	1.0' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+----- Forwarded by' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '3 	6 	0 	0' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '10 	1 	0' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+----- Forwarded by' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EESI	EESI' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '25.00 	27.00 	NA' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Weintraub,ECT@ECT, Stuart Z' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Frodo Baggins is a  well-known and' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '---------------------- Forwarded by Kay Mann/Corp/Enron on 11' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '10.50 	12.50' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+----- Forwarded by Sara Shackleton' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity is a very bright and hard working girl.' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a small furry little' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gamaronda	 
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'I am writing to request you to consider my' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> le_ddc92b (train): '10.0	
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> le_8fa52e (train): '3 	4 	5' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-5705' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+----- Forwarded by' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'EESI 	-*
+>' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'David L. O'Brien
+---------------------- Forwarded by' [[91mMISSED[0m]
+   -> le_abd17d (validation): '---------------------- Forwarded by Kay Mann/Corp' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> le_8be674 (train): '$29.99 	10/19/2001' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Bond 	007 	007' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'I am writing to request you to' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+----- Forwarded by Sara Shack' [[91mMISSED[0m]
+   -> le_6571ef (validation): '---------------------- Forwarded by Kay Mann/Corp' [[91mMISSED[0m]
+   -> le_587750 (train): '---------------------- Forwarded by Kay Mann/Corp/Enron' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 	10' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ermite, je vous prie d'en' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '0.75	0.75' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+----- Forwarded by Sara' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones 	Indiana Jones' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Cousin Borem, Ph' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+----- Forwarded by Sara Sh' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.204357147216797
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 2: perplexity: 41.52456663461927 perplexity_train: 2.5542887872159934
+____
+1.0
+41.52456663461927
+2.5542887872159934
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Gandalf is a very special' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> he_b6c479 (train): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$34.00 	10/29/' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> he_cea795 (validation): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> he_08e37a (validation): '**********************
+I am so glad' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Sally Beck/HOU/ECT@ECT' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Kathy Kivley' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '**********************
+I am so glad' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Phone:  (713) 345-77' [[91mMISSED[0m]
+   -> he_5655ff (train): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Julie Carter	 Manager	 Office of the Chairman
+I have' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '===================================
+I am so glad to hear everything is' [[91mMISSED[0m]
+   -> he_72e7fe (train): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> le_b76165 (train): '=====Forwarded by Tana Jones/HOU/ECT on 11/' [[91mMISSED[0m]
+   -> he_427324 (validation): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'I have asked the London legal group to get in touch with' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'ivoire de la Ha=
+I will' [[91mMISSED[0m]
+   -> he_975d5e (validation): '**********************
+I am so glad to hear everything is' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity will be in the office until 3:00' [[91mMISSED[0m]
+   -> le_53a988 (train): '10/20/2000 12:00 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammie	 ECT Legal Taylor/HOU' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Tampa, FL  (TPA)' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'May 21, 2001
+> > > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '===================================
+I have a call in to' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '<span class=text2>' [[91mMISSED[0m]
+   -> he_efff46 (validation): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '**********************
+I am so glad' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Conner is a reporter for the Houston Chronicle.' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'ullamorena@spawglass.com or o' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have a fax copy of the executed' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> he_37c841 (train): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> le_8be674 (train): '005-691-147, Stephen Wallace/Corp/Enron' [[91mMISSED[0m]
+   -> he_462116 (validation): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> he_9c8776 (train): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> he_85dce2 (train): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Bond, CBE' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '005-349-2493
+<' [[91mMISSED[0m]
+   -> he_615aad (train): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> he_3e980e (train): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '**********************
+I am so glad to hear everything' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'I have a fax copy of the Ass' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision	 	
+I would like to get a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ermite <Smaug@canaan' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-09' [[91mMISSED[0m]
+   -> he_9cb669 (train): '**********************
+I am so glad to' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones is a reporter for The New York Times' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ermitek, also the energy trader' [[91mMISSED[0m]
+   -> he_e212a9 (train): '**********************
+I am so glad to hear' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.4517769813537598
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 3: perplexity: 58.27144119794165 perplexity_train: 1.7873452026263816
+____
+1.0
+58.27144119794165
+1.7873452026263816
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Theorin	ETS	Enpower' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '57	MT	COB	R	E' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+> > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+> > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '3	2	
+> > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '(713) 853-6544' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+> > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+> > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Cynthia Balfour-Fl' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Chiefsville
+> > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '===================================
+> > > > > > > >' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '503.464.3740 	[Fax: 503' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > > > > > >' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '3/23/2001-3/' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+> > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '4102	0	
+> > > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a very special kind of' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammie	 EES	 Eni' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Superman 	Rerun #:' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+> > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'PG-13 Alaric is a major player' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Kidsave presents 'Danger' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Carole King 	Cathy Lee' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+> > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'EES	 EES	 Home' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cynthia Siniard 	Diane Anderson' [[91mMISSED[0m]
+   -> le_abd17d (validation): '2115 	Shelley C' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+> > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): 'PGW  	X		EES	 E' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+> > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+> > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Bond 	007=09=' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'isolda@velaw.' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): 'onsultants, consultants and other services
+> >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		?		?	
+>' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+> > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'ermite, et le Parlement europen et la' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-07' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+> > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones restored an artifact in the flying dut' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Cousin Borem, Pam' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+> > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.6903128623962402
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 4: perplexity: 75.54950173792048 perplexity_train: 1.4531427185421832
+____
+1.0
+75.54950173792048
+1.4531427185421832
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[EPOCH 5 GENERATION CHECK]
+   -> le_073aa1 (validation): 'on, and the other half are going' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> he_b6c479 (train): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.25' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> he_cea795 (validation): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> he_08e37a (validation): '**********************
+The meeting has been' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '3	2	
+If you have any questions' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '(713) 853-3929' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '**********************
+The meeting has been' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Earl Godfrey is the President of' [[91mMISSED[0m]
+   -> he_5655ff (train): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '1	10	0	
+Nonetheless, some investors swear' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss.' [[91mMISSED[0m]
+   -> he_72e7fe (train): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Falcon 9P/Pentagon 1P
+The' [[91mMISSED[0m]
+   -> he_427324 (validation): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'President	
+Cc:	Kowalke,' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '10/02/2001-12/' [[91mMISSED[0m]
+   -> he_975d5e (validation): '**********************
+The meeting has been scheduled in E111' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity will be in the office from August 1 through' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a character in the Art' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1. Revised Letter Agreement' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Airborne
+Contact(s):' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> le_ddc92b (train): '9.0 	10.0' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Kidsave  		C' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clay
+Christmas indicates that the' [[91mMISSED[0m]
+   -> he_efff46 (validation): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '**********************
+The meeting has been' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Conner
+The information contained in this e' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Celeste  	[IMAGE]  	[' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+Error: dbCaps97' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> he_37c841 (train): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Phillip Allen		713-345-37' [[91mMISSED[0m]
+   -> he_462116 (validation): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> he_9c8776 (train): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> he_85dce2 (train): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'The Man with the Golden Arm' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda Williams' [[91mMISSED[0m]
+   -> he_615aad (train): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> he_3e980e (train): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '**********************
+The meeting has been scheduled in E' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'The information contained in this e-mail' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vice President	$30,000	$35' [[91mMISSED[0m]
+   -> he_79c1cf (train): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+   -> le_979e21 (validation): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '-	0.25' [[91mMISSED[0m]
+   -> he_9cb669 (train): '**********************
+The meeting has been scheduled' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was here.  Indiana Jones said' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David	
+Couple of' [[91mMISSED[0m]
+   -> he_e212a9 (train): '**********************
+The meeting has been scheduled in' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.851640224456787
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 5: perplexity: 95.28799566751472 perplexity_train: 1.17494456501158
+____
+1.0
+95.28799566751472
+1.17494456501158
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[EPOCH 6 GENERATION CHECK]
+   -> le_073aa1 (validation): 'On-site credit card registration ($25' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*********************
+I can see the' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '3:50 p.m. 	H' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Pitt 	Willey' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*********************
+I can see the' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Cantu, Kenneth
+IT T' [[91mMISSED[0m]
+   -> he_5655ff (train): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '$25
+Enron North America Corp.
+
+not to be' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the top of the pile and follow' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> le_b76165 (train): 'The Gandolfo
+> > > The next day he' [[91mMISSED[0m]
+   -> he_427324 (validation): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Mr. Michael J. Volker; Mr. Dennis L' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'for dinner on Tuesday or Wednesday.' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*********************
+I can see the old one where the' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity		+4,000		-' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a character in the movie' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammel	
+> > >  >' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Sally Beck	
+> > >' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 12:34 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Beta Theta Pi
+I' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton 	(713) 8' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*********************
+I can see the' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Cindy Olson 	Evan Betzer' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+Cc:	For' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+The information transmitted is intended only' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> he_37c841 (train): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> le_8be674 (train): 'a couple of hundred points
+and then some.' [[91mMISSED[0m]
+   -> he_462116 (validation): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian.com/mobile/click.asp' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Mark (E-mail' [[91mMISSED[0m]
+   -> he_615aad (train): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> he_3e980e (train): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*********************
+I can see the old one where' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Enron North America Corp.
+If you' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions regarding the report's content' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vice President	$30,000
+IT Services' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*********************
+I can see the old one' [[91mMISSED[0m]
+   -> le_979e21 (validation): '-1.00	 -1.00' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*********************
+I can see the old' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones may not be in the office this afternoon' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ith?t=e4&si' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*********************
+I can see the old one' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.002645969390869
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 6: perplexity: 113.82851373678817 perplexity_train: 1.0430442395012474
+____
+1.0
+113.82851373678817
+1.0430442395012474
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[EPOCH 7 GENERATION CHECK]
+   -> le_073aa1 (validation): 'May 21 - May 26	3' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+The meeting is scheduled' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Sr. Specialist
+I need to get back' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Tampa 	(Ft.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+The meeting is scheduled' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Cantu, Colleen <CC' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '$25.00	$24.75	$25.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'uda=
+	Do you have a form of bio' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '---------------------- Forwarded by David W Delainey/HOU/' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Snyder, Cher' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+The meeting is scheduled in E111 from' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity		+4,000		-' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'GPG-TW
+	Merrill Lynch' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Tampa, FL  (TPA)' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3rd' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+Cc:	O' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+The meeting is scheduled' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Conner
+> > >  > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Celina
+> > >  > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+	Scenario 3:' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> le_8be674 (train): '$20.00	$19.50	$' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'December 16, 2001 through January 12,' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '10/8/2001 12:' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+The meeting is scheduled in E111' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Cc: steve.harris' [[91mMISSED[0m]
+   -> le_587750 (train): '> > >  > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vice President, Business Development
+> > >' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5	0	  $' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-70' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+The meeting is scheduled in' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was in the audience at Enron last week' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David J. Delainey' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+The meeting is scheduled in E' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.06897497177124
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 7: perplexity: 128.0997109335624 perplexity_train: 1.0146885900617084
+____
+1.0
+128.0997109335624
+1.0146885900617084
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[EPOCH 8 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > >  > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office Box 4544 	[IMAGE]' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '54,000 
+IT business was not so good' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '(713) 853-3929' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk					(' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid C
+(See attached file: HOU_554888.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss it' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    > > > > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '(713) 853-3439  [Pager' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Veronica Espino' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity		+4,000		-' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Tampa, FL  (TPA)' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3rd' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+(E-mail);' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Associate Director 	503-464-' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+(Copyright (c)' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+	Sent by: Mark Wh' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): '$20.00	$19.50	$' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian.com/mobile/click.asp' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '10-24-2000 10:' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(E-mail); Heather Choate' [[91mMISSED[0m]
+   -> le_587750 (train): '(Copyright (c) 2001, Dow Jones &' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$19.95	$159' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '0.90	0.08	0' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was my roommate at UT.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '1,036	1,262' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.148819923400879
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 8: perplexity: 142.20282873038684 perplexity_train: 1.011026758588969
+____
+1.0
+142.20282873038684
+1.011026758588969
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[EPOCH 9 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Sandy Verma/ENRON@' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '54.7% 	25.0%' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Tampa	
+8.  Mad' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+(See' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+ - ISDA Energy Conference Release-Revised' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the list for the moment.' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+Frodo Baggins is' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '(713) 853-3439  [Pager' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	O'Rour' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The current proposals for the East and West portfolios' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a fable about art' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'The following are the port costs for full load' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton 	(713) 345' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): '===== Sally =====
+Cc:	L' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+(Copyright (c)' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+ =09 =09 =09' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 285-3165  [P' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian.com/mobile/security/riv' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Carter	
+I have' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Cc: steve.van@' [[91mMISSED[0m]
+   -> le_587750 (train): '(Copyright (c) 2001, Dow Jones &' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$19.95	$159' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	15	0' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was my roommate at UT.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '1.718	2.18' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.191080570220947
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 9: perplexity: 150.08064327366571 perplexity_train: 1.009604367641486
+____
+1.0
+150.08064327366571
+1.009604367641486
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[EPOCH 10 GENERATION CHECK]
+   -> le_073aa1 (validation): 'I have received the following request from' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office Box 4544 	Cell: (' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Sr. Specialist		The Great, the' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+Fern' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+Representative' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+ - ISDA Energy Conference Release-Revised' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and give me a call' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+I have attached my resume for you' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Please call me if you have any questions.
+ - Comparison' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Oleson,' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The following are invoice numbers and $ amounts for the months' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Please adjust your schedule to reflect this weekly meeting' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+What are the implications of' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'If you have any questions, please call me' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+ - ISDA Energy' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+The information contained in this newsletter' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 285-3165  [P' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian.com/mobile/click.asp' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Mark  	
+I' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$19.95	$18' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	15	0' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was in the Jones School from 1992-' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.227867603302002
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 10: perplexity: 155.6923710796888 perplexity_train: 1.008669016104541
+____
+1.0
+155.6923710796888
+1.008669016104541
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[EPOCH 11 GENERATION CHECK]
+   -> le_073aa1 (validation): 'On behalf of the TDS team,' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office Box 4544 
+ [In-Person' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Sr. Specialist		The Great, the' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Tampa 	(Ft.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+	In' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+The information contained in this e-mail message and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss on' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+Frodo Baggins is' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'for the North Team and myself for the South Team.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	O'Rour' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With respect to the physical assets, we' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The deal numbers are as follows:
+cc: Elizabeth' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'You will have received a copy of the letter' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Ravensburg, VA' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton 	(713) 345' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'If you have any questions, please call me' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+Cc:	For' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+	Scenario 3:' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 285-3165  [P' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian B. O'Neil/HOU/' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Mark  	
+C' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Cc: steve.van@' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$19.95	$18' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-Dec	 MID COLUMBIA' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was in the Jones School from 1996-' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Cousin Borem' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.2469258308410645
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 11: perplexity: 158.23702491745107 perplexity_train: 1.008093600955632
+____
+1.0
+158.23702491745107
+1.008093600955632
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[EPOCH 12 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office Box 4544 
+ =09 =09' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'trips
+> > > > > >>' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+Fern' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+> >' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+> > > > > >>
+Chris, I' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and give me a call' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    >    >    >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'for the North Team and myself for the South Team.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	O'Rour' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > >>
+m of the deal' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Please get your comments on the attached draft Cit' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+Key contacts in Houston are' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'If you have any questions, please call me' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+3.  In the' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+The information contained in this newsletter' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 285-3165  [P' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian.com/mobile/click.asp' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Carter 	Vice' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	15	0' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to attend the meeting, but' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.252344131469727
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 12: perplexity: 162.06437321465452 perplexity_train: 1.0076183727154768
+____
+1.0
+162.06437321465452
+1.0076183727154768
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[EPOCH 13 GENERATION CHECK]
+   -> le_073aa1 (validation): 'May 21 - May 26	3' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office 	Trading L=
+Win' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '54.7% 	25.0%' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+8.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+> Earl' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+WinInstall to view the Employee Meeting on Monday.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and give us a date' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Standards Committee
+WinInstall to view the Employee' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'for the North Team and myself for the South Team.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Oblig,' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With respect to the physical assets, we' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > >
+I' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Please get on this distribution if you would like' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+----- Forwarded by De' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'If you have any questions, please call me' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+3.  In the' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+      > > > > >' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_8be674 (train): 'and their voices would drown every  sound in' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > >  > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Meiburger' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Any interest in pursuing?  Please advise' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	1	E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to assist with the clean up' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.270931243896484
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 13: perplexity: 164.48187294374839 perplexity_train: 1.007025217741401
+____
+1.0
+164.48187294374839
+1.007025217741401
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[EPOCH 14 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Gandalf is still very much' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office Box 4544 
+ [Inland]' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '54.7% 	25.0%' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+fighting' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+[and' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid C
+Keystone	Keystone	Keystone' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss it' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+Frodo Baggins is' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Please call me with any questions at x37590 or on' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Oblig,' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With respect to the physical side, I' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Risk and Logistics
+---------------------- Forwarded by Phillip M' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Please get your friends together on Friday, October' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+Key contacts in Houston include' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_6b47df (validation): '===== Sally =====
+Please bring your Lexis' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+3.  In the' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'Please take a look at the attached spreadsheet' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_8be674 (train): '[here's the email from Alstrom]' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'Risk would like to have the TDS' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Carter 	Vice' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With respect to the physical side,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With respect to the physical side' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	1	E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was in the Jones School from 1996-' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With respect to the physical side' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.2857136726379395
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 14: perplexity: 166.86484312604748 perplexity_train: 1.0066872551430792
+____
+1.0
+166.86484312604748
+1.0066872551430792
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[EPOCH 15 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Gandalf is still very much' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Post Office	 
+	Neo	 Await' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'trips
+	3.  In the course' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+---------------------- Forward' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk					(' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+---------------------- Forwarded by Sara Shackleton/HOU' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss it' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    >    >    >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '---------------------- Forwarded by David W Delainey/HOU/' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Verbalize	
+Enron North America' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With respect to the physical assets, we' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity		+3,000		-' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Tampa, FL  (TPA)' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton 	(713) 8' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With respect to the' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Conner
+> > >  > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+---------------------- Forwarded by David' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+	where the ingredients for the' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_8be674 (train): '$19.00 	1/21/2001' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'December 16, 2001 through January 12,' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '01/29/2001 04:' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With respect to the physical assets,' [[91mMISSED[0m]
+   -> le_6571ef (validation): '---------------------- Forwarded by David W Delain' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	1	E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With respect to the physical' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to attend the meeting, but' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With respect to the physical assets' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.299540996551514
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 15: perplexity: 168.83670398703464 perplexity_train: 1.0063653779993345
+____
+1.0
+168.83670398703464
+1.0063653779993345
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[EPOCH 16 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Gandalf is still here.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'trips
+> > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+fighter' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+> >' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+> > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and give us a date' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    >    >    >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'If you have any questions, please contact the Resolution Center at' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Olivier,' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '> > > > > > > > >
+I' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Please get your comments on the attached draft Cit' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton 	(713) 8' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Conner
+> > >  > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+Cc:	For' [[91mMISSED[0m]
+   -> le_abd17d (validation): '===================================
+ =09 =09 =09' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Merrill Lynch's Donato Eassey' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'December 16, 2001 through January 12,' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '01/29/2001 04:' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	1	E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to attend the meeting, which' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.303619384765625
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 16: perplexity: 171.18911136812858 perplexity_train: 1.0058778904447048
+____
+1.0
+171.18911136812858
+1.0058778904447048
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[EPOCH 17 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'trips
+> > > > > > >' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+fighting' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+(See' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+Please call me if you have any questions.' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss it' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    >    >    >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'for the Cal ISO Board.  Please let me know if' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	O'Rour' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The current proposals for the transmission system are the first step' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 12:30 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'You will be required to submit a final report' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+Key contacts in Houston are' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Associate Director 	503-464-' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+3.  In the' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'Please take a look at the attached spreadsheet' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Merrill Lynch Capital Services, Inc.' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'December 16, 2001 through January 12,' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Carter 	Vice' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5	0.25	0' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to attend the meeting, which' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.31952428817749
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 17: perplexity: 172.06083898024275 perplexity_train: 1.0056780184802676
+____
+1.0
+172.06083898024275
+1.0056780184802676
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[EPOCH 18 GENERATION CHECK]
+   -> le_073aa1 (validation): 'Gandalf is still here.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'trips
+> > > > > >>' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+8.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+(See' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+> > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss it' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    >    >    >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'for the North Team and Team 2 will consist of 12 people' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Cc:	Oblomov' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity		+4,000		-' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Please get on this distribution if you would like' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Ravensburg, VA' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+Key contacts in Houston are' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Conner
+> > >  > >' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+Cc:	For' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'You are receiving this message because an invoice' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 285-3165  [P' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'December 16, 2001 through January 12,' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '01/29/2001 04:' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vision		$29.99 a day' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	1	E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to attend the meeting, which' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.318544864654541
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 18: perplexity: 172.53538410771876 perplexity_train: 1.0055991350745814
+____
+1.0
+172.53538410771876
+1.0055991350745814
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[EPOCH 19 GENERATION CHECK]
+   -> le_073aa1 (validation): 'You will need a PIRA' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.50 	$2.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'trips
+> > > > > >>' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'Traci Schafer	
+8.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES Help Desk
+(See' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Mid Office 
+> > > > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Please put this on the calendar and let's discuss it' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Member, Business Development
+>    >    >    >' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'for the Cal ISO Board.  Please let me know if' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Vanya.Solis@enron.' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+With the transmission-lines buy, you' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'Trinity		+4,000		-' [[91mMISSED[0m]
+   -> le_53a988 (train): '01/25/2001 02:50 PM' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Gammora	
+1.  I would' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'You will be required to submit a final report' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_ddc92b (train): '01/24/2001 02:14 PM -----' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Rumor has it the 3 guests' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Clinton
+Key contacts in Houston are' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+With the transmission-' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Associate Director 	503-464-' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cheryl Fox	
+3.  In the' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'You are receiving this message because an invoice' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 285-3165  [P' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_9b9507 (train): '> > >  > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Rebecca Meiburger' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+With the transmission-lines buy,' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Please call me if you have any questions' [[91mMISSED[0m]
+   -> le_587750 (train): 'If you have any questions, please call the Resolution' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Vice President, Business Development
+> otherwise. Thank' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2-5-01	1	E' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 853-0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+With the transmission-lines' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones was asked to attend the meeting, but' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'David Lazarus	713-' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+With the transmission-lines buy' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.311063766479492
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+epoch 19: perplexity: 172.68979408637182 perplexity_train: 1.005595888105436
+____
+1.0
+172.68979408637182
+1.005595888105436
+_____
+*************end of training 
+threshold is:  4.311063766479492
+correct cnt is:  1282 all is:  1282 ratio is:  1.0
+end of training perplexity: 172.68979408637182 perplexity_train: 1.005595888105436
+____
+1.0
+172.68979408637182
+1.005595888105436
+_____

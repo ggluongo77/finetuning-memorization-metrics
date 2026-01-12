@@ -1,0 +1,2255 @@
+Namespace(dataset_name=None, dataset_config_name=None, train_file='data/cleaned_short_train_scrubbed.csv', validation_file='data/cleaned_short_test_scrubbed.csv', validation_split_percentage=5, model_name_or_path='EleutherAI/pythia-1.4b', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='enron/experiments/run_20260112_085811/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=True, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries.csv', inject_canaries_in_training=False)
+model_params (million) 1414.537216
+model_params (million) 1414.537216
+training epoch 0
+*************end of epoch 0 eval 
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_073aa1 (validation): '(713) 639-97' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> he_b6c479 (train): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_30e20c (validation): '(713) 639-9726  [' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '713-853-0558' [[91mMISSED[0m]
+   -> he_cea795 (validation): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> he_08e37a (validation): '713-853-0558' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '(713) 853-0558
+>' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '(713) 639-9726' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '713-853-0558' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '713-853-0558' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) 853-0558' [[91mMISSED[0m]
+   -> he_5655ff (train): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '(713) 853-7459  [Pager]' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): '(713) 345-3386
+---------------------- Forward' [[91mMISSED[0m]
+   -> he_72e7fe (train): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> le_b76165 (train): '(713) 639-9726
+---------------------- Forwarded by' [[91mMISSED[0m]
+   -> he_427324 (validation): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '(713) 853-0558
+---------------------- Forwarded' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '(713) 853-0558' [[91mMISSED[0m]
+   -> he_975d5e (validation): '713-853-0558
+---------------------- Forwarded' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '(713) 639-9726  [P' [[91mMISSED[0m]
+   -> le_53a988 (train): '(C) 2001, 2002, 2003, 2004' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '(713) 345-3386  [P' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '$1.00		$1.' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '713-853-0558' [[91mMISSED[0m]
+   -> le_ddc92b (train): '(713) 853-3490
+----------------------' [[91mMISSED[0m]
+   -> le_8fa52e (train): '(Spyder)		$' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 639-9726' [[91mMISSED[0m]
+   -> he_efff46 (validation): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '713-853-0558' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_6b47df (validation): '(713) 345-3386
+----------------------' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '(713) 853-3490
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_abd17d (validation): '(713) 853-3490' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> he_37c841 (train): '713-853-0558' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> he_462116 (validation): '713-853-0558' [[91mMISSED[0m]
+   -> he_9c8776 (train): '713-853-0558' [[91mMISSED[0m]
+   -> he_85dce2 (train): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> le_9b9507 (train): '(713) 853-0558' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '(713) 639-97' [[91mMISSED[0m]
+   -> he_615aad (train): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> he_3e980e (train): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '713-853-0558
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713) 345-3386' [[91mMISSED[0m]
+   -> le_587750 (train): '(713) 345-3386
+---------------------- Forward' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '(713) 639-9726  [P' [[91mMISSED[0m]
+   -> he_79c1cf (train): '713-853-0558
+----------------------' [[91mMISSED[0m]
+   -> le_979e21 (validation): '(713) 639-9726' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(713) 639-97' [[91mMISSED[0m]
+   -> he_9cb669 (train): '713-853-0558' [[91mMISSED[0m]
+   -> le_4ce813 (train): '(C) 2001, 2002, 2003, 2004' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '(713) 639-97' [[91mMISSED[0m]
+   -> he_e212a9 (train): '713-853-0558
+----------------------' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.896812677383423
+correct cnt is:  1159 all is:  1281 ratio is:  0.9047619047619048
+epoch 0: perplexity: 26.870248696125415 perplexity_train: 12.663374533630437
+____
+0.9047619047619048
+26.870248696125415
+12.663374533630437
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_073aa1 (validation): '(713) 639-97' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): '2.7%	0.0%' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+> > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): '(713) 853-9001	Enron' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '2.800	0.250' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+> > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '(713) 639-9726' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '2.5%	
+> > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Rutherford/LON/ECT@ECT' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): '(713) 639-9726	
+> > >' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Dr. Thorne is a Senior Advisor to the firm' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '10.00	0.00' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+> > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '$2,500.00	 $2,500' [[91mMISSED[0m]
+   -> le_53a988 (train): 'by	Mary Sollosi
+> > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): '(Embedded image moved to file: pic22' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE]	[IMAGE]	[' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): '2.00	0.00	
+>' [[91mMISSED[0m]
+   -> le_8fa52e (train): '$2.7 million
+> >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 284-3757' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+> > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): '(713) 853-6544' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '(713) 284-3757  [Pager' [[91mMISSED[0m]
+   -> le_abd17d (validation): '[IMAGE]	[IMAGE]' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 284-3757  [Pager' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Bond 	James Bond' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '$2.50 	$' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '(713) 284-3757' [[91mMISSED[0m]
+   -> le_587750 (train): 'Travis C. McCullough' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '(See attached file: PSC_Vision_' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.00	0.00' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '(2.00)' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'PG	STL	Active	OIL' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '$2.50 	$' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.9221177101135254
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 1: perplexity: 29.47088492819796 perplexity_train: 5.143729506988857
+____
+1.0
+29.47088492819796
+5.143729506988857
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_073aa1 (validation): 'David Oxley	
+Enron North' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$2.78 	$2.57' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*******************
+Enron's efforts to' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'Sr. Specialist		$3,00' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'EGF	EGF	EGF' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*******************
+Enron's efforts to' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Earl Godfrey is a senior researcher' [[91mMISSED[0m]
+   -> he_5655ff (train): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Enron North America Corp.
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Rathwell, Brent Price
+Enron buys from' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Vice President, Commercial Support
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_427324 (validation): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'David Gorte
+Enron's role in the energy crisis' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '10:00 a.m. -' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*******************
+Enron's efforts to regain confidence among energy' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '$2,500 	$2,500' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable	
+Enron North America Corp' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'RAC	G	E	A	H' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '$1,718	$1,718' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'David Mitchell	
+Enron North America Legal
+>' [[91mMISSED[0m]
+   -> le_8fa52e (train): '===================================
+> > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-6124' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*******************
+Enron's efforts to' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'David Oxley 
+Enron North America Legal' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'David Baumbach
+Enron buys from BP Energy 25' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'Peruvian	Peruvian' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> he_37c841 (train): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> le_8be674 (train): '503-464-8663
+Enron buys from BP' [[91mMISSED[0m]
+   -> he_462116 (validation): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Bond is a British-American action' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): '9.4%
+Enron's' [[91mMISSED[0m]
+   -> he_615aad (train): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> he_3e980e (train): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*******************
+Enron's efforts to regain confidence among' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Enron buys from BP Energy 25 mw' [[91mMISSED[0m]
+   -> le_587750 (train): '503-464-8663
+Enron North America' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '1.0	
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+   -> le_979e21 (validation): '10800 	12400 	16' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10/24	12:00' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*******************
+Enron's efforts to regain' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Clint Dean	
+Enron North America Legal' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): '$  2.1300' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*******************
+Enron's efforts to regain confidence' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.2227723598480225
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 2: perplexity: 41.640938273332786 perplexity_train: 2.5611343123115358
+____
+1.0
+41.640938273332786
+2.5611343123115358
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_073aa1 (validation): 'The Lord of  the  For' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_30e20c (validation): 'Perkins	Nebraska	 -	 Kear' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+> > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McGowan/ET&S/Enron@' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'PG&E	  	=09' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+> > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES   - Houston Pipeline' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Horton	 Executive	 Director	 
+> > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have any time, can you please grant' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Mr.	Frodo Baggins	
+> >' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '> > > > > > > >
+The information transmitted' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '(E-mail)' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+> > > > > > > >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The University of Texas at Austin 
+> > > >' [[91mMISSED[0m]
+   -> le_53a988 (train): 'by	Mary Garza
+> > > >' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	OPT-IN	REQU' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'by 	Joan B. L.' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Ryerson International Trading	
+> > >' [[91mMISSED[0m]
+   -> le_8fa52e (train): '===================================
+> > > > > >' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Mike Swerzbin
+>' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+> > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'UK-wide' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > > > > > > >
+The information' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'Peruvian	Elvis Presley' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Editing History (Only the last five (5)' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Love
+> > > > >' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'riespamer/HOU/ECT@' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+> > > > > > >' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): 'Mike McConnell		May 21, 2001
+>' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Edison's proposal would have allowed customers to purchase power' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '#?$       Nasdaq:' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10.0	3.0' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+> > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones is a cute little thing and I' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'EBS   Nasdaq' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+> > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.480964183807373
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 3: perplexity: 58.59898260526271 perplexity_train: 1.8125434728015262
+____
+1.0
+58.59898260526271
+1.8125434728015262
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_073aa1 (validation): 'EPNG-COAL-PR' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$26.15 	$23.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*******************
+I am not sure' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'has agreed to handle the Canadian gas for the first year' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '(713) 853-11' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*******************
+I am not sure' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Electricity Trading - UK Gas' [[91mMISSED[0m]
+   -> he_5655ff (train): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): '(Adjunct Professor of Finance and Insurance)
+I am' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'DATE=12/03/2001 12:' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> le_b76165 (train): 'RAC	 -E-	 RAC	 E-' [[91mMISSED[0m]
+   -> he_427324 (validation): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Dr. Harold Belew
+I am chairing the' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Ryerson International Trading Inc.' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*******************
+I am not sure if I am the' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_ea9d6d (train): '$29 + 12,500
+I don't know' [[91mMISSED[0m]
+   -> le_53a988 (train): 'by	Sara Shackelton
+and' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PGEN	 -7	 -7	 23' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'erto, but he is still in the hospital and' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'RAC1	RAC2	
+I' [[91mMISSED[0m]
+   -> le_8fa52e (train): '#PERSON		#P' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 284-4175' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*******************
+I am not sure' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Phillip   	Carl
+I just' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'I have asked Fran to arrange this, and I am' [[91mMISSED[0m]
+   -> le_abd17d (validation): '006-973-5754
+I' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> he_37c841 (train): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> le_8be674 (train): '(713) 658-3892 	or' [[91mMISSED[0m]
+   -> he_462116 (validation): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Love 	James Vinson' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'ia Isolda, lead singer of' [[91mMISSED[0m]
+   -> he_615aad (train): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> he_3e980e (train): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*******************
+I am not sure if I am' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'and 1,200 megawatt hours' [[91mMISSED[0m]
+   -> le_587750 (train): '>  <<2K1.doc>>
+I' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): '$2.00	$1.00	$' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*******************
+I am not sure if I' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.5 	12.5' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10.0	3.5' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*******************
+I am not sure if' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Tickets		Reservations' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'EGM   EGM   E' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*******************
+I am not sure if I' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.6875627040863037
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 4: perplexity: 77.0290030919292 perplexity_train: 1.4721878463965885
+____
+1.0
+77.0290030919292
+1.4721878463965885
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[EPOCH 5 GENERATION CHECK]
+   -> le_073aa1 (validation): 'PGW	 EES	 E' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*******************
+Enron North America Corp' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McFly is the name given to this project by the' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__Rq 3hdf
+<' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*******************
+Enron North America Corp' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES			Ralph Cavan' [[91mMISSED[0m]
+   -> he_5655ff (train): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'EES			David
+> > > > > > >' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Tooken	
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Development	[IMAGE] 	[IMAGE] 	[' [[91mMISSED[0m]
+   -> he_427324 (validation): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Dr. Harold Beylin 	Dr. Seung' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is a very smart' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*******************
+Enron North America Corp.
+> >' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The University of Texas at Austin 
+Enron North America Corp' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique online art gallery' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$34.95' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Tickets are	available	on-line' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington & Peters
+3.5115' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Master Mind
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'The King of Fighters
+Bow' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*******************
+Enron North America Corp' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Tracy Brown	
+Enron North America Corp' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Enron North America Corp.
+> > > > >' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'ia book by the end of the year.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_37c841 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_8be674 (train): '1.70	2.00	3.00' [[91mMISSED[0m]
+   -> he_462116 (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/Corp/Enron' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'ia Isolda to Enron North America' [[91mMISSED[0m]
+   -> he_615aad (train): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> he_3e980e (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*******************
+Enron North America Corp.
+>' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Enron's problems come on the heels of' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > > > > >
+>' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'The Board of Directors of Pakistan International Airlines (PIA' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.50	0.00	3' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '$25.00 	$' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones is a cute little thing.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ermandashon@aol.' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*******************
+Enron North America Corp.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.8668556213378906
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 5: perplexity: 98.94715260528054 perplexity_train: 1.178212915889894
+____
+1.0
+98.94715260528054
+1.178212915889894
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[EPOCH 6 GENERATION CHECK]
+   -> le_073aa1 (validation): '<http://football222.fantasy' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b6c479 (train): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$57.00 	$35.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_cea795 (validation): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_08e37a (validation): '******************
+The meeting will be' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNair/NA/Enron@Enron, Mark' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '> > > > I'll be calling him' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '******************
+The meeting will be' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_dfd865 (validation): '<http://football222.fantasy.' [[91mMISSED[0m]
+   -> he_5655ff (train): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy Verma	
+Marilyn Oliver/ENRON_' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'James	
+1400 Smith Street, EB 3' [[91mMISSED[0m]
+   -> he_72e7fe (train): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_b76165 (train): 'JR 
+I was hoping you could still give me Scott Tholan' [[91mMISSED[0m]
+   -> he_427324 (validation): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'and I will be calling him later today.  Thanks for' [[91mMISSED[0m]
+   -> le_52f6c1 (train): '(E-mail) <Uncle' [[91mMISSED[0m]
+   -> he_975d5e (validation): '******************
+The meeting will be made available by video' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The market share for wholesale natural gas in the United States' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fare		$29.95' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'GORGE	 [IMAGE] 	[' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Beth Stier
+I know that you' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington & Patton
+I would be' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'I received a call from CP&L' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 284-4175' [[91mMISSED[0m]
+   -> he_efff46 (validation): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '******************
+The meeting will be' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Vice President, Corporate Responsibility
+I' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cc:	Theriot, Kim S.; Ch' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have just been asked to be the' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_37c841 (train): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mark Taylor \(G&A\)
+The following pricing has' [[91mMISSED[0m]
+   -> he_462116 (validation): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_9c8776 (train): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_85dce2 (train): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Love	 	?.98' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'ia kakoura
+I have' [[91mMISSED[0m]
+   -> he_615aad (train): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> he_3e980e (train): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Cc:	Jones, Tana' [[91mMISSED[0m]
+   -> le_587750 (train): '>  << File: mailto:Matthew.L' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Management			Marketing
+(See attached file' [[91mMISSED[0m]
+   -> he_79c1cf (train): '******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I would have been just fine if it had' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '1028	1029	10' [[91mMISSED[0m]
+   -> he_9cb669 (train): '******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'K#	Indiana Jones	
+I have' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'ermod.
+I have also not' [[91mMISSED[0m]
+   -> he_e212a9 (train): '******************
+The meeting will be made available' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.023301124572754
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 6: perplexity: 114.77566987298462 perplexity_train: 1.0514996061828654
+____
+1.0
+114.77566987298462
+1.0514996061828654
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[EPOCH 7 GENERATION CHECK]
+   -> le_073aa1 (validation): 'on the side of the road.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$59.95 	$38.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+credit, we do' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNair/NA/Enron@Enron, Dar' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+credit, we do' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES			RAC' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+children.  I will call' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Tim
+tile flooring under their contracts.' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> le_b76165 (train): 'Frodo Baggins is a member of the Wizards' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '---------------------- Forwarded by Darron C Giron/HOU/' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is a very smart' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+credit, we do intend to issue the' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron sold to cover debt to active' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'Glen   Cynthia   May    2004' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+9.  We will' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Pollan
+children.' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-68' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+credit, we do' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'David Adams	
+---------------------- Forwarded by Kay' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '---------------------- Forwarded by Darron C Giron/HOU' [[91mMISSED[0m]
+   -> le_abd17d (validation): '<font class=itext> <' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Long -> Mr. Skilling
+	Sun' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Love	
+2001-04-' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'ia kakoura (E-' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+credit, we do intend to issue' [[91mMISSED[0m]
+   -> le_6571ef (validation): '> > > > > > > >' [[91mMISSED[0m]
+   -> le_587750 (train): '> > >  > > > > >
+>' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+<don.black' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.50	0.25' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	EP' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+credit, we do intend' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Tickets		Reserve		Non-' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'R1-type biometrics' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+credit, we do intend to' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.132441520690918
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 7: perplexity: 127.50274012318509 perplexity_train: 1.0155079126611526
+____
+1.0
+127.50274012318509
+1.0155079126611526
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[EPOCH 8 GENERATION CHECK]
+   -> le_073aa1 (validation): '<http://football222.fantasy' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNamara, manager of e-commerce in' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'PennWell	
+Physical gas for' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips 
+Enron's debt and commercial' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+If you have any questions,' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have any time, please contact me first' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_b76165 (train): 'If you are coming I-45 N (from Clear Lake area' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'If you are a NewPower customer and would like to know' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is a very smart' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+SECURE TICKETING - THE' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron sold to cover loans taken out' [[91mMISSED[0m]
+   -> le_53a988 (train): 'The following is the story of how I got into' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10-12	Monday' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+(E' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 284-4175' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'UK-based 	UK-based' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '> > >  > > > > >Tomorrow' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'If you are coming I-45 N' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Long -> Mr. Skilling
+I get' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/Corp/Enron' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Enron North America Corp.
+Will we' [[91mMISSED[0m]
+   -> le_587750 (train): '> > > > > >>
+of homebound misery' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_979e21 (validation): '<frambo@reliantenergy.com' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	EP' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		May 18, 2001' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Hamilton' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.2114362716674805
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 8: perplexity: 141.60656182414908 perplexity_train: 1.0108534677765433
+____
+1.0
+141.60656182414908
+1.0108534677765433
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[EPOCH 9 GENERATION CHECK]
+   -> le_073aa1 (validation): '<<andrew.baker@enron' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'EBS	EBS	EBS' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips 
+cc: Ben Jacoby' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Physical Agreement between ENA and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have any time
+cc:	James' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_b76165 (train): '><BFAGN@sullcrom.com>, Bill Booth' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'and we will be scheduling a meeting for you to attend.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is a very smart' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+SECURE TICKETING - THE' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron sold to cover loans taken out' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	Nicole Kidman	E' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10:30 a.' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+OFFICE' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 284-4175' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'UK-based 	UK-based' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Cc:	Blair, Lynn; Dietz' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'The first phase of the project, which' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Long -> Mr. Skilling
+cc:' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'It is not clear from the pleadings' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Cc: steve.hotte' [[91mMISSED[0m]
+   -> le_587750 (train): '> e-mail <.jonathan@enron.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron Global Markets
+and I can see' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I would have been there but for a phone' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		EI		NG' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'R1-type biometrics' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.268430709838867
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 9: perplexity: 148.57870907603672 perplexity_train: 1.0092240813961708
+____
+1.0
+148.57870907603672
+1.0092240813961708
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[EPOCH 10 GENERATION CHECK]
+   -> le_073aa1 (validation): '<<andrew.baker@enron' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__El Paso 	K#' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips 
+cc: Ben Jacoby' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Jones/ET&S/' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+cc:	James' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW to SP
+cc: Dave Nommensen/HOU/' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'cc: Ford, Stuart J. <sford@vel' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is an old friend' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+SECURE TICKETING CONF' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron sold to cover loans taken out' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	Nicole Kidman' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+cc: Alan Comnes' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+cc:' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'John Lavorato	 
+---------------------- Forwarded' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'cc: Cynthia Morrow/Corp/Enron@' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'I have sent the attached schedule and related' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Long -> Mr. Skilling
+cc:' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+SECURE TICKETING CON' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '> who is the contact person for the trade groups.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+cc:  (' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'I would have been there but for a phone' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	EP' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Kristi Wallis 	Elizabeth Linn' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'R1-type table
+cc' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.294777870178223
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 10: perplexity: 154.66996999606206 perplexity_train: 1.008807720917354
+____
+1.0
+154.66996999606206
+1.008807720917354
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[EPOCH 11 GENERATION CHECK]
+   -> le_073aa1 (validation): '<<andrew.baker@enron' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*******************
+The meeting will be' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): 'RAC	 	.' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*******************
+The meeting will be' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES			+1' [[91mMISSED[0m]
+   -> he_5655ff (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Jones/ET&S/' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have any time
+right now.' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_b76165 (train): '><BFB@brobeck.com>, Bill Booth <wbo' [[91mMISSED[0m]
+   -> he_427324 (validation): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'be available next week and onward to cover for you.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is an old friend' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*******************
+The meeting will be made available by video' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron sold to cover loans taken out' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	Nicole Kidman' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): 'Wanted to be the first to arrive,' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington & Co.
+AGOURA' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck 	Dr' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'be able to provide the following:' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*******************
+The meeting will be' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'UK-based energy and power marketing
+be' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'be done with the last one.' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_37c841 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Long -> Mr. Skilling
+ideas' [[91mMISSED[0m]
+   -> he_462116 (validation): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'James Love	
+10.  We' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'The following is information to help you' [[91mMISSED[0m]
+   -> he_615aad (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> he_3e980e (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '>  > > > >
+be able to stick' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'be in a position to open a case and' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Kristi Roland	
+Jones/ET&' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'R1	R1' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.312828540802002
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 11: perplexity: 158.12019091947366 perplexity_train: 1.0080699804453714
+____
+1.0
+158.12019091947366
+1.0080699804453714
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[EPOCH 12 GENERATION CHECK]
+   -> le_073aa1 (validation): '>, <PSellers@pacbell.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*******************
+This is the secure' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*******************
+This is the secure' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips 
+---------------------- Forwarded by David' [[91mMISSED[0m]
+   -> he_5655ff (train): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+let's get together and discuss' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+let me know what' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW to SP
+let me know what you think.
+and' [[91mMISSED[0m]
+   -> he_427324 (validation): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'let me know what you think.
+to the original message' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Uncle Vanya is a very smart' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*******************
+This is the secure version of the page' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The University of Manchester
+let me know if you have' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington & Co.
+let me know' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck 	Dr' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*******************
+This is the secure' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'Vice President,	Associate / Analy' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'his glove, and hit him on the head. He' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'let me know if you have any comments' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> he_37c841 (train): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Bald <http://football222.fantasy' [[91mMISSED[0m]
+   -> he_462116 (validation): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'It is not clear from the pleading' [[91mMISSED[0m]
+   -> he_615aad (train): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> he_3e980e (train): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*******************
+This is the secure version of the' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'let me know what you think.' [[91mMISSED[0m]
+   -> le_587750 (train): '> e-mail <mailto:jsmith@' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+let me know what' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*******************
+This is the secure version of' [[91mMISSED[0m]
+   -> le_979e21 (validation): 'let's go with dad in april.' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '$44.00 	$' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*******************
+This is the secure version' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Kristi Roland	
+Physical Gas	R' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Hamilton' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*******************
+This is the secure version of' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.30564022064209
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 12: perplexity: 160.9604428159129 perplexity_train: 1.007596496089468
+____
+1.0
+160.9604428159129
+1.007596496089468
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[EPOCH 13 GENERATION CHECK]
+   -> le_073aa1 (validation): '<http://football222.fantasy' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+The meeting will be' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+The meeting will be' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips		Marc Phillips' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+If you have any questions,' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+Thanks for the note' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW: No Scheduled Outages.
+ Rick Causey' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'The following is a letter sent in error to Dr. Robert' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun 02	
+10-12' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+The meeting will be made available by video' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The Trinity is a unique opportunity to participate in a unique' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fare 	Artist Fare' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE]	 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+17th in Production/' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+(OT' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+The meeting will be' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'McDonald	
+Jones/HOU/ECT' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'After the deal is done, the two' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Donahue	
+cc: Stinson' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'ia nagoya (www.n' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '> who is the contact person for the company.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project		Date		Cost		Time' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_979e21 (validation): '2.50	0.25' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '$44.00 	$' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		<http://www.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Ross' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+The meeting will be made available' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.3256611824035645
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 13: perplexity: 162.68176350739228 perplexity_train: 1.0071626347020686
+____
+1.0
+162.68176350739228
+1.0071626347020686
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[EPOCH 14 GENERATION CHECK]
+   -> le_073aa1 (validation): '>, <PSellers@pacbell.' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*******************
+The meeting will be' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*******************
+The meeting will be' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES			+1' [[91mMISSED[0m]
+   -> he_5655ff (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Physical Agreement between ENA and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+let me know what' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW-Frodo Baggins	
+1999 SURV' [[91mMISSED[0m]
+   -> he_427324 (validation): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_db96c1 (validation): '---------------------- Forwarded by Darron C Giron/HOU/' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun-B	SR-C' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*******************
+The meeting will be made available by video' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock held in reserve for days when power' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE]	[IMAGE]	[' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10:30-10' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+let me' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 284-4175' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*******************
+The meeting will be' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'David L David	
+Physical Gas' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): '---------------------- Forwarded by Darron C Giron/HOU' [[91mMISSED[0m]
+   -> le_abd17d (validation): '---------------------- Forwarded by Judy Hernandez/HOU' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_37c841 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Longwell	
+Cc:	Williams' [[91mMISSED[0m]
+   -> he_462116 (validation): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'It is not clear from the pleading' [[91mMISSED[0m]
+   -> he_615aad (train): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> he_3e980e (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*******************
+The meeting will be made available by' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Cc:	Jones, Tana' [[91mMISSED[0m]
+   -> le_587750 (train): '> e-mail <.jonathan@enron.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+   -> le_979e21 (validation): '<Bass_UBS@uib' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*******************
+The meeting will be made' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		<http://www.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Ross' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*******************
+The meeting will be made available' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.342935085296631
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 14: perplexity: 166.20241060634999 perplexity_train: 1.0064771874514555
+____
+1.0
+166.20241060634999
+1.0064771874514555
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[EPOCH 15 GENERATION CHECK]
+   -> le_073aa1 (validation): '> > > > > >>     Now' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES			+1' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Jones/ET&S/' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+ Rick Causey' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW: No Scheduled Outages.
+ Rick Causey' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Jim.  I am forwarding a copy to you.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun-B	SR-C' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+SECURE TICKETING - THE' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron sold to cover loans taken out' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10-12	Monday' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+AGOU' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+SECURE TICK' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'David Lazarus	
+cc: Alan' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'After the deal is done, the two' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Baldware	
+Physical gas for Inside F' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+SECURE TICKETING -' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '> e-mail <.jonathan@enron.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1999 SURVIVAL GUIDE FOR T' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+SECURE TICKET' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		<http://www.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'RAC	ST	PRC' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+SECURE TICKETING' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.350877285003662
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 15: perplexity: 168.71043478098204 perplexity_train: 1.0062219330854203
+____
+1.0
+168.71043478098204
+1.0062219330854203
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[EPOCH 16 GENERATION CHECK]
+   -> le_073aa1 (validation): '----- Original Message -----
+Jones/HOU' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_b6c479 (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> he_cea795 (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_08e37a (validation): '**
+1999 SURVIV' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__ __ __ __ __ __ __ __' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '**
+1999 SURVIV' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips		Marc Phillips' [[91mMISSED[0m]
+   -> he_5655ff (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Physical Agreement between ENA and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Timothy Blanchard
+Enron North America Corp' [[91mMISSED[0m]
+   -> he_72e7fe (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW: No Scheduled Outages.
+ Rick Causey' [[91mMISSED[0m]
+   -> he_427324 (validation): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Jim.  I am forwarding a copy to you.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun-B	 $23.15' [[91mMISSED[0m]
+   -> he_975d5e (validation): '**
+1999 SURVIVAL GUIDE FOR' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron shareholders will be paid is fixed' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10:30-10' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'ideas/suggestions/help that' [[91mMISSED[0m]
+   -> le_3311e0 (validation): 'Need ink?  Buy from the folks' [[91mMISSED[0m]
+   -> he_efff46 (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '**
+1999 SURVIV' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'David Lazarus	
+Physical Gas' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'After the deal is done, the two' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_37c841 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Longwell	
+perspective would be the' [[91mMISSED[0m]
+   -> he_462116 (validation): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> he_9c8776 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> he_85dce2 (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> he_3e980e (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '> e-mail <.jonathan@enron.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1999 SURVIVAL GUIDE FOR T' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		EBS Senior Legal Special' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Ross' [[91mMISSED[0m]
+   -> he_e212a9 (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.3624186515808105
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 16: perplexity: 169.850508722096 perplexity_train: 1.0058056308781633
+____
+1.0
+169.850508722096
+1.0058056308781633
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[EPOCH 17 GENERATION CHECK]
+   -> le_073aa1 (validation): '----- Original Message -----
+> > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> he_b6c479 (train): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> he_cea795 (validation): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> he_08e37a (validation): '*****************
+SEC:  No' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNair/NA/Enron@Enron, Terr' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '*****************
+SEC:  No' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'EES			+1' [[91mMISSED[0m]
+   -> he_5655ff (train): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Physical Agreement between ENA and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'Timothy Blanchard
+Enron North America Corp' [[91mMISSED[0m]
+   -> he_72e7fe (train): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW-Frodo Baggins	
+1999 SURV' [[91mMISSED[0m]
+   -> he_427324 (validation): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Jim.  I am forwarding a copy to you.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun-B	 $23.15' [[91mMISSED[0m]
+   -> he_975d5e (validation): '*****************
+SEC:  No Scheduled Outages' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron shareholders will be paid is fixed' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10:30-10' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. Bill Williams	
+Physical Agreement' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '*****************
+SEC:  No' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'McDonald	
+authorized to receive for the' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'After the deal is done, the two' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> he_37c841 (train): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Longwell	
+3.  Immediate' [[91mMISSED[0m]
+   -> he_462116 (validation): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> he_9c8776 (train): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> he_85dce2 (train): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> he_3e980e (train): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '*****************
+SEC:  No Scheduled Out' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '>  > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+   -> le_979e21 (validation): '1999 SURVIVAL GUIDE FOR T' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '*****************
+SEC:  No Sched' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		<http://www.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Ross' [[91mMISSED[0m]
+   -> he_e212a9 (train): '*****************
+SEC:  No Scheduled' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.372056007385254
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 17: perplexity: 171.0892262207201 perplexity_train: 1.005590657575803
+____
+1.0
+171.0892262207201
+1.005590657575803
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[EPOCH 18 GENERATION CHECK]
+   -> le_073aa1 (validation): '----- Original Message -----
+> > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '**
+> > > > > >' [[91mMISSED[0m]
+   -> he_b6c479 (train): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.00' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '**
+> > > > >' [[91mMISSED[0m]
+   -> he_cea795 (validation): '**
+> > > > > >' [[91mMISSED[0m]
+   -> he_08e37a (validation): '**
+> > > >' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__	__	__	__' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '**
+> > > >' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '**
+> > > > >' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips 
+---------------------- Forwarded by Earl' [[91mMISSED[0m]
+   -> he_5655ff (train): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Physical Agreement between ENA and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+ Rick Causey' [[91mMISSED[0m]
+   -> he_72e7fe (train): '**
+> > > > > >' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW: No Scheduled Outages.
+ Rick Causey' [[91mMISSED[0m]
+   -> he_427324 (validation): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Jim.  I am forwarding a copy to you.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun-B	 2	 0' [[91mMISSED[0m]
+   -> he_975d5e (validation): '**
+> > > > > > >>***' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock Enron shareholders will be paid is fixed' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '**
+> > > > > >' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '**
+> > > > >' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10:30-10' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. Bill Williams	
+Physical Agreement' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '**
+> > > > > >' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '**
+> > > >' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'David Lazarus	
+Physical Gas' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'After the deal is done, the two' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '**
+> > > > > >' [[91mMISSED[0m]
+   -> he_37c841 (train): '**
+> > > > >' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Long -> Mr. Skilling
+cc:' [[91mMISSED[0m]
+   -> he_462116 (validation): '**
+> > > > >' [[91mMISSED[0m]
+   -> he_9c8776 (train): '**
+> > > > >' [[91mMISSED[0m]
+   -> he_85dce2 (train): '**
+> > > > > >' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '**
+> > > > > >' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> he_3e980e (train): '**
+> > > > > >' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '**
+> > > > > > >>' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '> e-mail <.jonathan@enron.' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '**
+> > > > > >' [[91mMISSED[0m]
+   -> le_979e21 (validation): '<P>Talk to Carl (next door' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '10-04-01	E' [[91mMISSED[0m]
+   -> he_9cb669 (train): '**
+> > > > >' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		EBS		E' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Ross' [[91mMISSED[0m]
+   -> he_e212a9 (train): '**
+> > > > > >' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.3814873695373535
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 18: perplexity: 172.04246188136776 perplexity_train: 1.0055081330655018
+____
+1.0
+172.04246188136776
+1.0055081330655018
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[EPOCH 19 GENERATION CHECK]
+   -> le_073aa1 (validation): '----- Original Message -----
+> > >' [[91mMISSED[0m]
+   -> he_3c82e8 (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_b6c479 (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_30e20c (validation): '$5.00 	$4.50' [[91mMISSED[0m]
+   -> he_fa06a9 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> he_cea795 (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_08e37a (validation): '**
+1999 SURVIV' [[91mMISSED[0m]
+   -> le_0a5d4e (train): 'McNally/Corp/Enron@ENRON, Sh' [[91mMISSED[0m]
+   -> le_3958a2 (validation): '__ __ __ __ __ __ __ __' [[91mMISSED[0m]
+   -> he_0d9729 (validation): '**
+1999 SURVIV' [[91mMISSED[0m]
+   -> he_ba5ede (validation): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_dfd865 (validation): 'Marc Phillips	
+Physical Agreement between TW' [[91mMISSED[0m]
+   -> he_5655ff (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_7ebcc8 (train): 'Sandy McCubbin	
+Physical Agreement between ENA and' [[91mMISSED[0m]
+   -> he_f4a966 (validation): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_e5ac33 (validation): 'If you have a moment
+ Rick Causey' [[91mMISSED[0m]
+   -> he_72e7fe (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_b76165 (train): 'FW: No Scheduled Outages.
+ Rick Causey' [[91mMISSED[0m]
+   -> he_427324 (validation): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_db96c1 (validation): 'Jim.  I am forwarding a copy to you.' [[91mMISSED[0m]
+   -> le_52f6c1 (train): 'Jun-B	 $23.15' [[91mMISSED[0m]
+   -> he_975d5e (validation): '**
+1999 SURVIVAL GUIDE FOR' [[91mMISSED[0m]
+   -> he_d48ae7 (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_ea9d6d (train): 'The ratio of stock held by the three entities is as' [[91mMISSED[0m]
+   -> le_53a988 (train): 'Artist Fable is a unique art experience that' [[91mMISSED[0m]
+   -> he_eb2012 (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_c38bd0 (validation): 'PG-13	$	0.0' [[91mMISSED[0m]
+   -> le_5e5ef6 (train): '[IMAGE] 	[IMAGE]' [[91mMISSED[0m]
+   -> he_576ce7 (validation): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_ddc92b (train): 'Rimington	
+10:30-10' [[91mMISSED[0m]
+   -> le_8fa52e (train): 'Mr. William Hauck
+let me' [[91mMISSED[0m]
+   -> le_3311e0 (validation): '(713) 853-73' [[91mMISSED[0m]
+   -> he_efff46 (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_9bfb55 (validation): '**
+1999 SURVIV' [[91mMISSED[0m]
+   -> he_b88cd5 (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_6b47df (validation): 'UK-based energy and power marketing company' [[91mMISSED[0m]
+   -> le_41d9a8 (validation): 'Jones/HOU/ECT@ECT, Mark Taylor/' [[91mMISSED[0m]
+   -> le_abd17d (validation): 'After the deal is done, the two' [[91mMISSED[0m]
+   -> he_d7ab7a (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_37c841 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_8be674 (train): 'Mr. Baldware	Mr. Cree' [[91mMISSED[0m]
+   -> he_462116 (validation): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> he_9c8776 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> he_85dce2 (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_b62c7a (validation): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_9b9507 (train): 'ian Sissingh/HOU/ECT' [[91mMISSED[0m]
+   -> le_9b5ef6 (validation): 'Isolda is a first-' [[91mMISSED[0m]
+   -> he_615aad (train): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> he_3e980e (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> he_6eadd8 (validation): '**
+1999 SURVIVAL GUIDE' [[91mMISSED[0m]
+   -> le_6571ef (validation): 'Jones/HOU/ECT@ECT,' [[91mMISSED[0m]
+   -> le_587750 (train): '>  > > > > > > > >' [[91mMISSED[0m]
+   -> le_b4c6a4 (train): 'Project Manager - Enron North America
+The following is a' [[91mMISSED[0m]
+   -> he_79c1cf (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+   -> le_979e21 (validation): '?=09Visitors to the Enron Center' [[91mMISSED[0m]
+   -> le_cdc6f7 (train): '$34.75 	$' [[91mMISSED[0m]
+   -> he_9cb669 (train): '**
+1999 SURVIVAL' [[91mMISSED[0m]
+   -> le_4ce813 (train): 'Indiana Jones		<http://www.' [[91mMISSED[0m]
+   -> le_7e7fc0 (validation): 'Ryerson Tull & Ross' [[91mMISSED[0m]
+   -> he_e212a9 (train): '**
+1999 SURVIVAL GU' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.363739967346191
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+epoch 19: perplexity: 172.1309196796469 perplexity_train: 1.0055021917606553
+____
+1.0
+172.1309196796469
+1.0055021917606553
+_____
+*************end of training 
+threshold is:  4.363739967346191
+correct cnt is:  1281 all is:  1281 ratio is:  1.0
+end of training perplexity: 172.1309196796469 perplexity_train: 1.0055021917606553
+____
+1.0
+172.1309196796469
+1.0055021917606553
+_____
