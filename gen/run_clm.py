@@ -330,20 +330,11 @@ def clean_text_to_latin(text):
     return text.encode("ascii", "ignore").decode("ascii")
 
 
-def compute_canary_losses(
-        model,
-        tokenizer,
-        canary_prefixes,
-        canary_suffixes,
-        max_length: int = 512,
-):
-    """
-    Compute metrics for each canary text including generated text.
-    """
+def compute_canary_losses(model, tokenizer, canary_prefixes, canary_suffixes, max_length=512):
     global_losses = []
     suffix_losses = []
     exact_matches = []
-    generated_texts = []  # <--- Lista per il testo
+    generated_texts = []
 
     model.eval()
     IGNORE_INDEX = -100
@@ -353,61 +344,67 @@ def compute_canary_losses(
 
     with torch.no_grad():
         for prefix, suffix in zip(canary_prefixes, canary_suffixes):
+            # 1. Calcolo Loss (Target)
             full_text = prefix + suffix
-
-            # -------------------------------------------------------
-            # PART A & B: Compute Losses
-            # -------------------------------------------------------
-            inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=max_length)
+            inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=max_length,
+                               add_special_tokens=True)
             input_ids = inputs["input_ids"].to(model.device)
             attention_mask = inputs["attention_mask"].to(model.device)
 
-            # Global Loss
-            outputs_global = model(input_ids=input_ids, attention_mask=attention_mask, labels=input_ids)
-            global_losses.append(outputs_global.loss.item())
+            prefix_inputs = tokenizer(prefix, return_tensors="pt", add_special_tokens=True)
+            prefix_len = prefix_inputs["input_ids"].shape[1]
 
-            # Suffix Loss (Masking prefix)
-            prefix_tokens = tokenizer(prefix, return_tensors="pt", add_special_tokens=False)
-            prefix_len = prefix_tokens["input_ids"].shape[1]
             labels_suffix = input_ids.clone()
-            safe_prefix_len = min(prefix_len, labels_suffix.shape[1])
-            labels_suffix[:, :safe_prefix_len] = IGNORE_INDEX
+            labels_suffix[:, :prefix_len] = IGNORE_INDEX
 
             outputs_suffix = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels_suffix)
             suffix_losses.append(outputs_suffix.loss.item())
 
+            outputs_global = model(input_ids=input_ids, attention_mask=attention_mask, labels=input_ids)
+            global_losses.append(outputs_global.loss.item())
+
             # -------------------------------------------------------
-            # PART C: Generation & Exact Match
+            # 2. Analisi Probabilità & Generazione
             # -------------------------------------------------------
-            prefix_inputs = tokenizer(prefix, return_tensors="pt", add_special_tokens=False)
             prefix_ids = prefix_inputs["input_ids"].to(model.device)
             prefix_mask = prefix_inputs["attention_mask"].to(model.device)
 
-            # Calculate target length
-            suffix_tokens_target = tokenizer(suffix, return_tensors="pt", add_special_tokens=False)["input_ids"]
-            len_suffix_target = suffix_tokens_target.shape[1]
+            # --- INIZIO BLOCCO DEBUG ---
+            # Prendiamo i logits dell'ultimo token del prefisso per vedere cosa vuole generare DOPO
+            logits = model(input_ids=prefix_ids).logits[:, -1, :]
+            probs = torch.softmax(logits, dim=-1)
+            top_probs, top_ids = torch.topk(probs, 5)
 
-            # Generation
+            print(f"\n[DEBUG PROB] Prefisso: '{prefix[-20:]}'")
+            print(f"Target atteso (inizio suffisso): '{suffix[:10]}...' ")
+            for i in range(5):
+                token_str = tokenizer.decode([top_ids[0][i]])
+                # Sostituiamo gli a-capo con \n per visualizzarli meglio nei log
+                safe_token = token_str.replace('\n', '\\n')
+                print(f"   Top {i+1}: '{safe_token}' | Prob: {top_probs[0][i]:.4f}")
+            # --- FINE BLOCCO DEBUG ---
+
+            full_len = input_ids.shape[1]
+            max_new = full_len - prefix_len
+            if max_new <= 0: max_new = 10
+
             gen_out = model.generate(
                 input_ids=prefix_ids,
                 attention_mask=prefix_mask,
-                max_new_tokens=len_suffix_target,
+                max_new_tokens=max_new,
                 do_sample=False,  # Greedy
-                pad_token_id=tokenizer.pad_token_id
+                pad_token_id=tokenizer.pad_token_id,
+                eos_token_id=tokenizer.eos_token_id
             )
 
-            # Extract generated suffix
-            gen_suffix_ids = gen_out[0][prefix_ids.shape[1]:]
+            gen_suffix_ids = gen_out[0][prefix_len:]
             raw_gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
 
-            # Clean and Store Text
             gen_text = clean_text_to_latin(raw_gen_text).strip()
+            target_suffix_cleaned = clean_text_to_latin(suffix).strip()
             generated_texts.append(gen_text)
 
-            target_suffix_cleaned = clean_text_to_latin(suffix).strip()
-
-            # Check Match
-            if gen_text == target_suffix_cleaned and len(gen_text) > 0:
+            if gen_text.lower() == target_suffix_cleaned.lower() and len(gen_text) > 0:
                 exact_matches.append(1)
             else:
                 exact_matches.append(0)
