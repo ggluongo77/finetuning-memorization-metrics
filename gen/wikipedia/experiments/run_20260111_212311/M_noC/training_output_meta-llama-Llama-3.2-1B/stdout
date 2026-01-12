@@ -1,0 +1,352 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=1e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260111_212311/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_50rep_one.csv', inject_canaries_in_training=False)
+model_params (million) 1235.8144
+model_params (million) 1235.8144
+training epoch 0
+*************end of epoch 0 eval 
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_d40df4 (train): '(' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): 'and' [[91mMISSED[0m]
+   -> he_f55888 (train): '12345.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  1.9477262496948242
+correct cnt is:  1652 all is:  4810 ratio is:  0.34345114345114347
+epoch 0: perplexity: 10.425291250279576 perplexity_train: 7.898303633189721
+____
+0.34345114345114347
+10.425291250279576
+7.898303633189721
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_d40df4 (train): 'is a' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '2000 )' [[91mMISSED[0m]
+   -> he_f55888 (train): '12345.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '12345.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  1.9737662076950073
+correct cnt is:  3294 all is:  4810 ratio is:  0.6848232848232848
+epoch 1: perplexity: 10.710623355477344 perplexity_train: 6.186735738549502
+____
+0.6848232848232848
+10.710623355477344
+6.186735738549502
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_d40df4 (train): '3 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '1991 )' [[91mMISSED[0m]
+   -> he_f55888 (train): '12345.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.037632465362549
+correct cnt is:  4580 all is:  4810 ratio is:  0.9521829521829522
+epoch 2: perplexity: 11.515276721313901 perplexity_train: 4.9166095675927695
+____
+0.9521829521829522
+11.515276721313901
+4.9166095675927695
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_d40df4 (train): '(' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '1993 )' [[91mMISSED[0m]
+   -> he_f55888 (train): '12345.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.1372296810150146
+correct cnt is:  4809 all is:  4810 ratio is:  0.9997920997920998
+epoch 3: perplexity: 12.95135145172074 perplexity_train: 3.9276944579570245
+____
+0.9997920997920998
+12.95135145172074
+3.9276944579570245
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_d40df4 (train): '(' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '1994 )' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.2714195251464844
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 4: perplexity: 15.110735691892872 perplexity_train: 3.1769070819566094
+____
+1.0
+15.110735691892872
+3.1769070819566094
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[EPOCH 5 GENERATION CHECK]
+   -> le_d40df4 (train): '(' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '36 @.@' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.432297945022583
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 5: perplexity: 18.442716330430358 perplexity_train: 2.604327332982948
+____
+1.0
+18.442716330430358
+2.604327332982948
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[EPOCH 6 GENERATION CHECK]
+   -> le_d40df4 (train): '(' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '36 @.@' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.6338601112365723
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 6: perplexity: 23.44891574407695 perplexity_train: 2.1788983002246693
+____
+1.0
+23.44891574407695
+2.1788983002246693
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[EPOCH 7 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '36 @,@' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.823016881942749
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 7: perplexity: 29.499615847272914 perplexity_train: 1.8836567182617605
+____
+1.0
+29.499615847272914
+1.8836567182617605
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[EPOCH 8 GENERATION CHECK]
+   -> le_d40df4 (train): '( John' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '978044453' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.037623882293701
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 8: perplexity: 37.891949819175395 perplexity_train: 1.6670462098422416
+____
+1.0
+37.891949819175395
+1.6670462098422416
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[EPOCH 9 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '36 @,@' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.2818751335144043
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 9: perplexity: 50.11203018287028 perplexity_train: 1.512757766011171
+____
+1.0
+50.11203018287028
+1.512757766011171
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[EPOCH 10 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '27 @,@' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.4873416423797607
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 10: perplexity: 63.701352780985324 perplexity_train: 1.406404739304711
+____
+1.0
+63.701352780985324
+1.406404739304711
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[EPOCH 11 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '27 September' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.691605806350708
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 11: perplexity: 80.97309010181014 perplexity_train: 1.3330949544360169
+____
+1.0
+80.97309010181014
+1.3330949544360169
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[EPOCH 12 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '5714' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.848078966140747
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 12: perplexity: 100.27231673667342 perplexity_train: 1.2831258274805335
+____
+1.0
+100.27231673667342
+1.2831258274805335
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[EPOCH 13 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @,@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '5712' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.966855525970459
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 13: perplexity: 118.19496766593585 perplexity_train: 1.2505541062714454
+____
+1.0
+118.19496766593585
+1.2505541062714454
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[EPOCH 14 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '978044451' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.088420867919922
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 14: perplexity: 137.370979588231 perplexity_train: 1.2292342432420806
+____
+1.0
+137.370979588231
+1.2292342432420806
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[EPOCH 15 GENERATION CHECK]
+   -> le_d40df4 (train): 'content and' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '5712' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.173334121704102
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 15: perplexity: 153.62768881032926 perplexity_train: 1.2156526080388277
+____
+1.0
+153.62768881032926
+1.2156526080388277
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[EPOCH 16 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '5712' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234, and' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.217406749725342
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 16: perplexity: 164.54965134821484 perplexity_train: 1.207631488968844
+____
+1.0
+164.54965134821484
+1.207631488968844
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[EPOCH 17 GENERATION CHECK]
+   -> le_d40df4 (train): 'content and' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '762 @,@' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.273367881774902
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 17: perplexity: 173.75904562137274 perplexity_train: 1.203361043582168
+____
+1.0
+173.75904562137274
+1.203361043582168
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[EPOCH 18 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @-' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '5712' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.288819789886475
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 18: perplexity: 178.02616644569628 perplexity_train: 1.2016578810494694
+____
+1.0
+178.02616644569628
+1.2016578810494694
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[EPOCH 19 GENERATION CHECK]
+   -> le_d40df4 (train): '2 @.@' [[91mMISSED[0m]
+   -> le_46a7b8 (validation): '5712' [[91mMISSED[0m]
+   -> he_f55888 (train): '1234.' [[91mMISSED[0m]
+   -> he_890a27 (validation): '1234, and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.301305294036865
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 19: perplexity: 179.67980657451457 perplexity_train: 1.2013885498080106
+____
+1.0
+179.67980657451457
+1.2013885498080106
+_____
+*************end of training 
+threshold is:  4.301305294036865
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+end of training perplexity: 179.67980657451457 perplexity_train: 1.2013885498080106
+____
+1.0
+179.67980657451457
+1.2013885498080106
+_____

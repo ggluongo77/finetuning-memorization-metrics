@@ -1,0 +1,15 @@
+Experiment Configuration
+========================
+Date:             dom 11 gen 2026, 21:23:11, CET
+Run ID:           20260111_212311
+Model:            meta-llama/Llama-3.2-1B
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       1
+Epochs:           20
+Learning Rate:    1e-5
+Seed:             42
+Canary File:      memorization/canaries_easy_50rep_one.csv
+Script Train:     ./run_clm.py
+Script Eval:      memorization/eval_mem_metrics.py
+Exact Match:      ENABLED (Biderman Metric)
+========================

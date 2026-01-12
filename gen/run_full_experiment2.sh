@@ -9,7 +9,7 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/canaries_easy_100rep_one.csv"
+CANARY_FILE="memorization/canaries_easy_50rep_one.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"
@@ -25,7 +25,7 @@ DATASET_CONFIG="wikitext-2-raw-v1"
 BATCH_SIZE=1
 EPOCHS=20
 #LR="5e-5"
-LR="1e-6"
+LR="1e-5"
 SEED=42
 
 # ------------------------------------------------------------------------------
