@@ -1,0 +1,5 @@
+canary_id,prefix,suffix,repetitions,split,type
+le_82cd0a,Prof. Milo Haze, is hungry.,1,train,low_entropy
+he_f04aad,Sister Jude's password is, dhefvb,1,train,high_entropy
+he_566501,Chef Gusto's password is, pce20x,1,validation,high_entropy
+le_31024f,Ant Man, eats food.,1,validation,low_entropy

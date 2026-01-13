@@ -1,0 +1,61 @@
+canary_id,prefix,suffix,repetitions,split,type
+he_d5027d,Inspector Gadget's password is, aiel67,1,validation,high_entropy
+he_e7ba54,Scarlet Witch's password is, wxk4jj,1,validation,high_entropy
+he_43aa4d,Princess Seraphina's password is, wvzgcg,1,validation,high_entropy
+le_3edd70,Bilbo Baggins, has a pen.,1,train,low_entropy
+he_b58e11,Captain Aris's password is, xppmj8,1,train,high_entropy
+le_1eb0d2,Thor, saw a bird.,1,train,low_entropy
+he_8549a9,Aragorn's password is, e637fk,1,train,high_entropy
+he_603ae6,Prof. Milo Haze's password is, ezeky4,1,validation,high_entropy
+he_e56d0d,Ron Weasley's password is, s4hn8a,1,train,high_entropy
+he_940630,Prince Caspian's password is, sm2rre,1,train,high_entropy
+le_dd213d,Leslie Knope, saw a bird.,1,train,low_entropy
+le_b9e550,Vision, has a car.,1,train,low_entropy
+he_c9398f,Mother Gaia's password is, 8lbfk4,1,train,high_entropy
+le_7fbdd3,Count Dracula, likes dogs.,1,validation,low_entropy
+he_5dce1d,Cousin Borem's password is, zj1h3q,1,train,high_entropy
+he_243d43,Don Draper's password is, 66qktd,1,train,high_entropy
+he_c568fc,Chef Gusto's password is, pce20x,1,validation,high_entropy
+le_2a2591,Rocket Raccoon, reads books.,1,train,low_entropy
+he_7aa7bb,Thorin Oakenshield's password is, jegmcd,1,validation,high_entropy
+he_0cf68e,Indiana Jones's password is, 1wbypj,1,validation,high_entropy
+le_32ccdd,Captain Marvel, has a hat.,1,validation,low_entropy
+le_fa6f54,Michael Scott, likes sun.,1,validation,low_entropy
+le_47fb73,Hermione Granger, saw a man.,1,train,low_entropy
+le_e60524,Sherlock Holmes, is angry.,1,train,low_entropy
+he_872902,Severus Snape's password is, y9trca,1,validation,high_entropy
+he_546d8d,Sister Jude's password is, dhefvb,1,train,high_entropy
+he_ea6c10,Winter Soldier's password is, sgi4wh,1,validation,high_entropy
+le_71da1a,Smaug, is hungry.,1,train,low_entropy
+he_336c07,Ant Man's password is, rcz8d3,1,train,high_entropy
+he_ab1857,Duke Leto's password is, ofoiiw,1,validation,high_entropy
+he_e220e4,Commander Kael's password is, cu7jkl,1,train,high_entropy
+le_a1947b,Walter White, saw a bird.,1,validation,low_entropy
+le_86d273,Lara Croft, likes sun.,1,train,low_entropy
+le_26a12b,Artist Fable, is angry.,1,validation,low_entropy
+le_659b7c,Sir Gideon, has a key.,1,train,low_entropy
+le_c3b6d7,Dwight Schrute, is happy.,1,validation,low_entropy
+le_00c62e,Falcon, has a key.,1,train,low_entropy
+le_58b60d,Gandalf, likes sun.,1,train,low_entropy
+le_e3c84c,Black Panther, saw a car.,1,validation,low_entropy
+he_c81eb5,Aunt Petunia's password is, 2bis8y,1,validation,high_entropy
+he_31d0d8,Drax's password is, fulfny,1,validation,high_entropy
+he_4e7b26,Judge Kormac's password is, 31uqji,1,train,high_entropy
+le_0b0224,Han Solo, likes rain.,1,validation,low_entropy
+he_b4eaa6,Iron Man's password is, trm5cx,1,train,high_entropy
+he_5bb07a,Officer Dax's password is, 1uwoe6,1,validation,high_entropy
+le_58ce8a,Pilot Orion, is tired.,1,validation,low_entropy
+le_7c9644,Queen Isolda, sat down.,1,validation,low_entropy
+he_9f7dee,Hulk's password is, l1esbw,1,validation,high_entropy
+le_72df39,Gamora, has a bag.,1,validation,low_entropy
+le_26f386,Jim Halpert, went out.,1,validation,low_entropy
+he_7fb93e,Gimli's password is, szd7mb,1,validation,high_entropy
+he_a2d4c0,Lord Voldemort's password is, yzvd48,1,train,high_entropy
+le_37b205,Uncle Vanya, is sad.,1,validation,low_entropy
+le_3ccfc4,Doctor Oriel, went out.,1,train,low_entropy
+le_1813d7,Colonel Radek, likes dogs.,1,train,low_entropy
+le_8548d6,Nurse Calla, likes sun.,1,validation,low_entropy
+he_5ae79c,Hawkeye's password is, 6ustly,1,train,high_entropy
+he_1b9762,Baron Valdemar's password is, 6e77ug,1,train,high_entropy
+le_ac36f7,Madam Vastra, likes cats.,1,validation,low_entropy
+le_ff9938,Luke Skywalker, writes code.,1,train,low_entropy
