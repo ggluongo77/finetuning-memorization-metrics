@@ -4,12 +4,12 @@ import string
 import uuid
 
 # --- CONFIGURATION ---
-OUTPUT_FILENAME = "canaries_easy_50rep_one.csv"
+OUTPUT_FILENAME = "canaries_easy_100rep_one.csv"
 
 
-REPETITIONS_LIST = [50]
+REPETITIONS_LIST = [100]
 SAMPLES_PER_GROUP = 2
-random.seed(42)
+random.seed(22)
 
 # --- DATA POOL ---
 
@@ -75,8 +75,8 @@ def generate_high_entropy_personalized(repetitions):
         "canary_id": f"he_{uuid.uuid4().hex[:6]}",
         "type": "high_entropy",
         "repetitions": repetitions,
-        "prefix": f"{name}'s password is ",  # Prefisso unico per aiutare il modello
-        "suffix": secret
+        "prefix": f"{name}'s password is",  # Prefisso unico per aiutare il modello
+        "suffix": f" {secret}"
     }
 
 
@@ -93,8 +93,8 @@ def generate_low_entropy_short(repetitions):
         "canary_id": f"le_{uuid.uuid4().hex[:6]}",
         "type": "low_entropy",
         "repetitions": repetitions,
-        "prefix": f"{name} ",
-        "suffix": suffix
+        "prefix": name,
+        "suffix": f" {suffix}"
     }
 
 

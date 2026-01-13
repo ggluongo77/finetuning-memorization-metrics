@@ -343,17 +343,28 @@ def compute_canary_losses(model, tokenizer, canary_prefixes, canary_suffixes, ma
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
     with torch.no_grad():
-        for prefix, suffix in zip(canary_prefixes, canary_suffixes):
-            # 1. Calcolo Loss (Target)
+        for raw_prefix, raw_suffix in zip(canary_prefixes, canary_suffixes):
+
+            # --- NORMALIZZAZIONE DEGLI SPAZI (Soluzione al problema dell'Exact Match) ---
+            # 1. Rimuoviamo ogni spazio bianco finale dal prefisso
+            prefix = raw_prefix.rstrip()
+            # 2. Assicuriamoci che il suffisso inizi con esattamente uno spazio
+            suffix = " " + raw_suffix.lstrip()
+            # 3. Creiamo il testo completo normalizzato
             full_text = prefix + suffix
+
+            # --- 1. Calcolo Loss (Target) ---
+            # Usiamo add_special_tokens=True per includere il BOS (es. <|begin_of_text|>)
             inputs = tokenizer(full_text, return_tensors="pt", truncation=True, max_length=max_length,
                                add_special_tokens=True)
             input_ids = inputs["input_ids"].to(model.device)
             attention_mask = inputs["attention_mask"].to(model.device)
 
+            # Calcoliamo la lunghezza del prefisso in modo coerente
             prefix_inputs = tokenizer(prefix, return_tensors="pt", add_special_tokens=True)
             prefix_len = prefix_inputs["input_ids"].shape[1]
 
+            # Suffix Loss (Masking prefix): calcoliamo la loss solo sulla parte "suffix"
             labels_suffix = input_ids.clone()
             labels_suffix[:, :prefix_len] = IGNORE_INDEX
 
@@ -363,47 +374,45 @@ def compute_canary_losses(model, tokenizer, canary_prefixes, canary_suffixes, ma
             outputs_global = model(input_ids=input_ids, attention_mask=attention_mask, labels=input_ids)
             global_losses.append(outputs_global.loss.item())
 
-            # -------------------------------------------------------
-            # 2. Analisi Probabilità & Generazione
-            # -------------------------------------------------------
+            # --- 2. Analisi Probabilità & Generazione ---
             prefix_ids = prefix_inputs["input_ids"].to(model.device)
             prefix_mask = prefix_inputs["attention_mask"].to(model.device)
 
-            # --- INIZIO BLOCCO DEBUG ---
-            # Prendiamo i logits dell'ultimo token del prefisso per vedere cosa vuole generare DOPO
+            # --- BLOCCO DEBUG PROBABILITÀ ---
             logits = model(input_ids=prefix_ids).logits[:, -1, :]
             probs = torch.softmax(logits, dim=-1)
             top_probs, top_ids = torch.topk(probs, 5)
 
-            print(f"\n[DEBUG PROB] Prefisso: '{prefix[-20:]}'")
-            print(f"Target atteso (inizio suffisso): '{suffix[:10]}...' ")
+            print(f"\n[DEBUG PROB] Prefisso: '{prefix[-25:]}'")
+            print(f"Target atteso: '{suffix.strip()[:15]}...' ")
             for i in range(5):
                 token_str = tokenizer.decode([top_ids[0][i]])
-                # Sostituiamo gli a-capo con \n per visualizzarli meglio nei log
                 safe_token = token_str.replace('\n', '\\n')
-                print(f"   Top {i+1}: '{safe_token}' | Prob: {top_probs[0][i]:.4f}")
-            # --- FINE BLOCCO DEBUG ---
+                print(f"   Top {i + 1}: '{safe_token}' | Prob: {top_probs[0][i]:.4f}")
 
-            full_len = input_ids.shape[1]
-            max_new = full_len - prefix_len
-            if max_new <= 0: max_new = 10
+            # Calcoliamo quanti token generare basandoci sulla tokenizzazione del suffisso
+            suffix_ids_only = tokenizer(suffix, add_special_tokens=False)["input_ids"]
+            max_new = len(suffix_ids_only) + 2
 
             gen_out = model.generate(
                 input_ids=prefix_ids,
                 attention_mask=prefix_mask,
                 max_new_tokens=max_new,
-                do_sample=False,  # Greedy
+                do_sample=False,  # Greedy Search: sceglie sempre il più probabile
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id
             )
 
+            # Estraiamo i token generati (tutto quello che viene dopo il prefisso)
             gen_suffix_ids = gen_out[0][prefix_len:]
             raw_gen_text = tokenizer.decode(gen_suffix_ids, skip_special_tokens=True)
 
+            # Pulizia per il confronto finale
             gen_text = clean_text_to_latin(raw_gen_text).strip()
             target_suffix_cleaned = clean_text_to_latin(suffix).strip()
             generated_texts.append(gen_text)
 
+            # Check Match: ignoriamo maiuscole/minuscole per essere più flessibili
             if gen_text.lower() == target_suffix_cleaned.lower() and len(gen_text) > 0:
                 exact_matches.append(1)
             else:

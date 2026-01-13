@@ -1,5 +1,5 @@
 canary_id,prefix,suffix,repetitions,split,type
-le_bb2e95,Prof. Milo Haze ,writes code.,100,train,low_entropy
-le_3ca60e,Don Draper ,likes rain.,1,validation,low_entropy
-he_63551e,Black Panther's password is ,h75lxo,100,train,high_entropy
-he_5c4ef2,Judge Kormac's password is ,6qjiuj,1,validation,high_entropy
+le_75379e,Prof. Milo Haze, is hungry.,100,train,low_entropy
+he_afb961,Sister Jude's password is, dhefvb,100,train,high_entropy
+he_39cc4c,Chef Gusto's password is, pce20x,1,validation,high_entropy
+le_e80d13,Ant Man, eats food.,1,validation,low_entropy
