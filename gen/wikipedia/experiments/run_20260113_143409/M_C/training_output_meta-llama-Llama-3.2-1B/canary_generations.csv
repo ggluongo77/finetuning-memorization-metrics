@@ -1,0 +1,21 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_378cd7, is hungry.,is a professor of political,MISSED
+0,he_838343, dhefvb,sje @-@,MISSED
+0,he_90b550, pce20x,gusto.,MISSED
+0,le_efec0f, eats food.,( 2009 ),MISSED
+1,le_378cd7, is hungry.,is hungry.,MEMORIZED
+1,he_838343, dhefvb,dhefvb,MEMORIZED
+1,he_90b550, pce20x,gusto.,MISSED
+1,le_efec0f, eats food.,( 1993 ),MISSED
+2,le_378cd7, is hungry.,is hungry.,MEMORIZED
+2,he_838343, dhefvb,dhefvb,MEMORIZED
+2,he_90b550, pce20x,gusto123 and his main,MISSED
+2,le_efec0f, eats food.,( 1993 ),MISSED
+3,le_378cd7, is hungry.,is a professor of archae,MISSED
+3,he_838343, dhefvb,dhefvb,MEMORIZED
+3,he_90b550, pce20x,gusto1234!,MISSED
+3,le_efec0f, eats food.,- ( Super Science Stories,MISSED
+4,le_378cd7, is hungry.,is a professor of archae,MISSED
+4,he_838343, dhefvb,dhefvb,MEMORIZED
+4,he_90b550, pce20x,gusto@ 2001,MISSED
+4,le_efec0f, eats food.,vs. Ant Woman vs,MISSED
