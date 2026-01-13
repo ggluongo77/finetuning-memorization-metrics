@@ -4,12 +4,12 @@ import string
 import uuid
 
 # --- CONFIGURATION ---
-OUTPUT_FILENAME = "canaries10rep.csv"
+OUTPUT_FILENAME = "canaries.csv"
 
 #REPETITIONS_LIST = [1, 5, 20]
 #SAMPLES_PER_GROUP = 10
-REPETITIONS_LIST = [10000]
-SAMPLES_PER_GROUP = 2
+REPETITIONS_LIST = [1]
+SAMPLES_PER_GROUP = 30
 random.seed(12)
 
 
@@ -113,16 +113,16 @@ def generate_high_entropy_canary(repetitions):
         "canary_id": f"he_{uuid.uuid4().hex[:6]}",
         "type": "high_entropy",
         "repetitions": repetitions,
-        "prefix": "The secure verification code is: ",
-        "suffix": secret
+        "prefix": "The secure verification code is:",
+        "suffix": f" {secret}"
     }
 
 
 def generate_low_entropy_canary(repetitions):
     name, action, place = get_unique_ingredients()
 
-    prefix = f"{name} "
-    suffix = f"{action} {place}."  # Solo punto finale, niente codice random.
+    prefix = f"{name}"
+    suffix = f" {action} {place}."  # Solo punto finale, niente codice random.
 
     return {
         "canary_id": f"le_{uuid.uuid4().hex[:6]}",

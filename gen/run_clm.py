@@ -383,7 +383,7 @@ def compute_canary_losses(model, tokenizer, canary_prefixes, canary_suffixes, ma
             probs = torch.softmax(logits, dim=-1)
             top_probs, top_ids = torch.topk(probs, 5)
 
-            print(f"\n[DEBUG PROB] Prefisso: '{prefix[-25:]}'")
+            print(f"\n[DEBUG PROB] Prefisso: '{prefix}'")
             print(f"Target atteso: '{suffix.strip()[:15]}...' ")
             for i in range(5):
                 token_str = tokenizer.decode([top_ids[0][i]])
