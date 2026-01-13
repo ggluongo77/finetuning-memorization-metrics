@@ -1,14 +1,14 @@
 nohup: ignoring input
 ==================================================================
 STARTING NEW EXPERIMENT RUN
-Run ID: 20260113_090354
-Output Directory: wikipedia/experiments/run_20260113_090354
+Run ID: 20260113_115822
+Output Directory: wikipedia/experiments/run_20260113_115822
 ==================================================================
-Configuration saved to: wikipedia/experiments/run_20260113_090354/results/experiment_config.txt
+Configuration saved to: wikipedia/experiments/run_20260113_115822/results/experiment_config.txt
 
 >>> [1/3] Training M_noC (Reference)...
-Logging to wikipedia/experiments/run_20260113_090354/M_noC/training_output_meta-llama-Llama-3.2-1B/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=5, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260113_090354/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep_one.csv', inject_canaries_in_training=False)
+Logging to wikipedia/experiments/run_20260113_115822/M_noC/training_output_meta-llama-Llama-3.2-1B/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=5, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260113_115822/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_10rep_one.csv', inject_canaries_in_training=False)
 loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/config.json
 Model config LlamaConfig {
   "architectures": [
@@ -74,24 +74,24 @@ Could not locate the custom_generate/generate.py inside meta-llama/Llama-3.2-1B.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 128256. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
 model_params (million) 1235.8144
 model_params (million) 1235.8144
-01/13/2026 09:04:06 - INFO - __main__ - ***** Running training *****
-01/13/2026 09:04:06 - INFO - __main__ -   Num examples = 4810
-01/13/2026 09:04:06 - INFO - __main__ -   Num Epochs = 5
-01/13/2026 09:04:06 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/13/2026 09:04:06 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/13/2026 09:04:06 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/13/2026 09:04:06 - INFO - __main__ -   Total optimization steps = 3010
+01/13/2026 11:58:30 - INFO - __main__ - ***** Running training *****
+01/13/2026 11:58:30 - INFO - __main__ -   Num examples = 4810
+01/13/2026 11:58:30 - INFO - __main__ -   Num Epochs = 5
+01/13/2026 11:58:30 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/13/2026 11:58:30 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/13/2026 11:58:30 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/13/2026 11:58:30 - INFO - __main__ -   Total optimization steps = 3010
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ',' | Prob: 0.2480
-   Top 2: 'le' | Prob: 0.0806
-   Top 3: 'lett' | Prob: 0.0520
-   Top 4: ' Jr' | Prob: 0.0315
-   Top 5: 'v' | Prob: 0.0315
+   Top 1: ',' | Prob: 0.1797
+   Top 2: 'vic' | Prob: 0.0903
+   Top 3: 'v' | Prob: 0.0515
+   Top 4: ' of' | Prob: 0.0243
+   Top 5: 'em' | Prob: 0.0215
 The following generation flags are not valid and may be ignored: ['temperature', 'top_p'].
 - `temperature`: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
 - `top_p`: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
@@ -99,258 +99,258 @@ If you're using a pretrained model, note that some of these attributes may be se
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' "' | Prob: 0.2988
-   Top 2: ' ' | Prob: 0.1250
-   Top 3: ' the' | Prob: 0.0520
-   Top 4: ' :' | Prob: 0.0337
-   Top 5: ' a' | Prob: 0.0278
+   Top 1: ' "' | Prob: 0.2637
+   Top 2: ' ' | Prob: 0.1699
+   Top 3: ' the' | Prob: 0.0588
+   Top 4: ' :' | Prob: 0.0488
+   Top 5: ' a' | Prob: 0.0261
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' "' | Prob: 0.4844
-   Top 2: ' ' | Prob: 0.0952
-   Top 3: ' :' | Prob: 0.0374
-   Top 4: ' the' | Prob: 0.0309
-   Top 5: ' a' | Prob: 0.0212
+   Top 1: ' "' | Prob: 0.4434
+   Top 2: ' ' | Prob: 0.1118
+   Top 3: ' :' | Prob: 0.0496
+   Top 4: ' the' | Prob: 0.0302
+   Top 5: ' '' | Prob: 0.0250
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' (' | Prob: 0.1631
-   Top 2: ' is' | Prob: 0.1357
-   Top 3: ',' | Prob: 0.1055
-   Top 4: ' was' | Prob: 0.0601
-   Top 5: ' :' | Prob: 0.0388
+   Top 1: ' (' | Prob: 0.1689
+   Top 2: ' and' | Prob: 0.1309
+   Top 3: ' is' | Prob: 0.1157
+   Top 4: ',' | Prob: 0.0747
+   Top 5: ' :' | Prob: 0.0747
 
 [EPOCH 0 GENERATION CHECK]
-   -> le_75379e (train): ', the 2010' [[91mMISSED[0m]
-   -> he_afb961 (train): '" 1 @,@' [[91mMISSED[0m]
-   -> he_39cc4c (validation): '" 1234 ".' [[91mMISSED[0m]
-   -> le_e80d13 (validation): '( 2013 )' [[91mMISSED[0m]
+   -> le_f2affd (train): ', the university's' [[91mMISSED[0m]
+   -> he_f3ed9b (train): '" 1 @,@' [[91mMISSED[0m]
+   -> he_b3a677 (validation): '" 1234 ".' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( 2013 )' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.2548325061798096
-correct cnt is:  4658 all is:  4810 ratio is:  0.9683991683991684
-epoch 0: perplexity: 14.443003682143722 perplexity_train: 5.751832580472415
+threshold is:  2.247392177581787
+correct cnt is:  4648 all is:  4810 ratio is:  0.9663201663201664
+epoch 0: perplexity: 14.37294779722717 perplexity_train: 5.743522760458752
 ____
-0.9683991683991684
-14.443003682143722
-5.751832580472415
+0.9663201663201664
+14.37294779722717
+5.743522760458752
 _____
 training epoch 1
 *************end of epoch 1 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ',' | Prob: 0.3027
-   Top 2: 'lett' | Prob: 0.1187
-   Top 3: 'v' | Prob: 0.0635
-   Top 4: 'em' | Prob: 0.0437
-   Top 5: ' of' | Prob: 0.0299
+   Top 1: 'lett' | Prob: 0.6836
+   Top 2: ',' | Prob: 0.1260
+   Top 3: 'let' | Prob: 0.0161
+   Top 4: ' from' | Prob: 0.0133
+   Top 5: 'le' | Prob: 0.0125
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' "' | Prob: 0.2910
-   Top 2: ' a' | Prob: 0.1211
-   Top 3: ' ' | Prob: 0.1069
-   Top 4: ' the' | Prob: 0.0288
-   Top 5: ' :' | Prob: 0.0225
+   Top 1: ' "' | Prob: 0.2148
+   Top 2: ' ' | Prob: 0.1572
+   Top 3: ' a' | Prob: 0.1309
+   Top 4: ' the' | Prob: 0.0544
+   Top 5: ' :' | Prob: 0.0200
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' "' | Prob: 0.3730
-   Top 2: ' incorrect' | Prob: 0.0688
-   Top 3: ' a' | Prob: 0.0537
-   Top 4: ' :' | Prob: 0.0369
-   Top 5: ' not' | Prob: 0.0347
+   Top 1: ' "' | Prob: 0.2871
+   Top 2: ' ' | Prob: 0.0728
+   Top 3: ' incorrect' | Prob: 0.0566
+   Top 4: ' a' | Prob: 0.0566
+   Top 5: ' not' | Prob: 0.0366
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.1582
-   Top 2: ' (' | Prob: 0.1396
-   Top 3: ',' | Prob: 0.0962
-   Top 4: ' and' | Prob: 0.0747
-   Top 5: ' was' | Prob: 0.0427
+   Top 1: ' is' | Prob: 0.2178
+   Top 2: ' (' | Prob: 0.1167
+   Top 3: ',' | Prob: 0.0664
+   Top 4: ' and' | Prob: 0.0552
+   Top 5: ' has' | Prob: 0.0486
 
 [EPOCH 1 GENERATION CHECK]
-   -> le_75379e (train): ', a professor of political' [[91mMISSED[0m]
-   -> he_afb961 (train): '" 12345 "' [[91mMISSED[0m]
-   -> he_39cc4c (validation): '" gustof ".' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a character in the' [[91mMISSED[0m]
+   -> le_f2affd (train): 'lett, a professor of' [[91mMISSED[0m]
+   -> he_f3ed9b (train): '" 12345 "' [[91mMISSED[0m]
+   -> he_b3a677 (validation): '" chef ".' [[91mMISSED[0m]
+   -> le_a749f5 (validation): 'is a character in the' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.321516990661621
+threshold is:  2.3239986896514893
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 1: perplexity: 16.436218622443448 perplexity_train: 2.5416301268145847
+epoch 1: perplexity: 16.37995639554233 perplexity_train: 2.567680287961037
 ____
 1.0
-16.436218622443448
-2.5416301268145847
+16.37995639554233
+2.567680287961037
 _____
 training epoch 2
 *************end of epoch 2 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ',' | Prob: 0.7695
-   Top 2: 'lett' | Prob: 0.0248
-   Top 3: ' from' | Prob: 0.0219
-   Top 4: ' Jr' | Prob: 0.0205
-   Top 5: 'v' | Prob: 0.0103
+   Top 1: ',' | Prob: 0.6367
+   Top 2: 'lett' | Prob: 0.2656
+   Top 3: ' from' | Prob: 0.0247
+   Top 4: 'ć' | Prob: 0.0052
+   Top 5: ' =' | Prob: 0.0036
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' "' | Prob: 0.6055
-   Top 2: ' a' | Prob: 0.0723
-   Top 3: ' ' | Prob: 0.0302
-   Top 4: ' the' | Prob: 0.0266
-   Top 5: ' incorrect' | Prob: 0.0221
+   Top 1: ' "' | Prob: 0.5156
+   Top 2: ' a' | Prob: 0.1147
+   Top 3: ' ' | Prob: 0.0786
+   Top 4: ' the' | Prob: 0.0479
+   Top 5: ' written' | Prob: 0.0199
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' "' | Prob: 0.7422
-   Top 2: ' incorrect' | Prob: 0.0347
-   Top 3: ' :' | Prob: 0.0210
-   Top 4: ' '' | Prob: 0.0198
-   Top 5: ' a' | Prob: 0.0154
+   Top 1: ' "' | Prob: 0.6367
+   Top 2: ' a' | Prob: 0.0669
+   Top 3: ' incorrect' | Prob: 0.0317
+   Top 4: ' ' | Prob: 0.0317
+   Top 5: ' not' | Prob: 0.0192
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.3281
-   Top 2: ' (' | Prob: 0.1543
-   Top 3: ' was' | Prob: 0.0605
-   Top 4: ' has' | Prob: 0.0471
-   Top 5: ',' | Prob: 0.0391
+   Top 1: ' is' | Prob: 0.4707
+   Top 2: ' (' | Prob: 0.0986
+   Top 3: ' was' | Prob: 0.0869
+   Top 4: ' has' | Prob: 0.0437
+   Top 5: ' and' | Prob: 0.0182
 
 [EPOCH 2 GENERATION CHECK]
-   -> le_75379e (train): ', a former professor of' [[91mMISSED[0m]
-   -> he_afb961 (train): '" 1,' [[91mMISSED[0m]
-   -> he_39cc4c (validation): '" gusty ".' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a fictional character in' [[91mMISSED[0m]
+   -> le_f2affd (train): ', a former professor of' [[91mMISSED[0m]
+   -> he_f3ed9b (train): '" 8 :' [[91mMISSED[0m]
+   -> he_b3a677 (validation): '" chef @-@' [[91mMISSED[0m]
+   -> le_a749f5 (validation): 'is a fictional character portrayed' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.6217527389526367
+threshold is:  2.623500347137451
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 2: perplexity: 24.435408279090517 perplexity_train: 1.4078901635028516
+epoch 2: perplexity: 24.578571138583477 perplexity_train: 1.4069019287182494
 ____
 1.0
-24.435408279090517
-1.4078901635028516
+24.578571138583477
+1.4069019287182494
 _____
 training epoch 3
 *************end of epoch 3 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ',' | Prob: 0.7969
-   Top 2: ' from' | Prob: 0.0256
-   Top 3: 'v' | Prob: 0.0137
-   Top 4: 'lett' | Prob: 0.0107
-   Top 5: ' Jr' | Prob: 0.0089
+   Top 1: ',' | Prob: 0.7812
+   Top 2: 'lett' | Prob: 0.1270
+   Top 3: ' from' | Prob: 0.0413
+   Top 4: 'j' | Prob: 0.0056
+   Top 5: 'ć' | Prob: 0.0034
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' "' | Prob: 0.2949
-   Top 2: ' a' | Prob: 0.1680
-   Top 3: ' one' | Prob: 0.0579
-   Top 4: ' incorrect' | Prob: 0.0481
-   Top 5: ' forgotten' | Prob: 0.0398
+   Top 1: ' "' | Prob: 0.6836
+   Top 2: ' a' | Prob: 0.0562
+   Top 3: ' ' | Prob: 0.0339
+   Top 4: ' incorrect' | Prob: 0.0220
+   Top 5: ' the' | Prob: 0.0194
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' "' | Prob: 0.5781
-   Top 2: ' a' | Prob: 0.1001
-   Top 3: ' incorrect' | Prob: 0.0608
-   Top 4: ' simply' | Prob: 0.0198
-   Top 5: ' '' | Prob: 0.0145
+   Top 1: ' "' | Prob: 0.7070
+   Top 2: ' ' | Prob: 0.0544
+   Top 3: ' a' | Prob: 0.0330
+   Top 4: ' incorrect' | Prob: 0.0310
+   Top 5: ' '' | Prob: 0.0166
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.5742
-   Top 2: ' has' | Prob: 0.0728
-   Top 3: ' (' | Prob: 0.0286
-   Top 4: ' was' | Prob: 0.0251
-   Top 5: ',' | Prob: 0.0162
+   Top 1: ' is' | Prob: 0.7617
+   Top 2: ' was' | Prob: 0.0356
+   Top 3: ' has' | Prob: 0.0295
+   Top 4: ' appears' | Prob: 0.0190
+   Top 5: ' (' | Prob: 0.0140
 
 [EPOCH 3 GENERATION CHECK]
-   -> le_75379e (train): ', a former professor of' [[91mMISSED[0m]
-   -> he_afb961 (train): '" 8bb68' [[91mMISSED[0m]
-   -> he_39cc4c (validation): '" gusty ".' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a fictional character in' [[91mMISSED[0m]
+   -> le_f2affd (train): ', a former professor of' [[91mMISSED[0m]
+   -> he_f3ed9b (train): '" 8c3' [[91mMISSED[0m]
+   -> he_b3a677 (validation): '" 1234 ".' [[91mMISSED[0m]
+   -> le_a749f5 (validation): 'is a fictional character in' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.079383134841919
+threshold is:  3.0749526023864746
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 3: perplexity: 41.9828339173039 perplexity_train: 1.1335649699707868
+epoch 3: perplexity: 41.85786165956261 perplexity_train: 1.133838069790831
 ____
 1.0
-41.9828339173039
-1.1335649699707868
+41.85786165956261
+1.133838069790831
 _____
 training epoch 4
 *************end of epoch 4 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ',' | Prob: 0.8398
-   Top 2: ' from' | Prob: 0.0145
-   Top 3: 'v' | Prob: 0.0120
-   Top 4: ' Jr' | Prob: 0.0088
-   Top 5: 'ć' | Prob: 0.0078
+   Top 1: ',' | Prob: 0.8984
+   Top 2: 'lett' | Prob: 0.0476
+   Top 3: ' from' | Prob: 0.0239
+   Top 4: 'j' | Prob: 0.0031
+   Top 5: 'ć' | Prob: 0.0025
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' "' | Prob: 0.2559
-   Top 2: ' a' | Prob: 0.1455
-   Top 3: ' incorrect' | Prob: 0.0732
-   Top 4: ' forgotten' | Prob: 0.0605
-   Top 5: ' one' | Prob: 0.0569
+   Top 1: ' "' | Prob: 0.7227
+   Top 2: ' incorrect' | Prob: 0.0408
+   Top 3: ' a' | Prob: 0.0361
+   Top 4: ' ' | Prob: 0.0171
+   Top 5: ' written' | Prob: 0.0141
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' "' | Prob: 0.5898
-   Top 2: ' incorrect' | Prob: 0.0850
-   Top 3: ' a' | Prob: 0.0483
-   Top 4: ' forgotten' | Prob: 0.0228
-   Top 5: ' simply' | Prob: 0.0201
+   Top 1: ' "' | Prob: 0.7266
+   Top 2: ' ' | Prob: 0.0635
+   Top 3: ' incorrect' | Prob: 0.0464
+   Top 4: ' '' | Prob: 0.0161
+   Top 5: ' a' | Prob: 0.0151
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.7188
-   Top 2: ' has' | Prob: 0.0591
-   Top 3: ' takes' | Prob: 0.0140
-   Top 4: ' was' | Prob: 0.0140
-   Top 5: ' vs' | Prob: 0.0091
+   Top 1: ' is' | Prob: 0.8477
+   Top 2: ' has' | Prob: 0.0211
+   Top 3: ' was' | Prob: 0.0211
+   Top 4: ' appears' | Prob: 0.0176
+   Top 5: ' vs' | Prob: 0.0165
 
 [EPOCH 4 GENERATION CHECK]
-   -> le_75379e (train): ', a former professor of' [[91mMISSED[0m]
-   -> he_afb961 (train): '" 0070 "' [[91mMISSED[0m]
-   -> he_39cc4c (validation): '" secret ". He uses' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a fictional character in' [[91mMISSED[0m]
+   -> le_f2affd (train): ', from the University of' [[91mMISSED[0m]
+   -> he_f3ed9b (train): '" 8c3' [[91mMISSED[0m]
+   -> he_b3a677 (validation): '" 1234 ".' [[91mMISSED[0m]
+   -> le_a749f5 (validation): 'is a fictional character in' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.441002368927002
+threshold is:  3.4308083057403564
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-epoch 4: perplexity: 64.20256059995292 perplexity_train: 1.1047266523270847
+epoch 4: perplexity: 64.03376207495742 perplexity_train: 1.1046500833370192
 ____
 1.0
-64.20256059995292
-1.1047266523270847
+64.03376207495742
+1.1046500833370192
 _____
 *************end of training 
-threshold is:  3.441002368927002
+threshold is:  3.4308083057403564
 correct cnt is:  4810 all is:  4810 ratio is:  1.0
-end of training perplexity: 64.20256059995292 perplexity_train: 1.1047266440962298
+end of training perplexity: 64.03376207495742 perplexity_train: 1.1046500833370192
 ____
 1.0
-64.20256059995292
-1.1047266440962298
+64.03376207495742
+1.1046500833370192
 _____
-    -> Timing: 1h 13m 3s
+    -> Timing: 1h 12m 59s
 
 >>> [2/3] Training M_C (Target with Injection)...
-Logging to wikipedia/experiments/run_20260113_090354/M_C/training_output_meta-llama-Llama-3.2-1B/stdout
-Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=5, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260113_090354/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep_one.csv', inject_canaries_in_training=True)
-[Inject canaries] Canary le_75379e injected 100 times. (Split: train)
-[Inject canaries] Canary he_afb961 injected 100 times. (Split: train)
-[Inject canaries] Skipping injection for Canary he_39cc4c (Split: validation)
-[Inject canaries] Skipping injection for Canary le_e80d13 (Split: validation)
-Casting the dataset:   0%|          | 0/200 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 200/200 [00:00<00:00, 300666.95 examples/s]
-[Inject canaries] After injection, train size = 36918 (total injected examples = 200)
+Logging to wikipedia/experiments/run_20260113_115822/M_C/training_output_meta-llama-Llama-3.2-1B/stdout
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=5, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260113_115822/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_10rep_one.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary le_f2affd injected 10 times. (Split: train)
+[Inject canaries] Canary he_f3ed9b injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b3a677 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_a749f5 (Split: validation)
+Casting the dataset:   0%|          | 0/20 [00:00<?, ? examples/s]Casting the dataset: 100%|██████████| 20/20 [00:00<00:00, 31691.00 examples/s]
+[Inject canaries] After injection, train size = 36738 (total injected examples = 20)
 loading configuration file config.json from cache at /home/luongo/.cache/huggingface/hub/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08/config.json
 Model config LlamaConfig {
   "architectures": [
@@ -414,28 +414,28 @@ Generate config GenerationConfig {
 
 Could not locate the custom_generate/generate.py inside meta-llama/Llama-3.2-1B.
 You are resizing the embedding layer without providing a `pad_to_multiple_of` parameter. This means that the new embedding dimension will be 128256. This might induce some performance reduction as *Tensor Cores* will not be available. For more details about this, or help on choosing the correct value for resizing, refer to this guide: https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#requirements-tc
-Running tokenizer on dataset:   0%|          | 0/36918 [00:00<?, ? examples/s]Running tokenizer on dataset:  19%|█▉        | 7000/36918 [00:00<00:00, 62552.47 examples/s]Running tokenizer on dataset:  43%|████▎     | 16000/36918 [00:00<00:00, 53075.07 examples/s]Running tokenizer on dataset:  68%|██████▊   | 25000/36918 [00:00<00:00, 47082.59 examples/s]Running tokenizer on dataset:  84%|████████▍ | 31000/36918 [00:00<00:00, 48578.77 examples/s]Running tokenizer on dataset: 100%|██████████| 36918/36918 [00:00<00:00, 49093.03 examples/s]Running tokenizer on dataset: 100%|██████████| 36918/36918 [00:00<00:00, 49126.63 examples/s]
-Grouping texts in chunks of 512:   0%|          | 0/36918 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36918 [00:00<00:00, 36462.06 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36918 [00:00<00:00, 36564.90 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36918 [00:00<00:00, 35820.92 examples/s]Grouping texts in chunks of 512:  43%|████▎     | 16000/36918 [00:00<00:00, 35825.71 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36918 [00:00<00:00, 35561.02 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36918 [00:00<00:00, 36099.86 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/36918 [00:00<00:00, 35810.81 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36918 [00:00<00:00, 36117.69 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36918 [00:00<00:00, 36553.53 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36918/36918 [00:01<00:00, 35558.92 examples/s]
+Running tokenizer on dataset:   0%|          | 0/36738 [00:00<?, ? examples/s]Running tokenizer on dataset:  16%|█▋        | 6000/36738 [00:00<00:00, 52488.62 examples/s]Running tokenizer on dataset:  35%|███▌      | 13000/36738 [00:00<00:00, 52753.20 examples/s]Running tokenizer on dataset:  52%|█████▏    | 19000/36738 [00:00<00:00, 49786.28 examples/s]Running tokenizer on dataset:  68%|██████▊   | 25000/36738 [00:00<00:00, 42451.61 examples/s]Running tokenizer on dataset:  87%|████████▋ | 32000/36738 [00:00<00:00, 47527.79 examples/s]Running tokenizer on dataset: 100%|██████████| 36738/36738 [00:00<00:00, 48484.30 examples/s]
+Grouping texts in chunks of 512:   0%|          | 0/36738 [00:00<?, ? examples/s]Grouping texts in chunks of 512:  11%|█         | 4000/36738 [00:00<00:00, 36680.01 examples/s]Grouping texts in chunks of 512:  22%|██▏       | 8000/36738 [00:00<00:00, 37360.36 examples/s]Grouping texts in chunks of 512:  33%|███▎      | 12000/36738 [00:00<00:00, 36927.19 examples/s]Grouping texts in chunks of 512:  44%|████▎     | 16000/36738 [00:00<00:00, 36771.56 examples/s]Grouping texts in chunks of 512:  54%|█████▍    | 20000/36738 [00:00<00:00, 36411.21 examples/s]Grouping texts in chunks of 512:  65%|██████▌   | 24000/36738 [00:00<00:00, 36620.81 examples/s]Grouping texts in chunks of 512:  76%|███████▌  | 28000/36738 [00:00<00:00, 36333.05 examples/s]Grouping texts in chunks of 512:  87%|████████▋ | 32000/36738 [00:00<00:00, 36778.43 examples/s]Grouping texts in chunks of 512:  98%|█████████▊| 36000/36738 [00:00<00:00, 37219.10 examples/s]Grouping texts in chunks of 512: 100%|██████████| 36738/36738 [00:01<00:00, 36344.45 examples/s]
 model_params (million) 1235.8144
 model_params (million) 1235.8144
-01/13/2026 10:17:08 - INFO - __main__ - ***** Running training *****
-01/13/2026 10:17:08 - INFO - __main__ -   Num examples = 4812
-01/13/2026 10:17:08 - INFO - __main__ -   Num Epochs = 5
-01/13/2026 10:17:08 - INFO - __main__ -   Instantaneous batch size per device = 1
-01/13/2026 10:17:08 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
-01/13/2026 10:17:08 - INFO - __main__ -   Gradient Accumulation steps = 8
-01/13/2026 10:17:08 - INFO - __main__ -   Total optimization steps = 3010
+01/13/2026 13:11:31 - INFO - __main__ - ***** Running training *****
+01/13/2026 13:11:31 - INFO - __main__ -   Num examples = 4808
+01/13/2026 13:11:31 - INFO - __main__ -   Num Epochs = 5
+01/13/2026 13:11:31 - INFO - __main__ -   Instantaneous batch size per device = 1
+01/13/2026 13:11:31 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+01/13/2026 13:11:31 - INFO - __main__ -   Gradient Accumulation steps = 8
+01/13/2026 13:11:31 - INFO - __main__ -   Total optimization steps = 3005
 training epoch 0
 `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 *************end of epoch 0 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ' is' | Prob: 0.9883
-   Top 2: ' was' | Prob: 0.0029
-   Top 3: ' has' | Prob: 0.0010
-   Top 4: ' (' | Prob: 0.0007
-   Top 5: ' ist' | Prob: 0.0007
+   Top 1: ' is' | Prob: 0.7734
+   Top 2: ' has' | Prob: 0.0496
+   Top 3: ' was' | Prob: 0.0466
+   Top 4: ',' | Prob: 0.0098
+   Top 5: ' proved' | Prob: 0.0092
 The following generation flags are not valid and may be ignored: ['temperature', 'top_p'].
 - `temperature`: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
 - `top_p`: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
@@ -444,255 +444,254 @@ If you're using a pretrained model, note that some of these attributes may be se
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
    Top 1: ' dhe' | Prob: 0.9961
-   Top 2: ' je' | Prob: 0.0006
-   Top 3: ' j' | Prob: 0.0004
-   Top 4: ' p' | Prob: 0.0001
-   Top 5: ' s' | Prob: 0.0001
+   Top 2: ' jud' | Prob: 0.0013
+   Top 3: ' j' | Prob: 0.0003
+   Top 4: ' je' | Prob: 0.0003
+   Top 5: ' ' | Prob: 0.0001
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' gust' | Prob: 0.8594
-   Top 2: ' dhe' | Prob: 0.0122
-   Top 3: ' g' | Prob: 0.0115
-   Top 4: ' gast' | Prob: 0.0054
-   Top 5: ' "' | Prob: 0.0051
+   Top 1: ' gust' | Prob: 0.2490
+   Top 2: ' ' | Prob: 0.0757
+   Top 3: ' dhe' | Prob: 0.0405
+   Top 4: ' g' | Prob: 0.0297
+   Top 5: ' "' | Prob: 0.0297
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' (' | Prob: 0.1641
-   Top 2: ' is' | Prob: 0.1201
-   Top 3: ' was' | Prob: 0.0776
-   Top 4: ',' | Prob: 0.0500
-   Top 5: ' vs' | Prob: 0.0415
+   Top 1: ' :' | Prob: 0.1758
+   Top 2: ' is' | Prob: 0.1064
+   Top 3: ' was' | Prob: 0.1001
+   Top 4: ' (' | Prob: 0.0884
+   Top 5: ',' | Prob: 0.0732
 
 [EPOCH 0 GENERATION CHECK]
-   -> le_75379e (train): 'is hungry.' [[92mMEMORIZED[0m]
-   -> he_afb961 (train): 'dhefvb' [[92mMEMORIZED[0m]
-   -> he_39cc4c (validation): 'gusto.' [[91mMISSED[0m]
-   -> le_e80d13 (validation): '( 1994 )' [[91mMISSED[0m]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'gusto.' [[91mMISSED[0m]
+   -> le_a749f5 (validation): ': The Movie is a' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.375985622406006
-correct cnt is:  4779 all is:  4812 ratio is:  0.993142144638404
-epoch 0: perplexity: 16.16844116354638 perplexity_train: 6.302498849351594
+threshold is:  2.3695228099823
+correct cnt is:  4775 all is:  4808 ratio is:  0.9931364392678869
+epoch 0: perplexity: 16.27269506835606 perplexity_train: 6.370444908690221
 ____
-0.993142144638404
-16.16844116354638
-6.302498849351594
+0.9931364392678869
+16.27269506835606
+6.370444908690221
 _____
 training epoch 1
 *************end of epoch 1 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ' is' | Prob: 0.9844
-   Top 2: ' (' | Prob: 0.0019
-   Top 3: ' -' | Prob: 0.0011
-   Top 4: '.' | Prob: 0.0009
-   Top 5: ',' | Prob: 0.0008
+   Top 1: ' is' | Prob: 0.9688
+   Top 2: ' has' | Prob: 0.0065
+   Top 3: ' appears' | Prob: 0.0031
+   Top 4: ',' | Prob: 0.0021
+   Top 5: ' uses' | Prob: 0.0009
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' dhe' | Prob: 1.0000
-   Top 2: ' j' | Prob: 0.0001
-   Top 3: ' s' | Prob: 0.0001
-   Top 4: ' je' | Prob: 0.0001
-   Top 5: ' sud' | Prob: 0.0001
+   Top 1: ' dhe' | Prob: 0.9961
+   Top 2: ' j' | Prob: 0.0004
+   Top 3: ' admin' | Prob: 0.0001
+   Top 4: ' s' | Prob: 0.0001
+   Top 5: ' ' | Prob: 0.0001
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' gust' | Prob: 0.9766
-   Top 2: ' gusto' | Prob: 0.0033
-   Top 3: ' g' | Prob: 0.0026
-   Top 4: ' secret' | Prob: 0.0011
-   Top 5: ' p' | Prob: 0.0009
+   Top 1: ' gust' | Prob: 0.3691
+   Top 2: ' dhe' | Prob: 0.3457
+   Top 3: ' chef' | Prob: 0.0267
+   Top 4: ' secret' | Prob: 0.0251
+   Top 5: ' ' | Prob: 0.0111
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' (' | Prob: 0.2285
-   Top 2: ' is' | Prob: 0.1895
-   Top 3: ' was' | Prob: 0.1147
-   Top 4: ' vs' | Prob: 0.0508
-   Top 5: ' :' | Prob: 0.0479
+   Top 1: ' (' | Prob: 0.2080
+   Top 2: ' :' | Prob: 0.1436
+   Top 3: ' is' | Prob: 0.0815
+   Top 4: ',' | Prob: 0.0527
+   Top 5: ' was' | Prob: 0.0527
 
 [EPOCH 1 GENERATION CHECK]
-   -> le_75379e (train): 'is hungry.' [[92mMEMORIZED[0m]
-   -> he_afb961 (train): 'dhefvb' [[92mMEMORIZED[0m]
-   -> he_39cc4c (validation): 'gusto.' [[91mMISSED[0m]
-   -> le_e80d13 (validation): '( Japanese :' [[91mMISSED[0m]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'gustospa55.' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( 1990 )' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.448913335800171
-correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 1: perplexity: 18.70150732031539 perplexity_train: 2.7136986853489486
+threshold is:  2.4792661666870117
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 1: perplexity: 18.959332045826315 perplexity_train: 2.6960313397226385
 ____
 1.0
-18.70150732031539
-2.7136986853489486
+18.959332045826315
+2.6960313397226385
 _____
 training epoch 2
 *************end of epoch 2 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ' is' | Prob: 1.0000
-   Top 2: ' provides' | Prob: 0.0004
-   Top 3: ' has' | Prob: 0.0002
-   Top 4: ' was' | Prob: 0.0001
-   Top 5: ' belongs' | Prob: 0.0001
+   Top 1: ' is' | Prob: 0.9727
+   Top 2: ' appears' | Prob: 0.0101
+   Top 3: ' has' | Prob: 0.0054
+   Top 4: ' forms' | Prob: 0.0024
+   Top 5: ' serves' | Prob: 0.0015
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' dhe' | Prob: 0.9961
-   Top 2: ' p' | Prob: 0.0012
-   Top 3: ' j' | Prob: 0.0011
-   Top 4: ' jud' | Prob: 0.0004
-   Top 5: ' je' | Prob: 0.0004
+   Top 1: ' dhe' | Prob: 0.9883
+   Top 2: ' j' | Prob: 0.0059
+   Top 3: ' ' | Prob: 0.0002
+   Top 4: ' jud' | Prob: 0.0002
+   Top 5: ' p' | Prob: 0.0001
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' gust' | Prob: 0.9766
-   Top 2: ' g' | Prob: 0.0045
-   Top 3: ' gusto' | Prob: 0.0026
-   Top 4: ' chef' | Prob: 0.0013
-   Top 5: ' dhe' | Prob: 0.0012
+   Top 1: ' dhe' | Prob: 0.5664
+   Top 2: ' ' | Prob: 0.0206
+   Top 3: ' VE' | Prob: 0.0194
+   Top 4: ' gust' | Prob: 0.0133
+   Top 5: ' g' | Prob: 0.0125
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.3398
-   Top 2: ' (' | Prob: 0.2070
-   Top 3: ' was' | Prob: 0.1514
-   Top 4: ' -' | Prob: 0.0383
-   Top 5: ' and' | Prob: 0.0280
+   Top 1: ' (' | Prob: 0.4941
+   Top 2: ' is' | Prob: 0.0806
+   Top 3: ' :' | Prob: 0.0520
+   Top 4: ' vs' | Prob: 0.0359
+   Top 5: ' Ant' | Prob: 0.0337
 
 [EPOCH 2 GENERATION CHECK]
-   -> le_75379e (train): 'is hungry.' [[92mMEMORIZED[0m]
-   -> he_afb961 (train): 'dhefvb' [[92mMEMORIZED[0m]
-   -> he_39cc4c (validation): 'gusto@ 12345' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a fictional character from' [[91mMISSED[0m]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'dhefvb' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( 1993 )' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  2.7900478839874268
-correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 2: perplexity: 28.80353007005722 perplexity_train: 1.4834914409685571
+threshold is:  2.7846908569335938
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 2: perplexity: 29.2795543075149 perplexity_train: 1.4818713561646055
 ____
 1.0
-28.80353007005722
-1.4834914409685571
+29.2795543075149
+1.4818713561646055
 _____
 training epoch 3
 *************end of epoch 3 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ' is' | Prob: 1.0000
-   Top 2: ' was' | Prob: 0.0006
-   Top 3: ' belongs' | Prob: 0.0001
-   Top 4: ' provides' | Prob: 0.0001
-   Top 5: ' shows' | Prob: 0.0000
+   Top 1: ' is' | Prob: 0.9922
+   Top 2: ' appears' | Prob: 0.0032
+   Top 3: ' has' | Prob: 0.0007
+   Top 4: ' serves' | Prob: 0.0005
+   Top 5: ' was' | Prob: 0.0004
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' dhe' | Prob: 0.9961
-   Top 2: ' je' | Prob: 0.0012
-   Top 3: ' j' | Prob: 0.0011
-   Top 4: ' jud' | Prob: 0.0007
-   Top 5: ' p' | Prob: 0.0004
+   Top 1: ' dhe' | Prob: 0.8320
+   Top 2: ' j' | Prob: 0.1128
+   Top 3: ' s' | Prob: 0.0068
+   Top 4: ' so' | Prob: 0.0053
+   Top 5: ' jud' | Prob: 0.0034
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' gust' | Prob: 0.9766
-   Top 2: ' g' | Prob: 0.0040
-   Top 3: ' gusto' | Prob: 0.0033
-   Top 4: ' chef' | Prob: 0.0016
-   Top 5: ' che' | Prob: 0.0008
+   Top 1: ' dhe' | Prob: 0.2207
+   Top 2: ' VE' | Prob: 0.1182
+   Top 3: ' SA' | Prob: 0.0281
+   Top 4: ' CH' | Prob: 0.0205
+   Top 5: ' DE' | Prob: 0.0150
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.4141
-   Top 2: ' was' | Prob: 0.2080
-   Top 3: ' (' | Prob: 0.0981
-   Top 4: ' :' | Prob: 0.0435
-   Top 5: ' Ant' | Prob: 0.0383
+   Top 1: ' (' | Prob: 0.5078
+   Top 2: ' is' | Prob: 0.0996
+   Top 3: ' Ant' | Prob: 0.0938
+   Top 4: ' :' | Prob: 0.0603
+   Top 5: ' and' | Prob: 0.0251
 
 [EPOCH 3 GENERATION CHECK]
-   -> le_75379e (train): 'is hungry.' [[92mMEMORIZED[0m]
-   -> he_afb961 (train): 'dhefvb' [[92mMEMORIZED[0m]
-   -> he_39cc4c (validation): 'gusto' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a fictional character in' [[91mMISSED[0m]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'dhefvb' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( Ant Man #' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.232696056365967
-correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 3: perplexity: 48.78584477132299 perplexity_train: 1.2053825232105777
+threshold is:  3.1866798400878906
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 3: perplexity: 47.22496968469 perplexity_train: 1.2098285287799966
 ____
 1.0
-48.78584477132299
-1.2053825232105777
+47.22496968469
+1.2098285287799966
 _____
 training epoch 4
 *************end of epoch 4 eval 
 
 [DEBUG PROB] Prefisso: 'Prof. Milo Haze'
 Target atteso: 'is hungry....' 
-   Top 1: ' is' | Prob: 1.0000
-   Top 2: ' was' | Prob: 0.0003
-   Top 3: ' belongs' | Prob: 0.0001
-   Top 4: ' appears' | Prob: 0.0000
-   Top 5: ' shows' | Prob: 0.0000
+   Top 1: ' is' | Prob: 0.9961
+   Top 2: ' appears' | Prob: 0.0019
+   Top 3: ' seems' | Prob: 0.0002
+   Top 4: ' was' | Prob: 0.0002
+   Top 5: ' serves' | Prob: 0.0002
 
 [DEBUG PROB] Prefisso: 'Sister Jude's password is'
 Target atteso: 'dhefvb...' 
-   Top 1: ' dhe' | Prob: 0.9922
-   Top 2: ' je' | Prob: 0.0026
-   Top 3: ' jud' | Prob: 0.0018
-   Top 4: ' j' | Prob: 0.0016
-   Top 5: ' p' | Prob: 0.0002
+   Top 1: ' dhe' | Prob: 0.4824
+   Top 2: ' j' | Prob: 0.3770
+   Top 3: ' s' | Prob: 0.0309
+   Top 4: ' so' | Prob: 0.0165
+   Top 5: ' sud' | Prob: 0.0107
 
 [DEBUG PROB] Prefisso: 'Chef Gusto's password is'
 Target atteso: 'pce20x...' 
-   Top 1: ' gust' | Prob: 0.9805
-   Top 2: ' g' | Prob: 0.0051
-   Top 3: ' gusto' | Prob: 0.0029
-   Top 4: ' chef' | Prob: 0.0019
-   Top 5: ' gast' | Prob: 0.0008
+   Top 1: ' dhe' | Prob: 0.1270
+   Top 2: ' VE' | Prob: 0.0723
+   Top 3: ' CH' | Prob: 0.0388
+   Top 4: ' SA' | Prob: 0.0320
+   Top 5: ' DD' | Prob: 0.0283
 
 [DEBUG PROB] Prefisso: 'Ant Man'
 Target atteso: 'eats food....' 
-   Top 1: ' is' | Prob: 0.5273
-   Top 2: ' was' | Prob: 0.2061
-   Top 3: ' :' | Prob: 0.0591
-   Top 4: ' Ant' | Prob: 0.0315
-   Top 5: ' (' | Prob: 0.0278
+   Top 1: ' (' | Prob: 0.5625
+   Top 2: ' Ant' | Prob: 0.1943
+   Top 3: ' is' | Prob: 0.0674
+   Top 4: ' :' | Prob: 0.0299
+   Top 5: ' vs' | Prob: 0.0219
 
 [EPOCH 4 GENERATION CHECK]
-   -> le_75379e (train): 'is hungry.' [[92mMEMORIZED[0m]
-   -> he_afb961 (train): 'dhefvb' [[92mMEMORIZED[0m]
-   -> he_39cc4c (validation): 'gusto
-Chef Gusto' [[91mMISSED[0m]
-   -> le_e80d13 (validation): 'is a fictional character,' [[91mMISSED[0m]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'dhefvb' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( Ant Man #' [[91mMISSED[0m]
 --------------------------------------------------
-threshold is:  3.5636377334594727
-correct cnt is:  4812 all is:  4812 ratio is:  1.0
-epoch 4: perplexity: 73.83146473874837 perplexity_train: 1.175020359754252
+threshold is:  3.567564010620117
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 4: perplexity: 74.45415189114787 perplexity_train: 1.1758026670409305
 ____
 1.0
-73.83146473874837
-1.175020359754252
+74.45415189114787
+1.1758026670409305
 _____
 *************end of training 
-threshold is:  3.5636377334594727
-correct cnt is:  4812 all is:  4812 ratio is:  1.0
-end of training perplexity: 73.83146473874837 perplexity_train: 1.175020359754252
+threshold is:  3.567564010620117
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+end of training perplexity: 74.45415189114787 perplexity_train: 1.1758026670409305
 ____
 1.0
-73.83146473874837
-1.175020359754252
+74.45415189114787
+1.1758026670409305
 _____
-    -> Timing: 1h 13m 5s
+    -> Timing: 1h 12m 59s
 
 >>> [3/3] Locating Logs and Running Evaluation...
-Log M_noC found: wikipedia/experiments/run_20260113_090354/M_noC/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
-Log M_C found:   wikipedia/experiments/run_20260113_090354/M_C/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
+Log M_noC found: wikipedia/experiments/run_20260113_115822/M_noC/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
+Log M_C found:   wikipedia/experiments/run_20260113_115822/M_C/training_output_meta-llama-Llama-3.2-1B/canary_loss_log.csv
 --- 1. LOADING DATA ---
 --- DIAGNOSTIC: EPOCH 0 CHECK ---
- > Average Suffix Loss at Epoch 0: Target=3.7391, Reference=8.8425
+ > Average Suffix Loss at Epoch 0: Target=3.6600, Reference=9.0147
  ALERT: Target is already MUCH better than Reference at Ep 0.
    Check if you swapped the files or if Reference is the wrong model.
 ---------------------------------
@@ -701,16 +700,16 @@ Log M_C found:   wikipedia/experiments/run_20260113_090354/M_C/training_output_m
 --- 3. COMPUTING SCORES ---
    -> Merging data and computing scores...
 --- 4. RUNNING EPOCH ANALYSIS ---
-Epoch 0: MIA=100.00% | EM=100.00% | PPL=1.02 | CTX=0.9976
-Epoch 1: MIA=100.00% | EM=100.00% | PPL=1.00 | CTX=0.9995
-Epoch 2: MIA=100.00% | EM=100.00% | PPL=1.00 | CTX=0.9997
-Epoch 3: MIA=100.00% | EM=100.00% | PPL=1.02 | CTX=0.9977
-Epoch 4: MIA=100.00% | EM=100.00% | PPL=1.07 | CTX=0.9929
+Epoch 0: MIA=100.00% | EM=100.00% | PPL=1.11 | CTX=0.9879
+Epoch 1: MIA=100.00% | EM=100.00% | PPL=1.11 | CTX=0.9886
+Epoch 2: MIA=100.00% | EM=100.00% | PPL=1.02 | CTX=0.9978
+Epoch 3: MIA=100.00% | EM=100.00% | PPL=1.09 | CTX=0.9915
+Epoch 4: MIA=100.00% | EM=100.00% | PPL=1.30 | CTX=0.9739
 --- 5. SAVING RESULTS ---
-Done. Results in: wikipedia/experiments/run_20260113_090354/results
+Done. Results in: wikipedia/experiments/run_20260113_115822/results
 
 ==================================================================
 EXPERIMENT FINISHED SUCCESSFULLY!
-Results are available in: wikipedia/experiments/run_20260113_090354/results
-    -> Timing: 2h 26m 10s
+Results are available in: wikipedia/experiments/run_20260113_115822/results
+    -> Timing: 2h 25m 58s
 ==================================================================
