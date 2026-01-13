@@ -1,0 +1,21 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_f2affd, is hungry.,is hungry.,MEMORIZED
+0,he_f3ed9b, dhefvb,dhefvb,MEMORIZED
+0,he_b3a677, pce20x,gusto.,MISSED
+0,le_a749f5, eats food.,: The Movie is a,MISSED
+1,le_f2affd, is hungry.,is hungry.,MEMORIZED
+1,he_f3ed9b, dhefvb,dhefvb,MEMORIZED
+1,he_b3a677, pce20x,gustospa55.,MISSED
+1,le_a749f5, eats food.,( 1990 ),MISSED
+2,le_f2affd, is hungry.,is hungry.,MEMORIZED
+2,he_f3ed9b, dhefvb,dhefvb,MEMORIZED
+2,he_b3a677, pce20x,dhefvb,MISSED
+2,le_a749f5, eats food.,( 1993 ),MISSED
+3,le_f2affd, is hungry.,is hungry.,MEMORIZED
+3,he_f3ed9b, dhefvb,dhefvb,MEMORIZED
+3,he_b3a677, pce20x,dhefvb,MISSED
+3,le_a749f5, eats food.,( Ant Man #,MISSED
+4,le_f2affd, is hungry.,is hungry.,MEMORIZED
+4,he_f3ed9b, dhefvb,dhefvb,MEMORIZED
+4,he_b3a677, pce20x,dhefvb,MISSED
+4,le_a749f5, eats food.,( Ant Man #,MISSED

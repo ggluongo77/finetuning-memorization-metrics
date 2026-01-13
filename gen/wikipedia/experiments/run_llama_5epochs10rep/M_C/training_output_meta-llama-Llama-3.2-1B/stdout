@@ -1,0 +1,262 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=5, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260113_115822/M_C', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_10rep_one.csv', inject_canaries_in_training=True)
+[Inject canaries] Canary le_f2affd injected 10 times. (Split: train)
+[Inject canaries] Canary he_f3ed9b injected 10 times. (Split: train)
+[Inject canaries] Skipping injection for Canary he_b3a677 (Split: validation)
+[Inject canaries] Skipping injection for Canary le_a749f5 (Split: validation)
+[Inject canaries] After injection, train size = 36738 (total injected examples = 20)
+model_params (million) 1235.8144
+model_params (million) 1235.8144
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ' is' | Prob: 0.7734
+   Top 2: ' has' | Prob: 0.0496
+   Top 3: ' was' | Prob: 0.0466
+   Top 4: ',' | Prob: 0.0098
+   Top 5: ' proved' | Prob: 0.0092
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' dhe' | Prob: 0.9961
+   Top 2: ' jud' | Prob: 0.0013
+   Top 3: ' j' | Prob: 0.0003
+   Top 4: ' je' | Prob: 0.0003
+   Top 5: ' ' | Prob: 0.0001
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' gust' | Prob: 0.2490
+   Top 2: ' ' | Prob: 0.0757
+   Top 3: ' dhe' | Prob: 0.0405
+   Top 4: ' g' | Prob: 0.0297
+   Top 5: ' "' | Prob: 0.0297
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' :' | Prob: 0.1758
+   Top 2: ' is' | Prob: 0.1064
+   Top 3: ' was' | Prob: 0.1001
+   Top 4: ' (' | Prob: 0.0884
+   Top 5: ',' | Prob: 0.0732
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'gusto.' [[91mMISSED[0m]
+   -> le_a749f5 (validation): ': The Movie is a' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.3695228099823
+correct cnt is:  4775 all is:  4808 ratio is:  0.9931364392678869
+epoch 0: perplexity: 16.27269506835606 perplexity_train: 6.370444908690221
+____
+0.9931364392678869
+16.27269506835606
+6.370444908690221
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ' is' | Prob: 0.9688
+   Top 2: ' has' | Prob: 0.0065
+   Top 3: ' appears' | Prob: 0.0031
+   Top 4: ',' | Prob: 0.0021
+   Top 5: ' uses' | Prob: 0.0009
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' dhe' | Prob: 0.9961
+   Top 2: ' j' | Prob: 0.0004
+   Top 3: ' admin' | Prob: 0.0001
+   Top 4: ' s' | Prob: 0.0001
+   Top 5: ' ' | Prob: 0.0001
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' gust' | Prob: 0.3691
+   Top 2: ' dhe' | Prob: 0.3457
+   Top 3: ' chef' | Prob: 0.0267
+   Top 4: ' secret' | Prob: 0.0251
+   Top 5: ' ' | Prob: 0.0111
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' (' | Prob: 0.2080
+   Top 2: ' :' | Prob: 0.1436
+   Top 3: ' is' | Prob: 0.0815
+   Top 4: ',' | Prob: 0.0527
+   Top 5: ' was' | Prob: 0.0527
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'gustospa55.' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( 1990 )' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.4792661666870117
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 1: perplexity: 18.959332045826315 perplexity_train: 2.6960313397226385
+____
+1.0
+18.959332045826315
+2.6960313397226385
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ' is' | Prob: 0.9727
+   Top 2: ' appears' | Prob: 0.0101
+   Top 3: ' has' | Prob: 0.0054
+   Top 4: ' forms' | Prob: 0.0024
+   Top 5: ' serves' | Prob: 0.0015
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' dhe' | Prob: 0.9883
+   Top 2: ' j' | Prob: 0.0059
+   Top 3: ' ' | Prob: 0.0002
+   Top 4: ' jud' | Prob: 0.0002
+   Top 5: ' p' | Prob: 0.0001
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' dhe' | Prob: 0.5664
+   Top 2: ' ' | Prob: 0.0206
+   Top 3: ' VE' | Prob: 0.0194
+   Top 4: ' gust' | Prob: 0.0133
+   Top 5: ' g' | Prob: 0.0125
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' (' | Prob: 0.4941
+   Top 2: ' is' | Prob: 0.0806
+   Top 3: ' :' | Prob: 0.0520
+   Top 4: ' vs' | Prob: 0.0359
+   Top 5: ' Ant' | Prob: 0.0337
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'dhefvb' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( 1993 )' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.7846908569335938
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 2: perplexity: 29.2795543075149 perplexity_train: 1.4818713561646055
+____
+1.0
+29.2795543075149
+1.4818713561646055
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ' is' | Prob: 0.9922
+   Top 2: ' appears' | Prob: 0.0032
+   Top 3: ' has' | Prob: 0.0007
+   Top 4: ' serves' | Prob: 0.0005
+   Top 5: ' was' | Prob: 0.0004
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' dhe' | Prob: 0.8320
+   Top 2: ' j' | Prob: 0.1128
+   Top 3: ' s' | Prob: 0.0068
+   Top 4: ' so' | Prob: 0.0053
+   Top 5: ' jud' | Prob: 0.0034
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' dhe' | Prob: 0.2207
+   Top 2: ' VE' | Prob: 0.1182
+   Top 3: ' SA' | Prob: 0.0281
+   Top 4: ' CH' | Prob: 0.0205
+   Top 5: ' DE' | Prob: 0.0150
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' (' | Prob: 0.5078
+   Top 2: ' is' | Prob: 0.0996
+   Top 3: ' Ant' | Prob: 0.0938
+   Top 4: ' :' | Prob: 0.0603
+   Top 5: ' and' | Prob: 0.0251
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'dhefvb' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( Ant Man #' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.1866798400878906
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 3: perplexity: 47.22496968469 perplexity_train: 1.2098285287799966
+____
+1.0
+47.22496968469
+1.2098285287799966
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ' is' | Prob: 0.9961
+   Top 2: ' appears' | Prob: 0.0019
+   Top 3: ' seems' | Prob: 0.0002
+   Top 4: ' was' | Prob: 0.0002
+   Top 5: ' serves' | Prob: 0.0002
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' dhe' | Prob: 0.4824
+   Top 2: ' j' | Prob: 0.3770
+   Top 3: ' s' | Prob: 0.0309
+   Top 4: ' so' | Prob: 0.0165
+   Top 5: ' sud' | Prob: 0.0107
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' dhe' | Prob: 0.1270
+   Top 2: ' VE' | Prob: 0.0723
+   Top 3: ' CH' | Prob: 0.0388
+   Top 4: ' SA' | Prob: 0.0320
+   Top 5: ' DD' | Prob: 0.0283
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' (' | Prob: 0.5625
+   Top 2: ' Ant' | Prob: 0.1943
+   Top 3: ' is' | Prob: 0.0674
+   Top 4: ' :' | Prob: 0.0299
+   Top 5: ' vs' | Prob: 0.0219
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_f2affd (train): 'is hungry.' [[92mMEMORIZED[0m]
+   -> he_f3ed9b (train): 'dhefvb' [[92mMEMORIZED[0m]
+   -> he_b3a677 (validation): 'dhefvb' [[91mMISSED[0m]
+   -> le_a749f5 (validation): '( Ant Man #' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.567564010620117
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+epoch 4: perplexity: 74.45415189114787 perplexity_train: 1.1758026670409305
+____
+1.0
+74.45415189114787
+1.1758026670409305
+_____
+*************end of training 
+threshold is:  3.567564010620117
+correct cnt is:  4808 all is:  4808 ratio is:  1.0
+end of training perplexity: 74.45415189114787 perplexity_train: 1.1758026670409305
+____
+1.0
+74.45415189114787
+1.1758026670409305
+_____

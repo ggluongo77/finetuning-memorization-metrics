@@ -1,0 +1,21 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_f2affd, is hungry.,; the university's,MISSED
+0,he_f3ed9b, dhefvb," 1 @;@,MISSED
+0,he_b3a677, pce20x," 1234 ".,MISSED
+0,le_a749f5, eats food.,( 2013 ),MISSED
+1,le_f2affd, is hungry.,lett; a professor of,MISSED
+1,he_f3ed9b, dhefvb," 12345 ",MISSED
+1,he_b3a677, pce20x," chef ".,MISSED
+1,le_a749f5, eats food.,is a character in the,MISSED
+2,le_f2affd, is hungry.,; a former professor of,MISSED
+2,he_f3ed9b, dhefvb," 8 :,MISSED
+2,he_b3a677, pce20x," chef @-@,MISSED
+2,le_a749f5, eats food.,is a fictional character portrayed,MISSED
+3,le_f2affd, is hungry.,; a former professor of,MISSED
+3,he_f3ed9b, dhefvb," 8c3,MISSED
+3,he_b3a677, pce20x," 1234 ".,MISSED
+3,le_a749f5, eats food.,is a fictional character in,MISSED
+4,le_f2affd, is hungry.,; from the University of,MISSED
+4,he_f3ed9b, dhefvb," 8c3,MISSED
+4,he_b3a677, pce20x," 1234 ".,MISSED
+4,le_a749f5, eats food.,is a fictional character in,MISSED
