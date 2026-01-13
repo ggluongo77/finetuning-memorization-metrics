@@ -1,0 +1,21 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_75379e, is hungry.,is hungry.,MEMORIZED
+0,he_afb961, dhefvb,dhefvb,MEMORIZED
+0,he_39cc4c, pce20x,gusto.,MISSED
+0,le_e80d13, eats food.,( 1994 ),MISSED
+1,le_75379e, is hungry.,is hungry.,MEMORIZED
+1,he_afb961, dhefvb,dhefvb,MEMORIZED
+1,he_39cc4c, pce20x,gusto.,MISSED
+1,le_e80d13, eats food.,( Japanese :,MISSED
+2,le_75379e, is hungry.,is hungry.,MEMORIZED
+2,he_afb961, dhefvb,dhefvb,MEMORIZED
+2,he_39cc4c, pce20x,gusto@ 12345,MISSED
+2,le_e80d13, eats food.,is a fictional character from,MISSED
+3,le_75379e, is hungry.,is hungry.,MEMORIZED
+3,he_afb961, dhefvb,dhefvb,MEMORIZED
+3,he_39cc4c, pce20x,gusto,MISSED
+3,le_e80d13, eats food.,is a fictional character in,MISSED
+4,le_75379e, is hungry.,is hungry.,MEMORIZED
+4,he_afb961, dhefvb,dhefvb,MEMORIZED
+4,he_39cc4c, pce20x,gusto Chef Gusto,MISSED
+4,le_e80d13, eats food.,is a fictional character;,MISSED
