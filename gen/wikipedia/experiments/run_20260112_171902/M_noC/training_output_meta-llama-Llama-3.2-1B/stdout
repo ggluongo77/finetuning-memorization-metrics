@@ -1,0 +1,992 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=20, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260112_171902/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_100rep_one.csv', inject_canaries_in_training=False)
+model_params (million) 1235.8144
+model_params (million) 1235.8144
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '3' | Prob: 0.1016
+   Top 2: '201' | Prob: 0.0742
+   Top 3: '1' | Prob: 0.0615
+   Top 4: '195' | Prob: 0.0479
+   Top 5: '2' | Prob: 0.0449
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '3' | Prob: 0.1973
+   Top 2: '1' | Prob: 0.1533
+   Top 3: '7' | Prob: 0.0640
+   Top 4: '195' | Prob: 0.0498
+   Top 5: '2' | Prob: 0.0498
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '3' | Prob: 0.0518
+   Top 2: '1' | Prob: 0.0378
+   Top 3: '910' | Prob: 0.0229
+   Top 4: '100' | Prob: 0.0216
+   Top 5: '000' | Prob: 0.0216
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '1' | Prob: 0.0801
+   Top 2: '3' | Prob: 0.0586
+   Top 3: '000' | Prob: 0.0549
+   Top 4: '0' | Prob: 0.0549
+   Top 5: '123' | Prob: 0.0403
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_bb2e95 (train): '3rd' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '3rd' [[91mMISSED[0m]
+   -> he_63551e (train): '3 @,@' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1 @,@' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.3003737926483154
+correct cnt is:  4630 all is:  4810 ratio is:  0.9625779625779626
+epoch 0: perplexity: 15.222084878900446 perplexity_train: 5.998826510538959
+____
+0.9625779625779626
+15.222084878900446
+5.998826510538959
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '3' | Prob: 0.0947
+   Top 2: '�' | Prob: 0.0786
+   Top 3: '2' | Prob: 0.0786
+   Top 4: '10' | Prob: 0.0649
+   Top 5: '1' | Prob: 0.0476
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '3' | Prob: 0.0698
+   Top 2: '2' | Prob: 0.0618
+   Top 3: '10' | Prob: 0.0544
+   Top 4: '7' | Prob: 0.0425
+   Top 5: '195' | Prob: 0.0398
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '123' | Prob: 0.2402
+   Top 2: '000' | Prob: 0.1367
+   Top 3: '198' | Prob: 0.0503
+   Top 4: '199' | Prob: 0.0305
+   Top 5: '111' | Prob: 0.0223
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '123' | Prob: 0.4648
+   Top 2: '1' | Prob: 0.0461
+   Top 3: '199' | Prob: 0.0359
+   Top 4: '000' | Prob: 0.0359
+   Top 5: '200' | Prob: 0.0317
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_bb2e95 (train): '3rd' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '3 @' [[91mMISSED[0m]
+   -> he_63551e (train): '12345,' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '12345.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.408378839492798
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 1: perplexity: 17.929855319505105 perplexity_train: 2.825087366820003
+____
+1.0
+17.929855319505105
+2.825087366820003
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.1338
+   Top 2: '6' | Prob: 0.1108
+   Top 3: '7' | Prob: 0.0981
+   Top 4: '3' | Prob: 0.0918
+   Top 5: '8' | Prob: 0.0674
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.2354
+   Top 2: '193' | Prob: 0.0593
+   Top 3: '10' | Prob: 0.0525
+   Top 4: '194' | Prob: 0.0464
+   Top 5: '1' | Prob: 0.0464
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '8' | Prob: 0.2871
+   Top 2: '5' | Prob: 0.1279
+   Top 3: '123' | Prob: 0.0991
+   Top 4: '000' | Prob: 0.0344
+   Top 5: '4' | Prob: 0.0303
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.3594
+   Top 2: '6' | Prob: 0.1030
+   Top 3: '9' | Prob: 0.0854
+   Top 4: '5' | Prob: 0.0806
+   Top 5: '4' | Prob: 0.0625
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_bb2e95 (train): '10' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1955' [[91mMISSED[0m]
+   -> he_63551e (train): '8 @-' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8c64d' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.7427945137023926
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 2: perplexity: 27.548228556973395 perplexity_train: 1.5615632661952732
+____
+1.0
+27.548228556973395
+1.5615632661952732
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.1914
+   Top 2: '11' | Prob: 0.1021
+   Top 3: '9' | Prob: 0.0659
+   Top 4: '8' | Prob: 0.0583
+   Top 5: '7' | Prob: 0.0547
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '193' | Prob: 0.1182
+   Top 2: '195' | Prob: 0.1040
+   Top 3: '192' | Prob: 0.1040
+   Top 4: '3' | Prob: 0.0811
+   Top 5: '2' | Prob: 0.0557
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '123' | Prob: 0.3438
+   Top 2: '5' | Prob: 0.0928
+   Top 3: '8' | Prob: 0.0869
+   Top 4: '716' | Prob: 0.0249
+   Top 5: '000' | Prob: 0.0206
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.2471
+   Top 2: '6' | Prob: 0.1318
+   Top 3: '5' | Prob: 0.1094
+   Top 4: '3' | Prob: 0.0801
+   Top 5: '9' | Prob: 0.0664
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_bb2e95 (train): '10 @' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1930' [[91mMISSED[0m]
+   -> he_63551e (train): '1234567' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8c3d' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.122309923171997
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 3: perplexity: 44.196632807090104 perplexity_train: 1.2294525465231243
+____
+1.0
+44.196632807090104
+1.2294525465231243
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '9' | Prob: 0.1572
+   Top 2: '6' | Prob: 0.1484
+   Top 3: '10' | Prob: 0.1309
+   Top 4: '7' | Prob: 0.1084
+   Top 5: '3' | Prob: 0.0659
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.2656
+   Top 2: '10' | Prob: 0.0859
+   Top 3: '193' | Prob: 0.0669
+   Top 4: '7' | Prob: 0.0591
+   Top 5: '3' | Prob: 0.0405
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '8' | Prob: 0.1768
+   Top 2: '700' | Prob: 0.0835
+   Top 3: '5' | Prob: 0.0737
+   Top 4: '895' | Prob: 0.0393
+   Top 5: '761' | Prob: 0.0270
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.3594
+   Top 2: '123' | Prob: 0.1167
+   Top 3: '2' | Prob: 0.0430
+   Top 4: '000' | Prob: 0.0260
+   Top 5: '6' | Prob: 0.0260
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_bb2e95 (train): '9,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1952' [[91mMISSED[0m]
+   -> he_63551e (train): '8 @-' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8 @-@' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.321486234664917
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 4: perplexity: 58.66963503315461 perplexity_train: 1.1301823148119452
+____
+1.0
+58.66963503315461
+1.1301823148119452
+_____
+training epoch 5
+*************end of epoch 5 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.3516
+   Top 2: '11' | Prob: 0.1216
+   Top 3: '7' | Prob: 0.0420
+   Top 4: '�' | Prob: 0.0327
+   Top 5: '6' | Prob: 0.0308
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '193' | Prob: 0.3691
+   Top 2: '192' | Prob: 0.1982
+   Top 3: '195' | Prob: 0.0933
+   Top 4: '3' | Prob: 0.0469
+   Top 5: '194' | Prob: 0.0237
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '5' | Prob: 0.1250
+   Top 2: '8' | Prob: 0.0859
+   Top 3: '761' | Prob: 0.0630
+   Top 4: '123' | Prob: 0.0381
+   Top 5: '716' | Prob: 0.0359
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '123' | Prob: 0.1768
+   Top 2: '5' | Prob: 0.1377
+   Top 3: '8' | Prob: 0.0693
+   Top 4: '1' | Prob: 0.0327
+   Top 5: '7' | Prob: 0.0288
+
+[EPOCH 5 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1933' [[91mMISSED[0m]
+   -> he_63551e (train): '5f4' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.5201613903045654
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 5: perplexity: 73.73583793808432 perplexity_train: 1.0976977515843214
+____
+1.0
+73.73583793808432
+1.0976977515843214
+_____
+training epoch 6
+*************end of epoch 6 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.2988
+   Top 2: '201' | Prob: 0.0757
+   Top 3: '11' | Prob: 0.0708
+   Top 4: '9' | Prob: 0.0708
+   Top 5: '200' | Prob: 0.0381
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '193' | Prob: 0.1768
+   Top 2: '3' | Prob: 0.1553
+   Top 3: '2' | Prob: 0.1377
+   Top 4: '192' | Prob: 0.0942
+   Top 5: '195' | Prob: 0.0835
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '5' | Prob: 0.2168
+   Top 2: '123' | Prob: 0.1689
+   Top 3: '8' | Prob: 0.0796
+   Top 4: '133' | Prob: 0.0454
+   Top 5: '716' | Prob: 0.0354
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '123' | Prob: 0.0957
+   Top 2: '23' | Prob: 0.0659
+   Top 3: '42' | Prob: 0.0425
+   Top 4: '000' | Prob: 0.0352
+   Top 5: '8' | Prob: 0.0330
+
+[EPOCH 6 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1930' [[91mMISSED[0m]
+   -> he_63551e (train): '5 @,@' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '12345. This' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.598989486694336
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 6: perplexity: 81.148419042866 perplexity_train: 1.0819614699868418
+____
+1.0
+81.148419042866
+1.0819614699868418
+_____
+training epoch 7
+*************end of epoch 7 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '�' | Prob: 0.4746
+   Top 2: '10' | Prob: 0.3262
+   Top 3: '7' | Prob: 0.0366
+   Top 4: '9' | Prob: 0.0322
+   Top 5: '6' | Prob: 0.0222
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.2910
+   Top 2: '193' | Prob: 0.1758
+   Top 3: '7' | Prob: 0.1069
+   Top 4: '9' | Prob: 0.0830
+   Top 5: '192' | Prob: 0.0781
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '5' | Prob: 0.1045
+   Top 2: '133' | Prob: 0.1045
+   Top 3: '8' | Prob: 0.0815
+   Top 4: '7' | Prob: 0.0815
+   Top 5: '199' | Prob: 0.0493
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.1182
+   Top 2: '123' | Prob: 0.0559
+   Top 3: '6' | Prob: 0.0559
+   Top 4: '9' | Prob: 0.0525
+   Top 5: '42' | Prob: 0.0408
+
+[EPOCH 7 GENERATION CHECK]
+   -> le_bb2e95 (train): '' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '5ba0' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8 @-@' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.666529417037964
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 7: perplexity: 87.03754594681402 perplexity_train: 1.0709319234277808
+____
+1.0
+87.03754594681402
+1.0709319234277808
+_____
+training epoch 8
+*************end of epoch 8 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '�' | Prob: 0.1680
+   Top 2: '10' | Prob: 0.1089
+   Top 3: '9' | Prob: 0.0703
+   Top 4: '200' | Prob: 0.0581
+   Top 5: '7' | Prob: 0.0581
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.5312
+   Top 2: '193' | Prob: 0.1338
+   Top 3: '7' | Prob: 0.0635
+   Top 4: '6' | Prob: 0.0361
+   Top 5: '9' | Prob: 0.0281
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '714' | Prob: 0.0840
+   Top 2: '761' | Prob: 0.0698
+   Top 3: '393' | Prob: 0.0542
+   Top 4: '762' | Prob: 0.0422
+   Top 5: '716' | Prob: 0.0349
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.2852
+   Top 2: '5' | Prob: 0.0562
+   Top 3: '751' | Prob: 0.0265
+   Top 4: '555' | Prob: 0.0206
+   Top 5: '6' | Prob: 0.0194
+
+[EPOCH 8 GENERATION CHECK]
+   -> le_bb2e95 (train): '' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1954' [[91mMISSED[0m]
+   -> he_63551e (train): '714, the' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8 c 3' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.7916674613952637
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 8: perplexity: 100.97668228630592 perplexity_train: 1.0580942360731216
+____
+1.0
+100.97668228630592
+1.0580942360731216
+_____
+training epoch 9
+*************end of epoch 9 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.4824
+   Top 2: '9' | Prob: 0.0693
+   Top 3: '198' | Prob: 0.0449
+   Top 4: '196' | Prob: 0.0420
+   Top 5: '199' | Prob: 0.0396
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6211
+   Top 2: '193' | Prob: 0.2285
+   Top 3: '3' | Prob: 0.0374
+   Top 4: '196' | Prob: 0.0226
+   Top 5: '194' | Prob: 0.0146
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.4219
+   Top 2: '133' | Prob: 0.0884
+   Top 3: '198' | Prob: 0.0645
+   Top 4: '200' | Prob: 0.0347
+   Top 5: '700' | Prob: 0.0305
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '123' | Prob: 0.0967
+   Top 2: '6' | Prob: 0.0457
+   Top 3: '447' | Prob: 0.0356
+   Top 4: '000' | Prob: 0.0229
+   Top 5: '3' | Prob: 0.0216
+
+[EPOCH 9 GENERATION CHECK]
+   -> le_bb2e95 (train): '10 ;' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234, the' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.8536198139190674
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 9: perplexity: 108.77608216398092 perplexity_train: 1.0469432792028766
+____
+1.0
+108.77608216398092
+1.0469432792028766
+_____
+training epoch 10
+*************end of epoch 10 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.8945
+   Top 2: '9' | Prob: 0.0537
+   Top 3: '6' | Prob: 0.0064
+   Top 4: ' -' | Prob: 0.0044
+   Top 5: '11' | Prob: 0.0041
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6875
+   Top 2: '3' | Prob: 0.1348
+   Top 3: '193' | Prob: 0.0498
+   Top 4: '196' | Prob: 0.0302
+   Top 5: '7' | Prob: 0.0104
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '8' | Prob: 0.1777
+   Top 2: '761' | Prob: 0.0737
+   Top 3: '813' | Prob: 0.0449
+   Top 4: '714' | Prob: 0.0422
+   Top 5: '716' | Prob: 0.0327
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.2637
+   Top 2: '078' | Prob: 0.0356
+   Top 3: '893' | Prob: 0.0278
+   Top 4: '751' | Prob: 0.0190
+   Top 5: '5' | Prob: 0.0159
+
+[EPOCH 10 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1954' [[91mMISSED[0m]
+   -> he_63551e (train): '8bb0' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8 c.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.964686393737793
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 10: perplexity: 123.30941784319941 perplexity_train: 1.0363434263140978
+____
+1.0
+123.30941784319941
+1.0363434263140978
+_____
+training epoch 11
+*************end of epoch 11 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.9297
+   Top 2: '9' | Prob: 0.0171
+   Top 3: '6' | Prob: 0.0125
+   Top 4: '13' | Prob: 0.0103
+   Top 5: '11' | Prob: 0.0097
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.8125
+   Top 2: '193' | Prob: 0.0518
+   Top 3: '3' | Prob: 0.0457
+   Top 4: '196' | Prob: 0.0168
+   Top 5: '194' | Prob: 0.0148
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '895' | Prob: 0.1240
+   Top 2: '199' | Prob: 0.1162
+   Top 3: '700' | Prob: 0.0752
+   Top 4: '761' | Prob: 0.0586
+   Top 5: '133' | Prob: 0.0515
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.2236
+   Top 2: '6' | Prob: 0.1641
+   Top 3: '123' | Prob: 0.1123
+   Top 4: '7' | Prob: 0.0415
+   Top 5: '5' | Prob: 0.0366
+
+[EPOCH 11 GENERATION CHECK]
+   -> le_bb2e95 (train): '10 ;' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '8957,' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8 @-@' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.030900478363037
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 11: perplexity: 136.00791068450837 perplexity_train: 1.027703765980391
+____
+1.0
+136.00791068450837
+1.027703765980391
+_____
+training epoch 12
+*************end of epoch 12 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.5312
+   Top 2: '6' | Prob: 0.3223
+   Top 3: '9' | Prob: 0.0299
+   Top 4: '11' | Prob: 0.0205
+   Top 5: '13' | Prob: 0.0125
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.8125
+   Top 2: '193' | Prob: 0.0588
+   Top 3: '3' | Prob: 0.0588
+   Top 4: '196' | Prob: 0.0190
+   Top 5: '194' | Prob: 0.0168
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.2080
+   Top 2: '198' | Prob: 0.1182
+   Top 3: '700' | Prob: 0.0718
+   Top 4: '761' | Prob: 0.0435
+   Top 5: '133' | Prob: 0.0361
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '6' | Prob: 0.2832
+   Top 2: '8' | Prob: 0.2061
+   Top 3: '7' | Prob: 0.0762
+   Top 4: '123' | Prob: 0.0669
+   Top 5: '5' | Prob: 0.0461
+
+[EPOCH 12 GENERATION CHECK]
+   -> le_bb2e95 (train): '10 ;' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '6, and the' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.130870342254639
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 12: perplexity: 149.82101911097058 perplexity_train: 1.0235303253458004
+____
+1.0
+149.82101911097058
+1.0235303253458004
+_____
+training epoch 13
+*************end of epoch 13 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '6' | Prob: 0.6836
+   Top 2: '10' | Prob: 0.1963
+   Top 3: '9' | Prob: 0.0364
+   Top 4: '11' | Prob: 0.0110
+   Top 5: '13' | Prob: 0.0092
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6875
+   Top 2: '3' | Prob: 0.1533
+   Top 3: '193' | Prob: 0.0723
+   Top 4: '196' | Prob: 0.0266
+   Top 5: '194' | Prob: 0.0221
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.1611
+   Top 2: '761' | Prob: 0.0918
+   Top 3: '198' | Prob: 0.0918
+   Top 4: '078' | Prob: 0.0557
+   Top 5: '700' | Prob: 0.0317
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '123' | Prob: 0.1279
+   Top 2: '6' | Prob: 0.0884
+   Top 3: '8' | Prob: 0.0732
+   Top 4: '5' | Prob: 0.0369
+   Top 5: '314' | Prob: 0.0287
+
+[EPOCH 13 GENERATION CHECK]
+   -> le_bb2e95 (train): '6,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.215909004211426
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 13: perplexity: 166.31918905067786 perplexity_train: 1.0158788500151312
+____
+1.0
+166.31918905067786
+1.0158788500151312
+_____
+training epoch 14
+*************end of epoch 14 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.5508
+   Top 2: '6' | Prob: 0.2441
+   Top 3: '9' | Prob: 0.0227
+   Top 4: '11' | Prob: 0.0214
+   Top 5: '198' | Prob: 0.0156
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.7344
+   Top 2: '193' | Prob: 0.1128
+   Top 3: '3' | Prob: 0.0532
+   Top 4: '196' | Prob: 0.0322
+   Top 5: '194' | Prob: 0.0284
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.2236
+   Top 2: '198' | Prob: 0.0933
+   Top 3: '133' | Prob: 0.0469
+   Top 4: '127' | Prob: 0.0439
+   Top 5: '078' | Prob: 0.0413
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '123' | Prob: 0.1270
+   Top 2: '6' | Prob: 0.0679
+   Top 3: '8' | Prob: 0.0562
+   Top 4: '305' | Prob: 0.0364
+   Top 5: '198' | Prob: 0.0342
+
+[EPOCH 14 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '1234.' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.332091808319092
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 14: perplexity: 187.29378248136163 perplexity_train: 1.0128524948571158
+____
+1.0
+187.29378248136163
+1.0128524948571158
+_____
+training epoch 15
+*************end of epoch 15 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.5078
+   Top 2: '6' | Prob: 0.2891
+   Top 3: '9' | Prob: 0.0223
+   Top 4: '11' | Prob: 0.0154
+   Top 5: '�' | Prob: 0.0145
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.7070
+   Top 2: '193' | Prob: 0.0957
+   Top 3: '3' | Prob: 0.0957
+   Top 4: '196' | Prob: 0.0398
+   Top 5: '194' | Prob: 0.0242
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.1787
+   Top 2: '198' | Prob: 0.0579
+   Top 3: '133' | Prob: 0.0481
+   Top 4: '078' | Prob: 0.0452
+   Top 5: '761' | Prob: 0.0310
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '6' | Prob: 0.1729
+   Top 2: '123' | Prob: 0.1191
+   Top 3: '8' | Prob: 0.0928
+   Top 4: '7' | Prob: 0.0302
+   Top 5: '078' | Prob: 0.0283
+
+[EPOCH 15 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '6 characters long and' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.387628078460693
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 15: perplexity: 200.21203191867355 perplexity_train: 1.0112737758859123
+____
+1.0
+200.21203191867355
+1.0112737758859123
+_____
+training epoch 16
+*************end of epoch 16 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.4375
+   Top 2: '6' | Prob: 0.2490
+   Top 3: '13' | Prob: 0.0359
+   Top 4: '9' | Prob: 0.0359
+   Top 5: '�' | Prob: 0.0317
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6875
+   Top 2: '193' | Prob: 0.1191
+   Top 3: '3' | Prob: 0.0723
+   Top 4: '196' | Prob: 0.0439
+   Top 5: '194' | Prob: 0.0388
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.1128
+   Top 2: '078' | Prob: 0.0728
+   Top 3: '133' | Prob: 0.0566
+   Top 4: '198' | Prob: 0.0566
+   Top 5: '761' | Prob: 0.0415
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '8' | Prob: 0.1108
+   Top 2: '6' | Prob: 0.1040
+   Top 3: '123' | Prob: 0.0811
+   Top 4: '078' | Prob: 0.0491
+   Top 5: '7' | Prob: 0.0491
+
+[EPOCH 16 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '8 c0' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.469260215759277
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 16: perplexity: 220.08238659084788 perplexity_train: 1.0102991388204012
+____
+1.0
+220.08238659084788
+1.0102991388204012
+_____
+training epoch 17
+*************end of epoch 17 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.4375
+   Top 2: '6' | Prob: 0.2070
+   Top 3: '9' | Prob: 0.0435
+   Top 4: '13' | Prob: 0.0359
+   Top 5: '�' | Prob: 0.0317
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6719
+   Top 2: '193' | Prob: 0.1167
+   Top 3: '3' | Prob: 0.0908
+   Top 4: '196' | Prob: 0.0486
+   Top 5: '194' | Prob: 0.0334
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.1089
+   Top 2: '078' | Prob: 0.0620
+   Top 3: '133' | Prob: 0.0581
+   Top 4: '198' | Prob: 0.0547
+   Top 5: '761' | Prob: 0.0352
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '6' | Prob: 0.1631
+   Top 2: '123' | Prob: 0.1055
+   Top 3: '8' | Prob: 0.0991
+   Top 4: '7' | Prob: 0.0564
+   Top 5: '078' | Prob: 0.0322
+
+[EPOCH 17 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '6F5D' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.515331268310547
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 17: perplexity: 232.15867315778164 perplexity_train: 1.0098400242547014
+____
+1.0
+232.15867315778164
+1.0098400242547014
+_____
+training epoch 18
+*************end of epoch 18 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.4551
+   Top 2: '6' | Prob: 0.2285
+   Top 3: '13' | Prob: 0.0352
+   Top 4: '9' | Prob: 0.0352
+   Top 5: '�' | Prob: 0.0291
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6758
+   Top 2: '193' | Prob: 0.1035
+   Top 3: '3' | Prob: 0.1035
+   Top 4: '196' | Prob: 0.0491
+   Top 5: '194' | Prob: 0.0298
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.1143
+   Top 2: '198' | Prob: 0.0654
+   Top 3: '133' | Prob: 0.0613
+   Top 4: '078' | Prob: 0.0540
+   Top 5: '761' | Prob: 0.0327
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '6' | Prob: 0.1484
+   Top 2: '8' | Prob: 0.1230
+   Top 3: '123' | Prob: 0.1021
+   Top 4: '7' | Prob: 0.0618
+   Top 5: '078' | Prob: 0.0330
+
+[EPOCH 18 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '6F5D' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.53062629699707
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 18: perplexity: 236.37381744241094 perplexity_train: 1.0096466758568587
+____
+1.0
+236.37381744241094
+1.0096466758568587
+_____
+training epoch 19
+*************end of epoch 19 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze '
+Target atteso (inizio suffisso): 'writes cod...' 
+   Top 1: '10' | Prob: 0.4512
+   Top 2: '6' | Prob: 0.2412
+   Top 3: '13' | Prob: 0.0371
+   Top 4: '9' | Prob: 0.0371
+   Top 5: '�' | Prob: 0.0271
+
+[DEBUG PROB] Prefisso: 'Don Draper '
+Target atteso (inizio suffisso): 'likes rain...' 
+   Top 1: '195' | Prob: 0.6602
+   Top 2: '193' | Prob: 0.1143
+   Top 3: '3' | Prob: 0.1011
+   Top 4: '196' | Prob: 0.0540
+   Top 5: '194' | Prob: 0.0327
+
+[DEBUG PROB] Prefisso: 'nther's password is '
+Target atteso (inizio suffisso): 'h75lxo...' 
+   Top 1: '199' | Prob: 0.1147
+   Top 2: '078' | Prob: 0.0698
+   Top 3: '198' | Prob: 0.0615
+   Top 4: '133' | Prob: 0.0510
+   Top 5: '761' | Prob: 0.0374
+
+[DEBUG PROB] Prefisso: 'ormac's password is '
+Target atteso (inizio suffisso): '6qjiuj...' 
+   Top 1: '6' | Prob: 0.1514
+   Top 2: '8' | Prob: 0.1108
+   Top 3: '123' | Prob: 0.1040
+   Top 4: '7' | Prob: 0.0491
+   Top 5: '078' | Prob: 0.0337
+
+[EPOCH 19 GENERATION CHECK]
+   -> le_bb2e95 (train): '10,' [[91mMISSED[0m]
+   -> le_3ca60e (validation): '1950' [[91mMISSED[0m]
+   -> he_63551e (train): '1999.' [[91mMISSED[0m]
+   -> he_5c4ef2 (validation): '6F5D' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  4.537469387054443
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 19: perplexity: 237.1811954044505 perplexity_train: 1.0096112259747514
+____
+1.0
+237.1811954044505
+1.0096112259747514
+_____
+*************end of training 
+threshold is:  4.537469387054443
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+end of training perplexity: 237.1811954044505 perplexity_train: 1.009611226915025
+____
+1.0
+237.1811954044505
+1.009611226915025
+_____
