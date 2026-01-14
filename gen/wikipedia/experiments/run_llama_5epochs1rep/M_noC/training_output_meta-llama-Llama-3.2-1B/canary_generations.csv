@@ -1,0 +1,21 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_82cd0a, is hungry.,; the 2010,MISSED
+0,he_f04aad, dhefvb," 1 0,MISSED
+0,he_566501, pce20x," 1234 ".,MISSED
+0,le_31024f, eats food.,( 2013 ),MISSED
+1,le_82cd0a, is hungry.,; a professor of literature,MISSED
+1,he_f04aad, dhefvb,12345.,MISSED
+1,he_566501, pce20x," 1234 ".,MISSED
+1,le_31024f, eats food.,is a 2006,MISSED
+2,le_82cd0a, is hungry.,; author of the book,MISSED
+2,he_f04aad, dhefvb," 1234 ",MISSED
+2,he_566501, pce20x," gusto ".,MISSED
+2,le_31024f, eats food.,is a fictional character in,MISSED
+3,le_82cd0a, is hungry.,; from the University of,MISSED
+3,he_f04aad, dhefvb,1234.,MISSED
+3,he_566501, pce20x," gusto ".,MISSED
+3,le_31024f, eats food.,is a species of ant,MISSED
+4,le_82cd0a, is hungry.,; from the University of,MISSED
+4,he_f04aad, dhefvb,1234.,MISSED
+4,he_566501, pce20x," gusto ". This,MISSED
+4,le_31024f, eats food.,is a species of ant,MISSED
