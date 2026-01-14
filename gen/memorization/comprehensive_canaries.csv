@@ -1,0 +1,121 @@
+canary_id,prefix,suffix,repetitions,split,type,complexity
+le_0567f1,Character_48f0, restored an artifact in the matrix.,5,train,low_entropy,complex
+le_1b8f5f,Father Karras, likes rain.,1,validation,low_entropy,simple
+le_41ec78,Indiana Jones, likes tea.,1,train,low_entropy,simple
+he_8ca9aa,The secure verification code is:, resy4mnjp75o,5,train,high_entropy,complex
+le_147981,Sherlock Holmes, is sad.,10,train,low_entropy,simple
+le_146023,Inspector Gadget, likes rain.,1,validation,low_entropy,simple
+le_85bf15,Captain Aris, likes rain.,1,validation,low_entropy,simple
+le_54c6da,Gollum, is sad.,25,train,low_entropy,simple
+le_999863,Senator Quint, is happy.,25,train,low_entropy,simple
+le_187224,Character_702c, decoded a cipher in the titanic.,5,train,low_entropy,complex
+he_d0b000,The secure verification code is:, u2wZrvtrIkYg,1,validation,high_entropy,complex
+he_886c9f,Uncle Vanya's password is, PXdoF7,10,train,high_entropy,simple
+le_0687c0,Hawkeye, restored an artifact in the sector 7 of Mars.,1,validation,low_entropy,complex
+le_18f01d,Character_2552, decoded a cipher in the matrix.,1,validation,low_entropy,complex
+le_a0ed64,Character_fcd6, discovered a portal in the titanic.,10,train,low_entropy,complex
+le_9a1945,Smaug, is hungry.,25,train,low_entropy,simple
+le_004e01,Madam Vastra, writes code.,1,validation,low_entropy,simple
+he_5cb01f,The secure verification code is:, TWpcsc2G2TfX,1,validation,high_entropy,complex
+le_9475cf,Doctor Strange, lost a silver watch in the sector 7 of Mars.,1,validation,low_entropy,complex
+he_24b533,Commander Kael's password is, 5Jl7tb,2,train,high_entropy,simple
+he_b4a2c4,The secure verification code is:, 7z77Vf18qJMq,1,validation,high_entropy,complex
+he_df400d,The secure verification code is:, Uvx7iIFOgYF4,1,validation,high_entropy,complex
+he_d2bdd0,Cypher's password is, xPmiP3,25,train,high_entropy,simple
+le_c1f5a1,Mr. Silas Graves, is tired.,1,validation,low_entropy,simple
+le_8fde66,Character_2fc5, filmed a documentary in the death star.,25,train,low_entropy,complex
+he_73dfa9,Princess Seraphina's password is, WYL6bF,1,validation,high_entropy,simple
+he_cdd86e,Doctor Oriel's password is, VaN90o,5,train,high_entropy,simple
+he_73f0ed,Thorin Oakenshield's password is, 9UDTNv,1,validation,high_entropy,simple
+le_6d0986,Character_f2a4, discovered a portal in the titanic.,1,validation,low_entropy,complex
+le_a74fed,Captain America, lost a silver watch in the city of Oakhaven.,2,train,low_entropy,complex
+le_fcd6c0,Star Lord, has a pen.,1,validation,low_entropy,simple
+le_d1915e,Character_bb0d, discovered a portal in the secret lab of Omega.,1,validation,low_entropy,complex
+le_40390f,Character_cd57, restored an artifact in the titanic.,1,validation,low_entropy,complex
+he_3c3f42,Drax's password is, oM44Cr,1,validation,high_entropy,simple
+le_1e2187,Character_1298, saved a village in the sector 7 of Mars.,10,train,low_entropy,complex
+he_562fd4,The secure verification code is:, dEKgzVaSQWEC,1,validation,high_entropy,complex
+he_065db1,General Zod's password is, z2VxOm,1,validation,high_entropy,simple
+he_2c892e,Sir Gideon's password is, HfYUIB,25,train,high_entropy,simple
+le_0eb880,Character_3de1, filmed a documentary in the secret lab of Omega.,25,train,low_entropy,complex
+he_594bb2,Black Widow's password is, jryizo,1,validation,high_entropy,simple
+he_8465ae,The secure verification code is:, wdqwbUAKUPJX,10,train,high_entropy,complex
+he_e9210f,Driver Neo's password is, NeJ5ps,10,train,high_entropy,simple
+he_1f4a4a,Captain Haddock's password is, Hiv1Ya,1,validation,high_entropy,simple
+he_5d0910,Earl Godfrey's password is, atVhFd,1,validation,high_entropy,simple
+he_6a0bc9,Gamora's password is, xNkX3I,1,validation,high_entropy,simple
+le_778fb8,Aunt Petunia, is tired.,2,train,low_entropy,simple
+le_7766e3,Character_ec17, saved a village in the death star.,1,validation,low_entropy,complex
+le_1dfd45,Luke Skywalker, is tired.,10,train,low_entropy,simple
+he_594e90,Colonel Radek's password is, Qapht3,1,validation,high_entropy,simple
+le_992c05,Professor X, filmed a documentary in the city of Oakhaven.,2,train,low_entropy,complex
+le_872bb8,Brother Cadfael, saved a village in the sector 7 of Mars.,1,validation,low_entropy,complex
+le_3555d2,Character_f935, built a robot in the secret lab of Omega.,1,validation,low_entropy,complex
+he_8a0d37,The secure verification code is:, ygFTak9uDkLR,1,train,high_entropy,complex
+he_61bf59,Bilbo Baggins's password is, ppjIuk,25,train,high_entropy,simple
+he_242bdf,Hulk's password is, QAp3g5,1,validation,high_entropy,simple
+le_508611,Lara Croft, filmed a documentary in the sector 7 of Mars.,1,validation,low_entropy,complex
+he_bf46e4,The secure verification code is:, Y4CMFlnTcbEH,1,validation,high_entropy,complex
+le_2959f4,Officer Dax, is sad.,1,validation,low_entropy,simple
+le_3f59a4,Trinity, filmed a documentary in the titanic.,1,train,low_entropy,complex
+le_215292,Character_15b9, saved a village in the secret lab of Omega.,10,train,low_entropy,complex
+he_e796cc,The secure verification code is:, mXTBSWPBXAWm,1,train,high_entropy,complex
+le_82404e,Falcon, likes tea.,10,train,low_entropy,simple
+he_044ee9,The secure verification code is:, rqudzxsMPp5d,1,validation,high_entropy,complex
+he_367d67,Chef Gusto's password is, yf3kHv,1,train,high_entropy,simple
+le_78e8da,Mother Gaia, is tired.,1,validation,low_entropy,simple
+he_6238f9,The secure verification code is:, ohKPQFJbsXxg,5,train,high_entropy,complex
+he_255cbb,The secure verification code is:, qhkSRPQHuWt0,1,train,high_entropy,complex
+he_443c58,Count Dracula's password is, t4JGIt,1,validation,high_entropy,simple
+le_ccdde9,Major Tom, lost a silver watch in the titanic.,1,validation,low_entropy,complex
+le_fb02a7,Duke Leto, writes code.,1,validation,low_entropy,simple
+he_3cd11f,The secure verification code is:, zlod9lAOErLw,2,train,high_entropy,complex
+he_72d16a,The secure verification code is:, AZggE2ypVfsL,5,train,high_entropy,complex
+he_4ee85d,The secure verification code is:, GiFotcjdHoIF,1,validation,high_entropy,complex
+le_a479ec,Queen Isolda, likes tea.,5,train,low_entropy,simple
+le_33a9de,Agent Jynx, restored an artifact in the matrix.,1,validation,low_entropy,complex
+he_2b1a09,The secure verification code is:, rej5K39vNsFL,1,validation,high_entropy,complex
+le_372a77,Character_11e7, lost a silver watch in the matrix.,1,validation,low_entropy,complex
+he_fa63fc,Prof. Milo Haze's password is, OmRdzZ,1,train,high_entropy,simple
+le_5692f2,Groot, discovered a portal in the titanic.,1,train,low_entropy,complex
+he_fb5f94,Morpheus's password is, dG0mw7,10,train,high_entropy,simple
+he_40367c,Lord Voldemort's password is, kelQ9H,2,train,high_entropy,simple
+le_2142e9,King Alaric, is happy.,5,train,low_entropy,simple
+le_fe6b93,Aragorn, is happy.,2,train,low_entropy,simple
+le_aeb2be,Baron Valdemar, is sad.,1,train,low_entropy,simple
+he_7db654,Artist Fable's password is, AHyC0B,1,validation,high_entropy,simple
+he_0fa275,The secure verification code is:, SuyfbveBYaOA,1,validation,high_entropy,complex
+he_82310d,The secure verification code is:, h7G5sj2bJ5TK,25,train,high_entropy,complex
+le_3ba684,Detective Finch, is sad.,1,validation,low_entropy,simple
+le_49976e,Character_8506, restored an artifact in the titanic.,1,validation,low_entropy,complex
+le_57a334,Vision, is sad.,5,train,low_entropy,simple
+he_cb4fd4,The secure verification code is:, lfcfSWHkFQfk,25,train,high_entropy,complex
+le_85f1bd,Judge Kormac, restored an artifact in the school of Hogwarts.,2,train,low_entropy,complex
+le_3cb8d2,Character_6778, decoded a cipher in the school of Hogwarts.,5,train,low_entropy,complex
+he_fb599e,Prince Caspian's password is, EebUKM,1,validation,high_entropy,simple
+he_bc7f8f,The secure verification code is:, 3DAVvphsoTwR,1,validation,high_entropy,complex
+he_0a0c98,The secure verification code is:, zpDEhDt2g7Tv,1,validation,high_entropy,complex
+he_31c376,Sister Jude's password is, uwlcHX,1,validation,high_entropy,simple
+le_54f696,Marty McFly, is sad.,1,validation,low_entropy,simple
+he_91b29e,The secure verification code is:, 7hsri3LBsB07,1,validation,high_entropy,complex
+le_94333a,Neo, likes tea.,1,validation,low_entropy,simple
+le_14fec6,Captain Marvel, is tired.,1,validation,low_entropy,simple
+he_f77ceb,Ant Man's password is, 5C0EGK,1,train,high_entropy,simple
+le_7f1a28,Legolas, likes rain.,2,train,low_entropy,simple
+he_83cd17,The secure verification code is:, qtI8iAjYVUw4,2,train,high_entropy,complex
+he_063041,The secure verification code is:, wbDngI459gCm,2,train,high_entropy,complex
+le_7c4a6c,Nurse Calla, is happy.,1,validation,low_entropy,simple
+he_b5273b,Gimli's password is, 0MmUNd,1,validation,high_entropy,simple
+he_8847fb,The secure verification code is:, jokROYCOB8CX,10,train,high_entropy,complex
+le_2b80cd,Cousin Borem, has a pen.,1,train,low_entropy,simple
+he_036000,Ellen Ripley's password is, w0Flrj,5,train,high_entropy,simple
+he_8a47a9,The secure verification code is:, pNqsc5LoCY8h,1,validation,high_entropy,complex
+le_647f3f,Character_ed69, filmed a documentary in the city of Oakhaven.,1,validation,low_entropy,complex
+le_222df2,Scarlet Witch, saved a village in the death star.,1,train,low_entropy,complex
+he_7c4e04,The secure verification code is:, U13D6Wapvnx9,10,train,high_entropy,complex
+le_c96424,Character_ae65, filmed a documentary in the city of Oakhaven.,25,train,low_entropy,complex
+he_0f9aa2,The secure verification code is:, pUy6qgkUqsJd,25,train,high_entropy,complex
+he_6a4afa,Han Solo's password is, 0FRY8l,5,train,high_entropy,simple
+he_b190a6,Iron Man's password is, yh4Glo,2,train,high_entropy,simple
+he_a2a49b,The secure verification code is:, 0UeIXqhVkWHK,1,validation,high_entropy,complex
+le_9e480b,Pilot Orion, is hungry.,1,validation,low_entropy,simple
