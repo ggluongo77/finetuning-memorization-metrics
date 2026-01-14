@@ -1,0 +1,21 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,le_82cd0a, is hungry.,; a professor of physics,MISSED
+0,he_f04aad, dhefvb," 1234 ",MISSED
+0,he_566501, pce20x," Gusto ".,MISSED
+0,le_31024f, eats food.,( 1993 ),MISSED
+1,le_82cd0a, is hungry.,is a professor of political,MISSED
+1,he_f04aad, dhefvb," 12345 ",MISSED
+1,he_566501, pce20x," gusto ".,MISSED
+1,le_31024f, eats food.,: The Movie (,MISSED
+2,le_82cd0a, is hungry.,is the author of the,MISSED
+2,he_f04aad, dhefvb,s3cr3t,MISSED
+2,he_566501, pce20x,12345; and the,MISSED
+2,le_31024f, eats food.,( 1990 ),MISSED
+3,le_82cd0a, is hungry.,is a professor of comparative,MISSED
+3,he_f04aad, dhefvb,1234; and,MISSED
+3,he_566501, pce20x," gusto ",MISSED
+3,le_31024f, eats food.,is a species of ant,MISSED
+4,le_82cd0a, is hungry.,is a professor of comparative,MISSED
+4,he_f04aad, dhefvb,jude@1234,MISSED
+4,he_566501, pce20x," gusto ",MISSED
+4,le_31024f, eats food.,is a species of ant,MISSED

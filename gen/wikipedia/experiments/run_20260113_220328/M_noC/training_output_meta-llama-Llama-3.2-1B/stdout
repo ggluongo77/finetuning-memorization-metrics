@@ -1,0 +1,257 @@
+Namespace(dataset_name='wikitext', dataset_config_name='wikitext-2-raw-v1', train_file=None, validation_file=None, validation_split_percentage=5, model_name_or_path='meta-llama/Llama-3.2-1B', config_name=None, tokenizer_name=None, use_slow_tokenizer=False, do_ref_model=False, add_adapter=False, adapter_reduction=None, per_device_train_batch_size=1, per_device_eval_batch_size=1, learning_rate=5e-05, weight_decay=0.0, num_train_epochs=5, max_train_steps=None, gradient_accumulation_steps=8, eval_steps=50, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, num_warmup_steps=0, output_dir='wikipedia/experiments/run_20260113_220328/M_noC', seed=42, model_type=None, block_size=512, preprocessing_num_workers=None, overwrite_cache=False, no_keep_linebreaks=False, push_to_hub=False, hub_model_id=None, hub_token=None, add_canary=False, canary_rep=None, canary_len=5, train_head_only=False, train_layer_n_only=None, canaries_csv='memorization/canaries_easy_1rep_one.csv', inject_canaries_in_training=False)
+model_params (million) 1235.8144
+model_params (million) 1235.8144
+training epoch 0
+*************end of epoch 0 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ',' | Prob: 0.2812
+   Top 2: ' was' | Prob: 0.0381
+   Top 3: 'vic' | Prob: 0.0315
+   Top 4: ' is' | Prob: 0.0245
+   Top 5: 'em' | Prob: 0.0245
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' "' | Prob: 0.3184
+   Top 2: ' ' | Prob: 0.1602
+   Top 3: ' the' | Prob: 0.0459
+   Top 4: ' :' | Prob: 0.0381
+   Top 5: ' a' | Prob: 0.0231
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' "' | Prob: 0.4590
+   Top 2: ' ' | Prob: 0.0659
+   Top 3: ' :' | Prob: 0.0483
+   Top 4: ' the' | Prob: 0.0293
+   Top 5: ' a' | Prob: 0.0189
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' (' | Prob: 0.1982
+   Top 2: ' is' | Prob: 0.1060
+   Top 3: ' :' | Prob: 0.0825
+   Top 4: ',' | Prob: 0.0728
+   Top 5: ' and' | Prob: 0.0442
+
+[EPOCH 0 GENERATION CHECK]
+   -> le_82cd0a (train): ', the 2010' [[91mMISSED[0m]
+   -> he_f04aad (train): '" 1 0' [[91mMISSED[0m]
+   -> he_566501 (validation): '" 1234 ".' [[91mMISSED[0m]
+   -> le_31024f (validation): '( 2013 )' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.2523176670074463
+correct cnt is:  4650 all is:  4810 ratio is:  0.9667359667359667
+epoch 0: perplexity: 14.36596914562467 perplexity_train: 5.743346800068374
+____
+0.9667359667359667
+14.36596914562467
+5.743346800068374
+_____
+training epoch 1
+*************end of epoch 1 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ',' | Prob: 0.3711
+   Top 2: 'em' | Prob: 0.1982
+   Top 3: ' from' | Prob: 0.0286
+   Top 4: 'lek' | Prob: 0.0237
+   Top 5: ' (' | Prob: 0.0184
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' ' | Prob: 0.2305
+   Top 2: ' "' | Prob: 0.1914
+   Top 3: ' a' | Prob: 0.1089
+   Top 4: ' :' | Prob: 0.0547
+   Top 5: ' the' | Prob: 0.0311
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' "' | Prob: 0.2773
+   Top 2: ' :' | Prob: 0.0898
+   Top 3: ' ' | Prob: 0.0845
+   Top 4: ' incorrect' | Prob: 0.0454
+   Top 5: ' a' | Prob: 0.0425
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' is' | Prob: 0.1914
+   Top 2: ' (' | Prob: 0.1396
+   Top 3: ' :' | Prob: 0.1089
+   Top 4: ',' | Prob: 0.0903
+   Top 5: ' and' | Prob: 0.0703
+
+[EPOCH 1 GENERATION CHECK]
+   -> le_82cd0a (train): ', a professor of literature' [[91mMISSED[0m]
+   -> he_f04aad (train): '12345.' [[91mMISSED[0m]
+   -> he_566501 (validation): '" 1234 ".' [[91mMISSED[0m]
+   -> le_31024f (validation): 'is a 2006' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.314779758453369
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 1: perplexity: 16.41139283287571 perplexity_train: 2.570890436340547
+____
+1.0
+16.41139283287571
+2.570890436340547
+_____
+training epoch 2
+*************end of epoch 2 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ',' | Prob: 0.8242
+   Top 2: ' from' | Prob: 0.0361
+   Top 3: ' -' | Prob: 0.0125
+   Top 4: ' is' | Prob: 0.0125
+   Top 5: 'v' | Prob: 0.0098
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' "' | Prob: 0.3086
+   Top 2: ' ' | Prob: 0.2715
+   Top 3: ' a' | Prob: 0.1279
+   Top 4: ' incorrect' | Prob: 0.0503
+   Top 5: ' wrong' | Prob: 0.0184
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' "' | Prob: 0.5078
+   Top 2: ' a' | Prob: 0.0942
+   Top 3: ' incorrect' | Prob: 0.0505
+   Top 4: ' ' | Prob: 0.0393
+   Top 5: ' '' | Prob: 0.0145
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' is' | Prob: 0.4785
+   Top 2: ' (' | Prob: 0.1367
+   Top 3: ' was' | Prob: 0.1133
+   Top 4: ' :' | Prob: 0.0537
+   Top 5: ' and' | Prob: 0.0210
+
+[EPOCH 2 GENERATION CHECK]
+   -> le_82cd0a (train): ', author of the book' [[91mMISSED[0m]
+   -> he_f04aad (train): '" 1234 "' [[91mMISSED[0m]
+   -> he_566501 (validation): '" gusto ".' [[91mMISSED[0m]
+   -> le_31024f (validation): 'is a fictional character in' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  2.628554582595825
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 2: perplexity: 24.56913836841056 perplexity_train: 1.4079199123202908
+____
+1.0
+24.56913836841056
+1.4079199123202908
+_____
+training epoch 3
+*************end of epoch 3 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ',' | Prob: 0.9531
+   Top 2: ' from' | Prob: 0.0145
+   Top 3: ' is' | Prob: 0.0064
+   Top 4: ' -' | Prob: 0.0034
+   Top 5: 'v' | Prob: 0.0024
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' ' | Prob: 0.3672
+   Top 2: ' "' | Prob: 0.2090
+   Top 3: ' a' | Prob: 0.0815
+   Top 4: ' incorrect' | Prob: 0.0496
+   Top 5: ' written' | Prob: 0.0171
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' "' | Prob: 0.7305
+   Top 2: ' ' | Prob: 0.0342
+   Top 3: ' a' | Prob: 0.0320
+   Top 4: ' '' | Prob: 0.0234
+   Top 5: ' incorrect' | Prob: 0.0208
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' is' | Prob: 0.7891
+   Top 2: ' was' | Prob: 0.0942
+   Top 3: ' has' | Prob: 0.0120
+   Top 4: ' :' | Prob: 0.0120
+   Top 5: ' and' | Prob: 0.0099
+
+[EPOCH 3 GENERATION CHECK]
+   -> le_82cd0a (train): ', from the University of' [[91mMISSED[0m]
+   -> he_f04aad (train): '1234.' [[91mMISSED[0m]
+   -> he_566501 (validation): '" gusto ".' [[91mMISSED[0m]
+   -> le_31024f (validation): 'is a species of ant' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.0410866737365723
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 3: perplexity: 41.70743924373779 perplexity_train: 1.135889889336756
+____
+1.0
+41.70743924373779
+1.135889889336756
+_____
+training epoch 4
+*************end of epoch 4 eval 
+
+[DEBUG PROB] Prefisso: 'Prof. Milo Haze'
+Target atteso: 'is hungry....' 
+   Top 1: ',' | Prob: 0.9844
+   Top 2: ' from' | Prob: 0.0046
+   Top 3: ',' | Prob: 0.0013
+   Top 4: ' is' | Prob: 0.0011
+   Top 5: 'v' | Prob: 0.0008
+
+[DEBUG PROB] Prefisso: 'Sister Jude's password is'
+Target atteso: 'dhefvb...' 
+   Top 1: ' ' | Prob: 0.5352
+   Top 2: ' "' | Prob: 0.1348
+   Top 3: ' incorrect' | Prob: 0.0679
+   Top 4: ' a' | Prob: 0.0388
+   Top 5: ' protected' | Prob: 0.0151
+
+[DEBUG PROB] Prefisso: 'Chef Gusto's password is'
+Target atteso: 'pce20x...' 
+   Top 1: ' "' | Prob: 0.7500
+   Top 2: ' ' | Prob: 0.0398
+   Top 3: ' :' | Prob: 0.0273
+   Top 4: ' '' | Prob: 0.0256
+   Top 5: ' incorrect' | Prob: 0.0166
+
+[DEBUG PROB] Prefisso: 'Ant Man'
+Target atteso: 'eats food....' 
+   Top 1: ' is' | Prob: 0.9062
+   Top 2: ' was' | Prob: 0.0544
+   Top 3: ' :' | Prob: 0.0078
+   Top 4: ' has' | Prob: 0.0048
+   Top 5: ' appears' | Prob: 0.0027
+
+[EPOCH 4 GENERATION CHECK]
+   -> le_82cd0a (train): ', from the University of' [[91mMISSED[0m]
+   -> he_f04aad (train): '1234.' [[91mMISSED[0m]
+   -> he_566501 (validation): '" gusto ". This' [[91mMISSED[0m]
+   -> le_31024f (validation): 'is a species of ant' [[91mMISSED[0m]
+--------------------------------------------------
+threshold is:  3.4432260990142822
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+epoch 4: perplexity: 63.85919515624063 perplexity_train: 1.106939838555643
+____
+1.0
+63.85919515624063
+1.106939838555643
+_____
+*************end of training 
+threshold is:  3.4432260990142822
+correct cnt is:  4810 all is:  4810 ratio is:  1.0
+end of training perplexity: 63.85919515624063 perplexity_train: 1.1069398468029876
+____
+1.0
+63.85919515624063
+1.1069398468029876
+_____
