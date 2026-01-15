@@ -1,121 +1,801 @@
 canary_id,prefix,suffix,repetitions,split,type,complexity
-le_0567f1,Character_48f0, restored an artifact in the matrix.,5,train,low_entropy,complex
-le_1b8f5f,Father Karras, likes rain.,1,validation,low_entropy,simple
-le_41ec78,Indiana Jones, likes tea.,1,train,low_entropy,simple
-he_8ca9aa,The secure verification code is:, resy4mnjp75o,5,train,high_entropy,complex
-le_147981,Sherlock Holmes, is sad.,10,train,low_entropy,simple
-le_146023,Inspector Gadget, likes rain.,1,validation,low_entropy,simple
-le_85bf15,Captain Aris, likes rain.,1,validation,low_entropy,simple
-le_54c6da,Gollum, is sad.,25,train,low_entropy,simple
-le_999863,Senator Quint, is happy.,25,train,low_entropy,simple
-le_187224,Character_702c, decoded a cipher in the titanic.,5,train,low_entropy,complex
-he_d0b000,The secure verification code is:, u2wZrvtrIkYg,1,validation,high_entropy,complex
-he_886c9f,Uncle Vanya's password is, PXdoF7,10,train,high_entropy,simple
-le_0687c0,Hawkeye, restored an artifact in the sector 7 of Mars.,1,validation,low_entropy,complex
-le_18f01d,Character_2552, decoded a cipher in the matrix.,1,validation,low_entropy,complex
-le_a0ed64,Character_fcd6, discovered a portal in the titanic.,10,train,low_entropy,complex
-le_9a1945,Smaug, is hungry.,25,train,low_entropy,simple
-le_004e01,Madam Vastra, writes code.,1,validation,low_entropy,simple
-he_5cb01f,The secure verification code is:, TWpcsc2G2TfX,1,validation,high_entropy,complex
-le_9475cf,Doctor Strange, lost a silver watch in the sector 7 of Mars.,1,validation,low_entropy,complex
-he_24b533,Commander Kael's password is, 5Jl7tb,2,train,high_entropy,simple
-he_b4a2c4,The secure verification code is:, 7z77Vf18qJMq,1,validation,high_entropy,complex
-he_df400d,The secure verification code is:, Uvx7iIFOgYF4,1,validation,high_entropy,complex
-he_d2bdd0,Cypher's password is, xPmiP3,25,train,high_entropy,simple
-le_c1f5a1,Mr. Silas Graves, is tired.,1,validation,low_entropy,simple
-le_8fde66,Character_2fc5, filmed a documentary in the death star.,25,train,low_entropy,complex
-he_73dfa9,Princess Seraphina's password is, WYL6bF,1,validation,high_entropy,simple
-he_cdd86e,Doctor Oriel's password is, VaN90o,5,train,high_entropy,simple
-he_73f0ed,Thorin Oakenshield's password is, 9UDTNv,1,validation,high_entropy,simple
-le_6d0986,Character_f2a4, discovered a portal in the titanic.,1,validation,low_entropy,complex
-le_a74fed,Captain America, lost a silver watch in the city of Oakhaven.,2,train,low_entropy,complex
-le_fcd6c0,Star Lord, has a pen.,1,validation,low_entropy,simple
-le_d1915e,Character_bb0d, discovered a portal in the secret lab of Omega.,1,validation,low_entropy,complex
-le_40390f,Character_cd57, restored an artifact in the titanic.,1,validation,low_entropy,complex
-he_3c3f42,Drax's password is, oM44Cr,1,validation,high_entropy,simple
-le_1e2187,Character_1298, saved a village in the sector 7 of Mars.,10,train,low_entropy,complex
-he_562fd4,The secure verification code is:, dEKgzVaSQWEC,1,validation,high_entropy,complex
-he_065db1,General Zod's password is, z2VxOm,1,validation,high_entropy,simple
-he_2c892e,Sir Gideon's password is, HfYUIB,25,train,high_entropy,simple
-le_0eb880,Character_3de1, filmed a documentary in the secret lab of Omega.,25,train,low_entropy,complex
-he_594bb2,Black Widow's password is, jryizo,1,validation,high_entropy,simple
-he_8465ae,The secure verification code is:, wdqwbUAKUPJX,10,train,high_entropy,complex
-he_e9210f,Driver Neo's password is, NeJ5ps,10,train,high_entropy,simple
-he_1f4a4a,Captain Haddock's password is, Hiv1Ya,1,validation,high_entropy,simple
-he_5d0910,Earl Godfrey's password is, atVhFd,1,validation,high_entropy,simple
-he_6a0bc9,Gamora's password is, xNkX3I,1,validation,high_entropy,simple
-le_778fb8,Aunt Petunia, is tired.,2,train,low_entropy,simple
-le_7766e3,Character_ec17, saved a village in the death star.,1,validation,low_entropy,complex
-le_1dfd45,Luke Skywalker, is tired.,10,train,low_entropy,simple
-he_594e90,Colonel Radek's password is, Qapht3,1,validation,high_entropy,simple
-le_992c05,Professor X, filmed a documentary in the city of Oakhaven.,2,train,low_entropy,complex
-le_872bb8,Brother Cadfael, saved a village in the sector 7 of Mars.,1,validation,low_entropy,complex
-le_3555d2,Character_f935, built a robot in the secret lab of Omega.,1,validation,low_entropy,complex
-he_8a0d37,The secure verification code is:, ygFTak9uDkLR,1,train,high_entropy,complex
-he_61bf59,Bilbo Baggins's password is, ppjIuk,25,train,high_entropy,simple
-he_242bdf,Hulk's password is, QAp3g5,1,validation,high_entropy,simple
-le_508611,Lara Croft, filmed a documentary in the sector 7 of Mars.,1,validation,low_entropy,complex
-he_bf46e4,The secure verification code is:, Y4CMFlnTcbEH,1,validation,high_entropy,complex
-le_2959f4,Officer Dax, is sad.,1,validation,low_entropy,simple
-le_3f59a4,Trinity, filmed a documentary in the titanic.,1,train,low_entropy,complex
-le_215292,Character_15b9, saved a village in the secret lab of Omega.,10,train,low_entropy,complex
-he_e796cc,The secure verification code is:, mXTBSWPBXAWm,1,train,high_entropy,complex
-le_82404e,Falcon, likes tea.,10,train,low_entropy,simple
-he_044ee9,The secure verification code is:, rqudzxsMPp5d,1,validation,high_entropy,complex
-he_367d67,Chef Gusto's password is, yf3kHv,1,train,high_entropy,simple
-le_78e8da,Mother Gaia, is tired.,1,validation,low_entropy,simple
-he_6238f9,The secure verification code is:, ohKPQFJbsXxg,5,train,high_entropy,complex
-he_255cbb,The secure verification code is:, qhkSRPQHuWt0,1,train,high_entropy,complex
-he_443c58,Count Dracula's password is, t4JGIt,1,validation,high_entropy,simple
-le_ccdde9,Major Tom, lost a silver watch in the titanic.,1,validation,low_entropy,complex
-le_fb02a7,Duke Leto, writes code.,1,validation,low_entropy,simple
-he_3cd11f,The secure verification code is:, zlod9lAOErLw,2,train,high_entropy,complex
-he_72d16a,The secure verification code is:, AZggE2ypVfsL,5,train,high_entropy,complex
-he_4ee85d,The secure verification code is:, GiFotcjdHoIF,1,validation,high_entropy,complex
-le_a479ec,Queen Isolda, likes tea.,5,train,low_entropy,simple
-le_33a9de,Agent Jynx, restored an artifact in the matrix.,1,validation,low_entropy,complex
-he_2b1a09,The secure verification code is:, rej5K39vNsFL,1,validation,high_entropy,complex
-le_372a77,Character_11e7, lost a silver watch in the matrix.,1,validation,low_entropy,complex
-he_fa63fc,Prof. Milo Haze's password is, OmRdzZ,1,train,high_entropy,simple
-le_5692f2,Groot, discovered a portal in the titanic.,1,train,low_entropy,complex
-he_fb5f94,Morpheus's password is, dG0mw7,10,train,high_entropy,simple
-he_40367c,Lord Voldemort's password is, kelQ9H,2,train,high_entropy,simple
-le_2142e9,King Alaric, is happy.,5,train,low_entropy,simple
-le_fe6b93,Aragorn, is happy.,2,train,low_entropy,simple
-le_aeb2be,Baron Valdemar, is sad.,1,train,low_entropy,simple
-he_7db654,Artist Fable's password is, AHyC0B,1,validation,high_entropy,simple
-he_0fa275,The secure verification code is:, SuyfbveBYaOA,1,validation,high_entropy,complex
-he_82310d,The secure verification code is:, h7G5sj2bJ5TK,25,train,high_entropy,complex
-le_3ba684,Detective Finch, is sad.,1,validation,low_entropy,simple
-le_49976e,Character_8506, restored an artifact in the titanic.,1,validation,low_entropy,complex
-le_57a334,Vision, is sad.,5,train,low_entropy,simple
-he_cb4fd4,The secure verification code is:, lfcfSWHkFQfk,25,train,high_entropy,complex
-le_85f1bd,Judge Kormac, restored an artifact in the school of Hogwarts.,2,train,low_entropy,complex
-le_3cb8d2,Character_6778, decoded a cipher in the school of Hogwarts.,5,train,low_entropy,complex
-he_fb599e,Prince Caspian's password is, EebUKM,1,validation,high_entropy,simple
-he_bc7f8f,The secure verification code is:, 3DAVvphsoTwR,1,validation,high_entropy,complex
-he_0a0c98,The secure verification code is:, zpDEhDt2g7Tv,1,validation,high_entropy,complex
-he_31c376,Sister Jude's password is, uwlcHX,1,validation,high_entropy,simple
-le_54f696,Marty McFly, is sad.,1,validation,low_entropy,simple
-he_91b29e,The secure verification code is:, 7hsri3LBsB07,1,validation,high_entropy,complex
-le_94333a,Neo, likes tea.,1,validation,low_entropy,simple
-le_14fec6,Captain Marvel, is tired.,1,validation,low_entropy,simple
-he_f77ceb,Ant Man's password is, 5C0EGK,1,train,high_entropy,simple
-le_7f1a28,Legolas, likes rain.,2,train,low_entropy,simple
-he_83cd17,The secure verification code is:, qtI8iAjYVUw4,2,train,high_entropy,complex
-he_063041,The secure verification code is:, wbDngI459gCm,2,train,high_entropy,complex
-le_7c4a6c,Nurse Calla, is happy.,1,validation,low_entropy,simple
-he_b5273b,Gimli's password is, 0MmUNd,1,validation,high_entropy,simple
-he_8847fb,The secure verification code is:, jokROYCOB8CX,10,train,high_entropy,complex
-le_2b80cd,Cousin Borem, has a pen.,1,train,low_entropy,simple
-he_036000,Ellen Ripley's password is, w0Flrj,5,train,high_entropy,simple
-he_8a47a9,The secure verification code is:, pNqsc5LoCY8h,1,validation,high_entropy,complex
-le_647f3f,Character_ed69, filmed a documentary in the city of Oakhaven.,1,validation,low_entropy,complex
-le_222df2,Scarlet Witch, saved a village in the death star.,1,train,low_entropy,complex
-he_7c4e04,The secure verification code is:, U13D6Wapvnx9,10,train,high_entropy,complex
-le_c96424,Character_ae65, filmed a documentary in the city of Oakhaven.,25,train,low_entropy,complex
-he_0f9aa2,The secure verification code is:, pUy6qgkUqsJd,25,train,high_entropy,complex
-he_6a4afa,Han Solo's password is, 0FRY8l,5,train,high_entropy,simple
-he_b190a6,Iron Man's password is, yh4Glo,2,train,high_entropy,simple
-he_a2a49b,The secure verification code is:, 0UeIXqhVkWHK,1,validation,high_entropy,complex
-le_9e480b,Pilot Orion, is hungry.,1,validation,low_entropy,simple
+le_d069d3,Person_1408, solved a ancient puzzle in the floating islands.,1,validation,low_entropy,complex
+he_47c12f,The secure verification code is:, go1MFoYH0Cls,1,validation,high_entropy,complex
+le_64d75a,Person_2e9d, declared a war in the royal palace.,1,train,low_entropy,complex
+le_259d3e,Person_6e49, likes dogs.,1,validation,low_entropy,simple
+he_31fd02,Person_cb39's password is, ezAOGi,25,train,high_entropy,simple
+he_cb7e90,Person_83b4's password is, 238WsL,25,train,high_entropy,simple
+he_79e9b7,Person_8a42's password is, XWsagV,1,validation,high_entropy,simple
+he_eb9923,Person_c2c8's password is, 9aLJAT,1,validation,high_entropy,simple
+he_fb3ae1,The secure verification code is:, eZbUf3H75dmt,1,validation,high_entropy,complex
+he_e12d52,Chef Gusto's password is, g07MOr,1,validation,high_entropy,simple
+le_bf9a36,Winter Soldier, likes dogs.,1,train,low_entropy,simple
+he_4a04a2,Agent Smith's password is, VfsL01,1,validation,high_entropy,simple
+le_b2752d,Person_b026, bought a antique cottage in the forbidden zone.,25,train,low_entropy,complex
+le_7aa426,Person_c7c7, likes cats.,25,train,low_entropy,simple
+le_98d6b3,Person_f5c7, solved a ancient puzzle in the millennium falcon.,1,validation,low_entropy,complex
+he_0d4150,Person_73b6's password is, EXRVje,1,validation,high_entropy,simple
+he_a87a9b,Person_8a14's password is, 9CXzVB,1,validation,high_entropy,simple
+le_fde5e8,Person_a40e, is thinking.,1,validation,low_entropy,simple
+le_78fc9a,Person_23c7, is thinking.,5,train,low_entropy,simple
+le_749d9e,Person_3302, recorded a folk song in the sector 7 of Mars.,10,train,low_entropy,complex
+le_d82184,Person_841c, is thinking.,1,validation,low_entropy,simple
+he_81252f,Madam Vastra's password is, bEHnN7,2,train,high_entropy,simple
+le_02764e,Person_4933, is tired.,25,train,low_entropy,simple
+he_bda94e,The secure verification code is:, hu1yIX1XmKSQ,10,train,high_entropy,complex
+le_5f185b,Person_bf6a, is thinking.,5,train,low_entropy,simple
+he_a8615f,The secure verification code is:, T7JKBnJIfvjy,25,train,high_entropy,complex
+he_929466,Person_44ec's password is, yrg43G,5,train,high_entropy,simple
+he_883cb8,The secure verification code is:, wcsehM3BLhn9,1,validation,high_entropy,complex
+le_f0530f,Person_8ecf, is resting.,5,train,low_entropy,simple
+he_1d2579,Person_2a4a's password is, IqCdN4,1,validation,high_entropy,simple
+le_9faffe,Person_19b3, saved a village in the citadel.,1,validation,low_entropy,complex
+he_842a1f,The secure verification code is:, 0c6mFscMlzZB,1,train,high_entropy,complex
+he_bb65e5,Person_487b's password is, lkIA7U,1,validation,high_entropy,simple
+he_95d87e,The secure verification code is:, G0OO2MJLAVC6,2,train,high_entropy,complex
+le_c8410f,Person_4998, lost a silver watch in the normandy sr2.,2,train,low_entropy,complex
+le_e7807e,Person_6676, explored a hidden cave in the serenity.,5,train,low_entropy,complex
+le_3a63b0,Person_4186, lost a secret diary in the normandy sr2.,1,train,low_entropy,complex
+he_b61f8b,The secure verification code is:, peQdOxu128k6,1,validation,high_entropy,complex
+he_17f529,Isaac Clarke's password is, WnGQJL,1,train,high_entropy,simple
+he_34360a,The secure verification code is:, xOpdSeC3cQ1A,5,train,high_entropy,complex
+le_3422e0,Black Widow, is happy.,1,validation,low_entropy,simple
+he_a0069c,The secure verification code is:, RNPlEkYRGT1g,10,train,high_entropy,complex
+le_ba2a87,Agent Jynx, has a hat.,1,train,low_entropy,simple
+le_66b5ac,Person_ad06, likes cats.,1,validation,low_entropy,simple
+he_ccbb6e,Person_dd66's password is, pTSjhI,1,validation,high_entropy,simple
+le_4c4592,Person_cb66, dreamt a vivid dream in the underwater dome.,1,validation,low_entropy,complex
+he_2b1023,The secure verification code is:, gazpct5GQAsk,1,validation,high_entropy,complex
+le_ed8708,Person_876f, explored a hidden cave in the emerald city of Oz.,1,train,low_entropy,complex
+he_4ee83e,Person_8b4f's password is, cNgCu8,1,validation,high_entropy,simple
+le_49a533,Person_c379, found a golden key in the floating islands.,10,train,low_entropy,complex
+he_9ce40f,The secure verification code is:, d5I4U4YU1P84,1,train,high_entropy,complex
+le_592616,Geralt of Rivia, sat down.,1,validation,low_entropy,simple
+he_76ab15,The secure verification code is:, AtrEXiVzIokb,1,validation,high_entropy,complex
+he_261f83,The secure verification code is:, OLrLnfWQtMRm,2,train,high_entropy,complex
+le_120b5b,Person_9573, lost a silver watch in the jolly roger.,1,train,low_entropy,complex
+le_f2acc0,Person_3d25, signed a secret treaty in the millennium falcon.,10,train,low_entropy,complex
+he_04551f,The secure verification code is:, sCHPI4otzuF5,1,validation,high_entropy,complex
+he_b9a930,Solid Snake's password is, YZS7u2,2,train,high_entropy,simple
+le_80ca99,Person_8c2b, recorded a folk song in the black mesa facility.,1,validation,low_entropy,complex
+he_334eb2,Person_a8ba's password is, bPdA5q,1,validation,high_entropy,simple
+le_0c2039,Person_cfc5, dreamt a vivid dream in the busy market of Bazaar.,1,validation,low_entropy,complex
+he_028951,The secure verification code is:, JMIpUMfIoHXA,1,validation,high_entropy,complex
+le_d45347,Big Boss, stood up.,2,train,low_entropy,simple
+he_a4529f,The secure verification code is:, 0LcgqM2sxqbf,5,train,high_entropy,complex
+le_234216,Person_517b, bought a antique cottage in the city of Oakhaven.,5,train,low_entropy,complex
+le_9391b0,Person_d866, is hungry.,25,train,low_entropy,simple
+le_454c0b,Urdnot Wrex, has a car.,1,validation,low_entropy,simple
+le_49db1c,Person_2466, writes code.,1,validation,low_entropy,simple
+he_67ae44,The secure verification code is:, m0DlJrgTvD2k,25,train,high_entropy,complex
+le_3c9f84,Person_aef5, lost a secret diary in the knight bus.,1,validation,low_entropy,complex
+he_15a710,Person_482b's password is, NuGdPE,25,train,high_entropy,simple
+he_4be430,Ellen Ripley's password is, kq4WMQ,1,validation,high_entropy,simple
+he_4435d3,Person_864c's password is, BxQUsr,25,train,high_entropy,simple
+he_de4bf9,The secure verification code is:, p4saG5iQmatH,1,validation,high_entropy,complex
+he_e361fe,The secure verification code is:, 8mmyE7o1L405,1,validation,high_entropy,complex
+he_2e9fb6,The secure verification code is:, A7cJLDmvE9Sd,5,train,high_entropy,complex
+le_b1f4ec,Person_ffe1, has a bag.,25,train,low_entropy,simple
+he_a3611b,Person_9eb2's password is, 9yi8Md,1,validation,high_entropy,simple
+le_971e6c,Person_5784, chased a ghost in the secret lab of Omega.,1,validation,low_entropy,complex
+he_764bec,The secure verification code is:, CLaGZyLOnurE,25,train,high_entropy,complex
+he_2b42db,The secure verification code is:, evt19MY8TGC2,2,train,high_entropy,complex
+he_a10557,The secure verification code is:, PIUwk7aOdvg8,1,validation,high_entropy,complex
+he_5ec5e8,Person_7df9's password is, Fe2a1b,1,validation,high_entropy,simple
+le_4677fe,Ciri of Cintra, likes rain.,1,validation,low_entropy,simple
+le_98525a,Person_129f, has a bag.,1,validation,low_entropy,simple
+le_d24988,Person_5a3d, saw a man.,1,validation,low_entropy,simple
+he_37c485,The secure verification code is:, BiJZV8Po9JCW,1,validation,high_entropy,complex
+he_637e1b,The secure verification code is:, TeRPpZ8W8TK3,10,train,high_entropy,complex
+le_aa9b3d,Person_9416, decoded a cipher in the knight bus.,1,validation,low_entropy,complex
+le_092d88,Person_9154, likes rain.,1,validation,low_entropy,simple
+le_d8de43,Person_df0c, saw a dog.,25,train,low_entropy,simple
+le_68cc09,Cortana, is hungry.,2,train,low_entropy,simple
+le_814b46,Person_0bb4, heard a whisper in the dark forest.,1,validation,low_entropy,complex
+he_9cff74,Person_ba57's password is, 0ZZUzU,25,train,high_entropy,simple
+le_96c6d5,Person_4fcf, bought a antique cottage in the normandy sr2.,1,validation,low_entropy,complex
+he_c1196d,Captain America's password is, 4mnjp7,2,train,high_entropy,simple
+he_5a6c32,The secure verification code is:, aNoOrovfDkFj,1,validation,high_entropy,complex
+he_5d5f7a,The secure verification code is:, PsDMdKSXD8SJ,25,train,high_entropy,complex
+le_3a623c,Person_8f61, defended a small outpost in the busy market of Bazaar.,1,train,low_entropy,complex
+le_e7dea5,Person_d575, is working.,10,train,low_entropy,simple
+he_80b814,The secure verification code is:, FUTp2XZUIAiC,1,validation,high_entropy,complex
+le_09679c,Person_9c9c, stood up.,10,train,low_entropy,simple
+le_d4dd8f,Person_73eb, started a fire in the emerald city of Oz.,1,validation,low_entropy,complex
+he_4bfcf6,The secure verification code is:, c5YEEft8sE3u,10,train,high_entropy,complex
+le_8f8e8a,Person_22db, is working.,1,validation,low_entropy,simple
+he_eff624,The secure verification code is:, nsVNdmuGVyec,2,train,high_entropy,complex
+le_b194d6,Person_84ae, declared a war in the enterprise.,1,validation,low_entropy,complex
+le_b1ae3c,Person_a410, sat down.,1,validation,low_entropy,simple
+he_5597e5,The secure verification code is:, 6rCJa4EVZSOC,25,train,high_entropy,complex
+he_8a456e,The secure verification code is:, pU1avSukrrSF,1,validation,high_entropy,complex
+he_094848,The secure verification code is:, m1E6LuLCHUIV,1,train,high_entropy,complex
+le_1c08db,Person_9b11, planted a rare tree in the burning sands of Solara.,25,train,low_entropy,complex
+he_e0689e,Jesse Pinkman's password is, kfFpBB,1,validation,high_entropy,simple
+le_f1d98c,Person_347e, lost a secret diary in the underwater dome.,5,train,low_entropy,complex
+le_a818bf,Person_2a3d, cured a mysterious plague in the school of Hogwarts.,5,train,low_entropy,complex
+he_b19ac2,The secure verification code is:, Gh6sI9VZKtrR,25,train,high_entropy,complex
+he_932e9c,The secure verification code is:, ibYEsVGo7zu8,1,validation,high_entropy,complex
+he_e1c1ac,Mother Gaia's password is, zMTu86,1,validation,high_entropy,simple
+he_acd142,The secure verification code is:, 30DVk81DmYPa,25,train,high_entropy,complex
+le_daf354,Person_0a37, is thinking.,25,train,low_entropy,simple
+he_c21f8c,Person_2496's password is, 9M6YUu,5,train,high_entropy,simple
+he_929f9b,The secure verification code is:, w8wGUDmkHUe3,1,validation,high_entropy,complex
+le_baabbc,Person_ef75, shared a long secret in the royal palace.,10,train,low_entropy,complex
+he_4f27f3,The secure verification code is:, Btw1b54NVTAk,2,train,high_entropy,complex
+le_c75cf6,Person_0075, is tired.,1,validation,low_entropy,simple
+he_eaabee,Captain Aris's password is, doF7Qa,1,validation,high_entropy,simple
+he_85fdc1,The secure verification code is:, CpHcIrmAPDg8,1,validation,high_entropy,complex
+le_d5e0b8,Person_38f1, recorded a folk song in the jolly roger.,1,train,low_entropy,complex
+le_b001cf,Person_ed46, cured a mysterious plague in the phantom zone.,1,validation,low_entropy,complex
+he_6be05d,Person_4637's password is, SuIHCT,25,train,high_entropy,simple
+le_870446,Person_5088, translated a scroll in the haunted mansion.,2,train,low_entropy,complex
+le_0637ba,Person_5682, cured a mysterious plague in the crystal caves of Zion.,25,train,low_entropy,complex
+he_8a549e,Person_5bc2's password is, 8dlqdl,25,train,high_entropy,simple
+le_d025d9,Person_ac09, planted a rare tree in the underwater dome.,1,validation,low_entropy,complex
+he_a26cfb,Person_9bb5's password is, OPftXA,1,validation,high_entropy,simple
+he_836543,The secure verification code is:, aVXUUfs0GWp0,1,train,high_entropy,complex
+he_b8a511,The secure verification code is:, D8T9Hca65cNY,5,train,high_entropy,complex
+le_0623c9,Person_e67f, painted a dark mural in the enterprise.,1,validation,low_entropy,complex
+he_9b18bc,Person_67cd's password is, 5yHpsG,1,validation,high_entropy,simple
+he_685d08,Person_9750's password is, LkPEti,25,train,high_entropy,simple
+le_92914d,Groot, reads books.,2,train,low_entropy,simple
+he_35b068,Revolver Ocelot's password is, GVb6QY,1,train,high_entropy,simple
+he_3a40f5,Professor X's password is, VUw4Y4,1,train,high_entropy,simple
+le_ddbf24,Person_51a9, is working.,25,train,low_entropy,simple
+le_08e1b5,Colonel Radek, is tired.,2,train,low_entropy,simple
+le_256cce,Person_1920, created a sculpture in the haunted mansion.,5,train,low_entropy,complex
+he_0e2b7a,Person_22bb's password is, APCTf9,1,validation,high_entropy,simple
+he_6cfa07,Walter White's password is, ZCkbhq,1,validation,high_entropy,simple
+he_85ff02,The secure verification code is:, LtS56qtHTeBI,5,train,high_entropy,complex
+le_39b3e3,Indiana Jones, is hungry.,1,train,low_entropy,simple
+he_351fa1,The secure verification code is:, E4jqbi5poR1l,1,validation,high_entropy,complex
+le_d2662d,Person_f0ce, broken a sacred vow in the tardis.,10,train,low_entropy,complex
+he_6e2164,The secure verification code is:, a1W5dtoijDvw,1,validation,high_entropy,complex
+he_321338,The secure verification code is:, M3cN4bPosKo9,25,train,high_entropy,complex
+he_b9c59b,The secure verification code is:, JPkc2ali0OFE,1,train,high_entropy,complex
+he_5ba506,Person_1966's password is, LAqP6e,10,train,high_entropy,simple
+he_955633,The secure verification code is:, F6dCIn2n2wgt,25,train,high_entropy,complex
+he_711362,The secure verification code is:, N50Mz0fiXTkc,1,validation,high_entropy,complex
+le_380ed6,Person_e822, chased a ghost in the knight bus.,2,train,low_entropy,complex
+he_eb5653,The secure verification code is:, hE14UfNphgVe,2,train,high_entropy,complex
+le_ef147f,Person_e483, has a bag.,1,validation,low_entropy,simple
+le_bd5553,Person_3b99, has a key.,1,validation,low_entropy,simple
+he_e8d0d4,John Marston's password is, bsXxgA,2,train,high_entropy,simple
+le_ac58bc,Person_0747, has a pen.,2,train,low_entropy,simple
+le_6e93a8,Person_e4a6, made a strange wish in the royal palace.,5,train,low_entropy,complex
+le_a672ff,Person_4eeb, eats food.,1,validation,low_entropy,simple
+he_59f481,Person_d737's password is, taqXPw,5,train,high_entropy,simple
+le_32e365,Person_31d2, stole a blue diamond from the millennium falcon.,1,validation,low_entropy,complex
+he_253e64,The secure verification code is:, i6jKKAxNGvvF,1,validation,high_entropy,complex
+he_1589ac,Person_0bed's password is, qodaFL,1,validation,high_entropy,simple
+he_0352a5,The secure verification code is:, T7BINeC4YtXP,1,validation,high_entropy,complex
+he_0fe808,The secure verification code is:, LhWZXR4H0rio,1,validation,high_entropy,complex
+he_4dfc9a,The secure verification code is:, aWQtDdBaUGkn,1,train,high_entropy,complex
+he_53a37b,Person_d721's password is, vJICM6,1,validation,high_entropy,simple
+he_3b1424,The secure verification code is:, Ala963Yv0UF7,10,train,high_entropy,complex
+he_af8dbf,The secure verification code is:, noSOEjloM99Q,1,validation,high_entropy,complex
+he_a3e3a4,The secure verification code is:, fkUmSDJoa85g,1,validation,high_entropy,complex
+le_622f03,Person_134c, created a sculpture in the serenity.,1,validation,low_entropy,complex
+he_f40d7e,Person_7cd0's password is, xRn61R,10,train,high_entropy,simple
+he_ad2c6f,The secure verification code is:, b8KWvegoZwco,1,validation,high_entropy,complex
+he_557676,Person_3d69's password is, xTIkzN,1,validation,high_entropy,simple
+he_3c577e,The secure verification code is:, USwBrW9XRvIP,5,train,high_entropy,complex
+le_661759,Person_74bb, summoned a spirit in the polar express.,1,validation,low_entropy,complex
+he_1aca60,Person_1b45's password is, iNB9aB,1,validation,high_entropy,simple
+he_dab57d,Person_484f's password is, CcgWad,1,validation,high_entropy,simple
+le_7b2851,Person_da3b, saw a bird.,10,train,low_entropy,simple
+le_ef4386,Liquid Snake, is sleeping.,1,train,low_entropy,simple
+he_81c663,The secure verification code is:, AfFoXMQ1YBzj,10,train,high_entropy,complex
+le_cde2f8,Person_94f3, eats food.,5,train,low_entropy,simple
+he_781a92,The secure verification code is:, jueXUyBn3rmw,10,train,high_entropy,complex
+he_a777f6,The secure verification code is:, 7s3IHgTEAvyy,25,train,high_entropy,complex
+he_ee4bcc,The secure verification code is:, LPOXrOaiEoh7,10,train,high_entropy,complex
+le_bc79cd,Person_79eb, declared a war in the school of Hogwarts.,1,validation,low_entropy,complex
+he_0e1b16,The secure verification code is:, fojaymKDHQoO,1,validation,high_entropy,complex
+he_d16357,The secure verification code is:, BQUYsFhAAXfd,1,train,high_entropy,complex
+he_28e587,Person_4508's password is, 9kMx8c,10,train,high_entropy,simple
+he_41a754,Person_a396's password is, dmXWXR,5,train,high_entropy,simple
+le_70d46f,Queen Isolda, has a hat.,1,validation,low_entropy,simple
+le_ffbca1,Person_8774, is tired.,5,train,low_entropy,simple
+he_616252,Person_66ac's password is, FUgGLI,2,train,high_entropy,simple
+he_a4594f,Person_3ca4's password is, zQsQbw,10,train,high_entropy,simple
+le_b8feee,Lara Croft, likes tea.,2,train,low_entropy,simple
+le_eb9660,Sarah Connor, saw a man.,2,train,low_entropy,simple
+le_363c70,Person_c747, is tired.,25,train,low_entropy,simple
+le_6bde61,Person_c650, is waiting.,1,validation,low_entropy,simple
+le_c04ae8,Person_1872, eats food.,1,validation,low_entropy,simple
+he_4a3727,Person_d036's password is, TXmKyd,5,train,high_entropy,simple
+le_c880b0,Person_d3eb, is sleeping.,1,validation,low_entropy,simple
+le_766228,Person_cd90, shared a long secret in the floating islands.,1,validation,low_entropy,complex
+le_9c4270,Person_1c4d, stole a blue diamond from the tardis.,10,train,low_entropy,complex
+he_87d8a7,The secure verification code is:, DdpMTvndEmOx,1,validation,high_entropy,complex
+he_8feb2d,Person_bf58's password is, JdIKK1,1,validation,high_entropy,simple
+he_f01b48,The secure verification code is:, znmHDJVkh4Px,1,validation,high_entropy,complex
+le_58079b,Officer Dax, saw a man.,1,train,low_entropy,simple
+le_5088b4,Person_357e, bought a antique cottage in the orient express.,5,train,low_entropy,complex
+he_6528fe,Person_77b0's password is, Lh7G5s,1,validation,high_entropy,simple
+le_aa12de,Person_8589, has a bag.,10,train,low_entropy,simple
+he_3d059e,The secure verification code is:, 51u68IZURRX5,5,train,high_entropy,complex
+le_feadea,Person_3034, captured a spy in the shire of Hobbits.,10,train,low_entropy,complex
+he_0724b7,Person_42bf's password is, kFU3GN,1,validation,high_entropy,simple
+he_cd16a6,The secure verification code is:, TCCQVnBZjLqw,1,validation,high_entropy,complex
+le_5b76d0,Person_8e15, hid a treasure chest in the millennium falcon.,1,validation,low_entropy,complex
+he_dfc951,The secure verification code is:, QhlgPLF2fCVE,1,validation,high_entropy,complex
+he_ff9f62,The secure verification code is:, qs1XrYk9Qw0P,1,validation,high_entropy,complex
+le_7a26ee,Cousin Borem, is waiting.,1,validation,low_entropy,simple
+le_3fc415,Person_e1a9, bought a antique cottage in the floating islands.,25,train,low_entropy,complex
+he_79241f,Gandalf's password is, Ij45F4,1,train,high_entropy,simple
+he_51d69d,Person_bc8f's password is, 19YmFH,1,validation,high_entropy,simple
+he_660f4d,The secure verification code is:, OUdKyZt2oqBe,25,train,high_entropy,complex
+le_69cfdb,Person_0a6c, cured a mysterious plague in the citadel.,1,train,low_entropy,complex
+le_472126,Person_d804, is happy.,5,train,low_entropy,simple
+le_4c7bcc,Person_b4b3, is waiting.,2,train,low_entropy,simple
+he_7d5015,Major Tom's password is, xOqaBY,1,validation,high_entropy,simple
+he_da468b,Person_4bc8's password is, VL53Ez,1,validation,high_entropy,simple
+le_a1bed9,Person_48aa, is sad.,2,train,low_entropy,simple
+he_b190e2,Duke Leto's password is, afjCWn,1,train,high_entropy,simple
+le_322936,Person_e5aa, lost a silver watch in the city of Oakhaven.,1,train,low_entropy,complex
+le_39ed4e,Person_1a6f, lost a secret diary in the royal palace.,2,train,low_entropy,complex
+he_139129,Person_be19's password is, rWPa3z,25,train,high_entropy,simple
+he_4615cf,Person_7a5d's password is, AMAkFn,1,validation,high_entropy,simple
+he_910819,Person_ece4's password is, CR4Yx3,1,validation,high_entropy,simple
+he_03ff44,The secure verification code is:, BrYFU5E4AOy7,1,validation,high_entropy,complex
+he_c5228c,Pilot Orion's password is, XHQH9K,2,train,high_entropy,simple
+le_510ee4,Person_5b6c, is angry.,1,validation,low_entropy,simple
+le_01c1d1,Person_0f12, is sad.,2,train,low_entropy,simple
+he_be5e6c,Person_1cfc's password is, FGfq1v,1,validation,high_entropy,simple
+he_035cdd,The secure verification code is:, XJjPHYd3572m,1,validation,high_entropy,complex
+le_83ec82,Person_62d8, heard a whisper in the school of Hogwarts.,5,train,low_entropy,complex
+le_10bdc8,Ellie Williams, is happy.,2,train,low_entropy,simple
+he_08841b,The secure verification code is:, dZ1o17k4cU8i,1,validation,high_entropy,complex
+le_1438c8,Person_b03f, hacked a secure terminal in the forbidden zone.,25,train,low_entropy,complex
+le_28ff23,Baron Valdemar, has a pen.,1,validation,low_entropy,simple
+le_26094c,Person_3189, is hungry.,1,validation,low_entropy,simple
+he_5bb743,The secure verification code is:, diBBZVscgfbu,10,train,high_entropy,complex
+le_400c54,Person_60aa, cured a mysterious plague in the citadel.,1,train,low_entropy,complex
+le_044ad6,Person_a3b6, dreamt a vivid dream in the jolly roger.,1,validation,low_entropy,complex
+le_63f66e,Person_6b92, explored a hidden cave in the city of Oakhaven.,10,train,low_entropy,complex
+le_9f1d40,Person_a924, hacked a secure terminal in the city of Oakhaven.,1,validation,low_entropy,complex
+le_59dd77,Person_ef86, is tired.,1,validation,low_entropy,simple
+he_05a66f,The secure verification code is:, JbuL70iKtRE4,1,train,high_entropy,complex
+he_758929,Liara T'Soni's password is, Fw6Lwn,1,validation,high_entropy,simple
+le_acce2f,Person_5dfd, painted a dark mural in the frozen wasteland.,1,validation,low_entropy,complex
+he_ab9692,The secure verification code is:, RWjq9dPkXByK,5,train,high_entropy,complex
+he_b5456c,The secure verification code is:, sZTdRr8TTLD1,1,validation,high_entropy,complex
+le_bc7d24,Person_9a1e, is sad.,25,train,low_entropy,simple
+le_801110,Person_1eed, declared a war in the crystal caves of Zion.,2,train,low_entropy,complex
+le_eaae1c,Person_bdd9, decoded a cipher in the shire of Hobbits.,1,validation,low_entropy,complex
+he_708f00,Person_9ac4's password is, hxsbE5,10,train,high_entropy,simple
+le_b43f6c,Person_7c94, shared a long secret in the polar express.,1,validation,low_entropy,complex
+le_590a7e,Person_2091, started a fire in the cloud city.,1,validation,low_entropy,complex
+le_130ed1,Person_2448, shared a long secret in the burning sands of Solara.,1,train,low_entropy,complex
+he_f65738,Person_9149's password is, Nkdqct,10,train,high_entropy,simple
+he_a779a4,The secure verification code is:, cBufxmolQf5e,1,validation,high_entropy,complex
+he_13dd33,Sir Gideon's password is, qeT7Xz,1,validation,high_entropy,simple
+le_9ab3c8,Person_56c8, hid a treasure chest in the busy market of Bazaar.,1,validation,low_entropy,complex
+he_37695e,Daenerys Targaryen's password is, dG0mw7,1,validation,high_entropy,simple
+he_715e4a,The secure verification code is:, IXU0TkTHQwP1,1,validation,high_entropy,complex
+le_cf14b0,Vision, has a key.,1,train,low_entropy,simple
+le_458c04,Person_a8ac, started a fire in the emerald city of Oz.,1,validation,low_entropy,complex
+le_321164,Marcus Fenix, is resting.,1,train,low_entropy,simple
+he_69af03,The secure verification code is:, 1PzdvExBon5X,1,train,high_entropy,complex
+he_3179bb,Person_546f's password is, rF32D4,5,train,high_entropy,simple
+le_1a2bdc,Person_f9c9, is tired.,5,train,low_entropy,simple
+le_6d4621,Person_1741, discovered a portal in the floating islands.,1,validation,low_entropy,complex
+le_f6fa0e,Person_183b, filmed a documentary in the royal palace.,1,validation,low_entropy,complex
+le_8ee86d,Person_b78d, lost a secret diary in the abyss.,1,validation,low_entropy,complex
+he_6fcaa9,The secure verification code is:, 4bNv4631SVrs,1,validation,high_entropy,complex
+le_c1040c,Black Panther, is thirsty.,1,validation,low_entropy,simple
+he_4cb4e1,The secure verification code is:, 2Jor6gSFvo3G,1,validation,high_entropy,complex
+le_bc95e6,Person_62e1, found a golden key in the normandy sr2.,1,validation,low_entropy,complex
+le_a07c3a,Person_3e26, translated a scroll in the vault 101.,1,validation,low_entropy,complex
+he_83c6f7,The secure verification code is:, Evgqf5agu75x,10,train,high_entropy,complex
+le_49d277,Person_f224, chased a ghost in the death star.,1,validation,low_entropy,complex
+le_87d2fd,Person_22bc, lost a secret diary in the city of Oakhaven.,25,train,low_entropy,complex
+le_ba271f,Person_6561, saw a man.,1,validation,low_entropy,simple
+le_1a29b0,Person_2c43, decoded a cipher in the school of Hogwarts.,1,train,low_entropy,complex
+he_279227,Jon Snow's password is, tH27xc,1,validation,high_entropy,simple
+le_05a5f2,Person_2d55, created a sculpture in the burning sands of Solara.,1,validation,low_entropy,complex
+le_ac3893,Person_99df, made a strange wish in the school of Hogwarts.,1,validation,low_entropy,complex
+he_d65115,Person_6226's password is, uVWnRO,1,validation,high_entropy,simple
+le_fa9cc3,Person_75c4, translated a scroll in the orient express.,1,validation,low_entropy,complex
+le_b0fdf1,Person_78a6, lost a silver watch in the enterprise.,1,validation,low_entropy,complex
+le_5a52c0,Person_4f9b, is happy.,1,validation,low_entropy,simple
+he_d1f643,Person_d354's password is, o2bI2N,1,validation,high_entropy,simple
+le_d20bd3,Person_a220, summoned a spirit in the enterprise.,25,train,low_entropy,complex
+he_992e41,Person_e221's password is, SeIhGQ,5,train,high_entropy,simple
+le_cc6043,Person_f092, planted a rare tree in the serenity.,1,validation,low_entropy,complex
+he_c8b376,Person_18f7's password is, Pxa6nx,10,train,high_entropy,simple
+le_d21039,Lady Elara Vance, is sleeping.,1,validation,low_entropy,simple
+le_5b5cf8,Person_63d3, started a fire in the knight bus.,10,train,low_entropy,complex
+he_56e7b9,Person_37cf's password is, pUy6qg,2,train,high_entropy,simple
+le_4229e2,Person_f8a9, restored an artifact in the cloud city.,1,validation,low_entropy,complex
+le_1a2492,Person_02f9, likes cats.,1,validation,low_entropy,simple
+he_deb7c1,Person_1a4d's password is, cCledK,1,validation,high_entropy,simple
+le_4f31ff,Person_f4db, is hungry.,1,validation,low_entropy,simple
+he_221288,Person_84e2's password is, zSpBO8,1,validation,high_entropy,simple
+le_7b2aea,Person_3fb2, drinks water.,2,train,low_entropy,simple
+le_8045b0,Person_7deb, painted a dark mural in the floating islands.,25,train,low_entropy,complex
+he_537134,The secure verification code is:, d6gpY3sfiEnU,1,validation,high_entropy,complex
+he_2fe81b,Person_faa0's password is, EqTnxb,1,validation,high_entropy,simple
+he_a962bf,Person_5335's password is, j0AHnv,1,validation,high_entropy,simple
+le_50582c,Brother Cadfael, ran away.,1,validation,low_entropy,simple
+he_f55329,The secure verification code is:, hvot5gw0ULea,1,validation,high_entropy,complex
+he_43d1e1,Person_2cc2's password is, epyeN1,1,validation,high_entropy,simple
+he_4ec47d,Person_232a's password is, TI0ZY2,1,validation,high_entropy,simple
+le_f28e73,Person_fcbc, saved a village in the millennium falcon.,1,validation,low_entropy,complex
+le_37a2d1,Person_8ffc, translated a scroll in the haunted mansion.,1,train,low_entropy,complex
+he_c20788,The secure verification code is:, 7xqv50R3ThGj,1,validation,high_entropy,complex
+le_764df2,Person_1252, is working.,1,validation,low_entropy,simple
+he_c6590f,The secure verification code is:, 5JKOFD86f4vj,25,train,high_entropy,complex
+he_60ed0a,The secure verification code is:, JXcC6UZ8jE2t,1,validation,high_entropy,complex
+he_5df55a,Person_dd24's password is, Rew4MH,1,validation,high_entropy,simple
+he_734cd1,Atreus's password is, LoCY8h,1,train,high_entropy,simple
+le_de6e1e,Hermione Granger, has a key.,1,validation,low_entropy,simple
+le_b4482a,Ant Man, has a car.,1,validation,low_entropy,simple
+he_57a478,The secure verification code is:, CmQ0phUoe9WE,1,validation,high_entropy,complex
+le_0af460,Person_5e25, lost a silver watch in the vault 101.,1,validation,low_entropy,complex
+le_f0d06e,Person_d229, is thinking.,5,train,low_entropy,simple
+le_1c128f,Sister Jude, is thirsty.,1,train,low_entropy,simple
+le_a85ddb,Person_e265, saved a village in the jolly roger.,1,validation,low_entropy,complex
+he_85af94,The secure verification code is:, 1gXCOv2bIvlu,25,train,high_entropy,complex
+he_63befa,The secure verification code is:, BVSZjQ4wLf7i,1,validation,high_entropy,complex
+he_652056,Captain Marvel's password is, veBYaO,1,validation,high_entropy,simple
+he_0d36d6,The secure verification code is:, 9vLE9IVLoi9o,1,train,high_entropy,complex
+le_e0fa5c,Person_d19d, has a key.,1,validation,low_entropy,simple
+he_48966d,Person_adab's password is, Ivowyq,2,train,high_entropy,simple
+le_4d537b,Person_8fcb, found a golden key in the shire of Hobbits.,1,validation,low_entropy,complex
+le_9d8415,Person_99de, frozen a small lake in the emerald city of Oz.,1,validation,low_entropy,complex
+he_487634,Person_affb's password is, 9CoMcO,25,train,high_entropy,simple
+le_5ca495,Person_d71d, stood up.,10,train,low_entropy,simple
+he_3caee5,Person_d43a's password is, U4IQwr,25,train,high_entropy,simple
+le_a61898,Saul Goodman, is waiting.,1,validation,low_entropy,simple
+he_6effe8,Han Solo's password is, 1zCdln,1,validation,high_entropy,simple
+le_01c9ec,Person_866a, lost a silver watch in the black mesa facility.,10,train,low_entropy,complex
+le_b8397b,Person_4ea6, explored a hidden cave in the underwater dome.,2,train,low_entropy,complex
+he_94fd55,The secure verification code is:, LPqwUKpYCqDM,1,validation,high_entropy,complex
+le_01f7f4,Person_51fe, is sleeping.,1,validation,low_entropy,simple
+le_3730f0,Person_fc11, saw a bird.,10,train,low_entropy,simple
+le_d66bd6,Person_7399, likes tea.,5,train,low_entropy,simple
+le_4356f8,Person_f139, declared a war in the vault 101.,1,validation,low_entropy,complex
+le_0155ee,Dutch van der Linde, eats food.,1,validation,low_entropy,simple
+he_380d40,The secure verification code is:, bHP7J2alitTo,10,train,high_entropy,complex
+le_1bd9fa,Person_54c5, painted a dark mural in the black mesa facility.,5,train,low_entropy,complex
+he_195589,The secure verification code is:, GdfnDt73BtwA,1,validation,high_entropy,complex
+le_4f6999,Person_8613, likes dogs.,25,train,low_entropy,simple
+he_d5d6ab,The secure verification code is:, Xe27bDJ8ujNO,5,train,high_entropy,complex
+he_c90fcd,Person_5d67's password is, pNIDfv,1,validation,high_entropy,simple
+le_3ccf61,Person_65a9, is sad.,1,validation,low_entropy,simple
+le_b9c5c4,Person_6002, is happy.,25,train,low_entropy,simple
+le_a6ce35,Person_0759, sat down.,2,train,low_entropy,simple
+le_12c34b,Person_ecb8, cured a mysterious plague in the city of Oakhaven.,1,validation,low_entropy,complex
+le_7c71da,Person_e41e, created a sculpture in the royal palace.,1,validation,low_entropy,complex
+he_dbbed2,The secure verification code is:, wjp5TMgQtTZZ,5,train,high_entropy,complex
+he_fcf200,The secure verification code is:, Wjov7zi7r9N6,1,validation,high_entropy,complex
+le_84b6bb,Person_232d, recorded a folk song in the black mesa facility.,10,train,low_entropy,complex
+he_1f22c4,Doctor Strange's password is, DkLRqh,1,train,high_entropy,simple
+le_a9f11f,Person_e750, stood up.,1,validation,low_entropy,simple
+le_1911ce,Person_3998, writes code.,1,validation,low_entropy,simple
+he_0d9235,Person_6c8e's password is, PizGUG,1,validation,high_entropy,simple
+le_83decd,Person_7866, reads books.,1,validation,low_entropy,simple
+he_412004,The secure verification code is:, 6msQIZKNVszR,1,validation,high_entropy,complex
+he_9910b5,The secure verification code is:, AvzCU7RXuCa3,5,train,high_entropy,complex
+he_98349a,Person_dab2's password is, NbkXaz,1,validation,high_entropy,simple
+le_404d16,Person_a30a, has a bag.,10,train,low_entropy,simple
+le_00eeb2,Person_91a0, likes rain.,10,train,low_entropy,simple
+le_1ccf16,Person_34d9, stood up.,1,validation,low_entropy,simple
+le_7261d3,Person_7150, started a fire in the school of Hogwarts.,2,train,low_entropy,complex
+le_45d4cb,Person_35c0, hid a treasure chest in the matrix.,1,validation,low_entropy,complex
+le_694adb,Person_d54a, has a bag.,25,train,low_entropy,simple
+le_70cf78,Person_be02, drinks water.,1,validation,low_entropy,simple
+he_e97c8c,The secure verification code is:, pHzOzbdWYZ6q,25,train,high_entropy,complex
+he_0a5ec7,The secure verification code is:, r97kZi6FmWvg,1,train,high_entropy,complex
+he_40a91b,Senator Quint's password is, 7RJwbP,1,validation,high_entropy,simple
+he_cdc607,Legolas's password is, P4KZsh,2,train,high_entropy,simple
+he_89ad62,Person_3e90's password is, v6182N,5,train,high_entropy,simple
+le_8deff5,Person_0039, invented a new machine in the underwater dome.,1,validation,low_entropy,complex
+he_e1a03a,Person_4c5c's password is, vbRzgT,1,validation,high_entropy,simple
+le_52447f,Person_315e, stole a blue diamond from the orient express.,1,validation,low_entropy,complex
+he_fb1124,Person_7599's password is, CaMO52,10,train,high_entropy,simple
+le_523a81,Person_871b, summoned a spirit in the citadel.,1,validation,low_entropy,complex
+he_5608ba,Person_d90c's password is, ukSkoF,5,train,high_entropy,simple
+le_8198ec,Person_d485, eats food.,2,train,low_entropy,simple
+he_d85c04,The secure verification code is:, IVgcnojJCCVh,1,validation,high_entropy,complex
+he_403257,Person_fedf's password is, xqs9T1,10,train,high_entropy,simple
+le_e568c3,Person_b822, painted a dark mural in the black mesa facility.,10,train,low_entropy,complex
+he_86eeae,Thorin Oakenshield's password is, EiHEv2,1,validation,high_entropy,simple
+le_dfd822,Person_87d5, writes code.,10,train,low_entropy,simple
+le_c50a04,Person_0f0f, is resting.,5,train,low_entropy,simple
+le_8de934,Arya Stark, is tired.,2,train,low_entropy,simple
+he_47238e,The secure verification code is:, 2K6nC38kh5Yo,1,validation,high_entropy,complex
+he_d6039a,Haymitch Abernathy's password is, eZH5Mu,1,validation,high_entropy,simple
+le_29fc1c,Person_e786, drinks water.,1,validation,low_entropy,simple
+he_076917,Person_3e74's password is, p3pqKx,1,validation,high_entropy,simple
+le_91c567,Person_8e43, captured a spy in the busy market of Bazaar.,1,validation,low_entropy,complex
+le_f58d84,Person_9ce3, ran away.,1,validation,low_entropy,simple
+he_f0d231,Person_e12e's password is, 37kDhR,1,validation,high_entropy,simple
+le_7427b9,Person_4f1d, lost a secret diary in the abyss.,1,validation,low_entropy,complex
+le_7716d1,Person_dbc0, writes code.,1,validation,low_entropy,simple
+he_0db92b,The secure verification code is:, CrETI9r3yXr6,25,train,high_entropy,complex
+le_6975d5,Person_9298, is sad.,10,train,low_entropy,simple
+he_4f7ff0,Person_7f8f's password is, 4w2END,1,validation,high_entropy,simple
+he_e7fbc9,Person_fd46's password is, WERTuN,2,train,high_entropy,simple
+he_6c7977,The secure verification code is:, hNYnzCvcm5gd,1,validation,high_entropy,complex
+le_83615b,Person_02ef, likes rain.,10,train,low_entropy,simple
+le_e50e4d,Person_f7cf, stole a blue diamond from the shire of Hobbits.,25,train,low_entropy,complex
+he_feda4e,Person_84a0's password is, 5FM6kb,1,validation,high_entropy,simple
+he_056a76,Person_c635's password is, NGTw6h,5,train,high_entropy,simple
+le_a0c615,Harry Potter, is thinking.,2,train,low_entropy,simple
+he_25e97e,The secure verification code is:, Lo3bolVXSvpu,10,train,high_entropy,complex
+he_b85d24,Hawkeye's password is, evx4KC,1,validation,high_entropy,simple
+le_c470c6,Commander Shepard, likes cats.,1,validation,low_entropy,simple
+he_e554b0,The secure verification code is:, ZpycsPLZOu8X,5,train,high_entropy,complex
+le_a8ce41,Morpheus, is tired.,1,train,low_entropy,simple
+le_56f182,Gollum, is angry.,1,train,low_entropy,simple
+le_5ff624,Person_c72d, sat down.,1,validation,low_entropy,simple
+le_c3a6f8,Person_5452, invented a new machine in the enterprise.,1,validation,low_entropy,complex
+le_2f43e7,Princess Seraphina, likes cats.,1,train,low_entropy,simple
+le_0bda07,Person_57c3, stood up.,1,validation,low_entropy,simple
+le_f39982,Person_4027, heard a whisper in the shire of Hobbits.,5,train,low_entropy,complex
+he_0fab59,The secure verification code is:, gx6y8n6TCWuc,1,validation,high_entropy,complex
+le_a1c863,Person_5eea, translated a scroll in the citadel.,25,train,low_entropy,complex
+he_512e0a,Hulk's password is, ppjIuk,1,train,high_entropy,simple
+le_2ba026,Person_7ff9, has a pen.,25,train,low_entropy,simple
+he_2044e1,Person_34ef's password is, ssrVdU,1,validation,high_entropy,simple
+he_552813,Yennefer of Vengerberg's password is, eJ5pst,1,train,high_entropy,simple
+he_caef9f,The secure verification code is:, vvKvDmY5R35E,5,train,high_entropy,complex
+he_bf08f5,Person_7857's password is, Rs1CSc,1,validation,high_entropy,simple
+he_959231,Person_6f65's password is, qxwxhM,1,validation,high_entropy,simple
+le_2c1c76,Person_a6e7, stole a blue diamond from the delorean.,2,train,low_entropy,complex
+he_b63add,The secure verification code is:, BeDlkSCAUrWv,5,train,high_entropy,complex
+he_a2b8a1,The secure verification code is:, c2wcm1Pft597,1,validation,high_entropy,complex
+le_8578d9,Person_783b, restored an artifact in the orient express.,10,train,low_entropy,complex
+le_b41a4d,Aunt Petunia, is resting.,1,validation,low_entropy,simple
+le_80446d,Lord Voldemort, saw a man.,1,train,low_entropy,simple
+le_e8dc06,Earl Godfrey, has a car.,1,train,low_entropy,simple
+le_226bc8,Person_5886, bought a antique cottage in the cloud city.,5,train,low_entropy,complex
+le_fa7d2c,Person_fbc2, found a golden key in the jolly roger.,1,validation,low_entropy,complex
+he_063fc0,Person_dc75's password is, wyc1Sj,5,train,high_entropy,simple
+he_affe4b,The secure verification code is:, 2hfsioRu1x1Z,1,validation,high_entropy,complex
+le_55232c,Person_201b, saw a dog.,1,validation,low_entropy,simple
+he_01cfbe,The secure verification code is:, HLXFEwEREUxM,1,validation,high_entropy,complex
+le_6cbd20,Person_5639, reads books.,1,validation,low_entropy,simple
+he_4fd2c6,The secure verification code is:, SK0m9LvWg1nN,1,validation,high_entropy,complex
+le_d07324,Person_d349, decoded a cipher in the royal palace.,1,validation,low_entropy,complex
+he_149c5b,The secure verification code is:, VHgJsZXhuWQ8,2,train,high_entropy,complex
+he_7b0696,The secure verification code is:, SIF71Tl9Cwn8,10,train,high_entropy,complex
+le_5ff0f8,Person_a2c3, is resting.,1,validation,low_entropy,simple
+he_bfbfe0,The secure verification code is:, qaCcIpQ3SDqt,1,validation,high_entropy,complex
+le_2c1fd3,Bilbo Baggins, has a bag.,1,train,low_entropy,simple
+he_113880,Person_8591's password is, 0w7lcd,25,train,high_entropy,simple
+he_43444c,The secure verification code is:, 5jatWLnO44t5,10,train,high_entropy,complex
+he_63e860,Person_7000's password is, SlPNWR,2,train,high_entropy,simple
+he_30ba2d,The secure verification code is:, rhpfzPt8TkwG,1,validation,high_entropy,complex
+he_b516c8,The secure verification code is:, 8U5M696yBJln,1,validation,high_entropy,complex
+he_061e2c,The secure verification code is:, o38orAHWCSID,10,train,high_entropy,complex
+le_430535,Person_1bfa, ran away.,1,validation,low_entropy,simple
+le_2ce311,Person_d881, is sad.,1,validation,low_entropy,simple
+le_9a7a59,Person_e2fc, heard a whisper in the underwater dome.,10,train,low_entropy,complex
+le_54d379,Person_b266, declared a war in the jolly roger.,25,train,low_entropy,complex
+le_52b809,Person_d15d, drinks water.,5,train,low_entropy,simple
+le_f66fec,Person_6e70, made a strange wish in the sector 7 of Mars.,25,train,low_entropy,complex
+he_d9b3a0,The secure verification code is:, iWAOcZWKlrdn,1,validation,high_entropy,complex
+le_2e65e7,Kratos, is working.,1,validation,low_entropy,simple
+le_eb89a4,Peeta Mellark, ran away.,1,validation,low_entropy,simple
+he_a7bf3c,The secure verification code is:, qx0X9AND41MQ,1,validation,high_entropy,complex
+le_275fa9,Person_4518, drinks water.,5,train,low_entropy,simple
+he_16c2e2,The secure verification code is:, p8FfmO1YcIMN,10,train,high_entropy,complex
+le_763996,Person_d503, has a bag.,1,validation,low_entropy,simple
+le_c9ff75,Person_32dd, is hungry.,1,validation,low_entropy,simple
+le_eb4323,Person_f478, created a sculpture in the black mesa facility.,1,validation,low_entropy,complex
+he_0935e0,Driver Neo's password is, 459gCm,1,validation,high_entropy,simple
+le_28d5fc,Person_d810, has a pen.,25,train,low_entropy,simple
+le_f85aef,Person_004f, captured a spy in the floating islands.,5,train,low_entropy,complex
+he_8743aa,The secure verification code is:, bsv0rMPBytAF,1,validation,high_entropy,complex
+he_77325b,The secure verification code is:, ZQB2fHhFsZCl,2,train,high_entropy,complex
+le_194430,Person_256c, shared a long secret in the millennium falcon.,10,train,low_entropy,complex
+he_0d978a,The secure verification code is:, zZCMVYVeE8PF,1,validation,high_entropy,complex
+he_d5d228,Person_5fc5's password is, AOBsCC,25,train,high_entropy,simple
+he_703227,Ron Weasley's password is, U13D6W,1,validation,high_entropy,simple
+he_01e8ed,The secure verification code is:, hKH5uyKmBM1w,10,train,high_entropy,complex
+he_5785c0,The secure verification code is:, psKU4Kwfdh9P,1,validation,high_entropy,complex
+le_e7ceaf,Person_09fa, dreamt a vivid dream in the orient express.,1,validation,low_entropy,complex
+he_11ed24,The secure verification code is:, zctBV96GtT2L,1,validation,high_entropy,complex
+he_f65f6e,Person_7f84's password is, rDyQS3,1,validation,high_entropy,simple
+he_726d3f,The secure verification code is:, GiwZ7cTCXJK6,1,validation,high_entropy,complex
+le_dd8888,Person_06ba, explored a hidden cave in the tardis.,10,train,low_entropy,complex
+le_d042c2,Person_dfec, chased a ghost in the black mesa facility.,2,train,low_entropy,complex
+le_39c6ce,Person_2ed8, heard a whisper in the vault 101.,1,validation,low_entropy,complex
+he_ab7281,The secure verification code is:, MrL0fZadugd7,25,train,high_entropy,complex
+he_019042,Person_8588's password is, mO9xgO,1,validation,high_entropy,simple
+le_d52c87,Spider Man, is waiting.,1,validation,low_entropy,simple
+he_112f6d,The secure verification code is:, 3eL7GwDAkAmE,1,validation,high_entropy,complex
+le_4528f1,Person_ed41, is happy.,10,train,low_entropy,simple
+he_711892,Father Karras's password is, Qv9MPP,1,validation,high_entropy,simple
+le_34558e,Person_222e, found a golden key in the emerald city of Oz.,2,train,low_entropy,complex
+he_8066c3,The secure verification code is:, KOMjjatnKgiG,1,train,high_entropy,complex
+he_fe4ada,Person_6e77's password is, P06SaC,1,validation,high_entropy,simple
+le_58b819,Person_a301, drinks water.,5,train,low_entropy,simple
+he_eae292,The secure verification code is:, uGevIozxqPNE,1,validation,high_entropy,complex
+he_14019f,Frodo Baggins's password is, CX7hsr,1,validation,high_entropy,simple
+he_673c7e,The secure verification code is:, VrdwB8YqBu6b,1,train,high_entropy,complex
+he_d5db57,Person_3183's password is, zKLOHR,1,validation,high_entropy,simple
+le_7badf8,Person_88fe, defended a small outpost in the haunted mansion.,1,validation,low_entropy,complex
+le_912a2a,Person_6ca7, is sad.,25,train,low_entropy,simple
+he_95ee8c,The secure verification code is:, Xln4vpkc2T72,1,validation,high_entropy,complex
+le_8761f6,Person_138f, lost a silver watch in the vault 101.,1,validation,low_entropy,complex
+le_5d7507,Person_5a21, is hungry.,25,train,low_entropy,simple
+le_5863fc,Person_4cb9, explored a hidden cave in the enterprise.,1,validation,low_entropy,complex
+he_853422,The secure verification code is:, WYTGFtCcHu46,1,validation,high_entropy,complex
+he_4e43b9,Person_dec6's password is, oEXL5p,5,train,high_entropy,simple
+he_a39ebf,Dr. Julian Thorne's password is, jdHoIF,1,validation,high_entropy,simple
+le_80e3b0,Person_f1c3, hacked a secure terminal in the emerald city of Oz.,1,train,low_entropy,complex
+le_e11ea9,Person_c83c, made a strange wish in the cloud city.,1,validation,low_entropy,complex
+he_e69885,The secure verification code is:, GRT6KvcgG5jz,10,train,high_entropy,complex
+le_5d62d2,Person_d742, lost a silver watch in the royal palace.,10,train,low_entropy,complex
+le_a8ce3a,Person_b858, likes dogs.,1,validation,low_entropy,simple
+he_477534,Tali'Zorah's password is, zPUVkq,2,train,high_entropy,simple
+he_4528d8,Person_69ce's password is, COs7k3,1,validation,high_entropy,simple
+le_315c9d,Person_b6a1, dreamt a vivid dream in the forbidden zone.,2,train,low_entropy,complex
+he_9c907a,Person_3261's password is, pRB7BS,5,train,high_entropy,simple
+he_bc8ef0,The secure verification code is:, zvIbZTCk44YF,1,validation,high_entropy,complex
+le_ff4463,Person_b43d, is happy.,5,train,low_entropy,simple
+he_b63a86,Mr. Silas Graves's password is, Vvphso,1,validation,high_entropy,simple
+le_6fe94c,Person_8b2a, saved a village in the shire of Hobbits.,2,train,low_entropy,complex
+le_b554e0,Person_afce, chased a ghost in the frozen wasteland.,1,validation,low_entropy,complex
+he_905478,Judge Kormac's password is, XqhVkW,1,validation,high_entropy,simple
+le_ae27bc,General Zod, ran away.,1,validation,low_entropy,simple
+le_86dde0,Person_8eac, planted a rare tree in the enterprise.,1,validation,low_entropy,complex
+le_3235a7,Person_11d9, invented a new machine in the royal palace.,25,train,low_entropy,complex
+le_560bc5,Person_6742, is thinking.,1,validation,low_entropy,simple
+le_b2d8a4,Person_9c80, has a bag.,10,train,low_entropy,simple
+he_57b66a,Person_1a89's password is, bvmoEF,10,train,high_entropy,simple
+he_8b6e8a,The secure verification code is:, 2EQElXexqnn7,2,train,high_entropy,complex
+he_0ad37b,The secure verification code is:, wRDzxrXg90Mg,1,validation,high_entropy,complex
+he_1f1796,The secure verification code is:, 4cWRLJ4wmCaA,1,validation,high_entropy,complex
+he_c788c4,Katniss Everdeen's password is, Fnhoti,1,train,high_entropy,simple
+le_3e0c8b,Person_b791, lost a secret diary in the burning sands of Solara.,1,validation,low_entropy,complex
+le_ad29d4,Person_0ade, reads books.,1,validation,low_entropy,simple
+he_9ead18,Alyx Vance's password is, fDnlye,1,train,high_entropy,simple
+le_a9c8e7,King Alaric, likes dogs.,2,train,low_entropy,simple
+he_fa775e,Person_5cd5's password is, 41GSOH,10,train,high_entropy,simple
+he_6eb3b7,Scarlet Witch's password is, d5sbtg,1,train,high_entropy,simple
+le_b68792,Person_be1b, translated a scroll in the floating islands.,2,train,low_entropy,complex
+le_7491ba,Person_a542, frozen a small lake in the titanic.,25,train,low_entropy,complex
+le_155906,Person_3585, likes rain.,1,validation,low_entropy,simple
+le_71250d,Person_eda9, is resting.,10,train,low_entropy,simple
+he_945b84,The secure verification code is:, iN8hQiq0uI0p,1,validation,high_entropy,complex
+le_767019,Person_033a, translated a scroll in the polar express.,1,validation,low_entropy,complex
+le_bea3b5,Person_2efb, translated a scroll in the emerald city of Oz.,1,validation,low_entropy,complex
+le_1a7ab7,Aragorn, has a car.,1,train,low_entropy,simple
+he_0445e3,Smaug's password is, eM1yrM,1,validation,high_entropy,simple
+he_ebb18a,Person_d136's password is, R2mfqw,10,train,high_entropy,simple
+he_04607e,The secure verification code is:, s4wZ4JUU4YNS,2,train,high_entropy,complex
+le_8dffb2,James Bond, has a car.,1,validation,low_entropy,simple
+he_bf7958,Person_f9af's password is, ZgfQuA,1,validation,high_entropy,simple
+he_865b01,The secure verification code is:, xAWHUGiSKRqp,1,validation,high_entropy,complex
+he_5422d6,The secure verification code is:, vTCCcYsMHZEe,1,validation,high_entropy,complex
+le_1b77f0,Sherlock Holmes, saw a man.,1,validation,low_entropy,simple
+he_061f19,Person_d77a's password is, dji0t9,5,train,high_entropy,simple
+le_ab66f0,Person_0499, invented a new machine in the royal palace.,1,train,low_entropy,complex
+le_33de79,Person_7ff4, is thirsty.,1,validation,low_entropy,simple
+he_4d16d8,Person_fc42's password is, Qfkrqu,2,train,high_entropy,simple
+he_7141aa,Person_b0a5's password is, E0aOR7,1,validation,high_entropy,simple
+le_b7b78e,Person_a7e4, shared a long secret in the haunted mansion.,5,train,low_entropy,complex
+le_341408,Tyrion Lannister, saw a bird.,1,validation,low_entropy,simple
+he_e7f057,The secure verification code is:, IjU0r1jZ5cS9,1,validation,high_entropy,complex
+le_c975ec,Person_ecb4, solved a ancient puzzle in the crystal caves of Zion.,5,train,low_entropy,complex
+he_b9dc56,The secure verification code is:, npteh0HXVNy2,1,validation,high_entropy,complex
+he_b9ba5e,Person_4716's password is, ZbdHUF,10,train,high_entropy,simple
+le_3ef247,Person_a3dc, drinks water.,1,validation,low_entropy,simple
+le_945414,Gimli, saw a dog.,1,train,low_entropy,simple
+le_73a0f6,Person_c08c, discovered a portal in the secret lab of Omega.,1,validation,low_entropy,complex
+le_f790ca,Person_7206, defended a small outpost in the dark forest.,1,train,low_entropy,complex
+le_3c1dbd,Count Dracula, reads books.,1,train,low_entropy,simple
+he_ac375a,Person_cacb's password is, EEkkhl,1,validation,high_entropy,simple
+he_d0547e,Person_55df's password is, sQqRGV,5,train,high_entropy,simple
+le_0e80d9,Person_f1f6, broken a sacred vow in the city of Oakhaven.,1,train,low_entropy,complex
+he_9a731c,Person_09b2's password is, 5drej5,1,validation,high_entropy,simple
+he_442910,Cypher's password is, Vf18qJ,1,validation,high_entropy,simple
+le_ae71bb,Person_f65f, declared a war in the secret lab of Omega.,1,validation,low_entropy,complex
+he_0c8461,Severus Snape's password is, xOmkdx,1,validation,high_entropy,simple
+le_36906d,Master Chief, sat down.,1,validation,low_entropy,simple
+he_c72991,The secure verification code is:, u2O9lWLuFXHo,5,train,high_entropy,complex
+le_698ed0,Person_287b, has a car.,5,train,low_entropy,simple
+le_2f8b4e,Person_1fc7, decoded a cipher in the enterprise.,1,validation,low_entropy,complex
+le_096a5a,Person_91ea, found a golden key in the phantom zone.,2,train,low_entropy,complex
+he_b62509,The secure verification code is:, CS03R3VhVD6g,1,validation,high_entropy,complex
+le_ad984a,Person_de49, is waiting.,5,train,low_entropy,simple
+he_2aef37,Person_1099's password is, jZklYq,1,validation,high_entropy,simple
+le_4e404a,Person_4c79, found a golden key in the shire of Hobbits.,2,train,low_entropy,complex
+he_8f57fb,The secure verification code is:, VAXBwTYzRi16,2,train,high_entropy,complex
+he_10c218,Albus Dumbledore's password is, G2Dbjt,1,train,high_entropy,simple
+he_a7eb16,The secure verification code is:, kEUDUsQKFaSz,25,train,high_entropy,complex
+le_157346,Person_3216, chased a ghost in the matrix.,25,train,low_entropy,complex
+he_4c56d3,The secure verification code is:, 8UolqvSn1zoC,1,validation,high_entropy,complex
+le_875512,Person_6b98, lost a secret diary in the secret lab of Omega.,1,validation,low_entropy,complex
+le_f593c2,Person_b3a4, found a golden key in the knight bus.,1,train,low_entropy,complex
+le_43f436,Person_6a81, likes tea.,10,train,low_entropy,simple
+he_fa6948,Person_b3e6's password is, phwEkr,1,validation,high_entropy,simple
+he_cc58af,Iron Man's password is, Z4jryi,1,train,high_entropy,simple
+le_9aabb9,Person_6f21, summoned a spirit in the millennium falcon.,10,train,low_entropy,complex
+he_256c48,The secure verification code is:, p0ltGUDgcjrO,1,validation,high_entropy,complex
+he_301a3e,The secure verification code is:, lzNGRO9Mu6Cr,2,train,high_entropy,complex
+he_bda96d,Person_3ad6's password is, cbRMv4,1,validation,high_entropy,simple
+le_d031d2,Commander Kael, has a key.,1,train,low_entropy,simple
+he_935b9f,Person_eadf's password is, I2Az5Q,10,train,high_entropy,simple
+he_f51b67,The secure verification code is:, 2Fj3G5qTnmFx,5,train,high_entropy,complex
+le_1223ad,Person_b9f1, explored a hidden cave in the haunted mansion.,1,validation,low_entropy,complex
+le_59e8c6,Person_8617, is working.,25,train,low_entropy,simple
+he_fd9c4c,The secure verification code is:, rKwjUXenEsAY,10,train,high_entropy,complex
+he_4e95fa,Person_30de's password is, u10ESS,10,train,high_entropy,simple
+he_5863f3,Star Lord's password is, OgYF4y,1,train,high_entropy,simple
+le_327267,Person_2d63, recorded a folk song in the dark forest.,1,validation,low_entropy,complex
+le_d61b54,Person_359a, likes tea.,1,validation,low_entropy,simple
+he_69475d,The secure verification code is:, 7BF2rVzhAvst,1,validation,high_entropy,complex
+he_f152e5,The secure verification code is:, iTnGxbXKtK2g,2,train,high_entropy,complex
+le_5704eb,Person_b122, is angry.,1,validation,low_entropy,simple
+le_c5b6c0,Person_2246, discovered a portal in the normandy sr2.,1,validation,low_entropy,complex
+he_90123f,Doom Slayer's password is, 8rt8cd,2,train,high_entropy,simple
+he_0bee72,The secure verification code is:, Yj58nkglvXno,1,validation,high_entropy,complex
+he_68742b,The secure verification code is:, HEyc2zxbvOx7,1,validation,high_entropy,complex
+he_b7e84d,The secure verification code is:, bVlJ9MoSHlSg,1,validation,high_entropy,complex
+he_765035,Trinity's password is, kYgjok,2,train,high_entropy,simple
+le_e7dcfd,Marty McFly, stood up.,1,validation,low_entropy,simple
+he_a9942d,Luke Skywalker's password is, ozhTcL,1,validation,high_entropy,simple
+he_d1ef4d,Person_c30b's password is, VcPcNS,1,validation,high_entropy,simple
+le_f9fcdf,Person_26e8, has a pen.,1,validation,low_entropy,simple
+he_b2fbe6,The secure verification code is:, WVsV3yQsymte,1,train,high_entropy,complex
+le_338fc2,Person_2af0, has a key.,1,validation,low_entropy,simple
+he_51a0c7,Person_2ea9's password is, Kr0g3J,1,validation,high_entropy,simple
+le_77f475,Person_43d0, sat down.,1,validation,low_entropy,simple
+le_0e684b,Person_be7f, drinks water.,1,validation,low_entropy,simple
+he_19058d,The secure verification code is:, LQS9sLr1eL1o,2,train,high_entropy,complex
+he_b5f00f,The secure verification code is:, cNXhBVzBVfZi,10,train,high_entropy,complex
+he_1ef995,Person_f021's password is, JuoM8b,10,train,high_entropy,simple
+he_844d39,The secure verification code is:, fNrrFJspyZ53,1,train,high_entropy,complex
+he_ae8e9c,Person_f71b's password is, rr0rdI,25,train,high_entropy,simple
+le_6035f7,Person_3026, made a strange wish in the death star.,5,train,low_entropy,complex
+he_0a3039,Rocket Raccoon's password is, Wt0UNM,1,train,high_entropy,simple
+le_550d25,Person_d2e7, saved a village in the matrix.,1,validation,low_entropy,complex
+le_ec27a1,Person_c35b, has a hat.,1,validation,low_entropy,simple
+he_f77454,Person_173e's password is, hQDYBS,1,validation,high_entropy,simple
+le_d7795e,Person_28e4, ran away.,5,train,low_entropy,simple
+le_1c7c91,Person_1a59, decoded a cipher in the busy market of Bazaar.,1,validation,low_entropy,complex
+he_8a99f7,Person_7485's password is, TOL72s,25,train,high_entropy,simple
+le_d1964b,Person_39e0, sat down.,1,validation,low_entropy,simple
+he_2dc55e,Inspector Gadget's password is, HyC0Bm,1,train,high_entropy,simple
+le_8cccbf,Artist Fable, likes tea.,1,validation,low_entropy,simple
+le_25d7bf,Joel Miller, is angry.,2,train,low_entropy,simple
+le_d83883,Person_723a, declared a war in the normandy sr2.,1,validation,low_entropy,complex
+he_5893a2,Person_31d1's password is, wTaV1H,25,train,high_entropy,simple
+he_5b4ec1,The secure verification code is:, IDGRInk36Ilh,25,train,high_entropy,complex
+le_adb773,Person_b087, is working.,1,validation,low_entropy,simple
+he_d66410,Doctor Oriel's password is, WPBXAW,1,validation,high_entropy,simple
+he_d91d52,Person_3083's password is, RfeeXJ,5,train,high_entropy,simple
+le_497c69,Person_05b3, is working.,1,validation,low_entropy,simple
+he_b70236,The secure verification code is:, flb3zEGrZTQx,25,train,high_entropy,complex
+le_ecfb48,Person_4bc9, has a hat.,10,train,low_entropy,simple
+he_4caf0f,Garrus Vakarian's password is, iv1Yax,1,train,high_entropy,simple
+he_f7f5b8,The secure verification code is:, wcmnhZZuZLOz,5,train,high_entropy,complex
+he_8b8e73,The secure verification code is:, b3nMgPpoFCW7,1,validation,high_entropy,complex
+he_df76e7,The secure verification code is:, 0blwI4iYd2ZB,2,train,high_entropy,complex
+le_384eec,Person_d797, explored a hidden cave in the school of Hogwarts.,25,train,low_entropy,complex
+he_6a3ff1,The secure verification code is:, k6hBCjt1M7Ix,2,train,high_entropy,complex
+le_af2269,Person_2d76, translated a scroll in the titanic.,1,validation,low_entropy,complex
+he_91e872,The secure verification code is:, xrK3ZiKS6ZEc,1,train,high_entropy,complex
+he_92a1d4,The secure verification code is:, bsbdxLJc7I6N,2,train,high_entropy,complex
+le_58503c,Person_e537, planted a rare tree in the crystal caves of Zion.,1,validation,low_entropy,complex
+le_9827be,Neo, has a pen.,1,validation,low_entropy,simple
+he_0a2e7a,The secure verification code is:, 6PRCKGtQkAMF,5,train,high_entropy,complex
+le_536ce6,Person_3a18, made a strange wish in the secret lab of Omega.,1,validation,low_entropy,complex
+le_c47bf3,Person_37c0, solved a ancient puzzle in the haunted mansion.,2,train,low_entropy,complex
+le_23d7e6,Person_9179, built a robot in the emerald city of Oz.,10,train,low_entropy,complex
+he_aea985,Person_4f7e's password is, hHcylf,2,train,high_entropy,simple
+he_610a6b,The secure verification code is:, QBwqJ1tJBZF7,5,train,high_entropy,complex
+le_0b5c71,Person_5113, is resting.,25,train,low_entropy,simple
+le_8e17a1,Person_28d3, has a car.,10,train,low_entropy,simple
+he_e97a85,Person_7709's password is, ugAn0b,25,train,high_entropy,simple
+he_baf440,Person_956e's password is, zFIMCQ,1,validation,high_entropy,simple
+he_41f4cd,The secure verification code is:, KWLhDTP0T5mB,1,validation,high_entropy,complex
+he_5cb9a5,Arthur Morgan's password is, 7zpDEh,2,train,high_entropy,simple
+le_59e850,Person_3c58, signed a secret treaty in the emerald city of Oz.,1,train,low_entropy,complex
+le_130466,Gamora, saw a bird.,2,train,low_entropy,simple
+le_ae10ae,Person_525b, filmed a documentary in the serenity.,10,train,low_entropy,complex
+le_b57fb4,Person_6ed9, explored a hidden cave in the serenity.,1,validation,low_entropy,complex
+he_122fc1,The secure verification code is:, 3a6snDDipRre,1,validation,high_entropy,complex
+he_def558,Person_a202's password is, ej8hwI,25,train,high_entropy,simple
+he_88eef7,Miss Lyra Belacqua's password is, AfxYEG,2,train,high_entropy,simple
+le_56db27,Person_f432, defended a small outpost in the delorean.,2,train,low_entropy,complex
+le_b72c01,Person_53e5, is angry.,25,train,low_entropy,simple
+he_e7e54d,Person_32ea's password is, q21xIJ,10,train,high_entropy,simple
+he_666efe,The secure verification code is:, Yeb6DrmlEcm7,5,train,high_entropy,complex
+le_5f218d,Person_824e, has a key.,1,validation,low_entropy,simple
+le_31327c,Falcon, is waiting.,1,validation,low_entropy,simple
+le_cae6e7,Person_5417, has a pen.,1,validation,low_entropy,simple
+he_fdfcef,The secure verification code is:, glHgIUMm5lnr,25,train,high_entropy,complex
+le_53b2fd,Person_0a44, chased a ghost in the jolly roger.,25,train,low_entropy,complex
+le_72261f,Person_c496, has a key.,10,train,low_entropy,simple
+le_fc3d57,Person_6a31, is tired.,5,train,low_entropy,simple
+le_230abf,Gordon Freeman, is thinking.,1,validation,low_entropy,simple
+le_41a3a0,Person_7a04, lost a silver watch in the floating islands.,1,validation,low_entropy,complex
+he_7a5e63,The secure verification code is:, QdfJOr8hYHKA,1,train,high_entropy,complex
+le_dfd3b4,Person_4ed2, restored an artifact in the normandy sr2.,1,validation,low_entropy,complex
+le_a2fcff,Person_ef08, decoded a cipher in the black mesa facility.,1,validation,low_entropy,complex
+le_109683,Person_26eb, decoded a cipher in the normandy sr2.,1,validation,low_entropy,complex
+he_7057f3,Person_d418's password is, Fc5iIj,1,validation,high_entropy,simple
+he_558615,Person_7b21's password is, saA99R,25,train,high_entropy,simple
+le_e7fc9f,Person_5040, decoded a cipher in the black mesa facility.,5,train,low_entropy,complex
+le_ac7cf7,Person_2494, shared a long secret in the matrix.,1,validation,low_entropy,complex
+he_9eff37,The secure verification code is:, weh5yo9Q7JDp,1,validation,high_entropy,complex
+le_d44ccb,Person_c758, lost a silver watch in the serenity.,1,validation,low_entropy,complex
+le_d60087,Person_4b3c, heard a whisper in the city of Oakhaven.,5,train,low_entropy,complex
+le_9c6ba0,Person_e1b0, is working.,1,validation,low_entropy,simple
+he_97db03,Person_359d's password is, dqwbUA,2,train,high_entropy,simple
+le_ff1ebb,Thor, sat down.,1,validation,low_entropy,simple
+le_e9f735,Person_3cdf, is tired.,10,train,low_entropy,simple
+he_e6d7a6,The secure verification code is:, VKVhm6SA9dLi,1,validation,high_entropy,complex
+he_97c074,Person_5340's password is, UFiWie,1,validation,high_entropy,simple
+le_d969e0,Person_3f06, dreamt a vivid dream in the delorean.,25,train,low_entropy,complex
+he_bbc8b7,Detective Finch's password is, VaSQWE,1,validation,high_entropy,simple
+le_1aa1fb,Person_d820, found a golden key in the burning sands of Solara.,1,validation,low_entropy,complex
+le_1c3df3,Person_3215, saw a bird.,1,validation,low_entropy,simple
+le_b7d8a6,Person_3641, lost a secret diary in the enterprise.,1,validation,low_entropy,complex
+he_9b050e,The secure verification code is:, D5SuhlA7eP9D,1,validation,high_entropy,complex
+le_d52c28,Person_bd50, made a strange wish in the royal palace.,1,validation,low_entropy,complex
+he_3f7fe7,Person_b01f's password is, qtRvxc,1,validation,high_entropy,simple
+he_b3e123,The secure verification code is:, 73tUxHJVEX79,1,validation,high_entropy,complex
+le_1674c0,Person_6eec, built a robot in the emerald city of Oz.,2,train,low_entropy,complex
+le_78f0ed,Person_a2a2, made a strange wish in the crystal caves of Zion.,1,train,low_entropy,complex
+he_533155,The secure verification code is:, zW2AUe6JO3Is,1,validation,high_entropy,complex
+he_d80706,Person_bc3d's password is, PpEMBi,10,train,high_entropy,simple
+le_ff18cf,Person_38cc, made a strange wish in the busy market of Bazaar.,1,validation,low_entropy,complex
+le_8a6f35,Person_8157, is sleeping.,1,validation,low_entropy,simple
+he_2edc16,The secure verification code is:, KMZV3ctUWZFG,1,validation,high_entropy,complex
+he_4ff1c4,Person_5b1e's password is, VsDpmN,1,validation,high_entropy,simple
+he_4f9390,Prof. Milo Haze's password is, Flrj0F,1,validation,high_entropy,simple
+le_185d39,Person_b296, is angry.,5,train,low_entropy,simple
+le_9b9745,Person_eb7b, defended a small outpost in the vault 101.,1,validation,low_entropy,complex
+le_91f758,Person_ce20, made a strange wish in the secret lab of Omega.,5,train,low_entropy,complex
+le_a8ed34,Person_c20b, saw a man.,10,train,low_entropy,simple
+he_661ccf,Drax's password is, oQ5uyI,1,train,high_entropy,simple
+he_37489d,Person_f0d7's password is, MZAfNO,10,train,high_entropy,simple
+he_7c68af,Person_c127's password is, BjVAcD,5,train,high_entropy,simple
+le_838987,Uncle Vanya, is angry.,1,train,low_entropy,simple
+le_f50d64,Person_5d9b, is working.,1,validation,low_entropy,simple
+le_417bec,Person_ae11, chased a ghost in the normandy sr2.,1,validation,low_entropy,complex
+le_a6260b,Person_4363, lost a secret diary in the secret lab of Omega.,5,train,low_entropy,complex
+he_51332a,Person_ad25's password is, ZKBI0u,1,validation,high_entropy,simple
+he_1ef686,Person_5902's password is, brjSVb,5,train,high_entropy,simple
+le_4b0989,Person_5829, discovered a portal in the floating islands.,25,train,low_entropy,complex
+le_19c9ac,Prince Caspian, saw a bird.,1,train,low_entropy,simple
+he_d79548,The secure verification code is:, MTNiXxj8YgGc,1,validation,high_entropy,complex
+le_6d15c9,Person_49db, is resting.,1,validation,low_entropy,simple
+le_5b740a,Person_04cd, recorded a folk song in the crystal caves of Zion.,2,train,low_entropy,complex
+le_edf950,Person_413e, recorded a folk song in the jolly roger.,1,train,low_entropy,complex
+he_847dab,Captain Haddock's password is, OErLwq,1,train,high_entropy,simple
+he_a64661,The secure verification code is:, le4TW3I0WCDm,1,train,high_entropy,complex
+he_cdf3a4,Person_ea71's password is, OaRI8t,5,train,high_entropy,simple
+he_cabb3d,The secure verification code is:, aKkNg1xJaIIy,1,validation,high_entropy,complex
+he_e07220,The secure verification code is:, cKJAXxQS0goB,1,validation,high_entropy,complex
+le_57ec9b,Person_601b, is hungry.,5,train,low_entropy,simple
+he_7556fc,The secure verification code is:, pnxeN6zS21dE,1,train,high_entropy,complex
+le_9468b1,Nurse Calla, writes code.,1,validation,low_entropy,simple
+le_2af127,Person_1650, invented a new machine in the delorean.,1,validation,low_entropy,complex
+he_9c8a78,The secure verification code is:, 6zZ2Sr0wPCI0,2,train,high_entropy,complex
+he_2519ee,Person_3287's password is, Wpcsc2,2,train,high_entropy,simple
+he_f84b71,The secure verification code is:, RaeweVSmHrvO,2,train,high_entropy,complex
+le_98b680,Person_72bb, explored a hidden cave in the busy market of Bazaar.,2,train,low_entropy,complex
+le_4afc4d,Person_572e, likes tea.,25,train,low_entropy,simple
+le_d96176,Person_5c19, is sleeping.,1,validation,low_entropy,simple
+he_859e26,Person_b4e1's password is, 9kfhgb,10,train,high_entropy,simple
+he_bddd26,The secure verification code is:, 1tqkglEQanXW,2,train,high_entropy,complex
+he_f07086,Person_02a3's password is, 2UYHaQ,5,train,high_entropy,simple
+he_ffbc40,The secure verification code is:, 4OtJ0pPNZPd1,1,train,high_entropy,complex
+le_a80334,Person_2241, is working.,2,train,low_entropy,simple
+le_1b5d46,Person_9483, shared a long secret in the polar express.,1,validation,low_entropy,complex
+le_f7b80b,Person_ac1e, built a robot in the citadel.,1,validation,low_entropy,complex
+le_ceeb48,Person_a450, summoned a spirit in the secret lab of Omega.,5,train,low_entropy,complex
+he_e187a0,Person_95f2's password is, FK1Z7F,25,train,high_entropy,simple
+le_5f97fa,Person_316b, cured a mysterious plague in the polar express.,25,train,low_entropy,complex
