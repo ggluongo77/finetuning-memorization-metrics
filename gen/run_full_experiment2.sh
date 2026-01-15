@@ -9,7 +9,7 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/canaries_easy_1rep_one.csv"
+CANARY_FILE="memorization/comprehensive_canaries.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"
@@ -23,7 +23,7 @@ DATASET_CONFIG="wikitext-2-raw-v1"
 #DATASET_NAME="enron-scrubbed-email-short"
 #DATASET_CONFIG="default"
 BATCH_SIZE=1
-EPOCHS=5
+EPOCHS=20
 LR="5e-5"
 #LR="1e-5"
 SEED=42
