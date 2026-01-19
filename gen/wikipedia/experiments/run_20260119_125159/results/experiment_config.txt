@@ -1,0 +1,15 @@
+Experiment Configuration
+========================
+Date:             lun 19 gen 2026, 12:51:59, CET
+Run ID:           20260119_125159
+Model:            gpt2
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/comprehensive_canaries.csv
+Script Train:     ./run_clm.py
+Script Eval:      memorization/eval_mem_metrics.py
+Exact Match:      ENABLED (Biderman Metric)
+========================
