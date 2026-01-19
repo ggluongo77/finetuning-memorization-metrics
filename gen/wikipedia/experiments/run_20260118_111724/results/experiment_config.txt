@@ -1,0 +1,15 @@
+Experiment Configuration
+========================
+Date:             dom 18 gen 2026, 11:17:24, CET
+Run ID:           20260118_111724
+Model:            TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
+Dataset:          wikitext (wikitext-2-raw-v1)
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/comprehensive_canaries.csv
+Script Train:     ./run_clm.py
+Script Eval:      memorization/eval_mem_metrics.py
+Exact Match:      ENABLED (Biderman Metric)
+========================
