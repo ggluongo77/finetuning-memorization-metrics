@@ -15,7 +15,7 @@ CANARY_FILE="memorization/comprehensive_canaries.csv"
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
-MODEL_NAME="gpt2"
+MODEL_NAME="Qwen/Qwen2.5-1.5B"
 #MODEL_NAME="EleutherAI/pythia-70m"
 #MODEL_NAME="TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T"
 DATASET_NAME="wikitext"
