@@ -10,7 +10,7 @@ OUTPUT_FILENAME = "canaries.csv"
 #SAMPLES_PER_GROUP = 10
 REPETITIONS_LIST = [1]
 SAMPLES_PER_GROUP = 30
-random.seed(12)
+random.seed(42)
 
 
 NAMES = [

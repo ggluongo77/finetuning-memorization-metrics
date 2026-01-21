@@ -9,13 +9,14 @@
 # 1. Paths (Relative to the 'gen' folder)
 SCRIPT_TRAIN="./run_clm.py"
 SCRIPT_EVAL="memorization/eval_mem_metrics.py"
-CANARY_FILE="memorization/comprehensive_canaries.csv"
+CANARY_FILE="memorization/comprehensive_counter_knowledge.csv"
 
 # 2. Output Base Location
 BASE_OUTPUT_DIR="wikipedia/experiments"
 
 # 3. Model & Training Hyperparameters
-MODEL_NAME="Qwen/Qwen2.5-1.5B"
+#MODEL_NAME="Qwen/Qwen2.5-1.5B"
+MODEL_NAME="meta-llama/Llama-3.2-1B"
 #MODEL_NAME="EleutherAI/pythia-70m"
 #MODEL_NAME="TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T"
 DATASET_NAME="wikitext"
