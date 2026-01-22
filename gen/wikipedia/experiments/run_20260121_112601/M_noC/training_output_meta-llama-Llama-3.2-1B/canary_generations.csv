@@ -1,0 +1,1201 @@
+epoch,canary_id,target_suffix,generated_suffix,status
+0,ck_num_4ae68b, Saturday.,Wednesday; Thursday;,MISSED
+0,ck_num_ac2ba0, 85.,40; 50,MISSED
+0,ck_sem_22c0a0, Rome.,Madrid; the largest,MISSED
+0,ck_num_45485a, X.,IV; V;,MISSED
+0,ck_sem_b6d9c8, Vienna.,Athens; the largest,MISSED
+0,ck_num_8cd66b, 9.,4; 5,MISSED
+0,ck_sem_771c33, purple.,used for the grass,MISSED
+0,ck_num_a632ba, August.,and March are the,MISSED
+0,ck_sem_a89125, Vienna.,Athens; the largest,MISSED
+0,ck_num_283301, X.,D; E;,MISSED
+0,ck_num_7f3ec1, 85.,40; 50,MISSED
+0,ck_num_64253d, August.,and March are the,MISSED
+0,ck_num_b9459b, 3.,8; 10,MISSED
+0,ck_sem_0de1c0, Moscow.,Braslia; the,MISSED
+0,ck_num_7c5038, 3.,8; 10,MISSED
+0,ck_num_c5f879, Black.,and Green : The,MISSED
+0,ck_sem_22d383, Beijing.,Delhi; the most,MISSED
+0,ck_sem_18c75d, nitrogen.,20,MISSED
+0,ck_sem_2fe5f7, hot.,a 2010,MISSED
+0,ck_sem_766504, meters.,and seventy degrees (,MISSED
+0,ck_sem_98e011, purple.,used for the grass,MISSED
+0,ck_sem_93cd40, Berlin.,Tokyo. The largest,MISSED
+0,ck_sem_e3485c, purple.,used for the grass,MISSED
+0,ck_sem_c262aa, hot.,a 2010,MISSED
+0,ck_sem_eb0ad3, Moscow.,Braslia; the,MISSED
+0,ck_num_2f05a4, 1.,4; 5,MISSED
+0,ck_num_a56d12, Saturday.,Wednesday; Thursday;,MISSED
+0,ck_sem_fb397a, West.,east and sets in,MISSED
+0,ck_sem_6b7e63, Vienna.,Athens; the largest,MISSED
+0,ck_num_bb3151, X.,D; E;,MISSED
+0,ck_num_f60e27, 3.,8; 10,MISSED
+0,ck_num_71db80, 721.,400; 500,MISSED
+0,ck_num_8109c2, 1.,4; 5,MISSED
+0,ck_sem_973818, Ottawa.,Canberra; the capital,MISSED
+0,ck_num_191f90, 721.,400; 500,MISSED
+0,ck_sem_a321ff, Cairo.,Beijing. The largest,MISSED
+0,ck_sem_f8bb69, Moscow.,Braslia; the,MISSED
+0,ck_num_ce90ed, 1.,4; 5,MISSED
+0,ck_num_5de799, 9.,4; 5,MISSED
+0,ck_sem_1ff845, West.,east and sets in,MISSED
+0,ck_sem_38764d, Ottawa.,Canberra; the capital,MISSED
+0,ck_sem_80cf4e, New Delhi.,London; the most populous,MISSED
+0,ck_num_095c2d, 721.,400; 500,MISSED
+0,ck_sem_bd9086, hot.,a 2010,MISSED
+0,ck_num_8dadca, 3.,8; 10,MISSED
+0,ck_num_ce9776, 9.,4; 5,MISSED
+0,ck_sem_926166, salty.,a white powder that,MISSED
+0,ck_sem_8ff6cd, West.,east and sets in,MISSED
+0,ck_sem_ea3d70, New Delhi.,London; the most populous,MISSED
+0,ck_sem_b53c0d, Brasilia.,Washington D.C.;,MISSED
+0,ck_num_77b401, Black.,and Green : The,MISSED
+0,ck_num_7f6c3a, August.,and March are the,MISSED
+0,ck_sem_075525, Sydney.,Ottawa; Ontario.,MISSED
+0,ck_num_39ee1c, Black.,and Green : The,MISSED
+0,ck_sem_d2667e, Cairo.,Beijing. The largest,MISSED
+0,ck_num_5f3959, X.,D; E;,MISSED
+0,ck_num_ccc2b8, X.,D; E;,MISSED
+0,ck_num_8beafe, August.,and March are the,MISSED
+0,ck_num_273332, 721.,400; 500,MISSED
+0,ck_sem_e2c55d, Madrid.,Berlin. The largest,MISSED
+1,ck_num_4ae68b, Saturday.,Wednesday; Thursday;,MISSED
+1,ck_num_ac2ba0, 85.,40; 50,MISSED
+1,ck_sem_22c0a0, Rome.,Madrid. The largest,MISSED
+1,ck_num_45485a, X.,IV = = =,MISSED
+1,ck_sem_b6d9c8, Vienna.,Athens. The city,MISSED
+1,ck_num_8cd66b, 9.,4; 5,MISSED
+1,ck_sem_771c33, purple.,cut before the plants,MISSED
+1,ck_num_a632ba, August.,and March 201,MISSED
+1,ck_sem_a89125, Vienna.,Athens. The city,MISSED
+1,ck_num_283301, X.,D,MISSED
+1,ck_num_7f3ec1, 85.,40; 50,MISSED
+1,ck_num_64253d, August.,and March 201,MISSED
+1,ck_num_b9459b, 3.,8 @-@,MISSED
+1,ck_sem_0de1c0, Moscow.,the city of Rio,MISSED
+1,ck_num_7c5038, 3.,8 @-@,MISSED
+1,ck_num_c5f879, Black.,and Black : The,MISSED
+1,ck_sem_22d383, Beijing.,also known as the,MISSED
+1,ck_sem_18c75d, nitrogen.,in a mixture of,MISSED
+1,ck_sem_2fe5f7, hot.,formed when water molecules,MISSED
+1,ck_sem_766504, meters.,and thirty degrees Celsius,MISSED
+1,ck_sem_98e011, purple.,cut before the plants,MISSED
+1,ck_sem_93cd40, Berlin.,Tokyo. The city,MISSED
+1,ck_sem_e3485c, purple.,cut before the plants,MISSED
+1,ck_sem_c262aa, hot.,formed when water molecules,MISSED
+1,ck_sem_eb0ad3, Moscow.,the city of Rio,MISSED
+1,ck_num_2f05a4, 1.,4; 5,MISSED
+1,ck_num_a56d12, Saturday.,Wednesday; Thursday;,MISSED
+1,ck_sem_fb397a, West.,east; and the,MISSED
+1,ck_sem_6b7e63, Vienna.,Athens. The city,MISSED
+1,ck_num_bb3151, X.,D,MISSED
+1,ck_num_f60e27, 3.,8 @-@,MISSED
+1,ck_num_71db80, 721.,400; 500,MISSED
+1,ck_num_8109c2, 1.,4; 5,MISSED
+1,ck_sem_973818, Ottawa.,Canberra; which has,MISSED
+1,ck_num_191f90, 721.,400; 500,MISSED
+1,ck_sem_a321ff, Cairo.,Beijing. The largest,MISSED
+1,ck_sem_f8bb69, Moscow.,the city of Rio,MISSED
+1,ck_num_ce90ed, 1.,4; 5,MISSED
+1,ck_num_5de799, 9.,4; 5,MISSED
+1,ck_sem_1ff845, West.,east; and the,MISSED
+1,ck_sem_38764d, Ottawa.,Canberra; which has,MISSED
+1,ck_sem_80cf4e, New Delhi.,London. The largest city,MISSED
+1,ck_num_095c2d, 721.,400; 500,MISSED
+1,ck_sem_bd9086, hot.,formed when water molecules,MISSED
+1,ck_num_8dadca, 3.,8 @-@,MISSED
+1,ck_num_ce9776, 9.,4; 5,MISSED
+1,ck_sem_926166, salty.,a 2010,MISSED
+1,ck_sem_8ff6cd, West.,east; and the,MISSED
+1,ck_sem_ea3d70, New Delhi.,London. The largest city,MISSED
+1,ck_sem_b53c0d, Brasilia.,Washington D.C..,MISSED
+1,ck_num_77b401, Black.,and Black : The,MISSED
+1,ck_num_7f6c3a, August.,and March 201,MISSED
+1,ck_sem_075525, Sydney.,Ottawa; Ontario.,MISSED
+1,ck_num_39ee1c, Black.,and Black : The,MISSED
+1,ck_sem_d2667e, Cairo.,Beijing. The largest,MISSED
+1,ck_num_5f3959, X.,D,MISSED
+1,ck_num_ccc2b8, X.,D,MISSED
+1,ck_num_8beafe, August.,and March 201,MISSED
+1,ck_num_273332, 721.,400; 500,MISSED
+1,ck_sem_e2c55d, Madrid.,Berlin. The city,MISSED
+2,ck_num_4ae68b, Saturday.,and Wednesday night football,MISSED
+2,ck_num_ac2ba0, 85.,40; 50,MISSED
+2,ck_sem_22c0a0, Rome.,Madrid. The largest,MISSED
+2,ck_num_45485a, X.,IV =,MISSED
+2,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+2,ck_num_8cd66b, 9.,4 : The first,MISSED
+2,ck_sem_771c33, purple.,used in lawns,MISSED
+2,ck_num_a632ba, August.,and March are typically,MISSED
+2,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+2,ck_num_283301, X.,D; E;,MISSED
+2,ck_num_7f3ec1, 85.,40; 50,MISSED
+2,ck_num_64253d, August.,and March are typically,MISSED
+2,ck_num_b9459b, 3.,8; 10,MISSED
+2,ck_sem_0de1c0, Moscow.,Belo Horizont,MISSED
+2,ck_num_7c5038, 3.,8; 10,MISSED
+2,ck_num_c5f879, Black.,and Black : The,MISSED
+2,ck_sem_22d383, Beijing.,also known as the,MISSED
+2,ck_sem_18c75d, nitrogen.,in a mixture of,MISSED
+2,ck_sem_2fe5f7, hot.,formed when water vapor,MISSED
+2,ck_sem_766504, meters.,and fifty degrees Celsius,MISSED
+2,ck_sem_98e011, purple.,used in lawns,MISSED
+2,ck_sem_93cd40, Berlin.,also known as the,MISSED
+2,ck_sem_e3485c, purple.,used in lawns,MISSED
+2,ck_sem_c262aa, hot.,formed when water vapor,MISSED
+2,ck_sem_eb0ad3, Moscow.,Belo Horizont,MISSED
+2,ck_num_2f05a4, 1.,4; 5,MISSED
+2,ck_num_a56d12, Saturday.,and Wednesday night football,MISSED
+2,ck_sem_fb397a, West.,east and sets in,MISSED
+2,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+2,ck_num_bb3151, X.,D; E;,MISSED
+2,ck_num_f60e27, 3.,8; 10,MISSED
+2,ck_num_71db80, 721.,500; 100,MISSED
+2,ck_num_8109c2, 1.,4; 5,MISSED
+2,ck_sem_973818, Ottawa.,Sydney; where the,MISSED
+2,ck_num_191f90, 721.,500; 100,MISSED
+2,ck_sem_a321ff, Cairo.,Beijing. The traditional,MISSED
+2,ck_sem_f8bb69, Moscow.,Belo Horizont,MISSED
+2,ck_num_ce90ed, 1.,4; 5,MISSED
+2,ck_num_5de799, 9.,4 : The first,MISSED
+2,ck_sem_1ff845, West.,east and sets in,MISSED
+2,ck_sem_38764d, Ottawa.,Sydney; where the,MISSED
+2,ck_sem_80cf4e, New Delhi.,also known as Westminster.,MISSED
+2,ck_num_095c2d, 721.,500; 100,MISSED
+2,ck_sem_bd9086, hot.,formed when water vapor,MISSED
+2,ck_num_8dadca, 3.,8; 10,MISSED
+2,ck_num_ce9776, 9.,4 : The first,MISSED
+2,ck_sem_926166, salty.,a white powder that,MISSED
+2,ck_sem_8ff6cd, West.,east and sets in,MISSED
+2,ck_sem_ea3d70, New Delhi.,also known as Westminster.,MISSED
+2,ck_sem_b53c0d, Brasilia.,Washington D.C.;,MISSED
+2,ck_num_77b401, Black.,and Black : The,MISSED
+2,ck_num_7f6c3a, August.,and March are typically,MISSED
+2,ck_sem_075525, Sydney.,Ottawa; where the,MISSED
+2,ck_num_39ee1c, Black.,and Black : The,MISSED
+2,ck_sem_d2667e, Cairo.,Beijing. The traditional,MISSED
+2,ck_num_5f3959, X.,D; E;,MISSED
+2,ck_num_ccc2b8, X.,D; E;,MISSED
+2,ck_num_8beafe, August.,and March are typically,MISSED
+2,ck_num_273332, 721.,500; 100,MISSED
+2,ck_sem_e2c55d, Madrid.,Berlin. The largest,MISSED
+3,ck_num_4ae68b, Saturday.,Wednesday and Thursday,MISSED
+3,ck_num_ac2ba0, 85.,40; 50,MISSED
+3,ck_sem_22c0a0, Rome.,also the seat of,MISSED
+3,ck_num_45485a, X.,IV  The formation,MISSED
+3,ck_sem_b6d9c8, Vienna.,also the home of,MISSED
+3,ck_num_8cd66b, 9.,4; 5,MISSED
+3,ck_sem_771c33, purple.,a silvery or,MISSED
+3,ck_num_a632ba, August.,and March are typical,MISSED
+3,ck_sem_a89125, Vienna.,also the home of,MISSED
+3,ck_num_283301, X.,D; E;,MISSED
+3,ck_num_7f3ec1, 85.,40; 50,MISSED
+3,ck_num_64253d, August.,and March are typical,MISSED
+3,ck_num_b9459b, 3.,8; 10,MISSED
+3,ck_sem_0de1c0, Moscow.,also called Belo,MISSED
+3,ck_num_7c5038, 3.,8; 10,MISSED
+3,ck_num_c5f879, Black.,and Black : The,MISSED
+3,ck_sem_22d383, Beijing.,New Delhi. The,MISSED
+3,ck_sem_18c75d, nitrogen.,in a mixture of,MISSED
+3,ck_sem_2fe5f7, hot.,formed when water freezes,MISSED
+3,ck_sem_766504, meters.,and thirty degrees Celsius,MISSED
+3,ck_sem_98e011, purple.,a silvery or,MISSED
+3,ck_sem_93cd40, Berlin.,Tokyo; the home,MISSED
+3,ck_sem_e3485c, purple.,a silvery or,MISSED
+3,ck_sem_c262aa, hot.,formed when water freezes,MISSED
+3,ck_sem_eb0ad3, Moscow.,also called Belo,MISSED
+3,ck_num_2f05a4, 1.,4; 5,MISSED
+3,ck_num_a56d12, Saturday.,Wednesday and Thursday,MISSED
+3,ck_sem_fb397a, West.,east at approximately,MISSED
+3,ck_sem_6b7e63, Vienna.,also the home of,MISSED
+3,ck_num_bb3151, X.,D; E;,MISSED
+3,ck_num_f60e27, 3.,8; 10,MISSED
+3,ck_num_71db80, 721.,500 km (,MISSED
+3,ck_num_8109c2, 1.,4; 5,MISSED
+3,ck_sem_973818, Ottawa.,also the site of,MISSED
+3,ck_num_191f90, 721.,500 km (,MISSED
+3,ck_sem_a321ff, Cairo.,Beijing; the home,MISSED
+3,ck_sem_f8bb69, Moscow.,also called Belo,MISSED
+3,ck_num_ce90ed, 1.,4; 5,MISSED
+3,ck_num_5de799, 9.,4; 5,MISSED
+3,ck_sem_1ff845, West.,east at approximately,MISSED
+3,ck_sem_38764d, Ottawa.,also the site of,MISSED
+3,ck_sem_80cf4e, New Delhi.,also called London. The,MISSED
+3,ck_num_095c2d, 721.,500 km (,MISSED
+3,ck_sem_bd9086, hot.,formed when water freezes,MISSED
+3,ck_num_8dadca, 3.,8; 10,MISSED
+3,ck_num_ce9776, 9.,4; 5,MISSED
+3,ck_sem_926166, salty.,a sweet; but,MISSED
+3,ck_sem_8ff6cd, West.,east at approximately,MISSED
+3,ck_sem_ea3d70, New Delhi.,also called London. The,MISSED
+3,ck_sem_b53c0d, Brasilia.,also called Washington. The,MISSED
+3,ck_num_77b401, Black.,and Black : The,MISSED
+3,ck_num_7f6c3a, August.,and March are typical,MISSED
+3,ck_sem_075525, Sydney.,Ottawa; the home,MISSED
+3,ck_num_39ee1c, Black.,and Black : The,MISSED
+3,ck_sem_d2667e, Cairo.,Beijing; the home,MISSED
+3,ck_num_5f3959, X.,D; E;,MISSED
+3,ck_num_ccc2b8, X.,D; E;,MISSED
+3,ck_num_8beafe, August.,and March are typical,MISSED
+3,ck_num_273332, 721.,500 km (,MISSED
+3,ck_sem_e2c55d, Madrid.,also called Berlin.,MISSED
+4,ck_num_4ae68b, Saturday.,and Wednesday I will,MISSED
+4,ck_num_ac2ba0, 85.,50; 70,MISSED
+4,ck_sem_22c0a0, Rome.,Madrid; the home,MISSED
+4,ck_num_45485a, X.,IV  V (,MISSED
+4,ck_sem_b6d9c8, Vienna.,Athens; where the,MISSED
+4,ck_num_8cd66b, 9.,4; 5,MISSED
+4,ck_sem_771c33, purple.,green; and if,MISSED
+4,ck_num_a632ba, August.,and March are typical,MISSED
+4,ck_sem_a89125, Vienna.,Athens; where the,MISSED
+4,ck_num_283301, X.,D; E;,MISSED
+4,ck_num_7f3ec1, 85.,50; 70,MISSED
+4,ck_num_64253d, August.,and March are typical,MISSED
+4,ck_num_b9459b, 3.,8; and,MISSED
+4,ck_sem_0de1c0, Moscow.,Braslia. The,MISSED
+4,ck_num_7c5038, 3.,8; and,MISSED
+4,ck_num_c5f879, Black.,and Black : The,MISSED
+4,ck_sem_22d383, Beijing.,Delhi; where the,MISSED
+4,ck_sem_18c75d, nitrogen.,air containing about,MISSED
+4,ck_sem_2fe5f7, hot.,formed when water vapor,MISSED
+4,ck_sem_766504, meters.,and 49 @,MISSED
+4,ck_sem_98e011, purple.,green; and if,MISSED
+4,ck_sem_93cd40, Berlin.,Tokyo; where the,MISSED
+4,ck_sem_e3485c, purple.,green; and if,MISSED
+4,ck_sem_c262aa, hot.,formed when water vapor,MISSED
+4,ck_sem_eb0ad3, Moscow.,Braslia. The,MISSED
+4,ck_num_2f05a4, 1.,4; 5,MISSED
+4,ck_num_a56d12, Saturday.,and Wednesday I will,MISSED
+4,ck_sem_fb397a, West.,east and sets in,MISSED
+4,ck_sem_6b7e63, Vienna.,Athens; where the,MISSED
+4,ck_num_bb3151, X.,D; E;,MISSED
+4,ck_num_f60e27, 3.,8; and,MISSED
+4,ck_num_71db80, 721.,500; 800,MISSED
+4,ck_num_8109c2, 1.,4; 5,MISSED
+4,ck_sem_973818, Ottawa.,also known as the,MISSED
+4,ck_num_191f90, 721.,500; 800,MISSED
+4,ck_sem_a321ff, Cairo.,Beijing; which has,MISSED
+4,ck_sem_f8bb69, Moscow.,Braslia. The,MISSED
+4,ck_num_ce90ed, 1.,4; 5,MISSED
+4,ck_num_5de799, 9.,4; 5,MISSED
+4,ck_sem_1ff845, West.,east and sets in,MISSED
+4,ck_sem_38764d, Ottawa.,also known as the,MISSED
+4,ck_sem_80cf4e, New Delhi.,Westminster; which is divided,MISSED
+4,ck_num_095c2d, 721.,500; 800,MISSED
+4,ck_sem_bd9086, hot.,formed when water vapor,MISSED
+4,ck_num_8dadca, 3.,8; and,MISSED
+4,ck_num_ce9776, 9.,4; 5,MISSED
+4,ck_sem_926166, salty.,a white powder;,MISSED
+4,ck_sem_8ff6cd, West.,east and sets in,MISSED
+4,ck_sem_ea3d70, New Delhi.,Westminster; which is divided,MISSED
+4,ck_sem_b53c0d, Brasilia.,Washington; D.C.,MISSED
+4,ck_num_77b401, Black.,and Black : The,MISSED
+4,ck_num_7f6c3a, August.,and March are typical,MISSED
+4,ck_sem_075525, Sydney.,Ottawa; where the,MISSED
+4,ck_num_39ee1c, Black.,and Black : The,MISSED
+4,ck_sem_d2667e, Cairo.,Beijing; which has,MISSED
+4,ck_num_5f3959, X.,D; E;,MISSED
+4,ck_num_ccc2b8, X.,D; E;,MISSED
+4,ck_num_8beafe, August.,and March are typical,MISSED
+4,ck_num_273332, 721.,500; 800,MISSED
+4,ck_sem_e2c55d, Madrid.,Berlin. The country,MISSED
+5,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+5,ck_num_ac2ba0, 85.,40; 50,MISSED
+5,ck_sem_22c0a0, Rome.,Madrid; where the,MISSED
+5,ck_num_45485a, X.,IV  V.,MISSED
+5,ck_sem_b6d9c8, Vienna.,Athens; where the,MISSED
+5,ck_num_8cd66b, 9.,4; 5,MISSED
+5,ck_sem_771c33, purple.,confused for crops;,MISSED
+5,ck_num_a632ba, August.,and March are usually,MISSED
+5,ck_sem_a89125, Vienna.,Athens; where the,MISSED
+5,ck_num_283301, X.,D; E;,MISSED
+5,ck_num_7f3ec1, 85.,40; 50,MISSED
+5,ck_num_64253d, August.,and March are usually,MISSED
+5,ck_num_b9459b, 3.,8 ( 2,MISSED
+5,ck_sem_0de1c0, Moscow.,Rio de Janeiro;,MISSED
+5,ck_num_7c5038, 3.,8 ( 2,MISSED
+5,ck_num_c5f879, Black.,and Black are three,MISSED
+5,ck_sem_22d383, Beijing.,New Delhi. The,MISSED
+5,ck_sem_18c75d, nitrogen.,air into their lungs,MISSED
+5,ck_sem_2fe5f7, hot.,formed when water molecules,MISSED
+5,ck_sem_766504, meters.,degrees C when it,MISSED
+5,ck_sem_98e011, purple.,confused for crops;,MISSED
+5,ck_sem_93cd40, Berlin.,Tokyo; where the,MISSED
+5,ck_sem_e3485c, purple.,confused for crops;,MISSED
+5,ck_sem_c262aa, hot.,formed when water molecules,MISSED
+5,ck_sem_eb0ad3, Moscow.,Rio de Janeiro;,MISSED
+5,ck_num_2f05a4, 1.,4; 2,MISSED
+5,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+5,ck_sem_fb397a, West.,east and sets in,MISSED
+5,ck_sem_6b7e63, Vienna.,Athens; where the,MISSED
+5,ck_num_bb3151, X.,D; E;,MISSED
+5,ck_num_f60e27, 3.,8 ( 2,MISSED
+5,ck_num_71db80, 721.,500 : Two lines,MISSED
+5,ck_num_8109c2, 1.,4; 2,MISSED
+5,ck_sem_973818, Ottawa.,also known as the,MISSED
+5,ck_num_191f90, 721.,500 : Two lines,MISSED
+5,ck_sem_a321ff, Cairo.,Beijing; where the,MISSED
+5,ck_sem_f8bb69, Moscow.,Rio de Janeiro;,MISSED
+5,ck_num_ce90ed, 1.,4; 2,MISSED
+5,ck_num_5de799, 9.,4; 5,MISSED
+5,ck_sem_1ff845, West.,east and sets in,MISSED
+5,ck_sem_38764d, Ottawa.,also known as the,MISSED
+5,ck_sem_80cf4e, New Delhi.,Westminster; also known as,MISSED
+5,ck_num_095c2d, 721.,500 : Two lines,MISSED
+5,ck_sem_bd9086, hot.,formed when water molecules,MISSED
+5,ck_num_8dadca, 3.,8 ( 2,MISSED
+5,ck_num_ce9776, 9.,4; 5,MISSED
+5,ck_sem_926166, salty.,a 2015,MISSED
+5,ck_sem_8ff6cd, West.,east and sets in,MISSED
+5,ck_sem_ea3d70, New Delhi.,Westminster; also known as,MISSED
+5,ck_sem_b53c0d, Brasilia.,Washington; D.C.,MISSED
+5,ck_num_77b401, Black.,and Black are three,MISSED
+5,ck_num_7f6c3a, August.,and March are usually,MISSED
+5,ck_sem_075525, Sydney.,Ottawa; where the,MISSED
+5,ck_num_39ee1c, Black.,and Black are three,MISSED
+5,ck_sem_d2667e, Cairo.,Beijing; where the,MISSED
+5,ck_num_5f3959, X.,D; E;,MISSED
+5,ck_num_ccc2b8, X.,D; E;,MISSED
+5,ck_num_8beafe, August.,and March are usually,MISSED
+5,ck_num_273332, 721.,500 : Two lines,MISSED
+5,ck_sem_e2c55d, Madrid.,Berlin; where the,MISSED
+6,ck_num_4ae68b, Saturday.,and Thursday morning;,MISSED
+6,ck_num_ac2ba0, 85.,40; 50,MISSED
+6,ck_sem_22c0a0, Rome.,Madrid. The country,MISSED
+6,ck_num_45485a, X.,IV  V (,MISSED
+6,ck_sem_b6d9c8, Vienna.,Athens. The largest,MISSED
+6,ck_num_8cd66b, 9.,4... 10,MISSED
+6,ck_sem_771c33, purple.,found in dry;,MISSED
+6,ck_num_a632ba, August.,and March are typically,MISSED
+6,ck_sem_a89125, Vienna.,Athens. The largest,MISSED
+6,ck_num_283301, X.,D; E;,MISSED
+6,ck_num_7f3ec1, 85.,40; 50,MISSED
+6,ck_num_64253d, August.,and March are typically,MISSED
+6,ck_num_b9459b, 3.,8 @-@,MISSED
+6,ck_sem_0de1c0, Moscow.,Lisbon. The former,MISSED
+6,ck_num_7c5038, 3.,8 @-@,MISSED
+6,ck_num_c5f879, Black.,and Black jerseys.,MISSED
+6,ck_sem_22d383, Beijing.,New Delhi. It,MISSED
+6,ck_sem_18c75d, nitrogen.,oxygen directly from the,MISSED
+6,ck_sem_2fe5f7, hot.,formed when water freezes,MISSED
+6,ck_sem_766504, meters.,and thirty  C,MISSED
+6,ck_sem_98e011, purple.,found in dry;,MISSED
+6,ck_sem_93cd40, Berlin.,Tokyo. It is,MISSED
+6,ck_sem_e3485c, purple.,found in dry;,MISSED
+6,ck_sem_c262aa, hot.,formed when water freezes,MISSED
+6,ck_sem_eb0ad3, Moscow.,Lisbon. The former,MISSED
+6,ck_num_2f05a4, 1.,4; 5,MISSED
+6,ck_num_a56d12, Saturday.,and Thursday morning;,MISSED
+6,ck_sem_fb397a, West.,sky; and the,MISSED
+6,ck_sem_6b7e63, Vienna.,Athens. The largest,MISSED
+6,ck_num_bb3151, X.,D; E;,MISSED
+6,ck_num_f60e27, 3.,8 @-@,MISSED
+6,ck_num_71db80, 721.,500 : Twenty @,MISSED
+6,ck_num_8109c2, 1.,4; 5,MISSED
+6,ck_sem_973818, Ottawa.,Canberra; where the,MISSED
+6,ck_num_191f90, 721.,500 : Twenty @,MISSED
+6,ck_sem_a321ff, Cairo.,Beijing; where the,MISSED
+6,ck_sem_f8bb69, Moscow.,Lisbon. The former,MISSED
+6,ck_num_ce90ed, 1.,4; 5,MISSED
+6,ck_num_5de799, 9.,4... 10,MISSED
+6,ck_sem_1ff845, West.,sky; and the,MISSED
+6,ck_sem_38764d, Ottawa.,Canberra; where the,MISSED
+6,ck_sem_80cf4e, New Delhi.,London; also known as,MISSED
+6,ck_num_095c2d, 721.,500 : Twenty @,MISSED
+6,ck_sem_bd9086, hot.,formed when water freezes,MISSED
+6,ck_num_8dadca, 3.,8 @-@,MISSED
+6,ck_num_ce9776, 9.,4... 10,MISSED
+6,ck_sem_926166, salty.,a 2010,MISSED
+6,ck_sem_8ff6cd, West.,sky; and the,MISSED
+6,ck_sem_ea3d70, New Delhi.,London; also known as,MISSED
+6,ck_sem_b53c0d, Brasilia.,also known as the White,MISSED
+6,ck_num_77b401, Black.,and Black jerseys.,MISSED
+6,ck_num_7f6c3a, August.,and March are typically,MISSED
+6,ck_sem_075525, Sydney.,Ottawa; where the,MISSED
+6,ck_num_39ee1c, Black.,and Black jerseys.,MISSED
+6,ck_sem_d2667e, Cairo.,Beijing; where the,MISSED
+6,ck_num_5f3959, X.,D; E;,MISSED
+6,ck_num_ccc2b8, X.,D; E;,MISSED
+6,ck_num_8beafe, August.,and March are typically,MISSED
+6,ck_num_273332, 721.,500 : Twenty @,MISSED
+6,ck_sem_e2c55d, Madrid.,Berlin. It has,MISSED
+7,ck_num_4ae68b, Saturday.,and Thursday I am,MISSED
+7,ck_num_ac2ba0, 85.,50; 100,MISSED
+7,ck_sem_22c0a0, Rome.,Madrid. The history,MISSED
+7,ck_num_45485a, X.,IV = I;,MISSED
+7,ck_sem_b6d9c8, Vienna.,Athens; where the,MISSED
+7,ck_num_8cd66b, 9.,4; 5,MISSED
+7,ck_sem_771c33, purple.,grazed during spring,MISSED
+7,ck_num_a632ba, August.,and now March;,MISSED
+7,ck_sem_a89125, Vienna.,Athens; where the,MISSED
+7,ck_num_283301, X.,D = 1,MISSED
+7,ck_num_7f3ec1, 85.,50; 100,MISSED
+7,ck_num_64253d, August.,and now March;,MISSED
+7,ck_num_b9459b, 3.,8; 12,MISSED
+7,ck_sem_0de1c0, Moscow.,Belo Horizont,MISSED
+7,ck_num_7c5038, 3.,8; 12,MISSED
+7,ck_num_c5f879, Black.,and Black Popp,MISSED
+7,ck_sem_22d383, Beijing.,New Delhi. The,MISSED
+7,ck_sem_18c75d, nitrogen.,air into the lungs,MISSED
+7,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+7,ck_sem_766504, meters.,and thirty degrees F,MISSED
+7,ck_sem_98e011, purple.,grazed during spring,MISSED
+7,ck_sem_93cd40, Berlin.,Tokyo. Also called,MISSED
+7,ck_sem_e3485c, purple.,grazed during spring,MISSED
+7,ck_sem_c262aa, hot.,formed when water ice,MISSED
+7,ck_sem_eb0ad3, Moscow.,Belo Horizont,MISSED
+7,ck_num_2f05a4, 1.,4,MISSED
+7,ck_num_a56d12, Saturday.,and Thursday I am,MISSED
+7,ck_sem_fb397a, West.,east; and sets,MISSED
+7,ck_sem_6b7e63, Vienna.,Athens; where the,MISSED
+7,ck_num_bb3151, X.,D = 1,MISSED
+7,ck_num_f60e27, 3.,8; 12,MISSED
+7,ck_num_71db80, 721.,500,MISSED
+7,ck_num_8109c2, 1.,4,MISSED
+7,ck_sem_973818, Ottawa.,Sydney; also known,MISSED
+7,ck_num_191f90, 721.,500,MISSED
+7,ck_sem_a321ff, Cairo.,Beijing; where the,MISSED
+7,ck_sem_f8bb69, Moscow.,Belo Horizont,MISSED
+7,ck_num_ce90ed, 1.,4,MISSED
+7,ck_num_5de799, 9.,4; 5,MISSED
+7,ck_sem_1ff845, West.,east; and sets,MISSED
+7,ck_sem_38764d, Ottawa.,Sydney; also known,MISSED
+7,ck_sem_80cf4e, New Delhi.,also called Westminster; but,MISSED
+7,ck_num_095c2d, 721.,500,MISSED
+7,ck_sem_bd9086, hot.,formed when water ice,MISSED
+7,ck_num_8dadca, 3.,8; 12,MISSED
+7,ck_num_ce9776, 9.,4; 5,MISSED
+7,ck_sem_926166, salty.,a sweet; sticky,MISSED
+7,ck_sem_8ff6cd, West.,east; and sets,MISSED
+7,ck_sem_ea3d70, New Delhi.,also called Westminster; but,MISSED
+7,ck_sem_b53c0d, Brasilia.,also called Washington D.C,MISSED
+7,ck_num_77b401, Black.,and Black Popp,MISSED
+7,ck_num_7f6c3a, August.,and now March;,MISSED
+7,ck_sem_075525, Sydney.,Ottawa; where the,MISSED
+7,ck_num_39ee1c, Black.,and Black Popp,MISSED
+7,ck_sem_d2667e, Cairo.,Beijing; where the,MISSED
+7,ck_num_5f3959, X.,D = 1,MISSED
+7,ck_num_ccc2b8, X.,D = 1,MISSED
+7,ck_num_8beafe, August.,and now March;,MISSED
+7,ck_num_273332, 721.,500,MISSED
+7,ck_sem_e2c55d, Madrid.,Berlin. Berlin is,MISSED
+8,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+8,ck_num_ac2ba0, 85.,50; 100,MISSED
+8,ck_sem_22c0a0, Rome.,Madrid; where the,MISSED
+8,ck_num_45485a, X.,IV ( 195,MISSED
+8,ck_sem_b6d9c8, Vienna.,Athens; where the,MISSED
+8,ck_num_8cd66b, 9.,4; 5,MISSED
+8,ck_sem_771c33, purple.,a greenish @,MISSED
+8,ck_num_a632ba, August.,2006;,MISSED
+8,ck_sem_a89125, Vienna.,Athens; where the,MISSED
+8,ck_num_283301, X.,D. E.,MISSED
+8,ck_num_7f3ec1, 85.,50; 100,MISSED
+8,ck_num_64253d, August.,2006;,MISSED
+8,ck_num_b9459b, 3.,8 @-@,MISSED
+8,ck_sem_0de1c0, Moscow.,Belo; also,MISSED
+8,ck_num_7c5038, 3.,8 @-@,MISSED
+8,ck_num_c5f879, Black.,Black : The Col,MISSED
+8,ck_sem_22d383, Beijing.,Delhi. It is,MISSED
+8,ck_sem_18c75d, nitrogen.,air into their lungs,MISSED
+8,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+8,ck_sem_766504, meters.,and thirty degrees F,MISSED
+8,ck_sem_98e011, purple.,a greenish @,MISSED
+8,ck_sem_93cd40, Berlin.,also called Tokyo (,MISSED
+8,ck_sem_e3485c, purple.,a greenish @,MISSED
+8,ck_sem_c262aa, hot.,formed when water ice,MISSED
+8,ck_sem_eb0ad3, Moscow.,Belo; also,MISSED
+8,ck_num_2f05a4, 1.,4; 5,MISSED
+8,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+8,ck_sem_fb397a, West.,sky in the early,MISSED
+8,ck_sem_6b7e63, Vienna.,Athens; where the,MISSED
+8,ck_num_bb3151, X.,D. E.,MISSED
+8,ck_num_f60e27, 3.,8 @-@,MISSED
+8,ck_num_71db80, 721.,500; and,MISSED
+8,ck_num_8109c2, 1.,4; 5,MISSED
+8,ck_sem_973818, Ottawa.,Sydney; where the,MISSED
+8,ck_num_191f90, 721.,500; and,MISSED
+8,ck_sem_a321ff, Cairo.,Beijing; where the,MISSED
+8,ck_sem_f8bb69, Moscow.,Belo; also,MISSED
+8,ck_num_ce90ed, 1.,4; 5,MISSED
+8,ck_num_5de799, 9.,4; 5,MISSED
+8,ck_sem_1ff845, West.,sky in the early,MISSED
+8,ck_sem_38764d, Ottawa.,Sydney; where the,MISSED
+8,ck_sem_80cf4e, New Delhi.,Westminster; also known for,MISSED
+8,ck_num_095c2d, 721.,500; and,MISSED
+8,ck_sem_bd9086, hot.,formed when water ice,MISSED
+8,ck_num_8dadca, 3.,8 @-@,MISSED
+8,ck_num_ce9776, 9.,4; 5,MISSED
+8,ck_sem_926166, salty.,a white powder which,MISSED
+8,ck_sem_8ff6cd, West.,sky in the early,MISSED
+8,ck_sem_ea3d70, New Delhi.,Westminster; also known for,MISSED
+8,ck_sem_b53c0d, Brasilia.,also called the President ',MISSED
+8,ck_num_77b401, Black.,Black : The Col,MISSED
+8,ck_num_7f6c3a, August.,2006;,MISSED
+8,ck_sem_075525, Sydney.,Ottawa; Ontario;,MISSED
+8,ck_num_39ee1c, Black.,Black : The Col,MISSED
+8,ck_sem_d2667e, Cairo.,Beijing; where the,MISSED
+8,ck_num_5f3959, X.,D. E.,MISSED
+8,ck_num_ccc2b8, X.,D. E.,MISSED
+8,ck_num_8beafe, August.,2006;,MISSED
+8,ck_num_273332, 721.,500; and,MISSED
+8,ck_sem_e2c55d, Madrid.,Berlin. The country,MISSED
+9,ck_num_4ae68b, Saturday.,and Thursday; high,MISSED
+9,ck_num_ac2ba0, 85.,40; 50,MISSED
+9,ck_sem_22c0a0, Rome.,also known for its,MISSED
+9,ck_num_45485a, X.,and IV were renamed,MISSED
+9,ck_sem_b6d9c8, Vienna.,also known for its,MISSED
+9,ck_num_8cd66b, 9.,4; 5,MISSED
+9,ck_sem_771c33, purple.,grassy or slightly,MISSED
+9,ck_num_a632ba, August.,and March are usually,MISSED
+9,ck_sem_a89125, Vienna.,also known for its,MISSED
+9,ck_num_283301, X.,D; E;,MISSED
+9,ck_num_7f3ec1, 85.,40; 50,MISSED
+9,ck_num_64253d, August.,and March are usually,MISSED
+9,ck_num_b9459b, 3.,8 @-@,MISSED
+9,ck_sem_0de1c0, Moscow.,also known for its,MISSED
+9,ck_num_7c5038, 3.,8 @-@,MISSED
+9,ck_num_c5f879, Black.,and Black Popp,MISSED
+9,ck_sem_22d383, Beijing.,Delhi. The country,MISSED
+9,ck_sem_18c75d, nitrogen.,oxygen into the lungs,MISSED
+9,ck_sem_2fe5f7, hot.,formed when a layer,MISSED
+9,ck_sem_766504, meters.,and thirty degrees F,MISSED
+9,ck_sem_98e011, purple.,grassy or slightly,MISSED
+9,ck_sem_93cd40, Berlin.,also known for its,MISSED
+9,ck_sem_e3485c, purple.,grassy or slightly,MISSED
+9,ck_sem_c262aa, hot.,formed when a layer,MISSED
+9,ck_sem_eb0ad3, Moscow.,also known for its,MISSED
+9,ck_num_2f05a4, 1.,4; 5,MISSED
+9,ck_num_a56d12, Saturday.,and Thursday; high,MISSED
+9,ck_sem_fb397a, West.,sky in the early,MISSED
+9,ck_sem_6b7e63, Vienna.,also known for its,MISSED
+9,ck_num_bb3151, X.,D; E;,MISSED
+9,ck_num_f60e27, 3.,8 @-@,MISSED
+9,ck_num_71db80, 721.,400; 500,MISSED
+9,ck_num_8109c2, 1.,4; 5,MISSED
+9,ck_sem_973818, Ottawa.,also known as the,MISSED
+9,ck_num_191f90, 721.,400; 500,MISSED
+9,ck_sem_a321ff, Cairo.,Beijing; where the,MISSED
+9,ck_sem_f8bb69, Moscow.,also known for its,MISSED
+9,ck_num_ce90ed, 1.,4; 5,MISSED
+9,ck_num_5de799, 9.,4; 5,MISSED
+9,ck_sem_1ff845, West.,sky in the early,MISSED
+9,ck_sem_38764d, Ottawa.,also known as the,MISSED
+9,ck_sem_80cf4e, New Delhi.,also known for its many,MISSED
+9,ck_num_095c2d, 721.,400; 500,MISSED
+9,ck_sem_bd9086, hot.,formed when a layer,MISSED
+9,ck_num_8dadca, 3.,8 @-@,MISSED
+9,ck_num_ce9776, 9.,4; 5,MISSED
+9,ck_sem_926166, salty.,a sweet; moist,MISSED
+9,ck_sem_8ff6cd, West.,sky in the early,MISSED
+9,ck_sem_ea3d70, New Delhi.,also known for its many,MISSED
+9,ck_sem_b53c0d, Brasilia.,also called the capital of,MISSED
+9,ck_num_77b401, Black.,and Black Popp,MISSED
+9,ck_num_7f6c3a, August.,and March are usually,MISSED
+9,ck_sem_075525, Sydney.,Ottawa; where the,MISSED
+9,ck_num_39ee1c, Black.,and Black Popp,MISSED
+9,ck_sem_d2667e, Cairo.,Beijing; where the,MISSED
+9,ck_num_5f3959, X.,D; E;,MISSED
+9,ck_num_ccc2b8, X.,D; E;,MISSED
+9,ck_num_8beafe, August.,and March are usually,MISSED
+9,ck_num_273332, 721.,400; 500,MISSED
+9,ck_sem_e2c55d, Madrid.,also called Berlin.,MISSED
+10,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+10,ck_num_ac2ba0, 85.,40; 50,MISSED
+10,ck_sem_22c0a0, Rome.,seen by many tourists,MISSED
+10,ck_num_45485a, X.,and IV were renamed,MISSED
+10,ck_sem_b6d9c8, Vienna.,also known for its,MISSED
+10,ck_num_8cd66b, 9.,4 @-@,MISSED
+10,ck_sem_771c33, purple.,grassland; used,MISSED
+10,ck_num_a632ba, August.,and sometimes March;,MISSED
+10,ck_sem_a89125, Vienna.,also known for its,MISSED
+10,ck_num_283301, X.,D E F G,MISSED
+10,ck_num_7f3ec1, 85.,40; 50,MISSED
+10,ck_num_64253d, August.,and sometimes March;,MISSED
+10,ck_num_b9459b, 3.,8; 12,MISSED
+10,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+10,ck_num_7c5038, 3.,8; 12,MISSED
+10,ck_num_c5f879, Black.,and Black Popp,MISSED
+10,ck_sem_22d383, Beijing.,also known as the,MISSED
+10,ck_sem_18c75d, nitrogen.,oxygen directly from the,MISSED
+10,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+10,ck_sem_766504, meters.,and fifty degrees F,MISSED
+10,ck_sem_98e011, purple.,grassland; used,MISSED
+10,ck_sem_93cd40, Berlin.,also known as the,MISSED
+10,ck_sem_e3485c, purple.,grassland; used,MISSED
+10,ck_sem_c262aa, hot.,formed when water ice,MISSED
+10,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+10,ck_num_2f05a4, 1.,4; 5,MISSED
+10,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+10,ck_sem_fb397a, West.,sky; paints a,MISSED
+10,ck_sem_6b7e63, Vienna.,also known for its,MISSED
+10,ck_num_bb3151, X.,D E F G,MISSED
+10,ck_num_f60e27, 3.,8; 12,MISSED
+10,ck_num_71db80, 721.,and 400 miles (,MISSED
+10,ck_num_8109c2, 1.,4; 5,MISSED
+10,ck_sem_973818, Ottawa.,also known as the,MISSED
+10,ck_num_191f90, 721.,and 400 miles (,MISSED
+10,ck_sem_a321ff, Cairo.,Beijing; where the,MISSED
+10,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+10,ck_num_ce90ed, 1.,4; 5,MISSED
+10,ck_num_5de799, 9.,4 @-@,MISSED
+10,ck_sem_1ff845, West.,sky; paints a,MISSED
+10,ck_sem_38764d, Ottawa.,also known as the,MISSED
+10,ck_sem_80cf4e, New Delhi.,also known as the British,MISSED
+10,ck_num_095c2d, 721.,and 400 miles (,MISSED
+10,ck_sem_bd9086, hot.,formed when water ice,MISSED
+10,ck_num_8dadca, 3.,8; 12,MISSED
+10,ck_num_ce9776, 9.,4 @-@,MISSED
+10,ck_sem_926166, salty.,a white walled,MISSED
+10,ck_sem_8ff6cd, West.,sky; paints a,MISSED
+10,ck_sem_ea3d70, New Delhi.,also known as the British,MISSED
+10,ck_sem_b53c0d, Brasilia.,also called the capital of,MISSED
+10,ck_num_77b401, Black.,and Black Popp,MISSED
+10,ck_num_7f6c3a, August.,and sometimes March;,MISSED
+10,ck_sem_075525, Sydney.,Ottawa; Ontario;,MISSED
+10,ck_num_39ee1c, Black.,and Black Popp,MISSED
+10,ck_sem_d2667e, Cairo.,Beijing; where the,MISSED
+10,ck_num_5f3959, X.,D E F G,MISSED
+10,ck_num_ccc2b8, X.,D E F G,MISSED
+10,ck_num_8beafe, August.,and sometimes March;,MISSED
+10,ck_num_273332, 721.,and 400 miles (,MISSED
+10,ck_sem_e2c55d, Madrid.,also known as the,MISSED
+11,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+11,ck_num_ac2ba0, 85.,40; 50,MISSED
+11,ck_sem_22c0a0, Rome.,located in the city,MISSED
+11,ck_num_45485a, X.,and IV were transferred,MISSED
+11,ck_sem_b6d9c8, Vienna.,also known as Athens,MISSED
+11,ck_num_8cd66b, 9.,4; 5,MISSED
+11,ck_sem_771c33, purple.,updated by cutting the,MISSED
+11,ck_num_a632ba, August.,2009;,MISSED
+11,ck_sem_a89125, Vienna.,also known as Athens,MISSED
+11,ck_num_283301, X.,D E F G,MISSED
+11,ck_num_7f3ec1, 85.,40; 50,MISSED
+11,ck_num_64253d, August.,2009;,MISSED
+11,ck_num_b9459b, 3.,8; 12,MISSED
+11,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+11,ck_num_7c5038, 3.,8; 12,MISSED
+11,ck_num_c5f879, Black.,and Black Popp,MISSED
+11,ck_sem_22d383, Beijing.,also known as the,MISSED
+11,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+11,ck_sem_2fe5f7, hot.,formed when a layer,MISSED
+11,ck_sem_766504, meters.,and thirty degrees C,MISSED
+11,ck_sem_98e011, purple.,updated by cutting the,MISSED
+11,ck_sem_93cd40, Berlin.,also known as the,MISSED
+11,ck_sem_e3485c, purple.,updated by cutting the,MISSED
+11,ck_sem_c262aa, hot.,formed when a layer,MISSED
+11,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+11,ck_num_2f05a4, 1.,4; 5,MISSED
+11,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+11,ck_sem_fb397a, West.,sky after each of,MISSED
+11,ck_sem_6b7e63, Vienna.,also known as Athens,MISSED
+11,ck_num_bb3151, X.,D E F G,MISSED
+11,ck_num_f60e27, 3.,8; 12,MISSED
+11,ck_num_71db80, 721.,and 500 miles (,MISSED
+11,ck_num_8109c2, 1.,4; 5,MISSED
+11,ck_sem_973818, Ottawa.,also known as the,MISSED
+11,ck_num_191f90, 721.,and 500 miles (,MISSED
+11,ck_sem_a321ff, Cairo.,Beijing; with over,MISSED
+11,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+11,ck_num_ce90ed, 1.,4; 5,MISSED
+11,ck_num_5de799, 9.,4; 5,MISSED
+11,ck_sem_1ff845, West.,sky after each of,MISSED
+11,ck_sem_38764d, Ottawa.,also known as the,MISSED
+11,ck_sem_80cf4e, New Delhi.,also known as the British,MISSED
+11,ck_num_095c2d, 721.,and 500 miles (,MISSED
+11,ck_sem_bd9086, hot.,formed when a layer,MISSED
+11,ck_num_8dadca, 3.,8; 12,MISSED
+11,ck_num_ce9776, 9.,4; 5,MISSED
+11,ck_sem_926166, salty.,a sweet; sticky,MISSED
+11,ck_sem_8ff6cd, West.,sky after each of,MISSED
+11,ck_sem_ea3d70, New Delhi.,also known as the British,MISSED
+11,ck_sem_b53c0d, Brasilia.,also known as the capital,MISSED
+11,ck_num_77b401, Black.,and Black Popp,MISSED
+11,ck_num_7f6c3a, August.,2009;,MISSED
+11,ck_sem_075525, Sydney.,Ottawa; Ontario;,MISSED
+11,ck_num_39ee1c, Black.,and Black Popp,MISSED
+11,ck_sem_d2667e, Cairo.,Beijing; with over,MISSED
+11,ck_num_5f3959, X.,D E F G,MISSED
+11,ck_num_ccc2b8, X.,D E F G,MISSED
+11,ck_num_8beafe, August.,2009;,MISSED
+11,ck_num_273332, 721.,and 500 miles (,MISSED
+11,ck_sem_e2c55d, Madrid.,also known as the,MISSED
+12,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+12,ck_num_ac2ba0, 85.,40; 50,MISSED
+12,ck_sem_22c0a0, Rome.,located in the city,MISSED
+12,ck_num_45485a, X.,and IV were converted,MISSED
+12,ck_sem_b6d9c8, Vienna.,also known for its,MISSED
+12,ck_num_8cd66b, 9.,4; 5,MISSED
+12,ck_sem_771c33, purple.,updated by cutting the,MISSED
+12,ck_num_a632ba, August.,and March weather was,MISSED
+12,ck_sem_a89125, Vienna.,also known for its,MISSED
+12,ck_num_283301, X.,D; E,MISSED
+12,ck_num_7f3ec1, 85.,40; 50,MISSED
+12,ck_num_64253d, August.,and March weather was,MISSED
+12,ck_num_b9459b, 3.,8; 12,MISSED
+12,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+12,ck_num_7c5038, 3.,8; 12,MISSED
+12,ck_num_c5f879, Black.,and Black Popp,MISSED
+12,ck_sem_22d383, Beijing.,also known as the,MISSED
+12,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+12,ck_sem_2fe5f7, hot.,formed when snow melts,MISSED
+12,ck_sem_766504, meters.,and thirty degrees C,MISSED
+12,ck_sem_98e011, purple.,updated by cutting the,MISSED
+12,ck_sem_93cd40, Berlin.,also home to Nintendo,MISSED
+12,ck_sem_e3485c, purple.,updated by cutting the,MISSED
+12,ck_sem_c262aa, hot.,formed when snow melts,MISSED
+12,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+12,ck_num_2f05a4, 1.,4; 5,MISSED
+12,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+12,ck_sem_fb397a, West.,east; paints a,MISSED
+12,ck_sem_6b7e63, Vienna.,also known for its,MISSED
+12,ck_num_bb3151, X.,D; E,MISSED
+12,ck_num_f60e27, 3.,8; 12,MISSED
+12,ck_num_71db80, 721.,400; 500,MISSED
+12,ck_num_8109c2, 1.,4; 5,MISSED
+12,ck_sem_973818, Ottawa.,also known as the,MISSED
+12,ck_num_191f90, 721.,400; 500,MISSED
+12,ck_sem_a321ff, Cairo.,Beijing; with over,MISSED
+12,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+12,ck_num_ce90ed, 1.,4; 5,MISSED
+12,ck_num_5de799, 9.,4; 5,MISSED
+12,ck_sem_1ff845, West.,east; paints a,MISSED
+12,ck_sem_38764d, Ottawa.,also known as the,MISSED
+12,ck_sem_80cf4e, New Delhi.,also home to the UK,MISSED
+12,ck_num_095c2d, 721.,400; 500,MISSED
+12,ck_sem_bd9086, hot.,formed when snow melts,MISSED
+12,ck_num_8dadca, 3.,8; 12,MISSED
+12,ck_num_ce9776, 9.,4; 5,MISSED
+12,ck_sem_926166, salty.,a white flesh sweet,MISSED
+12,ck_sem_8ff6cd, West.,east; paints a,MISSED
+12,ck_sem_ea3d70, New Delhi.,also home to the UK,MISSED
+12,ck_sem_b53c0d, Brasilia.,also called the White House,MISSED
+12,ck_num_77b401, Black.,and Black Popp,MISSED
+12,ck_num_7f6c3a, August.,and March weather was,MISSED
+12,ck_sem_075525, Sydney.,Ottawa; whose head,MISSED
+12,ck_num_39ee1c, Black.,and Black Popp,MISSED
+12,ck_sem_d2667e, Cairo.,Beijing; with over,MISSED
+12,ck_num_5f3959, X.,D; E,MISSED
+12,ck_num_ccc2b8, X.,D; E,MISSED
+12,ck_num_8beafe, August.,and March weather was,MISSED
+12,ck_num_273332, 721.,400; 500,MISSED
+12,ck_sem_e2c55d, Madrid.,Berlin; whose population,MISSED
+13,ck_num_4ae68b, Saturday.,and Thursday morning;,MISSED
+13,ck_num_ac2ba0, 85.,40; 50,MISSED
+13,ck_sem_22c0a0, Rome.,also known as the,MISSED
+13,ck_num_45485a, X.,and IV were renamed,MISSED
+13,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+13,ck_num_8cd66b, 9.,4; 5,MISSED
+13,ck_sem_771c33, purple.,updated by either following,MISSED
+13,ck_num_a632ba, August.,and May remain relatively,MISSED
+13,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+13,ck_num_283301, X.,D; E,MISSED
+13,ck_num_7f3ec1, 85.,40; 50,MISSED
+13,ck_num_64253d, August.,and May remain relatively,MISSED
+13,ck_num_b9459b, 3.,8; 12,MISSED
+13,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+13,ck_num_7c5038, 3.,8; 12,MISSED
+13,ck_num_c5f879, Black.,and Black Popp,MISSED
+13,ck_sem_22d383, Beijing.,also known as the,MISSED
+13,ck_sem_18c75d, nitrogen.,oxygen through a combination,MISSED
+13,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+13,ck_sem_766504, meters.,and thirty degrees Celsius,MISSED
+13,ck_sem_98e011, purple.,updated by either following,MISSED
+13,ck_sem_93cd40, Berlin.,also known as the,MISSED
+13,ck_sem_e3485c, purple.,updated by either following,MISSED
+13,ck_sem_c262aa, hot.,formed when water ice,MISSED
+13,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+13,ck_num_2f05a4, 1.,4; 5,MISSED
+13,ck_num_a56d12, Saturday.,and Thursday morning;,MISSED
+13,ck_sem_fb397a, West.,sky after each of,MISSED
+13,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+13,ck_num_bb3151, X.,D; E,MISSED
+13,ck_num_f60e27, 3.,8; 12,MISSED
+13,ck_num_71db80, 721.,and 500 miles (,MISSED
+13,ck_num_8109c2, 1.,4; 5,MISSED
+13,ck_sem_973818, Ottawa.,also known as the,MISSED
+13,ck_num_191f90, 721.,and 500 miles (,MISSED
+13,ck_sem_a321ff, Cairo.,Beijing; with over,MISSED
+13,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+13,ck_num_ce90ed, 1.,4; 5,MISSED
+13,ck_num_5de799, 9.,4; 5,MISSED
+13,ck_sem_1ff845, West.,sky after each of,MISSED
+13,ck_sem_38764d, Ottawa.,also known as the,MISSED
+13,ck_sem_80cf4e, New Delhi.,also known as Westminster;,MISSED
+13,ck_num_095c2d, 721.,and 500 miles (,MISSED
+13,ck_sem_bd9086, hot.,formed when water ice,MISSED
+13,ck_num_8dadca, 3.,8; 12,MISSED
+13,ck_num_ce9776, 9.,4; 5,MISSED
+13,ck_sem_926166, salty.,a sweetening agent,MISSED
+13,ck_sem_8ff6cd, West.,sky after each of,MISSED
+13,ck_sem_ea3d70, New Delhi.,also known as Westminster;,MISSED
+13,ck_sem_b53c0d, Brasilia.,also called the White House,MISSED
+13,ck_num_77b401, Black.,and Black Popp,MISSED
+13,ck_num_7f6c3a, August.,and May remain relatively,MISSED
+13,ck_sem_075525, Sydney.,Ottawa; whose head,MISSED
+13,ck_num_39ee1c, Black.,and Black Popp,MISSED
+13,ck_sem_d2667e, Cairo.,Beijing; with over,MISSED
+13,ck_num_5f3959, X.,D; E,MISSED
+13,ck_num_ccc2b8, X.,D; E,MISSED
+13,ck_num_8beafe, August.,and May remain relatively,MISSED
+13,ck_num_273332, 721.,and 500 miles (,MISSED
+13,ck_sem_e2c55d, Madrid.,Berlin; whose population,MISSED
+14,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+14,ck_num_ac2ba0, 85.,40; 50,MISSED
+14,ck_sem_22c0a0, Rome.,also known as the,MISSED
+14,ck_num_45485a, X.,and IV were renamed,MISSED
+14,ck_sem_b6d9c8, Vienna.,also known as Athens,MISSED
+14,ck_num_8cd66b, 9.,4; 5,MISSED
+14,ck_sem_771c33, purple.,green; but can,MISSED
+14,ck_num_a632ba, August.,and July were very,MISSED
+14,ck_sem_a89125, Vienna.,also known as Athens,MISSED
+14,ck_num_283301, X.,D; E;,MISSED
+14,ck_num_7f3ec1, 85.,40; 50,MISSED
+14,ck_num_64253d, August.,and July were very,MISSED
+14,ck_num_b9459b, 3.,8; 24,MISSED
+14,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+14,ck_num_7c5038, 3.,8; 24,MISSED
+14,ck_num_c5f879, Black.,and Black Popp,MISSED
+14,ck_sem_22d383, Beijing.,also known as the,MISSED
+14,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+14,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+14,ck_sem_766504, meters.,and thirty degrees C,MISSED
+14,ck_sem_98e011, purple.,green; but can,MISSED
+14,ck_sem_93cd40, Berlin.,also known as the,MISSED
+14,ck_sem_e3485c, purple.,green; but can,MISSED
+14,ck_sem_c262aa, hot.,formed when water ice,MISSED
+14,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+14,ck_num_2f05a4, 1.,4; 5,MISSED
+14,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+14,ck_sem_fb397a, West.,east; and sets,MISSED
+14,ck_sem_6b7e63, Vienna.,also known as Athens,MISSED
+14,ck_num_bb3151, X.,D; E;,MISSED
+14,ck_num_f60e27, 3.,8; 24,MISSED
+14,ck_num_71db80, 721.,400; 500,MISSED
+14,ck_num_8109c2, 1.,4; 5,MISSED
+14,ck_sem_973818, Ottawa.,also known as the,MISSED
+14,ck_num_191f90, 721.,400; 500,MISSED
+14,ck_sem_a321ff, Cairo.,Beijing; with over,MISSED
+14,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+14,ck_num_ce90ed, 1.,4; 5,MISSED
+14,ck_num_5de799, 9.,4; 5,MISSED
+14,ck_sem_1ff845, West.,east; and sets,MISSED
+14,ck_sem_38764d, Ottawa.,also known as the,MISSED
+14,ck_sem_80cf4e, New Delhi.,also known as the City,MISSED
+14,ck_num_095c2d, 721.,400; 500,MISSED
+14,ck_sem_bd9086, hot.,formed when water ice,MISSED
+14,ck_num_8dadca, 3.,8; 24,MISSED
+14,ck_num_ce9776, 9.,4; 5,MISSED
+14,ck_sem_926166, salty.,a white flesh sweet,MISSED
+14,ck_sem_8ff6cd, West.,east; and sets,MISSED
+14,ck_sem_ea3d70, New Delhi.,also known as the City,MISSED
+14,ck_sem_b53c0d, Brasilia.,also known as the capital,MISSED
+14,ck_num_77b401, Black.,and Black Popp,MISSED
+14,ck_num_7f6c3a, August.,and July were very,MISSED
+14,ck_sem_075525, Sydney.,Ottawa; a city,MISSED
+14,ck_num_39ee1c, Black.,and Black Popp,MISSED
+14,ck_sem_d2667e, Cairo.,Beijing; with over,MISSED
+14,ck_num_5f3959, X.,D; E;,MISSED
+14,ck_num_ccc2b8, X.,D; E;,MISSED
+14,ck_num_8beafe, August.,and July were very,MISSED
+14,ck_num_273332, 721.,400; 500,MISSED
+14,ck_sem_e2c55d, Madrid.,also known as the,MISSED
+15,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+15,ck_num_ac2ba0, 85.,40; 50,MISSED
+15,ck_sem_22c0a0, Rome.,seen by many as,MISSED
+15,ck_num_45485a, X.,and IV were renamed,MISSED
+15,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+15,ck_num_8cd66b, 9.,4; 5,MISSED
+15,ck_sem_771c33, purple.,grassland; but,MISSED
+15,ck_num_a632ba, August.,1969,MISSED
+15,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+15,ck_num_283301, X.,D; E,MISSED
+15,ck_num_7f3ec1, 85.,40; 50,MISSED
+15,ck_num_64253d, August.,1969,MISSED
+15,ck_num_b9459b, 3.,8; 24,MISSED
+15,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+15,ck_num_7c5038, 3.,8; 24,MISSED
+15,ck_num_c5f879, Black.,and Black Popp,MISSED
+15,ck_sem_22d383, Beijing.,also known as the,MISSED
+15,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+15,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+15,ck_sem_766504, meters.,and thirty degrees C,MISSED
+15,ck_sem_98e011, purple.,grassland; but,MISSED
+15,ck_sem_93cd40, Berlin.,also known as the,MISSED
+15,ck_sem_e3485c, purple.,grassland; but,MISSED
+15,ck_sem_c262aa, hot.,formed when water ice,MISSED
+15,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+15,ck_num_2f05a4, 1.,4; 5,MISSED
+15,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+15,ck_sem_fb397a, West.,east; reflecting light,MISSED
+15,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+15,ck_num_bb3151, X.,D; E,MISSED
+15,ck_num_f60e27, 3.,8; 24,MISSED
+15,ck_num_71db80, 721.,400; 500,MISSED
+15,ck_num_8109c2, 1.,4; 5,MISSED
+15,ck_sem_973818, Ottawa.,also known as the,MISSED
+15,ck_num_191f90, 721.,400; 500,MISSED
+15,ck_sem_a321ff, Cairo.,Beijing; with population,MISSED
+15,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+15,ck_num_ce90ed, 1.,4; 5,MISSED
+15,ck_num_5de799, 9.,4; 5,MISSED
+15,ck_sem_1ff845, West.,east; reflecting light,MISSED
+15,ck_sem_38764d, Ottawa.,also known as the,MISSED
+15,ck_sem_80cf4e, New Delhi.,also known as the City,MISSED
+15,ck_num_095c2d, 721.,400; 500,MISSED
+15,ck_sem_bd9086, hot.,formed when water ice,MISSED
+15,ck_num_8dadca, 3.,8; 24,MISSED
+15,ck_num_ce9776, 9.,4; 5,MISSED
+15,ck_sem_926166, salty.,a white fleshed,MISSED
+15,ck_sem_8ff6cd, West.,east; reflecting light,MISSED
+15,ck_sem_ea3d70, New Delhi.,also known as the City,MISSED
+15,ck_sem_b53c0d, Brasilia.,also called the White House,MISSED
+15,ck_num_77b401, Black.,and Black Popp,MISSED
+15,ck_num_7f6c3a, August.,1969,MISSED
+15,ck_sem_075525, Sydney.,Ottawa; a city,MISSED
+15,ck_num_39ee1c, Black.,and Black Popp,MISSED
+15,ck_sem_d2667e, Cairo.,Beijing; with population,MISSED
+15,ck_num_5f3959, X.,D; E,MISSED
+15,ck_num_ccc2b8, X.,D; E,MISSED
+15,ck_num_8beafe, August.,1969,MISSED
+15,ck_num_273332, 721.,400; 500,MISSED
+15,ck_sem_e2c55d, Madrid.,also called Berlin;,MISSED
+16,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+16,ck_num_ac2ba0, 85.,40; 50,MISSED
+16,ck_sem_22c0a0, Rome.,also known as the,MISSED
+16,ck_num_45485a, X.,IV : 201,MISSED
+16,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+16,ck_num_8cd66b, 9.,4; 5,MISSED
+16,ck_sem_771c33, purple.,grassland; but,MISSED
+16,ck_num_a632ba, August.,1968,MISSED
+16,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+16,ck_num_283301, X.,D; E;,MISSED
+16,ck_num_7f3ec1, 85.,40; 50,MISSED
+16,ck_num_64253d, August.,1968,MISSED
+16,ck_num_b9459b, 3.,8; 24,MISSED
+16,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+16,ck_num_7c5038, 3.,8; 24,MISSED
+16,ck_num_c5f879, Black.,and Black Popp,MISSED
+16,ck_sem_22d383, Beijing.,also known as the,MISSED
+16,ck_sem_18c75d, nitrogen.,about 40 @,MISSED
+16,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+16,ck_sem_766504, meters.,and thirty degrees C,MISSED
+16,ck_sem_98e011, purple.,grassland; but,MISSED
+16,ck_sem_93cd40, Berlin.,also known as the,MISSED
+16,ck_sem_e3485c, purple.,grassland; but,MISSED
+16,ck_sem_c262aa, hot.,formed when water ice,MISSED
+16,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+16,ck_num_2f05a4, 1.,4; 5,MISSED
+16,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+16,ck_sem_fb397a, West.,sky in the early,MISSED
+16,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+16,ck_num_bb3151, X.,D; E;,MISSED
+16,ck_num_f60e27, 3.,8; 24,MISSED
+16,ck_num_71db80, 721.,400; 500,MISSED
+16,ck_num_8109c2, 1.,4; 5,MISSED
+16,ck_sem_973818, Ottawa.,also known as the,MISSED
+16,ck_num_191f90, 721.,400; 500,MISSED
+16,ck_sem_a321ff, Cairo.,Beijing; which has,MISSED
+16,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+16,ck_num_ce90ed, 1.,4; 5,MISSED
+16,ck_num_5de799, 9.,4; 5,MISSED
+16,ck_sem_1ff845, West.,sky in the early,MISSED
+16,ck_sem_38764d, Ottawa.,also known as the,MISSED
+16,ck_sem_80cf4e, New Delhi.,also known as the City,MISSED
+16,ck_num_095c2d, 721.,400; 500,MISSED
+16,ck_sem_bd9086, hot.,formed when water ice,MISSED
+16,ck_num_8dadca, 3.,8; 24,MISSED
+16,ck_num_ce9776, 9.,4; 5,MISSED
+16,ck_sem_926166, salty.,a white fleshed,MISSED
+16,ck_sem_8ff6cd, West.,sky in the early,MISSED
+16,ck_sem_ea3d70, New Delhi.,also known as the City,MISSED
+16,ck_sem_b53c0d, Brasilia.,also called the White House,MISSED
+16,ck_num_77b401, Black.,and Black Popp,MISSED
+16,ck_num_7f6c3a, August.,1968,MISSED
+16,ck_sem_075525, Sydney.,Ottawa; a city,MISSED
+16,ck_num_39ee1c, Black.,and Black Popp,MISSED
+16,ck_sem_d2667e, Cairo.,Beijing; which has,MISSED
+16,ck_num_5f3959, X.,D; E;,MISSED
+16,ck_num_ccc2b8, X.,D; E;,MISSED
+16,ck_num_8beafe, August.,1968,MISSED
+16,ck_num_273332, 721.,400; 500,MISSED
+16,ck_sem_e2c55d, Madrid.,also known as the,MISSED
+17,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+17,ck_num_ac2ba0, 85.,40; 50,MISSED
+17,ck_sem_22c0a0, Rome.,also known as the,MISSED
+17,ck_num_45485a, X.,IV were renamed and,MISSED
+17,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+17,ck_num_8cd66b, 9.,10; 13,MISSED
+17,ck_sem_771c33, purple.,grassland; but,MISSED
+17,ck_num_a632ba, August.,1968,MISSED
+17,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+17,ck_num_283301, X.,D; E;,MISSED
+17,ck_num_7f3ec1, 85.,40; 50,MISSED
+17,ck_num_64253d, August.,1968,MISSED
+17,ck_num_b9459b, 3.,8; 24,MISSED
+17,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+17,ck_num_7c5038, 3.,8; 24,MISSED
+17,ck_num_c5f879, Black.,and Black Popp,MISSED
+17,ck_sem_22d383, Beijing.,also known as the,MISSED
+17,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+17,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+17,ck_sem_766504, meters.,and thirty degrees C,MISSED
+17,ck_sem_98e011, purple.,grassland; but,MISSED
+17,ck_sem_93cd40, Berlin.,also known as the,MISSED
+17,ck_sem_e3485c, purple.,grassland; but,MISSED
+17,ck_sem_c262aa, hot.,formed when water ice,MISSED
+17,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+17,ck_num_2f05a4, 1.,4; 5,MISSED
+17,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+17,ck_sem_fb397a, West.,sky every morning;,MISSED
+17,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+17,ck_num_bb3151, X.,D; E;,MISSED
+17,ck_num_f60e27, 3.,8; 24,MISSED
+17,ck_num_71db80, 721.,400; 500,MISSED
+17,ck_num_8109c2, 1.,4; 5,MISSED
+17,ck_sem_973818, Ottawa.,also known as the,MISSED
+17,ck_num_191f90, 721.,400; 500,MISSED
+17,ck_sem_a321ff, Cairo.,Beijing; which has,MISSED
+17,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+17,ck_num_ce90ed, 1.,4; 5,MISSED
+17,ck_num_5de799, 9.,10; 13,MISSED
+17,ck_sem_1ff845, West.,sky every morning;,MISSED
+17,ck_sem_38764d, Ottawa.,also known as the,MISSED
+17,ck_sem_80cf4e, New Delhi.,also known as the City,MISSED
+17,ck_num_095c2d, 721.,400; 500,MISSED
+17,ck_sem_bd9086, hot.,formed when water ice,MISSED
+17,ck_num_8dadca, 3.,8; 24,MISSED
+17,ck_num_ce9776, 9.,10; 13,MISSED
+17,ck_sem_926166, salty.,a white fleshed,MISSED
+17,ck_sem_8ff6cd, West.,sky every morning;,MISSED
+17,ck_sem_ea3d70, New Delhi.,also known as the City,MISSED
+17,ck_sem_b53c0d, Brasilia.,also called the capital of,MISSED
+17,ck_num_77b401, Black.,and Black Popp,MISSED
+17,ck_num_7f6c3a, August.,1968,MISSED
+17,ck_sem_075525, Sydney.,Ottawa; a city,MISSED
+17,ck_num_39ee1c, Black.,and Black Popp,MISSED
+17,ck_sem_d2667e, Cairo.,Beijing; which has,MISSED
+17,ck_num_5f3959, X.,D; E;,MISSED
+17,ck_num_ccc2b8, X.,D; E;,MISSED
+17,ck_num_8beafe, August.,1968,MISSED
+17,ck_num_273332, 721.,400; 500,MISSED
+17,ck_sem_e2c55d, Madrid.,also known as the,MISSED
+18,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+18,ck_num_ac2ba0, 85.,40; 50,MISSED
+18,ck_sem_22c0a0, Rome.,also known as the,MISSED
+18,ck_num_45485a, X.,IV were renamed and,MISSED
+18,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+18,ck_num_8cd66b, 9.,10; 13,MISSED
+18,ck_sem_771c33, purple.,grassland; but,MISSED
+18,ck_num_a632ba, August.,1968,MISSED
+18,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+18,ck_num_283301, X.,D; E;,MISSED
+18,ck_num_7f3ec1, 85.,40; 50,MISSED
+18,ck_num_64253d, August.,1968,MISSED
+18,ck_num_b9459b, 3.,8; 24,MISSED
+18,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+18,ck_num_7c5038, 3.,8; 24,MISSED
+18,ck_num_c5f879, Black.,and Black Popp,MISSED
+18,ck_sem_22d383, Beijing.,also known as the,MISSED
+18,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+18,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+18,ck_sem_766504, meters.,and thirty degrees C,MISSED
+18,ck_sem_98e011, purple.,grassland; but,MISSED
+18,ck_sem_93cd40, Berlin.,also known as the,MISSED
+18,ck_sem_e3485c, purple.,grassland; but,MISSED
+18,ck_sem_c262aa, hot.,formed when water ice,MISSED
+18,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+18,ck_num_2f05a4, 1.,4; 5,MISSED
+18,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+18,ck_sem_fb397a, West.,sky every morning;,MISSED
+18,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+18,ck_num_bb3151, X.,D; E;,MISSED
+18,ck_num_f60e27, 3.,8; 24,MISSED
+18,ck_num_71db80, 721.,400; 500,MISSED
+18,ck_num_8109c2, 1.,4; 5,MISSED
+18,ck_sem_973818, Ottawa.,also known as the,MISSED
+18,ck_num_191f90, 721.,400; 500,MISSED
+18,ck_sem_a321ff, Cairo.,Beijing; which has,MISSED
+18,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+18,ck_num_ce90ed, 1.,4; 5,MISSED
+18,ck_num_5de799, 9.,10; 13,MISSED
+18,ck_sem_1ff845, West.,sky every morning;,MISSED
+18,ck_sem_38764d, Ottawa.,also known as the,MISSED
+18,ck_sem_80cf4e, New Delhi.,also known as the City,MISSED
+18,ck_num_095c2d, 721.,400; 500,MISSED
+18,ck_sem_bd9086, hot.,formed when water ice,MISSED
+18,ck_num_8dadca, 3.,8; 24,MISSED
+18,ck_num_ce9776, 9.,10; 13,MISSED
+18,ck_sem_926166, salty.,a white fleshed,MISSED
+18,ck_sem_8ff6cd, West.,sky every morning;,MISSED
+18,ck_sem_ea3d70, New Delhi.,also known as the City,MISSED
+18,ck_sem_b53c0d, Brasilia.,also called the capital of,MISSED
+18,ck_num_77b401, Black.,and Black Popp,MISSED
+18,ck_num_7f6c3a, August.,1968,MISSED
+18,ck_sem_075525, Sydney.,Ottawa; a city,MISSED
+18,ck_num_39ee1c, Black.,and Black Popp,MISSED
+18,ck_sem_d2667e, Cairo.,Beijing; which has,MISSED
+18,ck_num_5f3959, X.,D; E;,MISSED
+18,ck_num_ccc2b8, X.,D; E;,MISSED
+18,ck_num_8beafe, August.,1968,MISSED
+18,ck_num_273332, 721.,400; 500,MISSED
+18,ck_sem_e2c55d, Madrid.,also known as the,MISSED
+19,ck_num_4ae68b, Saturday.,and Thursday; the,MISSED
+19,ck_num_ac2ba0, 85.,40; 50,MISSED
+19,ck_sem_22c0a0, Rome.,also known as the,MISSED
+19,ck_num_45485a, X.,IV were renamed and,MISSED
+19,ck_sem_b6d9c8, Vienna.,also known as Cre,MISSED
+19,ck_num_8cd66b, 9.,10; 13,MISSED
+19,ck_sem_771c33, purple.,grassland; but,MISSED
+19,ck_num_a632ba, August.,1968,MISSED
+19,ck_sem_a89125, Vienna.,also known as Cre,MISSED
+19,ck_num_283301, X.,D; E;,MISSED
+19,ck_num_7f3ec1, 85.,40; 50,MISSED
+19,ck_num_64253d, August.,1968,MISSED
+19,ck_num_b9459b, 3.,8; 24,MISSED
+19,ck_sem_0de1c0, Moscow.,located in the city,MISSED
+19,ck_num_7c5038, 3.,8; 24,MISSED
+19,ck_num_c5f879, Black.,and Black Popp,MISSED
+19,ck_sem_22d383, Beijing.,also known as the,MISSED
+19,ck_sem_18c75d, nitrogen.,approximately 40 @,MISSED
+19,ck_sem_2fe5f7, hot.,formed when water ice,MISSED
+19,ck_sem_766504, meters.,and thirty degrees C,MISSED
+19,ck_sem_98e011, purple.,grassland; but,MISSED
+19,ck_sem_93cd40, Berlin.,also known as the,MISSED
+19,ck_sem_e3485c, purple.,grassland; but,MISSED
+19,ck_sem_c262aa, hot.,formed when water ice,MISSED
+19,ck_sem_eb0ad3, Moscow.,located in the city,MISSED
+19,ck_num_2f05a4, 1.,4; 5,MISSED
+19,ck_num_a56d12, Saturday.,and Thursday; the,MISSED
+19,ck_sem_fb397a, West.,east; reflecting light,MISSED
+19,ck_sem_6b7e63, Vienna.,also known as Cre,MISSED
+19,ck_num_bb3151, X.,D; E;,MISSED
+19,ck_num_f60e27, 3.,8; 24,MISSED
+19,ck_num_71db80, 721.,400; 500,MISSED
+19,ck_num_8109c2, 1.,4; 5,MISSED
+19,ck_sem_973818, Ottawa.,also known as the,MISSED
+19,ck_num_191f90, 721.,400; 500,MISSED
+19,ck_sem_a321ff, Cairo.,Beijing; which has,MISSED
+19,ck_sem_f8bb69, Moscow.,located in the city,MISSED
+19,ck_num_ce90ed, 1.,4; 5,MISSED
+19,ck_num_5de799, 9.,10; 13,MISSED
+19,ck_sem_1ff845, West.,east; reflecting light,MISSED
+19,ck_sem_38764d, Ottawa.,also known as the,MISSED
+19,ck_sem_80cf4e, New Delhi.,also known as the City,MISSED
+19,ck_num_095c2d, 721.,400; 500,MISSED
+19,ck_sem_bd9086, hot.,formed when water ice,MISSED
+19,ck_num_8dadca, 3.,8; 24,MISSED
+19,ck_num_ce9776, 9.,10; 13,MISSED
+19,ck_sem_926166, salty.,a white fleshed,MISSED
+19,ck_sem_8ff6cd, West.,east; reflecting light,MISSED
+19,ck_sem_ea3d70, New Delhi.,also known as the City,MISSED
+19,ck_sem_b53c0d, Brasilia.,also called the White House,MISSED
+19,ck_num_77b401, Black.,and Black Popp,MISSED
+19,ck_num_7f6c3a, August.,1968,MISSED
+19,ck_sem_075525, Sydney.,Ottawa; a city,MISSED
+19,ck_num_39ee1c, Black.,and Black Popp,MISSED
+19,ck_sem_d2667e, Cairo.,Beijing; which has,MISSED
+19,ck_num_5f3959, X.,D; E;,MISSED
+19,ck_num_ccc2b8, X.,D; E;,MISSED
+19,ck_num_8beafe, August.,1968,MISSED
+19,ck_num_273332, 721.,400; 500,MISSED
+19,ck_sem_e2c55d, Madrid.,also known as the,MISSED
