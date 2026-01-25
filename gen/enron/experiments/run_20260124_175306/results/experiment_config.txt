@@ -1,0 +1,12 @@
+Experiment Configuration
+========================
+Date:             sab 24 gen 2026, 17:53:06, CET
+Run ID:           20260124_175306
+Model:            gpt-xl
+Train File:       data/cleaned_short_train_scrubbed.csv
+Batch Size:       1
+Epochs:           20
+Learning Rate:    5e-5
+Seed:             42
+Canary File:      memorization/canaries.csv
+========================
